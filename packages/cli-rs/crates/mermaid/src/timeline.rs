@@ -1,3 +1,5 @@
+//! Mermaid 图表渲染：时间线。
+
 use std::sync::LazyLock;
 
 use regex::Regex;

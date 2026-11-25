@@ -1,3 +1,7 @@
+/**
+ * 文件查找库（Workerd 平台）。
+ * 在 workerd 运行时提供不可用占位实现。
+ */
 import { bind } from "./fff.js"
 
 export type { Directory, DirSearch, File, Init, Mixed, MixedSearch, Picker, Result, Search } from "./fff.js"

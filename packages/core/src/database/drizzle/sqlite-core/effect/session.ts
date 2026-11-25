@@ -1,3 +1,7 @@
+/**
+ * drizzle SQLite Effect 会话类型。
+ * drizzle-orm SQLite 会话在 Effect 下的类型定义（本文件源自 drizzle-orm 上游）。
+ */
 /* oxlint-disable */
 import * as Cause from "effect/Cause"
 import * as Effect from "effect/Effect"

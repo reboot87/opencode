@@ -1,3 +1,7 @@
+/**
+ * Claude 会话池。
+ * 管理 Claude 会话的交接（10 秒）与空闲（5 分钟）生命周期。
+ */
 export * as ClaudeSessions from "./sessions.js"
 
 import type { Options, SDKMessage } from "@anthropic-ai/claude-agent-sdk"

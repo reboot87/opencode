@@ -105,7 +105,10 @@ export default function Press() {
       .map((title) => ({ id: anchor(title), title })),
   )
 
-  /** Copies text and marks `key` as copied for a moment. */
+  /** Copies text and marks `key` as copied for a moment.
+ *
+ * 媒体中心路由：索引。
+ */
   const copy = (key: string, value: string) => {
     void navigator.clipboard.writeText(value)
     setCopied(key)

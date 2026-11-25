@@ -1,3 +1,7 @@
+/**
+ * 应用外壳 — Shell。
+ * 浏览器应用的窗口框架与路由外壳中负责 Shell 部分，提供该部分所需的实现与类型定义。
+ */
 import { Show, startTransition, Suspense, type ParentProps } from "solid-js"
 import { createStore } from "solid-js/store"
 import { createMediaQuery } from "@solid-primitives/media"

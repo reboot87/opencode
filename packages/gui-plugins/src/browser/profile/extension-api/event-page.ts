@@ -1,3 +1,7 @@
+/**
+ * 浏览器扩展 API — EventPage。
+ * 浏览器插件暴露给扩展的接口中负责 EventPage 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Session } from "electron"
 
 /** MV2 event pages are lazy frames, not service workers. Chromium exposes their wake to the extension's own

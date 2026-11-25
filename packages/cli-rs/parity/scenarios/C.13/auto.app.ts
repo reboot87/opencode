@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：auto·app。
+ *
+ * 规格编号：C.13。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `--auto` (C01): the home prompt's metadata row says `auto` after the agent.
 import { defineApp, HOME_PLACEHOLDER } from "../../lib/app"
 import { catalog } from "./catalog"

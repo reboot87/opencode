@@ -1,3 +1,7 @@
+/**
+ * 格式化服务（Formatter）。
+ * 对代码/文本做格式化，提供 Editor 形态与可变换的状态。
+ */
 export * as Formatter from "./formatter.js"
 
 import { Context, Effect, Layer } from "effect"

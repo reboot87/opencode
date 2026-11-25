@@ -1,3 +1,10 @@
+/**
+ * 主机的测试辅助模块。
+ *
+ * 被测模块：@opencode/core/plugin/host
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { Plugin } from "@opencode/plugin/effect"
 import type { IntegrationMethod } from "@opencode/plugin/effect/integration"
 import { Agent } from "@opencode/core/agent"

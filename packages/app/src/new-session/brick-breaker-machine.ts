@@ -1,3 +1,7 @@
+/**
+ * 新建会话 — BrickBreakerMachine。
+ * 创建新会话的向导与表单中负责 BrickBreakerMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export const BRICK_BREAKER_LIVES = 3
 
 // Phase lengths in seconds, shared with the animations that fill them.

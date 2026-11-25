@@ -1,3 +1,6 @@
+/**
+ * 文本处理脚本：构建。
+ */
 // Builds the Text.js console apps that window.opencode loads on demand into the site's
 // public/textjs/, with a manifest.json that maps each app to its hashed entry file.
 //

@@ -1,3 +1,7 @@
+/**
+ * 版本控制服务（VCS）。
+ * 抽象 Git 等版本控制系统：初始化、diff 与错误类型。
+ */
 export * as Vcs from "./vcs.js"
 
 import path from "path"

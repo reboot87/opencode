@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — SessionPanelWidth。
+ * 会话主界面的视图与状态中负责 SessionPanelWidth 部分，提供该部分所需的实现与类型定义。
+ */
 // The review pane has no width of its own: it takes whatever the chat panel
 // leaves behind. Instead of capping the chat panel at a fraction of the window
 // (which forces the review pane to grow with the monitor), reserve a fixed

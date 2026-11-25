@@ -1,3 +1,7 @@
+/**
+ * 配对文案 — En。
+ * 配对插件的多语言文案中负责 En 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.title": "Pair device",
   title: "Pairing",

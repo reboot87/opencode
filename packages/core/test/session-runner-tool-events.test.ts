@@ -1,3 +1,10 @@
+/**
+ * 会话·驱动·工具·事件的测试。
+ *
+ * 被测模块：@opencode/core/session-runner-tool-events
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { Cause, Deferred, Effect, Exit, Fiber, Schema } from "effect"
 import { eq } from "drizzle-orm"

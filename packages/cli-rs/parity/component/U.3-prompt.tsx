@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid U3Prompt：该文件实现 U3Prompt 相关的状态与逻辑。
+ */
 // P-COMP fixtures for DialogPrompt (packages/tui/src/ui/dialog-prompt.tsx): crates/ui/tests/all/dialogs.rs. With a
 // value and an action, empty with its placeholder, and busy.
 import { DialogPrompt } from "../../../tui/src/ui/dialog-prompt"

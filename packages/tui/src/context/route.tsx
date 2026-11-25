@@ -1,3 +1,7 @@
+/**
+ * UI 上下文 — Route。
+ * UI 包的上下文提供者中负责 Route 部分，提供该部分所需的实现与类型定义。
+ */
 import { createStore, reconcile } from "solid-js/store"
 import type { LocationRef } from "@opencode/client"
 import { createSimpleContext } from "./helper"

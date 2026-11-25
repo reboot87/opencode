@@ -1,4 +1,6 @@
 //! `run -f` inlines text in the prompt and attaches other files as data URLs.
+//!
+//! 命令行入口：文件。
 
 use std::io::Read;
 use std::path::{Component, Path, PathBuf};

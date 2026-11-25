@@ -1,3 +1,7 @@
+/**
+ * Token 数量估算。
+ * 按每 token 约 4 字符的粗略规则估算文本 token 数。
+ */
 export * as Token from "./token.js"
 
 const CHARS_PER_TOKEN = 4

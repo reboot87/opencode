@@ -1,6 +1,9 @@
 import { extensionPages, type ExtensionSlug } from "~/component/site/extension-data"
 
-/** The extension pages' English copy, by extension. */
+/** The extension pages' English copy, by extension.
+ *
+ * 多语言分区文案：扩展。
+ */
 export const extensionsSource = Object.fromEntries(
   extensionPages.map((extension) => [
     extension.slug,

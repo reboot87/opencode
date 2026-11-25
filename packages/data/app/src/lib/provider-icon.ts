@@ -1,3 +1,7 @@
+/**
+ * 数据站工具 — ProviderIcon。
+ * 数据站点的通用工具中负责 ProviderIcon 部分，提供该部分所需的实现与类型定义。
+ */
 import { iconNames, type IconName } from "@opencode/ui/icons/provider"
 
 // Lab ids and display names map to @opencode/ui provider icon ids. ProviderIcon falls back to the generic

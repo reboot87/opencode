@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：设置默认值。
+ */
 import { expect, test } from "bun:test"
 import { siteSettingsSchema } from "~/component/site/settings"
 import defaults from "~/component/site/settings-defaults.json"

@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — Index 出口。
+ * 集中导出 会话界面 中 Index 相关的实现、组件与类型。
+ */
 import {
   batch,
   createEffect,

@@ -1,4 +1,7 @@
-/** The longest step one frame may advance the art, so a stalled tab resumes where it paused instead of skipping. */
+/**
+ * 
+ * The longest step one frame may advance the art, so a stalled tab resumes where it paused instead of skipping. Provider 连接中负责 GoUpsellHeroMachine 部分：连接模型提供方中与 GoUpsellHeroMachine 相关的状态、交互与渲染逻辑。
+ */
 export const HERO_MAX_DT_MS = 100
 
 /**

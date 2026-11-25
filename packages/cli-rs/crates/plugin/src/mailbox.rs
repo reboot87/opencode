@@ -1,5 +1,7 @@
 //! A bounded queue from plugin workers to the UI thread. `send` never blocks; replacing by key updates the pending
 //! entry in place.
+//!
+//! 插件系统：`mailbox`。
 
 use std::cell::RefCell;
 use std::collections::VecDeque;

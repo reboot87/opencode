@@ -1,3 +1,7 @@
+/**
+ * UI 上下文 — Permission。
+ * UI 包的上下文提供者中负责 Permission 部分，提供该部分所需的实现与类型定义。
+ */
 import { useConfig } from "../config"
 import { useArgs } from "./args"
 import { createSimpleContext } from "./helper"

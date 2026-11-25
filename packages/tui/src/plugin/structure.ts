@@ -1,3 +1,7 @@
+/**
+ * 终端插件支持 — Structure。
+ * 终端界面的插件加载与扩展点中负责 Structure 部分，提供该部分所需的实现与类型定义。
+ */
 // Pure resolution of the slot tree: the mounted slot paths plus plugin claims
 // in, per-path placement buckets plus diagnostics out. No solid, no I/O —
 // every policy rule (replacement takeover, hierarchy-beats-timeline,

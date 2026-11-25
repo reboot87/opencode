@@ -1,3 +1,7 @@
+/**
+ * 内置指令。
+ * 提供内置的默认指令条目。
+ */
 export * as InstructionBuiltIns from "./builtins.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

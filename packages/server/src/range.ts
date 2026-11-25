@@ -1,3 +1,7 @@
+/**
+ * Range 头解析。
+ * 解析 HTTP Range 请求头。
+ */
 export * as ByteRange from "./range"
 
 /** A single `bytes=` range of a `size`-byte body, inclusive. Undefined serves the whole body. */

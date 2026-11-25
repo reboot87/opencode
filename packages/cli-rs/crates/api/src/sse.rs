@@ -1,5 +1,7 @@
 //! SSE `data:` lines join with newlines; blank lines end a block. The 16 MiB buffer limit counts UTF-16 code units.
 //! Every chunk, including a keepalive, signals activity.
+//!
+//! API 客户端：服务端事件流。
 
 use std::collections::VecDeque;
 use std::fmt;

@@ -1,4 +1,6 @@
 //! Temporary directories with automatic cleanup.
+//!
+//! 通用工具：`temp`。
 
 use std::io;
 use std::path::{Path, PathBuf};

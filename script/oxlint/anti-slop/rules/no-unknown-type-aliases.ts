@@ -8,7 +8,10 @@ import {
 	type TypeAliasEnvironment,
 } from "../shared/type-alias-resolution.ts";
 
-/** Ban named aliases that merely conceal TypeScript's unknown top type. */
+/** Ban named aliases that merely conceal TypeScript's unknown top type.
+ *
+ * Oxlint 规则：无未知类型别名。
+ */
 export const noUnknownTypeAliasesRule = defineRule({
 	meta: {
 		type: "problem",

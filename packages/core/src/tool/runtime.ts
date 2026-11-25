@@ -1,3 +1,7 @@
+/**
+ * 工具运行时（runtime）。
+ * 工具输入/输出的 JSON Schema 编解码：把 Effect Schema 与 JSON Schema 互转（codecFor），并格式化校验错误，供工具调用的参数校验使用。
+ */
 import { emptyInputJsonSchema, ToolFailure, type ToolDefinition } from "@opencode/ai/effect"
 import { isRecord } from "@opencode/util/record"
 import { Tool } from "@opencode/schema/tool"
@@ -24,6 +28,8 @@ const codemodeOverrides = (tool: Tool.Info<any, any>, codemode: boolean) =>
     ? tool.options.codemode
     : undefined
 
+// 由工具定义生成协议层的 ToolDefinition：应用 Code Mode 覆盖（精简 schema），
+// 并按需输出 input/output 的 JSON Schema。
 export const definition = (tool: Tool.Info<any, any>, codemode = false): ToolDefinition => {
   const overrides = codemodeOverrides(tool, codemode)
   const output = overrides?.output ?? tool.output
@@ -46,6 +52,10 @@ export const execute = (tool: Tool.Info<any, any>, input: unknown, context: Tool
     // downstream and leave its call permanently unsettled, so the declared contract is
     // enforced here at the untrusted boundary. Declines tunnel through as defects and
     // interrupts are not errors; neither is touched.
+    //
+    // 工具实现声明的是 Tool.Error，但插件在运行期可能抛出任意错误。外来类型错误会绕过下游所有
+    // catchTag("Tool.Error")，导致该次工具调用永远无法结算（settle）；因此在不可信边界处强制
+    // 收敛为声明的契约。拒绝（decline）以 defect 形式透传，中断不属于错误，两者都不做转换。
     const result = yield* tool.execute(decoded, context).pipe(
       Effect.mapError((error: unknown) =>
         error instanceof Tool.Error

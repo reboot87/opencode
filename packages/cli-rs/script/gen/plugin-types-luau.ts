@@ -1,3 +1,8 @@
+/**
+ * 插件·类型定义·Luau脚本。
+ *
+ * Rust CLI 的代码生成器：由 TypeScript 单一来源生成 Rust 代码。
+ */
 // Writes crates/plugin/src/luau/opencode/plugin.luau: the types of a Luau plugin, as a stub of the module
 // `@opencode/plugin` that luau-analyze and luau-lsp resolve through a `.luaurc` alias (a definitions file cannot type a
 // `require`). Every definition of contract 2.0's schema (crates/plugin-abi/schema/v2.json, which plugin-schema.ts

@@ -1,3 +1,7 @@
+/**
+ * 输入历史 — Entry。
+ * 输入历史的上限、读写与切换中负责 Entry 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Prompt } from "@/composer/state"
 import type { SelectedLineRange } from "@/workspaces/files/model"
 import { clonePrompt, isAttachment } from "../prompt-parts"

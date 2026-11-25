@@ -1,3 +1,7 @@
+/**
+ * ACP 附加目录。
+ * 读取与保存 ACP 会话允许访问的附加目录列表。
+ */
 import { isAbsolute, join, resolve } from "node:path"
 import { isDeepStrictEqual } from "node:util"
 import type { OpenCodeClient } from "@opencode/client/effect"

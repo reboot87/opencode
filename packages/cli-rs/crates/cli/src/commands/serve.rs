@@ -1,3 +1,5 @@
+//! CLI 子命令：服务。
+
 use opencode_service::delegate;
 use opencode_util::error;
 

@@ -1,3 +1,7 @@
+/**
+ * Provider 模型 — Models。
+ * provider 下模型的展示与配置中负责 Models 部分，提供该部分所需的实现与类型定义。
+ */
 import { type Accessor, createMemo } from "solid-js"
 import { createSimpleContext } from "@opencode/ui/context"
 import { useProviders } from "@/providers/catalog/providers"

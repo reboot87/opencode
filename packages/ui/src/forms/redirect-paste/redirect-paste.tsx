@@ -1,3 +1,7 @@
+/**
+ * 重定向粘贴 — RedirectPaste。
+ * 粘贴后自动重定向的输入组件中负责 RedirectPaste 部分，提供该部分所需的实现与类型定义。
+ */
 import { createUniqueId, onMount, Show } from "solid-js"
 import { Icon } from "@opencode/ui/icon"
 import { IconButton } from "@opencode/ui/icon-button"

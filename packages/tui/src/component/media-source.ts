@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — MediaSource。
+ * 终端界面（Solid）组件中负责 MediaSource 部分，提供该部分所需的实现与类型定义。
+ */
 import { mediaHashFromUri } from "@opencode/client"
 import { createEffect, createSignal, on, onCleanup, useContext, type Accessor } from "solid-js"
 import { ClientContext } from "../context/client"

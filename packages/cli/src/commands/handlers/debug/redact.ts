@@ -1,3 +1,7 @@
+/**
+ * 调试信息脱敏。
+ * 在打印配置前遮蔽其中的密钥类字段。
+ */
 // Redact only the debug output; the resolved configuration must remain usable by providers.
 const secretName = /(?:api.?key|secret|password|token$|authorization$|cookie$|credential|private.?key)/i
 

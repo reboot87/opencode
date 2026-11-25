@@ -1,3 +1,5 @@
+//! 守护进程主体：服务端。
+
 use std::io::{self, ErrorKind};
 use std::path::Path;
 use std::sync::Arc;

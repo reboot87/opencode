@@ -1,3 +1,7 @@
+/**
+ * Effect 风格插件 API — RPC 领域。
+ * 插件发起远程过程调用的上下文与契约。此文件定义 Effect 风格 下该领域的接口与类型，与其它领域共同构成插件 API 表面。
+ */
 import type { RpcApi } from "@opencode/client/effect/api"
 export type { RpcClient } from "@opencode/client/effect/api"
 import type { Rpc } from "@opencode/schema/rpc"

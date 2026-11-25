@@ -1,3 +1,7 @@
+/**
+ * GUI 注册表类型检查样例。
+ * 以 Contract 校验注册表条目的类型一致性。
+ */
 // Type-level contract of the registries, checked by `bun typecheck`. Nothing imports this file. Each `@ts-expect-error`
 // fails the typecheck if its line stops being an error.
 import { Plugin } from "./index.js"

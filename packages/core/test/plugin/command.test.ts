@@ -1,3 +1,10 @@
+/**
+ * 命令的测试。
+ *
+ * 被测模块：@opencode/core/plugin/command
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { describe, expect } from "bun:test"
 import { Effect, Layer } from "effect"
 import { Command } from "@opencode/core/command"

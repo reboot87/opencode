@@ -1,3 +1,8 @@
+/**
+ * 插件对等性场景：TUI。
+ *
+ * 插件能力的对等性场景：验证 Rust 与 TypeScript 插件行为一致。
+ */
 // The P0b title plugin, TypeScript side: `/p0btitle` sets the terminal title, as an npm plugin does with
 // `renderer.setTerminalTitle`. parity/scenarios/P.0b/fixture.ts installs this file and its opencode-native twin, the
 // Luau plugin beside it (`Host:setTitle`), in one `plugins` directory: TS loads `tui.ts`, Rust loads `init.luau`.

@@ -1,3 +1,7 @@
+/**
+ * 内存环境驱动。
+ * 提供纯内存的环境驱动，用于测试与沙箱。
+ */
 import path from "node:path"
 import { Effect, PlatformError } from "effect"
 import { make } from "effect/process/ChildProcessSpawner"

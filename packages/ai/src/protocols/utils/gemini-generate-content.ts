@@ -1,3 +1,7 @@
+/**
+ * Gemini 内容生成工具。
+ * 处理安全设置、内容过滤与分块（chunk）逻辑。
+ */
 import { Effect, Schema, type Stream } from "effect"
 import type { Tool } from "@opencode/schema/tool"
 import { Media } from "../../media.js"

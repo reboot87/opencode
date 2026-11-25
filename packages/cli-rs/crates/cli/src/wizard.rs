@@ -1,4 +1,6 @@
 //! Interactive command builder for `--wizard`.
+//!
+//! 命令行入口：`wizard`。
 
 mod prompt;
 

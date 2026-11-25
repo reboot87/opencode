@@ -1,3 +1,5 @@
+//! 基础 UI 组件库：内容。
+
 use indexmap::IndexMap;
 use opencode_parity::{Fixture, compare, fixtures_dir};
 use opencode_ui::theme::{Catalog, TerminalColors, Theme, ThemeMode, from_hex, generate_system};

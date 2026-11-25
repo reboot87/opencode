@@ -1,4 +1,6 @@
 //! Dialogs, composer edits and a styled footer, which the linked carrier's tests exercise.
+//!
+//! 终端界面测试：探针。
 
 use super::abi::{
     Action, Alert, Border, BorderStyle, Command, ComposerEdit, Confirm, Dialog, Edges, Host, Layout, Node, Overflow,

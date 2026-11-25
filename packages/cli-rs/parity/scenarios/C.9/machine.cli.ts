@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：状态机·CLI。
+ *
+ * 规格编号：C.9。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `machine` against the registered service: `add` prints only the join string off a terminal and sends the server's
 // URLs as link addresses, reachable ones first (or the `--url` given alone); `list` aligns its columns and says how
 // each connected machine connects; `remove` confirms; the bare group prints its help.

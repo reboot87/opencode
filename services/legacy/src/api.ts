@@ -13,7 +13,9 @@ export default new Hono<{ Bindings: Env }>()
   .get("/", (c) => c.text("Hello, world!"))
   /**
    * Used by the GitHub action to get GitHub installation access token given the OIDC token
-   */
+ *
+ * 遗留服务实现：API。
+ */
   .post("/exchange_github_app_token", async (c) => {
     if (!c.env.GITHUB_APP_ID || !c.env.GITHUB_APP_PRIVATE_KEY) {
       const dev = new URL(c.req.url).hostname === "api.dev.opencode.ai"

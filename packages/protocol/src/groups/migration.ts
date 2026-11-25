@@ -1,3 +1,7 @@
+/**
+ * 迁移 API 分组。
+ * 定义 v1 → v2 数据迁移的状态查询与触发端点。
+ */
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, OpenApi } from "effect/http-api"
 

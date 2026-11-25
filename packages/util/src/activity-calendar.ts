@@ -1,3 +1,7 @@
+/**
+ * 活跃日历。
+ * 按时间点把活动分布到日历格子，用于展示每日使用热力图。
+ */
 export function activityCalendar(input: {
   activity: readonly { date: string; steps: number }[]
   from: number

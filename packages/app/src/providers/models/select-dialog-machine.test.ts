@@ -1,3 +1,7 @@
+/**
+ * Provider 模型 — SelectDialogMachineTest。
+ * provider 下模型的展示与配置中负责 SelectDialogMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   createDialogFlyoutState,

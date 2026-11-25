@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：代码围栏·app。
+ *
+ * 规格编号：Pr。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A fence drawn by a plugin (Pr): the test plugin draws the `parity` fence of an answer in the transcript. TS loads
 // it from parity/plugins/fence as a local plugin, a Markdown code-block renderer; Rust registers its twin, a renderer
 // claim of the fence, when OPENCODE_PARITY_PLUGIN is `fence`. The fence opens the answer: after a paragraph, Rust's

@@ -1,12 +1,23 @@
+/**
+ * 流式响应分帧（Framing）。
+ * 位于传输层与协议层之间：把字节流（SSE 或二进制事件流）解码为协议可消费的事件帧，并做错误处理。
+ */
 import { Effect, Stream } from "effect"
 import { makeParser } from "effect/encoding/Sse"
 import { AIError, InvalidProviderOutputError } from "../schema/index.js"
 
 /**
- * Decode a streaming HTTP response body into provider-protocol frames.
+ * 把流式 HTTP 响应体解码成 provider 协议帧。
  *
- * `Framing` is the byte-stream-shaped seam between transport and protocol:
+ * Framing 是"传输层与协议层之间、面向字节流"的接缝：
+ * - SSE（Framing.sse）：UTF-8 解码响应体，跑 SSE 通道解码器，发出每个非空事件的 data: 载荷。
+ *   默认丢弃 [DONE]；把它当终止信号的协议用 sseWithDone。
+ * - AWS event stream：带长度前缀和 CRC 校验的二进制帧，每帧是解析后的事件记录。
+ * - 媒体流：换行分隔 JSON（lines）、或整个响应体作为一帧（document）；分块二进制无需分帧。
  *
+ * 本层不关心帧的具体类型；帧先由协议的事件 schema 解码，再交给状态机处理。
+ *
+ * 原文：
  * - SSE (`Framing.sse`) — UTF-8 decode the body, run the SSE channel decoder,
  *   and emit the `data:` payload of each non-empty event. The default drops
  *   `[DONE]`; protocols that use it as a terminal select `sseWithDone`.

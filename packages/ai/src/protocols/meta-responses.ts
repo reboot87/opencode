@@ -1,3 +1,7 @@
+/**
+ * Meta Responses 协议实现。
+ * 含 Web 搜索与图片生成工具定义。
+ */
 import { Effect, Schema } from "effect"
 import { Base64 } from "effect/encoding"
 import { Protocol } from "../route/protocol.js"

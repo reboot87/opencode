@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：登录·伪终端。
+ *
+ * 规格编号：C.12。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `acp --login` (AC02): runs `auth login` with no target. The command finds the registered fake service
 // (C.8's sandbox registration, so no real service or account is touched), opens the integration picker,
 // and connects Acme through its external method with the form answers. URL opens go to C.5's sink.

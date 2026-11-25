@@ -1,3 +1,7 @@
+/**
+ * 插件运行时隔离。
+ * 构建插件运行时的模块加载环境，限制其可访问的外部包（foreign package 拦截）。
+ */
 import { loadRuntimeModules, resolveHostPackageRoots, type RuntimeModuleLoader } from "./runtime-modules.js"
 
 const foreignPkgSuffix = String.raw`(?:node_modules[/\\](@opencode[/\\]plugin|effect)|(@opencode[/\\]plugin|effect)@[^/\\]+@@@\d+)`

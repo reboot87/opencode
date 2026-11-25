@@ -1,3 +1,7 @@
+/**
+ * DigitalOcean Gradient AI provider 门面。
+ * 封装 chat / responses / images / embeddings / decision 能力，提供统一模型工厂。
+ */
 import type { ProviderPackage } from "../provider-package.js"
 import { OpenAIChat } from "../protocols/openai-chat.js"
 import { OpenAIEmbeddings } from "../protocols/openai-embeddings.js"

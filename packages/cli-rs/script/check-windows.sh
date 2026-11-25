@@ -1,4 +1,6 @@
 #!/bin/sh
+
+# Rust CLI 开发脚本：检查·Windows。
 # Compile-checks the workspace for Windows on Linux (script/check-target.sh): x64 by default, or arm64. First it runs
 # script/lint-windows.sh, which finds code that is right on Unix and wrong on Windows.
 #

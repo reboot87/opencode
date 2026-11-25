@@ -1,3 +1,7 @@
+/**
+ * 可执行文件查找。
+ * 在 PATH 中查找可执行文件，兼容 Windows 的 Path 变量。
+ */
 import whichPkg from "which"
 import path from "path"
 import { existsSync, lstatSync } from "fs"

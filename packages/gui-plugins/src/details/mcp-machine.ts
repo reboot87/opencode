@@ -1,4 +1,7 @@
-/** How long one connect, disconnect or sign-in may run before it gives up with an error. */
+/**
+ * 
+ * How long one connect, disconnect or sign-in may run before it gives up with an error. 详情插件中负责 McpMachine 部分：对象详情展示中与 McpMachine 相关的状态、交互与渲染逻辑。
+ */
 export const MCP_TOGGLE_TIMEOUT_MS = 60_000
 
 /** An MCP server's status, as the server lists it. */

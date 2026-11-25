@@ -1,3 +1,7 @@
+/**
+ * 内部插件。
+ * 定义仅供内部使用的插件及其服务依赖（Requirements）声明机制。
+ */
 export * as PluginInternal from "./internal.js"
 
 import { LLMClient } from "@opencode/ai/effect"

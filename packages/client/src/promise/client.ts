@@ -1,3 +1,7 @@
+/**
+ * Promise 客户端工厂。
+ * 构造 Promise 风格的 OpenCode 客户端。
+ */
 export * as OpenCode from "./client.js"
 
 import { SharedEvents } from "../shared-events.js"

@@ -1,3 +1,7 @@
+/**
+ * SDK Workerd 配置。
+ * 定义 workerd 环境下的嵌入式配置类型。
+ */
 export * as WorkerdProfile from "./workerd"
 
 import type { Config } from "@opencode/schema/config"

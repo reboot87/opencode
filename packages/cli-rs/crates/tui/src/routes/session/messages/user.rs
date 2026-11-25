@@ -1,4 +1,6 @@
 //! User prompts, attachments, and mention chips.
+//!
+//! 终端界面路由：用户。
 
 use opencode_api::generated::{PromptFileSource, SessionInboxDelivery, SessionMessageUser};
 use opencode_ui::theme::ThemeMode;

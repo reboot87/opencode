@@ -1,3 +1,7 @@
+/**
+ * 浏览器扩展 API — Api。
+ * 浏览器插件暴露给扩展的接口中负责 Api 部分，提供该部分所需的实现与类型定义。
+ */
 import { Schema } from "effect"
 import type { Extension, WebContents, WebFrameMain } from "electron"
 import type { ApiManifest } from "./manifest"

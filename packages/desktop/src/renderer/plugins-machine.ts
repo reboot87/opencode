@@ -1,3 +1,7 @@
+/**
+ * 渲染进程 — PluginsMachine。
+ * Electron 渲染进程的界面逻辑中负责 PluginsMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { BridgeMenubarItem, BridgeMessage } from "@opencode/plugin/gui/host"
 
 /** One `bridge.on` call, so registering the same callback twice removes independently. */

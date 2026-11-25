@@ -1,3 +1,7 @@
+/**
+ * PTY 交接。
+ * 在客户端间交接持久 PTY 会话。
+ */
 export * as PtyHandoff from "./pty-handoff.js"
 
 import type { PersistentPty } from "@opencode/schema/persistent-pty"

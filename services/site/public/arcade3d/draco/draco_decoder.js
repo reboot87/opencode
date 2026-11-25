@@ -1,3 +1,9 @@
+/*
+ * 站点第三方资源（vendored）：draco·解码器。
+ */
+/*
+ * 站点第三方资源（vendored）：draco·解码器。
+ */
 
 var DracoDecoderModule = (() => {
   var _scriptDir = typeof document !== 'undefined' && document.currentScript ? document.currentScript.src : undefined;

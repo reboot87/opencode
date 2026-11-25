@@ -1,3 +1,7 @@
+/**
+ * 后台服务 — SidecarProbe。
+ * 桌面端托管的后台服务进程中负责 SidecarProbe 部分，提供该部分所需的实现与类型定义。
+ */
 import { readFileSync } from "node:fs"
 import path from "node:path"
 import { app } from "electron"

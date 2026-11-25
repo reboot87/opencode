@@ -1,3 +1,7 @@
+/**
+ * 渲染进程 — PluginsMachineTest。
+ * Electron 渲染进程的界面逻辑中负责 PluginsMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { BridgeMenubarItem } from "@opencode/plugin/gui/host"
 import {

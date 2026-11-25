@@ -1,3 +1,7 @@
+/**
+ * Google 语音转写协议。
+ * STT provider 实现。
+ */
 import { Effect, Schema, SchemaGetter } from "effect"
 import { MediaProtocol } from "../route/media-protocol.js"
 import { MediaRoute } from "../route/media.js"

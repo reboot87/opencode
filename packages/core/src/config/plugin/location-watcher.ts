@@ -1,3 +1,7 @@
+/**
+ * 位置监听配置插件。
+ * 把配置中的位置监听策略应用到 LocationWatcherPolicy 服务。
+ */
 export * as ConfigLocationWatcherPlugin from "./location-watcher.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

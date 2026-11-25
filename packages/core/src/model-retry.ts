@@ -1,3 +1,7 @@
+/**
+ * 模型重试策略。
+ * 定义重试的退避 Schedule 与 Retry-After 解析（上限 15 分钟）。
+ */
 export * as ModelRetry from "./model-retry.js"
 
 import { AIError, isRetryable } from "@opencode/ai/effect"

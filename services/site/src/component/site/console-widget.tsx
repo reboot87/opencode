@@ -7,6 +7,8 @@ import { siteSettings } from "./settings"
  * The Console as a small 4:5 card fixed in the bottom-left corner, under the sidebar nav. When the
  * footer's nav scrolls into view, the card slides down out of the way and the footer nav slides up
  * into its place; scrolling back reverses both.
+ *
+ * 站点界面组件：控制台控件。
  */
 export function ConsoleWidget(props: { title: string; headline: string; cta: { text: string; href: string } }) {
   const [root, setRoot] = createSignal<HTMLElement>()

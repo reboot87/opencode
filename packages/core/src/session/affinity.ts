@@ -1,3 +1,7 @@
+/**
+ * 会话亲和性（Affinity）工具。
+ * 根据会话信息计算/获取执行亲和性标识，供调度与模型请求 hook 使用。
+ */
 export * as SessionAffinity from "./affinity.js"
 
 import type { SessionSchema } from "./schema.js"

@@ -1,3 +1,7 @@
+/**
+ * 会话输入区 — QueuePanel。
+ * 会话界面输入区的实现中负责 QueuePanel 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, For, on, onCleanup, Show, untrack } from "solid-js"
 import { DragDropProvider, PointerSensor } from "@dnd-kit/solid"
 import { isSortable, useSortable } from "@dnd-kit/solid/sortable"

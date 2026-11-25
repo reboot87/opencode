@@ -1,3 +1,7 @@
+/**
+ * 对比页 — Index 出口。
+ * 集中导出 对比页 中 Index 相关的实现、组件与类型。
+ */
 import { Meta, Title } from "@solidjs/meta"
 import { ProviderIcon } from "@opencode/ui/provider-icon"
 import { createAsync } from "@solidjs/router"

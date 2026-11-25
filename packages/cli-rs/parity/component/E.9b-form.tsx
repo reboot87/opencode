@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid E9bForm：该文件实现 E9bForm 相关的状态与逻辑。
+ */
 // P-COMP fixtures for the form prompt (packages/tui/src/routes/session/form.tsx), one per field kind plus the
 // review: crates/tui/tests/all/form_parity.rs. The Rust prompt sits in the session route of a 100x30 app, inside two
 // columns of padding on each side, so the TS prompt renders alone at 96x30.

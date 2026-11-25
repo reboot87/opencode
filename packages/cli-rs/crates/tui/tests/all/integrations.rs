@@ -1,4 +1,6 @@
 //! Integration dialogs and their credential requests.
+//!
+//! 终端界面测试：`integrations`。
 
 use crate::support::{self, Fake, Harness, Log, WAIT, deref_harness, list};
 

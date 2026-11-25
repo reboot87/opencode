@@ -1,5 +1,7 @@
 //! Limits concurrent service startup attempts to two. A clean exit means another contender won; back off but retain
 //! the first startup error.
+//!
+//! 服务层：`contender`。
 
 use std::time::{Duration, Instant};
 

@@ -1,3 +1,7 @@
+/**
+ * 通用设置 — InterfaceMode。
+ * 语言、启动行为等通用设置中负责 InterfaceMode 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, Show, createUniqueId } from "solid-js"
 import { Icon } from "@opencode/ui/icon"
 import { Select } from "@opencode/ui/select"

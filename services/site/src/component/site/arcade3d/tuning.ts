@@ -7,6 +7,8 @@ import { setSiteSetting, siteSettings } from "../settings"
  * Live settings for the three.js arcade, shown in the site's Settings panel ("404 arcade", ⇧S or the
  * gear). Each control has a range and a default; the defaults are the tuned look. Values persist in
  * the site's settings and apply every frame.
+ *
+ * 3D 街机场景组件：调校。
  */
 
 type Range = { label: string; min: number; max: number; step: number; value: number; unit?: string }

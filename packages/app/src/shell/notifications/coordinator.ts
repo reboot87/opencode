@@ -1,3 +1,7 @@
+/**
+ * 外壳通知 — Coordinator。
+ * 应用级通知的展示中负责 Coordinator 部分，提供该部分所需的实现与类型定义。
+ */
 import { onCleanup, untrack } from "solid-js"
 import { Predicate } from "effect"
 import { INITIAL_FOCUS_LOCK_STATE, transitionFocusLock, type FocusLockEvent } from "./focus-lock-machine"

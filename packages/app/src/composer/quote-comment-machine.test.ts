@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — QuoteCommentMachineTest。
+ * 会话输入区的组合逻辑与附件处理中负责 QuoteCommentMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, describe, expect, jest, test } from "bun:test"
 import { createRoot } from "solid-js"
 import { createMemoryComposerState } from "./state"

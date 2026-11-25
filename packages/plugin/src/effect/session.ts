@@ -1,3 +1,7 @@
+/**
+ * Effect 风格插件 API — 会话领域。
+ * 插件对会话的提示、消息与执行选项的干预能力。此文件定义 Effect 风格 下该领域的接口与类型，与其它领域共同构成插件 API 表面。
+ */
 import type { ExperimentalSessionApi, SessionApi } from "@opencode/client/effect/api"
 import type { GenerationOptionsFields, Message, SystemPart } from "@opencode/ai/effect"
 import type { Agent } from "@opencode/schema/agent"

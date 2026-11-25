@@ -1,4 +1,6 @@
 //! Monday-first activity weeks for the CLI and TUI stats views.
+//!
+//! 基础 UI 组件库：活动·calendar。
 
 use opencode_api_types::SessionStatsActivity;
 use opencode_util::time::{Date, MONTHS, Zone};

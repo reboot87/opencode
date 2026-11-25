@@ -1,3 +1,7 @@
+/**
+ * 模块 — Secrets。
+ * 该目录下的功能模块中负责 Secrets 部分，提供该部分所需的实现与类型定义。
+ */
 import { Schema } from "effect"
 
 const SECRET_PATTERNS: ReadonlyArray<{ readonly label: string; readonly pattern: RegExp }> = [

@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — DevtoolsBar。
+ * 终端界面（Solid）组件中负责 DevtoolsBar 部分，提供该部分所需的实现与类型定义。
+ */
 import { CliRenderEvents, TextAttributes, type Renderable } from "@opentui/core"
 import { TimeToFirstDraw, useRenderer, useTerminalDimensions } from "@opentui/solid"
 import { open } from "node:fs/promises"

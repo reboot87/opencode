@@ -1,3 +1,10 @@
+/**
+ * 供应商的测试。
+ *
+ * 被测模块：@opencode/core/config/provider
+ *
+ * 覆盖配置加载、合并、校验与分层覆盖（global / project / local）的行为。
+ */
 import { describe, expect } from "bun:test"
 import { Money } from "@opencode/schema/money"
 import { Document, Info, type Entry } from "@opencode/schema/config"

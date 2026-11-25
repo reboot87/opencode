@@ -1,3 +1,7 @@
+/**
+ * 标签页 — TabsTest。
+ * 多标签页的打开与切换中负责 TabsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, describe, expect, setSystemTime, test } from "bun:test"
 import { createRoot, getOwner, onCleanup } from "solid-js"
 import { createTabMemory } from "./memory"

@@ -1,3 +1,7 @@
+/**
+ * 组件实验室 — ForceFocus。
+ * 用于试用与调试 UI 组件的页面中负责 ForceFocus 部分，提供该部分所需的实现与类型定义。
+ */
 // Story-only. Focus rings only show while an element matches :focus-visible, and only one element can. To show many at
 // once, this copies each stylesheet rule that mentions :focus, :focus-visible or :focus-within into a lab-only sheet,
 // with those pseudo-classes replaced by [data-lab-focus] (and :focus-within by the attribute on the element or a

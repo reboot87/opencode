@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — AppLifecycleTest。
+ * 终端界面的测试中负责 AppLifecycleTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, spyOn, test } from "bun:test"
 import { EmbeddedTerminalRenderable, type Renderable } from "@opentui/core"
 import { createTestRenderer } from "@opentui/core/testing"

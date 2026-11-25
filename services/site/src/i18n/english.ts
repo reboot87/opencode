@@ -1,3 +1,6 @@
+/**
+ * 多语言文案：`english`。
+ */
 import { dict } from "./en"
 
 // The English the browser reads in English whatever the page language (the page copy source,

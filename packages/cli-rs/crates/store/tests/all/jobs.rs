@@ -1,4 +1,6 @@
 //! The running-job store (`packages/client/test/solid-job.test.ts`).
+//!
+//! 存储层测试：作业。
 
 use crate::common;
 

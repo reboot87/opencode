@@ -11,7 +11,10 @@
 // https://opencode.ai/install, anomalyco/tap/opencode (1.19.5) and the opencode-bin AUR package
 // (1.19.5). test/install-commands.test.ts keeps them out of the site.
 
-/** The home install row, the Terminal and Mini pages, llms.txt, the console API and the view-source comment. */
+/** The home install row, the Terminal and Mini pages, llms.txt, the console API and the view-source comment.
+ *
+ * 站点共享逻辑：安装命令。
+ */
 export const installs = [
   { id: "curl", name: "Script", command: "curl -fsSL https://opencode.ai/v2/install | bash" },
   { id: "npm", name: "npm", command: "npm install -g @opencode/cli" },

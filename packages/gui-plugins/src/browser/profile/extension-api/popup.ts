@@ -1,3 +1,7 @@
+/**
+ * 浏览器扩展 API — Popup。
+ * 浏览器插件暴露给扩展的接口中负责 Popup 部分，提供该部分所需的实现与类型定义。
+ */
 import electron, { type BrowserWindow, type Rectangle } from "electron"
 import type { ExtensionTabs } from "./tabs"
 

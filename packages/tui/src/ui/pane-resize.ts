@@ -1,3 +1,7 @@
+/**
+ * 终端 UI — PaneResize。
+ * 终端界面的通用 UI 组件中负责 PaneResize 部分，提供该部分所需的实现与类型定义。
+ */
 import { MouseButton, type MouseEvent } from "@opentui/core"
 import { createEffect, createSignal } from "solid-js"
 

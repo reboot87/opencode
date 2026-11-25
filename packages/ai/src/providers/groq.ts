@@ -1,3 +1,7 @@
+/**
+ * Groq provider 门面。
+ * 基于 OpenAI 兼容 chat 协议，提供 Groq 高速推理模型工厂。
+ */
 import { Effect, Schema } from "effect"
 import type { ProviderPackage } from "../provider-package.js"
 import { OpenAIChat } from "../protocols/openai-chat.js"

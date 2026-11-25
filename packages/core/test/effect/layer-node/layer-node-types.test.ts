@@ -1,3 +1,10 @@
+/**
+ * 层·节点·类型定义的测试。
+ *
+ * 被测模块：@opencode/core/effect/layer-node/layer-node-types
+ *
+ * 覆盖 Effect 运行时的分层节点、作用域与资源释放行为。
+ */
 import { test } from "bun:test"
 import { Context, Effect, Layer } from "effect"
 import { LayerNode } from "@opencode/util/effect/layer-node"

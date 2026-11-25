@@ -1,3 +1,8 @@
+/**
+ * 插件·模式定义脚本。
+ *
+ * Rust CLI 的代码生成器：由 TypeScript 单一来源生成 Rust 代码。
+ */
 // Generates the plugin contract schema from its Rust types.
 import { format, resolveConfig } from "prettier"
 

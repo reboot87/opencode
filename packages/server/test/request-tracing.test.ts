@@ -1,3 +1,10 @@
+/**
+ * 请求·追踪的测试。
+ *
+ * 被测模块：@opencode/server/request-tracing
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { Effect, Option, Scope, Tracer } from "effect"
 import { HttpMiddleware, HttpServer, HttpServerRequest, HttpServerResponse } from "effect/http"

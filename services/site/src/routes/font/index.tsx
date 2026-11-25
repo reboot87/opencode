@@ -1,3 +1,6 @@
+/**
+ * 字体页路由：索引。
+ */
 import "./index.css"
 import { Title, Meta } from "@solidjs/meta"
 import { LocaleLinks } from "~/component/locale-links"

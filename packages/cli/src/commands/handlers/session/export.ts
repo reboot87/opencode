@@ -1,3 +1,7 @@
+/**
+ * session export 命令。
+ * 导出会话数据为文件。
+ */
 import { autocomplete, cancel, intro, isCancel, log, outro } from "@clack/prompts"
 import { OpenCode } from "@opencode/client"
 import { Service } from "@opencode/client/effect/service"

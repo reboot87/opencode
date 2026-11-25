@@ -1,3 +1,7 @@
+/**
+ * Location 事件类型。
+ * 定义与工作位置相关的事件结构。
+ */
 export * as LocationEvent from "./location-event.js"
 
 import { ephemeral, inventory } from "./event.js"

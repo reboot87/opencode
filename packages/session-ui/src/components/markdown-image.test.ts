@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — MarkdownImageTest。
+ * 跨场景复用的通用 UI 组件中负责 MarkdownImageTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { GlobalRegistrator } from "@happy-dom/global-registrator"
 import { afterAll, afterEach, beforeAll, describe, expect, jest, test } from "bun:test"
 import { createMarkdownImages, localImagePath, localLinkPath } from "./markdown-image"

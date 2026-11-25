@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — Entry。
+ * GUI 插件的实现中负责 Entry 部分，提供该部分所需的实现与类型定义。
+ */
 // @refresh reload
 
 import "@/runtime/polyfills"

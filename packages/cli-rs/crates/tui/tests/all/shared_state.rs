@@ -1,4 +1,6 @@
 //! Session-scoped selection and shared-file merges across independent writers.
+//!
+//! 终端界面测试：共享状态。
 
 use crate::support::{self, Fake, Harness, Log, WAIT, deref_harness, list};
 

@@ -1,3 +1,5 @@
+//! 基础 UI 组件库：`tests`。
+
 use super::*;
 use opentui::input::{Event, Input, Parser};
 use serde_json::Value;

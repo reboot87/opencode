@@ -1,4 +1,7 @@
-/** Pages the history keeps, and the most one import brings: the most used and most recent. */
+/**
+ * 
+ * Pages the history keeps, and the most one import brings: the most used and most recent. 浏览历史中负责 Page 部分：浏览器访问历史中与 Page 相关的状态、交互与渲染逻辑。
+ */
 export const MAX_PAGES = 50_000
 
 /** A longer address is not one a person returns to by typing; other browsers keep ones of many thousands. */

@@ -1,3 +1,7 @@
+/**
+ * 后台任务类型。
+ * 定义后台任务的状态、输入输出与恢复信息。
+ */
 export * as Job from "./job.js"
 
 import { Schema } from "effect"

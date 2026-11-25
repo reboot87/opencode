@@ -1,3 +1,7 @@
+/**
+ * Pierre 组件 — CommentedLines。
+ * 会话界面的基础组件库中负责 CommentedLines 部分，提供该部分所需的实现与类型定义。
+ */
 import { type SelectedLineRange } from "@pierre/diffs"
 import { diffLineIndex, diffRowIndex } from "./diff-selection"
 

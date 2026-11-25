@@ -1,3 +1,7 @@
+/**
+ * 外壳命令 — Desktop。
+ * 应用外壳提供的命令中负责 Desktop 部分，提供该部分所需的实现与类型定义。
+ */
 import { useLanguage } from "@/runtime/i18n/language"
 import { usePlatform } from "@/runtime/platform/platform"
 import { useCommand, type CommandOption } from "./command"

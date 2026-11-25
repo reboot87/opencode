@@ -9,6 +9,8 @@ import { isRtl } from "~/lib/direction"
  * that size, over a bar the content passes under. A scroll-driven animation on the title's
  * view timeline does this where supported; elsewhere a scroll listener sets the same values each
  * frame. Only transform and opacity change, so the title keeps its space and nothing reflows.
+ *
+ * 站点界面组件：sticky·标题。
  */
 export function PageTitle(props: { title: string }) {
   let title!: HTMLHeadingElement

@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — TimelineSeparator。
+ * 跨场景复用的通用 UI 组件中负责 TimelineSeparator 部分，提供该部分所需的实现与类型定义。
+ */
 import { ProviderIcon } from "@opencode/ui/provider-icon"
 import { Tooltip } from "@opencode/ui/tooltip"
 import { Show } from "solid-js"

@@ -1,3 +1,7 @@
+/**
+ * 性能测试 — QuestionBench。
+ * 界面渲染性能基准中负责 QuestionBench 部分，提供该部分所需的实现与类型定义。
+ */
 // The new question dock with its motion on: five questions, switched with the arrow keys while each switch is still
 // moving, so the frame loop steps the switch, the dock's heights and the footer every frame. At 1440×900.
 import { bench, web } from "@hona/strobe"

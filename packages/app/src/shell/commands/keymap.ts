@@ -1,3 +1,7 @@
+/**
+ * 外壳命令 — Keymap。
+ * 应用外壳提供的命令中负责 Keymap 部分，提供该部分所需的实现与类型定义。
+ */
 import { Keymap, type KeymapHost } from "@opentui/keymap"
 import {
   registerBackspacePopsPendingSequence,

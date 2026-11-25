@@ -1,5 +1,7 @@
 //! Compares store state and outgoing reads with the recorded event folds. A listed difference must still differ, so
 //! stale exceptions fail.
+//!
+//! 存储层测试：fold·oracle。
 
 use crate::common;
 

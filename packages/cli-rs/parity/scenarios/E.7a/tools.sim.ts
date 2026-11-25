@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：工具·模拟。
+ *
+ * 规格编号：E.7a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // P-TUI version of `E.7a/tools.app.ts`: core tool rows (V05a) from the real tool runtime: a shell that fails with
 // its output, a read of a line range, and a `patch` with a unified diff, each call in its own row
 // (`session.grouping: none`). The server has no LSP here, so there is no diagnostic.

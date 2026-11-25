@@ -1,3 +1,7 @@
+/**
+ * 会话差异计算（SessionDiff）。
+ * 计算一个 turn 或一段会话内文件变更差异，处理位置解码与区间错误。
+ */
 export * as SessionDiff from "./diff.js"
 
 import { and, asc, desc, eq, gt, lt, sql } from "drizzle-orm"

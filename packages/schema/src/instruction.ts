@@ -1,3 +1,7 @@
+/**
+ * 指令类型。
+ * 定义指令内容与渲染结果结构。
+ */
 export * as Instruction from "./instruction.js"
 
 import { Schema } from "effect"

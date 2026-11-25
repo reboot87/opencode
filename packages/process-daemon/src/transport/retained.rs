@@ -1,3 +1,5 @@
+//! 进程间传输通道：已保留。
+
 use std::ptr::NonNull;
 
 /// Own a value whose raw pointer is retained by native I/O. Moving this owner or

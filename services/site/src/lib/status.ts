@@ -1,3 +1,6 @@
+/**
+ * 站点共享逻辑：`status`。
+ */
 import { query } from "@solidjs/router"
 import { staleValue } from "~/lib/edge-cache"
 

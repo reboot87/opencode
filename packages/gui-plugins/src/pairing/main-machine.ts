@@ -1,4 +1,7 @@
-/** Ceiling for `opencode service get remote`. Every command has one, so a hung command never holds the queue. */
+/**
+ * 
+ * Ceiling for `opencode service get remote`. Every command has one, so a hung command never holds the queue. 配对插件中负责 MainMachine 部分：设备配对流程中与 MainMachine 相关的状态、交互与渲染逻辑。
+ */
 export const SERVICE_READ_TIMEOUT_MS = 20_000
 
 /** `opencode service set remote`, which creates the tunnel the first time it turns on. */

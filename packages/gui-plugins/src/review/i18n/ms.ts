@@ -1,3 +1,7 @@
+/**
+ * 审查文案 — Ms。
+ * 审查插件的多语言文案中负责 Ms 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "tab.title": "Semak",
   "tab.count.one": "{{count}} fail ditukar",

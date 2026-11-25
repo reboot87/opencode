@@ -1,3 +1,7 @@
+/**
+ * ACP 会话管理。
+ * 管理 ACP 会话与附加的 MCP 服务器。
+ */
 import { isDeepStrictEqual } from "node:util"
 import type { McpServer, SessionConfigOption } from "@agentclientprotocol/sdk"
 import type { OpenCodeClient, OpenCodeEvent } from "@opencode/client/effect"

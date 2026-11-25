@@ -1,5 +1,11 @@
 #!/usr/bin/env bun
 
+/**
+ * 前置准备·录制·环境变量脚本。
+ *
+ * AI 包的开发脚本：生成代码、校验供应商适配与跑基准。
+ */
+
 import { NodeFileSystem } from "@effect/platform-node"
 import * as path from "node:path"
 import * as prompts from "@clack/prompts"

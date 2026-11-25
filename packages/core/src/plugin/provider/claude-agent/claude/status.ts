@@ -1,3 +1,7 @@
+/**
+ * Claude 会话状态。
+ * 定义 Claude 会话的运行状态与查询接口。
+ */
 export * as ClaudeStatus from "./status.js"
 
 import { Effect, Semaphore, SubscriptionRef } from "effect"

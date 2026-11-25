@@ -1,3 +1,7 @@
+/**
+ * OpenRouter provider 门面。
+ * 聚合网关 provider：封装 chat / responses 协议与路由（模型排序、插件、推理预算、图片尺寸档位），并提供 image / video / decision / embedding 模型工厂。
+ */
 import { Effect, Schema } from "effect"
 import { Route } from "../route/client.js"
 import { Endpoint } from "../route/endpoint.js"
@@ -142,6 +146,8 @@ const OpenRouterBody = Schema.StructWithRest(
 )
 export type OpenRouterBody = Schema.Schema.Type<typeof OpenRouterBody>
 
+// Chat 协议：复用 OpenAI Chat 的请求/流式解析，仅在 assist 消息上把 reasoning 内容规整为
+// OpenRouter 期望的 reasoning / reasoning_details 字段，并合并 provider 特有选项。
 export const protocol = Protocol.make({
   id: "openrouter-chat",
   body: {
@@ -171,6 +177,7 @@ export const protocol = Protocol.make({
 
 // OpenRouter forwards `reasoning.max_tokens` as the upstream thinking budget. Upstreams such as Anthropic and Alibaba
 // reject one that is not below the output limit; 1,024 is Anthropic's minimum budget.
+// 把推理预算收敛到输出上限以下：部分上游（Anthropic、阿里）要求预算严格小于 maxTokens，且 Anthropic 最小为 1024。
 const fitReasoning = (reasoning: Record<string, unknown>, maxTokens: number | undefined) =>
   typeof reasoning.max_tokens === "number"
     ? { ...reasoning, max_tokens: ProviderShared.fitThinkingBudget(reasoning.max_tokens, maxTokens, 1_024) }
@@ -202,6 +209,8 @@ const IMAGE_RESOLUTIONS = new Set(["512", "768", "1K", "1.5K", "2K", "4K"])
 
 // A pixel `size` renders at the upstream's own tier (Gemini 2K comes back as 4K) and FLUX 3 rejects it, so sizing goes
 // out as an aspect ratio and a resolution tier. Values OpenRouter doesn't list are left out.
+// 图片尺寸以「宽高比 + 分辨率档位」下发，而非像素尺寸：像素尺寸会被上游按自己的档位重映射（如 Gemini 2K 变 4K）。
+// 只保留 OpenRouter 明确支持的档位，其余省略交由上游默认。
 const imageSizing: OpenAIImageSizing = (request) => {
   const resolution = request.resolution
     ?.toUpperCase()
@@ -260,6 +269,8 @@ const responsesRoute = Route.make({
 
 export const routes = [route, responsesRoute]
 
+// 核心工厂：构建 chat / responses 路由及 image / video / decision / embedding 各模态模型工厂。
+// 聚合网关特有的 provider 路由（模型排序、插件、推理预算）通过 providerOptions 透传。
 export const configure = (input: Config = {}) => {
   const options = bearerRouteDefaults(input, "OPENROUTER_API_KEY", baseURL)
   const chatRoute = route.with(options)

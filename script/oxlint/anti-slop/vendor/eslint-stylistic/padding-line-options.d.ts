@@ -1,3 +1,6 @@
+/**
+ * 移植自 eslint-stylistic 的规则：内边距行选项·d。
+ */
 /* GENERATED, DO NOT EDIT DIRECTLY */
 
 /* @checksum: 3QCTtOH6rJM5_AGJ58rGpeEaBEfaJz17MSCxWB4X_PU */

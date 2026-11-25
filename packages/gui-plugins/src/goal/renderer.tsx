@@ -1,3 +1,7 @@
+/**
+ * 目标插件 — Renderer。
+ * 目标（goal）管理的 GUI 插件中负责 Renderer 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, Match, onCleanup, Show, Switch, untrack } from "solid-js"
 import { ComposerPill, createKeyed, Style, type ComposerPillProps, type Plugin } from "@opencode/plugin/gui"
 import { Goal } from "@opencode/schema/goal"

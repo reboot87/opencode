@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — WriteTest。
+ * 终端界面的测试中负责 WriteTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect } from "bun:test"
 import { join } from "node:path"
 import { ByteSize, Effect, FileSystem, Option } from "effect"

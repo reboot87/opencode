@@ -1,4 +1,6 @@
 //! Static shell completion scripts. Completion never needs to start the CLI again.
+//!
+//! 命令行入口：补全。
 
 use crate::args::{Arg, Flag, Kind, ROOT, Shell, Spec};
 

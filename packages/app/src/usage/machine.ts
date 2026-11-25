@@ -1,3 +1,7 @@
+/**
+ * 用量展示 — Machine。
+ * 用量统计的界面中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { UsageLimitsInfo } from "@opencode/client/promise"
 
 /** How long one load of the usage limits may run before the dialog offers Try again. */

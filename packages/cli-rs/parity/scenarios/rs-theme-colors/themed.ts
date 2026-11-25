@@ -1,3 +1,8 @@
+/**
+ * 对等性应用场景：themed。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Reruns another step's scenario in a pinned theme, so P-APP compares the colors of every surface it shows in
 // themes other than the default. `deviation` replaces the deviations of every checkpoint.
 import type { AppScenario, Deviation } from "../../lib/app"

@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — FindBar。
+ * 内置浏览器功能的 GUI 插件中负责 FindBar 部分，提供该部分所需的实现与类型定义。
+ */
 import { Icon } from "@opencode/ui/icon"
 import { IconButton } from "@opencode/ui/icon-button"
 import { Show, onMount, untrack } from "solid-js"

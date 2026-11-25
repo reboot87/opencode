@@ -1,3 +1,7 @@
+/**
+ * 持久 PTY 类型。
+ * 定义持久终端的元数据、角色、信号与流事件。
+ */
 export * as PersistentPty from "./persistent-pty.js"
 
 import { Schema } from "effect"

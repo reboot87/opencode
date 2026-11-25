@@ -1,3 +1,7 @@
+/**
+ * MCP 事件流重连策略。
+ * 定义指数退避重连 Schedule 与事件流拒绝/终止错误。
+ */
 import { Schedule, Schema } from "effect"
 
 // A dropped event stream or list-change listener reopens after a delay growing from a second to about 30 seconds,

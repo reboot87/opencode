@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — PluginServerStreamTest。
+ * 浏览器环境下的测试中负责 PluginServerStreamTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, mock, test } from "bun:test"
 import { createRoot, createSignal } from "solid-js"
 import type { ServerConnection } from "@/runtime/server/registry"

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：文件·CLI。
+ *
+ * 规格编号：C.10。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `-f`: text files go inline in the prompt text, an image and a binary file as data URLs; one file
 // is in a subdirectory.
 import { defineCli } from "../../cli/run"

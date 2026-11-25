@@ -1,3 +1,7 @@
+/**
+ * 组件实验室 — Motion。
+ * 用于试用与调试 UI 组件的页面中负责 Motion 部分，提供该部分所需的实现与类型定义。
+ */
 import { motionGlobals, motionPresets, motionTuning, type MotionKnob } from "@opencode/ui/motion-tuning"
 import { applyMotion, motionField } from "@opencode/ui/motion-tuning-fields"
 import { action, type Field, type Values } from "knobs"

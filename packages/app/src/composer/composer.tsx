@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — Composer。
+ * 会话输入区的组合逻辑与附件处理中负责 Composer 部分，提供该部分所需的实现与类型定义。
+ */
 import { Show, createEffect, createMemo, createSignal, onCleanup, untrack } from "solid-js"
 import { makeEventListener } from "@solid-primitives/event-listener"
 import { createMediaQuery } from "@solid-primitives/media"

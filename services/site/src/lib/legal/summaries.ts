@@ -5,6 +5,8 @@ import type { LegalNode } from "~/lib/legal"
  * a restatement of what the document itself says with a link to the section that says it. Nothing
  * here adds to or changes the documents; the full text applies. Kept out of the document files so
  * the documents' version history only tracks the legal text.
+ *
+ * 法律文档生成逻辑：摘要。
  */
 export const legalSummaries: Record<string, LegalNode[][]> = {
   "/legal/privacy-policy": [

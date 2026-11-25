@@ -1,3 +1,7 @@
+/**
+ * grep 工具。
+ * 在文件内容中做正则/文本搜索并输出匹配结果的工具。
+ */
 export * as GrepTool from "./grep.js"
 
 import type { Context } from "@opencode/plugin/effect/plugin"

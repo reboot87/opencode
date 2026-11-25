@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：前台·信号·伪终端。
+ *
+ * 规格编号：P.0b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A plugin's program in the foreground gets the signals of the terminal's keys, and the TUI does not:
 // Ctrl+C and Ctrl+\ end the program alone, Ctrl+Z neither stops the TUI nor strands it (the
 // program is continued), and afterwards a key reaches the same TUI. The TUI works in the fake server's directory,

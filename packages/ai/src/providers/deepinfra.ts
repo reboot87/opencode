@@ -1,3 +1,7 @@
+/**
+ * DeepInfra provider 门面。
+ * 封装 chat 与 embeddings 协议，提供模型工厂与鉴权配置。
+ */
 import type { ProviderPackage } from "../provider-package.js"
 import { OpenAIChat } from "../protocols/openai-chat.js"
 import { OpenAIEmbeddings } from "../protocols/openai-embeddings.js"

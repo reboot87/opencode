@@ -1,4 +1,6 @@
 //! Exercise store-to-UI delivery while the UI queue is full.
+//!
+//! 终端界面测试：`pump`。
 
 use crate::support::{self, DIRECTORY};
 

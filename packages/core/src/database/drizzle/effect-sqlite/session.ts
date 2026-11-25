@@ -1,3 +1,7 @@
+/**
+ * drizzle SQLite Effect 会话。
+ * 把 drizzle-orm 的 SQLite 会话适配到 Effect 运行时（本文件源自 drizzle-orm 上游）。
+ */
 /* oxlint-disable */
 import * as Context from "effect/Context"
 import * as Effect from "effect/Effect"

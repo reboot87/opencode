@@ -1,3 +1,8 @@
+/**
+ * 管道实现：核心。
+ *
+ * 管道实现的 TypeScript 兼容适配层。
+ */
 // What a V2 plugin imports from `@opentui/core` that the JS host can give without a renderer: colors and text
 // attributes. The package's other exports are inert (`inert.ts`): a plugin that imports a renderable class loads, and
 // the class does nothing.

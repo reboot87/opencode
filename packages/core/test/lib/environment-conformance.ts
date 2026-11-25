@@ -1,3 +1,10 @@
+/**
+ * 环境·一致性的测试辅助模块。
+ *
+ * 被测模块：@opencode/core/lib/environment-conformance
+ *
+ * 核心测试的公共辅助模块：内存数据库、会话夹具与事件收集工具。
+ */
 import { describe, expect, test } from "bun:test"
 import { Effect } from "effect"
 import { Failed, NotFound, WrongKind, type Files } from "@opencode/core/environment/index"

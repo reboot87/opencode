@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：登录·中断·伪终端。
+ *
+ * 规格编号：C.5。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Ctrl+C while waiting for the browser: the attempt is cancelled on the server and the command ends.
 import { definePty } from "../../pty/run"
 import { integrationRoutes, location, oauthRoutes, sink } from "./fixture"

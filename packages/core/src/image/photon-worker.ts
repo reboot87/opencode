@@ -1,3 +1,7 @@
+/**
+ * Photon Worker 协议。
+ * 定义与图像处理 Worker 之间的请求/响应消息结构。
+ */
 import { parentPort } from "node:worker_threads"
 import type { Limits } from "../image.js"
 import { PhotonNormalize } from "./photon-normalize.js"

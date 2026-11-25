@@ -1,3 +1,7 @@
+/**
+ * Bedrock 鉴权工具。
+ * 实现 AWS SigV4 签名与凭证链解析。
+ */
 import { AwsV4Signer } from "aws4fetch"
 import { Effect } from "effect"
 import { Headers } from "effect/http"

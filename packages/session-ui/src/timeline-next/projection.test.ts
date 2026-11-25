@@ -1,3 +1,7 @@
+/**
+ * 时间线（新版） — ProjectionTest。
+ * 重构中的会话消息时间线中负责 ProjectionTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { SessionMessageAssistant, SessionMessageInfo, SessionMessageUser } from "@opencode/client/promise"
 import { Predicate } from "effect"

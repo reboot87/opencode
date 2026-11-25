@@ -1,3 +1,8 @@
+/**
+ * 派生测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { Effect, Layer, PlatformError } from "effect"
 import { ChildProcessSpawner } from "effect/process"
 import { CrossSpawnSpawner } from "@opencode/util/cross-spawn-spawner"

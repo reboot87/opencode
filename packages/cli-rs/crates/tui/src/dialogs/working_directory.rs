@@ -1,4 +1,6 @@
 //! Working-directory actions and clipboard export.
+//!
+//! 终端弹窗组件：working·目录。
 
 use crate::prelude::*;
 

@@ -1,3 +1,6 @@
+/**
+ * 页面路由：更新日志·JSON。
+ */
 import type { ChangelogData } from "~/lib/changelog"
 import { feedWait, loadChangelog } from "~/lib/changelog-releases"
 

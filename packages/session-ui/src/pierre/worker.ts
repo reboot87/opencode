@@ -1,3 +1,7 @@
+/**
+ * Pierre 组件 — Worker。
+ * 会话界面的基础组件库中负责 Worker 部分，提供该部分所需的实现与类型定义。
+ */
 import { WorkerPoolManager } from "@pierre/diffs/worker"
 import DiffsWorkerUrl from "@pierre/diffs/worker/worker.js?worker&url"
 import { highlightOptions } from "./index"

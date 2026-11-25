@@ -1,3 +1,7 @@
+/**
+ * Location 中间件。
+ * 从请求中解析并注入 Location 作用域的服务集合。
+ */
 import { FileSystem } from "@opencode/core/filesystem"
 import { Location } from "@opencode/core/location"
 import { LocationServiceMap } from "@opencode/core/location-services"

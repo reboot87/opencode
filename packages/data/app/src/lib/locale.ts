@@ -1,3 +1,7 @@
+/**
+ * 数据站工具 — Locale。
+ * 数据站点的通用工具中负责 Locale 部分，提供该部分所需的实现与类型定义。
+ */
 export const LOCALES = [
   "en",
   "zh",

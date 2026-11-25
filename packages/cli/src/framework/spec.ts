@@ -1,3 +1,7 @@
+/**
+ * 命令规范。
+ * 定义命令树的节点结构与类型约束。
+ */
 import { Command, type GlobalFlag } from "effect/cli"
 
 type Options<Config extends Command.Command.Config, Commands extends ReadonlyArray<Any>> = {

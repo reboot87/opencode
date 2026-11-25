@@ -1,3 +1,10 @@
+/**
+ * 集成·策略的测试。
+ *
+ * 被测模块：@opencode/server/integration-policy
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import { Context, Effect, Layer } from "effect"
 import { HttpEffect, HttpRouter, HttpServer } from "effect/http"

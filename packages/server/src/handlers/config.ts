@@ -1,3 +1,7 @@
+/**
+ * config 接口处理器。
+ * 配置接口处理器：读取与更新配置条目。
+ */
 import { Config } from "@opencode/core/config"
 import { ShellSelect } from "@opencode/core/shell/select"
 import { Effect } from "effect"

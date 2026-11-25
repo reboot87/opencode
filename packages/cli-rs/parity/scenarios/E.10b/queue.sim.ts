@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：队列·模拟。
+ *
+ * 规格编号：E.10b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Queued and steered prompts against the real inbox (V14, DLG38, DLG40,
 // DLG41). While the first step waits, one prompt steers and two queue (`<leader>enter`); the dock above the prompt
 // shows them, `<leader>q` opens its dialog, and Enter steers the second queued prompt. A click on the dock opens the

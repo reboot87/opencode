@@ -1,3 +1,7 @@
+/**
+ * UI 主题 — Color。
+ * 配色、间距与字号等设计令牌中负责 Color 部分，提供该部分所需的实现与类型定义。
+ */
 import type { HexColor, OklchColor } from "./types"
 
 function clamp(v: number, min: number, max: number) {

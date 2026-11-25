@@ -1,3 +1,7 @@
+/**
+ * 图标按钮 — IconButton。
+ * 仅含图标的按钮组件中负责 IconButton 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Root } from "@kobalte/core/button"
 import { type ComponentProps, splitProps } from "solid-js"
 import { JSX } from "solid-js"

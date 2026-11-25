@@ -1,3 +1,7 @@
+/**
+ * 浏览器配置 — Cookie。
+ * 浏览器插件的用户配置与身份中负责 Cookie 部分，提供该部分所需的实现与类型定义。
+ */
 import { Option, Schema } from "effect"
 
 /** The short-lived cookie the profile writes at start to learn whether cookies reach disk. No page or extension sees it. */

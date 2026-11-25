@@ -1,3 +1,7 @@
+/**
+ * 外壳路由 — SessionReferenceLookupMachineTest。
+ * 应用外壳的路由定义中负责 SessionReferenceLookupMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionInfo } from "@opencode/client/promise"
 import { describe, expect, test } from "bun:test"
 import {

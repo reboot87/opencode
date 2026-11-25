@@ -1,3 +1,8 @@
+/**
+ * 服务·夹具测试夹具。
+ *
+ * 为客户端测试提供响应体与错误码样例。
+ */
 import { expect } from "bun:test"
 import { mkdtemp, rename, rm } from "node:fs/promises"
 import { tmpdir } from "node:os"

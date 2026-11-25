@@ -1,3 +1,7 @@
+/**
+ * 远程机器驱动。
+ * 通过机器协议启动远程进程并传输标准输入输出，含 15 秒启动宽限与 64KiB stdin 分块。
+ */
 import { CrossSpawnSpawner } from "@opencode/util/cross-spawn-spawner"
 import { posix } from "node:path"
 import { Cause, Deferred, Effect, PlatformError, Queue, Redacted, Schema, Sink, Stream } from "effect"

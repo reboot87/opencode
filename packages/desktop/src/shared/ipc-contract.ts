@@ -1,3 +1,7 @@
+/**
+ * 共享代码 — IpcContract。
+ * 主进程与渲染进程共用的类型与工具中负责 IpcContract 部分，提供该部分所需的实现与类型定义。
+ */
 // The sidecar password never crosses into the renderer; the main process adds it to sidecar requests.
 export type ServerReadyData = {
   url: string

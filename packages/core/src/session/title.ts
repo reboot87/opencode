@@ -1,3 +1,7 @@
+/**
+ * 会话标题生成（SessionTitle）。
+ * 根据首条消息生成会话标题，带长度截断与上下文上限控制。
+ */
 export * as SessionTitle from "./title.js"
 
 import { isDeepStrictEqual } from "node:util"

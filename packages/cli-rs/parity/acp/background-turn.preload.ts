@@ -1,3 +1,8 @@
+/**
+ * ACP 对等性校验：后台·轮次·预加载。
+ *
+ * ACP 协议的对等性校验：比对会话握手与消息流转。
+ */
 // Fixture timing for `background-turn` (`bun test --preload`, passed by `run.ts`).
 //
 // The suite's fast shell exits at once. Its notice then lands in the turn that started it when the server queues it

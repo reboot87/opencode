@@ -1,3 +1,7 @@
+/**
+ * MCP stdio 传输。
+ * 通过子进程 stdio 与本地 MCP 服务器通信，处理关闭宽限期与强制终止、出站消息容量。
+ */
 export * as McpStdio from "./stdio.js"
 
 import { deserializeMessage, serializeMessage, type JSONRPCMessage, type Transport } from "@modelcontextprotocol/client"

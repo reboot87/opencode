@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — ElectronAddressTest。
+ * 内置浏览器功能的 GUI 插件中负责 ElectronAddressTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { realpathSync } from "node:fs"
 import { mkdir, mkdtemp, rm, writeFile } from "node:fs/promises"

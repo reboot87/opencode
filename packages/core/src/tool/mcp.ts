@@ -1,3 +1,7 @@
+/**
+ * MCP 工具命名与命名空间工具。
+ * 规范化 MCP 服务器名与工具名，生成命名空间化的工具标识，避免不同服务器间工具名冲突。
+ */
 export * as McpTool from "./mcp.js"
 
 import { ToolFailure } from "@opencode/ai/effect"

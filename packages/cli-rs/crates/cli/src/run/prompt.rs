@@ -1,5 +1,7 @@
 //! A noninteractive prompt settles before waiting for its background jobs. JSON output preserves unknown event and
 //! message fields.
+//!
+//! 命令行入口：提示词。
 
 use std::cell::{Cell, RefCell};
 use std::collections::HashMap;

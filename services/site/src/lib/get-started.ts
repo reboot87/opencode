@@ -13,6 +13,8 @@ import { docsUrl } from "~/lib/docs"
  *   DeepSeek V4.1 Flash Free, MiMo-V2.6-Flash Free and a few more; the TUI's
  *   model picker marks them "Free" (tui component/dialog-model.tsx).
  * - OpenCode Go is $10/month and Go Plus $40/month (the Console's /console/go page).
+ *
+ * 站点共享逻辑：获取入门。
  */
 /** The free models the site names (models.dev's opencode provider has the full, live list). */
 export const freeModels = ["Big Pickle", "DeepSeek V4.1 Flash Free"]

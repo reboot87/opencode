@@ -1,4 +1,6 @@
 //! Mini preferences and verbosity presets.
+//!
+//! 精简版实现：设置。
 
 use opencode_local::cli_config::{Info, Mini, MiniWorkSpinner, Visibility};
 

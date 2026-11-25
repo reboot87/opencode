@@ -1,3 +1,10 @@
+/**
+ * 插件的测试。
+ *
+ * 被测模块：@opencode/core/plugin/provider/claude-agent/plugin
+ *
+ * 覆盖 Claude Agent 供应商插件的请求转换、工具桥接与流式事件映射。
+ */
 import { Message, SystemPart } from "@opencode/ai/effect"
 import type { LanguageModelV3 } from "@ai-sdk/provider"
 import type { AccountInfo } from "@anthropic-ai/claude-agent-sdk"

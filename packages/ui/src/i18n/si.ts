@@ -1,3 +1,7 @@
+/**
+ * 国际化 — Si。
+ * 多语言文案资源中负责 Si 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "ui.sessionReview.title": "සැසි වෙනස්කම්",
   "ui.sessionReview.title.git": "Git වෙනස්කම්",

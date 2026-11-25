@@ -1,3 +1,7 @@
+/**
+ * Claude Agent provider 入口。
+ * 组装 Claude Agent 的 provider（io、会话、工具与语言模型适配）。
+ */
 import { define } from "@opencode/plugin/effect/plugin"
 import { Effect, Option, Stream } from "effect"
 import { ClaudeAccounts } from "./claude/accounts.js"

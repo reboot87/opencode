@@ -1,3 +1,7 @@
+/**
+ * iroh 绑定。
+ * 声明 iroh 传输绑定（可选依赖）。
+ */
 import type { Endpoint, EndpointAddr, EndpointId } from "@number0/iroh"
 import { createRequire } from "node:module"
 

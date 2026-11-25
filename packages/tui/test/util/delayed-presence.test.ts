@@ -1,3 +1,7 @@
+/**
+ * 工具测试 — DelayedPresenceTest。
+ * 终端工具函数的测试中负责 DelayedPresenceTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, jest, test } from "bun:test"
 import { createRoot, createSignal } from "solid-js"
 import { createDelayedPresence } from "../../src/util/delayed-presence"

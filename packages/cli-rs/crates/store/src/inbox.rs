@@ -1,4 +1,6 @@
 //! Pending inbox items and optimistic prompt and compaction admission.
+//!
+//! 会话存储层：收件箱。
 
 use std::collections::HashSet;
 

@@ -1,3 +1,7 @@
+/**
+ * 会话时间线 — MessageTimeline。
+ * 会话消息时间线的渲染中负责 MessageTimeline 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, onCleanup, Show, type Accessor, type JSX } from "solid-js"
 import { Predicate } from "effect"
 import { abort } from "@opencode/util/abort"

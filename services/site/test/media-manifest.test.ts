@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：媒体清单。
+ */
 import { describe, expect, test } from "bun:test"
 import { createHash } from "node:crypto"
 import { existsSync, readFileSync } from "node:fs"

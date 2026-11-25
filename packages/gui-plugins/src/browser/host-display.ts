@@ -1,4 +1,7 @@
-/** The longest host a prompt, bar or list names as text; the address bar elides its own from the left instead. */
+/**
+ * 
+ * The longest host a prompt, bar or list names as text; the address bar elides its own from the left instead. 浏览器插件中负责 HostDisplay 部分：内置浏览器功能中与 HostDisplay 相关的状态、交互与渲染逻辑。
+ */
 export const HOST_MAX = 64
 
 /**

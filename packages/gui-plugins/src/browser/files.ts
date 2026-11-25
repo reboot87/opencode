@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — Files。
+ * 内置浏览器功能的 GUI 插件中负责 Files 部分，提供该部分所需的实现与类型定义。
+ */
 import { Browser } from "@opencode/plugin-browser/rpc"
 import { mkdir, readFile, stat, writeFile, rm } from "node:fs/promises"
 import { mkdirSync } from "node:fs"

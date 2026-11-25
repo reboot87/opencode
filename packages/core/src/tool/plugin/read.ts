@@ -1,3 +1,7 @@
+/**
+ * read 工具。
+ * 读取文件内容的工具，支持位置参数与媒体文件读取。
+ */
 export * as ReadTool from "./read.js"
 
 import type { Context } from "@opencode/plugin/effect/plugin"

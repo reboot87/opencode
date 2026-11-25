@@ -1,3 +1,6 @@
+/**
+ * 视频编辑器接口：[·path]。
+ */
 import type { APIEvent } from "@solidjs/start/server"
 
 // Development only: the video editor's API (src/component/video-editor/server.ts). Production builds drop the

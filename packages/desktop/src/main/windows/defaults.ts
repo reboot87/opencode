@@ -1,3 +1,7 @@
+/**
+ * 窗口管理 — Defaults。
+ * 浏览器窗口的创建与布局管理中负责 Defaults 部分，提供该部分所需的实现与类型定义。
+ */
 import { resolveThemeVariant } from "@opencode/ui/theme/resolve"
 import type { DesktopTheme } from "@opencode/ui/theme/types"
 import { desktopZoomLevels } from "@opencode/app/desktop-menu"

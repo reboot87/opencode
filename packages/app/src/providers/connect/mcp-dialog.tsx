@@ -1,3 +1,7 @@
+/**
+ * Provider 连接 — McpDialog。
+ * 连接 provider 的授权界面中负责 McpDialog 部分，提供该部分所需的实现与类型定义。
+ */
 import { Component, createEffect, createMemo, createSignal, onCleanup, Show, untrack } from "solid-js"
 import fuzzysort from "fuzzysort"
 import type { McpServer } from "@opencode/client/promise"

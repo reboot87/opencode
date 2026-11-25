@@ -1,3 +1,7 @@
+/**
+ * 会话搜索索引（SessionSearchIndex）。
+ * 定义索引版本、布局（compact/text）与消息类型编码，负责索引的读写与结构。
+ */
 export * as SessionSearchIndex from "./search-index.js"
 
 import { eq, sql } from "drizzle-orm"

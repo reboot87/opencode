@@ -1,3 +1,7 @@
+/**
+ * 提示输入测试 — DraftStashTest。
+ * 提示输入处理的测试中负责 DraftStashTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { saveDraft, takeDraft } from "../../src/component/prompt/draft-stash"
 import { emptyPrompt } from "../../src/prompt/history"

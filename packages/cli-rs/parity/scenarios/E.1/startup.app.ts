@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：startup·app。
+ *
+ * 规格编号：E.1。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `--session ses_b --fork` (T02): the session is forked, and the fork opens instead of the session.
 import { assistant, defineApp, session, user } from "../../lib/app"
 

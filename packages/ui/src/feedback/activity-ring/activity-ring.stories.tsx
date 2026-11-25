@@ -1,3 +1,7 @@
+/**
+ * 活动环 — ActivityRingStories。
+ * 环形活动指示组件中负责 ActivityRingStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { ActivityRing } from "./activity-ring"
 
 export default {

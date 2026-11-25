@@ -1,3 +1,8 @@
+/**
+ * 类型定义脚本。
+ *
+ * 面向 Rust 侧的辅助脚本：格式化、测试与工作区校验。
+ */
 // Emits Rust types from Effect schema representations.
 import type { SchemaRepresentation } from "effect"
 

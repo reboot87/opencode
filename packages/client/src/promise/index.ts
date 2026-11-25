@@ -1,3 +1,7 @@
+/**
+ * Promise 客户端出口。
+ * 集中导出 Promise 风格客户端的公共 API。
+ */
 import type { OpenCode } from "./client.js"
 
 export * from "./generated/index.js"

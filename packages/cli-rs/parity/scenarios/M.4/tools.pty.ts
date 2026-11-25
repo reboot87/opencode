@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：工具·伪终端。
+ *
+ * 规格编号：M.4。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `mini.tools: show` with shell output: the replayed history draws its tool calls (read, glob, todos, a failed
 // command), and a live turn streams a shell call's output and an edit's diff.
 import { definePty } from "../../pty/run"

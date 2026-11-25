@@ -1,3 +1,5 @@
+//! 终端界面路由：行内。
+
 use super::dispatch::{Inline, InlineTool, Props, ToolView, finite, format_path, number};
 use crate::routes::session::messages::list::Context;
 use opencode_ui::tool_info::{SearchInput, SkillInput, WebFetchInput, WebSearchInput, web_search_provider_name};

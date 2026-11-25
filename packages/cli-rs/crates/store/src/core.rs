@@ -2,6 +2,8 @@
 //! a request; both say what to read next as [`Effect`]s. A request begins under the store's owner, where a
 //! `State::begin_*` registers what may overtake it and returns what to fetch; whoever runs the store fetches it and
 //! hands the answer back as a [`Completion`]. Nothing here waits, locks or fetches.
+//!
+//! 会话存储层：核心。
 
 use opencode_api::generated::*;
 

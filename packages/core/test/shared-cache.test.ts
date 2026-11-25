@@ -1,3 +1,10 @@
+/**
+ * 共享·缓存的测试。
+ *
+ * 被测模块：@opencode/core/shared-cache
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import { Cause, Deferred, Duration, Effect, Exit, Fiber } from "effect"
 import { HttpClient, HttpClientError, HttpClientRequest, HttpClientResponse } from "effect/http"

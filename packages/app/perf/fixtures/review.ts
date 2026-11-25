@@ -1,4 +1,7 @@
-/** The review pane's selectors. Diff lines live in the diff viewer's shadow root, which `>>>` crosses. */
+/**
+ * 
+ * The review pane's selectors. Diff lines live in the diff viewer's shadow root, which `>>>` crosses. 性能夹具中负责 Review 部分：性能测试夹具中与 Review 相关的状态、交互与渲染逻辑。
+ */
 export const review = {
   /** Opens or closes the side panel, which shows its tab launcher until a tab is open. */
   toggle: 'button[aria-label="Toggle review"]',

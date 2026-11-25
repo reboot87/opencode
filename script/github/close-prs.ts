@@ -1,5 +1,9 @@
 #!/usr/bin/env bun
 
+/**
+ * GitHub 运维脚本：关闭·PR。
+ */
+
 import { parseArgs } from "util"
 
 const defaultRepo = "anomalyco/opencode"

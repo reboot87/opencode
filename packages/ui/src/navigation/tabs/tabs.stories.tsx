@@ -1,3 +1,7 @@
+/**
+ * 标签页 — TabsStories。
+ * 标签页导航组件中负责 TabsStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal, For } from "solid-js"
 import { Tabs, type TabsProps } from "./tabs"
 

@@ -1,3 +1,7 @@
+/**
+ * Provider 模型 — UnpaidStandaloneStories。
+ * provider 下模型的展示与配置中负责 UnpaidStandaloneStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { useDialog } from "@opencode/ui/context/dialog"
 import { createMemo, createSignal, onMount } from "solid-js"

@@ -1,3 +1,7 @@
+/**
+ * v1 数据库迁移（Bun 平台）。
+ * 把 v1 格式的会话、消息与事件数据迁移到当前表结构，带并发控制与状态报告。
+ */
 export * as V1Migration from "./v1-migration.bun.js"
 
 import { Cause, Effect, Fiber, Layer, Option, Schema, Semaphore } from "effect"

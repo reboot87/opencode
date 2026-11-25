@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：默认值·变体·伪终端。
+ *
+ * 规格编号：M.4。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A session without a model uses the location's default model, and the variant cycle steps through that model's
 // variants however the default model and the provider catalog race.
 import { definePty } from "../../pty/run"

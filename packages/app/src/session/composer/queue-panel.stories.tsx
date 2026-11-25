@@ -1,3 +1,7 @@
+/**
+ * 会话输入区 — QueuePanelStories。
+ * 会话界面输入区的实现中负责 QueuePanelStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, on } from "solid-js"
 import { createStore } from "solid-js/store"
 import { SessionQueuePanel } from "./queue-panel"

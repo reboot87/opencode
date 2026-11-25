@@ -1,3 +1,5 @@
+//! ACP 协议测试：配置选项。
+
 use opencode_acp::catalog::{Catalog, Mode};
 use opencode_acp::config_option::{Selection, config_options, parse_model_selection};
 use opencode_api::generated::{ModelInfo, ModelRef, ProviderID};

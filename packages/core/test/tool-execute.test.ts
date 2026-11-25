@@ -1,3 +1,10 @@
+/**
+ * 工具·execute的测试。
+ *
+ * 被测模块：@opencode/core/tool-execute
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { afterAll, beforeAll, describe, expect, test } from "bun:test"
 import fs from "fs/promises"
 import path from "path"

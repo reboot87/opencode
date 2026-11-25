@@ -1,3 +1,7 @@
+/**
+ * UI 上下文 — I18nTest。
+ * UI 包的上下文提供者中负责 I18nTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { createUiI18n, localizedListSeparator, pluralCategory, resolveTemplate, type UiI18nSource } from "./i18n"
 

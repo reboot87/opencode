@@ -1,4 +1,8 @@
-/** How long a dialog stays mounted once it starts closing, unless its layer asks for longer. */
+/**
+ * How long a dialog stays mounted once it starts closing, unless its layer asks for longer.
+ *
+ * 对话框的状态机：管理对话框的打开、堆叠与关闭。
+ */
 export const DIALOG_EXIT_MS = 100
 
 /**

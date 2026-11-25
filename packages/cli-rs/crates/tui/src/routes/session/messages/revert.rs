@@ -1,4 +1,6 @@
 //! Show the undo boundary and changed files; clearing the revert restores the hidden messages.
+//!
+//! 终端界面路由：回滚。
 
 use opencode_api::generated::{FileDiffInfo, FileDiffInfoStatus, SessionRevertClearInput};
 use unicode_width::UnicodeWidthStr;

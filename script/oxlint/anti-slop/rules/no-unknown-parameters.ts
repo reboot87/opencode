@@ -24,7 +24,10 @@ function isTypePredicateSubject(owner: ParameterOwner, parameterName: string): b
   );
 }
 
-/** Disallow unknown inputs except explicitly named error-cause enrichment. */
+/** Disallow unknown inputs except explicitly named error-cause enrichment.
+ *
+ * Oxlint 规则：无未知参数。
+ */
 export const noUnknownParametersRule = defineRule({
   meta: {
     type: "problem",

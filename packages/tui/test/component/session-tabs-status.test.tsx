@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid SessionTabsStatusTest：该文件实现 SessionTabsStatusTest 相关的状态与逻辑。
+ */
 import { testRender } from "@opentui/solid"
 import { MouseButton } from "@opentui/core"
 import { ManualClock } from "@opentui/core/testing"

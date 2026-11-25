@@ -1,3 +1,7 @@
+/**
+ * 国际化 — Sk。
+ * 多语言文案资源中负责 Sk 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "ui.messagePart.tools.used.few": "Použité {{count}}×: {{tools}}",
   "ui.messagePart.tools.used.many": "Použité {{count}}×: {{tools}}",

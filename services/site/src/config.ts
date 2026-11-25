@@ -1,5 +1,7 @@
 /**
  * Application-wide constants and configuration
+ *
+ * 站点入口：配置。
  */
 export const config = {
   consoleMarketingEnabled: import.meta.env.VITE_CONSOLE_MARKETING_ENABLED === "true",

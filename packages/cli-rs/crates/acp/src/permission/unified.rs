@@ -1,5 +1,7 @@
 //! The parts of jsdiff 8 (`diff`) the previews use: `parsePatch`, `reversePatch`, `applyPatch` with
 //! its default options (no fuzz, line endings converted), and the hunk ranges of `structuredPatch`.
+//!
+//! ACP 协议实现：`unified`。
 
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct Hunk {

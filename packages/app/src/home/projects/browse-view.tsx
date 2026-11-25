@@ -1,3 +1,7 @@
+/**
+ * 主页项目 — BrowseView。
+ * 主页中项目列表的展示中负责 BrowseView 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionInfo } from "@opencode/client/promise"
 import { Button } from "@opencode/ui/button"
 import { useDialog } from "@opencode/ui/context/dialog"

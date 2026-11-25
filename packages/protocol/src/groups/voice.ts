@@ -1,3 +1,7 @@
+/**
+ * 语音 API 分组。
+ * 定义实时语音会话的连接端点与传输结构。
+ */
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, OpenApi } from "effect/http-api"
 import { InvalidRequestError, LocationNotFoundError, ServiceUnavailableError } from "../errors.js"

@@ -1,3 +1,7 @@
+/**
+ * OpenCode 事件监听 provider 插件。
+ * 通过 x-opencode-event-watches 头建立服务端事件订阅，含租约关闭码 4401。
+ */
 export * as OpencodeWatches from "./opencode-watches.js"
 
 import { ToolFailure } from "@opencode/ai/effect"

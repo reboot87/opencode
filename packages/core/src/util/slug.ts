@@ -1,3 +1,7 @@
+/**
+ * Slug 生成。
+ * 用形容词+名词组合生成人类可读且可 URL 化的标识。
+ */
 export namespace Slug {
   const ADJECTIVES = [
     "brave",

@@ -6,7 +6,10 @@ import type { Platform } from "~/lib/user-agent"
 
 export type OS = "macOS" | "Windows" | "Linux" | null
 
-/** Phones and tablets can't install the desktop app. */
+/** Phones and tablets can't install the desktop app.
+ *
+ * 站点共享逻辑：桌面端构建。
+ */
 export function desktopOS(platform: Platform | undefined): OS {
   if (platform === "macos") return "macOS"
   if (platform === "windows") return "Windows"

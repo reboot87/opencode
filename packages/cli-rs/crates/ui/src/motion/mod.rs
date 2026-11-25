@@ -1,3 +1,5 @@
+//! 基础 UI 组件库入口。
+
 mod curve;
 mod one_cell;
 mod scanner;

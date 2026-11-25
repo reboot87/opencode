@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — Model。
+ * 会话输入区的组合逻辑与附件处理中负责 Model 部分，提供该部分所需的实现与类型定义。
+ */
 import { ImagePreview } from "@opencode/ui/image-preview"
 import { useDialog } from "@opencode/ui/context/dialog"
 import type { ReferenceInfo } from "@opencode/client/promise"

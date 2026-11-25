@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：右·内边距·app。
+ *
+ * 规格编号：E.6b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Messages and tool blocks keep two columns free on the right (#62104): a user message long enough to wrap, a
 // write whose path is cut to fit, an apply_patch with a deleted file whose path is cut, and the revert banner
 // with a long file path, at a narrow width.

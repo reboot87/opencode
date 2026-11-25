@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — PromptKeys。
+ * 内置浏览器功能的 GUI 插件中负责 PromptKeys 部分，提供该部分所需的实现与类型定义。
+ */
 import { pageLetter } from "./keys"
 
 // Who a key pressed in the app window belongs to while a page prompt (alert, confirm, prompt, "Leave site?", a

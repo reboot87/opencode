@@ -1,3 +1,6 @@
+/**
+ * 页面路由：llms.txt·完整·txt。
+ */
 import type { APIEvent } from "@solidjs/start/server"
 import { localeFromRequest } from "~/lib/language"
 import { llmsFullText } from "~/lib/llms"

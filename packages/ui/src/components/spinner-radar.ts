@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — SpinnerRadar。
+ * 跨场景复用的通用 UI 组件中负责 SpinnerRadar 部分，提供该部分所需的实现与类型定义。
+ */
 // Soft Radar, the activity spinner: a 5×5 dot grid whose lit head sweeps clockwise around each square ring, leaving a
 // fading trail, with the centre dot steady.
 //

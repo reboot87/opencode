@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — TabNav。
+ * 自定义窗口标题栏中负责 TabNav 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, onCleanup, Show, untrack, type JSX, type Ref } from "solid-js"
 import { createStore } from "solid-js/store"
 import { Predicate } from "effect"

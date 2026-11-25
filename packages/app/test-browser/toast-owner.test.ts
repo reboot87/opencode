@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — ToastOwnerTest。
+ * 浏览器环境下的测试中负责 ToastOwnerTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { beforeEach, describe, expect, test } from "bun:test"
 import { createSignal, type JSX } from "solid-js"
 import { showToast, toaster } from "@opencode/ui/toast"

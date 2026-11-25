@@ -19,7 +19,10 @@ import { ease, Plate, prefersReducedMotion, span, useClock, useSeen } from "./pl
 const HOLD = 1800
 const FADE = 400
 
-/** The length of one construction loop, including the hold on the finished glyph. */
+/** The length of one construction loop, including the hold on the finished glyph.
+ *
+ * 字体展示组件：`construction`。
+ */
 const loopLength = (letter: Letter) => constructionPhases(letter).at(-1)!.end + HOLD + FADE
 const finished = (letter: Letter) => constructionPhases(letter).at(-1)!.end + 200
 

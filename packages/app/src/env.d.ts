@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — EnvD。
+ * GUI 插件的实现中负责 EnvD 部分，提供该部分所需的实现与类型定义。
+ */
 interface ImportMetaEnv {
   /** Vite's `base`, the path the build is served under, such as `/opencode/`; `/` at the root. */
   readonly BASE_URL: string

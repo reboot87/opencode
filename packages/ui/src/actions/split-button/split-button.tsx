@@ -1,3 +1,7 @@
+/**
+ * 分裂按钮 — SplitButton。
+ * 主操作加下拉菜单的组合按钮中负责 SplitButton 部分，提供该部分所需的实现与类型定义。
+ */
 import { splitProps, type ComponentProps, type ParentProps } from "solid-js"
 import "./split-button.css"
 

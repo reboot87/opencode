@@ -1,3 +1,8 @@
+/**
+ * 模型·快照脚本。
+ *
+ * 核心包的开发脚本：本地服务桩、数据准备与问题排查。
+ */
 import type { BunPlugin } from "bun"
 import { Effect, Schema } from "effect"
 import { ModelsDev } from "../src/models-dev"

@@ -1,3 +1,10 @@
+/**
+ * 开关的测试。
+ *
+ * 被测模块：@opencode/core/flag
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { App } from "@opencode/core/app"
 import { Config } from "@opencode/core/config"

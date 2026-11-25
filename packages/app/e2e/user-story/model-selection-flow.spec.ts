@@ -1,3 +1,7 @@
+/**
+ * 用户故事测试 — ModelSelectionFlowSpec。
+ * 以用户故事形式编写的端到端用例中负责 ModelSelectionFlowSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "@playwright/test"
 import { project, provider, sessionHref } from "../utils/app"
 import { mockOpenCodeServer } from "../utils/mock-server"

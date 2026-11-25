@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — WebsocketTest。
+ * 终端界面的测试中负责 WebsocketTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { Deferred, Effect, Exit, Fiber, Layer } from "effect"
 import { Socket } from "effect/socket"

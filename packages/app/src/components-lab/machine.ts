@@ -1,3 +1,7 @@
+/**
+ * 组件实验室 — Machine。
+ * 用于试用与调试 UI 组件的页面中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 type Stage = {
   /** The story's state names, in order. */
   readonly names: readonly string[]

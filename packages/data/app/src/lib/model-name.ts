@@ -1,3 +1,7 @@
+/**
+ * 数据站工具 — ModelName。
+ * 数据站点的通用工具中负责 ModelName 部分，提供该部分所需的实现与类型定义。
+ */
 import { statModel } from "@opencode/data-core/domain/model-normalization"
 
 const glmFlashModel = "glm-5.3-flash"

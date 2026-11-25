@@ -1,4 +1,6 @@
 //! Exit summary and command to continue the last session.
+//!
+//! 终端界面功能模块：`epilogue`。
 
 use crate::prelude::*;
 

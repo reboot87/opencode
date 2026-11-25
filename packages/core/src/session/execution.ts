@@ -1,3 +1,7 @@
+/**
+ * 会话执行服务（SessionExecution）。
+ * 管理会话的执行生命周期与终态（terminal），判定执行退出后的状态转化。
+ */
 export * as SessionExecution from "./execution.js"
 
 import { Cause, Context, Effect, Exit, Layer } from "effect"

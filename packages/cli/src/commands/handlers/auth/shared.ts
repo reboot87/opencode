@@ -1,3 +1,7 @@
+/**
+ * auth 共享工具。
+ * 为各 auth 子命令提供客户端创建与位置上下文。
+ */
 import { Effect } from "effect"
 import { OpenCode, type IntegrationInfo, type IntegrationMethod, type OpenCodeClient } from "@opencode/client"
 import { Service } from "@opencode/client/effect/service"

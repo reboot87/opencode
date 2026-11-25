@@ -1,3 +1,5 @@
+//! 基础 UI 组件库：提示词。
+
 use crate::bind;
 use crate::dialog::{
     DialogButton, DialogButtons, DialogCx, DialogSize, FocusId, FooterAction, HeaderProps, header, layout_view,

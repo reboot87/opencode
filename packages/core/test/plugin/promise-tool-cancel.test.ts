@@ -1,3 +1,10 @@
+/**
+ * Promise·工具·取消的测试。
+ *
+ * 被测模块：@opencode/core/plugin/promise-tool-cancel
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { describe, expect } from "bun:test"
 import { ai, LanguageModel, LLMEvent } from "@opencode/ai/effect"
 import { OpenAIChat } from "@opencode/ai/protocols/openai-chat"

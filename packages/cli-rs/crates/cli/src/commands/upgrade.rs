@@ -1,4 +1,6 @@
 //! `upgrade` prints installation-specific update instructions and exits with status 1.
+//!
+//! CLI 子命令：升级。
 
 use std::path::Path;
 

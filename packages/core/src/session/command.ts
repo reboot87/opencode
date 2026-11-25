@@ -1,3 +1,7 @@
+/**
+ * 会话命令执行（SessionCommand）。
+ * 在指定会话与实例上下文中执行用户/插件定义的命令。
+ */
 export * as SessionCommand from "./command.js"
 
 import type { PromptInput } from "@opencode/schema/prompt-input"

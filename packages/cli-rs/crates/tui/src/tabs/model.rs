@@ -1,4 +1,6 @@
 //! Tab model operations return `None` for unchanged lists so callers can skip a write.
+//!
+//! 终端界面：模型。
 
 use serde::{Deserialize, Serialize};
 

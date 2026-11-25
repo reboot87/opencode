@@ -1,4 +1,6 @@
 //! Terminal picker for the current session.
+//!
+//! 终端界面：`terminals`。
 
 use opencode_api::generated::PersistentPtyInfo;
 use opentui::prelude::Container;

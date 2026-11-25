@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — Frame。
+ * GUI 插件的实现中负责 Frame 部分，提供该部分所需的实现与类型定义。
+ */
 import "../../app/src/index.css"
 
 import { createResource, Show, type Component, type JSX } from "solid-js"

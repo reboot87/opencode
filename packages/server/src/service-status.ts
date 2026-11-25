@@ -1,3 +1,7 @@
+/**
+ * 服务状态服务。
+ * 查询本机服务的运行状态。
+ */
 export * as Status from "./service-status"
 
 import { Effect, Ref } from "effect"

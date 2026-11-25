@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：编辑器·伪终端。
+ *
+ * 规格编号：M.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `/editor` and `prompt.editor` (Ctrl+X E) compose in `$EDITOR`; what it saves replaces the draft. `/editor`
 // hands the editor the text after the command.
 import { chmod } from "node:fs/promises"

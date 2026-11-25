@@ -6,6 +6,8 @@ import { legalSummaries } from "~/lib/legal/summaries"
  * A legal document as a small HTML tree: `[tag, attributes, ...children]` or text. The page renders
  * it as HTML and the Markdown version serializes it, so both read from one copy. Site-relative
  * `href`s (starting with `/`) are localized when rendered.
+ *
+ * 站点共享逻辑：法律。
  */
 export type LegalNode = string | [tag: string, attributes: Record<string, string>, ...children: LegalNode[]]
 

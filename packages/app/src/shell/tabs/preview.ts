@@ -1,3 +1,7 @@
+/**
+ * 标签页 — Preview。
+ * 多标签页的打开与切换中负责 Preview 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal } from "solid-js"
 import type { SessionTab, Tab } from "./tabs"
 import {

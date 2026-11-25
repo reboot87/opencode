@@ -1,3 +1,8 @@
+/**
+ * 服务端测试夹具。
+ *
+ * 为服务端测试提供请求、配置与工作树样例。
+ */
 import { Effect } from "effect"
 import { HttpServer } from "effect/http"
 import { ServerProcess } from "../../src/process"

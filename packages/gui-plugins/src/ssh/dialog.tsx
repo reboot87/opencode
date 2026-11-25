@@ -1,3 +1,7 @@
+/**
+ * SSH 插件 — Dialog。
+ * 远程主机管理的 GUI 插件中负责 Dialog 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { Dialog, DialogBody, DialogFooter, DialogHeader, DialogTitle } from "@opencode/ui/dialog"
 import { Divider } from "@opencode/ui/divider"

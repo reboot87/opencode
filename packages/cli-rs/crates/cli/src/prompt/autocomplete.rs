@@ -1,4 +1,6 @@
 //! Single-choice autocomplete with an optional custom renderer.
+//!
+//! CLI 交互提示：自动补全。
 
 use super::core::{self, Base, Prompt};
 use super::select::{Choice, limit_options};

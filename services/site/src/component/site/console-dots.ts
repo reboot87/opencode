@@ -13,6 +13,8 @@ const baseAlpha = 0.6
  * window of the screen, again as it resizes, with dots `dot()` CSS pixels wide; marks it
  * data-visible while on screen and data-entered once a quarter of it has been. Returns a redraw
  * (for a new dot size) and a stop.
+ *
+ * 站点界面组件：控制台·dots。
  */
 export function consoleDots(element: HTMLElement, dot: () => number) {
   const canvas = document.createElement("canvas")

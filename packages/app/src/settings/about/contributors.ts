@@ -1,3 +1,7 @@
+/**
+ * 关于 — Contributors。
+ * 版本与致谢等信息中负责 Contributors 部分，提供该部分所需的实现与类型定义。
+ */
 const CREDITED_CONTRIBUTORS = 16
 
 let request: Promise<number> | undefined

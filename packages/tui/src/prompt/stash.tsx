@@ -1,3 +1,7 @@
+/**
+ * 提示输入 — Stash。
+ * 提示输入的解析、编辑与提交中负责 Stash 部分，提供该部分所需的实现与类型定义。
+ */
 import path from "path"
 import { onMount } from "solid-js"
 import { createStore, produce, unwrap } from "solid-js/store"

@@ -22,7 +22,10 @@ function isConditionalEmptyObjectSpread(node: ESTree.Expression): boolean {
   );
 }
 
-/** Ban conditional empty-object spreads without changing their omission semantics. */
+/** Ban conditional empty-object spreads without changing their omission semantics.
+ *
+ * Oxlint 规则：无·conditional·空值对象离散度。
+ */
 export const noConditionalEmptyObjectSpreadRule = defineRule({
   meta: {
     type: "suggestion",

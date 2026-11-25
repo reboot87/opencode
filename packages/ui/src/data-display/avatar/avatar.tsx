@@ -1,3 +1,7 @@
+/**
+ * 头像 — Avatar。
+ * 用户或项目头像组件中负责 Avatar 部分，提供该部分所需的实现与类型定义。
+ */
 import { type ComponentProps, splitProps, Show } from "solid-js"
 import "./avatar.css"
 

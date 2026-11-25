@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — Pages。
+ * Microsoft Office 文档预览插件中负责 Pages 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createSignal, Index, onCleanup, onMount, Show, untrack, type JSX } from "solid-js"
 import { createResizeObserver } from "@solid-primitives/resize-observer"
 import { createKeyed } from "@opencode/plugin/gui"

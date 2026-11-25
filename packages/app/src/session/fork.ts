@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — Fork。
+ * 会话主界面的视图与状态中负责 Fork 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal, on, onCleanup, type Accessor } from "solid-js"
 import { useNavigate, useParams } from "@solidjs/router"
 import { base64Encode } from "@opencode/util/encode"

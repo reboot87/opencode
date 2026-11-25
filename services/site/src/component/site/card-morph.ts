@@ -8,7 +8,10 @@
 
 type Box = { left: number; top: number; right: number; bottom: number; width?: number; height?: number }
 
-/** Settings › Card to page's timing, which the transition's styles read from the page's root. */
+/** Settings › Card to page's timing, which the transition's styles read from the page's root.
+ *
+ * 站点界面组件：卡片形变。
+ */
 export type CardTiming = {
   grow: number
   shrink: number

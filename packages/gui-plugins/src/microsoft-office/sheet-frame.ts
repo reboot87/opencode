@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — SheetFrame。
+ * Microsoft Office 文档预览插件中负责 SheetFrame 部分，提供该部分所需的实现与类型定义。
+ */
 import { paintDisplayList, type DisplayList, type GridMeta, type WorkbookHandle } from "@betteroffice/xlsx"
 import { attempt } from "./sheet-cells"
 import { frozenSize } from "./sheet-paint"

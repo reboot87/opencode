@@ -1,3 +1,7 @@
+/**
+ * 服务端路由装配。
+ * 把应用服务节点与 API 处理器组装为完整的路由表。
+ */
 import { Database } from "@opencode/core/database/database"
 import { V1Migration } from "@opencode/core/database/v1-migration"
 import { App } from "@opencode/core/app"

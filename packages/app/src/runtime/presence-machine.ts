@@ -1,4 +1,7 @@
-/** Exit length assumed when the computed styles report no duration. */
+/**
+ * 
+ * Exit length assumed when the computed styles report no duration. 应用运行时中负责 PresenceMachine 部分：浏览器端运行时中与 PresenceMachine 相关的状态、交互与渲染逻辑。
+ */
 export const PRESENCE_DEFAULT_EXIT_MS = 250
 
 /** Slack past the computed CSS duration and delay before the fallback timer hides the element. */

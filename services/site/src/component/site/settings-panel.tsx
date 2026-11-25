@@ -83,7 +83,10 @@ import { SettingsTransfer } from "./settings-transfer"
 import { SettingsSelect, SettingsSlider, type SettingsSectionID } from "./site"
 import type { themes } from "./icons"
 
-/** The development settings panel, loaded the first time Settings opens. */
+/** The development settings panel, loaded the first time Settings opens.
+ *
+ * 站点界面组件：设置面板。
+ */
 const navShown = ["shown", "hidden", "deleted"] as const
 
 export default function SettingsPanel(props: {

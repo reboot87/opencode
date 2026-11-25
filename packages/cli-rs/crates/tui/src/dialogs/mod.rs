@@ -1,3 +1,5 @@
+//! 终端弹窗组件入口。
+
 pub mod agent;
 pub mod debug;
 pub mod error_details;

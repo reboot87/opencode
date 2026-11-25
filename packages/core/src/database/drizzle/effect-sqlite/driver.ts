@@ -1,3 +1,7 @@
+/**
+ * drizzle SQLite Effect 驱动。
+ * 把 drizzle-orm 的 SQLite 驱动适配到 Effect 运行时（本文件源自 drizzle-orm 上游）。
+ */
 /* oxlint-disable */
 import * as Effect from "effect/Effect"
 import * as Layer from "effect/Layer"

@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：更新日志·highlights。
+ */
 import { describe, expect, test } from "bun:test"
 import type { ChangelogRelease } from "../src/lib/changelog"
 import { changelogEntryView, changelogView, parseReleaseNotes } from "../src/lib/changelog-notes"

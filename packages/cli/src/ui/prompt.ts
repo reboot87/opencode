@@ -1,3 +1,7 @@
+/**
+ * 交互提示。
+ * 运行可取消的交互式提示并返回用户输入。
+ */
 import { cancel, isCancel, log, outro } from "@clack/prompts"
 import { Effect } from "effect"
 import { errorMessage } from "../util/error"

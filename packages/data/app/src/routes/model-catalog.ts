@@ -1,3 +1,7 @@
+/**
+ * 数据站路由 — ModelCatalog。
+ * 数据站点的路由页面中负责 ModelCatalog 部分，提供该部分所需的实现与类型定义。
+ */
 import { STEALTH_MODELS, statModel } from "@opencode/data-core/domain/model-normalization"
 import { query } from "@solidjs/router"
 

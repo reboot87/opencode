@@ -2,6 +2,8 @@
 //! client prints, RFC 3339 and `%Y-%m-%d` parsing as `chrono` parses them, and local offsets from `localtime_r`,
 //! which reads `TZ` and `/etc/localtime` (on Windows from Windows' ICU, as Node and Bun do). Instants are
 //! milliseconds since the Unix epoch.
+//!
+//! 通用工具：时间。
 
 use std::fmt;
 use std::sync::{LazyLock, Once};

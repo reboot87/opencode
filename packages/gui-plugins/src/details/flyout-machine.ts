@@ -1,4 +1,7 @@
-/** How long a pointer may rest inside the safe triangle before the row under it takes over. */
+/**
+ * 
+ * How long a pointer may rest inside the safe triangle before the row under it takes over. 详情插件中负责 FlyoutMachine 部分：对象详情展示中与 FlyoutMachine 相关的状态、交互与渲染逻辑。
+ */
 export const AIM_TIMEOUT_MS = 100
 
 export type Service = "mcp" | "plugins" | "skills"

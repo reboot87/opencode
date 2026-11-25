@@ -1,3 +1,6 @@
+/**
+ * 仓库代码：Vite·配置。
+ */
 import { defineConfig, PluginOption } from "vite"
 import { solidStart } from "@solidjs/start/config"
 import { nitro } from "nitro/vite"

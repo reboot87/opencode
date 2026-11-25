@@ -1,3 +1,7 @@
+/**
+ * 会话请求 — QuestionMachine。
+ * 会话界面的请求发起与状态跟踪中负责 QuestionMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { FormAnswer, FormInfo, FormMultiselectField, FormStringField } from "@opencode/client/promise"
 
 // A reply that never settles gives the dock back after this long, so it cannot stay disabled forever.

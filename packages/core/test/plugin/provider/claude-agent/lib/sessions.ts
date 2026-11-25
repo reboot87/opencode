@@ -1,3 +1,10 @@
+/**
+ * 会话的测试辅助模块。
+ *
+ * 被测模块：@opencode/core/plugin/provider/claude-agent/lib/sessions
+ *
+ * 覆盖 Claude Agent 供应商插件的请求转换、工具桥接与流式事件映射。
+ */
 export * as TestSessions from "./sessions"
 
 import type { LanguageModelV3Prompt, LanguageModelV3StreamPart } from "@ai-sdk/provider"

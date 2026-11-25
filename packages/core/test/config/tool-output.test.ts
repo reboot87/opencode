@@ -1,3 +1,10 @@
+/**
+ * 工具·输出的测试。
+ *
+ * 被测模块：@opencode/core/config/tool-output
+ *
+ * 覆盖配置加载、合并、校验与分层覆盖（global / project / local）的行为。
+ */
 import { describe, expect } from "bun:test"
 import { Bus } from "@opencode/core/bus"
 import { Config } from "@opencode/core/config"

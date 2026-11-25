@@ -1,3 +1,5 @@
+//! CLI 子命令：`debug`。
+
 use opencode_api::client::Client;
 use opencode_api::error::Error as ApiError;
 use opencode_api::generated::types::{AgentListInput, ConfigGetInput, DebugHeapDumpInput};

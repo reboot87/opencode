@@ -1,3 +1,7 @@
+/**
+ * 浏览器历史 — Earlier。
+ * 浏览器插件的访问历史中负责 Earlier 部分，提供该部分所需的实现与类型定义。
+ */
 import type { BuiltinMainStorage, MainStoreFrom } from "@opencode/plugin/gui/builtin"
 import { History } from "./visits"
 

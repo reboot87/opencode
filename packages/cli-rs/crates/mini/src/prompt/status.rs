@@ -1,4 +1,6 @@
 //! Required status groups take space before optional groups.
+//!
+//! 精简版实现：`status`。
 
 use std::collections::BTreeMap;
 

@@ -1,3 +1,7 @@
+/**
+ * 模块 — Zoom。
+ * 该目录下的功能模块中负责 Zoom 部分，提供该部分所需的实现与类型定义。
+ */
 // Copyright 2019-2024 Tauri Programme within The Commons Conservancy
 // SPDX-License-Identifier: Apache-2.0
 // SPDX-License-Identifier: MIT

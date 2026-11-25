@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：late·宽度·伪终端。
+ *
+ * 规格编号：OT。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A width-method change after startup (record 692). The terminal's DECRPM 2027 reply arrives once the home screen and
 // its prompt exist. It says the terminal does not cluster graphemes (mode 0), so text is measured by code point from
 // then on (wcwidth). `👍🏽` (a thumb and a skin tone) is then 4 cells, not 2. The prompt's textarea was created before

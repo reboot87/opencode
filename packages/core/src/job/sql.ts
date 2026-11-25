@@ -1,3 +1,7 @@
+/**
+ * 后台任务数据库表。
+ * 定义 job 表结构。
+ */
 import { index, sqliteTable, text } from "drizzle-orm/sqlite-core"
 import { Timestamps } from "../database/schema.sql.js"
 import type { Job } from "../job.js"

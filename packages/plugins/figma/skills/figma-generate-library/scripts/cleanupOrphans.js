@@ -11,6 +11,10 @@
  *   removedIds: string[],
  *   skippedIds: string[]
  * }>}
+ *
+ * Figma 组件库生成脚本：清理·Orphans。
+ *
+ * Figma 组件库生成脚本：清理·Orphans。
  */
 async function cleanupOrphans({ nodeIds = [], variableIds = [], collectionIds = [] } = {}) {
   const requestedIds = [...nodeIds, ...variableIds, ...collectionIds]

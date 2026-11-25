@@ -1,3 +1,10 @@
+/**
+ * 续接·场景的测试辅助模块。
+ *
+ * 被测模块：@opencode/ai/continuation-scenarios
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import {
   ai,
   type AssistantMessage,

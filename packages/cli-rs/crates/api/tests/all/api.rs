@@ -1,4 +1,6 @@
 //! Decoding rules of the generated types and the request core, over a scripted transport.
+//!
+//! API 客户端：API。
 
 use std::sync::{Arc, Mutex};
 

@@ -1,3 +1,7 @@
+/**
+ * Baseten provider 门面。
+ * 结构化决策（decision）模型 provider，提供决策模型工厂与鉴权配置。
+ */
 import { Effect } from "effect"
 import type { ProviderPackage } from "../provider-package.js"
 import { OpenAIChat } from "../protocols/openai-chat.js"

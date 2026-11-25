@@ -2,6 +2,8 @@
  * First-launch onboarding in one window: once its tabs are restored it tells main whether to create the default
  * project, adds that project, then opens a draft in it. Startup keeps the splash up for it, but the hydration timeout
  * can show the app first. From then on the run never navigates, and a failure is a toast rather than the error page.
+ *
+ * 引导流程的状态机：管理引导步骤的推进与完成。
  */
 export type OnboardingState =
   | { readonly status: "waiting" }

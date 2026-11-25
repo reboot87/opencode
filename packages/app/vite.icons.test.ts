@@ -1,3 +1,7 @@
+/**
+ * 模块 — ViteIconsTest。
+ * 该目录下的功能模块中负责 ViteIconsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { fetch } from "bun"
 import { build, createServer } from "vite"

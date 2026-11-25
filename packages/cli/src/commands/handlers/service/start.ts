@@ -1,3 +1,7 @@
+/**
+ * service start 命令。
+ * 启动后台服务。
+ */
 import { EOL } from "os"
 import { Effect } from "effect"
 import { Service } from "@opencode/client/effect/service"

@@ -1,3 +1,7 @@
+/**
+ * 生命周期 — Onboarding。
+ * 桌面端窗口与应用的启动退出流程中负责 Onboarding 部分，提供该部分所需的实现与类型定义。
+ */
 import { app } from "electron"
 import { Effect, Exit, FileSystem, Option, Path, Predicate } from "effect"
 import { scoped } from "../native/logging"

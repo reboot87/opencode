@@ -1,4 +1,6 @@
 #!/bin/sh
+
+# Rust CLI 开发脚本：Lint·Windows。
 # Finds code that is right on Unix and wrong on Windows, before the preview's Windows runner does. Each rule is a
 # pattern that failed there: on Windows the paths the client finds use `\`, and `/x` has no drive.
 #

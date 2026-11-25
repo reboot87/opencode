@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：校验产物。
 # verify-artifacts.sh <dir>: checks every artifact downloaded into <dir>/<name> against its SHA256SUMS and that it
 # holds exactly the listed files. Artifacts made by sign jobs (sign-*) must also match the manifest digest their
 # job reported (OPENCODE_DIGESTS="name=digest ..."), so an artifact replaced after that job finished is rejected.

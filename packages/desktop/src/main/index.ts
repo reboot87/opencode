@@ -1,3 +1,7 @@
+/**
+ * 桌面端主进程 — Index 出口。
+ * 集中导出 桌面端主进程 中 Index 相关的实现、组件与类型。
+ */
 // Imported first so its evaluation stamps the moment Electron handed control to this module.
 import { marks } from "./lifecycle/marks"
 import { app } from "electron"

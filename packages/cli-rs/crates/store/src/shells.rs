@@ -1,4 +1,6 @@
 //! Running shell commands by location. Exit and deletion both remove a shell from the list.
+//!
+//! 会话存储层：`shells`。
 
 use indexmap::IndexMap;
 use opencode_api::generated::*;

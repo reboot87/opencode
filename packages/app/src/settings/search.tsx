@@ -1,3 +1,7 @@
+/**
+ * 设置界面 — Search。
+ * 应用设置页面的框架中负责 Search 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, on, onMount, Show } from "solid-js"
 import { createStore } from "solid-js/store"
 import { createMediaQuery } from "@solid-primitives/media"

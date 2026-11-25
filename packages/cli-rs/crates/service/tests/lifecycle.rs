@@ -1,5 +1,7 @@
 //! Service lifecycle tests share the TypeScript client's fake service and accelerated clock.
 #![cfg(unix)]
+//!
+//! 服务层测试：生命周期。
 
 use opencode_api::transport::{Reqwest, Transport};
 use opencode_local::paths::Paths;

@@ -1,4 +1,6 @@
 //! Inline math lowers stacked structures to a single row before layout.
+//!
+//! LaTeX 公式渲染：行内。
 
 use unicode_segmentation::UnicodeSegmentation;
 

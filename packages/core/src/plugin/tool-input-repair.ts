@@ -1,3 +1,7 @@
+/**
+ * 工具输入修复。
+ * 修复模型产生的非法工具输入（如被截断的 JSON），带最大修复深度。
+ */
 export * as ToolInputRepairPlugin from "./tool-input-repair.js"
 
 import { ToolFailure } from "@opencode/ai/effect"

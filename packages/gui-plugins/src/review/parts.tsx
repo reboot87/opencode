@@ -1,3 +1,7 @@
+/**
+ * 审查插件 — Parts。
+ * 变更审查界面的 GUI 插件中负责 Parts 部分，提供该部分所需的实现与类型定义。
+ */
 import { Match, Show, Switch } from "solid-js"
 import { SessionReviewEmptyChangesV2 } from "@opencode/session-ui/v2/session-review-empty-changes-v2"
 import { SessionReviewEmptyNoGitV2 } from "@opencode/session-ui/v2/session-review-empty-no-git-v2"

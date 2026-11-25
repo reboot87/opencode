@@ -1,3 +1,7 @@
+/**
+ * 后台服务 — DesktopCli。
+ * 桌面端托管的后台服务进程中负责 DesktopCli 部分，提供该部分所需的实现与类型定义。
+ */
 export * as DesktopCli from "./desktop-cli"
 
 import { execFile, spawn } from "node:child_process"

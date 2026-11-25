@@ -1,3 +1,7 @@
+/**
+ * model 接口处理器。
+ * 模型接口处理器：可用模型列举。
+ */
 import { Model } from "@opencode/core/model"
 import { Effect } from "effect"
 import { HttpApiBuilder } from "effect/http-api"

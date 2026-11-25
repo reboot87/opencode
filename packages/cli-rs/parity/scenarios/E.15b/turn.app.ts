@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：轮次·app。
+ *
+ * 规格编号：E.15b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The last turn's diff (F15, DLG47): in a session, `d` opens the diff source dialog with "Last turn" offered,
 // selecting it loads `/api/session/:id/diff`, `m` marks a file reviewed, and a turn that runs and ends loads the
 // diff again, which starts the reviewed marks over.

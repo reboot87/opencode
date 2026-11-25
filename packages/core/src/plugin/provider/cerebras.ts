@@ -1,3 +1,7 @@
+/**
+ * Cerebras provider 插件。
+ * 注册 Cerebras provider（依赖其 npm 包）。
+ */
 import { Effect } from "effect"
 import { define } from "@opencode/plugin/effect/plugin"
 

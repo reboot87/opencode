@@ -1,4 +1,6 @@
 //! Sidebar content and footer slots for the current session.
+//!
+//! 终端界面路由：侧边栏。
 
 use opencode_local::cli_config::Sidebar as SidebarSetting;
 use opencode_plugin::{SlotInput, SlotMount, slot};

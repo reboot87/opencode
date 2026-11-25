@@ -1,4 +1,7 @@
-/** Moving through the sound list plays only the sound it settles on. */
+/**
+ * 
+ * Moving through the sound list plays only the sound it settles on. 通用设置中负责 SoundPreviewMachine 部分：通用设置项中与 SoundPreviewMachine 相关的状态、交互与渲染逻辑。
+ */
 export const SOUND_PREVIEW_DEBOUNCE_MS = 100
 
 /** A sound file that never loads gives up rather than playing long after the user moved on. */

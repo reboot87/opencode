@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — Skill。
+ * GUI 插件的实现中负责 Skill 部分，提供该部分所需的实现与类型定义。
+ */
 export * as BrowserSkill from "./skill.js"
 
 import { AbsolutePath } from "@opencode/schema/schema"

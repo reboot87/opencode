@@ -1,3 +1,6 @@
+/**
+ * 通用界面组件：法律。
+ */
 import { A } from "@solidjs/router"
 import { createSignal, onMount } from "solid-js"
 import { LanguagePicker } from "~/component/language-picker"

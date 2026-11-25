@@ -1,3 +1,7 @@
+/**
+ * 内置 Agent 定义。
+ * 定义内置 agent（explore/title 等）及其提示词，包括用于文件搜索与对话命名的专用 prompt。
+ */
 export * as AgentPlugin from "./agent.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

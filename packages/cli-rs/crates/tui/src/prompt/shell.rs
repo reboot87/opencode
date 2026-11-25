@@ -1,4 +1,6 @@
 //! Shell-mode prompt and bindings.
+//!
+//! 终端输入提示：Shell。
 
 use opencode_ui::dialog::FocusId;
 

@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — SessionDiff。
+ * 跨场景复用的通用 UI 组件中负责 SessionDiff 部分，提供该部分所需的实现与类型定义。
+ */
 import { parseDiffFromFile, parsePatchFiles, processFile, type FileDiffMetadata } from "@pierre/diffs"
 import { checksum } from "@opencode/util/encode"
 import type { FileDiffInfo } from "@opencode/client/promise"

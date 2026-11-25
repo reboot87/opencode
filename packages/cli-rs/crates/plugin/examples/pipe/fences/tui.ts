@@ -1,3 +1,8 @@
+/**
+ * 管道示例：TUI。
+ *
+ * 管道示例：演示插件管道各阶段的串联方式。
+ */
 // Tests code-block renderers through the public V2 plugin context. Each language selects a distinct renderer
 // behavior.
 //

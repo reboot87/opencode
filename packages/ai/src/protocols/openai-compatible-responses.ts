@@ -1,3 +1,7 @@
+/**
+ * OpenAI 兼容 Responses 路由构造器。
+ * 用通用 responses 协议快速构造兼容 provider 的路由。
+ */
 import { Route } from "../route/client.js"
 import { Endpoint } from "../route/endpoint.js"
 import { OpenResponses } from "./open-responses.js"

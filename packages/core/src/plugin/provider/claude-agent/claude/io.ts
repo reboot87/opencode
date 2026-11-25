@@ -1,3 +1,7 @@
+/**
+ * Claude IO 接口。
+ * 定义 Claude Agent 的输入输出抽象与真实实现，便于测试替换。
+ */
 export * as ClaudeIO from "./io.js"
 
 import type { Options } from "@anthropic-ai/claude-agent-sdk"

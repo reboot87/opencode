@@ -1,3 +1,6 @@
+/**
+ * 站点上下文：国际化。
+ */
 import type { ParentProps } from "solid-js"
 import { interpolate, lookup, translated, type Key } from "~/i18n"
 import { useLanguage } from "~/context/language"

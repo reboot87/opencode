@@ -1,3 +1,7 @@
+/**
+ * OpenAPI 规范解析。
+ * 解析 OpenAPI 文档，提取操作、参数与请求体等定义。
+ */
 import { fromSchemaOpenApi3_0, fromSchemaOpenApi3_1 } from "effect/JsonSchema"
 import type { JsonSchema } from "../tool.js"
 import type {

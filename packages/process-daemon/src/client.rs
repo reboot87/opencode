@@ -1,3 +1,5 @@
+//! 进程守护服务实现：客户端。
+
 use std::env;
 use std::io::{self, BufRead, Read, Write};
 use std::path::{Path, PathBuf};

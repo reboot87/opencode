@@ -1,3 +1,7 @@
+/**
+ * 类型提示 — Machine。
+ * 边输入边建议的自动完成组件中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 export const TYPEAHEAD_REQUEST_TIMEOUT_MS = 15_000
 
 export type TypeaheadInitial<T> = { readonly items: T[]; readonly failed?: boolean }

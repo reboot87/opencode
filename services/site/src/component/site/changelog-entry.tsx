@@ -35,7 +35,10 @@ import { SettingsSelect, type SettingsSectionID } from "./site"
 import { SiteMenu } from "./site-menu"
 import { staticRender } from "~/lib/static-render"
 
-/** A changelog day as the site shows it, in UTC so it matches the day releases are grouped by. */
+/** A changelog day as the site shows it, in UTC so it matches the day releases are grouped by.
+ *
+ * 站点界面组件：更新日志条目。
+ */
 export function formatDay(date: string, locale: string) {
   return new Date(`${date}T00:00:00Z`).toLocaleDateString(locale, {
     year: "numeric",

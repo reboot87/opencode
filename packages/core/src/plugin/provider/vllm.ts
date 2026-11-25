@@ -1,3 +1,7 @@
+/**
+ * vLLM 插件。
+ * 注册本地 vLLM provider，读取其模型清单。
+ */
 import { Effect, Schema } from "effect"
 import { createLocalProviderPlugin } from "./local.js"
 

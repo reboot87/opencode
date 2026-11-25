@@ -1,3 +1,7 @@
+/**
+ * 浏览器历史 — Visits。
+ * 浏览器插件的访问历史中负责 Visits 部分，提供该部分所需的实现与类型定义。
+ */
 import { Schema } from "effect"
 
 /** A page the browser showed, newest first in the window's list of the last pages. */

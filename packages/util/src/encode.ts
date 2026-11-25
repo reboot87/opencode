@@ -1,3 +1,7 @@
+/**
+ * 编码工具。
+ * 提供字符串/字节的 Base64 编码与解码封装。
+ */
 export function base64Encode(value: string) {
   const bytes = new TextEncoder().encode(value)
   const binary = Array.from(bytes, (byte) => String.fromCharCode(byte)).join("")

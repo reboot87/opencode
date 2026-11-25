@@ -3,6 +3,8 @@
 //! as `script/live.sh` does. Only reads; it uses the location of an existing session, so it adds none.
 //!
 //! `OPENCODE_LIVE_SESSIONS` (default 20) sets how many sessions get their per-session reads.
+//!
+//! API 客户端：`live`。
 
 use std::time::Duration;
 

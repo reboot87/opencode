@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — TitlebarItems。
+ * 浏览器端的插件加载与扩展点中负责 TitlebarItems 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, For, Show } from "solid-js"
 import { syncSpinPhase } from "@opencode/ui/hooks"
 import { Icon } from "@opencode/ui/icon"

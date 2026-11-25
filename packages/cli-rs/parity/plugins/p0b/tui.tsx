@@ -1,3 +1,8 @@
+/**
+ * 插件对等性场景：TUI。
+ *
+ * 插件能力的对等性场景：验证 Rust 与 TypeScript 插件行为一致。
+ */
 // The P0b test plugin, TypeScript side: one line appended to the `app` slot that shows what the small reads of ABI
 // 1.6 answer: the claim's own width (`onSizeChange`), the session tabs, a command's keys, the model's variants and the
 // pending keys. parity/scenarios/P.0b/reads.app.ts loads this directory through the cli.json `plugins` entry; the

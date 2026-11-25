@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — HandoffMachine。
+ * 会话主界面的视图与状态中负责 HandoffMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ModelRef, SessionMessageUser } from "@opencode/client/promise"
 
 /** How long a connected stream may lag a settled send before the client syncs instead of waiting for its echo. */

@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — WorkerRpcFixture。
+ * Microsoft Office 文档预览插件中负责 WorkerRpcFixture 部分，提供该部分所需的实现与类型定义。
+ */
 import { serveWorker, Transfer, type Method } from "./worker-rpc"
 
 // The worker end of `worker-rpc.test.ts`, run in a Bun worker.

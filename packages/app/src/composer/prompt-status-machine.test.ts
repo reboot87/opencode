@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — PromptStatusMachineTest。
+ * 会话输入区的组合逻辑与附件处理中负责 PromptStatusMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   SERVER_PROMPT_STATUS,

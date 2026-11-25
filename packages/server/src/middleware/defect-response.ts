@@ -1,3 +1,7 @@
+/**
+ * 缺陷响应中间件。
+ * 把未预期的缺陷转换为统一 JSON 响应。
+ */
 import { StorageFailure } from "@opencode/core/database/storage-failure"
 import { UnknownError } from "@opencode/protocol/errors"
 import { Cause, Effect } from "effect"

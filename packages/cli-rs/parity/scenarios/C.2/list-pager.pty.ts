@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：列表·pager·伪终端。
+ *
+ * 规格编号：C.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `session list` on a terminal pages through `less -R -S`: long lines are cut, not wrapped, and `q`
 // quits with exit 0.
 import { definePty } from "../../pty/run"

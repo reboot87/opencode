@@ -1,3 +1,10 @@
+/**
+ * mini·超时的测试。
+ *
+ * 被测模块：@opencode/cli/mini-timeout
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import path from "node:path"
 import { isolatedEnv } from "./fixture/environment"

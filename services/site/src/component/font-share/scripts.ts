@@ -17,7 +17,10 @@ export type Share = {
   tone: "paper" | "ink" | "blue" | "night"
   captionTone?: Share["tone"]
   caption: string
-  /** Loop length in milliseconds. */
+  /** Loop length in milliseconds.
+ *
+ * 字体分享组件：脚本。
+ */
   duration: number
   /** When the poster frame is taken. */
   poster: number

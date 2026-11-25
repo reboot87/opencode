@@ -1,3 +1,5 @@
+//! ACP 协议实现：内容。
+
 use base64::Engine as _;
 use opencode_util::json_object;
 use serde_json::{Value, json};

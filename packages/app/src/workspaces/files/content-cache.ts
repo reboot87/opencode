@@ -1,3 +1,7 @@
+/**
+ * 工作区文件 — ContentCache。
+ * 工作区内文件浏览界面中负责 ContentCache 部分，提供该部分所需的实现与类型定义。
+ */
 import type { FileContent } from "@opencode/plugin/gui"
 
 const MAX_FILE_CONTENT_ENTRIES = 40

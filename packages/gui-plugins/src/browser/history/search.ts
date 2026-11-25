@@ -1,3 +1,7 @@
+/**
+ * 浏览器历史 — Search。
+ * 浏览器插件的访问历史中负责 Search 部分，提供该部分所需的实现与类型定义。
+ */
 import { completes, frequency, matchQuality, MISS, parseQuery, recency, searchText, START, type Query } from "./match"
 import { bare, type PageVisit } from "./page"
 

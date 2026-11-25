@@ -16,7 +16,10 @@ export const securityHeaders = {
   "Permissions-Policy": "camera=(), geolocation=(), payment=(), usb=()",
 }
 
-/** Adds the headers to the response being prepared (`event.response.headers`). */
+/** Adds the headers to the response being prepared (`event.response.headers`).
+ *
+ * 站点共享逻辑：security·请求头。
+ */
 export function setSecurityHeaders(headers: Headers) {
   Object.entries(securityHeaders).forEach(([name, value]) => headers.set(name, value))
 }

@@ -1,3 +1,7 @@
+/**
+ * WSL 插件 — Contract。
+ * Windows Subsystem for Linux 相关的 GUI 插件中负责 Contract 部分，提供该部分所需的实现与类型定义。
+ */
 import { Schema } from "effect"
 import { Ipc } from "@opencode/plugin/gui"
 

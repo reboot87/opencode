@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — SystemMedia。
+ * 内置浏览器功能的 GUI 插件中负责 SystemMedia 部分，提供该部分所需的实现与类型定义。
+ */
 import electron from "electron"
 
 // The system's privacy setting for the camera and microphone, and the one place the pane asks the system for them.

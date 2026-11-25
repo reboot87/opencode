@@ -51,6 +51,8 @@ import { hsv as hsvChannels, tuning } from "./tuning"
  * modelled cabinet standing where the photographed one stood, a moonlight shaft with dust in it,
  * and a token to drag into the coin slot. The page (arcade3d.tsx) owns the story; this owns the
  * world, the camera and the coin.
+ *
+ * 3D 街机场景组件：阶段。
  */
 
 const hsv = (hue: number, saturation: number) => new Color().setRGB(...hsvChannels(hue, saturation), SRGBColorSpace)

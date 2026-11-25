@@ -1,3 +1,7 @@
+/**
+ * 动效 — CoreTest。
+ * 界面过渡与动画效果中负责 CoreTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, it, mock, spyOn } from "bun:test"
 import { Spring } from "./spring"
 import { createFrameLoop } from "./loop"

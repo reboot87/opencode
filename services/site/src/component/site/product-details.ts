@@ -6,6 +6,8 @@ import { androidSoon, type PageSlug } from "./product-data"
 /**
  * The product page below the intro: the showcase clips (the fourth only with Settings › Feature
  * clips count "4"), then short feature points (none on Desktop and Mobile).
+ *
+ * 站点界面组件：product·明细。
  */
 export const productDetails: Record<
   PageSlug,

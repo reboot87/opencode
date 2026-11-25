@@ -1,3 +1,7 @@
+/**
+ * 稳定性测试 — LifecycleSpec。
+ * 检测界面抖动与渲染稳定性的端到端用例中负责 LifecycleSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "@playwright/test"
 import {
   defineVisualRegions,

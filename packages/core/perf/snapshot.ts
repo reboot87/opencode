@@ -1,3 +1,8 @@
+/**
+ * 快照基准脚本。
+ *
+ * 核心路径的性能基准脚本，用于观测关键操作的耗时分布。
+ */
 // Snapshot capture, listing, diff, restore and packing against generated repositories, and a scripted
 // agent session with snapshots on or off. strobe's script host loads this module once per block and
 // calls its exports (perf/snapshot.bench.ts, perf/session.bench.ts). Each operation returns how many

@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — ActivationDelay。
+ * 内置浏览器功能的 GUI 插件中负责 ActivationDelay 部分，提供该部分所需的实现与类型定义。
+ */
 // Input protection for what a page can make appear under the user's pointer or keys: refusal and pop-up notices,
 // permission bars and page dialogs. A page that shows one under a click or key press the user is already making must
 // not get that press on its controls, as browsers protect their own prompts.

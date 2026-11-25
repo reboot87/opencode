@@ -1,4 +1,6 @@
 //! System dialogs, plugin management, and update notices.
+//!
+//! 终端界面测试：系统。
 
 use std::rc::Rc;
 use std::sync::Arc;

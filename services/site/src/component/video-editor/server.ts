@@ -1,3 +1,6 @@
+/**
+ * 视频编辑器组件：服务端。
+ */
 import { spawn } from "node:child_process"
 import { existsSync, openSync } from "node:fs"
 import { copyFile, mkdir, readdir, readFile, rename, stat, writeFile } from "node:fs/promises"

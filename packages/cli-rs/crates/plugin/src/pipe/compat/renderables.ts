@@ -1,3 +1,8 @@
+/**
+ * 管道实现：可渲染元素。
+ *
+ * 管道实现的 TypeScript 兼容适配层。
+ */
 // Renderable constructors produce the same virtual nodes as JSX. The host owns layout and painting.
 import { setProp, VNode } from "./render"
 

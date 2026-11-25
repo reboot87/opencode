@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — SidebarView。
+ * 自定义窗口标题栏中负责 SidebarView 部分，提供该部分所需的实现与类型定义。
+ */
 export type SidebarGrouping = "none" | "project" | "server-project" | "server"
 
 export type SidebarOrdering = "manual" | "updated" | "created" | "attention"

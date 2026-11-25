@@ -1,3 +1,7 @@
+/**
+ * 会话命令 — ForkDialog。
+ * 会话界面提供的命令中负责 ForkDialog 部分，提供该部分所需的实现与类型定义。
+ */
 import { Component, createMemo, For, Show } from "solid-js"
 import { useParams } from "@solidjs/router"
 import { useData } from "@/runtime/server/current"

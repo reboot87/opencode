@@ -1,3 +1,8 @@
+/**
+ * 插件对等性场景：TUI。
+ *
+ * 插件能力的对等性场景：验证 Rust 与 TypeScript 插件行为一致。
+ */
 // The P.1 `app` test plugin, TypeScript side: one line appended to the `app` slot, under the routes.
 // parity/scenarios/P.1/app-home.app.ts and app-session.app.ts load this directory through the cli.json `plugins`
 // entry; the Rust TUI skips that entry and registers its Rust twin (`app_plugin` in crates/tui/tests/all/app.rs).

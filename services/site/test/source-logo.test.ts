@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：来源标识。
+ */
 import { describe, expect, test } from "bun:test"
 // Every language, as the Worker registers them at startup.
 import "../src/i18n/server"

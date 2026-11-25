@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：导出·位置·app。
+ *
+ * 规格编号：E.10a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The export options' Location row (DLG31, #62490): under Format, `project` by default; Down selects it and Space
 // switches it to `temp`, which stays when Right turns the format to JSON. Escape closes without saving: the saved
 // path depends on the machine's temporary directory and wraps in the result dialog, so

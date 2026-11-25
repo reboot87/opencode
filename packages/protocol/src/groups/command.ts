@@ -1,3 +1,7 @@
+/**
+ * 命令 API 分组。
+ * 定义自定义命令的列举与执行端点。
+ */
 import { Command } from "@opencode/schema/command"
 import { Location } from "@opencode/schema/location"
 import { Schema } from "effect"

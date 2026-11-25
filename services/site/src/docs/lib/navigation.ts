@@ -3,7 +3,10 @@ import type { DocsSet } from "../config"
 export interface DocsNavItem {
   title: string
   slug: string
-  /** A page in another docs set (the V1 docs' Go and Console pages are in the latest docs). */
+  /** A page in another docs set (the V1 docs' Go and Console pages are in the latest docs).
+ *
+ * 文档站共享逻辑：导航。
+ */
   href?: string
 }
 

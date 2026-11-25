@@ -23,6 +23,8 @@ const links = {
  * the GitHub actions. "stats" sits under the open source stats, which already show the stars and
  * contributors; "section" is the body of a section of its own, led by the licence line and the
  * star count. Numbers GitHub didn't return fall back to the site config.
+ *
+ * 站点界面组件：打开来源·proof。
  */
 export function OpenSourceProof(props: {
   stats?: RepoStats

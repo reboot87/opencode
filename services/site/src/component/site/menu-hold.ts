@@ -4,6 +4,8 @@
  * area, from under its row to the bottom of the visual viewport, so the row stays put and only the
  * list scrolls. Call it whenever one opens or closes; it reads which is open from the page. A list
  * that drops in the page's flow (not absolutely positioned) is left alone.
+ *
+ * 站点界面组件：菜单·hold。
  */
 export function holdOpenMenu() {
   const list = document.querySelector<HTMLElement>(

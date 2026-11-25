@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid FooterMenu：该文件实现 FooterMenu 相关的状态与逻辑。
+ */
 import { TextAttributes, type ColorInput } from "@opentui/core"
 import { useTerminalDimensions, type JSX } from "@opentui/solid"
 import { createEffect, createMemo, createSignal, type Accessor } from "solid-js"

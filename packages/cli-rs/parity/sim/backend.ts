@@ -1,3 +1,8 @@
+/**
+ * 对等性校验入口：backend。
+ *
+ * Rust 与 TypeScript 双实现的对等性校验：驱动全部 oracle / component / 场景脚本并刷新基线。
+ */
 // The backend driver: answers the simulated provider's model calls (`llm.request`) over the server's drive backend
 // endpoint (packages/simulation/src/backend/simulated-provider.ts).
 import { Schema } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * 时间线 — DiagramTest。
+ * 按时间顺序展示会话消息的视图中负责 DiagramTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { renderTimelineDiagram } from "./diagram.js"
 import { drawTimelineDiagramGrid } from "./drawing.js"

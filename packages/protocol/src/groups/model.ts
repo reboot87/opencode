@@ -1,3 +1,7 @@
+/**
+ * 模型 API 分组。
+ * 定义可用模型的列举端点。
+ */
 import { Model } from "@opencode/schema/model"
 import { Location } from "@opencode/schema/location"
 import { Schema } from "effect"

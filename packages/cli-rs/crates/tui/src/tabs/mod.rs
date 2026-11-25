@@ -1,4 +1,6 @@
 //! Session tab state, persistence, and navigation.
+//!
+//! 终端界面入口。
 
 mod marquee;
 pub mod model;

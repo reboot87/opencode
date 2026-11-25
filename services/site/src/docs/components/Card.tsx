@@ -1,3 +1,6 @@
+/**
+ * 文档站组件：卡片。
+ */
 import type { JSX } from "solid-js"
 import { latestDocs } from "../config"
 

@@ -1,3 +1,7 @@
+/**
+ * 持久化 PTY 守护进程。
+ * 实现 PTY 守护进程协议（版本 9、帧上限 8MiB），负责跨进程复用终端会话。
+ */
 import { spawn } from "node:child_process"
 import { readFile } from "node:fs/promises"
 import net from "node:net"

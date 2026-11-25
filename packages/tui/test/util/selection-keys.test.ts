@@ -1,3 +1,7 @@
+/**
+ * 工具测试 — SelectionKeysTest。
+ * 终端工具函数的测试中负责 SelectionKeysTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { EmbeddedTerminalRenderable, InputRenderable, TextareaRenderable, TextRenderable } from "@opentui/core"
 import { createTestRenderer, ManualClock } from "@opentui/core/testing"

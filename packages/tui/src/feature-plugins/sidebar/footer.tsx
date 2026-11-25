@@ -1,3 +1,7 @@
+/**
+ * 侧栏功能插件 — Footer。
+ * 以插件形式提供的侧栏功能中负责 Footer 部分，提供该部分所需的实现与类型定义。
+ */
 import { Plugin } from "@opencode/plugin/tui"
 import { createMemo, Show } from "solid-js"
 import { useTerminalDimensions } from "@opentui/solid"

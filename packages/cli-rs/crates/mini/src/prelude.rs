@@ -1,3 +1,5 @@
+//! 精简版实现：`prelude`。
+
 pub use std::cell::{Cell, RefCell};
 pub use std::collections::{HashMap, HashSet};
 pub use std::path::PathBuf;

@@ -1,3 +1,7 @@
+/**
+ * 工具展示 — SubagentRowVariantsStories。
+ * 工具调用与结果的展示组件中负责 SubagentRowVariantsStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { TextShimmer } from "@opencode/ui/text-shimmer"
 import { For, type JSX } from "solid-js"
 import { CurrentSessionProviders } from "../storybook/current-session-story"

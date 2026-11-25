@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid FooterForm：该文件实现 FooterForm 相关的状态与逻辑。
+ */
 import { measureEditText, type BoxRenderable, type ScrollBoxRenderable, type TextareaRenderable } from "@opentui/core"
 import { useKeyboard, useRenderer, useTerminalDimensions } from "@opentui/solid"
 import { For, Show, createEffect, createMemo, createSignal, onCleanup } from "solid-js"

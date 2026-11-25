@@ -1,3 +1,8 @@
+/**
+ * 强调色脚本。
+ *
+ * Rust CLI 的代码生成器：由 TypeScript 单一来源生成 Rust 代码。
+ */
 // Writes crates/ui/src/fuzzy/accents.rs: what fuzzysort's `remove_accents` makes of each character it changes, from
 // this runtime's Unicode data. It decomposes Latin letters (NFD) and drops the marks U+0300 to U+036F. Marks are not
 // Latin, so a run of Latin letters decomposes letter by letter. Sorted by character for a binary search.

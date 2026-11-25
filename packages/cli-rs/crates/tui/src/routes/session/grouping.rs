@@ -1,4 +1,6 @@
 //! Fold transcript entries into expandable exploration, reasoning, instruction, and activity groups.
+//!
+//! 终端界面路由：`grouping`。
 
 use std::collections::HashSet;
 

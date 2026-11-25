@@ -1,3 +1,7 @@
+/**
+ * 时间线故事 — CompareRendererStories。
+ * 新版时间线的 Storybook 展示中负责 CompareRendererStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { TextShimmer } from "@opencode/ui/text-shimmer"
 import { Show, createEffect, createMemo, createSignal, onCleanup, onMount } from "solid-js"
 import { BackgroundMoveHint } from "../../../../app/src/session/timeline/message-timeline"

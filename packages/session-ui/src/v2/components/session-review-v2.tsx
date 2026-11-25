@@ -1,3 +1,7 @@
+/**
+ * V2 组件 — SessionReviewV2。
+ * 第二版会话界面组件中负责 SessionReviewV2 部分，提供该部分所需的实现与类型定义。
+ */
 import { useI18n } from "@opencode/ui/context/i18n"
 import { SegmentedControlItem, SegmentedControl } from "@opencode/ui/segmented-control"
 import { TextInput } from "@opencode/ui/text-input"

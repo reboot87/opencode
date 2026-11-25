@@ -23,7 +23,10 @@ import { docsHref, getDocsSection, type DocsSection } from "../lib/navigation"
 import type { V1Locale } from "../lib/v1-navigation"
 import type { DocsHeading } from "../rehype-headings"
 
-/** The URLs of the docs' stylesheet (styles/docs.css) and browser script (client.ts). */
+/** The URLs of the docs' stylesheet (styles/docs.css) and browser script (client.ts).
+ *
+ * 文档站布局：文档布局。
+ */
 export type DocsAssets = { stylesheet: string; script: string }
 
 /** The page in each docs version, for the lockup's versions and the V1 notice (render.tsx). */

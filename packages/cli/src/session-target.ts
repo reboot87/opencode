@@ -1,3 +1,7 @@
+/**
+ * 会话目标解析。
+ * 把命令行参数解析为会话目标（ID、名称或最近会话），含分页查找。
+ */
 import type { LocationGetOutput, ModelRef, OpenCodeClient, SessionInfo } from "@opencode/client/promise"
 import { Model } from "@opencode/schema/model"
 import path from "node:path"

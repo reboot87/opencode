@@ -163,7 +163,10 @@ async function installScript() {
   return new Response(response.body, { status: response.status, statusText: response.statusText, headers })
 }
 
-/** Where an old URL (without its locale) lives now, or undefined when it has not moved. */
+/** Where an old URL (without its locale) lives now, or undefined when it has not moved.
+ *
+ * 站点入口：中间件。
+ */
 function movedPath(pathname: string) {
   // The download page is gone; its desktop files stay at /download/<channel>/<platform>.
   if (pathname === "/download" || pathname === "/download/") return "/product"

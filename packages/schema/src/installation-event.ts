@@ -1,3 +1,7 @@
+/**
+ * 安装事件类型。
+ * 定义安装/卸载相关的事件结构。
+ */
 export * as InstallationEvent from "./installation-event.js"
 
 import { Schema } from "effect"

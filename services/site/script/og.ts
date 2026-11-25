@@ -38,7 +38,10 @@ const RULE = "#2e2e2e"
 const icon = `<svg xmlns="http://www.w3.org/2000/svg" width="240" height="300" viewBox="0 0 240 300"><path d="M180 240H60V120H180V240Z" fill="#4b4b4b"/><path fill-rule="evenodd" d="M180 60H60V240H180V60ZM240 300H0V0H240V300Z" fill="#f2f2f2"/></svg>`
 const TEXT = { left: 137, width: 699, title: 112, description: 32, line: 48, gap: 28 }
 
-/** Where a still sits: its crop in source pixels and the tilted plane it's projected onto. */
+/** Where a still sits: its crop in source pixels and the tilted plane it's projected onto.
+ *
+ * 站点构建脚本：`og`。
+ */
 type Shot = {
   file: string
   crop: [left: number, top: number, width: number, height: number]

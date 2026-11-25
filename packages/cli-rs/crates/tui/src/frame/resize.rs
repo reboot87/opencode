@@ -1,4 +1,6 @@
 //! Drag handling for pane resize.
+//!
+//! 终端界面：调整尺寸。
 
 use std::sync::atomic::{AtomicU64, Ordering};
 use std::time::Instant;

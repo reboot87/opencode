@@ -1,3 +1,7 @@
+/**
+ * ACP 错误类型。
+ * 定义 ACP 层的错误类型（会话不存在、目录不匹配等）。
+ */
 import { RequestError } from "@agentclientprotocol/sdk"
 import { Schema } from "effect"
 

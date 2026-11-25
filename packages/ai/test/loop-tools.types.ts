@@ -1,3 +1,10 @@
+/**
+ * 循环·工具的类型定义（类型断言用）。
+ *
+ * 被测模块：@opencode/ai/loop-tools
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { Effect, Schema } from "effect"
 import { ai, tool } from "../src/effect.js"
 import * as OpenAIChat from "../src/protocols/openai-chat.js"

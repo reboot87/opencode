@@ -1,3 +1,7 @@
+/**
+ * 渲染进程 — Plugins。
+ * Electron 渲染进程的界面逻辑中负责 Plugins 部分，提供该部分所需的实现与类型定义。
+ */
 import { Predicate } from "effect"
 import type { Bridge, BridgeMessage } from "@opencode/plugin/gui/host"
 import type { PluginFailure } from "../shared/ipc-rpc/plugins"

@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid PluginsDialogTest：该文件实现 PluginsDialogTest 相关的状态与逻辑。
+ */
 import { expect, test } from "bun:test"
 import { testRender } from "@opentui/solid"
 import { mkdir } from "node:fs/promises"

@@ -1,4 +1,6 @@
 //! Additional directory grants are recorded in session metadata.
+//!
+//! ACP 协议实现：目录。
 
 use opencode_api::client::Client;
 use opencode_api::generated::{PermissionEffect, PermissionRule, SessionInfo, SessionMetadata, SessionUpdateInput};

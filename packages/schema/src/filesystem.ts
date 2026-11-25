@@ -1,3 +1,7 @@
+/**
+ * 文件系统类型。
+ * 定义文件系统条目、匹配与内容结构。
+ */
 export * as FileSystem from "./filesystem.js"
 
 import { Schema } from "effect"

@@ -1,3 +1,8 @@
+/**
+ * OpenTUI·原生脚本。
+ *
+ * Rust CLI 的开发脚本：代码生成、依赖漂移检查与性能采样。
+ */
 // Installs OpenTUI's native library for the client's pin from the OpenTUI release zip: the header, the static archive
 // opentui-sys links, and every licence and source-notice file of the zip (under `licenses/`). The zip is checked
 // against the sha256 in `releases` below and its `opentui.h` against the release's header hash, which opentui-sys's

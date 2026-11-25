@@ -1,3 +1,7 @@
+/**
+ * 模块 — FullscreenMachine。
+ * 该目录下的功能模块中负责 FullscreenMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // `seeded` turns on with the first answer or main event, so a late boot read cannot overwrite a newer event.
 export type FullscreenState =
   | { readonly status: "unseeded" }

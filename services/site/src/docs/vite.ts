@@ -36,6 +36,8 @@ const v1ConfigValues = {
  * The docs in the site's Vite build: compiles each set's MDX into server-only Solid modules (for
  * script/build.ts and the development server) and provides `virtual:docs-pages`, the page slugs of
  * each set. The docs' stylesheet and script are built by script/build.ts, under /docs/_build.
+ *
+ * V2 文档站：Vite。
  */
 export function docs(): Plugin {
   return {

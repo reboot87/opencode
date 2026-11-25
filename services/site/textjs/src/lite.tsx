@@ -1,3 +1,6 @@
+/**
+ * 文本处理实现：`lite`。
+ */
 import { initYoga } from "@textjs/core"
 import { createHostInput } from "@textjs/app/experimental"
 import { renderToConsole } from "@textjs/react"

@@ -1,4 +1,8 @@
-/** How the app shows a file, from its extension. */
+/**
+ * How the app shows a file, from its extension.
+ *
+ * 应用根据文件扩展名决定文件的展示方式（如图片、音频、视频、PDF、HTML 等）。
+ */
 export type ArtifactKind =
   | "image"
   | "svg"

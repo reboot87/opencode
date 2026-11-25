@@ -3,6 +3,8 @@ import { createSignal, onCleanup, onMount } from "solid-js"
 /**
  * True while `element` is near the viewport and the tab is showing, so loops, timers and scroll
  * work can stop off screen and in background tabs.
+ *
+ * 站点界面组件：可见。
  */
 export function useVisible(element: () => Element | undefined, margin = "200px 0px") {
   const [near, setNear] = createSignal(false)

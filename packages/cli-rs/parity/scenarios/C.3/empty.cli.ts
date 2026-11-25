@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：空值·CLI。
+ *
+ * 规格编号：C.3。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `stats --all`: no activity in the range gives the short card. The range ends now, so `to` is masked.
 import { defineCli } from "../../cli/run"
 import { statsRoute } from "./fixture"

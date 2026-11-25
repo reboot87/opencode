@@ -1,3 +1,7 @@
+/**
+ * Schema 包统一导出。
+ * 集中导出所有共享类型与 Schema 构造器。
+ */
 export { Agent } from "./agent.js"
 export { Artifact } from "./artifact.js"
 export { Command } from "./command.js"

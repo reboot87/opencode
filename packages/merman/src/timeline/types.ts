@@ -1,3 +1,7 @@
+/**
+ * 时间线 — Types。
+ * 按时间顺序展示会话消息的视图中负责 Types 部分，提供该部分所需的实现与类型定义。
+ */
 export type TimelineDirection = "TD" | "LR"
 
 export interface TimelineSection {

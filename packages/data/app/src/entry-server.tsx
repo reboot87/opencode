@@ -1,3 +1,7 @@
+/**
+ * 数据站源码 — EntryServer。
+ * 模型能力对比站点的实现中负责 EntryServer 部分，提供该部分所需的实现与类型定义。
+ */
 // @refresh reload
 import { createHandler, StartServer, type Asset, type PageEvent } from "@solidjs/start/server"
 import openTuiMonoRegularLatin from "./asset/fonts/opentui-mono-regular-latin.woff2?url"

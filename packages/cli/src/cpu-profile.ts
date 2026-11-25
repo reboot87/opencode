@@ -1,3 +1,7 @@
+/**
+ * CPU 剖析。
+ * 按信号触发 V8 CPU 剖析并写出结果。
+ */
 export * as CpuProfile from "./cpu-profile"
 
 import { Global } from "@opencode/util/global"

@@ -1,3 +1,7 @@
+/**
+ * MCP 技能插件。
+ * 把 MCP 服务器暴露的能力包装为技能，供 skill 工具按需加载。
+ */
 export * as McpSkillPlugin from "./mcp-skill.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

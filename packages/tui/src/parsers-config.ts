@@ -1,3 +1,7 @@
+/**
+ * 终端界面 — ParsersConfig。
+ * OpenCode 终端界面的整体骨架与入口中负责 ParsersConfig 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   // NOTE: FOR markdown, javascript and typescript, we use the opentui built-in parsers
   // Warn: when taking queries from the nvim-treesitter repo, make sure to include the query dependencies as well

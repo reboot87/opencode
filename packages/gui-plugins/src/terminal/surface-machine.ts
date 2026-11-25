@@ -1,4 +1,8 @@
-/** A terminal the panel keeps mounted. Each mount takes its own snapshot and socket. */
+/**
+ * A terminal the panel keeps mounted. Each mount takes its own snapshot and socket.
+ *
+ * 终端插件中负责 SurfaceMachine 部分：内嵌终端中与 SurfaceMachine 相关的状态、交互与渲染逻辑。
+ */
 export type Surface = {
   readonly session: string
   readonly id: string

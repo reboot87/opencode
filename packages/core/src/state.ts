@@ -1,3 +1,7 @@
+/**
+ * 状态变换框架。
+ * 提供可变换状态的注册与编辑（Editor）机制，用于配置的局部更新。
+ */
 export * as State from "./state.js"
 
 import { Cause, Context, Effect, Exit, Fiber, Scope } from "effect"

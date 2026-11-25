@@ -1,3 +1,7 @@
+/**
+ * 项目 ID 类型。
+ * 定义项目的品牌 ID 类型。
+ */
 import { Schema } from "effect"
 import { statics } from "./schema.js"
 

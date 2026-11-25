@@ -1,3 +1,7 @@
+/**
+ * 加载指示 — Loader。
+ * 加载中状态指示组件中负责 Loader 部分，提供该部分所需的实现与类型定义。
+ */
 import { splitProps, type ComponentProps } from "solid-js"
 import { syncSpinPhase } from "../../hooks/spin-phase"
 import "./loader.css"

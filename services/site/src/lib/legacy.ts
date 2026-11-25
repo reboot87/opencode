@@ -63,7 +63,10 @@ export function legacyRedirect(request: Legacy): Response | undefined {
   if (v2 && read) return redirect(301, `${v2}${request.search}`)
 }
 
-/** Where a /v2 docs URL lives under /docs, or undefined for any other path. */
+/** Where a /v2 docs URL lives under /docs, or undefined for any other path.
+ *
+ * 站点共享逻辑：遗留。
+ */
 function v2DocsPath(path: string) {
   const match = path.match(/^\/v2(\/.*)?$/)
   if (!match || path === "/v2/install" || path === "/v2/cli.json") return

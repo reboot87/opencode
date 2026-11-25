@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：重载·app。
+ *
+ * 规格编号：E.20。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `location.reload` (T19), bound to F5 here (TS and Rust list it in the palette too, but the two palettes do
 // not list the same commands yet): it posts `/api/location/reload`, then the "Configuration reloaded" toast
 // replaces "Reloading configuration…" (`app.tsx:1104-1119`).

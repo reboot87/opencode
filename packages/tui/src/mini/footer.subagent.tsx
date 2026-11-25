@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid FooterSubagent：该文件实现 FooterSubagent 相关的状态与逻辑。
+ */
 import type { ScrollBoxRenderable } from "@opentui/core"
 import { useKeyboard, useTerminalDimensions } from "@opentui/solid"
 import "../component/spinner-renderable"

@@ -1,3 +1,10 @@
+/**
+ * 会话·目标的测试。
+ *
+ * 被测模块：@opencode/cli/session-target
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { afterEach, describe, expect, mock, spyOn, test } from "bun:test"
 import path from "node:path"
 import { OpenCode, type LocationGetOutput, type ModelRef, type SessionInfo } from "@opencode/client/promise"

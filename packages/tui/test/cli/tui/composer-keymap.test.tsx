@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid ComposerKeymapTest：该文件实现 ComposerKeymapTest 相关的状态与逻辑。
+ */
 import { testRender } from "@opentui/solid"
 import { afterAll, expect, test } from "bun:test"
 import { onMount, Show } from "solid-js"

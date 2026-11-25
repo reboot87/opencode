@@ -1,3 +1,7 @@
+/**
+ * 事件订阅分发。
+ * 维护事件订阅者队列（容量 4096）并广播事件，含溢出错误。
+ */
 export * as EventFeed from "./event-feed"
 
 import { Bus } from "@opencode/core/bus"

@@ -1,3 +1,7 @@
+/**
+ * 旁注插件 — Panel。
+ * 在侧边提供补充说明的 GUI 插件中负责 Panel 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, Match, Show, Switch } from "solid-js"
 import { Button } from "@opencode/ui/button"
 import { useI18n } from "@opencode/ui/context/i18n"

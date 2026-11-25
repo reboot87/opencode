@@ -1,4 +1,6 @@
 //! Exercise the composer, shell output, and client MCP tools against an in-memory transport.
+//!
+//! 终端界面测试：输入框。
 
 use crate::support::{self, WAIT};
 

@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — ComposerTouchStories。
+ * 会话输入区的组合逻辑与附件处理中负责 ComposerTouchStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, Show, createEffect, createMemo, on, onCleanup, onMount } from "solid-js"
 import { createStore } from "solid-js/store"
 import type { ModelSelection } from "@/providers/models/selection"

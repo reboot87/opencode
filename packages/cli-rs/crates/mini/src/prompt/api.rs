@@ -1,4 +1,6 @@
 //! Session-scoped completion, history and prompt requests.
+//!
+//! 精简版实现：API。
 
 use opencode_api::client::{Call, Client};
 use opencode_api::error::Error;

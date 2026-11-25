@@ -1,3 +1,7 @@
+/**
+ * Worktree 类型。
+ * 定义工作树信息与策略结构。
+ */
 export * as Worktree from "./worktree.js"
 
 import { Schema } from "effect"

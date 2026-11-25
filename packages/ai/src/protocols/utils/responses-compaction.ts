@@ -1,3 +1,7 @@
+/**
+ * Responses 压缩工具。
+ * 实现 Responses 会话的上下文压缩。
+ */
 import { Effect, Schema } from "effect"
 import {
   AIError,

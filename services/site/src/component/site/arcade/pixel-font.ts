@@ -1,4 +1,7 @@
-/** The CRT's 5×7 bitmap font, shared by the SVG text (pixel-text.tsx) and the canvas renderer. */
+/** The CRT's 5×7 bitmap font, shared by the SVG text (pixel-text.tsx) and the canvas renderer.
+ *
+ * 街机小游戏组件：像素字体。
+ */
 
 export const glyphs: Record<string, string> = {
   A: "01110 10001 10001 11111 10001 10001 10001",

@@ -8,6 +8,8 @@ import { setBarColor } from "../theme"
  * view and lets its letters be dragged, from the server's markup. While they are out of order the
  * "Like letters?" bar slides open at the page's end; filling the bottom of the screen, its blue runs
  * on to the screen's bottom edge (the page behind and the browser bar take it).
+ *
+ * 客户端交互岛：`wordmark`。
  */
 export default function wordmarkIsland(root: HTMLElement) {
   const bar = $('[data-component="letters-bar"]')

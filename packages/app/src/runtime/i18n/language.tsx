@@ -1,3 +1,7 @@
+/**
+ * 运行时国际化 — Language。
+ * 运行时加载多语言文案的机制中负责 Language 部分，提供该部分所需的实现与类型定义。
+ */
 import { batch, createEffect, createMemo, createSignal, on, onCleanup, untrack, type JSX } from "solid-js"
 import { createStore } from "solid-js/store"
 import { Option, Schema, SchemaGetter } from "effect"

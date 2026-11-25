@@ -1,5 +1,7 @@
 //! Before restart, persistent terminals are published in `<registration>.pty-handoff` for adoption with
 //! `OPENCODE_PTY_HANDOFF`. A failed handoff does not prevent shutdown.
+//!
+//! 服务层：交接。
 
 use opencode_api::transport::Transport;
 use opencode_local::registration::Registration;

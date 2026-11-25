@@ -12,6 +12,8 @@ const hexUrl = "https://anoma.ly/hex"
  * actions, as they look in the voice panel), anchored to the orb on desktop and in a bottom sheet on
  * touch phones. Its code and voice-mode.css load once the orb is hovered, focused or pressed. It
  * shows whether it is open on the orb (hex-orb.ts), which the sheet does itself on phones.
+ *
+ * 语音交互组件：十六进制面板。
  */
 export default function HexPanel(props: {
   orb: HTMLButtonElement

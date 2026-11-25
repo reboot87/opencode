@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：行内·app。
+ *
+ * 规格编号：E.7b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The one-line tool rows (V05b, V23): webfetch, websearch, skill, question, todowrite, subagent, and execute,
 // each running and finished, in their own rows (`session.grouping: none`). Then a click on the finished execute
 // row opens its dialog (DLG36).

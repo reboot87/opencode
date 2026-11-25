@@ -12,7 +12,10 @@ export type ProductListItem = {
   name: string
   description: string
   href: string
-  /** Opens in a new tab (another site). */
+  /** Opens in a new tab (another site).
+ *
+ * 站点界面组件：product·列表。
+ */
   external?: boolean
   /** An image (a product's own icon) or a mark drawn in the tile; none leaves the tile blank. */
   icon?: string | JSX.Element

@@ -10,6 +10,8 @@ import wordmarkSolidDark from "../../asset/brand/opencode-wordmark-solid-dark.sv
 /**
  * The extra logo files for the logo menus, by style, logo or wordmark, and tone. "transparent" lets the
  * background show through the inner shadow; "solid" is one colour with the shadow filled in.
+ *
+ * 站点界面组件：标识变体。
  */
 export const logoVariantSvgs = {
   transparent: {

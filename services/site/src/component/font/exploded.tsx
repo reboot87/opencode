@@ -13,6 +13,8 @@ type Block = { x: number; y: number; z: number; h: number; tone: "ink" | "shade"
 /**
  * The three lift rules. Each gives a module's height, in modules, at full explosion; the slider
  * scales it by e (0–1). Every rule is linear in one readable quantity, so equal steps stay equal.
+ *
+ * 字体展示组件：`exploded`。
  */
 const rules = {
   row: {

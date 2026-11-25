@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — PromptPasteTest。
+ * 终端界面的测试中负责 PromptPasteTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { saveDraft, takeDraft } from "../src/component/prompt/draft-stash"
 import { emptyPrompt, type PromptFile, type PromptInfo } from "../src/prompt/history"

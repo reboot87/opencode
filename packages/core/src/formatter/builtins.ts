@@ -1,3 +1,7 @@
+/**
+ * 内置格式化器。
+ * 内置多种语言的格式化器实现与配置。
+ */
 import { Effect } from "effect"
 import { ChildProcess } from "effect/process"
 import { isRecord } from "@opencode/util/record"

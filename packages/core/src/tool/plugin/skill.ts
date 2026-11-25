@@ -1,3 +1,7 @@
+/**
+ * skill 工具。
+ * 按需加载技能（skill）内容的工具。
+ */
 export * as SkillTool from "./skill.js"
 
 import type { Context } from "@opencode/plugin/effect/plugin"

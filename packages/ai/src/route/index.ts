@@ -1,3 +1,7 @@
+/**
+ * route 层的公开出口：重新导出 Route 构建器、LLMClient 及相关类型。
+ * provider 包通过这里构建自己的模型路由。
+ */
 export { Route, LLMClient } from "./client.js"
 export type {
   RouteLanguageModelInput,

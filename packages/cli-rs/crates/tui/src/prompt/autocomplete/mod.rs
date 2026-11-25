@@ -1,4 +1,6 @@
 //! Slash-command, mention, file, and directory completion for the prompt.
+//!
+//! 终端输入提示入口。
 
 pub mod cd;
 pub use opencode_ui::prompt_input::parse;

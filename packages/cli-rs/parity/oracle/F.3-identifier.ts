@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：F.3·identifier。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-ORACLE for crates/api/src/id.rs: the time prefix TypeScript's Identifier.create mints for a fixed call
 // sequence, counter restarts and overflow past 0xfff included. Each case calls create `repeat` times and
 // records the last prefix. Writes parity/fixtures/F.3/identifier.json.

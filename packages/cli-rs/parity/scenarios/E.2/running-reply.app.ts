@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：运行中·回复·app。
+ *
+ * 规格编号：E.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A reply while it runs (rs-ms1-accept problems 4 and 5): the step has started and nothing streamed yet, then
 // reasoning streams in, then the reasoning ends and a shell call runs. The session is running throughout.
 import { defineApp, session, user } from "../../lib/app"

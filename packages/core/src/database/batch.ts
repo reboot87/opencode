@@ -1,3 +1,7 @@
+/**
+ * 批量语句拆分。
+ * 把批量写入拆成每条绑定参数不超过 100 的分组，以兼容 Durable Object SQLite 的参数上限。
+ */
 export * as DatabaseBatch from "./batch.js"
 
 import { getTableColumns, type Table } from "drizzle-orm"

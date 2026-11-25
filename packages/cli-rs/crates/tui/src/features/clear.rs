@@ -1,4 +1,6 @@
 //! Both session commands keep the agent and model. Only `/clear` closes the current tab.
+//!
+//! 终端界面功能模块：`clear`。
 
 use opencode_local::cli_config::NewLocation;
 use opencode_store::Location;

@@ -1,3 +1,7 @@
+/**
+ * 权限类型。
+ * 定义权限动作、资源、规则与效果（allow/ask/deny）结构。
+ */
 export * as Permission from "./permission.js"
 
 import { Schema } from "effect"

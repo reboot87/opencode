@@ -1,3 +1,10 @@
+/**
+ * 会话·技能的测试。
+ *
+ * 被测模块：@opencode/core/session-skill
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import type { FileSystem } from "@opencode/core/filesystem"
 import path from "path"
 import { describe, expect } from "bun:test"

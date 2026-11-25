@@ -4,6 +4,8 @@ import { blocks } from "~/lib/markdown"
  * The OpenCode font: the six letters of the wordmark, cut on a 24 × 42 cell from the official SVG
  * logo. `ink` is the letter, `shadow` the lighter shade in its counter. The same outlines live in
  * public/font/glyphs.mjs, which the font download and the GIF worker load at runtime.
+ *
+ * 站点共享逻辑：字体内容。
  */
 export const glyphs = {
   o: { shadow: "M18 30H6V18H18V30Z", ink: "M18 12H6V30H18V12ZM24 36H0V6H24V36Z" },

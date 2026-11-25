@@ -1,3 +1,10 @@
+/**
+ * 工作树的测试。
+ *
+ * 被测模块：@opencode/sdk/worktree
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { mkdir, rm } from "node:fs/promises"
 import { join } from "node:path"

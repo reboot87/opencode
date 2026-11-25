@@ -1,5 +1,7 @@
 //! Exercise renderer claims on a streaming transcript. Compare claimed rows with a fresh mount; a
 //! failed claim must hand the row back to the host.
+//!
+//! 终端界面测试：插件·claim。
 
 use crate::support::model::{self, Failure, Model, Rng};
 use crate::support::{self, Harness};

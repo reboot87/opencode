@@ -1,3 +1,12 @@
+/**
+ * 结构化信息抽取（Extraction）实验性 API。
+ *
+ * 本文件定义「从文本中按字段抽取结构化答案」的完整类型与调用入口：用 Schema 描述每种字段类型（text/number/date/
+ * estimate/forecast 等）对应的答案结构，再经由 MediaModel 的统一执行通道发送请求。答案保留可为空值（value=null）、
+ * 最可能猜测（guess）、置信度与原文字符区间（span），便于下游解释结果来源。
+ *
+ * 属于 experimental：接口仍在演进，命名与行为可能变化。
+ */
 import { Effect, Schema } from "effect"
 import { MediaModel, tryRequest } from "../media-model.js"
 import { RequestExecutor } from "../route/executor.js"
@@ -16,12 +25,15 @@ import {
 // ---------------------------------------------------------------------------
 
 /** `[start, end)` character offsets into `input`. */
+// 答案在原文中的字符区间（左闭右开），用于把抽取结果回溯到输入文本。
 const Span = Schema.Tuple([Schema.Int, Schema.Int])
 
 /** An ISO date for date estimates; anything else is numeric. */
 const NumberOrDate = Schema.Union([Schema.Number, Schema.String])
 
 /** `value` is null when the input does not determine it; `guess` is the most likely value either way. */
+// 单值答案的通用结构：输入无法确定时 value 为 null，但始终给出最可能的 guess；
+// p_null/nullProbability 表示「应为空」的概率，confidence 表示抽取置信度。
 const valueAnswer = <Value extends Schema.Top>(value: Value) =>
   Schema.Struct({
     value: Schema.NullOr(value),
@@ -169,6 +181,8 @@ export const request = <const Model extends ExtractionModel, const Fields extend
 
 const validate = Schema.decodeUnknownSync(ExtractionRequestSchema)
 
+// 发起抽取请求：先归一化并校验输入（fields 非空、model 合法），再经模型路由的 inline 执行器发送。
+// 返回按字段类型收窄的答案类型；失败以 AIError 建模，不抛异常。
 export function generate<const Model extends ExtractionModel, const Fields extends ExtractionFields>(
   input: ExtractionRequestInput<Model, Fields>,
 ): Effect.Effect<ExtractionResponseFor<Fields>, AIError, RequestExecutor.Service>

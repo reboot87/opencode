@@ -1,5 +1,7 @@
 //! Paints the footer before resolving the session. On exit, flush queued rows, leave split mode and place the shell
 //! below the transcript.
+//!
+//! 精简版实现：Shell。
 
 use std::borrow::Cow;
 use std::time::Instant;

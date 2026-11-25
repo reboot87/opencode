@@ -1,3 +1,8 @@
+/**
+ * 路由测试夹具。
+ *
+ * 为服务端测试提供请求、配置与工作树样例。
+ */
 import { LocationServiceMap } from "@opencode/core/location-service-map"
 import { Plugin } from "@opencode/core/plugin"
 import { Location } from "@opencode/schema/location"

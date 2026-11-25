@@ -1,3 +1,7 @@
+/**
+ * 输入历史 — Store。
+ * 输入历史的上限、读写与切换中负责 Store 部分，提供该部分所需的实现与类型定义。
+ */
 import { type SetStoreFunction, type Store } from "solid-js/store"
 import type { Prompt } from "@/composer/state"
 import { Persist, persisted } from "@/runtime/persistence/storage"

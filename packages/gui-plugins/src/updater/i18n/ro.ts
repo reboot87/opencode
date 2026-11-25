@@ -1,3 +1,7 @@
+/**
+ * 更新文案 — Ro。
+ * 更新插件的多语言文案中负责 Ro 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "status.label": "Actualizează",
   "action.checkNow": "Verifică acum",

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：btw·app。
+ *
+ * 规格编号：E.14。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `/btw` (F03): the side question goes to `session.generate` with the instructions, and the answer opens in a
 // large dialog as Markdown. The answer is held until the pending checkpoint has seen the `/btw` spinner under the
 // prompt; once the dialog closes, the spinner is gone.

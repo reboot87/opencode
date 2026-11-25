@@ -1,3 +1,7 @@
+/**
+ * GUI 上下文 — Catalog。
+ * GUI 插件的上下文与状态中负责 Catalog 部分，提供该部分所需的实现与类型定义。
+ */
 import { onCleanup, type Accessor } from "solid-js"
 import { isServiceUnavailableError } from "@opencode/client/promise"
 import { createKeyed, type MountedSession } from "@opencode/plugin/gui"

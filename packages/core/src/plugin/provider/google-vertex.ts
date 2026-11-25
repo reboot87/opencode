@@ -1,3 +1,7 @@
+/**
+ * Google Vertex 插件。
+ * 注册 Google Vertex provider，支持 ADC（应用默认凭据）文件与服务账号鉴权。
+ */
 import { Effect, Option, Schema, Stream } from "effect"
 import path from "node:path"
 import { define } from "@opencode/plugin/effect/plugin"

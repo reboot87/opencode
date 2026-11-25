@@ -1,3 +1,7 @@
+/**
+ * 实验性 API 分组汇总。
+ * 把各实验性分组（持久 PTY 等）合并为统一的实验性入口。
+ */
 import { ArtifactEndpoints } from "./artifact.js"
 import { BlobGetEndpoint } from "./blob.js"
 import { AutomationEndpoints } from "./automation.js"

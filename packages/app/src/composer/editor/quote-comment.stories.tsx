@@ -1,3 +1,7 @@
+/**
+ * 输入编辑器 — QuoteCommentStories。
+ * 输入区文本编辑器的实现中负责 QuoteCommentStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal, Show } from "solid-js"
 import type { ComposerDelivery } from "../adapter"
 import { QuoteCommentEditor } from "./quote-comment"

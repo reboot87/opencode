@@ -1,3 +1,7 @@
+/**
+ * 服务地址解析。
+ * 解析服务端 URL 并归一化路径。
+ */
 import { Effect, Option } from "effect"
 
 export function parseServerURL(value: string) {

@@ -1,3 +1,7 @@
+/**
+ * 开关 — Switch。
+ * 布尔开关组件中负责 Switch 部分，提供该部分所需的实现与类型定义。
+ */
 import { Control, Description, ErrorMessage, Input, Label, Root, Thumb } from "@kobalte/core/switch"
 import { Show, splitProps } from "solid-js"
 import type { ComponentProps, ParentProps } from "solid-js"

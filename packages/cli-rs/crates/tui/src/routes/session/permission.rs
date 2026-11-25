@@ -1,4 +1,6 @@
 //! Session-family permission requests and their prompt, denial, and auto-accept paths.
+//!
+//! 终端界面路由：权限。
 
 use std::collections::HashSet;
 

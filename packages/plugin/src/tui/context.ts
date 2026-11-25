@@ -1,3 +1,7 @@
+/**
+ * TUI 插件上下文。
+ * 定义终端界面插件可用的上下文能力（存储、命令、输入等）。
+ */
 import type {
   AgentInfo,
   CommandInfo,

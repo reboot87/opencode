@@ -1,3 +1,7 @@
+/**
+ * models.dev v1 目录模型。
+ * 定义 models.dev v1 格式的模型元数据（价格、上下文、限流）Schema。
+ */
 import { Option, Schema } from "effect"
 
 // models.dev v1 catalogs (`/api.json`), still accepted from OPENCODE_MODELS_PATH and custom

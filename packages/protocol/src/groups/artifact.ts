@@ -1,3 +1,7 @@
+/**
+ * 产物 API 分组。
+ * 定义 artifact 的列举、读取与更新端点（部分为实验性）。
+ */
 import { Artifact } from "@opencode/schema/artifact"
 import { Location } from "@opencode/schema/location"
 import { Session } from "@opencode/schema/session"

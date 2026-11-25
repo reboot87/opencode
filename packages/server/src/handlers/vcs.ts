@@ -1,3 +1,7 @@
+/**
+ * vcs 接口处理器。
+ * 版本控制接口处理器：初始化、分支与 diff。
+ */
 import { Vcs } from "@opencode/core/vcs"
 import { Project } from "@opencode/core/project"
 import { Worktree } from "@opencode/core/worktree"

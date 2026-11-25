@@ -94,7 +94,10 @@ export default function Brand() {
     onCleanup(() => play.disconnect())
   })
 
-  /** Copies text, or the text a URL serves, and marks `key` as copied for a moment. */
+  /** Copies text, or the text a URL serves, and marks `key` as copied for a moment.
+ *
+ * 品牌页路由：索引。
+ */
   const copy = (key: string, value: string | { url: string }) => {
     // A promised ClipboardItem keeps the click's user activation while the file loads (Safari needs it).
     void (typeof value === "string"

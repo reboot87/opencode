@@ -1,3 +1,7 @@
+/**
+ * mcp add 命令。
+ * 添加 MCP 服务器配置。
+ */
 import { EOL } from "node:os"
 import path from "node:path"
 import { readFile, stat, writeFile } from "node:fs/promises"

@@ -1,3 +1,7 @@
+/**
+ * 后台服务 — SidecarCredentials。
+ * 桌面端托管的后台服务进程中负责 SidecarCredentials 部分，提供该部分所需的实现与类型定义。
+ */
 export * as SidecarCredentials from "./sidecar-credentials"
 
 import type { ServerReadyData } from "../../shared/ipc-contract"

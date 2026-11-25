@@ -1,6 +1,8 @@
 //! Full-duplex, overlapped byte-mode named pipes. Every pending operation owns
 //! its OVERLAPPED/event and is cancelled and reaped before its buffer is released.
 //! No FlushFileBuffers: it can wait indefinitely for an uncooperative client.
+//!
+//! 进程间传输通道：`windows`。
 
 use std::ffi::OsStr;
 use std::io::{self, Read, Write};

@@ -1,3 +1,7 @@
+/**
+ * 共享代码 — IpcTransport。
+ * 主进程与渲染进程共用的类型与工具中负责 IpcTransport 部分，提供该部分所需的实现与类型定义。
+ */
 import type { EnableState } from "@opencode/plugin/gui/host"
 
 export const IpcTransportPort = "desktop-rpc-port"

@@ -1,3 +1,7 @@
+/**
+ * Effect 风格插件 API — 工具领域。
+ * 插件定义自定义工具及其执行上下文与钩子。此文件定义 Effect 风格 下该领域的接口与类型，与其它领域共同构成插件 API 表面。
+ */
 import { Tool } from "@opencode/schema/tool"
 import type { Agent } from "@opencode/schema/agent"
 import type { Session } from "@opencode/schema/session"

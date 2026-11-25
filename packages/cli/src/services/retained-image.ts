@@ -1,3 +1,7 @@
+/**
+ * 保留镜像。
+ * 在升级过程中保留当前运行的镜像以便回滚。
+ */
 export * as RetainedImage from "./retained-image"
 
 import { Effect, FileSystem } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * 分裂按钮 — SplitButtonStories。
+ * 主操作加下拉菜单的组合按钮中负责 SplitButtonStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal, Show } from "solid-js"
 import { AppIcon } from "@opencode/ui/app-icon"
 import { Icon } from "@opencode/ui/icon"

@@ -1,3 +1,7 @@
+/**
+ * 调试文案 — It。
+ * 调试插件的多语言文案中负责 It 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.toggle": "Mostra o nascondi la barra di debug",
   providerAriaLabel: "Diagnostica delle prestazioni del provider",

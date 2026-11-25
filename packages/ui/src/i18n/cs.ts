@@ -1,3 +1,7 @@
+/**
+ * 国际化 — Cs。
+ * 多语言文案资源中负责 Cs 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "ui.sessionReview.title": "Změny relace",
   "ui.sessionReview.title.git": "Git změny",

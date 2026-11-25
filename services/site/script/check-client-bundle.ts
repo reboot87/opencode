@@ -1,3 +1,6 @@
+/**
+ * 站点构建脚本：检查客户端打包产物。
+ */
 // Fails the build when a development tool reaches the browser bundle: Settings (settings-panel.tsx),
 // Design mode (design-mode.tsx, design-overlay.tsx) or the device preview (device-preview.tsx,
 // device-preview-panel.tsx). They load only on the development server, through loaders a production

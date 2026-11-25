@@ -1,3 +1,7 @@
+/**
+ * Z.ai（智谱）Chat 协议实现。
+ * 兼容 chat 风格接口的 provider 变体。
+ */
 import { Effect, Schema } from "effect"
 import { Protocol } from "../route/protocol.js"
 import type { LanguageModelCompatibility, LLMRequest, Capabilities } from "../schema/index.js"

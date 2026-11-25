@@ -1,4 +1,6 @@
 //! Offer to move the session when the server cannot find its working directory.
+//!
+//! 终端界面路由：位置缺失。
 
 use opencode_api::generated::{AbsolutePath, ProjectID, SessionMoveInput, WorktreeCreateInput};
 

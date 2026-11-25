@@ -1,3 +1,7 @@
+/**
+ * 文件系统 API 分组。
+ * 定义文件读取、写入、列举与监听端点。
+ */
 import { FileSystem } from "@opencode/schema/filesystem"
 import { Location } from "@opencode/schema/location"
 import { PositiveInt } from "@opencode/schema/schema"

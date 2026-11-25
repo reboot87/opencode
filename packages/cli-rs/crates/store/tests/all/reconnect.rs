@@ -1,5 +1,7 @@
 //! A stale registration can delay restart longer than a stream connection attempt. Rediscover between attempts.
 #![cfg(unix)]
+//!
+//! 存储层测试：`reconnect`。
 
 use std::ffi::OsString;
 use std::path::PathBuf;

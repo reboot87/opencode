@@ -1,4 +1,6 @@
 //! Connection, runtime and sorting helpers for server commands.
+//!
+//! CLI 子命令：客户端。
 
 use std::future::Future;
 use std::sync::Arc;

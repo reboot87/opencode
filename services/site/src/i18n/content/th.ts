@@ -1,3 +1,6 @@
+/**
+ * 多语言内容文案：`th`。
+ */
 import type { ContentOverlay } from "./source"
 
 export const content = {

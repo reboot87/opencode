@@ -1,4 +1,6 @@
 //! Limits for one model, highlighting the binding limit.
+//!
+//! 终端弹窗组件：用量模型。
 
 use opencode_api::generated::ModelInfo;
 use opencode_ui::dialog::layout;

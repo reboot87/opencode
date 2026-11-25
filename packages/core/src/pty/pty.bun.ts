@@ -1,3 +1,7 @@
+/**
+ * PTY 实现（Windows/Bun）。
+ * 在 Bun 运行时通过 kernel32.dll 调用实现 PTY。
+ */
 import { dlopen } from "bun:ffi"
 import { spawn } from "bun-pty"
 import type { Opts, Proc } from "./pty.js"

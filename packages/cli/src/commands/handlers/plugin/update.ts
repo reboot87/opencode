@@ -1,3 +1,7 @@
+/**
+ * plugin update 命令。
+ * 更新已安装插件到最新版本。
+ */
 import { EOL } from "node:os"
 import { Cause, Effect, Exit, Option } from "effect"
 import { Npm } from "@opencode/util/npm"

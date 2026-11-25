@@ -1,3 +1,8 @@
+/**
+ * 媒体模型（MediaModel）抽象基类。
+ * 为图片、语音、视频、嵌入、决策等非语言模型提供统一的模型定义：持有内联路由（route）与选项，
+ * 经由 RequestExecutor 执行请求并把响应解码为领域对象。各模态模型（如 Extraction）继承它。
+ */
 import { Effect } from "effect"
 import { Endpoint } from "./route/endpoint.js"
 import { MediaRoute } from "./route/media.js"

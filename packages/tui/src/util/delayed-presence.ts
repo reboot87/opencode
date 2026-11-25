@@ -1,3 +1,7 @@
+/**
+ * 终端工具 — DelayedPresence。
+ * 终端界面的通用工具函数中负责 DelayedPresence 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, onCleanup, type Accessor } from "solid-js"
 
 export function createDelayedPresence<T>(

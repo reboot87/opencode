@@ -1,3 +1,7 @@
+/**
+ * 会话技能查询（SessionSkill）。
+ * 在会话上下文中按需加载技能（skill）内容。
+ */
 export * as SessionSkill from "./skill.js"
 
 import type { Session } from "@opencode/schema/session"

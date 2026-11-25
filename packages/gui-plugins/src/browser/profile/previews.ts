@@ -1,3 +1,7 @@
+/**
+ * 浏览器配置 — Previews。
+ * 浏览器插件的用户配置与身份中负责 Previews 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Session } from "electron"
 import { previewScheme } from "../scheme"
 import type { PreviewSource } from "../workspace-file"

@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — SolidVirtualTest。
+ * 浏览器环境下的测试中负责 SolidVirtualTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { createVirtualizer, defaultRangeExtractor, Virtualizer } from "@tanstack/solid-virtual"
 import { createRoot, createSignal } from "solid-js"

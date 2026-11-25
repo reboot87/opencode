@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — MotionSpring。
+ * 跨场景复用的通用 UI 组件中负责 MotionSpring 部分，提供该部分所需的实现与类型定义。
+ */
 import { attachSpring, motionValue, type SpringOptions } from "@kitlangton/solid-motion"
 import { createComputed, createEffect, createSignal, onCleanup } from "solid-js"
 

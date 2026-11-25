@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — TextFieldStories。
+ * 跨场景复用的通用 UI 组件中负责 TextFieldStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal } from "solid-js"
 import { TextField, type TextFieldProps } from "./text-field"
 

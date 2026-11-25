@@ -1,3 +1,7 @@
+/**
+ * DigitalOcean 插件。
+ * 注册 DigitalOcean Gradient AI provider 与对应集成。
+ */
 import type { IntegrationOAuthMethodRegistration } from "@opencode/plugin/effect/integration"
 import { define } from "@opencode/plugin/effect/plugin"
 import { Clock, Deferred, Effect, Option, Schema } from "effect"

@@ -17,7 +17,10 @@ import { freezeEvent, isFrozen, pendingUpdates, setFrozen } from "~/lib/freeze"
 import { platformParam, type Platform } from "~/lib/platform"
 import { devicePreviewFrame } from "./device-preview"
 
-/** The device preview's panel (see device-preview.tsx), loaded the first time it opens. */
+/** The device preview's panel (see device-preview.tsx), loaded the first time it opens.
+ *
+ * 站点界面组件：device·预览面板。
+ */
 
 const presets = [
   { id: "se", label: "SE", name: "iPhone SE", w: 375, h: 667, kind: "phone", platform: "ios" },

@@ -1,3 +1,8 @@
+/**
+ * 索引测试夹具。
+ *
+ * 提供工作树插件场景的样例数据。
+ */
 import { Plugin, Worktree } from "@opencode/plugin"
 
 export default Plugin.define({

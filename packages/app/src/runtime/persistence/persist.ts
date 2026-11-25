@@ -1,3 +1,7 @@
+/**
+ * 运行时持久化 — Persist。
+ * 浏览器端配置的本地持久化中负责 Persist 部分，提供该部分所需的实现与类型定义。
+ */
 import type { AsyncStorage, PersistenceSyncAPI, SyncStorage } from "@solid-primitives/storage"
 import { batch, createMemo, createSignal, getOwner, onCleanup, untrack } from "solid-js"
 import { reconcile, type SetStoreFunction, type Store } from "solid-js/store"

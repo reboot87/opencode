@@ -1,3 +1,10 @@
+/**
+ * pair·远程·授权同意的测试。
+ *
+ * 被测模块：@opencode/cli/pair-remote-consent
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { NodeFileSystem } from "@effect/platform-node"
 import { Global } from "@opencode/util/global"
 import { afterEach, beforeEach, expect, test } from "bun:test"

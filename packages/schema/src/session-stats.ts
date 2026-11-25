@@ -1,3 +1,7 @@
+/**
+ * 会话统计类型。
+ * 定义会话统计结果与时间窗口结构。
+ */
 export * as SessionStats from "./session-stats.js"
 
 import { Schema } from "effect"

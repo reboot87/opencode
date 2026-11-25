@@ -1,3 +1,7 @@
+/**
+ * 新会话位置 — DialogStandaloneStories。
+ * 新建会话时的位置选择中负责 DialogStandaloneStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { onMount } from "solid-js"
 import { createStore } from "solid-js/store"

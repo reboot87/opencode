@@ -1,3 +1,7 @@
+/**
+ * 工作区设置 — ProjectRow。
+ * 工作区相关设置中负责 ProjectRow 部分，提供该部分所需的实现与类型定义。
+ */
 import { Show, onMount } from "solid-js"
 import { InlineInput } from "@opencode/ui/inline-input"
 import { getFilename } from "@opencode/util/path"

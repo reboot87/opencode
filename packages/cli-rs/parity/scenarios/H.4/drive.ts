@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：驱动。
+ *
+ * 规格编号：H.4。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // H.4 proof: sends the same simulation UI requests to the TS and the Rust `OPENCODE_DRIVE` endpoints, checks
 // every response against the protocol schema (`packages/protocol/src/simulation.ts`), and compares the captures.
 //

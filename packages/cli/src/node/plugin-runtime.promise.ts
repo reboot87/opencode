@@ -1,3 +1,7 @@
+/**
+ * 插件运行时（Promise）。
+ * 为 Node 下的 Promise 风格插件提供运行时宿主。
+ */
 import {
   Agent,
   Command,

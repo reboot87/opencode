@@ -1,3 +1,8 @@
+/**
+ * MCP·union·输出·模式定义测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { createInterface } from "node:readline"
 
 // Speaks JSON-RPC directly: the server SDK would wrap a non-object outputSchema before a legacy client sees it.

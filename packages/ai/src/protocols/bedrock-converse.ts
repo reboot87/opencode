@@ -1,3 +1,7 @@
+/**
+ * AWS Bedrock Converse API 协议实现。
+ * 把请求转成 Bedrock Converse 格式，配合二进制事件流（bedrock-event-stream）解析流式响应。
+ */
 import { Effect, Schema } from "effect"
 import { Base64 } from "effect/encoding"
 import { Route } from "../route/client.js"

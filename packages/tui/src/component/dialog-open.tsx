@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — DialogOpen。
+ * 终端界面（Solid）组件中负责 DialogOpen 部分，提供该部分所需的实现与类型定义。
+ */
 import { batch, createEffect, createMemo, createResource, createSignal, onCleanup, Show } from "solid-js"
 import type { OpenCodeEvent, SessionInfo } from "@opencode/client"
 import path from "path"

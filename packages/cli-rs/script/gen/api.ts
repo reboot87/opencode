@@ -1,3 +1,8 @@
+/**
+ * API脚本。
+ *
+ * Rust CLI 的代码生成器：由 TypeScript 单一来源生成 Rust 代码。
+ */
 // Generates Rust API types and endpoints from ClientApi.
 import { compile, type Endpoint } from "@opencode/httpapi-codegen"
 import { ClientApi, clientNamespace, groupNames, promiseOmitEndpoints } from "@opencode/protocol/client"

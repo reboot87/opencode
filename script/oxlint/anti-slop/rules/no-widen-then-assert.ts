@@ -311,7 +311,10 @@ function assertionIsNarrower(
   return isDefinitelyNarrowerRecordType(assertedType);
 }
 
-/** Detect immutable local bindings that erase a known type and are later asserted back to a narrower type. */
+/** Detect immutable local bindings that erase a known type and are later asserted back to a narrower type.
+ *
+ * Oxlint 规则：无·widen·那么断言。
+ */
 export const noWidenThenAssertRule = defineRule({
   meta: {
     type: "problem",

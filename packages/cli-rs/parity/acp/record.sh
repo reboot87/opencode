@@ -1,4 +1,6 @@
 #!/bin/sh
+
+# ACP 对等性校验脚本：记录。
 # P-WIRE recorder, the OPENCODE_ACP_TEST_BIN of `parity/acp/run.ts`. It runs `$ACP_RECORD_TARGET "$@"`
 # (split on spaces) and records its stdin and stdout into a fresh directory under `$ACP_RECORD_DIR`:
 # `in.ndjson` and `out.ndjson`, then `in.done` and `out.done` once each copy has finished.

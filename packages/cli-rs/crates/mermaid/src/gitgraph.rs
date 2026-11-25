@@ -1,3 +1,5 @@
+//! Mermaid 图表渲染：`gitgraph`。
+
 use std::collections::{HashMap, HashSet};
 use std::sync::LazyLock;
 

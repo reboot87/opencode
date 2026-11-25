@@ -1,3 +1,8 @@
+/**
+ * 策略测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { Config } from "@opencode/core/config"
 import { ConfigIntegration } from "@opencode/core/config/integration"
 import { ConfigPolicyPlugin } from "@opencode/core/config/plugin/policy"

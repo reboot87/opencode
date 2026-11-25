@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — DialogIntegration。
+ * 终端界面（Solid）组件中负责 DialogIntegration 部分，提供该部分所需的实现与类型定义。
+ */
 import { ScrollBoxRenderable, TextareaRenderable } from "@opentui/core"
 import { useTerminalDimensions } from "@opentui/solid"
 import type {

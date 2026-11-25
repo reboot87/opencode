@@ -1,3 +1,7 @@
+/**
+ * 指令条目（InstructionEntry）。
+ * 定义指令的键与信息结构，用于指令状态的存储与去重。
+ */
 export * as InstructionEntry from "./instruction-entry.js"
 
 import { and, asc, eq, isNotNull, isNull, ne, or } from "drizzle-orm"

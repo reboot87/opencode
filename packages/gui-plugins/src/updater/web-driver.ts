@@ -1,3 +1,7 @@
+/**
+ * 更新插件 — WebDriver。
+ * 应用更新提示的 GUI 插件中负责 WebDriver 部分，提供该部分所需的实现与类型定义。
+ */
 import { CHECK_TIMEOUT_MS, initialWebUpdate, transitionWebUpdate } from "./web-machine"
 import type { WebUpdateEffect, WebUpdateEvent, WebUpdateState, WebWorker } from "./web-machine"
 

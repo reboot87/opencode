@@ -1,5 +1,7 @@
 //! OpenSSH invokes the desktop SSH plugin's askpass helper with its prompt on the command line. The port selects the
 //! requesting desktop process.
+//!
+//! 命令行入口：`askpass`。
 
 use std::io::{Read, Write};
 use std::net::{Ipv4Addr, SocketAddr, TcpStream};

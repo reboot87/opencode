@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：Shell·已停止·app。
+ *
+ * 规格编号：E.7a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A shell call the user stopped (#62977): it fails with its output followed by the notice its metadata names. The
 // output shows clipped like the finished call's above it, and only the notice shows as the error.
 import { defineApp, session } from "../../lib/app"

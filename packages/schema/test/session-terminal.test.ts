@@ -1,3 +1,10 @@
+/**
+ * 会话·终端的测试。
+ *
+ * 被测模块：@opencode/schema/session-terminal
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { Schema } from "effect"
 import { SessionEvent } from "../src/session-event.js"

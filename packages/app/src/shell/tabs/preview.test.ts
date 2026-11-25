@@ -1,3 +1,7 @@
+/**
+ * 标签页 — PreviewTest。
+ * 多标签页的打开与切换中负责 PreviewTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { ServerKey } from "@/runtime/server/persistence"
 import type { SessionTab } from "./tabs"

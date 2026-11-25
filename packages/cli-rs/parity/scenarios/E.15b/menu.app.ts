@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：菜单·app。
+ *
+ * 规格编号：E.15b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The shortcuts dialog and the file menu (F15, DLG48 and DLG49) on the full-screen route with the file tree: `?`
 // shows the shortcuts as bound, a right-click on a tree row opens the file menu, Enter marks the file complete, and
 // the menu opened again offers to mark it incomplete until Escape closes it.

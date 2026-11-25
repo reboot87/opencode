@@ -1,4 +1,6 @@
 //! Select the current model's variant.
+//!
+//! 终端弹窗组件：变体。
 
 use crate::local::Local;
 use crate::prelude::*;

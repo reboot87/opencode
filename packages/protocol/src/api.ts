@@ -1,3 +1,7 @@
+/**
+ * HTTP API 定义入口。
+ * 基于 Effect HttpApi 组合各 API 分组（groups/）为完整的服务端 API，并提供从分组构造 API 的辅助函数。
+ */
 import { Context } from "effect"
 import { HttpApi, HttpApiGroup, HttpApiMiddleware, OpenApi } from "effect/http-api"
 import { SchemaErrorMiddleware } from "./middleware/schema-error.js"

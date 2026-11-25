@@ -1,3 +1,7 @@
+/**
+ * 终端插件支持 — Render。
+ * 终端界面的插件加载与扩展点中负责 Render 部分，提供该部分所需的实现与类型定义。
+ */
 import {
   createComponent,
   createContext,

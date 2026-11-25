@@ -1,3 +1,7 @@
+/**
+ * V2 组件 — SessionReviewFilePreviewV2VirtualizeTest。
+ * 第二版会话界面组件中负责 SessionReviewFilePreviewV2VirtualizeTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { virtualizeLineThreshold } from "../../pierre/virtualizer"
 import { shouldVirtualizeReviewDiff } from "./session-review-file-preview-v2-virtualize"

@@ -1,3 +1,7 @@
+/**
+ * 运行时持久化 — Storage。
+ * 浏览器端配置的本地持久化中负责 Storage 部分，提供该部分所需的实现与类型定义。
+ */
 import { Platform, usePlatform } from "@/runtime/platform/platform"
 import { messageSync, type AsyncStorage, type SyncStorage } from "@solid-primitives/storage"
 import { checksum } from "@opencode/util/encode"

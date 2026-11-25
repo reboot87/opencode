@@ -1,4 +1,6 @@
 //! File-read status and loaded paths.
+//!
+//! 终端界面路由：`read`。
 
 use super::dispatch::{Inline, InlineTool, Props, Status, finite, format_path, number};
 use crate::prelude::*;

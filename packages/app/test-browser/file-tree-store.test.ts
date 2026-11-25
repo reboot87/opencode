@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — FileTreeStoreTest。
+ * 浏览器环境下的测试中负责 FileTreeStoreTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, describe, expect, test, vi } from "bun:test"
 import { createComputed, createRoot } from "solid-js"
 import type { FileNode } from "@/runtime/server/types"

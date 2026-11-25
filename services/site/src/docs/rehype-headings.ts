@@ -1,3 +1,6 @@
+/**
+ * V2 文档站：rehype·headings。
+ */
 import type { Element, Root } from "hast"
 import Slugger from "github-slugger"
 import type { MdxJsxTextElementHast } from "mdast-util-mdx-jsx"

@@ -1,3 +1,7 @@
+/**
+ * 会话分叉类型。
+ * 定义会话分叉请求与结果结构。
+ */
 export * as SessionFork from "./session-fork.js"
 
 import { Schema } from "effect"

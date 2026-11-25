@@ -1,3 +1,6 @@
+/**
+ * V2 文档站：`frontmatter`。
+ */
 import { z } from "zod"
 
 // Every page's frontmatter, checked when its MDX compiles (vite.ts), so a bad page fails the build.

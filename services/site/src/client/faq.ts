@@ -6,7 +6,10 @@ import { $, $$, on, target } from "./dom"
 // site.css) and goes at once (faq.css). In the phone feature list (phone-features.tsx) one row opens
 // at a time.
 
-/** Opens or closes a row (`[data-slot="faq-item"]`). */
+/** Opens or closes a row (`[data-slot="faq-item"]`).
+ *
+ * 浏览器端脚本：常见问题。
+ */
 export function setFaq(item: HTMLElement, open: boolean) {
   const button = $('[data-slot="faq-question"]', item)
   const answer = $('[data-slot="faq-answer"]', item)

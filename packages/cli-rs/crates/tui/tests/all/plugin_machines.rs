@@ -1,5 +1,7 @@
 //! Drive the plugin lifecycle, manager, and viewer against the shared state-machine fixture. Compare each observed
 //! state with the recorded expectation.
+//!
+//! 终端界面测试：插件状态机。
 
 use crate::support::{self, Harness};
 

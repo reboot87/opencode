@@ -1,3 +1,7 @@
+/**
+ * 会话时间线 — HistoryMachine。
+ * 会话消息时间线的渲染中负责 HistoryMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // A detached reader within this distance of the top loads the next older page.
 export const HISTORY_SCROLL_THRESHOLD = 200
 

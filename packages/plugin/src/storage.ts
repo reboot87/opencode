@@ -1,3 +1,7 @@
+/**
+ * 插件存储接口。
+ * 定义插件键值存储的条目与扫描选项。
+ */
 import type { Schema } from "effect"
 
 export interface StorageEntry {

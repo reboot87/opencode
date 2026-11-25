@@ -1,3 +1,7 @@
+/**
+ * Provider 配置插件。
+ * 从配置中加载模型提供方设置并注册到 provider 注册表。
+ */
 export * as ConfigProviderPlugin from "./provider.js"
 
 import type { ModelEditor } from "@opencode/plugin/effect/model"

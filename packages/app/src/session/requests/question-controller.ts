@@ -1,3 +1,7 @@
+/**
+ * 会话请求 — QuestionController。
+ * 会话界面的请求发起与状态跟踪中负责 QuestionController 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createSignal, onCleanup, runWithOwner, untrack } from "solid-js"
 import type { FormInfo } from "@opencode/client/promise"
 import type { ServerSDK } from "@/runtime/server/client"

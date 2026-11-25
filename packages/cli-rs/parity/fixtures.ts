@@ -1,3 +1,8 @@
+/**
+ * 对等性校验入口：夹具。
+ *
+ * Rust 与 TypeScript 双实现的对等性校验：驱动全部 oracle / component / 场景脚本并刷新基线。
+ */
 // Regenerates the committed parity fixtures after a TypeScript change: runs every P-ORACLE script in
 // parity/oracle, every P-COMP script in parity/component, and every P-APP scenario in parity/app, in name
 // order. Each writes its own parity/fixtures/<step>/.

@@ -2,6 +2,8 @@
 //! against the kind's cap before anything is allocated, so a header that says 4 GiB costs nothing. A frame cut short,
 //! of an unknown kind or over its cap breaks the stream: nothing after it can be trusted, and the carrier fails the JS
 //! host.
+//!
+//! 插件系统：`wire`。
 
 use std::io::{self, Read, Write};
 

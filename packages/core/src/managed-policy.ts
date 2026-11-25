@@ -1,3 +1,7 @@
+/**
+ * 托管策略判定。
+ * 把托管策略条目汇总为语句并做匹配与最终决策。
+ */
 export * as ManagedPolicy from "./managed-policy.js"
 
 import { Document, type Entry } from "@opencode/schema/config"

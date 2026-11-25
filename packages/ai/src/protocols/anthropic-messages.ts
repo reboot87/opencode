@@ -1,3 +1,7 @@
+/**
+ * Anthropic Messages API 协议实现。
+ * 把通用 LLMRequest 转成 Anthropic 的 messages 格式（content blocks），并把流式响应解码回 LLMEvent。支持 thinking 块、工具调用、提示词缓存和与 OpenAI 兼容的变体。
+ */
 import { Buffer } from "node:buffer"
 import { Effect, Option, Schema, SchemaGetter } from "effect"
 import { Tool } from "@opencode/schema/tool"

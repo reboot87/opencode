@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid UpdatePreflight：该文件实现 UpdatePreflight 相关的状态与逻辑。
+ */
 // Split-footer status shown while a freshly launched CLI replaces a
 // version-mismatched background service before the TUI attaches.
 import { createCliRenderer, RGBA, TextAttributes, type CliRenderer } from "@opentui/core"

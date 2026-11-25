@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — ProjectSessionRow。
+ * 自定义窗口标题栏中负责 ProjectSessionRow 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createSignal, onCleanup, Show, untrack, type JSX } from "solid-js"
 import { useQueryClient } from "@tanstack/solid-query"
 import type { SessionInfo } from "@opencode/client/promise"

@@ -1,3 +1,7 @@
+/**
+ * 模块 — WorkspacePanel。
+ * 该目录下的功能模块中负责 WorkspacePanel 部分，提供该部分所需的实现与类型定义。
+ */
 import { QueryClient, QueryClientProvider } from "@tanstack/solid-query"
 import { File } from "@opencode/session-ui/file"
 import { FileComponentProvider } from "@opencode/ui/context/file"

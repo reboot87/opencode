@@ -1,5 +1,11 @@
 #!/usr/bin/env bun
 
+/**
+ * 服务·冒烟脚本。
+ *
+ * CLI 包的开发脚本：构建校验、配置生成与发布准备。
+ */
+
 import { NodeFileSystem } from "@effect/platform-node"
 import { Service } from "@opencode/client/effect/service"
 import { MCP_CLIENT_PATH } from "@opencode/protocol/groups/mcp"

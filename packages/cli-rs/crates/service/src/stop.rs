@@ -1,4 +1,6 @@
 //! Stops the registered service and waits for its process to exit.
+//!
+//! 服务层：停止。
 
 use opencode_api::transport::Transport;
 use opencode_local::registration::{self, Registration};

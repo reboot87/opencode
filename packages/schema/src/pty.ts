@@ -1,3 +1,7 @@
+/**
+ * PTY 类型。
+ * 定义 PTY 的显示与退出结构。
+ */
 export * as Pty from "./pty.js"
 
 import { Schema } from "effect"

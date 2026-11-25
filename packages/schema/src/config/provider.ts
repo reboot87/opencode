@@ -1,3 +1,7 @@
+/**
+ * Provider 配置类型。
+ * 定义 provider 配置项的 Schema。
+ */
 export * as ConfigProvider from "./provider.js"
 
 import { Schema, Struct } from "effect"

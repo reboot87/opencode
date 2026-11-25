@@ -1,3 +1,8 @@
+/**
+ * 管道实现：inert。
+ *
+ * 管道实现的 TypeScript 兼容适配层。
+ */
 // Stand-ins let unused OpenTUI imports link. Report the first actual use of an unsupported export.
 import { core, promises, solid } from "./opentui.gen"
 

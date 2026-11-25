@@ -1,3 +1,7 @@
+/**
+ * Solid 连接状态。
+ * 把客户端的连接状态（已连接/断开/重连中）暴露为 Solid 可订阅的响应式源与事件。
+ */
 import { batch, onCleanup } from "solid-js"
 import { createStore } from "solid-js/store"
 import type { OpenCodeClient, OpenCodeEvent } from "../promise"

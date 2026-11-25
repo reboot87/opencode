@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — ViewedMachineTest。
+ * 会话主界面的视图与状态中负责 ViewedMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { INITIAL_SESSION_VIEWED_STATE, transitionSessionViewed } from "./viewed-machine"
 

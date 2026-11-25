@@ -1,5 +1,7 @@
 //! Replays a plugin's last accepted display list into its canvas. Ask for a new list on first paint, resize,
 //! version change or animation tick; a hidden or zero-size canvas does not draw.
+//!
+//! 插件系统：画布。
 
 use std::cell::{Cell, RefCell};
 use std::rc::Rc;

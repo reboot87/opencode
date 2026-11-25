@@ -1,3 +1,7 @@
+/**
+ * Mini 精简界面 — Splash。
+ * 精简交互模式（mini）的界面与交互中负责 Splash 部分，提供该部分所需的实现与类型定义。
+ */
 // Entry and exit splash banners for direct interactive mode scrollback.
 //
 // The entry header is a single flex row; the exit banner retains its cell-based

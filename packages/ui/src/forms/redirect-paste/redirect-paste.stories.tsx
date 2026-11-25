@@ -1,3 +1,7 @@
+/**
+ * 重定向粘贴 — RedirectPasteStories。
+ * 粘贴后自动重定向的输入组件中负责 RedirectPasteStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal, on, Show } from "solid-js"
 import { Button } from "@opencode/ui/button"
 import { RedirectPasteForm, type RedirectPasteError } from "./redirect-paste"

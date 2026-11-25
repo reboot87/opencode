@@ -1,4 +1,6 @@
 //! Host plugin dialogs and panels. A matching key updates a panel in place.
+//!
+//! 终端插件视图：面板。
 
 use opencode_plugin::abi;
 use opencode_plugin::node::{self, Act};

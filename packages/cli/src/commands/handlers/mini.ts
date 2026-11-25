@@ -1,3 +1,7 @@
+/**
+ * mini 命令。
+ * 以精简模式运行会话。
+ */
 import { Context, Effect, FileSystem, Option } from "effect"
 import { Commands } from "../commands"
 import { Runtime } from "../../framework/runtime"

@@ -1,4 +1,6 @@
 //! Todo tool summary and checklist.
+//!
+//! 终端界面路由：待办。
 
 use opencode_ui::tool_info::{Todo as Item, TodoInput, TodoStatus, todo_marker};
 

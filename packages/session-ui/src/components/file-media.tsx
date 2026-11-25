@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — FileMedia。
+ * 跨场景复用的通用 UI 组件中负责 FileMedia 部分，提供该部分所需的实现与类型定义。
+ */
 import type { PresentationFileContent } from "../file-presentation"
 import { createEffect, createMemo, createSignal, Match, on, onCleanup, Show, Switch, untrack, type JSX } from "solid-js"
 import { useI18n } from "@opencode/ui/context/i18n"

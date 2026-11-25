@@ -1,3 +1,7 @@
+/**
+ * 运行期 UI 输出。
+ * 定义运行时终端输出的样式与打印辅助。
+ */
 import { EOL } from "node:os"
 
 export const Style = {

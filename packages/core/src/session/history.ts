@@ -1,3 +1,7 @@
+/**
+ * 会话历史加载与解码。
+ * 从持久化行解码用户/助手/媒体消息，重组会话历史消息序列。
+ */
 import { and, asc, desc, eq, gte, inArray, lt, or, sql } from "drizzle-orm"
 import { Message } from "@opencode/ai/effect"
 import { Effect, Option, Schema } from "effect"

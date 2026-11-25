@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：夹具。
+ *
+ * 规格编号：C.5。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Integrations, credentials, and routes the C.5 (`auth`) and C.6 (`mcp`) scenarios share. Nothing here
 // is a real account: the fake server answers every request, and URL opens go to a sink (`sink`).
 import path from "node:path"

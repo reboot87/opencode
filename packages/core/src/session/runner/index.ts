@@ -1,3 +1,7 @@
+/**
+ * 会话执行器（SessionRunner）接口与服务入口。
+ * 定义 drain（排空一次本地续跑）的契约：从已持久化的会话历史驱动一轮 Agent 执行，返回 Complete / Moved / Reloaded 三种结果，表示完成、迁移到新位置、或需重新加载服务后继续。这是整个会话运行时的门面。
+ */
 export * as SessionRunner from "./index.js"
 
 import type { FileSystem } from "../../filesystem.js"

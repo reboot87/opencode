@@ -1,3 +1,7 @@
+/**
+ * 会话头部 — Fit。
+ * 会话界面顶部的标题与操作区中负责 Fit 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, onCleanup, onMount, untrack } from "solid-js"
 import {
   headerFitCollapse,

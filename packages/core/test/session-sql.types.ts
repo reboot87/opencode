@@ -1,3 +1,10 @@
+/**
+ * 会话·sql的类型定义（类型断言用）。
+ *
+ * 被测模块：@opencode/core/session-sql
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { SessionMessageTable } from "@opencode/core/session/sql"
 
 type MessageData = (typeof SessionMessageTable.$inferInsert)["data"]

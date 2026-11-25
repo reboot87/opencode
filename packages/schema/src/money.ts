@@ -1,3 +1,7 @@
+/**
+ * 金额类型。
+ * 定义货币金额（按每百万 token 计价）与换算。
+ */
 export * as Money from "./money.js"
 
 import { Schema } from "effect"

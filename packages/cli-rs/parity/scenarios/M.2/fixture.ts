@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：夹具。
+ *
+ * 规格编号：M.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // M.1's `ses_mini` server with what the footer prompt needs: the catalogs it completes from (agents, commands,
 // references, a file search) and the writes it makes (commands, shells, compaction, inbox changes).
 import type { Logged, Options, Route } from "../../lib/fake-server"

@@ -1,3 +1,10 @@
+/**
+ * 媒体·入口集合的测试。
+ *
+ * 被测模块：@opencode/ai/provider/media-entrypoints
+ *
+ * 覆盖各家供应商的接入实现：请求构造、响应解析与错误映射。
+ */
 import { describe, expect } from "bun:test"
 import { Effect, Layer } from "effect"
 import {

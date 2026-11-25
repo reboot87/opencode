@@ -1,3 +1,8 @@
+/**
+ * 管道示例：TUI。
+ *
+ * 管道示例：演示插件管道各阶段的串联方式。
+ */
 // Imports a deliberately unavailable package to check the loader diagnostic.
 import { Plugin } from "@opencode/plugin/tui"
 import { Option, Schema } from "effect"

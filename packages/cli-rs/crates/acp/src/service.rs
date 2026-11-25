@@ -1,3 +1,5 @@
+//! ACP 协议实现：服务。
+
 use std::collections::HashSet;
 use std::sync::{Arc, Mutex};
 

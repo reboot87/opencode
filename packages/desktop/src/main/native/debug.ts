@@ -1,3 +1,7 @@
+/**
+ * 原生能力 — Debug。
+ * 调用系统原生能力的封装中负责 Debug 部分，提供该部分所需的实现与类型定义。
+ */
 import type { WebContents } from "electron"
 import { Schema } from "effect"
 import {

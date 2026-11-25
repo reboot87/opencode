@@ -1,4 +1,6 @@
 //! Tracks the active theme, mode lock and terminal palette.
+//!
+//! 主题解析与应用：状态。
 
 use indexmap::IndexMap;
 use serde_json::Value;

@@ -1,3 +1,7 @@
+/**
+ * 数据站路由 — ModelCatalogTest。
+ * 数据站点的路由页面中负责 ModelCatalogTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, mock, test } from "bun:test"
 
 mock.module("@solidjs/router", () => ({ query: (load: () => unknown) => load }))

@@ -1,3 +1,7 @@
+/**
+ * 技能插件。
+ * 注册内置技能（opencode 能力说明、报告生成等）及其内容。
+ */
 /// <reference path="../markdown.d.ts" />
 
 export * as SkillPlugin from "./skill.js"

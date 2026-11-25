@@ -1,3 +1,7 @@
+/**
+ * GUI 作用域。
+ * 定义插件作用域的生命周期与清理机制。
+ */
 import type { Cleanup } from "./core.js"
 
 /**

@@ -1,3 +1,10 @@
+/**
+ * 模型的测试。
+ *
+ * 被测模块：@opencode/core/github-copilot/models
+ *
+ * 覆盖 GitHub Copilot 供应商的会话续接与消息转换。
+ */
 import { expect, test } from "bun:test"
 import { CopilotModels } from "@opencode/core/github-copilot/models"
 import { Effect } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * 运行时平台 — Pwa。
+ * 识别浏览器平台能力并做适配中负责 Pwa 部分，提供该部分所需的实现与类型定义。
+ */
 import { useLocation } from "@solidjs/router"
 import { createEffect } from "solid-js"
 import { stripBasePath, withBasePath } from "./base-path"

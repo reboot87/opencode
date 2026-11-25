@@ -1,4 +1,8 @@
-/** Delay between JavaScript call-stack samples while a renderer is unresponsive. */
+/**
+ * Delay between JavaScript call-stack samples while a renderer is unresponsive.
+ *
+ * 窗口恢复的状态机：管理崩溃后窗口状态的恢复。
+ */
 export const SAMPLE_INTERVAL_MS = 1_000
 
 /** How long one unresponsive call-stack sampling session lasts. */

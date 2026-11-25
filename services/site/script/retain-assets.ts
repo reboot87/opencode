@@ -14,7 +14,10 @@ import { mkdir } from "node:fs/promises"
 import path from "node:path"
 import { z } from "zod"
 
-/** How long a file stays after the last build that served it was replaced, for at most `builds` replaced builds. */
+/** How long a file stays after the last build that served it was replaced, for at most `builds` replaced builds.
+ *
+ * 站点构建脚本：retain·静态资源。
+ */
 const retention = 7 * 24 * 60 * 60 * 1000
 const builds = 20
 /** Carrying never holds up a deploy longer than this; what hasn't downloaded by then is left behind. */

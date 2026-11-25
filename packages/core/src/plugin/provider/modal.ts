@@ -1,3 +1,7 @@
+/**
+ * Modal 插件。
+ * 注册 Modal 托管的模型 provider。
+ */
 import { Effect } from "effect"
 import { HttpClient } from "effect/http"
 import { define } from "@opencode/plugin/effect/plugin"

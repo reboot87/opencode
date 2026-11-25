@@ -1,3 +1,7 @@
+/**
+ * Solid 用量统计。
+ * 从消息列表中定位最后一条带用量的助手消息以展示用量。
+ */
 import type { SessionMessageAssistant, SessionMessageInfo } from "../promise"
 
 /**

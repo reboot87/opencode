@@ -1,3 +1,7 @@
+/**
+ * 插件 SDK。
+ * 面向插件作者的 SDK：暴露插件更新事件与可用接口。
+ */
 export * as SdkPlugins from "./sdk.js"
 
 import type { Plugin } from "@opencode/plugin/effect/plugin"

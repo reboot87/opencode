@@ -1,3 +1,7 @@
+/**
+ * UI 构建脚本 — Brand。
+ * 前端 UI 包的构建与生成脚本中负责 Brand 部分，提供该部分所需的实现与类型定义。
+ */
 // Writes src/brand.ts from the site's logo files (services/site/src/asset/brand), so the menu carries
 // them inline and works on any host: run `bun script/brand.ts` after the brand files change.
 const source = new URL("../../../services/site/src/asset/brand/", import.meta.url)

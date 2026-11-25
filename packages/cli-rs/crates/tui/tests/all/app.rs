@@ -1,5 +1,7 @@
 //! Replay recorded app scenarios against the full TUI and compare checkpoints and requests. `PARITY_SCENARIO` selects
 //! one recording.
+//!
+//! 终端界面测试：`app`。
 
 use crate::support::{self, ide};
 

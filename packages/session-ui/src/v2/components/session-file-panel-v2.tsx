@@ -1,3 +1,7 @@
+/**
+ * V2 组件 — SessionFilePanelV2。
+ * 第二版会话界面组件中负责 SessionFilePanelV2 部分，提供该部分所需的实现与类型定义。
+ */
 import { useI18n } from "@opencode/ui/context/i18n"
 import { Menu } from "@opencode/ui/menu"
 import { useLocale } from "@kobalte/core/i18n"

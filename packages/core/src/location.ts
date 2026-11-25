@@ -1,3 +1,7 @@
+/**
+ * Location 服务。
+ * 工作位置（目录/仓库）服务接口与节点定义。
+ */
 import { Context, Effect, Layer } from "effect"
 import { Info, Ref, response } from "@opencode/schema/location"
 import { FSUtil } from "@opencode/util/fs-util"

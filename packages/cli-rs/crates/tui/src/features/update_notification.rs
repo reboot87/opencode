@@ -1,4 +1,6 @@
 //! Register update actions only when an updater is available. Keep dismissed notices in shared storage.
+//!
+//! 终端界面功能模块：更新·notification。
 
 use opencode_api::generated::{EventKind, V2Event};
 use opencode_ui::motion::FadeInText;

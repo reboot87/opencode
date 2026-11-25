@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：发布·CLI。
 # publish-cli.sh <build-archives dir> <sign-macos dir> <sign-windows dir>: uploads the standalone CLI
 # archives to opencode.ai/files and registers the cli (and, off latest, cli-node) update artifacts.
 . "$(dirname "$0")/lib.sh"

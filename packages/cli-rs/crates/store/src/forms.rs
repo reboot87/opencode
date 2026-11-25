@@ -1,4 +1,6 @@
 //! Pending forms are kept in their session's record, or under [`GLOBAL`] for elicitations without a session.
+//!
+//! 会话存储层：`forms`。
 use opencode_api::generated::*;
 
 use crate::core::{Effect, Forms, Ticket};

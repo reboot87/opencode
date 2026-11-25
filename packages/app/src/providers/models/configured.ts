@@ -1,3 +1,7 @@
+/**
+ * Provider 模型 — Configured。
+ * provider 下模型的展示与配置中负责 Configured 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, on } from "solid-js"
 import { useData } from "@/runtime/server/current"
 import { useWorkspaceLocation } from "@/workspaces/location"

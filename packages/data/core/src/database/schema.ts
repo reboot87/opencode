@@ -1,3 +1,7 @@
+/**
+ * 数据数据库 — Schema。
+ * 数据采集结果的存储层中负责 Schema 部分，提供该部分所需的实现与类型定义。
+ */
 import { bigint, char, datetime, decimal, index, int, mysqlTable, uniqueIndex, varchar } from "drizzle-orm/mysql-core"
 
 export const modelStat = mysqlTable(

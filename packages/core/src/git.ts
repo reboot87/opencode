@@ -1,3 +1,7 @@
+/**
+ * Git 服务。
+ * Git 仓库操作：初始化、提交、diff、worktree 与快照配置，Git 领域的核心实现。
+ */
 export * as Git from "./git.js"
 
 import os from "os"

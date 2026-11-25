@@ -4,6 +4,8 @@
 // A build with no carrier of external plugins (no `ts` or `luau`) lists every target as skipped: what loads
 // one goes unused.
 #![cfg_attr(not(any(feature = "ts", feature = "luau")), allow(dead_code, unused_imports, unused_variables))]
+//!
+//! 插件系统入口。
 
 pub mod approval;
 pub mod npm;

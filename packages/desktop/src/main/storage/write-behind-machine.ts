@@ -1,4 +1,8 @@
-/** A run of failed writes backs off up to `2 ** 6 = 64` times the base delay. */
+/**
+ * A run of failed writes backs off up to `2 ** 6 = 64` times the base delay.
+ *
+ * 写入后置的状态机：管理配置写盘延迟落盘（write-behind）与刷新时机。
+ */
 export const MAX_RETRY_EXPONENT = 6
 
 /**

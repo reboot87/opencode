@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — Failure。
+ * 内置浏览器功能的 GUI 插件中负责 Failure 部分，提供该部分所需的实现与类型定义。
+ */
 // What the person sees when something in the pane fails. A page that did not load is explained where the page would
 // be, as a browser does. A command that failed says what the person tried. Nothing here returns the app's generic
 // "Request failed": a code this file does not know gets a sentence from what was being attempted, and is reported

@@ -1,3 +1,7 @@
+/**
+ * 事件日志层。
+ * 把选定的会话事件类型写入日志的 Effect Layer。
+ */
 export * as EventLogger from "./event-logger.js"
 
 import { Effect, Layer } from "effect"

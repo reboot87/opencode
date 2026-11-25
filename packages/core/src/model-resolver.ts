@@ -1,3 +1,7 @@
+/**
+ * 模型解析器（ModelResolver）。
+ * 把模型引用解析为可用的语言模型：处理变体可用性、provider 包加载与初始化阶段。
+ */
 export * as ModelResolver from "./model-resolver.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

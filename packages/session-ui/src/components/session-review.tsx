@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — SessionReview。
+ * 跨场景复用的通用 UI 组件中负责 SessionReview 部分，提供该部分所需的实现与类型定义。
+ */
 import { Accordion } from "@opencode/ui/accordion"
 import { Button } from "@opencode/ui/button"
 import { Menu } from "@opencode/ui/menu"

@@ -1,4 +1,6 @@
 //! The store's requests: how each is fetched, what each effect starts, and the public methods that begin them.
+//!
+//! 会话存储层：请求。
 
 use std::future::Future;
 use std::sync::Arc;

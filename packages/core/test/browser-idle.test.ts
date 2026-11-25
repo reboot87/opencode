@@ -1,3 +1,10 @@
+/**
+ * browser·空闲的测试。
+ *
+ * 被测模块：@opencode/core/browser-idle
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import { Clock, Context, Duration, Effect, Fiber, Layer, RcMap, Schedule } from "effect"
 import { Browser } from "@opencode/plugin-browser/rpc"

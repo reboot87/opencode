@@ -1,3 +1,7 @@
+/**
+ * 设置界面 — TimelineDetail。
+ * 应用设置页面的框架中负责 TimelineDetail 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, Show, createMemo, createUniqueId } from "solid-js"
 import { createStore } from "solid-js/store"
 import { Collapsible } from "@opencode/ui/collapsible"

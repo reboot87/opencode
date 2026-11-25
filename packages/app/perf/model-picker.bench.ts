@@ -1,3 +1,7 @@
+/**
+ * 性能测试 — ModelPickerBench。
+ * 界面渲染性能基准中负责 ModelPickerBench 部分，提供该部分所需的实现与类型定义。
+ */
 // Opening, scrolling and selecting in the desktop model picker with 96 models from 19 providers, at 1440×900.
 import { bench, web, type Case } from "@hona/strobe"
 import { draftHref } from "../e2e/utils/app"

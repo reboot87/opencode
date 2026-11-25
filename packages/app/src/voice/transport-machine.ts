@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — TransportMachine。
+ * 实时语音会话的界面中负责 TransportMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { VoiceEvent } from "./protocol"
 
 /** Bounds the whole handshake: models, ICE gathering, SDP exchange, `session.started` and the microphone. */

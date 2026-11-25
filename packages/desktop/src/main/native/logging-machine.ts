@@ -1,3 +1,7 @@
+/**
+ * 原生能力 — LoggingMachine。
+ * 调用系统原生能力的封装中负责 LoggingMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export const NETLOG_TIMEOUT_MS = 5_000
 
 export const EXPORT_ARCHIVE_TIMEOUT_MS = 60_000

@@ -1,3 +1,7 @@
+/**
+ * 主页会话 — SearchMachineTest。
+ * 主页中会话列表的展示中负责 SearchMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { SessionInfo } from "@opencode/client/promise"
 import type { HomeSessionRecord } from "./records"

@@ -4,6 +4,8 @@
  * writes nothing. Nothing that throws stalls the queue: each effect runs on its own, a throwing effect reports
  * `failed(effect)` back to the machine, and an error without such an event surfaces as an unhandled rejection while
  * later effects and events keep applying.
+ *
+ * driver loop of a terminal 的状态机。与事件分发相关的实现。An event the 的状态机。Nothing that throws stalls the queue: each effect runs on its own, a throwing effect reports `failed(effect)` back to the 的状态机。
  */
 export function createDispatch<State, Event, Effect>(machine: {
   readonly read: () => State

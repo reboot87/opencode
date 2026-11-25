@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — PwaRouteTest。
+ * 浏览器环境下的测试中负责 PwaRouteTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, beforeEach, expect, test } from "bun:test"
 import { MemoryRouter, createMemoryHistory } from "@solidjs/router"
 import { createComponent, render } from "solid-js/web"

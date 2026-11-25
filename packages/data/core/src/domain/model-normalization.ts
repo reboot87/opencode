@@ -1,3 +1,7 @@
+/**
+ * 数据领域 — ModelNormalization。
+ * 数据采集的领域模型中负责 ModelNormalization 部分，提供该部分所需的实现与类型定义。
+ */
 export const MODEL_AUTHOR_RULES = [
   { match: "beam", author: "reflection" },
   { match: "claude", author: "anthropic" },

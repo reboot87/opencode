@@ -1,3 +1,5 @@
+//! ACP 协议实现：提示词。
+
 use opencode_api::generated::CommandInfo;
 use opencode_api::js::is_whitespace;
 use serde_json::Value;

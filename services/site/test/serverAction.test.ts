@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：服务端动作。
+ */
 import { describe, expect, test } from "bun:test"
 import { sanitizeServerActionRequest } from "../src/lib/server-action"
 

@@ -1,3 +1,10 @@
+/**
+ * 供应商·LM Studio的测试。
+ *
+ * 被测模块：@opencode/core/plugin/provider-lmstudio
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { Bus } from "@opencode/core/bus"
 import { Config } from "@opencode/core/config"
 import { Credential } from "@opencode/core/credential"

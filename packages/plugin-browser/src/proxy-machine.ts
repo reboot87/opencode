@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — ProxyMachine。
+ * GUI 插件的实现中负责 ProxyMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export * as BrowserProxyMachine from "./proxy-machine.js"
 
 // The desktop proxy's listener and the read side of each tunnel socket it hands to Chromium.

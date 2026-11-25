@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — TabPopover。
+ * 自定义窗口标题栏中负责 TabPopover 部分，提供该部分所需的实现与类型定义。
+ */
 import { HoverCard } from "@kobalte/core/hover-card"
 import { createComputed, createSignal, For, onCleanup, Show, untrack, type JSXElement } from "solid-js"
 import { useLanguage } from "@/runtime/i18n/language"

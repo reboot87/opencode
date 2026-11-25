@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — Dropzone。
+ * 会话输入区的组合逻辑与附件处理中负责 Dropzone 部分，提供该部分所需的实现与类型定义。
+ */
 import { Icon } from "@opencode/ui/icon"
 import { Show, createMemo } from "solid-js"
 import { createStore } from "solid-js/store"

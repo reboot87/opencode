@@ -1,3 +1,7 @@
+/**
+ * Code Mode 工具 Schema。
+ * 把 Effect Schema 转换为可在沙箱代码中使用的类型描述与渲染。
+ */
 import { JsonPointer, Schema } from "effect"
 import type { Tool, JsonSchema, SchemaType } from "./tool.js"
 

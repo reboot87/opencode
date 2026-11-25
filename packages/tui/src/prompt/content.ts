@@ -1,3 +1,7 @@
+/**
+ * 提示输入 — Content。
+ * 提示输入的解析、编辑与提交中负责 Content 部分，提供该部分所需的实现与类型定义。
+ */
 import type { TextareaRenderable } from "@opentui/core"
 
 // Deletes the document cells [start, end) and leaves the cursor at start.

@@ -1,4 +1,6 @@
 //! Exercise plugin requests, rendered frames, reloads, faults, and backpressure against a real JS host.
+//!
+//! 终端界面测试：插件管道。
 
 #[path = "../../../plugin/examples/pipe/kept.rs"]
 mod kept;

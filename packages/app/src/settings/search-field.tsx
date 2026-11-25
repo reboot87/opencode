@@ -1,3 +1,7 @@
+/**
+ * 设置界面 — SearchField。
+ * 应用设置页面的框架中负责 SearchField 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, on, onMount } from "solid-js"
 import { createStore } from "solid-js/store"
 import { makeEventListener } from "@solid-primitives/event-listener"

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：授权同意·拒绝·伪终端。
+ *
+ * 规格编号：C.9。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `pair --remote` for the first time on a terminal: the warning and the consent prompt; N declines, says how to
 // pair locally, and exits 0 without enabling remote access or recording consent.
 import { definePty } from "../../pty/run"

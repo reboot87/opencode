@@ -1,3 +1,7 @@
+/**
+ * 调试文案 — Fr。
+ * 调试插件的多语言文案中负责 Fr 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.toggle": "Afficher ou masquer la barre de débogage",
   providerAriaLabel: "Diagnostic des performances du fournisseur",

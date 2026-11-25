@@ -1,3 +1,7 @@
+/**
+ * Code Mode API 接口。
+ * 定义 Code Mode 下可供沙箱代码调用的 fetch 等服务接口与失败占位实现。
+ */
 export * as CodeModeApi from "./api.js"
 
 import { makeGlobalNode } from "@opencode/util/effect/app-node"

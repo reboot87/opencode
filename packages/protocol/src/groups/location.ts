@@ -1,3 +1,7 @@
+/**
+ * Location API 分组。
+ * 定义工作位置的列举与切换端点。
+ */
 import { Location } from "@opencode/schema/location"
 import { Context, Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, HttpApiMiddleware, HttpApiSchema, OpenApi } from "effect/http-api"

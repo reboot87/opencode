@@ -1,3 +1,7 @@
+/**
+ * 活跃日历测试。
+ * 验证活动按时间正确分布到日历格子。
+ */
 import { describe, expect, test } from "bun:test"
 import { activityCalendar } from "./activity-calendar.js"
 

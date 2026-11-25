@@ -9,7 +9,10 @@ import { parseTransfer, transferJson } from "./transfer"
 
 type Theme = (typeof themes)[number]
 
-/** Settings › Export and Import: moves the settings, Design mode copy and theme between browsers as JSON. */
+/** Settings › Export and Import: moves the settings, Design mode copy and theme between browsers as JSON.
+ *
+ * 站点界面组件：设置·transfer。
+ */
 export function SettingsTransfer(props: { theme: Theme; onTheme: (theme: Theme) => void }) {
   const [copied, setCopied] = createSignal(false)
   const [importing, setImporting] = createSignal(false)

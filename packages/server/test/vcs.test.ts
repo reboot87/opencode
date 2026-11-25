@@ -1,3 +1,10 @@
+/**
+ * 版本控制的测试。
+ *
+ * 被测模块：@opencode/server/vcs
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import path from "node:path"
 import { $ } from "bun"
 import { describe, expect } from "bun:test"

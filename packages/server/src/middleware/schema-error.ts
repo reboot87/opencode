@@ -1,3 +1,7 @@
+/**
+ * Schema 错误中间件实现。
+ * 把请求/响应校验失败转换为带原因说明的 Schema 错误。
+ */
 import { Effect } from "effect"
 import { HttpServerResponse } from "effect/http"
 import { HttpApiMiddleware } from "effect/http-api"

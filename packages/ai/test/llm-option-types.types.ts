@@ -1,3 +1,10 @@
+/**
+ * LLM·选项·类型定义（类型断言用）。
+ *
+ * 被测模块：@opencode/ai/llm-option-types
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { Effect, Schema, Stream } from "effect"
 import {
   ai,

@@ -1,3 +1,7 @@
+/**
+ * 主页会话 — ArchiveTest。
+ * 主页中会话列表的展示中负责 ArchiveTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { SESSION_TABS_REMOVED_EVENT, readSessionTabsRemovedDetail } from "@/shell/titlebar/session-events"
 import { archiveHomeSession } from "./archive"

@@ -1,3 +1,7 @@
+/**
+ * 消息 API 分组。
+ * 定义会话消息的列举、发送与事件查询端点。
+ */
 import { Session } from "@opencode/schema/session"
 import { SessionMessage } from "@opencode/schema/session-message"
 import { Location } from "@opencode/schema/location"

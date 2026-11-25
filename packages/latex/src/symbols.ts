@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — Symbols。
+ * GUI 插件的实现中负责 Symbols 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SymbolRole } from "./types"
 
 export interface SymbolDefinition {

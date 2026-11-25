@@ -1,3 +1,7 @@
+/**
+ * Provider 设置 — ConsoleLink。
+ * provider 的账号与密钥设置中负责 ConsoleLink 部分，提供该部分所需的实现与类型定义。
+ */
 import { Icon } from "@opencode/ui/icon"
 import type { SkillInfo } from "@opencode/client/promise"
 import { createEffect, onCleanup } from "solid-js"

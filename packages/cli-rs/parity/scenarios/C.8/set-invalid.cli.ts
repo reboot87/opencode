@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：集合·非法·CLI。
+ *
+ * 规格编号：C.8。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Validation and usage errors of `set` and `unset`; none of them changes the file.
 import { defineCli } from "../../cli/run"
 import { env, script, writeConfig } from "./fixture"

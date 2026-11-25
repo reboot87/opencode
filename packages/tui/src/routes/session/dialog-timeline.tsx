@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — DialogTimeline。
+ * 会话主界面的视图与状态中负责 DialogTimeline 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, onMount } from "solid-js"
 import { useData } from "../../context/data"
 import { DialogSelect, type DialogSelectOption } from "../../ui/dialog-select"

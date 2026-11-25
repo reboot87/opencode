@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — TerminalsTab。
+ * 会话输入区的组合与快捷键中负责 TerminalsTab 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, For, onCleanup, onMount, Show } from "solid-js"
 import { TextAttributes } from "@opentui/core"
 import { Keymap } from "../../../context/keymap"

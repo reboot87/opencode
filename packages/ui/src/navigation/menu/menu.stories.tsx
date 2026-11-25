@@ -1,3 +1,7 @@
+/**
+ * 菜单 — MenuStories。
+ * 下拉/侧边菜单组件中负责 MenuStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal } from "solid-js"
 import { Menu } from "./menu"
 import { Button } from "@opencode/ui/button"

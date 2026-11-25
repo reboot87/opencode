@@ -1,3 +1,7 @@
+/**
+ * 自动化作者判定。
+ * 根据会话与权限信息判定某条自动化是否由当前用户触发。
+ */
 import type { Agent } from "../agent.js"
 import type { Permission } from "../permission.js"
 import type { SessionSchema } from "../session/schema.js"

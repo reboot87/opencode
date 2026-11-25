@@ -5,6 +5,10 @@ const watch = process.argv.includes("--watch")
 
 /**
  * @type {import('esbuild').Plugin}
+ *
+ * VS Code 扩展构建：`esbuild`。
+ *
+ * VS Code 扩展构建：`esbuild`。
  */
 const esbuildProblemMatcherPlugin = {
   name: "esbuild-problem-matcher",

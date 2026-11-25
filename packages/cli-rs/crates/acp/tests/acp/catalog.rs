@@ -1,3 +1,5 @@
+//! ACP 协议测试：目录清单。
+
 use std::time::Duration;
 
 use serde_json::json;

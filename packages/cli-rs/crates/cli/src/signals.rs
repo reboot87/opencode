@@ -1,5 +1,7 @@
 //! SIGINT and SIGTERM run teardown handlers newest first. A second signal or a 10-second timeout reports pending work
 //! and forces exit. SIGHUP is handled only with a terminal attached, preserving nohup behavior.
+//!
+//! 命令行入口：信号。
 
 use std::io::Write;
 use std::sync::atomic::{AtomicBool, AtomicU64, Ordering};

@@ -1,3 +1,7 @@
+/**
+ * 手风琴 — Accordion。
+ * 可折叠分组的展示组件中负责 Accordion 部分，提供该部分所需的实现与类型定义。
+ */
 import { Content, Header, Item, Root, Trigger } from "@kobalte/core/accordion"
 import { splitProps } from "solid-js"
 import type { ComponentProps, ParentProps } from "solid-js"

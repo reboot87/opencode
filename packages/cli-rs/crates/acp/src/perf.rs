@@ -1,6 +1,8 @@
 //! ACP's performance scenario, run with the TUI's by `bun run perf` in `packages/cli-rs`: a long reply as the server
 //! streams it, decoded, folded into updates and written by the connection. It shares the counting allocator and the
 //! measured region with the TUI's scenarios (`crates/tui/tests/all/perf.rs`).
+//!
+//! ACP 协议实现：性能。
 
 #[allow(dead_code, reason = "the TUI's tests use the rest")]
 #[path = "../../tui/tests/all/support/heap.rs"]

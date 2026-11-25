@@ -1,3 +1,7 @@
+/**
+ * 原生能力 — ForceFocusMachine。
+ * 调用系统原生能力的封装中负责 ForceFocusMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export type ForceFocusReply = {
   readonly resolve: () => void
   readonly reject: (error: Error) => void

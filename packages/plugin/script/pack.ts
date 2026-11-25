@@ -1,4 +1,10 @@
 #!/usr/bin/env bun
+
+/**
+ * 打包脚本。
+ *
+ * 插件包的开发脚本：打包校验与示例生成。
+ */
 import path from "node:path"
 import { pack } from "@opencode/script/pack"
 

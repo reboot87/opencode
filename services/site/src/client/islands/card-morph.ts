@@ -9,7 +9,10 @@ import { $, html, on, reducedMotion, site, target } from "../dom"
 // transitions (Firefox) load the page as usual.
 
 const card = '[data-slot="media"][data-product]'
-/** A path without its trailing slash, so /ja/ and /ja compare equal. */
+/** A path without its trailing slash, so /ja/ and /ja compare equal.
+ *
+ * 客户端交互岛：卡片形变。
+ */
 const path = (url: string) => new URL(url, location.href).pathname.replace(/(.)\/$/, "$1")
 
 /** Loaded once the page is idle (islands.ts), whatever part of it is on screen. */

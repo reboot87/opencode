@@ -1,3 +1,10 @@
+/**
+ * 会话·owned的测试。
+ *
+ * 被测模块：@opencode/core/session-owned
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import { and, eq } from "drizzle-orm"
 import { Cause, Context, DateTime, Deferred, Effect, Exit, Fiber, Layer, Scope } from "effect"

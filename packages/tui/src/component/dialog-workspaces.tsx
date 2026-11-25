@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — DialogWorkspaces。
+ * 终端界面（Solid）组件中负责 DialogWorkspaces 部分，提供该部分所需的实现与类型定义。
+ */
 import { useTerminalDimensions } from "@opentui/solid"
 import { TextAttributes } from "@opentui/core"
 import { createEffect, createMemo, createResource, createSignal, onCleanup, onMount, Show } from "solid-js"

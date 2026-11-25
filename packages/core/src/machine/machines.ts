@@ -1,3 +1,7 @@
+/**
+ * 机器注册表。
+ * 管理已知机器的名称、信息与注册表。
+ */
 export * as Machines from "./machines.js"
 
 import { makeGlobalNode } from "@opencode/util/effect/app-node"

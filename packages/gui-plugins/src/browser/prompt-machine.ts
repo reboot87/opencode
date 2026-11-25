@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — PromptMachine。
+ * 内置浏览器功能的 GUI 插件中负责 PromptMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // What a tab waits on the user for, besides a page dialog (the dialog gate owns those): a site's permission request,
 // a site's sign-in, the page asking before the user leaves it, and the system refusing a device the user allowed.
 // Oldest first; the pane shows one at a time with a count of the rest. A request with the key of one that waits joins

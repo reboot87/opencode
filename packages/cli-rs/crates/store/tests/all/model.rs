@@ -10,6 +10,8 @@
 //!   `OPEN` entry.
 //!
 //! A failure prints its seed, reproduction command and shrunk sequence.
+//!
+//! 存储层测试：模型。
 
 use crate::common;
 

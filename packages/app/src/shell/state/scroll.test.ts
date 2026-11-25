@@ -1,3 +1,7 @@
+/**
+ * 外壳状态 — ScrollTest。
+ * 应用外壳的全局状态中负责 ScrollTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test, vi } from "bun:test"
 import { createScrollPersistence, type SessionScroll } from "./scroll"
 

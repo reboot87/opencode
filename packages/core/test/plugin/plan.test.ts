@@ -1,3 +1,10 @@
+/**
+ * 计划的测试。
+ *
+ * 被测模块：@opencode/core/plugin/plan
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { describe, expect } from "bun:test"
 import { ToolFailure } from "@opencode/ai/effect"
 import { Effect, Option, Types } from "effect"

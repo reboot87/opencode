@@ -1,3 +1,10 @@
+/**
+ * 挂起的测试。
+ *
+ * 被测模块：@opencode/codemode/suspend
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { Context, Effect, Fiber, Schema } from "effect"
 import { CodeMode, Extension, Tool } from "../src/index.js"

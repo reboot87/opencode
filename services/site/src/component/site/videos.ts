@@ -14,6 +14,8 @@ type Manifest = {
 /**
  * The sets the video experiments wrote to public/product-videos/<id>/manifest.json, bundled at build
  * time so the server renders the cards' and heroes' posters, and Vite picks up new sets in dev.
+ *
+ * 站点界面组件：视频。
  */
 export const videoSets = Object.values(
   import.meta.glob<Manifest>("../../../public/product-videos/*/manifest.json", { eager: true, import: "default" }),

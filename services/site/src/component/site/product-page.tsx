@@ -300,7 +300,10 @@ export function ProductPage(props: { slug: PageSlug }) {
   )
 }
 
-/** The link from a product page's changelog to the full changelog, filtered to its areas. */
+/** The link from a product page's changelog to the full changelog, filtered to its areas.
+ *
+ * 站点界面组件：product·页面。
+ */
 function SeeAll(props: { filter: string[] }) {
   const language = useLanguage()
   const i18n = useI18n()

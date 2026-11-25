@@ -1,3 +1,10 @@
+/**
+ * oracle的测试。
+ *
+ * 被测模块：@opencode/core/shell-scan/oracle
+ *
+ * 覆盖 Shell 命令扫描：危险模式识别与允许列表匹配。
+ */
 import { afterAll, describe, expect, test } from "bun:test"
 import { Effect, Exit } from "effect"
 import fs from "fs"

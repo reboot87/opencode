@@ -23,6 +23,8 @@ import {
  * tube's face: barrel curvature, the aperture grille and scanlines (resolved only up close),
  * halation, chromatic fringing, a slow rolling band, flicker, grain, and the room's reflection with
  * a glare that moves with the camera.
+ *
+ * 3D 街机场景组件：显像管。
  */
 
 export type Crt = ReturnType<typeof createCrt>

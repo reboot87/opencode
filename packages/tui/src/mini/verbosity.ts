@@ -1,3 +1,7 @@
+/**
+ * Mini 精简界面 — Verbosity。
+ * 精简交互模式（mini）的界面与交互中负责 Verbosity 部分，提供该部分所需的实现与类型定义。
+ */
 import type { MiniSettingChange, MiniSettings, MiniVerbosity } from "./types"
 
 const levels: readonly MiniVerbosity[] = ["quiet", "default", "everything"]

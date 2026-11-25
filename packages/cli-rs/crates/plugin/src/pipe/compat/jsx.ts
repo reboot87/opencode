@@ -1,3 +1,8 @@
+/**
+ * 管道实现：jsx。
+ *
+ * 管道实现的 TypeScript 兼容适配层。
+ */
 // `@opentui/solid/jsx-runtime` as OpenTUI ships it, over the compatibility renderer: what Bun's JSX transform calls for
 // a plugin with `@jsxImportSource @opentui/solid`, and so for every module of an installed package.
 import { createComponent, createElement, spread } from "./render"

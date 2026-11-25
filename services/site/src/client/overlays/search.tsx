@@ -11,6 +11,8 @@ import { isDark, setTheme } from "../theme"
  * handle ⌘K itself, as on the hydrated pages; `pending` names a shortcut pressed while it loaded, which
  * opens it. Its results open with a whole page load. The router is there for the palette's own reads
  * of the address; it has no routes.
+ *
+ * 客户端浮层：搜索。
  */
 export default async function mountSearch(pending: { via?: SearchVia }) {
   // Through import(), so its strings in the page's language load with it (script/i18n-plugin.ts).

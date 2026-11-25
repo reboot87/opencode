@@ -1,3 +1,7 @@
+/**
+ * 测试夹具 — TuiRuntime。
+ * 终端测试使用的夹具数据中负责 TuiRuntime 部分，提供该部分所需的实现与类型定义。
+ */
 import { resolve, type Info, type Resolved } from "../../src/config"
 import { TuiKeybind } from "../../src/config/keybind"
 

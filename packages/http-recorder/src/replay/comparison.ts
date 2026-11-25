@@ -1,3 +1,7 @@
+/**
+ * 模块 — Comparison。
+ * 该目录下的功能模块中负责 Comparison 部分，提供该部分所需的实现与类型定义。
+ */
 import { Option, Schema } from "effect"
 import { REDACTED } from "../redaction/redactor.js"
 import { secretFindings } from "../redaction/secrets.js"

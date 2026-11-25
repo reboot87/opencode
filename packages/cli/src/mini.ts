@@ -1,3 +1,7 @@
+/**
+ * Mini 命令。
+ * 实现 mini 精简交互命令：启动服务、渲染精简 UI 并处理输入。
+ */
 import { Service, type Endpoint } from "@opencode/client/effect/service"
 import { ClientError, OpenCode, type OpenCodeClient } from "@opencode/client/promise"
 import type { MiniFrontendInput } from "@opencode/tui/mini"

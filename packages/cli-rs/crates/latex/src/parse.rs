@@ -1,4 +1,6 @@
 //! Parses TeX math into a layout tree, optionally accepting an incomplete streaming prefix.
+//!
+//! LaTeX 公式渲染：解析。
 
 use unicode_segmentation::UnicodeSegmentation;
 

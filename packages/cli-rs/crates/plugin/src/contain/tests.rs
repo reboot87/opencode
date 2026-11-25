@@ -1,5 +1,7 @@
 //! `budget`: the slow state and the overrun follow the rule of 4.4 exactly at each boundary. The clock and
 //! the frame counter are injected, so nothing sleeps.
+//!
+//! 插件系统：`tests`。
 
 use std::cell::Cell;
 use std::rc::Rc;

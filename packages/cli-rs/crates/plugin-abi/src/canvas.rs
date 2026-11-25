@@ -28,6 +28,8 @@
 //!
 //! A cell, alone or in a run, takes a character one column wide; the host draws one of another width as U+FFFD. Text
 //! that is wider, or combined, is drawn with `text`, which takes the columns its characters need.
+//!
+//! 插件 ABI 边界：画布。
 
 use crate::{BorderStyle, Rgba};
 

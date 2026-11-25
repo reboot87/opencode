@@ -1,5 +1,7 @@
 //! The store's integration tests, one module per area, linked into one binary. Select an area with
 //! `cargo test -p opencode-store --test all <module>::`.
+//!
+//! 存储层测试入口。
 
 mod common;
 

@@ -1,3 +1,7 @@
+/**
+ * SSH 插件 — Main。
+ * 远程主机管理的 GUI 插件中负责 Main 部分，提供该部分所需的实现与类型定义。
+ */
 import { NodeServices } from "@effect/platform-node"
 import { Effect, Exit, Fiber, Layer, ManagedRuntime, Schema, Scope, Stream } from "effect"
 import { FetchHttpClient } from "effect/http"

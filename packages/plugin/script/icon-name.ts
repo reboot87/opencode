@@ -1,4 +1,10 @@
 #!/usr/bin/env bun
+
+/**
+ * 图标·名称脚本。
+ *
+ * 插件包的开发脚本：打包校验与示例生成。
+ */
 // Writes src/gui/icon-name.ts: the names of the app's own icons that GUI SDK fields accept, from the app's icon catalog
 // in packages/ui. The published SDK cannot depend on @opencode/ui, so it carries the names; packages/gui-plugins fails
 // its typecheck when they drift (src/icon-name.typecheck.ts). A plugin's own icons are not listed here: it declares

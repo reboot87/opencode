@@ -1,3 +1,7 @@
+/**
+ * Promise 客户端（生成）。
+ * 由协议生成的 Promise 风格客户端实现。
+ */
 import type {
   ServerInfoOutput,
   ServerPairOutput,

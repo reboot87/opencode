@@ -1,4 +1,6 @@
 //! Blocking interactive prompts for commands outside the TUI.
+//!
+//! CLI 交互提示入口。
 
 mod autocomplete;
 mod confirm;

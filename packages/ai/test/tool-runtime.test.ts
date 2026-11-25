@@ -1,3 +1,10 @@
+/**
+ * 工具·运行时的测试。
+ *
+ * 被测模块：@opencode/ai/tool-runtime
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { Content } from "@opencode/schema/tool"
 import { Effect, Schema, Stream } from "effect"

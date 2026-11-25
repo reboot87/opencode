@@ -1,3 +1,7 @@
+/**
+ * Worktree 数据库表。
+ * 定义 worktree 表结构。
+ */
 import { integer, primaryKey, sqliteTable, text } from "drizzle-orm/sqlite-core"
 import type { Worktree } from "@opencode/schema/worktree"
 import { absoluteColumn } from "../database/path.js"

@@ -1,3 +1,7 @@
+/**
+ * 路径工具。
+ * 处理路径的规范化、文件名提取与 file:// URL 转换。
+ */
 export function getFilename(path: string | undefined) {
   if (!path) return ""
   const trimmed = path.replace(/[/\\]+$/, "")

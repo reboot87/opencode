@@ -1,3 +1,6 @@
+/**
+ * 站点入口：条目客户端。
+ */
 // @refresh reload
 import { mount, StartClient } from "@solidjs/start/client"
 import { loadSlice } from "~/i18n/content"

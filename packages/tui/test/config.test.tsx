@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid ConfigTest：该文件实现 ConfigTest 相关的状态与逻辑。
+ */
 import { testRender } from "@opentui/solid"
 import { expect, test } from "bun:test"
 import { Schema } from "effect"

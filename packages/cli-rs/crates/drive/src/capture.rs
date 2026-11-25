@@ -1,4 +1,6 @@
 //! Reads capture and match results from rendered cells.
+//!
+//! 本地驱动：抓取。
 
 use opentui::native::Capture;
 use serde_json::{Value, json};

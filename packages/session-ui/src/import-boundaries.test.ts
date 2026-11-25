@@ -1,3 +1,7 @@
+/**
+ * 终端界面 — ImportBoundariesTest。
+ * OpenCode 终端界面的整体骨架与入口中负责 ImportBoundariesTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { Effect } from "effect"
 

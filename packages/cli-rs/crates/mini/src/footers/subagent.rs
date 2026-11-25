@@ -1,4 +1,6 @@
 //! The selected child's transcript follows new entries at the tail.
+//!
+//! 精简版实现：子智能体。
 
 use opencode_ui::motion::{SPINNER_FRAMES, Spinner};
 use opentui::widget::ScrollEdge;

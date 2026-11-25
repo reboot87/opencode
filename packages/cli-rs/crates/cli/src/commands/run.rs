@@ -1,3 +1,5 @@
+//! CLI 子命令：运行。
+
 use opencode_api::generated::{SessionID, SessionUpdateInput};
 use opencode_store::target::{self, Prepared, TargetInput};
 use opencode_util::error;

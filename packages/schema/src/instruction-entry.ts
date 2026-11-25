@@ -1,3 +1,7 @@
+/**
+ * 指令条目类型。
+ * 定义指令的键、信息与准入结构。
+ */
 export * as InstructionEntry from "./instruction-entry.js"
 
 import { Schema } from "effect"

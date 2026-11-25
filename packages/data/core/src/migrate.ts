@@ -1,3 +1,7 @@
+/**
+ * 数据核心源码 — Migrate。
+ * 数据采集与处理的实现中负责 Migrate 部分，提供该部分所需的实现与类型定义。
+ */
 import { migrate } from "drizzle-orm/planetscale-serverless/migrator"
 import { Config, ConfigProvider, Effect } from "effect"
 import { DrizzleClient, layer } from "./database"

@@ -1,3 +1,7 @@
+/**
+ * 快照服务（Snapshot）。
+ * 文件系统快照：捕获、比较与差异计算，是工具执行前后差异检测的基础。
+ */
 export * as Snapshot from "./snapshot.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

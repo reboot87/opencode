@@ -1,3 +1,7 @@
+/**
+ * Open Responses 选项工具。
+ * 解析 Responses 协议的配置选项。
+ */
 import { Schema } from "effect"
 import { ReasoningEffort, ReasoningEfforts, type LLMRequest } from "../../schema/index.js"
 import { lenient, ProviderShared } from "../shared.js"

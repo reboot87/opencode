@@ -1,3 +1,7 @@
+/**
+ * MCP Code Mode 默认值。
+ * 为特定 MCP 端点（executor.sh、PostHog 等）默认启用 Code Mode。
+ */
 export * as McpCodeModeDefaultsPlugin from "./mcp-codemode-defaults.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

@@ -9,7 +9,10 @@ import { coverFieldMarkup, emitterPresets, fieldBottomMax, normalize, presets, t
 
 export type ArchitectPattern = (typeof architectPatterns)[number]
 
-/** A custom lines pattern David tuned in the playground. */
+/** A custom lines pattern David tuned in the playground.
+ *
+ * 法律文档生成逻辑：cover·pattern。
+ */
 const lines: Partial<PatternParams> = {
   primitive: "lines",
   spacing: 5,

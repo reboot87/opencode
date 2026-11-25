@@ -1,3 +1,7 @@
+/**
+ * 手风琴 — AccordionStories。
+ * 可折叠分组的展示组件中负责 AccordionStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal, Show } from "solid-js"
 import { Accordion } from "./accordion"
 

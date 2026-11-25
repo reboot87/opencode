@@ -1,3 +1,7 @@
+/**
+ * migration 接口处理器。
+ * 迁移接口处理器：v1 迁移状态查询与触发。
+ */
 import { V1Migration } from "@opencode/core/database/v1-migration"
 import { HttpApiBuilder } from "effect/http-api"
 import { Effect } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * Mini 宿主。
+ * 为 mini（精简交互模式）提供宿主动作与交互式输入支持。
+ */
 import type { MiniFrontendInput } from "@opencode/tui/mini"
 import { createModelPreferenceRepository } from "@opencode/tui/model-preference"
 import fs from "node:fs"

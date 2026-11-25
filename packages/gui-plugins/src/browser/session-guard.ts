@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — SessionGuard。
+ * 内置浏览器功能的 GUI 插件中负责 SessionGuard 部分，提供该部分所需的实现与类型定义。
+ */
 import { app, type WebContents } from "electron"
 import { Option, Schema } from "effect"
 import { Browser } from "@opencode/plugin-browser/rpc"

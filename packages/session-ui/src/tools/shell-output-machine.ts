@@ -1,3 +1,7 @@
+/**
+ * 工具展示 — ShellOutputMachine。
+ * 工具调用与结果的展示组件中负责 ShellOutputMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import { TextBoundary } from "@opencode/util/text-boundary"
 
 // Same page size as the TUI shell output viewer; only this much recent output is retained and rendered.

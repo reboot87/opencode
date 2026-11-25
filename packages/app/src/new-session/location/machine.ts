@@ -1,3 +1,7 @@
+/**
+ * 新会话位置 — Machine。
+ * 新建会话时的位置选择中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { PromptProject, PromptServer } from "@/new-session/project/selector"
 
 export type LocationEntry =

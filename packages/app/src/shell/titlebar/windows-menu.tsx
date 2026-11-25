@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — WindowsMenu。
+ * 自定义窗口标题栏中负责 WindowsMenu 部分，提供该部分所需的实现与类型定义。
+ */
 import { makeEventListener } from "@solid-primitives/event-listener"
 import { For, onMount, type JSX } from "solid-js"
 import { Menu } from "@opencode/ui/menu"

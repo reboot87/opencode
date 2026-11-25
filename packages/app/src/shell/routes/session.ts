@@ -1,3 +1,7 @@
+/**
+ * 外壳路由 — Session。
+ * 应用外壳的路由定义中负责 Session 部分，提供该部分所需的实现与类型定义。
+ */
 import { base64Encode } from "@opencode/util/encode"
 import { ServerConnection } from "@/runtime/server/registry"
 import { decode64 } from "@/runtime/persistence/base64"

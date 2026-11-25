@@ -1,3 +1,7 @@
+/**
+ * websearch 工具。
+ * 执行网络搜索的工具，含 provider 选择锁与无结果处理。
+ */
 export * as WebSearchTool from "./websearch.js"
 
 import type { Context } from "@opencode/plugin/effect/plugin"

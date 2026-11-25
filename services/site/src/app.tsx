@@ -95,7 +95,10 @@ export default function App() {
   )
 }
 
-/** Every page's providers and default head tags, here and on the static pages (src/static/render.tsx). */
+/** Every page's providers and default head tags, here and on the static pages (src/static/render.tsx).
+ *
+ * 站点入口：`app`。
+ */
 export function AppRoot(props: { children?: JSX.Element }) {
   return (
     <LanguageProvider>

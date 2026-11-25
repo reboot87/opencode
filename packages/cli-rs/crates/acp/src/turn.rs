@@ -1,5 +1,7 @@
 //! Each prompt runs in its own task so it can settle and respond after cancellation. A background follower tracks
 //! unfinished children and the parent turns their reports start. The next prompt inherits those children.
+//!
+//! ACP 协议实现：轮次。
 
 use std::collections::HashMap;
 use std::sync::atomic::{AtomicU64, Ordering};

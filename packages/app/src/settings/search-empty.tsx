@@ -1,3 +1,7 @@
+/**
+ * 设置界面 — SearchEmpty。
+ * 应用设置页面的框架中负责 SearchEmpty 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, onMount } from "solid-js"
 import { createStore } from "solid-js/store"
 import { createResizeObserver } from "@solid-primitives/resize-observer"

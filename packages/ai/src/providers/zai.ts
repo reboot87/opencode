@@ -1,3 +1,7 @@
+/**
+ * Z.ai（智谱）provider 门面。
+ * 封装 chat / images 等能力，提供模型工厂与鉴权配置。
+ */
 import type { ProviderPackage } from "../provider-package.js"
 import { ZAIChat } from "../protocols/zai-chat.js"
 import { ZAIImages } from "../protocols/zai-images.js"

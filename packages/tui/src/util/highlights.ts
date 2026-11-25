@@ -1,3 +1,7 @@
+/**
+ * 终端工具 — Highlights。
+ * 终端界面的通用工具函数中负责 Highlights 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Storage } from "../context/storage"
 
 export type HighlightsInput = {

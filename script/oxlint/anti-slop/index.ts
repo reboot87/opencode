@@ -19,7 +19,10 @@ import { noWidenThenAssertRule } from "./rules/no-widen-then-assert.ts";
 import { requireReadableSpacingRule } from "./rules/require-readable-spacing.ts";
 import { requireSafetyCommentForTypeAssertionRule } from "./rules/require-safety-comment-for-type-assertion.ts";
 
-/** Generic Oxlint rules that reject low-evidence and low-signal implementation patterns. */
+/** Generic Oxlint rules that reject low-evidence and low-signal implementation patterns.
+ *
+ * 反冗余代码的 Oxlint 规则集：索引。
+ */
 const antiSlopPlugin = eslintCompatPlugin({
 	meta: { name: "anti-slop" },
 	rules: {

@@ -1,3 +1,7 @@
+/**
+ * WSL 插件 — ProbeMachine。
+ * Windows Subsystem for Linux 相关的 GUI 插件中负责 ProbeMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { AddServerProbePlan } from "./model"
 
 /** Ceiling for one probe call, above main's own 20 s `wsl.exe` timeout, in case the bridge hangs. */

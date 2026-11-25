@@ -5,7 +5,10 @@
 export const platforms = ["ios", "android", "macos", "windows", "linux"] as const
 export type Platform = (typeof platforms)[number]
 
-/** The platform from a user agent alone, so the server and the first client render agree. */
+/** The platform from a user agent alone, so the server and the first client render agree.
+ *
+ * 站点共享逻辑：用户智能体。
+ */
 export function platformFromUserAgent(userAgent: string): Platform | undefined {
   const agent = userAgent.toLowerCase()
   // iPhone and iPad user agents mention "Mac OS X", Android ones "Linux".

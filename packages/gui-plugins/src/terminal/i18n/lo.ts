@@ -1,3 +1,7 @@
+/**
+ * 终端文案 — Lo。
+ * 终端插件的多语言文案中负责 Lo 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.category": "ສະຖານີ",
   "command.toggle": "ປິດ/ເປີດ terminal",

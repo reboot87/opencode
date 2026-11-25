@@ -1,3 +1,7 @@
+/**
+ * 终端插件支持 — Watch。
+ * 终端界面的插件加载与扩展点中负责 Watch 部分，提供该部分所需的实现与类型定义。
+ */
 import path from "path"
 import { existsSync, type FSWatcher } from "fs"
 import { lstat, realpath, stat } from "fs/promises"

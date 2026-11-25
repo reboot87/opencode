@@ -1,3 +1,7 @@
+/**
+ * 数据站路由 — CompareRadar。
+ * 数据站点的路由页面中负责 CompareRadar 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createSignal, For, Show, type JSX } from "solid-js"
 import type { ModelCatalogBenchmark, ModelCatalogEntry } from "./model-catalog"
 

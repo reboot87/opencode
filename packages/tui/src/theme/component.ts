@@ -1,3 +1,7 @@
+/**
+ * UI 主题 — Component。
+ * 配色、间距与字号等设计令牌中负责 Component 部分，提供该部分所需的实现与类型定义。
+ */
 import type { RGBA } from "@opentui/core"
 import type { Accessor } from "solid-js"
 import type { ResolvedTheme, SurfaceName } from "@opencode/theme/tui"

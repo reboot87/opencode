@@ -1,3 +1,7 @@
+/**
+ * 外壳布局 — ProjectAvatarState。
+ * 应用外壳的布局结构中负责 ProjectAvatarState 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, type Accessor } from "solid-js"
 import type { SessionInfo } from "@opencode/client/promise"
 import { useGlobal, useServerCtx, type ServerCtx } from "@/runtime/server/runtime"

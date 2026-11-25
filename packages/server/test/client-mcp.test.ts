@@ -1,3 +1,10 @@
+/**
+ * 客户端·MCP的测试。
+ *
+ * 被测模块：@opencode/server/client-mcp
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import { NodeHttpServer } from "@effect/platform-node"
 import { Location } from "@opencode/core/location"

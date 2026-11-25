@@ -1,5 +1,11 @@
 #!/usr/bin/env bun
 
+/**
+ * 构建脚本。
+ *
+ * CLI 包的开发脚本：构建校验、配置生成与发布准备。
+ */
+
 import { $ } from "bun"
 import { createHash } from "node:crypto"
 import { mkdir, rm } from "fs/promises"

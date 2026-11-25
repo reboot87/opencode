@@ -1,3 +1,5 @@
+//! 基础 UI 组件库：动效帧。
+
 use opencode_parity::{Fixture, compare, fixtures_dir};
 use opencode_ui::motion::{
     FadeInText, ScannerOptions, ScannerStyle, ShimmerText, Spinner, one_cell_frame, scanner_colors, scanner_frames,

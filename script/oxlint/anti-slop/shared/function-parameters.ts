@@ -2,7 +2,10 @@ import type { ESTree, SourceCode } from "@oxlint/plugins";
 
 export type FunctionParameter = ESTree.ParamPattern;
 
-/** Return whether a type is or contains TypeScript's absorbing unknown top type. */
+/** Return whether a type is or contains TypeScript's absorbing unknown top type.
+ *
+ * Oxlint 规则共享工具：函数参数。
+ */
 export function containsUnknownType(type: ESTree.TSType): boolean {
 	if (type.type === "TSUnknownKeyword") return true;
 	if (type.type === "TSParenthesizedType") return containsUnknownType(type.typeAnnotation);

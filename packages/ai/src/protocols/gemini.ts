@@ -1,3 +1,7 @@
+/**
+ * Google Gemini generateContent 协议实现。
+ * 把请求转成 Gemini 的内容格式，通过 HTTP/SSE 传输，处理安全设置思考签名等 Gemini 特有语义。
+ */
 import { Effect, Option, Schema, Stream } from "effect"
 import { Tool } from "@opencode/schema/tool"
 import { Route } from "../route/client.js"

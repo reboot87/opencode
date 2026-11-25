@@ -1,3 +1,7 @@
+/**
+ * AssemblyAI 语音转写协议。
+ * STT provider 实现，含上传端点。
+ */
 import { Effect, Schema } from "effect"
 import type { HttpClientResponse } from "effect/http"
 import { Media } from "../media.js"

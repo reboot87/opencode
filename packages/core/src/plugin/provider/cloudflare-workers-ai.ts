@@ -1,3 +1,7 @@
+/**
+ * Cloudflare Workers AI 插件。
+ * 注册 Cloudflare Workers AI provider。
+ */
 import { Effect } from "effect"
 import { define } from "@opencode/plugin/effect/plugin"
 import { Form } from "@opencode/schema/form"

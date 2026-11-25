@@ -1,4 +1,6 @@
 //! Published slot paths and the rules for ordering, replacing and suppressing their claims.
+//!
+//! 插件系统：槽位。
 
 use std::any::Any;
 use std::cell::{Cell, RefCell};

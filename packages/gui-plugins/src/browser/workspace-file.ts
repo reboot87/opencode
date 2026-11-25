@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — WorkspaceFile。
+ * 内置浏览器功能的 GUI 插件中负责 WorkspaceFile 部分，提供该部分所需的实现与类型定义。
+ */
 import { realpath } from "node:fs/promises"
 import { relative } from "node:path"
 import { FileVerificationError } from "./file-verification"

@@ -1,3 +1,7 @@
+/**
+ * 错误摘要提取。
+ * 从任意错误值中提取可读摘要。
+ */
 export * as ErrorSummary from "./error-summary.js"
 
 import { Option, Schema } from "effect"

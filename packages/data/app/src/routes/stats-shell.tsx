@@ -1,3 +1,7 @@
+/**
+ * 数据站路由 — StatsShell。
+ * 数据站点的路由页面中负责 StatsShell 部分，提供该部分所需的实现与类型定义。
+ */
 import { query } from "@solidjs/router"
 import { createEffect, createMemo, createSignal, For, onCleanup, onMount, Show } from "solid-js"
 import { ProductLockup } from "../component/product-lockup"

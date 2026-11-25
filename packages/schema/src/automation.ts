@@ -1,3 +1,7 @@
+/**
+ * 自动化类型定义。
+ * 定义自动化任务的状态、输入输出与错误结构。
+ */
 export * as Automation from "./automation.js"
 
 import { Duration, Option, Schema } from "effect"

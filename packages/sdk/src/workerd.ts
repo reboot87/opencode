@@ -1,3 +1,7 @@
+/**
+ * Workerd SDK 入口。
+ * 在 workerd 运行时创建嵌入式 OpenCode 实例。
+ */
 export * as OpenCodeWorkerd from "./workerd"
 
 import { WorkerdProfile } from "./internal/workerd"

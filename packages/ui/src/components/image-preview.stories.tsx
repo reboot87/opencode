@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — ImagePreviewStories。
+ * 跨场景复用的通用 UI 组件中负责 ImagePreviewStories 部分，提供该部分所需的实现与类型定义。
+ */
 // @ts-nocheck
 import { onCleanup, onMount } from "solid-js"
 import * as mod from "./image-preview"

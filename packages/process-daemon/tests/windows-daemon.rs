@@ -2,6 +2,9 @@
 
 // Direct-service and daemon tests share the runtime lane's real child fixture,
 // rather than maintaining separate console setup.
+
+//! 进程守护服务测试：windows·守护进程。
+
 #[path = "support/terminal_fixture.rs"]
 mod terminal_fixture;
 

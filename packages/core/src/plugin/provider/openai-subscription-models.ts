@@ -1,3 +1,7 @@
+/**
+ * OpenAI 订阅模型跟踪。
+ * 跟踪并记录订阅渠道可用的模型列表。
+ */
 export * as OpenAISubscriptionModels from "./openai-subscription-models.js"
 
 import { Event } from "@opencode/schema/config"

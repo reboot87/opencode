@@ -1,6 +1,8 @@
 //! Scroll commands and geometry for plugin surfaces. Reads use the last settled frame and the current scroll
 //! offset. [`Scroll::To`] resolves against final layout; [`Scroll::Step`] reports [`ScrollEvent::Landed`] before
 //! the next input event. A layout callback can request a repaint or another view, but cannot move a widget.
+//!
+//! 插件 ABI 边界：几何。
 
 use serde::{Deserialize, Serialize};
 

@@ -1,3 +1,7 @@
+/**
+ * 文件插件 — ResolveLink。
+ * 文件预览与操作的 GUI 插件中负责 ResolveLink 部分，提供该部分所需的实现与类型定义。
+ */
 import { parsePathLineSuffix } from "@opencode/util/path"
 import type { Files, LineRange } from "@opencode/plugin/gui"
 

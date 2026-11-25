@@ -1,3 +1,7 @@
+/**
+ * WSL 插件 — Servers。
+ * Windows Subsystem for Linux 相关的 GUI 插件中负责 Servers 部分，提供该部分所需的实现与类型定义。
+ */
 import { randomUUID } from "node:crypto"
 import type { MainContext } from "@opencode/plugin/gui/main"
 import type { WslOpencodeCheck, WslServerConfig } from "./contract"

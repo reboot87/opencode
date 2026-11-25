@@ -1,3 +1,7 @@
+/**
+ * 主页会话 — Search。
+ * 主页中会话列表的展示中负责 Search 部分，提供该部分所需的实现与类型定义。
+ */
 import { useCommand } from "@/shell/commands/command"
 import { useLanguage } from "@/runtime/i18n/language"
 import { useServers } from "@/runtime/server/registry"

@@ -1,3 +1,7 @@
+/**
+ * 数据领域 — InferenceTest。
+ * 数据采集的领域模型中负责 InferenceTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   buildRetentionQueries,

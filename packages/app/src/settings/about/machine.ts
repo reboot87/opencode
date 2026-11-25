@@ -1,3 +1,7 @@
+/**
+ * 关于 — Machine。
+ * 版本与致谢等信息中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 export const ABOUT_COPY_WRITE_TIMEOUT_MS = 5_000
 
 export const ABOUT_COPY_OPEN_MS = 2_000

@@ -1,3 +1,7 @@
+/**
+ * Provider 连接 — Mcp。
+ * 连接 provider 的授权界面中负责 Mcp 部分，提供该部分所需的实现与类型定义。
+ */
 import { type Accessor, createMemo, createSignal, onCleanup, untrack } from "solid-js"
 import { useLanguage } from "@/runtime/i18n/language"
 import { useServer } from "@/runtime/server/current"

@@ -1,4 +1,6 @@
 //! Subagent tree and session selection.
+//!
+//! 终端界面：子智能体。
 
 use opencode_api::generated::{SessionInfo, SessionInterruptInput};
 use opencode_store::SessionStatus;

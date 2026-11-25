@@ -1,3 +1,7 @@
+/**
+ * 会话时间线 — Machine。
+ * 会话消息时间线的渲染中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 // Distance from the bottom that counts as "at the end". Deliberately tight: a collapse clamps
 // exactly to the end, while a one-pixel nudge upward is a deliberate move away from it.
 export const END_EPSILON = 0.5

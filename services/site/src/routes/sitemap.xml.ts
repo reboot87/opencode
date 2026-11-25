@@ -1,7 +1,10 @@
 import type { APIEvent } from "@solidjs/start/server"
 import { sitemapFiles, sitemapIndexXml } from "~/lib/sitemap"
 
-/** The one public sitemap, an index of this app's pages sitemap and the other apps' sitemaps. */
+/** The one public sitemap, an index of this app's pages sitemap and the other apps' sitemaps.
+ *
+ * 页面路由：站点地图·xml。
+ */
 export function GET(_event: APIEvent) {
   return new Response(sitemapIndexXml(sitemapFiles), {
     headers: {

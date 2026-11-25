@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：文本·尺寸策略·mini·伪终端。
+ *
+ * 规格编号：OT。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Mini starts under a shell's output in a terminal that draws OSC 66 as kitty does. The client takes kitty's text
 // sizing from its XTVERSION reply and draws no probe over the shell rows (OpenTUI #2056, on both sides since 0.9.4).
 import { definePty } from "../../pty/run"

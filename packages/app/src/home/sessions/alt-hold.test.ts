@@ -1,3 +1,7 @@
+/**
+ * 主页会话 — AltHoldTest。
+ * 主页中会话列表的展示中负责 AltHoldTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { createRoot } from "solid-js"
 import { createAltHold } from "./alt-hold"

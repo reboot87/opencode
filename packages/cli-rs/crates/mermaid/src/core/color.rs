@@ -1,4 +1,6 @@
 //! Blended channels round to the nearest byte, with ties rounded up.
+//!
+//! Mermaid 渲染核心：颜色。
 
 use opencode_plugin_abi::Rgba;
 

@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — WorkerMachineTest。
+ * Microsoft Office 文档预览插件中负责 WorkerMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   WORKER_OPEN_TIMEOUT_MS,

@@ -1,3 +1,7 @@
+/**
+ * 桌面插件 — Manager。
+ * 桌面端插件的加载与宿主能力中负责 Manager 部分，提供该部分所需的实现与类型定义。
+ */
 import { pluginEnabled } from "@opencode/plugin/gui/host"
 import type { Database } from "../storage/database"
 import { plugin } from "../storage/schema"

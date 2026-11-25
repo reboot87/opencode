@@ -1,4 +1,6 @@
 //! Recent models, favorites, variants and speeds in `<state>/model.json`. Locked updates preserve unrelated fields.
+//!
+//! 本地配置与路径：模型·pref。
 
 use std::path::{Path, PathBuf};
 

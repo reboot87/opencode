@@ -1,3 +1,5 @@
+//! Mermaid 图表渲染：`drawing`。
+
 use super::layout::{
     Layout, NoteBox, create, expand_for_feedback, expand_for_internal_transitions, note_connector_of, separate_external,
 };

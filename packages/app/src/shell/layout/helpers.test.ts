@@ -1,3 +1,7 @@
+/**
+ * 外壳布局 — HelpersTest。
+ * 应用外壳的布局结构中负责 HelpersTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { SessionInfo } from "@opencode/client/promise"
 import { errorMessage, projectForSession, toggleHomeProjectSelection } from "./helpers"

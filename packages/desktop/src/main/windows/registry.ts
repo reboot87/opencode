@@ -1,3 +1,7 @@
+/**
+ * 窗口管理 — Registry。
+ * 浏览器窗口的创建与布局管理中负责 Registry 部分，提供该部分所需的实现与类型定义。
+ */
 import { Predicate, type Schema } from "effect"
 
 /** The valid ids in the persisted window list. The early window and the registry must agree on them. */

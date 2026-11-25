@@ -1,3 +1,7 @@
+/**
+ * 模块 — VisibleModelTest。
+ * 该目录下的功能模块中负责 VisibleModelTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { parseMermaidStateDiagram } from "./parser.js"
 import { prepareVisibleStateDiagram } from "./visible-model.js"

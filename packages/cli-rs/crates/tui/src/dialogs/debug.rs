@@ -1,4 +1,6 @@
 //! Debug details and clipboard export for bug reports.
+//!
+//! 终端弹窗组件：`debug`。
 
 use opencode_ui::dialog::{DIALOG_INSET, FooterAction, FooterProps, footer, layout_view};
 use opencode_util::time;

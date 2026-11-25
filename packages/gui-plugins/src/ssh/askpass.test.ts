@@ -1,3 +1,7 @@
+/**
+ * SSH 插件 — AskpassTest。
+ * 远程主机管理的 GUI 插件中负责 AskpassTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect } from "bun:test"
 import { NodeSocket } from "@effect/platform-node"
 import { Deferred, Effect, Fiber, Layer, Queue, Scope, Exit } from "effect"

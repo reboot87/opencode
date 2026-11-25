@@ -1,3 +1,7 @@
+/**
+ * 动效 — Reduced。
+ * 界面过渡与动画效果中负责 Reduced 部分，提供该部分所需的实现与类型定义。
+ */
 const query = "(prefers-reduced-motion: reduce)"
 
 let source: typeof matchMedia | undefined

@@ -3,7 +3,10 @@
 // and at the edge (lib/edge-cache.ts) and fall back to the build-time snapshot
 // (script/github-snapshot.ts, which CI runs with the workflow's own GITHUB_TOKEN at build time only).
 
-/** A GitHub API response, or undefined when the call failed or timed out. */
+/** A GitHub API response, or undefined when the call failed or timed out.
+ *
+ * 站点共享逻辑：GitHub·API。
+ */
 export async function githubFetch(url: string, init?: RequestInit) {
   return fetch(url, {
     ...init,

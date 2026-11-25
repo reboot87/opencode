@@ -1,3 +1,7 @@
+/**
+ * SDK 内嵌宿主。
+ * 定义嵌入式实例的创建选项与嵌入参数。
+ */
 export * as EmbeddedHost from "./host"
 
 import { SdkPlugins } from "@opencode/core/plugin/sdk"

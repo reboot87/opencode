@@ -1,3 +1,7 @@
+/**
+ * 快捷键 — Keybind。
+ * 展示按键绑定的组件中负责 Keybind 部分，提供该部分所需的实现与类型定义。
+ */
 import { type ComponentProps, For, splitProps } from "solid-js"
 import "./keybind.css"
 

@@ -1,3 +1,7 @@
+/**
+ * 会话时间线 — SearchBarStories。
+ * 会话消息时间线的渲染中负责 SearchBarStories 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageInfo } from "@opencode/client/promise"
 import type { SessionDocument } from "@opencode/session-ui/document"
 import { CurrentSessionProviders, emptySessionDocument, STORY_MODEL, STORY_TIME } from "@opencode/session-ui/storybook"

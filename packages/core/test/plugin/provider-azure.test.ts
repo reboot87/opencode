@@ -1,3 +1,10 @@
+/**
+ * 供应商·Azure的测试。
+ *
+ * 被测模块：@opencode/core/plugin/provider-azure
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { chmod } from "node:fs/promises"
 import { Agent } from "@opencode/core/agent"
 import { Bus } from "@opencode/core/bus"

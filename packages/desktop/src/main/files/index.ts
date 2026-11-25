@@ -1,3 +1,7 @@
+/**
+ * 文件处理 — Index 出口。
+ * 集中导出 文件处理 中 Index 相关的实现、组件与类型。
+ */
 export * as DesktopFiles from "./index"
 
 import { execFile, spawn } from "node:child_process"

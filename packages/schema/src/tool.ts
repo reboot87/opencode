@@ -1,3 +1,7 @@
+/**
+ * 工具类型。
+ * 定义工具定义、上下文、元数据与内容结构。
+ */
 export * as Tool from "./tool.js"
 
 import { Effect, JsonSchema, Schema } from "effect"

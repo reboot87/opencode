@@ -1,3 +1,7 @@
+/**
+ * 插件服务。
+ * 插件注册与状态管理服务，定义加载失败的表示。
+ */
 export * as Plugin from "./service.js"
 
 // The service tag lives apart from the layer so Session entry points can wait on activation without

@@ -1,3 +1,7 @@
+/**
+ * 受保护目录判定。
+ * 识别 home 等受保护目录，避免对其执行危险操作。
+ */
 import os from "os"
 import path from "path"
 

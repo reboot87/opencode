@@ -1,3 +1,7 @@
+/**
+ * OpenAPI → Code Mode。
+ * 把 OpenAPI 规范转换为 Code Mode 可调用的工具定义。
+ */
 import { HttpClient } from "effect/http"
 import { make, type Tool } from "../tool.js"
 import { invoke } from "./runtime.js"

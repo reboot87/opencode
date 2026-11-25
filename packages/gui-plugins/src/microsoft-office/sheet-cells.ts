@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — SheetCells。
+ * Microsoft Office 文档预览插件中负责 SheetCells 部分，提供该部分所需的实现与类型定义。
+ */
 import type { XlsxAnchor } from "@betteroffice/xlsx"
 import { selectionAt, type CellAddr, type CellRange, type Selection } from "@betteroffice/xlsx/headless"
 

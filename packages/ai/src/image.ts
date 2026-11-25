@@ -1,3 +1,11 @@
+/**
+ * 图片生成 API。
+ *
+ * 提供 generate（一次性生成）、stream（流式，含生成中进度）、以及异步任务句柄 Generation。
+ * 图片生成通常是异步任务：提交后轮询状态，因此复用 generation.ts 的轮询抽象，
+ * 通过 MediaModel + composeRoute 把各 provider 协议适配成统一的模型调用。
+ * 生成结果是 Media.ImageAsset（见 media.ts），可直接作为多模态消息的输入。
+ */
 import { Effect, Schema, Stream } from "effect"
 import { ProgressEvent, type AwaitOptions, type Reason, type Status } from "./generation.js"
 import { Media } from "./media.js"

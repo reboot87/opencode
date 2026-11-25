@@ -10,7 +10,10 @@ type ContentsItem = {
   id: string
   title: string
   level?: 2 | 3
-  /** A small status dot after the title (the docs component kitchen sink's chosen / not yet reviewed marks). */
+  /** A small status dot after the title (the docs component kitchen sink's chosen / not yet reviewed marks).
+ *
+ * 站点界面组件：on·this·页面。
+ */
   status?: "chosen" | "review" | "progress"
 }
 

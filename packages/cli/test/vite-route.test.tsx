@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid ViteRouteTest：该文件实现 ViteRouteTest 相关的状态与逻辑。
+ */
 import { expect, test } from "bun:test"
 import { testRender } from "@opentui/solid"
 import { RouteProvider, useRoute, type Route } from "../dev/route"

@@ -1,3 +1,7 @@
+/**
+ * MCP 连接管理。
+ * 跟踪 MCP 服务器连接状态（tools/prompts/resources/skills），用 KeyedMutex 保证加载串行化，处理连接失败。
+ */
 export * as McpConnection from "./connection.js"
 
 import type { AuthProvider } from "@modelcontextprotocol/client"

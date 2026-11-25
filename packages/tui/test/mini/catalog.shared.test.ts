@@ -1,3 +1,7 @@
+/**
+ * Mini 测试 — CatalogSharedTest。
+ * 精简交互模式的测试中负责 CatalogSharedTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, describe, expect, mock, spyOn, test } from "bun:test"
 import { OpenCode } from "@opencode/client/promise"
 import { loadRunReferences, runProviders } from "../../src/mini/catalog.shared"

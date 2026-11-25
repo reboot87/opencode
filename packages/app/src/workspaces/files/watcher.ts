@@ -1,3 +1,7 @@
+/**
+ * 工作区文件 — Watcher。
+ * 工作区内文件浏览界面中负责 Watcher 部分，提供该部分所需的实现与类型定义。
+ */
 import type { FileNode } from "@/runtime/server/types"
 import type { OpenCodeEvent } from "@opencode/client/promise"
 

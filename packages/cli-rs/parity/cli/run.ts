@@ -1,3 +1,8 @@
+/**
+ * CLI 对等性校验：运行。
+ *
+ * CLI 交互的对等性校验：比对命令输出与退出码。
+ */
 // P-CLI: runs one command with the TS CLI and with `opencode-native`, each against its own fake
 // server, and compares exit code, stdout, stderr, and the requests after normalization.
 //

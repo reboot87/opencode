@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：unpack·Windows。
 # unpack-windows.sh <download dir> <work dir>: lays out what the signing action signs in <work dir>:
 # cli/<target>/package from the Windows CLI npm tarballs, and desktop-<target>/ from the unpacked desktop apps.
 . "$(dirname "$0")/lib.sh"

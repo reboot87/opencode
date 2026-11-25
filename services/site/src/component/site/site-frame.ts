@@ -5,6 +5,8 @@
 /**
  * The fixed sidebar nav steps aside (`away`) once the footer's own list scrolls up into its space,
  * so the two never overlap, and comes back as the footer leaves.
+ *
+ * 站点界面组件：站点帧。
  */
 export function watchNavAway(nav: HTMLElement, footer: HTMLElement, away: (away: boolean) => void) {
   let observer: IntersectionObserver | undefined

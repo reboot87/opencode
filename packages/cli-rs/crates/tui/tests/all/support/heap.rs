@@ -7,6 +7,8 @@
 //! A measure also counts, for the performance scenarios, the allocations and bytes of the measured thread and of
 //! every thread, and the peak of each one's live bytes, and can record the stack of every so many allocations of
 //! the measured thread.
+//!
+//! 终端界面测试：堆内存。
 
 use std::alloc::{GlobalAlloc, Layout, System};
 use std::backtrace::Backtrace;

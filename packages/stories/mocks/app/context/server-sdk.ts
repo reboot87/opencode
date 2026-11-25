@@ -1,3 +1,7 @@
+/**
+ * 模块 — ServerSdk。
+ * 该目录下的功能模块中负责 ServerSdk 部分，提供该部分所需的实现与类型定义。
+ */
 import { useServer } from "@/runtime/server/current"
 import { ServerScope } from "@/runtime/server/scope"
 

@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid ThemeModeTest：该文件实现 ThemeModeTest 相关的状态与逻辑。
+ */
 import { testRender } from "@opentui/solid"
 import { expect, test } from "bun:test"
 import { RGBA } from "@opentui/core"

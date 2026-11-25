@@ -1,3 +1,6 @@
+/**
+ * V2 文档站：recma·SolidJS。
+ */
 import type { Program } from "estree-jsx"
 import { visit } from "estree-util-visit"
 

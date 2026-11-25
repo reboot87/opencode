@@ -1,3 +1,7 @@
+/**
+ * 标签页 — HydrationMachine。
+ * 多标签页的打开与切换中负责 HydrationMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ClosedTab } from "./closed"
 import type { SessionTab } from "./tabs"
 

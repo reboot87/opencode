@@ -1,3 +1,7 @@
+/**
+ * 工作区设置 — ProjectLsp。
+ * 工作区相关设置中负责 ProjectLsp 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ConfigEntry } from "@opencode/client/promise"
 
 type ConfiguredServer = { name: string; disabled: boolean; extensions: readonly string[] }

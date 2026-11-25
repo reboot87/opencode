@@ -1,3 +1,7 @@
+/**
+ * Claude 账号管理。
+ * 管理 Claude 账号的存储、选择与状态。
+ */
 export * as ClaudeAccounts from "./accounts.js"
 
 import type { SDKMessage } from "@anthropic-ai/claude-agent-sdk"

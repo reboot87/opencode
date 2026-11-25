@@ -1,3 +1,7 @@
+/**
+ * 浏览器文案 — Vi。
+ * 浏览器插件的多语言文案中负责 Vi 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.open": "Mở trình duyệt",
   "command.reload": "Tải lại trang trình duyệt",

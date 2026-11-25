@@ -1,3 +1,10 @@
+/**
+ * 后台·轮次·子进程的测试。
+ *
+ * 被测模块：@opencode/cli/acp/background-turn.subprocess
+ *
+ * 覆盖 ACP（Agent Client Protocol）会话的握手、消息流转与错误处理。
+ */
 import type { PromptResponse } from "@agentclientprotocol/sdk"
 import { expect, test } from "bun:test"
 import { Schema } from "effect"

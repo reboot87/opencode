@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：续接·app。
+ *
+ * 规格编号：E.1。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `--continue` (T02): the newest root session of the default location opens.
 import { assistant, defineApp, session, user } from "../../lib/app"
 

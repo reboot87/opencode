@@ -1,3 +1,7 @@
+/**
+ * 会话错误类型（SessionErrors）。
+ * 定义会话相关的带标签错误：NotFound、InvalidListCursor、MessageNotFound 等。
+ */
 export * as SessionErrors from "./error.js"
 
 import { Schema } from "effect"

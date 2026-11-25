@@ -7,6 +7,8 @@ import { docsHref, docsMarkdownHref } from "./lib/navigation"
  * Any /docs path that isn't a page here was a V1 docs page, which may have had another language
  * (/docs/ja/...), so it goes to the same path on the V1 docs, temporarily, because V2 may add the page
  * later. Undefined outside the docs.
+ *
+ * V2 文档站：路由。
  */
 export function docsRoute(url: URL, accept: string, slugs: Record<DocsSet["id"], readonly string[]>) {
   const set = docsSets.find((set) => `${url.pathname.replace(/\.md$/, "")}/`.startsWith(set.base))

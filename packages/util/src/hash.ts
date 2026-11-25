@@ -1,3 +1,7 @@
+/**
+ * 哈希工具。
+ * 提供快速哈希与 SHA-256 计算。
+ */
 import { createHash } from "crypto"
 
 export namespace Hash {

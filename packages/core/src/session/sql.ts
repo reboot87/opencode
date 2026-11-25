@@ -1,3 +1,7 @@
+/**
+ * 会话数据库表定义。
+ * 用 drizzle-orm 定义会话、消息、消息部件等 SQLite 表结构与类型。
+ */
 import { blob, sqliteTable, text, integer, index, primaryKey, real, uniqueIndex } from "drizzle-orm/sqlite-core"
 import { sql } from "drizzle-orm"
 import { directoryColumn, pathColumn } from "../database/path.js"

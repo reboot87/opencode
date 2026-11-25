@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — Tools。
+ * 实时语音会话的界面中负责 Tools 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionInfo, SessionMessageInfo } from "@opencode/client/promise"
 import { SessionMessage } from "@opencode/schema/session-message"
 import type { ServerCtx } from "@/runtime/server/runtime"

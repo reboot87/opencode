@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：夹具。
+ *
+ * 规格编号：M.5。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // M.3's `ses_mini` server with two child sessions its subagent calls started: `ses_run` still runs, and `ses_done`
 // finished. The children's reads (messages, inbox, permissions, forms), the family index, and the write the
 // subagent views make (interrupt) are routed here.

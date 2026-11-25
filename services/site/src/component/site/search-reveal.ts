@@ -7,7 +7,10 @@ import type { SearchItem } from "./search-index"
 type Target = SearchItem["target"]
 const key = "opencode-search-reveal"
 
-/** Hands a result's place to the next page, in case it opens with a full page load. */
+/** Hands a result's place to the next page, in case it opens with a full page load.
+ *
+ * 站点界面组件：搜索·reveal。
+ */
 export function handOff(path: string, target: Target) {
   if (!target) return
   try {

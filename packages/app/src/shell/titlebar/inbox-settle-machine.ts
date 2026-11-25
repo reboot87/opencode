@@ -1,4 +1,8 @@
-/** The longest the inbox hides behind its loader on first open, so one stalled server cannot hide every other one. */
+/**
+ * The longest the inbox hides behind its loader on first open, so one stalled server cannot hide every other one.
+ *
+ * 标题栏中负责 InboxSettleMachine 部分：自定义标题栏中与 InboxSettleMachine 相关的状态、交互与渲染逻辑。
+ */
 export const INBOX_SETTLE_TIMEOUT_MS = 10_000
 
 /** A working root's pending-request check: claimed before the request starts, so a rerun never sends it again. */

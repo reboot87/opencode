@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：块·app。
+ *
+ * 规格编号：E.7b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The block tool rows (V05b, V23): a todo list, answered questions, an apply_patch with an updated and a deleted
 // file, one with only applied resources, one still patching and one that failed, and an execute run that failed
 // with its error output, each call in its own row (`session.grouping: none`).

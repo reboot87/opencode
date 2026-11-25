@@ -1,3 +1,5 @@
+//! 存储层测试：刷新。
+
 use crate::common;
 
 use std::sync::atomic::{AtomicBool, AtomicUsize, Ordering};

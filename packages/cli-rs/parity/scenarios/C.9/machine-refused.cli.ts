@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：状态机·拒绝·CLI。
+ *
+ * 规格编号：C.9。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The server's refusals, each with what to do: machines turned off (403) and a machine that is already paired (409).
 import { defineCli } from "../../cli/run"
 import { env, info, register, script } from "../C.8/fixture"

@@ -12,7 +12,10 @@ export { markdownKey } from "./markdown-key"
 let loaded: MarkdownPages | undefined
 let loading: Promise<MarkdownPages> | undefined
 
-/** The Markdown view's chunk once it has loaded, so later pages show the view without waiting. */
+/** The Markdown view's chunk once it has loaded, so later pages show the view without waiting.
+ *
+ * 站点界面组件：use·Markdown。
+ */
 export function markdownPagesLoaded() {
   return loaded
 }

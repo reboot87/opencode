@@ -1,3 +1,7 @@
+/**
+ * 详情插件 — Panel。
+ * 展示对象详细信息的 GUI 插件中负责 Panel 部分，提供该部分所需的实现与类型定义。
+ */
 import type { MountedSession } from "@opencode/plugin/gui"
 import { SessionServerPanel, type McpControllers } from "./server-panel"
 

@@ -1,3 +1,6 @@
+/**
+ * 站点入口：全局·d。
+ */
 /// <reference types="@solidjs/start/env" />
 
 // The static pages' script, from its own build (script/static-client.ts); null in development.

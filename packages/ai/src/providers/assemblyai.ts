@@ -1,3 +1,7 @@
+/**
+ * AssemblyAI provider 门面。
+ * 语音转写（STT）provider，封装上传与转写端点，提供 transcription 模型工厂。
+ */
 import { Auth } from "../route/auth.js"
 import { AuthOptions, type ProviderAuthOption } from "../route/auth-options.js"
 import { MediaRoute } from "../route/media.js"

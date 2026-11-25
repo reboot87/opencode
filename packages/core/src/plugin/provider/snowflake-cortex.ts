@@ -1,3 +1,7 @@
+/**
+ * Snowflake Cortex 插件。
+ * 注册 Snowflake Cortex provider 与对应集成。
+ */
 import { define } from "@opencode/plugin/effect/plugin"
 import { Form } from "@opencode/schema/form"
 import { Clock, Deferred, Effect, Option, Schema } from "effect"

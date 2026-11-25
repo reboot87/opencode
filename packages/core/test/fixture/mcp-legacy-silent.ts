@@ -1,3 +1,8 @@
+/**
+ * MCP·遗留·静默测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { createInterface } from "node:readline"
 
 // A 2025-11-25 stdio server that never answers requests it doesn't know, such as server/discover.

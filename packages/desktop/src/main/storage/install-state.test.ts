@@ -1,3 +1,7 @@
+/**
+ * 本地存储 — InstallStateTest。
+ * 桌面端配置的本地持久化中负责 InstallStateTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { hasExistingAppState } from "./install-state"
 

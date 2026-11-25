@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：重试·CLI。
+ *
+ * 规格编号：C.10。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A scheduled retry prints a warning line, and the retried step starts once.
 import { defineCli } from "../../cli/run"
 import { event, server, textStep } from "./fixture"

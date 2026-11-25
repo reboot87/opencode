@@ -5,6 +5,8 @@ import { $$ } from "./dom"
  * its markup and loaded with its own code only when the page has it, either once it comes near the
  * window or once the page is idle. An island's module gets the element and does the rest; a `once`
  * island runs once for the whole page, given the first element that matched.
+ *
+ * 浏览器端脚本：交互岛。
  */
 const islands: {
   selector: string

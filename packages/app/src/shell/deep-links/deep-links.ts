@@ -1,3 +1,7 @@
+/**
+ * 深度链接 — DeepLinks。
+ * 处理外部链接唤起应用中负责 DeepLinks 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, onCleanup, untrack } from "solid-js"
 import { usePlatform } from "@/runtime/platform/platform"
 import { ServerConnection, useServers } from "@/runtime/server/registry"

@@ -1,3 +1,7 @@
+/**
+ * 配置规范化。
+ * 对加载的配置做全面校验与规范化，产出诊断信息与规范化结果。
+ */
 export * as ConfigNormalize from "./normalize.js"
 
 import { isDeepStrictEqual } from "node:util"

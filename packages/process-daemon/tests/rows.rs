@@ -1,5 +1,8 @@
 #![cfg(unix)]
 
+//! 进程守护服务测试：行。
+
+
 use std::process::{Command, Stdio};
 use std::thread;
 use std::time::{Duration, Instant};

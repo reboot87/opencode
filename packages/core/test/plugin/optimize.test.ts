@@ -1,3 +1,10 @@
+/**
+ * optimize的测试。
+ *
+ * 被测模块：@opencode/core/plugin/optimize
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { describe, expect, test } from "bun:test"
 import { SystemPart } from "@opencode/ai/effect"
 import { Agent } from "@opencode/core/agent"

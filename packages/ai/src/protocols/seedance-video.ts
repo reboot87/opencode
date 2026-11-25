@@ -1,3 +1,7 @@
+/**
+ * Seedance（火山引擎/BytePlus）视频生成协议。
+ * 异步视频任务提交与状态查询。
+ */
 import { Duration, Effect, Schema } from "effect"
 import type { HttpClientResponse } from "effect/http"
 import { Media } from "../media.js"

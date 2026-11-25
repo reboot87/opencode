@@ -1,3 +1,7 @@
+/**
+ * Schema 基础工具。
+ * 提供通用的 Schema 构造与类型工具（含 DeepMutable）。
+ */
 import { DateTime, Option, Schema, SchemaGetter } from "effect"
 
 export const PositiveInt = Schema.Int.check(Schema.isGreaterThan(0))

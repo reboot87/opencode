@@ -1,3 +1,10 @@
+/**
+ * RPC·处理器·错误的测试。
+ *
+ * 被测模块：@opencode/server/rpc-handler-errors
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import { SdkPlugins } from "@opencode/core/plugin/sdk"
 import { define } from "@opencode/plugin/effect/plugin"

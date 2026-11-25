@@ -1,4 +1,7 @@
-/** How long a code that failed is skipped while it stays in view. */
+/**
+ * 
+ * How long a code that failed is skipped while it stays in view. 连接服务端中负责 ScannerMachine 部分：添加远程服务端中与 ScannerMachine 相关的状态、交互与渲染逻辑。
+ */
 export const SCANNER_COOLDOWN_MS = 3_000
 
 /** How long one redemption may run; above the pairing redeem's own worst case of about 11 s. */

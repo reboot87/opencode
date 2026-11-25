@@ -1,3 +1,7 @@
+/**
+ * 模块 — SpatialTest。
+ * 该目录下的功能模块中负责 SpatialTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { SpatialIndex, spatialPathClaim, spatialRectClaim } from "./spatial.js"
 

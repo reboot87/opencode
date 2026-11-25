@@ -1,3 +1,6 @@
+/**
+ * 页面路由：`feishu`。
+ */
 import { redirect } from "@solidjs/router"
 
 export async function GET() {

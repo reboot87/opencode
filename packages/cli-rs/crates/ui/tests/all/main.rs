@@ -1,5 +1,7 @@
 //! The UI kit's integration tests, one module per area, linked into one binary so a suite run links the static
 //! OpenTUI and tree-sitter set once. Select an area with `cargo test -p opencode-ui --test all <module>::`.
+//!
+//! 基础 UI 组件库入口。
 
 mod content;
 mod dialogs;

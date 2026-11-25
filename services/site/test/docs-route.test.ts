@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：文档路由。
+ */
 import { describe, expect, test } from "bun:test"
 import { latestDocs, v1Docs } from "../src/docs/config"
 import { docsHostRedirect, docsRoute } from "../src/docs/route"

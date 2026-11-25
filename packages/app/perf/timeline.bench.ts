@@ -1,3 +1,7 @@
+/**
+ * 性能测试 — TimelineBench。
+ * 界面渲染性能基准中负责 TimelineBench 部分，提供该部分所需的实现与类型定义。
+ */
 // One long session (120 turns of markdown, code fences, tool calls and diffs) at normal speed.
 import { bench, web } from "@hona/strobe"
 import { Match } from "effect"

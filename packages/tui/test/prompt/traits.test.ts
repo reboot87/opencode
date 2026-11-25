@@ -1,3 +1,7 @@
+/**
+ * 提示输入测试 — TraitsTest。
+ * 提示输入处理的测试中负责 TraitsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { computePromptTraits } from "../../src/prompt/traits"
 

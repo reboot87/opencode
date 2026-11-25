@@ -1,4 +1,6 @@
 //! Changes to `<state>/session.json` reread the file under its lock so concurrent pins and unrelated fields survive.
+//!
+//! 本地配置与路径：`pins`。
 
 use std::path::{Path, PathBuf};
 

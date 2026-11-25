@@ -1,3 +1,6 @@
+/**
+ * 站点构建脚本：检查工作单元启动。
+ */
 // Starts the built Worker (the Build Output Specification tree script/build.ts wrote) in workerd
 // through Miniflare, the runtime `cf` itself uses, and requests a few pages. Fails when the Worker
 // doesn't start or a page answers wrongly, so a bundle that only breaks at startup can't reach a deploy:

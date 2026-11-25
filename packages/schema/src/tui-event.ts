@@ -1,3 +1,7 @@
+/**
+ * TUI 事件类型。
+ * 定义终端界面消费的事件结构。
+ */
 export * as TuiEvent from "./tui-event.js"
 
 import { Effect, Schema } from "effect"

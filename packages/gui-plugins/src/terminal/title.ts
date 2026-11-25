@@ -1,3 +1,7 @@
+/**
+ * 终端插件 — Title。
+ * 内嵌终端的 GUI 插件中负责 Title 部分，提供该部分所需的实现与类型定义。
+ */
 const template = "Terminal {{number}}"
 
 // Default titles, including those of releases that created them in the interface language.

@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — MountBudget。
+ * 会话主界面的视图与状态中负责 MountBudget 部分，提供该部分所需的实现与类型定义。
+ */
 import { groupID } from "./anchors"
 import type { GroupKind, SessionNode, SessionRow } from "./grouping/session"
 

@@ -1,4 +1,6 @@
 //! Bidirectional scanner for a streaming reply.
+//!
+//! 基础 UI 组件库：`scanner`。
 
 use super::spinner::SpinnerColor;
 use super::{channels, int_pow, rgba};

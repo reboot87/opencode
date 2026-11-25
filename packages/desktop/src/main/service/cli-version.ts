@@ -1,3 +1,7 @@
+/**
+ * 后台服务 — CliVersion。
+ * 桌面端托管的后台服务进程中负责 CliVersion 部分，提供该部分所需的实现与类型定义。
+ */
 export function parseCliVersion(output: string) {
   const marker = output.lastIndexOf(" v")
   const version = marker === -1 ? output : output.slice(marker + 2)

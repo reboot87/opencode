@@ -1,3 +1,7 @@
+/**
+ * WSL 文案 — Ja。
+ * WSL 插件的多语言文案中负责 Ja 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "server.add": "WSLサーバーを追加",
   "server.label": "WSL",

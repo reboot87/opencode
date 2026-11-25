@@ -1,3 +1,7 @@
+/**
+ * 详情插件 — FlyoutMotion。
+ * 展示对象详细信息的 GUI 插件中负责 FlyoutMotion 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, onCleanup } from "solid-js"
 import { observeReducedMotion, prefersReducedMotion } from "@opencode/ui/motion"
 import { motionTuning } from "@opencode/ui/motion-tuning"

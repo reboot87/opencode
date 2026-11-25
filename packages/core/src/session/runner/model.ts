@@ -1,3 +1,7 @@
+/**
+ * 会话模型选择与解析服务（SessionRunnerModel）。
+ * 根据会话显式指定、agent 偏好或兜底策略选定模型，并经插件 hook 允许覆盖解析；提供 resolved() 测试/嵌入接缝，以及 Location 服务节点装配。
+ */
 export * as SessionRunnerModel from "./model.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

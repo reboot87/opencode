@@ -1,4 +1,6 @@
 //! Assistant text and streaming Markdown.
+//!
+//! 终端界面路由：助手。
 
 use opencode_api::generated::{SessionMessageAssistant, SessionMessageAssistantText};
 use opentui::widget::Markdown;

@@ -1,3 +1,7 @@
+/**
+ * 详情插件 — WorkspaceMenu。
+ * 展示对象详细信息的 GUI 插件中负责 WorkspaceMenu 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { Dialog, DialogBody, DialogFooter, DialogHeader, DialogTitleGroup } from "@opencode/ui/dialog"
 import { ErrorDetails } from "@opencode/ui/error-details"

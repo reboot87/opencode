@@ -1,4 +1,6 @@
 //! What the oracle-driven tests share: the TypeScript checkout and the `bun` command that runs an oracle in it.
+//!
+//! 本地配置与路径入口。
 
 use std::path::{Path, PathBuf};
 use std::process::{Command, Stdio};

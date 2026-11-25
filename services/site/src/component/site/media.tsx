@@ -11,6 +11,8 @@ import { mediaUrl } from "~/lib/media"
  * frame, so no copy much smaller than the original scores VMAF 95. Its 720-wide AV1 (147 kB) and HEVC
  * (336 kB) copies, against the 578 kB original, score SSIM 0.99 and were matched by eye at the
  * card's size.
+ *
+ * 站点界面组件：媒体。
  */
 // Copy names follow one pattern, so the manifest holds only what varies (media-opt/manifest.py):
 //   /media/<base>.<width>.<codec>.<hash>.mp4 and /media/<base>.<width>.<hash>.<avif|webp>,

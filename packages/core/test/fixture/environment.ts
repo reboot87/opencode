@@ -1,3 +1,8 @@
+/**
+ * 环境测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { Environment } from "@opencode/core/environment/index"
 import { CrossSpawnSpawner } from "@opencode/util/cross-spawn-spawner"
 import { LayerNode } from "@opencode/util/effect/layer-node"

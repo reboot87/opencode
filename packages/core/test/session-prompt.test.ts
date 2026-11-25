@@ -1,3 +1,10 @@
+/**
+ * 会话·提示词的测试。
+ *
+ * 被测模块：@opencode/core/session-prompt
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import type { FileSystem } from "@opencode/core/filesystem"
 import { DateTime, Effect, Fiber, Layer, LayerMap, Schema, Stream } from "effect"

@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：含密钥变量。
 # Fetch only this command's named secrets; keep credentials out of its environment.
 . "$(dirname "$0")/lib.sh"
 set +x

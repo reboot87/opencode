@@ -1,3 +1,7 @@
+/**
+ * Base64 测试。
+ * 验证大体积数据的 Base64 编解码正确性。
+ */
 import { describe, expect, test } from "bun:test"
 import { base64ToBytes, bytesToBase64 } from "./base64.js"
 

@@ -1,3 +1,7 @@
+/**
+ * drizzle SQLite Effect 数据库。
+ * drizzle-orm SQLite 数据库在 Effect 下的类型定义（本文件源自 drizzle-orm 上游）。
+ */
 /* oxlint-disable */
 import { Effect } from "effect"
 import type { SqlError } from "effect/sql/SqlError"

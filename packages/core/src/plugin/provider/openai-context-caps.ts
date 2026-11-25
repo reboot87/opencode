@@ -1,3 +1,7 @@
+/**
+ * OpenAI 上下文上限。
+ * 按登录方式（ChatGPT 订阅 / API Key）调整 OpenAI 模型的上下文上限。
+ */
 import { define } from "@opencode/plugin/effect/plugin"
 import { Effect } from "effect"
 import { Integration } from "../../integration.js"

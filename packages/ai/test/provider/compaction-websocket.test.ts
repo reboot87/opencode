@@ -1,3 +1,10 @@
+/**
+ * 上下文压缩·WebSocket的测试。
+ *
+ * 被测模块：@opencode/ai/provider/compaction-websocket
+ *
+ * 覆盖各家供应商的接入实现：请求构造、响应解析与错误映射。
+ */
 import { expect } from "bun:test"
 import { Effect, Stream } from "effect"
 import { ai, Message } from "../../src/effect.js"

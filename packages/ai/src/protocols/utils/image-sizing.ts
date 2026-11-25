@@ -1,3 +1,7 @@
+/**
+ * 图片尺寸处理工具。
+ * 解析请求的尺寸，计算合适档位与精确尺寸。
+ */
 import { Effect } from "effect"
 import type { MediaProtocol } from "../../route/media-protocol.js"
 

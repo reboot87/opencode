@@ -1,3 +1,10 @@
+/**
+ * 搜索的测试。
+ *
+ * 被测模块：@opencode/core/filesystem/search
+ *
+ * 覆盖文件系统抽象层：路径解析、原子写入与权限处理。
+ */
 import { describe, expect, spyOn } from "bun:test"
 import fuzzysort from "fuzzysort"
 import { mkdir } from "node:fs/promises"

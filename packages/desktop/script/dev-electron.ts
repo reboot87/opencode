@@ -1,3 +1,7 @@
+/**
+ * UI 构建脚本 — DevElectron。
+ * 前端 UI 包的构建与生成脚本中负责 DevElectron 部分，提供该部分所需的实现与类型定义。
+ */
 import { $ } from "bun"
 import { dirname, join } from "node:path"
 import { fileURLToPath } from "node:url"

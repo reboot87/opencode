@@ -1,3 +1,7 @@
+/**
+ * 工作区设置 — ProjectModel。
+ * 工作区相关设置中负责 ProjectModel 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, on, onCleanup, untrack } from "solid-js"
 import { useServer } from "@/runtime/server/current"
 import { useLanguage } from "@/runtime/i18n/language"

@@ -1,3 +1,7 @@
+/**
+ * SSH 插件 — Bootstrap。
+ * 远程主机管理的 GUI 插件中负责 Bootstrap 部分，提供该部分所需的实现与类型定义。
+ */
 import { Effect, Option, Schema } from "effect"
 import { HttpClient } from "effect/http"
 import { parseTarget, quote, runSsh, sshArgs, SshFailure } from "./command"

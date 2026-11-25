@@ -1,3 +1,7 @@
+/**
+ * Claude 网络搜索。
+ * 定义 Claude 侧网络搜索的系统提示与输出结构。
+ */
 export * as ClaudeWebSearch from "./websearch.js"
 
 import type { SDKMessage } from "@anthropic-ai/claude-agent-sdk"

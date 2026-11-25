@@ -1,3 +1,7 @@
+/**
+ * 阿里云通义千问（Qwen）provider 门面。
+ * 封装 Responses / Messages / Chat / 图片 / 嵌入等底层协议，提供统一的配置、鉴权（环境变量回退）、默认选项归一化与各模态模型工厂。
+ */
 import { Struct } from "effect"
 import type { ProviderPackage } from "../provider-package.js"
 import { AlibabaChat } from "../protocols/alibaba-chat.js"

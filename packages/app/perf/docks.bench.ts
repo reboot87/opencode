@@ -1,3 +1,7 @@
+/**
+ * 性能测试 — DocksBench。
+ * 界面渲染性能基准中负责 DocksBench 部分，提供该部分所需的实现与类型定义。
+ */
 // The composer giving way to request docks and back, under a 20-turn session: a permission request morphs the
 // composer into its dock, an MCP elicitation grows in above it and closes, and the answered permission morphs back
 // to the composer. Every frame of the four flights steps the docks' springs and writes their styles.

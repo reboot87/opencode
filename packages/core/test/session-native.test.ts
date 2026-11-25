@@ -1,3 +1,10 @@
+/**
+ * 会话·原生的测试。
+ *
+ * 被测模块：@opencode/core/session-native
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { CompactionPart, LanguageModel, Message, ToolCallPart, Media } from "@opencode/ai/effect"
 import { OpenAIResponses } from "@opencode/ai/protocols"

@@ -1,3 +1,7 @@
+/**
+ * 轻提示 — DescriptionTest。
+ * 短时非阻塞消息提示组件中负责 DescriptionTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { boundToastDescription, toastDescriptionLimit } from "./description"
 

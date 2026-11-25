@@ -1,4 +1,8 @@
 #!/usr/bin/env bun
+
+/**
+ * 站点构建脚本：度量·logos。
+ */
 // Measures the home logo row's logos and the tool wordmarks with logo-soup (https://github.com/johannschopplich/logo-soup)
 // and writes their metrics to src/component/site/logo-metrics.ts, where LogoWall sizes them.
 // logo-soup and sharp install into a temporary folder, so the app takes no dependency on them.

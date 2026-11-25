@@ -1,4 +1,6 @@
 //! Shared retained and hidden nodes for built-in slot surfaces.
+//!
+//! 终端插件视图：`keep`。
 
 use opencode_plugin::abi::v2::Node;
 

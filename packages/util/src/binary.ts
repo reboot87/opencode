@@ -1,3 +1,7 @@
+/**
+ * 二分查找。
+ * 在有序数组中按 id 查找元素（O(log n)）。
+ */
 export namespace Binary {
   export function search<T>(array: T[], id: string, compare: (item: T) => string) {
     let left = 0

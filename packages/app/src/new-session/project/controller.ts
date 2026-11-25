@@ -1,3 +1,7 @@
+/**
+ * 新会话项目 — Controller。
+ * 新建会话时的项目选择中负责 Controller 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo } from "solid-js"
 import { useDirectoryPicker } from "@/workspaces/selection/picker"
 import { type ServerCtx, useGlobal } from "@/runtime/server/runtime"

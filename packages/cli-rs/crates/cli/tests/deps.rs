@@ -1,5 +1,7 @@
 //! Checks the target-specific dependency allowlist for binaries, tests and build tools, and the layers of the
 //! workspace's own crates.
+//!
+//! 命令行入口测试：`deps`。
 
 use std::collections::{BTreeMap, BTreeSet};
 use std::path::Path;

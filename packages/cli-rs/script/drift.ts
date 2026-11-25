@@ -1,3 +1,8 @@
+/**
+ * 漂移脚本。
+ *
+ * Rust CLI 的开发脚本：代码生成、依赖漂移检查与性能采样。
+ */
 // Fails when a generated file or a committed parity fixture no longer matches the TypeScript it came from.
 // Runs every generator in script/gen and every fixture-writing P-ORACLE in parity/oracle, then lists each file
 // under packages/cli-rs whose content changed. Needs `bun install`.

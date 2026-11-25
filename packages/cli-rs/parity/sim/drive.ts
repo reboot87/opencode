@@ -1,3 +1,8 @@
+/**
+ * 对等性校验入口：驱动。
+ *
+ * Rust 与 TypeScript 双实现的对等性校验：驱动全部 oracle / component / 场景脚本并刷新基线。
+ */
 // A JSON-RPC client for an `OPENCODE_DRIVE` UI endpoint (packages/protocol/src/simulation.ts), shared by P-TUI
 // (parity/sim/run.ts) and the H.4 proof.
 import { Schema } from "effect"

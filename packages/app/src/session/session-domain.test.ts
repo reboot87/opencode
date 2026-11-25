@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — SessionDomainTest。
+ * 会话主界面的视图与状态中负责 SessionDomainTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import type { SessionMessageAssistant, SessionMessageInfo, SessionMessageUser } from "@opencode/client/promise"
 import { selectSessionUserMessages, selectVisibleSessionUserMessages } from "./session-domain"

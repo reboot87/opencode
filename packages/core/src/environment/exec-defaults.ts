@@ -1,3 +1,7 @@
+/**
+ * 执行默认值。
+ * 为环境进程执行设定默认的输入/输出/错误字节上限与超时。
+ */
 import { Effect, Stream } from "effect"
 import { ChildProcess } from "effect/process"
 import type { ChildProcessSpawner } from "effect/process/ChildProcessSpawner"

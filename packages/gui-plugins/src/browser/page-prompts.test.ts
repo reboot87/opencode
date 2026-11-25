@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — PagePromptsTest。
+ * 内置浏览器功能的 GUI 插件中负责 PagePromptsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, beforeEach, describe, expect, jest, test } from "bun:test"
 import { EventEmitter } from "node:events"
 import type { WebContents } from "electron"

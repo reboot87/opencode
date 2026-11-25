@@ -1,3 +1,7 @@
+/**
+ * 模块 — FuzzDifferential。
+ * 该目录下的功能模块中负责 FuzzDifferential 部分，提供该部分所需的实现与类型定义。
+ */
 // Differential fuzzing: patchmark one-shot HTML vs commonmark.js (core) and micromark + GFM (gfm: true).
 // Usage: bun scripts/fuzz-differential.ts [coreCases=100000] [gfmCases=30000] [seed=1]
 import { generate, mutate, normalizeHtml, patchmark, referenceCore, referenceGfm, rng } from "../test/fuzz"

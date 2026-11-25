@@ -1,3 +1,7 @@
+/**
+ * 错误界面 — Machine。
+ * 应用级错误边界的展示中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { UpdaterState } from "@opencode/plugin/gui/updater"
 
 // Main bounds its own update check; this covers a bridge that never answers after the crash.

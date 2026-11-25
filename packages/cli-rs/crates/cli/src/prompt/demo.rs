@@ -1,6 +1,8 @@
 //! Drives prompt examples for terminal and piped-input comparisons.
 
 // The demo drives a subset of the kit; the CLI uses the rest.
+//!
+//! CLI 交互提示：演示。
 #[allow(unused_imports, dead_code)]
 #[path = "mod.rs"]
 mod prompt;

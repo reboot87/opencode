@@ -7,6 +7,8 @@ import { audible, muted, setMuted, unlockAudio } from "./sound"
  * The arcade's sound switch, styled like the site's theme switcher. Pressed means sound is audible.
  * Clicking is a gesture, so it also starts sound that autoplay blocked. Needs `startAudio()` to have
  * run (the arcade does it on mount).
+ *
+ * 街机小游戏组件：音效开关切换。
  */
 export function SoundToggle() {
   const i18n = useI18n()

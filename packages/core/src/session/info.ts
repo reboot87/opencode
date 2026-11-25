@@ -1,3 +1,7 @@
+/**
+ * 会话信息解码。
+ * 把数据库行转换为 SessionSchema.Info，处理 revert 元数据的解码。
+ */
 import { DateTime, Schema } from "effect"
 import { Model } from "@opencode/schema/model"
 import { Provider } from "@opencode/schema/provider"

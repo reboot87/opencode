@@ -1,3 +1,7 @@
+/**
+ * 提示输入 — Traits。
+ * 提示输入的解析、编辑与提交中负责 Traits 部分，提供该部分所需的实现与类型定义。
+ */
 import type { EditorTraits } from "@opentui/core"
 
 export type PromptMode = "normal" | "shell"

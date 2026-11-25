@@ -1,3 +1,7 @@
+/**
+ * Claude 模型探测。
+ * 探测 Claude 账号可用的模型清单。
+ */
 export * as ClaudeProbe from "./probe.js"
 
 import type { AccountInfo, ModelInfo, Options, Query } from "@anthropic-ai/claude-agent-sdk"

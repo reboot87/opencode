@@ -1,3 +1,7 @@
+/**
+ * 工作区文件 — ArtifactTest。
+ * 工作区内文件浏览界面中负责 ArtifactTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, describe, expect, jest, test } from "bun:test"
 import { fileContentFromBytes, headStreamedFile, MAX_MEDIA_BYTES } from "./artifact"
 import { approxBytes } from "./content-cache"

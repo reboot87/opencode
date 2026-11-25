@@ -3,6 +3,8 @@
  * 0.57em). Each user-perceived character counts as one cell, except scripts that fall back to wider
  * or narrower faces, measured in the site's fonts: CJK ideographs and kana are full width (1em, 1.7
  * cells), Hangul syllables about 1.5 cells, and Arabic letters, set in the sans stack, about 0.7.
+ *
+ * 站点界面组件：主视觉标题。
  */
 export function titleCells(text: string) {
   const cells = [...new Intl.Segmenter().segment(text)].reduce((sum, part) => sum + cellWidth(part.segment), 0)

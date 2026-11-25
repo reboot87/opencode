@@ -1,3 +1,7 @@
+/**
+ * 服务端设置 — Machine。
+ * 已连接服务端的管理设置中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { PluginServer } from "@/runtime/plugin/servers"
 import type { ServerHealth } from "@/runtime/server/health-machine"
 import type { ServerConnection } from "@/runtime/server/registry"

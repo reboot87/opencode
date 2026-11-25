@@ -1,3 +1,7 @@
+/**
+ * 浏览器配置 — FilterStartupFixture。
+ * 浏览器插件的用户配置与身份中负责 FilterStartupFixture 部分，提供该部分所需的实现与类型定义。
+ */
 import { app, session, type Extension, type WebContents } from "electron"
 import assert from "node:assert/strict"
 import { mkdir, writeFile } from "node:fs/promises"

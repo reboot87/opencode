@@ -1,3 +1,7 @@
+/**
+ * 数据站工具 — Language。
+ * 数据站点的通用工具中负责 Language 部分，提供该部分所需的实现与类型定义。
+ */
 import { route as localeRoute, strip as localeStrip } from "./locale"
 import type { Locale } from "./locale"
 

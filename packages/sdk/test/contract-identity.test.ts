@@ -1,3 +1,10 @@
+/**
+ * 契约·身份的测试。
+ *
+ * 被测模块：@opencode/sdk/contract-identity
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { EnvironmentDriver } from "@opencode/core/environment/driver"
 import { EnvironmentFiles } from "@opencode/core/environment/files"

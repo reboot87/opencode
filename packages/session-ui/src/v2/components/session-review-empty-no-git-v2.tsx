@@ -1,3 +1,7 @@
+/**
+ * V2 组件 — SessionReviewEmptyNoGitV2。
+ * 第二版会话界面组件中负责 SessionReviewEmptyNoGitV2 部分，提供该部分所需的实现与类型定义。
+ */
 import { FileIcon } from "@opencode/ui/file-icon"
 import { useI18n } from "@opencode/ui/context/i18n"
 import { Button } from "@opencode/ui/button"

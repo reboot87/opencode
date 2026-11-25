@@ -1,3 +1,7 @@
+/**
+ * Location 生命周期服务。
+ * 跟踪持久化会话事件以判断 Location 是否仍有关联工作，决定可否关闭。
+ */
 export * as LocationLifecycle from "./location-lifecycle.js"
 
 import { Context, Deferred, Effect, Layer, Schema, Scope } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * Claude Agent 错误。
+ * 定义 Claude Agent provider 的失败类型与构造器。
+ */
 export * as ClaudeAgentError from "./claude-agent-error.js"
 
 import type { SDKAssistantMessageError, SDKMessage, SDKRateLimitInfo } from "@anthropic-ai/claude-agent-sdk"

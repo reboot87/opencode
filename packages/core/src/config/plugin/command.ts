@@ -1,3 +1,7 @@
+/**
+ * 命令配置插件。
+ * 解析并注册配置中定义的自定义命令。
+ */
 export * as ConfigCommandPlugin from "./command.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

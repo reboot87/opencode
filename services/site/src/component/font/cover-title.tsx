@@ -18,7 +18,10 @@ const SETTLE = 360
 // The shade: the ink at the page's paper shade opacity.
 const SHADE_ALPHA = 0.22
 
-/** A move of the pen in module units: drawing (pen down) or travelling (pen up). */
+/** A move of the pen in module units: drawing (pen down) or travelling (pen up).
+ *
+ * 字体展示组件：cover·标题。
+ */
 type Move = {
   kind: "metric" | "grid" | "outline" | "travel" | "fill" | "shade"
   from: [number, number]

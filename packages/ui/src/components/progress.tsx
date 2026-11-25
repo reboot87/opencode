@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — Progress。
+ * 跨场景复用的通用 UI 组件中负责 Progress 部分，提供该部分所需的实现与类型定义。
+ */
 import { Progress as Kobalte } from "@kobalte/core/progress"
 import { Show, splitProps } from "solid-js"
 import type { ComponentProps, ParentProps } from "solid-js"

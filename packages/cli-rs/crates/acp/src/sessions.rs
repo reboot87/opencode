@@ -1,4 +1,6 @@
 //! Sessions attached to this connection and the selection, commands and configuration advertised to the client.
+//!
+//! ACP 协议实现：会话。
 
 use std::collections::HashMap;
 use std::future::Future;

@@ -1,3 +1,7 @@
+/**
+ * 提示输入 — Codec。
+ * 提示输入的解析、编辑与提交中负责 Codec 部分，提供该部分所需的实现与类型定义。
+ */
 import { mediaHashFromUri, type PromptAttachment } from "@opencode/client"
 import type { Prompt, PromptInput } from "@opencode/schema"
 import { Skill } from "@opencode/schema/skill"

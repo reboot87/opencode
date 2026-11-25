@@ -1,3 +1,7 @@
+/**
+ * 技能指令渲染。
+ * 把已发现技能汇总渲染为可注入系统提示词的指令文本。
+ */
 export * as SkillInstructions from "./instructions.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

@@ -1,3 +1,7 @@
+/**
+ * 设置界面 — ExtensionLoad。
+ * 应用设置页面的框架中负责 ExtensionLoad 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { createEffect, createMemo, createSignal, on, onCleanup, untrack } from "solid-js"
 import { useServerSDK } from "@/runtime/server/client"

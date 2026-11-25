@@ -1,3 +1,7 @@
+/**
+ * Effect SDK 入口。
+ * 以 Effect 风格创建嵌入式 OpenCode 实例。
+ */
 export * as OpenCode from "./opencode"
 
 import { OpenCode, type OpenCodeClient } from "@opencode/client/effect"

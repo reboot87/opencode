@@ -1,3 +1,6 @@
+/**
+ * 站点共享逻辑：内容内容协商。
+ */
 // Shared by the console proxy and the stats app so both agree on which requests get Markdown.
 export function prefersMarkdown(accept: string | null | undefined) {
   if (!accept) return false

@@ -1,3 +1,7 @@
+/**
+ * 数据站源码 — Middleware。
+ * 模型能力对比站点的实现中负责 Middleware 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMiddleware } from "@solidjs/start/middleware"
 import {
   compareMarkdown,

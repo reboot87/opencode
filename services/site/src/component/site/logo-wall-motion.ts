@@ -15,6 +15,8 @@ export type Logo = { name: string; logo: string; metrics: { aspect: number; dens
  * element, `label` where its layout puts the label (logo-wall.tsx), `duration` the entrance
  * animation's length in ms. Returns `swap` (one swap now, for
  * Settings › Replay) and its stop.
+ *
+ * 站点界面组件：标识·wall·动效。
  */
 export function logoWall(
   section: HTMLElement,

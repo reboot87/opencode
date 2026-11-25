@@ -1,3 +1,7 @@
+/**
+ * 服务端进程管理。
+ * 按运行模式（默认/服务/stdio）启动与管理 OpenCode 服务端进程。
+ */
 export * as ServerProcess from "./server-process"
 
 import { NodeServices } from "@effect/platform-node"

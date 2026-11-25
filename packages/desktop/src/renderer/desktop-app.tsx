@@ -1,3 +1,7 @@
+/**
+ * 渲染进程 — DesktopApp。
+ * Electron 渲染进程的界面逻辑中负责 DesktopApp 部分，提供该部分所需的实现与类型定义。
+ */
 /// <reference path="./env.d.ts" />
 
 // Load the complete preload contract before App's optional browser bridge declaration.

@@ -1,3 +1,7 @@
+/**
+ * PTY API 分组。
+ * 定义伪终端的创建、读写与票据端点。
+ */
 import { Pty } from "@opencode/schema/pty"
 import { PtyTicket } from "@opencode/schema/pty-ticket"
 import { Location } from "@opencode/schema/location"

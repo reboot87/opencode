@@ -1,4 +1,6 @@
 //! Select the diff source for a location.
+//!
+//! 终端插件视图：`sources`。
 
 use opencode_plugin::abi::{Action, Dialog, Host, Select, SelectOption};
 

@@ -1,3 +1,7 @@
+/**
+ * 视频生成服务。
+ * 异步视频生成任务的提交、轮询（5 秒间隔）与结果获取（2 小时截止）。
+ */
 export * as VideoGeneration from "./video-generation.js"
 
 import { randomUUID } from "node:crypto"

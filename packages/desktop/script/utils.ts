@@ -1,3 +1,7 @@
+/**
+ * UI 构建脚本 — Utils。
+ * 前端 UI 包的构建与生成脚本中负责 Utils 部分，提供该部分所需的实现与类型定义。
+ */
 import { chmod, copyFile, mkdtemp, rm } from "node:fs/promises"
 import { tmpdir } from "node:os"
 import { dirname, join } from "node:path"

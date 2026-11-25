@@ -1,3 +1,7 @@
+/**
+ * SDK 实例管理。
+ * 管理嵌入式 OpenCode 实例的配置与生命周期。
+ */
 export * as SdkInstances from "./instances"
 
 import { Instance } from "@opencode/core/instance"

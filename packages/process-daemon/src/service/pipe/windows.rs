@@ -7,6 +7,8 @@
 //! `TerminateJobObject` reaches every descendant and a daemon crash takes the
 //! tree with it. No console signals are used: every `signal` is a hard kill of
 //! the tree, and the exit reports the signal the daemon sent.
+//!
+//! 守护服务接口：`windows`。
 
 use std::cmp::Ordering;
 use std::collections::HashMap;

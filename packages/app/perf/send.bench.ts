@@ -1,3 +1,7 @@
+/**
+ * 性能测试 — SendBench。
+ * 界面渲染性能基准中负责 SendBench 部分，提供该部分所需的实现与类型定义。
+ */
 // How long a prompt takes to leave the window: from Enter until its request reaches the server, in a 20-turn session.
 // Nothing here waits on a server, so the time is the composer's own: its submit machine, what the plugins prepare for
 // the session's next step, the selection's commit and the request it builds. At 1366x768.

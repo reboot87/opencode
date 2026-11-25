@@ -4,6 +4,8 @@ import { siteSettings } from "../settings"
 /**
  * The grade's inputs for tone.css, from Settings › 404 arcade › Saturation (0–100, percent of the
  * paintings' colour) and White balance (−100 cool to 100 warm).
+ *
+ * 街机小游戏组件：音调。
  */
 export const toneInputs = (saturation: number, balance: number) => ({
   "--tone-sat-pct": `${saturation}%`,

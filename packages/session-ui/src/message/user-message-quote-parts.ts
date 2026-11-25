@@ -1,4 +1,8 @@
-/** A comment split into plain text and the `@path` mentions that travel with the prompt as attached files. */
+/**
+ * A comment split into plain text and the `@path` mentions that travel with the prompt as attached files.
+ *
+ * 用户消息引用解析：把引用块拆解为可渲染的消息部件。
+ */
 export function commentSegments(text: string) {
   return text
     .split(/(@\S+)/)

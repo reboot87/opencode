@@ -1,3 +1,7 @@
+/**
+ * 机器加入信息。
+ * 定义加入远程机器所需的可达性信息。
+ */
 export * as Join from "./join.js"
 
 import { Option, Schema } from "effect"

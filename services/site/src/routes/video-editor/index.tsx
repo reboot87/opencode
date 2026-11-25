@@ -1,3 +1,6 @@
+/**
+ * 视频编辑器路由：索引。
+ */
 import { Meta, Title } from "@solidjs/meta"
 import { clientOnly } from "@solidjs/start"
 

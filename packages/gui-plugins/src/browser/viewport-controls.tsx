@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — ViewportControls。
+ * 内置浏览器功能的 GUI 插件中负责 ViewportControls 部分，提供该部分所需的实现与类型定义。
+ */
 import { usePlugin } from "@opencode/plugin/gui"
 import { Button } from "@opencode/ui/button"
 import { IconButton } from "@opencode/ui/icon-button"

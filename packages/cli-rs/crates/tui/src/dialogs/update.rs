@@ -1,4 +1,6 @@
 //! Update check and installation dialog.
+//!
+//! 终端弹窗组件：更新。
 
 use opencode_ui::dialog::{DialogButton, DialogButtons, DialogCx};
 use opencode_ui::motion::Spinner;

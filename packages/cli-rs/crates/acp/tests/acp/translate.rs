@@ -1,3 +1,5 @@
+//! ACP 协议测试：`translate`。
+
 use opencode_acp::translate::{self, Event, Output, StartKind, Terminal, TurnContext, TurnStart, TurnState};
 use serde_json::{Value, json};
 

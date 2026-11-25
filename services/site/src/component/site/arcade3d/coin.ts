@@ -22,6 +22,8 @@ import {
  * The token: a 30 mm, 2.2 mm thick brass coin. A lathed rim with beveled edges, a reeded edge (a
  * normal map), a few dings and one nick in the rim; recessed faces carrying the round-5 coin art as
  * colour and bump, scratched by a small generated roughness map. Small shared textures only.
+ *
+ * 3D 街机场景组件：投币。
  */
 
 export const coinRadius = 0.015

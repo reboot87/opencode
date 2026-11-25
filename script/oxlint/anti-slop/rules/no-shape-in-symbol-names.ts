@@ -7,7 +7,10 @@ function containsForbiddenSymbolName(name: string): boolean {
   return name.toLowerCase().includes(FORBIDDEN_SYMBOL_NAME);
 }
 
-/** Return whether an identifier names a statically accessed member owned by another value. */
+/** Return whether an identifier names a statically accessed member owned by another value.
+ *
+ * Oxlint 规则：无形状·in·符号·names。
+ */
 function isBorrowedMemberName(node: ESTree.Node): boolean {
   const parent = node.parent;
   if (parent === null || parent.type !== "MemberExpression") return false;

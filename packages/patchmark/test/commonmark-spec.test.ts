@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — CommonmarkSpecTest。
+ * 终端界面的测试中负责 CommonmarkSpecTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { readFileSync } from "node:fs"
 import { resolve } from "node:path"
 import { describe, expect, test } from "bun:test"

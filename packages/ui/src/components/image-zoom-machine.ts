@@ -1,4 +1,8 @@
-/** The element a pan captures the pointer on: the preview's body for an image, the borrowed video for a video. */
+/**
+ * The element a pan captures the pointer on: the preview's body for an image, the borrowed video for a video.
+ *
+ * 图片缩放的状态机：管理缩放、平移与手势交互。
+ */
 export type PanTarget = "viewport" | "video"
 
 /**

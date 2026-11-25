@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — DialogStatus。
+ * 终端界面（Solid）组件中负责 DialogStatus 部分，提供该部分所需的实现与类型定义。
+ */
 import { useTheme } from "../context/theme"
 import { DialogHeader, DialogLayout } from "../ui/dialog"
 import { useData } from "../context/data"

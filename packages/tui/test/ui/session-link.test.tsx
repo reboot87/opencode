@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid SessionLinkTest：该文件实现 SessionLinkTest 相关的状态与逻辑。
+ */
 import { expect, test } from "bun:test"
 import { SyntaxStyle, TextAttributes, type MarkdownRenderable } from "@opentui/core"
 import { testRender, useRenderer } from "@opentui/solid"

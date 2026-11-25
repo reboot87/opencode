@@ -1,3 +1,7 @@
+/**
+ * Google Interactions 协议实现。
+ * 基于 Interactions 端点的多模态会话，含媒体内容与流式请求。
+ */
 import { Effect, Option, Schema, SchemaGetter, Stream } from "effect"
 import { Route } from "../route/client.js"
 import { Auth } from "../route/auth.js"

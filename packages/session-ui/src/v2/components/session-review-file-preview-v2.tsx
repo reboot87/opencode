@@ -1,3 +1,7 @@
+/**
+ * V2 组件 — SessionReviewFilePreviewV2。
+ * 第二版会话界面组件中负责 SessionReviewFilePreviewV2 部分，提供该部分所需的实现与类型定义。
+ */
 import { getDirectory, getFilename } from "@opencode/util/path"
 import type { SelectedLineRange } from "@pierre/diffs"
 import { DiffChanges } from "@opencode/ui/diff-changes"

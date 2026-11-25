@@ -1,3 +1,7 @@
+/**
+ * Claude MCP 工具服务器。
+ * 把 OpenCode 工具以 MCP 服务器形式暴露给 Claude。
+ */
 export * as ToolServer from "./server.js"
 
 import type { LanguageModelV3FunctionTool } from "@ai-sdk/provider"

@@ -1,4 +1,6 @@
 //! Opt-in feature settings.
+//!
+//! 终端弹窗组件：`experiments`。
 
 use opencode_ui::select::select;
 

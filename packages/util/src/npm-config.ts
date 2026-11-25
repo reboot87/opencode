@@ -1,3 +1,7 @@
+/**
+ * npm 配置加载。
+ * 读取 npm 的 registry 与认证配置。
+ */
 export * as NpmConfig from "./npm-config.js"
 
 import { fileURLToPath } from "url"

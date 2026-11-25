@@ -1,3 +1,6 @@
+/**
+ * 扩展页路由：`ssh`。
+ */
 import type { APIEvent } from "@solidjs/start/server"
 import { redirect } from "@solidjs/router"
 import { localeFromRequest, route } from "~/lib/language"

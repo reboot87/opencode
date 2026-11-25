@@ -1,4 +1,6 @@
 //! Color conversion shared by the theme resolver and V1 readers.
+//!
+//! 主题解析与应用：颜色。
 
 use opentui::style::Color;
 

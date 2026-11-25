@@ -1,3 +1,7 @@
+/**
+ * 环境路径解析。
+ * 解析环境内路径并校验绝对性（NotAbsolute 错误）。
+ */
 export * as EnvironmentPath from "./path.js"
 
 import { Effect, Schema } from "effect"

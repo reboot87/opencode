@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — TypewriterMachine。
+ * 跨场景复用的通用 UI 组件中负责 TypewriterMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export const TYPEWRITER_INITIAL_DELAY_MS = 200
 
 export const TYPEWRITER_LINGER_MS = 2_000

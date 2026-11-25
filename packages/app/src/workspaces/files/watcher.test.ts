@@ -1,3 +1,7 @@
+/**
+ * 工作区文件 — WatcherTest。
+ * 工作区内文件浏览界面中负责 WatcherTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { OpenCodeEvent } from "@opencode/client/promise"
 import { invalidateFromWatcher } from "./watcher"

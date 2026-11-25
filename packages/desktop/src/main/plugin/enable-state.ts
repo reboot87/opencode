@@ -1,3 +1,7 @@
+/**
+ * 桌面插件 — EnableState。
+ * 桌面端插件的加载与宿主能力中负责 EnableState 部分，提供该部分所需的实现与类型定义。
+ */
 import type { DatabaseSync } from "node:sqlite"
 import type { EnableState } from "@opencode/plugin/gui/host"
 

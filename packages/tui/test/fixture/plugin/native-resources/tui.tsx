@@ -1,3 +1,7 @@
+/**
+ * 插件夹具（native-resources） — Tui。
+ * 模拟插件使用原生资源的夹具中负责 Tui 部分，提供该部分所需的实现与类型定义。
+ */
 import { Plugin } from "@opencode/plugin/tui"
 import { SyntaxStyle, Yoga, type BoxRenderable } from "@opentui/core"
 import { createSignal, onMount } from "solid-js"

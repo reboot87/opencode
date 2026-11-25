@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — ForkDialogSpec。
+ * 应用界面组件的测试中负责 ForkDialogSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, story } from "../../stories/playwright/story"
 
 story.use({ viewport: { width: 1000, height: 400 } })

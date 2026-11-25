@@ -3,6 +3,8 @@
  * itself always holds the live value; a version is a snapshot of it. Switching copies a version into
  * the setting, saving copies the setting into a new version, updating overwrites the active one.
  * Generic so other settings can get versions too; the nav uses it first (nav-versions.tsx).
+ *
+ * 站点界面组件：版本。
  */
 
 export type Version<T> = { id: string; name: string; config: T }

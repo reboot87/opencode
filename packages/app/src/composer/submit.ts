@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — Submit。
+ * 会话输入区的组合逻辑与附件处理中负责 Submit 部分，提供该部分所需的实现与类型定义。
+ */
 import { SessionMessage } from "@opencode/schema/session-message"
 import type { SessionMessageUser } from "@opencode/client/promise"
 import { createEffect, createSignal, onCleanup, untrack, type Accessor } from "solid-js"

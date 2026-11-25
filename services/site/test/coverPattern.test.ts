@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：cover·Pattern。
+ */
 import { describe, expect, test } from "bun:test"
 import { architectPatterns } from "../src/component/site/settings"
 import { coverPatternMarkup, resolvePattern } from "../src/lib/legal/cover-pattern"

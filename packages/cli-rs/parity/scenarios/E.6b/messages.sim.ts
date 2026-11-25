@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：消息·模拟。
+ *
+ * 规格编号：E.6b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // P-TUI version of `E.6b/messages.app.ts`: message kinds built by real turns (V08, V10, V11). A session opens with
 // one finished turn; `/compact` runs a real compaction (its summary must use the template's headings); a prompt
 // whose step fails with a provider error; another prompt, then `/undo` shows the revert banner. The step waiting to

@@ -1,3 +1,7 @@
+/**
+ * 数据源 — SourcesTest。
+ * 会话界面所用的数据来源定义中负责 SourcesTest 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageAssistant, SessionMessageAssistantTool, SessionMessageInfo } from "@opencode/client/promise"
 import { describe, expect, test } from "bun:test"
 import { turnMessages, turnSources } from "./sources"

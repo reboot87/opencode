@@ -1,3 +1,7 @@
+/**
+ * integration 接口处理器。
+ * 集成接口处理器：外部集成的列举、连接与授权。
+ */
 import { Integration } from "@opencode/core/integration"
 import { Effect } from "effect"
 import { HttpApiBuilder, HttpApiSchema } from "effect/http-api"

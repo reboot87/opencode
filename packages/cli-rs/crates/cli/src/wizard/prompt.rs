@@ -1,4 +1,6 @@
 //! The wizard's prompts use distinct key handling and display from the regular CLI prompts.
+//!
+//! 命令行入口：提示词。
 
 use std::io::Write;
 use std::sync::OnceLock;

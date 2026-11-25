@@ -1,3 +1,10 @@
+/**
+ * PowerShell·运行时的测试。
+ *
+ * 被测模块：@opencode/core/shell-scan/powershell-runtime
+ *
+ * 覆盖 Shell 命令扫描：危险模式识别与允许列表匹配。
+ */
 import { expect, test } from "bun:test"
 import { ShellScan } from "../../src/shell/scan.js"
 

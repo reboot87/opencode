@@ -10,6 +10,8 @@
  * - GameFrame: a live anoma.ly/arcade game (dev proxy, WebGPU check, click to focus).
  * - ArcadePanel: the touch control panel that drives the game frame.
  * - games: the games, their covers and controls; gameUrl, sendKey and sendMouse.
+ *
+ * 街机小游戏组件：索引。
  */
 export { Arcade404 } from "./arcade"
 export { dropOutcome, escapeAction, powerDownDuration, type ArcadeMoment } from "./flow"

@@ -12,6 +12,8 @@ const ACCENT = "opencode"
  * Plate: a field of the six letters on a canvas. It rests as a quiet grid; the pointer leaves a
  * trail of small ripples and a click drops a pulse. Tiles a ripple reaches turn over to the next
  * letters, darken, turn blue and finally invert, then settle back. Flat colours on whole pixels.
+ *
+ * 字体展示组件：字段。
  */
 export function Field() {
   let root!: HTMLDivElement

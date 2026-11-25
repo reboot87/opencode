@@ -1,3 +1,7 @@
+/**
+ * 自动化数据库表。
+ * 定义 automation 表结构。
+ */
 import { sql } from "drizzle-orm"
 import { index, integer, sqliteTable, text } from "drizzle-orm/sqlite-core"
 import type { Schema } from "effect"

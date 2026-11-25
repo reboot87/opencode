@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：F.4·本地。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-FILE and P-ORACLE helper for F.4, driven by crates/local/tests/all/interop.rs.
 //
 //   bun F.4-local.ts <ts-root> lock-hold <dir> <key> <staleMs>   acquire, print "acquired", release on a stdin line

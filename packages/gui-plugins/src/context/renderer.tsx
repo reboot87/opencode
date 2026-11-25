@@ -1,3 +1,7 @@
+/**
+ * GUI 上下文 — Renderer。
+ * GUI 插件的上下文与状态中负责 Renderer 部分，提供该部分所需的实现与类型定义。
+ */
 import { lazy, onCleanup, Show, Suspense } from "solid-js"
 import { Slot, usePanel, type Plugin } from "@opencode/plugin/gui"
 import { BuiltinPanel, onIdle, type BuiltinPanelTab } from "@opencode/plugin/gui/builtin"

@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：F.8·会话·目标。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-ORACLE for crates/store/src/target.rs: runs TypeScript's resolveSessionTarget, createWorktreeLocation, and
 // parseSessionTargetModel over the cases of packages/cli/test/session-target.test.ts and a few more, against a
 // scripted server. Each case records the requests the client sent, what `prepare` saw, and the result or error.

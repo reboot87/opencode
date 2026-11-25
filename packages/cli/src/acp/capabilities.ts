@@ -1,3 +1,7 @@
+/**
+ * ACP 能力声明。
+ * 声明本实现支持的 ACP 能力与扩展方法（含子会话更新）。
+ */
 import type { ClientCapabilities } from "@agentclientprotocol/sdk"
 
 export const ChildSessionUpdates = "opencode/child-session-updates"

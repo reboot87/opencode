@@ -1,3 +1,7 @@
+/**
+ * 详情插件 — LocationWorkspace。
+ * 展示对象详细信息的 GUI 插件中负责 LocationWorkspace 部分，提供该部分所需的实现与类型定义。
+ */
 import { Icon } from "@opencode/ui/icon"
 import { Menu } from "@opencode/ui/menu"
 import { Show } from "solid-js"

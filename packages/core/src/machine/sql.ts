@@ -1,3 +1,7 @@
+/**
+ * 机器数据库表。
+ * 定义 machine 表结构。
+ */
 import { integer, sqliteTable, text, uniqueIndex } from "drizzle-orm/sqlite-core"
 import type { Environment } from "../environment/index.js"
 

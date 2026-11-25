@@ -1,3 +1,7 @@
+/**
+ * 任务恢复信息。
+ * 定义可恢复任务（Shell/Image 等）的持久化信息结构。
+ */
 import { VideoID } from "@opencode/schema/generate"
 import { Schema } from "effect"
 import { SessionSchema } from "../session/schema.js"

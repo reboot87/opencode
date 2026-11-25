@@ -1,7 +1,10 @@
 // The legal pages' Document and History tabs, shared with the static pages' script
 // (src/client/islands/legal.ts), which drives them there.
 
-/** Whether an address fragment is History or one of its parts: a version, or what changed. */
+/** Whether an address fragment is History or one of its parts: a version, or what changed.
+ *
+ * 站点界面组件：法律标签页。
+ */
 export const inHistory = (hash: string) =>
   hash === "#history" || hash === "#history-changes" || hash.startsWith("#version-")
 

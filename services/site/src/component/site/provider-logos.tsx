@@ -8,7 +8,10 @@ import { docsUrl } from "~/lib/docs"
 import { providerLogo, providerMarks, type ProviderMark } from "~/lib/providers"
 import { siteSettings } from "./settings"
 
-/** A provider's mark, drawn as a mask so it takes the text colour; its name for assistive tech. */
+/** A provider's mark, drawn as a mask so it takes the text colour; its name for assistive tech.
+ *
+ * 站点界面组件：供应商·logos。
+ */
 export function ProviderLogo(props: { provider: ProviderMark; decorative?: boolean }) {
   return (
     <span

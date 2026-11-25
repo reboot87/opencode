@@ -1,4 +1,8 @@
-/** A read that has not settled after this long is aborted and retried, so a stalled request cannot hang the image. */
+/**
+ * A read that has not settled after this long is aborted and retried, so a stalled request cannot hang the image.
+ *
+ * Markdown 图片的状态机：管理图片的加载状态与缩放交互。
+ */
 export const IMAGE_READ_TIMEOUT_MS = 15_000
 
 /** The first retry waits this long; each later retry doubles it. */

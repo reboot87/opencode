@@ -1,3 +1,7 @@
+/**
+ * 语音服务（Voice）。
+ * 语音模型信息与实时语音会话输入结构。
+ */
 export * as Voice from "./voice.js"
 
 import { type AIError } from "@opencode/ai/effect"

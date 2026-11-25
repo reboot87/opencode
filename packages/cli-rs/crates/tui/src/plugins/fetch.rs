@@ -1,4 +1,6 @@
 //! Route built-in plugin requests through the same fetch interface as external plugins.
+//!
+//! 终端插件视图：抓取。
 
 use opencode_api::client::{Body, Call};
 use opencode_plugin::abi;

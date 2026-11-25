@@ -1,3 +1,7 @@
+/**
+ * 消息渲染 — CurrentMessageTest。
+ * 会话消息的渲染组件中负责 CurrentMessageTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { JsonValue, SessionMessageAssistantTool } from "@opencode/client/promise"
 import { currentContentDefaultOpen } from "./current-tool-state"

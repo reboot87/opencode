@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：标签页·strip·app。
+ *
+ * 规格编号：E.12。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The horizontal tab strip (W01, W02, W08): a session opens as a tab, a second joins it, `<leader>1` selects the
 // first and leaves the unread second one glowing, `<leader>w` closes a tab and goes back in the history (which
 // acknowledges the unread session, `session.view`), `ctrl+shift+t` reopens it, and `<leader>n` shows the

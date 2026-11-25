@@ -1,3 +1,7 @@
+/**
+ * AI SDK 的测试辅助工具。
+ * 提供 TestLLM（可编排的测试用 LLM 客户端）与 compileRequest 等工具，便于在单测中模拟模型响应与校验请求。
+ */
 export * as TestLLM from "./testing.js"
 export { compileRequest } from "./route/client.js"
 

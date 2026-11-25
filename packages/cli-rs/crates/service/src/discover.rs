@@ -1,6 +1,8 @@
 //! Looks first in `OPENCODE_CHANNEL`, then the client's default channel, then other registrations. Among scanned
 //! services, prefer one owned by the resolved `opencode` binary; otherwise prefer the newest. Discovery never
 //! modifies a registration or stops a service.
+//!
+//! 服务层：发现。
 
 use std::path::{Path, PathBuf};
 

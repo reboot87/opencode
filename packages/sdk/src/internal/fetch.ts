@@ -1,3 +1,7 @@
+/**
+ * SDK 内嵌 fetch。
+ * 为嵌入式实例提供拦截式 fetch 实现（请求可被 AbortController 取消）。
+ */
 export * as OwnedFetch from "./fetch"
 
 export function make(handler: (request: Request) => Promise<Response>, dispose: () => Promise<void>) {

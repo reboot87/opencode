@@ -1,3 +1,7 @@
+/**
+ * 数据站路由 — SectionHeading。
+ * 数据站点的路由页面中负责 SectionHeading 部分，提供该部分所需的实现与类型定义。
+ */
 import type { JSX } from "solid-js"
 
 export function SectionHeading(props: {

@@ -1,3 +1,7 @@
+/**
+ * reload 命令。
+ * 通知服务端重新加载配置。
+ */
 import { EOL } from "node:os"
 import { Effect } from "effect"
 import { OpenCode } from "@opencode/client"

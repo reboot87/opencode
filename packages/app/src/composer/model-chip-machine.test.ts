@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — ModelChipMachineTest。
+ * 会话输入区的组合逻辑与附件处理中负责 ModelChipMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   MODEL_CHIP_DEFER_TIMEOUT_MS,

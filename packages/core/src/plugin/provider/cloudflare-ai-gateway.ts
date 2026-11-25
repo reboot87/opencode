@@ -1,3 +1,7 @@
+/**
+ * Cloudflare AI Gateway 插件。
+ * 注册 Cloudflare AI Gateway provider，含账户 ID 表单与凭据配置。
+ */
 import { Effect } from "effect"
 import { isArrayNonEmpty } from "effect/Array"
 import { define } from "@opencode/plugin/effect/plugin"

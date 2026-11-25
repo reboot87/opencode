@@ -1,3 +1,7 @@
+/**
+ * 浏览器配置 — FilterStartup。
+ * 浏览器插件的用户配置与身份中负责 FilterStartup 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Extension, Session, WebContents } from "electron"
 import { Schema } from "effect"
 import { eventPage, manifestQuery } from "./extension-api/event-page"

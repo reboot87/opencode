@@ -1,3 +1,5 @@
+//! 命令行入口测试：`askpass`。
+
 use std::io::{Read, Write};
 use std::net::TcpListener;
 use std::process::{Command, Stdio};

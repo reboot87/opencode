@@ -1,3 +1,18 @@
+/**
+ * LLM 流式事件与响应的数据模型（AI SDK 核心类型之一）。
+ *
+ * 一次模型调用会产出一串事件（LLMEvent），本文件定义了完整的事件类型体系：
+ *   - 步骤：StepStart / StepFinish；
+ *   - 文本：TextStart / TextDelta / TextEnd；
+ *   - 推理：ReasoningStart / ReasoningDelta / ReasoningEnd；
+ *   - 工具调用：ToolInputStart / ToolInputDelta / ToolInputEnd / ToolInputError / ToolCall / ToolResult；
+ *   - 结束：Finish（带 finishReason 和 usage）、RawEvent、MediaEvent。
+ *
+ * 两个关键聚合工具：
+ *   - ResponseFold：把事件流逐步折叠成一条 LLMResponse（start/delta/end 累积成完整内容）；
+ *   - LLMResponse：一次调用的完整结果（消息 + 事件 + 用量 + 结束原因）。
+ * loop.ts 的 collect 和 llm.ts 的 stepStream 都依赖这里的折叠逻辑。
+ */
 import { Schema } from "effect"
 import { LLM } from "@opencode/schema/llm"
 import { ContentBlockID, ToolCallID } from "./ids.js"
@@ -17,10 +32,25 @@ export const FinishReason = LLM.FinishReason
 export type FinishReason = Schema.Schema.Type<typeof FinishReason>
 
 /**
- * Token usage reported by an LLM provider.
+ * provider 上报的 token 用量。
  *
- * **Inclusive totals** (match AI SDK / OpenAI / LangChain convention — a
- * reader from any of those ecosystems sees the number they expect):
+ * **包含式总量**（沿用 AI SDK / OpenAI / LangChain 的惯例，让这些生态的读者看到预期的数字）：
+ * - inputTokens：提示词总量，含缓存读/写；
+ * - outputTokens：输出总量，含推理；
+ * - totalTokens：provider 提供的总量，或 inputTokens + outputTokens。
+ *
+ * **互不重叠的细分项**（每项独立有意义，消费方无需做减法）：
+ * - nonCachedInputTokens：提示词中“新鲜”的部分；
+ * - cacheReadInputTokens：命中缓存读入的输入 token；
+ * - cacheWriteInputTokens：写入缓存的输入 token；
+ * - reasoningTokens：outputTokens 中用于隐藏推理的子集。
+ *
+ * **不变量**：nonCached + cacheRead + cacheWrite = inputTokens，reasoningTokens ≤ outputTokens。
+ * 各协议 mapper 计算自己拿不到的那一侧，用 Math.max(0,…) 防止 provider bug 导致负数。
+ * 由于每个细分项独立存储，下游可按需读取（分类计价、上下文压力、AI-SDK 式总量），
+ * 避免了“裁剪后的差值被静默存成错误值”的下溢 bug。
+ *
+ * 各 provider 的语义（原文保留）：
  *
  * - `inputTokens` — total prompt tokens, *including* cached reads/writes.
  * - `outputTokens` — total output tokens, *including* reasoning.
@@ -693,8 +723,9 @@ export class LLMResponse extends Schema.Class<LLMResponse>("LLM.Response")({
 }
 
 /**
- * Internal fold that assembles one provider attempt. Not exported from the package.
- * A state has a single owner: `reduce` appends to the events buffer in place, so earlier states must not be reused.
+ * 内部折叠器：把一次 provider 尝试的事件流组装成完整响应（不对外导出）。
+ * 重要约束：一个 state 只有一个所有者——reduce 会就地追加到事件缓冲区，
+ * 因此不能复用旧 state（否则事件会重复累积）。
  */
 export namespace ResponseFold {
   export type State = ResponseState

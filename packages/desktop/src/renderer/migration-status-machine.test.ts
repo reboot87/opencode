@@ -1,3 +1,7 @@
+/**
+ * 渲染进程 — MigrationStatusMachineTest。
+ * Electron 渲染进程的界面逻辑中负责 MigrationStatusMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { ExperimentalMigrationV1StatusOutput } from "@opencode/client/promise"
 import {

@@ -1,3 +1,7 @@
+/**
+ * ACP 压缩跟踪。
+ * 跟踪 ACP 会话中的压缩事件（标记与开始时间）。
+ */
 import type { SessionUpdate } from "@agentclientprotocol/sdk"
 import type { OpenCodeEvent } from "@opencode/client/effect"
 import type { SessionError } from "@opencode/schema/session-error"

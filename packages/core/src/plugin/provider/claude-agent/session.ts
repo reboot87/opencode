@@ -1,3 +1,7 @@
+/**
+ * Claude Agent 会话适配。
+ * 把 Claude Agent 的工具结果与消息适配到本仓库的会话消息结构。
+ */
 export * as ClaudeSessionHooks from "./session.js"
 
 import { AssistantMessage, ToolMessage, type ToolResultPart } from "@opencode/ai/effect"

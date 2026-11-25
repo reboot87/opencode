@@ -1,3 +1,10 @@
+/**
+ * 进程的测试。
+ *
+ * 被测模块：@opencode/core/process/process
+ *
+ * 覆盖子进程的启动、信号处理与退出码回收。
+ */
 import { describe, expect } from "bun:test"
 import fs from "fs/promises"
 import { randomUUID } from "node:crypto"

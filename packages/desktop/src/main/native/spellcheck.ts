@@ -1,3 +1,7 @@
+/**
+ * 原生能力 — Spellcheck。
+ * 调用系统原生能力的封装中负责 Spellcheck 部分，提供该部分所需的实现与类型定义。
+ */
 import { app, session, type MenuItemConstructorOptions } from "electron"
 import { SPELLCHECK_ENABLED_KEY, SPELLCHECK_LANGUAGES_KEY } from "../storage/keys"
 import { getStore } from "../storage/store"

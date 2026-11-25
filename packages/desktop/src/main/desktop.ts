@@ -1,3 +1,7 @@
+/**
+ * 桌面端主进程 — Desktop。
+ * Electron 主进程的核心逻辑中负责 Desktop 部分，提供该部分所需的实现与类型定义。
+ */
 import { NodeFileSystem, NodePath, NodeRuntime } from "@effect/platform-node"
 import { app } from "electron"
 import { Effect, Layer } from "effect"

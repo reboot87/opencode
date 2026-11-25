@@ -1,3 +1,10 @@
+/**
+ * 工具的测试辅助模块。
+ *
+ * 被测模块：@opencode/core/lib/tool
+ *
+ * 核心测试的公共辅助模块：内存数据库、会话夹具与事件收集工具。
+ */
 import { Agent } from "@opencode/core/agent"
 import { CodeModeCatalog } from "@opencode/core/codemode/catalog"
 import { Config } from "@opencode/core/config"

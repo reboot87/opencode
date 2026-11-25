@@ -1,3 +1,7 @@
+/**
+ * 浏览器配置 — ElectronLinkTest。
+ * 浏览器插件的用户配置与身份中负责 ElectronLinkTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import path from "node:path"
 import { runElectronFixture } from "../electron-run"

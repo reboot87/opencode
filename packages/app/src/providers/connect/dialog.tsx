@@ -1,3 +1,7 @@
+/**
+ * Provider 连接 — Dialog。
+ * 连接 provider 的授权界面中负责 Dialog 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { Badge } from "@opencode/ui/badge"
 import { useDialog } from "@opencode/ui/context/dialog"

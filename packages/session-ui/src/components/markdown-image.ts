@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — MarkdownImage。
+ * 跨场景复用的通用 UI 组件中负责 MarkdownImage 部分，提供该部分所需的实现与类型定义。
+ */
 import { abort } from "@opencode/util/abort"
 import { isLineRangeHash, parsePathLineSuffix } from "@opencode/util/path"
 import type { ReadMarkdownImage } from "../context/markdown"

@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：边界情形缓存。
+ */
 import { describe, expect, test } from "bun:test"
 import { staleValue } from "~/lib/edge-cache"
 

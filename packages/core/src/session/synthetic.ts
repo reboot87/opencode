@@ -1,3 +1,7 @@
+/**
+ * 合成消息（SessionSynthetic）。
+ * 往会话中写入系统合成的用户/助手消息。
+ */
 export * as SessionSynthetic from "./synthetic.js"
 
 import { Effect } from "effect"

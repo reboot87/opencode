@@ -1,4 +1,6 @@
 //! Validate host reads and actions of a linked plugin.
+//!
+//! 终端界面测试：插件·reads。
 
 use crate::support::{self, Harness};
 

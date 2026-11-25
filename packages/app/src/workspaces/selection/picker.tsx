@@ -1,3 +1,7 @@
+/**
+ * 工作区选择 — Picker。
+ * 工作区切换与选择中负责 Picker 部分，提供该部分所需的实现与类型定义。
+ */
 import { useDialog } from "@opencode/ui/context/dialog"
 import { uuid } from "@opencode/util/uuid"
 import { ServerConnection, useServers } from "@/runtime/server/registry"

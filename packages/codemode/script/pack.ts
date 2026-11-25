@@ -1,5 +1,11 @@
 #!/usr/bin/env bun
 
+/**
+ * 打包脚本。
+ *
+ * Code Mode 的开发脚本：脚本样例生成与沙箱校验。
+ */
+
 import { $ } from "bun"
 import { mkdtemp, rm } from "node:fs/promises"
 import { tmpdir } from "node:os"

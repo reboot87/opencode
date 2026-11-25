@@ -1,3 +1,7 @@
+/**
+ * 模型兼容性类型。
+ * 定义模型与协议之间的兼容性声明。
+ */
 import { Schema, Struct } from "effect"
 import { optional } from "./schema.js"
 

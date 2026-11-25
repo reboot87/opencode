@@ -1,3 +1,7 @@
+/**
+ * Google Interactions 视频生成协议。
+ * 基于 Interactions 端点的视频任务。
+ */
 import { Effect, Schema } from "effect"
 import type { HttpClientResponse } from "effect/http"
 import { Media } from "../media.js"

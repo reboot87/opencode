@@ -6,6 +6,8 @@ import { $, $$, reducedMotion, target } from "../dom"
  * The Brand page (routes/brand/index.tsx) on a static page: its copy buttons (Rules for agent has an
  * island of its own, agent-rules.ts), the badges' sizes and styles, and the drawings fitted around their
  * labels and kept on whole pixels.
+ *
+ * 客户端交互岛：品牌。
  */
 export default function brand(page: HTMLElement) {
   startDrawings()

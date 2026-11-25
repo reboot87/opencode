@@ -1,4 +1,6 @@
 //! The event stream reader (`sse::events`), as the TypeScript client's.
+//!
+//! API 客户端：服务端事件流。
 
 use std::sync::Arc;
 use std::sync::atomic::{AtomicUsize, Ordering};

@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — NativePageMenu。
+ * 内置浏览器功能的 GUI 插件中负责 NativePageMenu 部分，提供该部分所需的实现与类型定义。
+ */
 import { writeFile } from "node:fs/promises"
 import electron, { type BrowserWindow, type WebContents } from "electron"
 import type { Protocol } from "devtools-protocol"

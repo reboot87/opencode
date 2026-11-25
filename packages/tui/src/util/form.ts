@@ -1,3 +1,7 @@
+/**
+ * 终端工具 — Form。
+ * 终端界面的通用工具函数中负责 Form 部分，提供该部分所需的实现与类型定义。
+ */
 import type { FormField, FormValue } from "@opencode/client"
 
 export type FormAnswerField = Exclude<FormField, { type: "external" }>

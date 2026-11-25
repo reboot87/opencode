@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：行·结束·伪终端。
+ *
+ * 规格编号：OT。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The command palette's search field holds more text than it shows. After Ctrl+A, `input.visual.line.end` (Alt+E)
 // moves to the end of the text, so `X` goes there (OpenTUI #2053, on both sides since 0.9.4).
 import { definePty } from "../../pty/run"

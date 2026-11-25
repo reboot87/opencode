@@ -1,3 +1,7 @@
+/**
+ * 主页会话 — Archive。
+ * 主页中会话列表的展示中负责 Archive 部分，提供该部分所需的实现与类型定义。
+ */
 import { notifySessionTabsRemoved } from "@/shell/titlebar/session-events"
 import type { ServerConnection } from "@/runtime/server/registry"
 import type { SessionInfo } from "@opencode/client/promise"

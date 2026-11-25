@@ -1,3 +1,7 @@
+/**
+ * 时间线悬疑复现 — Main。
+ * 复现特定时间线渲染问题的端到端用例中负责 Main 部分，提供该部分所需的实现与类型定义。
+ */
 import { createResource, createSignal, For, onMount, Suspense } from "solid-js"
 import { render } from "solid-js/web"
 import { createVirtualizer, observeElementOffset, observeElementRect } from "@tanstack/solid-virtual"

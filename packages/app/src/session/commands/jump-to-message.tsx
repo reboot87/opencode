@@ -1,3 +1,7 @@
+/**
+ * 会话命令 — JumpToMessage。
+ * 会话界面提供的命令中负责 JumpToMessage 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { Dialog, DialogBody, DialogTitle, DialogTitleGroup } from "@opencode/ui/dialog"
 import { Icon } from "@opencode/ui/icon"

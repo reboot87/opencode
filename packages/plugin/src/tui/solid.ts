@@ -1,3 +1,7 @@
+/**
+ * TUI Solid 绑定。
+ * 把 TUI 插件上下文接入 Solid 的 Provider。
+ */
 import { createComponent, createContext, useContext, type JSX } from "solid-js"
 import type { Context } from "./context.js"
 

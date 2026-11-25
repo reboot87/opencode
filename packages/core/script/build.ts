@@ -1,5 +1,11 @@
 #!/usr/bin/env bun
 
+/**
+ * 构建脚本。
+ *
+ * 核心包的开发脚本：本地服务桩、数据准备与问题排查。
+ */
+
 import { $ } from "bun"
 import { rm } from "node:fs/promises"
 import path from "node:path"

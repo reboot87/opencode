@@ -1,3 +1,10 @@
+/**
+ * mini·配置的测试。
+ *
+ * 被测模块：@opencode/cli/mini-config
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { NodeFileSystem } from "@effect/platform-node"
 import { Global } from "@opencode/util/global"
 import { Effect, Option } from "effect"

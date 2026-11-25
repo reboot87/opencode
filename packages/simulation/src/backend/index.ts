@@ -1,3 +1,7 @@
+/**
+ * 模块 — Index 出口。
+ * 集中导出 模块 中 Index 相关的实现、组件与类型。
+ */
 import { LayerNode } from "@opencode/util/effect/layer-node"
 import { makeGlobalNode } from "@opencode/util/effect/app-node"
 import { httpClient } from "@opencode/util/effect/app-node-platform"

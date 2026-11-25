@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — ModelPreferenceTest。
+ * 终端界面的测试中负责 ModelPreferenceTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import path from "node:path"
 import { createModelPreferenceRepository, cycleModelSpeed, decodeModelPreference } from "../src/model-preference"

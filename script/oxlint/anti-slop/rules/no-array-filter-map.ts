@@ -2,7 +2,10 @@ import { defineRule } from "@oxlint/plugins";
 
 import { arrayMethodTarget, isKnownArrayExpression, unwrapArrayExpression } from "../shared/array-method.ts";
 
-/** Reject eager array filter/map pipelines; lazy iterator helpers remain allowed. */
+/** Reject eager array filter/map pipelines; lazy iterator helpers remain allowed.
+ *
+ * Oxlint 规则：无数组过滤映射。
+ */
 export const noArrayFilterMapRule = defineRule({
   meta: {
     type: "suggestion",

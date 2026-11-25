@@ -1,3 +1,7 @@
+/**
+ * 输入编辑器 — Interaction。
+ * 输入区文本编辑器的实现中负责 Interaction 部分，提供该部分所需的实现与类型定义。
+ */
 import { Predicate } from "effect"
 import { createEffect, createMemo, createSignal, on, onCleanup, untrack, type Accessor } from "solid-js"
 import { unwrap } from "solid-js/store"

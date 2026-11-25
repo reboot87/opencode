@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — ToolCountSummary。
+ * 跨场景复用的通用 UI 组件中负责 ToolCountSummary 部分，提供该部分所需的实现与类型定义。
+ */
 import { Index, createMemo } from "solid-js"
 import { useI18n, type UiI18nPluralKey } from "@opencode/ui/context"
 import { AnimatedCountLabel } from "./tool-count-label"

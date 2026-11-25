@@ -1,3 +1,7 @@
+/**
+ * 浏览器配置 — Safari。
+ * 浏览器插件的用户配置与身份中负责 Safari 部分，提供该部分所需的实现与类型定义。
+ */
 import type { CookieRead, ImportedCookie } from "./cookie"
 
 /** Seconds between 1970-01-01 and 2001-01-01, the epoch of Safari's timestamps. */

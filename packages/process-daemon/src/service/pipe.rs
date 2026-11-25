@@ -15,6 +15,8 @@
 //! - A process the daemon terminated is reported as the signal the daemon sent
 //!   (`SIGTERM`, `SIGINT`, `SIGKILL`) with no exit code, not as the platform's
 //!   hard-kill status, so clients format it like a Unix signal death.
+//!
+//! 守护服务接口：管道。
 
 use std::fs::File;
 use std::io::{self, Write};

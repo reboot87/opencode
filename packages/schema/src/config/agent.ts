@@ -1,3 +1,7 @@
+/**
+ * Agent 配置类型。
+ * 定义 agent 配置项的 Schema。
+ */
 export * as ConfigAgent from "./agent.js"
 
 import { Effect, Schema } from "effect"

@@ -7,6 +7,8 @@
 //! keeps an object and calls it later reaches that later call's borrow, or none: never one that ended.
 
 #![allow(unsafe_code)]
+//!
+//! Luau 插件运行时：`current`。
 
 use std::cell::Cell;
 

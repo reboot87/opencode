@@ -1,3 +1,7 @@
+/**
+ * 按键互斥锁。
+ * 按 key 串行化异步操作的互斥锁（KeyedMutex）。
+ */
 export * as KeyedMutex from "./keyed-mutex.js"
 
 import { Effect, Semaphore } from "effect"

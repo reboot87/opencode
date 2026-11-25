@@ -1,3 +1,7 @@
+/**
+ * 会话请求 — QuestionMotion。
+ * 会话界面的请求发起与状态跟踪中负责 QuestionMotion 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal } from "solid-js"
 import { observeReducedMotion, prefersReducedMotion } from "@opencode/ui/motion"
 import { motionTuning } from "@opencode/ui/motion-tuning"

@@ -1,4 +1,7 @@
-/** A write held for a session whose location stays unknown this long is dropped, so it cannot ambush a later visit. */
+/**
+ * 
+ * A write held for a session whose location stays unknown this long is dropped, so it cannot ambush a later visit. 插件运行时中负责 LocatedMachine 部分：浏览器端插件运行时中与 LocatedMachine 相关的状态、交互与渲染逻辑。
+ */
 export const LOCATED_WRITE_TTL_MS = 30_000
 
 /** Held writes beyond this drop the oldest, so a session that never locates cannot grow the queue without bound. */

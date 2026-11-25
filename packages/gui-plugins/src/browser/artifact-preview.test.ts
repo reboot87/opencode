@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — ArtifactPreviewTest。
+ * 内置浏览器功能的 GUI 插件中负责 ArtifactPreviewTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterAll, beforeAll, expect, test } from "bun:test"
 import { GlobalRegistrator } from "@happy-dom/global-registrator"
 import { artifactPages } from "./artifact-preview"

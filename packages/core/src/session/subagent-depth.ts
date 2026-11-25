@@ -1,3 +1,7 @@
+/**
+ * 子代理深度限制（SubagentDepth）。
+ * 检查并限制子代理的嵌套深度（experimental 配置）。
+ */
 export * as SubagentDepth from "./subagent-depth.js"
 
 import { Effect } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * 会话时间线 — ReconnectMachine。
+ * 会话消息时间线的渲染中负责 ReconnectMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // TanStack's reset timer can still report a stale offset in the frame after its deadline, so the check outlives it.
 export const RECONNECT_POST_DEADLINE_FRAMES = 2
 

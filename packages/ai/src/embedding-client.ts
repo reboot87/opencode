@@ -1,3 +1,7 @@
+/**
+ * 嵌入（Embedding）客户端服务。
+ * 把 EmbeddingRequest 交给模型的 route 执行，返回向量响应；同步调用，无轮询抽象。
+ */
 import { Context, Effect, Layer } from "effect"
 import type { EmbeddingModel, EmbeddingOptions, EmbeddingRequest, EmbeddingResponse } from "./embedding.js"
 import { RequestExecutor } from "./route/executor.js"

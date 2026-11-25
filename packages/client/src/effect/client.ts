@@ -1,3 +1,7 @@
+/**
+ * Effect 客户端工厂。
+ * 构造 Effect 风格的 OpenCode 客户端，注入请求头与调用上下文。
+ */
 export * as OpenCode from "./client.js"
 
 import { Cause, Context, Effect, Stream } from "effect"

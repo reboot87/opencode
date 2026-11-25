@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：媒体。
+ */
 import { describe, expect, test } from "bun:test"
 import { mediaBase, mediaUrl } from "../src/lib/media"
 

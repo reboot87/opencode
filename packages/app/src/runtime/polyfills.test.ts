@@ -1,3 +1,7 @@
+/**
+ * 应用运行时 — PolyfillsTest。
+ * 浏览器端应用的运行时环境与服务装配中负责 PolyfillsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, beforeEach, expect, test } from "bun:test"
 
 const native = { groupBy: Map.groupBy, withResolvers: Promise.withResolvers, try: Promise.try }

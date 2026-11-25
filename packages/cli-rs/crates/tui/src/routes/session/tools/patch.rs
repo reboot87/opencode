@@ -1,4 +1,6 @@
 //! Render patch metadata by file, falling back to the applied resource list.
+//!
+//! 终端界面路由：补丁。
 
 use opencode_local::cli_config::{DiffView as ConfigDiffView, DiffWrap};
 use opentui::widget::DiffView;

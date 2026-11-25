@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — OfficeWorker。
+ * Microsoft Office 文档预览插件中负责 OfficeWorker 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createSignal, onCleanup, untrack } from "solid-js"
 import { createKeyed } from "@opencode/plugin/gui"
 import {

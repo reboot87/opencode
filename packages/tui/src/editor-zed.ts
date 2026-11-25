@@ -1,3 +1,7 @@
+/**
+ * 终端界面 — EditorZed。
+ * OpenCode 终端界面的整体骨架与入口中负责 EditorZed 部分，提供该部分所需的实现与类型定义。
+ */
 import { Database } from "#zed-sqlite"
 import { statSync } from "node:fs"
 import { readFile as readFileAsync } from "node:fs/promises"

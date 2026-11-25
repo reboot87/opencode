@@ -1,3 +1,7 @@
+/**
+ * 文件插件 — TreeModelTest。
+ * 文件预览与操作的 GUI 插件中负责 TreeModelTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { FileNode } from "@opencode/plugin/gui"
 import {

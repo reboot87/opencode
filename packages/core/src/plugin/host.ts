@@ -1,3 +1,7 @@
+/**
+ * 插件宿主。
+ * 插件运行时的宿主环境：加载插件模块、绑定 RPC 事件与工具调用，管理插件生命周期。
+ */
 export * as PluginHost from "./host.js"
 
 import { Plugin } from "@opencode/plugin/effect"

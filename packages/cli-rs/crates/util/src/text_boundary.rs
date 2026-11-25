@@ -1,6 +1,8 @@
 //! Clips at a Unicode scalar boundary within a UTF-16 budget; the cut may fall inside a grapheme.
 
 /// The last `limit` UTF-16 code units of `text`, without the low surrogate whose pair the limit cut off.
+//!
+//! 通用工具：文本边界。
 pub fn tail(text: &str, limit: usize) -> &str {
     let mut units = 0;
     for (index, character) in text.char_indices().rev() {

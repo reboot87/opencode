@@ -1,3 +1,7 @@
+/**
+ * Well-Known 插件。
+ * 订阅总线事件以刷新远端 well-known 配置。
+ */
 export * as WellKnownPlugin from "./plugin.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

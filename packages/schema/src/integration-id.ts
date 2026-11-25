@@ -1,3 +1,7 @@
+/**
+ * 集成 ID 类型。
+ * 定义集成的品牌 ID 类型。
+ */
 import { Schema } from "effect"
 
 export const IntegrationID = Schema.String.pipe(

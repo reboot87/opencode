@@ -1,3 +1,10 @@
+/**
+ * automation·Shell的测试。
+ *
+ * 被测模块：@opencode/core/automation-shell
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import { Agent } from "@opencode/core/agent"
 import { Automation } from "@opencode/core/automation"

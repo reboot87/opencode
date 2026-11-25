@@ -1,3 +1,7 @@
+/**
+ * 调试插件 — Renderer。
+ * 面向开发者的调试 GUI 插件中负责 Renderer 部分，提供该部分所需的实现与类型定义。
+ */
 import { showToast, toaster } from "@opencode/ui/toast"
 import { createMemo, createSignal, lazy, onCleanup, Show, Suspense } from "solid-js"
 import { createKeyed, Command, Slot, type Plugin } from "@opencode/plugin/gui"

@@ -1,4 +1,6 @@
 //! Writes shared CLI logs and optionally exports them to stderr or OTLP.
+//!
+//! 命令行入口：`telemetry`。
 
 use std::fs::{File, OpenOptions};
 use std::io::{self, Read, Seek, SeekFrom, Write};

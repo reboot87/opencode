@@ -1,3 +1,7 @@
+/**
+ * 新建会话 — BrickBreakerMachineTest。
+ * 创建新会话的向导与表单中负责 BrickBreakerMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   BRICK_BREAKER_TIMING,

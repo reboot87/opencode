@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid SessionTabsMouseTest：该文件实现 SessionTabsMouseTest 相关的状态与逻辑。
+ */
 import { testRender } from "@opentui/solid"
 import { MouseButton } from "@opentui/core"
 import { expect, test } from "bun:test"

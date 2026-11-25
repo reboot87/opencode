@@ -1,4 +1,6 @@
 //! Replays stored messages on `session/load`.
+//!
+//! ACP 协议实现：回放。
 
 use std::borrow::Cow;
 use std::sync::Arc;

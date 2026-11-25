@@ -1,3 +1,7 @@
+/**
+ * job 接口处理器。
+ * 后台任务接口处理器：任务列举、取消与查询。
+ */
 import { Job } from "@opencode/core/job"
 import { Session } from "@opencode/core/session"
 import { SessionBackground } from "@opencode/core/session/background"

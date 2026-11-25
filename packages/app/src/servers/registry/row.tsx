@@ -1,3 +1,7 @@
+/**
+ * 服务端注册表 — Row。
+ * 已知服务端的登记与状态中负责 Row 部分，提供该部分所需的实现与类型定义。
+ */
 import { Icon } from "@opencode/ui/icon"
 import { Loader } from "@opencode/ui/loader"
 import { useLanguage } from "@/runtime/i18n/language"

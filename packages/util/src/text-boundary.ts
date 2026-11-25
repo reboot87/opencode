@@ -1,3 +1,7 @@
+/**
+ * 文本边界截断。
+ * 按字符数安全截断文本，避免切断代理对（emoji 等）。
+ */
 export * as TextBoundary from "./text-boundary.js"
 
 /**

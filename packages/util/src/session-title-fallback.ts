@@ -1,3 +1,7 @@
+/**
+ * 会话标题兜底。
+ * 为无名会话生成带时间戳的兜底标题。
+ */
 export * as SessionTitleFallback from "./session-title-fallback.js"
 
 const pattern = /^(New session|Child session) - \d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/

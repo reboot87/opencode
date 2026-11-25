@@ -1,5 +1,8 @@
 #![cfg(unix)]
 
+//! 进程守护服务测试：`ownership`。
+
+
 use std::io::{Read, Write};
 use std::os::unix::net::{UnixListener, UnixStream};
 use std::path::PathBuf;

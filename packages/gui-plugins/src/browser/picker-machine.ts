@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — PickerMachine。
+ * 内置浏览器功能的 GUI 插件中负责 PickerMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { PaneElement } from "./ipc"
 
 // The page's element picker and its highlights, folded from the window's requests and CDP's answers. Electron-free so

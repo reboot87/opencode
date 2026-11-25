@@ -1,3 +1,7 @@
+/**
+ * 文件保留期清理。
+ * 按保留时长清理过期文件。
+ */
 export * as FileRetention from "./file-retention.js"
 
 import { Duration, Effect, Option } from "effect"

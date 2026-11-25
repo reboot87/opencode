@@ -1,3 +1,7 @@
+/**
+ * 会话输入区 — TodoPillStories。
+ * 会话界面输入区的实现中负责 TodoPillStories 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageInfo } from "@opencode/client/promise"
 import type { SessionDocument } from "@opencode/session-ui/document"
 import { CURRENT_SESSION_ID, STORY_MODEL, STORY_TIME, editThenTestDocument } from "@opencode/session-ui/storybook"

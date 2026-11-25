@@ -1,3 +1,6 @@
+/**
+ * 文档站组件：槽位。
+ */
 import { createContext, Show, useContext, type JSX } from "solid-js"
 
 // Named slots for MDX components (remark-slots.ts turns `<div slot="go">` into `<Slot name="go">`).

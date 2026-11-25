@@ -1,3 +1,7 @@
+/**
+ * 窗口管理 — TaskbarBadgeIcon。
+ * 浏览器窗口的创建与布局管理中负责 TaskbarBadgeIcon 部分，提供该部分所需的实现与类型定义。
+ */
 // Windows 11 critical red disc (#C42B1C) with a white anti-aliased count (1..9, 9+).
 const DISC_RED = 0xc4
 

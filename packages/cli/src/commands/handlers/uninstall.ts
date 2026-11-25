@@ -1,3 +1,7 @@
+/**
+ * uninstall 命令。
+ * 卸载 OpenCode，清理程序与数据目录。
+ */
 import { confirm, intro, log, outro, spinner } from "@clack/prompts"
 import { Service } from "@opencode/client/effect/service"
 import { Global } from "@opencode/util/global"

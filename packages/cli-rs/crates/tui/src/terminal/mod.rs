@@ -1,4 +1,6 @@
 //! Session terminal selection and persistence.
+//!
+//! 终端界面入口。
 
 pub mod palette;
 pub mod pane;

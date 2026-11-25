@@ -1,3 +1,7 @@
+/**
+ * 调试文案 — Da。
+ * 调试插件的多语言文案中负责 Da 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.toggle": "Slå fejlfindingslinjen til eller fra",
   providerAriaLabel: "Diagnosticering af udbyderens ydeevne",

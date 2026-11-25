@@ -1,3 +1,7 @@
+/**
+ * 轻提示 — Toast。
+ * 短时非阻塞消息提示组件中负责 Toast 部分，提供该部分所需的实现与类型定义。
+ */
 import { Toaster, toast, type ToasterProps } from "solid-sonner"
 import { boundToastDescription } from "./description"
 import { isRTL } from "@kobalte/core/i18n"

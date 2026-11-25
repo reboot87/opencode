@@ -1,3 +1,8 @@
+/**
+ * 持久·对象·storage测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { Database } from "bun:sqlite"
 import type { DurableObjectStorage } from "@opencode/core/database/sqlite.workerd"
 

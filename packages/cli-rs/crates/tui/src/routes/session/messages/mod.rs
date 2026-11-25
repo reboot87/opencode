@@ -1,4 +1,6 @@
 //! Transcript rows. `list` holds the transcript and dispatches each row to its module.
+//!
+//! 终端界面路由入口。
 
 pub mod assistant;
 pub mod background;

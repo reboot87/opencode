@@ -1,3 +1,7 @@
+/**
+ * GUI Vite 集成。
+ * 为插件前端构建配置 Vite，处理模块去重与别名。
+ */
 import { isBuiltin } from "node:module"
 import path from "node:path"
 import type { Plugin } from "vite"

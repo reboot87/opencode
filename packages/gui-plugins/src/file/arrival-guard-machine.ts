@@ -1,6 +1,8 @@
 /**
  * How long a file tab that an agent selected takes no input once the person can see it. A click or key press that was
  * on its way to what the pane showed before lands on nothing; the browser pane holds its pages back for as long.
+ *
+ * 文件插件中负责 ArrivalGuardMachine 部分：文件预览与操作中与 ArrivalGuardMachine 相关的状态、交互与渲染逻辑。
  */
 export const ARRIVAL_GUARD_MS = 500
 

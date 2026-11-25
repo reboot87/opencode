@@ -4,6 +4,8 @@
  * off, writes nothing. `probing` lists the `WebContents.id`s whose renderer probe has not settled, across runs, so a
  * hung renderer gets one evaluation at a time however often diagnostics turn off and on. `issued` numbers runs and
  * samples alike.
+ *
+ * 调试插件中负责 MemoryMachine 部分：调试面板中与 MemoryMachine 相关的状态、交互与渲染逻辑。
  */
 export type MemoryDiagnosticsState =
   | { readonly status: "off"; readonly issued: number; readonly probing: ReadonlySet<number> }

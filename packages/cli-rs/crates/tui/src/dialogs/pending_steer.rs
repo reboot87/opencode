@@ -1,4 +1,6 @@
 //! Move a pending steer back into the queue or delete it.
+//!
+//! 终端弹窗组件：待处理·steer。
 
 use crate::prelude::*;
 use crate::routes::session::queued::{self, Action};

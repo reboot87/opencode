@@ -354,7 +354,10 @@ export const legalHistory = {
   ],
 } satisfies Record<string, LegalVersion[]>
 
-/** A version of a legal document: a commit that changed its text, newest first. */
+/** A version of a legal document: a commit that changed its text, newest first.
+ *
+ * 法律文档生成逻辑：`history`。
+ */
 export type LegalVersion = {
   sha: string
   /** The commit date, YYYY-MM-DD. */

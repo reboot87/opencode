@@ -1,3 +1,7 @@
+/**
+ * 服务端设置 — Servers。
+ * 已连接服务端的管理设置中负责 Servers 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { useDialog } from "@opencode/ui/context/dialog"
 import { createMemo, For, Show, type Component } from "solid-js"

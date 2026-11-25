@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — ElectronRun。
+ * 内置浏览器功能的 GUI 插件中负责 ElectronRun 部分，提供该部分所需的实现与类型定义。
+ */
 import { mkdir, mkdtemp, readdir, readFile, rm, stat, writeFile } from "node:fs/promises"
 import { createRequire } from "node:module"
 import { tmpdir } from "node:os"

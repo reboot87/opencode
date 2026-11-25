@@ -23,6 +23,10 @@
  *   textStyles: Array<{id: string, name: string, fontFamily: string, fontStyle: string, fontSize: number}>,
  *   effectStyles: Array<{id: string, name: string, effectCount: number}>
  * }>}
+ *
+ * Figma 组件库生成脚本：检视文件·Structure。
+ *
+ * Figma 组件库生成脚本：检视文件·Structure。
  */
 async function inspectFileStructure() {
   const result = {

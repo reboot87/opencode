@@ -1,3 +1,7 @@
+/**
+ * 视觉稳定性工具 — Reporter。
+ * 比较界面渲染稳定性差异的辅助函数中负责 Reporter 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, type TestInfo } from "@playwright/test"
 import { writeFile } from "node:fs/promises"
 import { analyzeVisualObservations, analyzeVisualTraceByMarker } from "./analyzer"

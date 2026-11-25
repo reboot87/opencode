@@ -1,3 +1,15 @@
+/**
+ * provider 错误的识别与分类。
+ *
+ * 不同模型提供方对同一类错误（上下文超长、限流、鉴权失败等）的表述五花八门，
+ * 本文件用大量正则和错误码把各家错误信息归一化，供上层决策：
+ *   - 上下文溢出（isContextOverflow / isContextOverflowFailure）→ 触发 compaction 压缩；
+ *   - 是否可重试（isRetryable）→ 触发重试逻辑；
+ *   - classifyProviderFailure → 把 provider 返回的失败体分类成具体的 AIError 子类。
+ *
+ * 特别注意 exclusions：有些表述（如 "rate limit"、"too many tokens, please wait"）
+ * 虽然含“token/上限”字样，但其实是限流而非上下文溢出，必须排除，否则会错误地压缩上下文。
+ */
 import { Option, Schema, SchemaGetter } from "effect"
 import {
   AuthenticationError,
@@ -13,6 +25,7 @@ import {
 } from "./schema/index.js"
 import { awsErrorType, providerCodes } from "./utils/provider-codes.js"
 
+// 上下文超长的各种表述模式，来自不同 provider（注释标注了来源）
 const patterns = [
   /prompt is too long/i,
   /input is too long for (?:the )?(?:requested|selected) model/i,
@@ -69,24 +82,30 @@ const exclusions = [
   /too many tokens(?: per day)?, please wait/i,
 ]
 
+/**
+ * 判断一条错误消息是否表示“上下文超长”。
+ * 先排除限流等误判项，再匹配超长模式或 400/413 无响应体的情况。
+ */
 export const isContextOverflow = (message: string) =>
   !exclusions.some((pattern) => pattern.test(message)) &&
   (patterns.some((pattern) => pattern.test(message)) || /^4(?:00|13)\s*(status code)?\s*\(no body\)/i.test(message))
 
+/** 判断是否为“请求体过大”的错误（413 类）。 */
 const isPayloadTooLarge = (message: string) => payloadPatterns.some((pattern) => pattern.test(message))
 
+/** 判断一个错误对象是否已经被分类为 context-overflow。 */
 export const isContextOverflowFailure = (failure: unknown) =>
   failure instanceof AIError &&
   failure.reason._tag === "InvalidRequest" &&
   failure.reason.classification === "context-overflow"
 
 /**
- * Whether a failed call may succeed when sent again: rate limits, provider-side failures, transport failures that did
- * not deliver an accepted write, and unrecognized failures. Callers decide which calls are safe to repeat.
+ * 判断一次失败的调用重试后是否可能成功：限流、provider 侧故障、未送达的传输失败、未知错误都算可重试。
+ * 具体哪些调用能安全重复由调用方决定。
  */
 export const isRetryable = (error: AIError) => error.isRetryable
 
-// OpenCode Zen reports account caps as typed 429/402 errors that are not throttles.
+// OpenCode Zen 把账户额度上限报成 429/402，但它们不是限流（重试无意义），单独归类为 quota。
 const QUOTA_CODES = new Set([
   "insufficient_quota",
   "usage_not_included",
@@ -173,8 +192,8 @@ const messageAt = <Fields extends Schema.Struct.Fields>(
     }),
   )
 
-// Common error body layouts that carry a human-readable message, in priority order.
-// Provider-specific layouts belong in their protocol.
+// 常见的、携带可读错误消息的错误体格式，按优先级排列。
+// provider 专属的格式放在各自的 protocol 里处理。
 const decodeMessage = Schema.decodeUnknownOption(
   Schema.fromJsonString(
     Schema.Union([
@@ -195,13 +214,13 @@ const decodeMessage = Schema.decodeUnknownOption(
 
 export const providerErrorMessage = (body: string) => Option.getOrUndefined(decodeMessage(body))
 
+/** 从 provider 失败中提取出的原始信息，供 classifyProviderFailure 分类。 */
 export interface ProviderFailure {
   readonly message: string
   readonly status?: number | undefined
-  // Raw wire payload, scanned for failure signals (codes, overflow phrases)
-  // that the summary message does not carry. Not shown to users.
+  // 原始 wire 响应体：用于扫描摘要消息里没有的错误信号（错误码、超长表述），不展示给用户。
   readonly rawBody?: string | undefined
-  // Some SDKs supply parsed error data separately from the original response text.
+  // 有些 SDK 会把解析后的错误数据与原始响应文本分开提供。
   readonly data?: unknown
   readonly http?: HttpContext | undefined
   readonly cause?: unknown
@@ -209,12 +228,13 @@ export interface ProviderFailure {
   readonly rateLimit?: HttpRateLimitDetails | undefined
 }
 
-// Classification records affirmative evidence about a failure. Deterministic
-// failures need positive identification (a 4xx status, quota/auth/policy
-// signals); anything unrecognized stays UnknownProvider, which the session
-// retry policy treats as retry-eligible because transient failures arrive in
-// unpredictable shapes while deterministic rejections almost always carry a
-// status or known code.
+/**
+ * 把 provider 失败分类成具体的 AIError 子类型。
+ *
+ * 分类原则：只依据“确定的证据”来判定确定性失败（4xx 状态码、quota/auth/policy 信号等）。
+ * 无法识别的一律归为 UnknownProvider——会话重试策略把它视为可重试，
+ * 因为瞬时故障的表现形式不可预测，而确定性拒绝几乎总会带状态码或已知错误码。
+ */
 export function classifyProviderFailure(input: ProviderFailure): AIError["reason"] {
   const details = { message: input.message, body: input.rawBody, http: input.http, cause: input.cause }
   const body = input.rawBody ?? ""

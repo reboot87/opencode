@@ -1,3 +1,10 @@
+/**
+ * MCP·attach的测试。
+ *
+ * 被测模块：@opencode/core/mcp-attach
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import { InMemoryTransport, type JSONRPCMessage, type Transport } from "@modelcontextprotocol/client"
 import { McpServer } from "@modelcontextprotocol/server"

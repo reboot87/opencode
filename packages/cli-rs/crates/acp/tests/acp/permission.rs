@@ -1,3 +1,5 @@
+//! ACP 协议测试：权限。
+
 use std::sync::Arc;
 use std::sync::atomic::{AtomicUsize, Ordering};
 

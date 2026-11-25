@@ -33,6 +33,8 @@ import {
  * marquee, side) by planar projection, weathered in the shader with a shared paint tile, dust on
  * upward faces and grime near the floor. The coin door, controls, bezel, marquee retainers and
  * screws are real geometry.
+ *
+ * 3D 街机场景组件：机台。
  */
 
 export const size = { width: 0.67, height: 1.8, depth: 0.76 }

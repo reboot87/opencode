@@ -1,3 +1,10 @@
+/**
+ * 上下文压缩·HTTP的测试。
+ *
+ * 被测模块：@opencode/ai/compaction-http
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import { Effect } from "effect"
 import { FetchHttpClient } from "effect/http"

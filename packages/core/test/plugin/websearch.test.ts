@@ -1,3 +1,10 @@
+/**
+ * 网页搜索的测试。
+ *
+ * 被测模块：@opencode/core/plugin/websearch
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { beforeEach, describe, expect } from "bun:test"
 import { Effect } from "effect"
 import { Integration } from "@opencode/core/integration"

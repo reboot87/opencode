@@ -1,3 +1,7 @@
+/**
+ * Deepgram provider 门面。
+ * Deepgram 语音 provider，涵盖语音合成（TTS）与转写（STT），提供对应模型工厂。
+ */
 import { Auth } from "../route/auth.js"
 import { AuthOptions, type ProviderAuthOption } from "../route/auth-options.js"
 import { MediaRoute } from "../route/media.js"

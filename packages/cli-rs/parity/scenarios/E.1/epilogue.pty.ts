@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：epilogue·伪终端。
+ *
+ * 规格编号：E.1。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The exit epilogue (G14): `-s ses_b` opens the session, Ctrl+C quits, and the terminal shows the wordmark, the
 // session title, and the command that continues it (`util/presentation.ts`). Both sides name themselves
 // "opencode" (OPENCODE_CLI_NAME).

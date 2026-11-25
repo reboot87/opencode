@@ -1,3 +1,6 @@
+/**
+ * 法律文档生成逻辑：条款·of·服务。
+ */
 import type { LegalDocumentContent } from "~/lib/legal"
 
 export const termsOfService: LegalDocumentContent = {

@@ -1,3 +1,7 @@
+/**
+ * 数据站组件 — LocaleLinks。
+ * 数据站点的界面组件中负责 LocaleLinks 部分，提供该部分所需的实现与类型定义。
+ */
 import { For } from "solid-js"
 import { Link } from "@solidjs/meta"
 import { LOCALES, localizedUrl, tag } from "../lib/language"

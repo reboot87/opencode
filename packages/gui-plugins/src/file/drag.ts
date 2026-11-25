@@ -1,3 +1,7 @@
+/**
+ * 文件插件 — Drag。
+ * 文件预览与操作的 GUI 插件中负责 Drag 部分，提供该部分所需的实现与类型定义。
+ */
 import { pathToFileUrl } from "./path"
 
 const buildDragImage = (target: HTMLElement) => {

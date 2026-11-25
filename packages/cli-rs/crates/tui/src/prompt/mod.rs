@@ -1,3 +1,5 @@
+//! 终端输入提示入口。
+
 pub mod attach;
 pub mod autocomplete;
 pub mod draft;

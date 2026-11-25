@@ -1,3 +1,7 @@
+/**
+ * 调试文案 — Is。
+ * 调试插件的多语言文案中负责 Is 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.toggle": "Sýna eða fela villuleitarstiku",
   providerAriaLabel: "Afkastagreining þjónustuveitu",

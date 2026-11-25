@@ -1,5 +1,7 @@
 //! Routes input to plugin handlers and tracks ownership of layers, modes, pointer captures, held keys and overlays.
 //! Revoking a mount releases its input state.
+//!
+//! 插件系统：`interact`。
 
 use std::any::Any;
 use std::cell::{Cell, RefCell};

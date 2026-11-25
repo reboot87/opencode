@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：路由·app。
+ *
+ * 规格编号：E.15a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The diff viewer as a full-screen route (F15): `/diff` on home opens it with the file tree and unified hunks (the
 // patches are too narrow to split at 120 columns). `]` and `[` step through hunks across files, `s` and `m` review
 // the single file and move on, and `q` goes back home.

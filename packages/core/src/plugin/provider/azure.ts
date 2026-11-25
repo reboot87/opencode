@@ -1,3 +1,7 @@
+/**
+ * Azure OpenAI provider 插件。
+ * 注册 Azure OpenAI provider，支持 Cognitive Services 与 Foundry 两类作用域的 OAuth 登录。
+ */
 import { Clock, Effect, Equal, FiberHandle, Option, Schema, Semaphore, Stream } from "effect"
 import { HttpClient, HttpClientRequest, HttpClientResponse } from "effect/http"
 import { ChildProcess } from "effect/process"

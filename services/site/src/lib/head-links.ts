@@ -16,7 +16,10 @@ export const headLinks: Middleware = async (_event, next) => {
   return value
 }
 
-/** The Link header for the stylesheets in a page's head, if it has any. */
+/** The Link header for the stylesheets in a page's head, if it has any.
+ *
+ * 站点共享逻辑：头部链接。
+ */
 export function stylesheetLinks(html: string) {
   const end = html.indexOf("</head>")
   if (end < 0) return

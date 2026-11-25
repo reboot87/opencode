@@ -1,5 +1,7 @@
 //! Renders tool progress and final results into scrollback. Mini adds structured bodies to the one-line summaries
 //! shared with `run`.
+//!
+//! 精简版实现：工具。
 
 use opencode_api::generated::{SessionMessageAssistantToolState as State, ToolContent};
 use opencode_ui::tool_info::{

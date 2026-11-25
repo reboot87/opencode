@@ -1,3 +1,7 @@
+/**
+ * 浏览器扩展 API — MatchPatternTest。
+ * 浏览器插件暴露给扩展的接口中负责 MatchPatternTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { globMatch, matchesHost } from "./match-pattern"
 

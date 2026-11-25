@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：发布版本·pr。
 # publish-version-pr.sh <sha>: opens the pull request that brings the release commit (versions and changelog) back to dev.
 # Pushing to dev is blocked by rulesets, so this never merges.
 . "$(dirname "$0")/lib.sh"

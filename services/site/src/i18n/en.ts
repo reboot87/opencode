@@ -1,3 +1,6 @@
+/**
+ * 多语言文案：`en`。
+ */
 export const dict = {
   "nav.github": "GitHub",
   "nav.docs": "Docs",

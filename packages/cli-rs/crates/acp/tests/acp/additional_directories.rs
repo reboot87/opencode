@@ -1,3 +1,5 @@
+//! ACP 协议测试：额外目录。
+
 use opencode_acp::paths::resolve_lexical;
 use opencode_util::path::Flavor;
 use serde_json::{Value, json};

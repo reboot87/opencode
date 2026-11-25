@@ -1,4 +1,6 @@
 //! Tool transcript rows, states, and click actions.
+//!
+//! 终端界面测试：工具。
 
 use crate::support::{self, Fake, Harness, Log, WAIT, deref_harness};
 

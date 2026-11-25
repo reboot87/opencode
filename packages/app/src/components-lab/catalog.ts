@@ -1,3 +1,7 @@
+/**
+ * 组件实验室 — Catalog。
+ * 用于试用与调试 UI 组件的页面中负责 Catalog 部分，提供该部分所需的实现与类型定义。
+ */
 /* oxlint-disable anti-slop/no-unsafe-dictionary-type -- CSF args are props each story owns; the lab forwards them */
 import { Schema } from "effect"
 import { choice, knob, text, toggle, type Field } from "knobs"

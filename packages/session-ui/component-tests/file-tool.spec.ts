@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — FileToolSpec。
+ * 会话界面组件的测试中负责 FileToolSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, story } from "../../stories/playwright/story"
 
 story("keeps grouped file choices when the Used group reopens", async ({ mount }) => {

@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — TerminalPaneThemeTest。
+ * 终端组件的测试中负责 TerminalPaneThemeTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { resolveThemeDocument, type HueScale, type ResolvedTheme } from "@opencode/theme/tui"
 import { terminalPalette } from "../../src/component/terminal-pane"

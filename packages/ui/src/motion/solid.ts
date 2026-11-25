@@ -1,3 +1,7 @@
+/**
+ * 动效 — Solid。
+ * 界面过渡与动画效果中负责 Solid 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, onCleanup } from "solid-js"
 import { frameLoop } from "./loop"
 import { observeReducedMotion, prefersReducedMotion } from "./reduced"

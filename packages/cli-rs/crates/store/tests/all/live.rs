@@ -2,6 +2,8 @@
 //! rehydrates session status on `server.connected`, reads sessions and one transcript, and prints
 //! the counts. The URL and password come from `opencode service status` and
 //! `opencode service get password`, as `script/live.sh` does. Reads only.
+//!
+//! 存储层测试：`live`。
 
 use std::time::{Duration, Instant};
 

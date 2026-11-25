@@ -1,3 +1,7 @@
+/**
+ * Vercel AI Gateway provider 门面。
+ * 通过 Vercel AI Gateway 转发，提供 chat / messages / responses / images / embeddings / decision 模型工厂与网关鉴权。
+ */
 import { Effect, Schema } from "effect"
 import { AnthropicMessages } from "../protocols/anthropic-messages.js"
 import { OpenAIChat } from "../protocols/openai-chat.js"

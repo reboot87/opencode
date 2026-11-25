@@ -1,4 +1,6 @@
 //! Session export options and result dialogs.
+//!
+//! 终端弹窗组件：导出。
 
 use opencode_ui::dialog::{FooterAction, FooterProps, layout};
 use opencode_ui::select::{ActionRun, FooterHint, Group, SelectAction};

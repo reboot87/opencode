@@ -1,6 +1,8 @@
 //! Rust starts an isolated service and the TypeScript CLI discovers it. Both use a temporary home and clean
 //! environment.
 #![cfg(unix)]
+//!
+//! 服务层测试：`interop`。
 
 use std::path::{Path, PathBuf};
 use std::process::Command;

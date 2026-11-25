@@ -1,3 +1,10 @@
+/**
+ * 工具·history的测试。
+ *
+ * 被测模块：@opencode/ai/tool-history
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { Message, ToolCallPart, ToolResultPart } from "../src/schema/messages.js"
 import { normalizeToolHistory } from "../src/tool-history.js"

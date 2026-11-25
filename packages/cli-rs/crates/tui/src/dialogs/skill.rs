@@ -1,4 +1,6 @@
 //! Select a skill to insert it into the prompt.
+//!
+//! 终端弹窗组件：技能。
 
 use opencode_api::generated::{SkillID, SkillInfo};
 use opencode_store::{Catalog, Location};

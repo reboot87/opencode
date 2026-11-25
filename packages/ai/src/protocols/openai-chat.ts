@@ -1,3 +1,7 @@
+/**
+ * OpenAI Chat Completions 协议实现。
+ * 最广泛复用的协议基础：把请求转成 chat/completions 请求体，解析 SSE 流式增量。DeepSeek、Together、Cerebras 等兼容 API 的 provider 都复用它。
+ */
 import { Effect, Option, Schema } from "effect"
 import { Tool } from "@opencode/schema/tool"
 import { Route } from "../route/client.js"

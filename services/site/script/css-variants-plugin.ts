@@ -8,6 +8,8 @@ import variants from "../src/component/site/css-variants.json"
 /**
  * Production only: a stylesheet named *.dev.css is for development tools (Settings, Design mode) and
  * builds empty, so its rules never reach a page's render-blocking CSS.
+ *
+ * 站点构建脚本：CSS·变体插件。
  */
 export function devOnlyCss(): PluginOption {
   return {

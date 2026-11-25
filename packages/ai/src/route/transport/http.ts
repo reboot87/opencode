@@ -1,3 +1,7 @@
+/**
+ * HTTP 传输实现：用 Endpoint + Auth 渲染请求，经 RequestExecutor 发出，
+ * 返回原始的 HTTP 响应（字节流）给上层 Framing / Protocol 处理。
+ */
 import { Effect } from "effect"
 import { Headers, HttpClientRequest } from "effect/http"
 import { Auth } from "../auth.js"

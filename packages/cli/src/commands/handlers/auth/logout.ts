@@ -1,3 +1,7 @@
+/**
+ * auth logout 命令。
+ * 登出指定集成。
+ */
 import { intro, outro, spinner } from "@clack/prompts"
 import { Effect, Option } from "effect"
 import { Commands } from "../../commands"

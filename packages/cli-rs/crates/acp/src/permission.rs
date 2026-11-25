@@ -1,4 +1,6 @@
 //! Permission requests and completed edit diffs for the ACP client.
+//!
+//! ACP 协议实现：权限。
 
 mod unified;
 

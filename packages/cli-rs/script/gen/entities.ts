@@ -1,3 +1,8 @@
+/**
+ * entities脚本。
+ *
+ * Rust CLI 的代码生成器：由 TypeScript 单一来源生成 Rust 代码。
+ */
 // Generates strict HTML named references from the packed trie in `entities`, checking each name against its decoder.
 import { createRequire } from "node:module"
 

@@ -20,6 +20,8 @@ import { ogImage } from "~/lib/og"
  * setting comes first in its `when`, so production folds the modes it never shows out of the bundle.
  * Production's page is plain HTML, and its script renders production's mode again in the browser
  * (client/islands/arcade.tsx): change both.
+ *
+ * 3D 街机场景组件：非·found·页面。
  */
 export function NotFoundPage(props: { title: string; status: number }) {
   const [phone, setPhone] = createSignal(false)

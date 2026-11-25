@@ -1,3 +1,7 @@
+/**
+ * 工具流式解析工具。
+ * 在流式响应中解析工具定义与调用。
+ */
 import { Effect, Option } from "effect"
 import { AIError, LLMEvent, type ProviderMetadata, type ToolCall, type ToolInputError } from "../../schema/index.js"
 import { eventError, parseToolInput, type ToolAccumulator } from "../shared.js"

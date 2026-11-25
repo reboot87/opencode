@@ -1,3 +1,7 @@
+/**
+ * Agent 指令加载。
+ * 为 agent 提供其专属指令内容。
+ */
 export * as AgentInstructions from "./agent.js"
 
 import { Agent } from "@opencode/schema/agent"

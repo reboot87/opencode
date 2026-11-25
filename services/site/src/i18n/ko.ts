@@ -1,3 +1,6 @@
+/**
+ * 多语言文案：`ko`。
+ */
 import type { Dict } from "./en"
 import { dict as en } from "./en"
 

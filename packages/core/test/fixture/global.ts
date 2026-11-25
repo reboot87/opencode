@@ -1,3 +1,8 @@
+/**
+ * 全局测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import path from "path"
 import { Global } from "@opencode/util/global"
 import { Effect, Layer } from "effect"

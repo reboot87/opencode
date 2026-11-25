@@ -1,3 +1,7 @@
+/**
+ * Kilo 插件。
+ * 注册 Kilo provider。
+ */
 import { Effect } from "effect"
 import { define } from "@opencode/plugin/effect/plugin"
 

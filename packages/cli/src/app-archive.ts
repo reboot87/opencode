@@ -1,3 +1,7 @@
+/**
+ * 应用归档。
+ * 把应用版本条目编码为归档索引，供离线安装使用。
+ */
 import { Schema } from "effect"
 
 // The web UI the CLI serves, embedded as one binary file: a little-endian u32 byte length of a JSON index, the index of

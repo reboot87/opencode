@@ -1,3 +1,7 @@
+/**
+ * 主页会话 — Open。
+ * 主页中会话列表的展示中负责 Open 部分，提供该部分所需的实现与类型定义。
+ */
 export function shouldOpenSessionInBackground(input: {
   button: number
   mac: boolean

@@ -1,4 +1,6 @@
 //! Choose a local or remote comparison branch.
+//!
+//! 终端插件视图：基准分支。
 
 use opencode_api::client::Client;
 use opencode_api::generated::{LocationQueryInput, VcsBranchListInput, VcsBranchListOutput};

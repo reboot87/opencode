@@ -7,7 +7,10 @@ export function edgeCache() {
   return (globalThis as { caches?: { default?: Cache } }).caches?.default
 }
 
-/** Keeps the Worker alive after the response for `work` (ctx.waitUntil), without delaying the response. */
+/** Keeps the Worker alive after the response for `work` (ctx.waitUntil), without delaying the response.
+ *
+ * 站点共享逻辑：边界情形缓存。
+ */
 export function background(work: Promise<unknown>) {
   const done = work.catch((error) => console.error("background work failed", error))
   getRequestEvent()?.nativeEvent.waitUntil(done)

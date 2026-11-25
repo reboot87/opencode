@@ -1,3 +1,7 @@
+/**
+ * 浏览器磁盘 — ContainedFileTest。
+ * 浏览器插件的磁盘数据存储中负责 ContainedFileTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { mkdtemp, mkdir, realpath, rename, rm, symlink, writeFile } from "node:fs/promises"
 import { tmpdir } from "node:os"

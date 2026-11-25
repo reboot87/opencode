@@ -1,4 +1,7 @@
-/** The schemes `<all_urls>` covers, and the ones a `*` scheme stands for. */
+/**
+ * 
+ * The schemes `<all_urls>` covers, and the ones a `*` scheme stands for. 扩展 API中负责 MatchPattern 部分：浏览器扩展接口中与 MatchPattern 相关的状态、交互与渲染逻辑。
+ */
 const ALL_URLS = ["http:", "https:", "ws:", "wss:", "file:", "ftp:"]
 
 const ANY_SCHEME = ["http:", "https:", "ws:", "wss:"]

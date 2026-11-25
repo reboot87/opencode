@@ -12,7 +12,10 @@ export const layouts = ["grid", "radial", "spiral", "rings", "phyllotaxis"] as c
 export const axes = ["row", "column", "diagonal", "distance", "angle", "index", "noise"] as const
 export const orients = ["fixed", "tangent", "radial"] as const
 
-/** Where an emitter's elements come from: a point of the logo, its outline, or the mark's own cells. */
+/** Where an emitter's elements come from: a point of the logo, its outline, or the mark's own cells.
+ *
+ * 法律文档生成逻辑：`pattern`。
+ */
 export const emitOrigins = ["centre", "top-left", "bottom-right", "outline", "cells"] as const
 export const distributions = ["rays", "ripples", "spiral", "fan", "flow", "warpgrid", "echoes"] as const
 export const eases = ["linear", "ease", "in", "out", "exp", "step"] as const

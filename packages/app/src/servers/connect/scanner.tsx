@@ -1,3 +1,7 @@
+/**
+ * 连接服务端 — Scanner。
+ * 添加与连接远程服务端中负责 Scanner 部分，提供该部分所需的实现与类型定义。
+ */
 import QrScanner from "qr-scanner"
 import { createMemo, createSignal, onCleanup, onMount, Show, untrack } from "solid-js"
 import { Button } from "@opencode/ui/button"

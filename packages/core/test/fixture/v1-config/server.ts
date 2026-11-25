@@ -1,3 +1,8 @@
+/**
+ * 服务端测试夹具。
+ *
+ * 提供 v1 格式的配置样例，用于配置迁移与兼容校验。
+ */
 export * as ConfigServerV1 from "./server"
 
 import { Schema } from "effect"

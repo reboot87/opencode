@@ -1,3 +1,8 @@
+/**
+ * 快照·双实现对等性·比较脚本。
+ *
+ * 核心包的开发脚本：本地服务桩、数据准备与问题排查。
+ */
 // Compare two snapshot-parity.ts outputs and print every diverging step per scenario.
 const [left, right] = await Promise.all(process.argv.slice(2, 4).map((file) => Bun.file(file!).json()))
 let divergent = 0

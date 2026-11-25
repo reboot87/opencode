@@ -1,3 +1,7 @@
+/**
+ * 媒体配置类型。
+ * 定义 media 配置项的 Schema。
+ */
 export * as ConfigMedia from "./media.js"
 
 import { Schema } from "effect"

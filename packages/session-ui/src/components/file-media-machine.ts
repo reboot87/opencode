@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — FileMediaMachine。
+ * 跨场景复用的通用 UI 组件中负责 FileMediaMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export const FILE_MEDIA_READ_TIMEOUT_MS = 15_000
 
 export type RemoteMediaKind = "image" | "audio"

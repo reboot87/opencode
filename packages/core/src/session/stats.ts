@@ -1,3 +1,7 @@
+/**
+ * 会话统计（SessionStats）。
+ * 按时间窗口统计会话用量与活动，处理时间区间校验与 usage 事件解码。
+ */
 export * as SessionStats from "./stats.js"
 
 import { DateTime, Effect, Option, Schema, type Types } from "effect"

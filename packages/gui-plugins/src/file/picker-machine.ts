@@ -1,4 +1,8 @@
-/** The most sessions whose filter the window remembers; the least recently changed go first. */
+/**
+ * The most sessions whose filter the window remembers; the least recently changed go first.
+ *
+ * 文件插件中负责 PickerMachine 部分：文件预览与操作中与 PickerMachine 相关的状态、交互与渲染逻辑。
+ */
 export const PICKER_MAX_SESSIONS = 40
 
 /** How long an "Open file" focus request waits for its filter input to mount. */

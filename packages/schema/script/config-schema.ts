@@ -1,3 +1,8 @@
+/**
+ * 配置·模式定义脚本。
+ *
+ * 模式定义包的开发脚本：类型生成与版本对齐。
+ */
 import { Schema } from "effect"
 import { Config } from "../src/config.js"
 

@@ -1,3 +1,10 @@
+/**
+ * 响应·路由·录制的的测试。
+ *
+ * 被测模块：@opencode/ai/provider/responses-routes.recorded
+ *
+ * 覆盖各家供应商的接入实现：请求构造、响应解析与错误映射。
+ */
 import { expect } from "bun:test"
 import { Effect, Schema } from "effect"
 import { ai, LLMEvent, toDefinitions } from "../../src/effect.js"

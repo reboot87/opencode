@@ -1,3 +1,7 @@
+/**
+ * LLM Gateway 插件。
+ * 注册基于集成的 LLM Gateway provider。
+ */
 import { Effect } from "effect"
 import { define } from "@opencode/plugin/effect/plugin"
 import { Integration } from "../../integration.js"

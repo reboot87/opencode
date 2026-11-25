@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid UseEventTest：该文件实现 UseEventTest 相关的状态与逻辑。
+ */
 import { describe, expect, test } from "bun:test"
 import type { OpenCodeClient, OpenCodeEvent } from "@opencode/client"
 import { testRender } from "@opentui/solid"

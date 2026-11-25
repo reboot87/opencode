@@ -4,6 +4,8 @@ import "./carousel-arrows.css"
  * Previous and next buttons for a carousel (the changelog's media, the product cards): 24px targets
  * with 12px chevrons in the muted text colour. An end the carousel has reached is aria-disabled, so
  * the button keeps focus there; the chevrons point the way the page reads.
+ *
+ * 站点界面组件：轮播·arrows。
  */
 export function CarouselArrows(props: {
   previous: string

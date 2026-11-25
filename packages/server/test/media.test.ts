@@ -1,3 +1,10 @@
+/**
+ * 媒体的测试。
+ *
+ * 被测模块：@opencode/server/media
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { Database as Sqlite } from "bun:sqlite"
 import { createHash } from "node:crypto"
 import fs from "node:fs/promises"

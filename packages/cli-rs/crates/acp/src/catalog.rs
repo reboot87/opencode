@@ -1,4 +1,6 @@
 //! Per-directory catalogs update on server events.
+//!
+//! ACP 协议实现：目录清单。
 
 use std::collections::HashMap;
 use std::sync::atomic::{AtomicU64, Ordering};

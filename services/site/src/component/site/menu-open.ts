@@ -4,6 +4,8 @@ import { addMenuCloser, runMenuClosers } from "./menu-closers"
 /**
  * Registers a menu's close with closeAllMenus (menu-closers.ts). Call it while a component is created;
  * the close is dropped again when the component is cleaned up.
+ *
+ * 站点界面组件：菜单打开。
  */
 export function onCloseMenus(close: () => void) {
   onCleanup(addMenuCloser(close))

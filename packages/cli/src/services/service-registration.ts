@@ -1,3 +1,7 @@
+/**
+ * 服务注册。
+ * 把服务信息注册到系统服务管理器。
+ */
 export * as ServiceRegistration from "./service-registration"
 
 import { Service, type Info } from "@opencode/client/effect/service"

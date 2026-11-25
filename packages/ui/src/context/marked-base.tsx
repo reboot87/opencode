@@ -1,3 +1,7 @@
+/**
+ * UI 上下文 — MarkedBase。
+ * UI 包的上下文提供者中负责 MarkedBase 部分，提供该部分所需的实现与类型定义。
+ */
 import { Marked } from "marked"
 
 export function createMarkdownBase() {

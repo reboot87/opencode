@@ -5,6 +5,8 @@ import { createSignal } from "solid-js"
  * with their values before and after; undo and redo hand the values back to the store to apply and
  * save. Changes to the same keys while the pointer is down or within `merge` ms (a slider drag, a
  * run of clicks) become one step.
+ *
+ * 站点界面组件：`history`。
  */
 
 /** `path` points into an object value, for the toast. */

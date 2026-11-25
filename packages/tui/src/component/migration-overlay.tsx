@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — MigrationOverlay。
+ * 终端界面（Solid）组件中负责 MigrationOverlay 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, onCleanup, onMount, Show } from "solid-js"
 import { useClient } from "../context/client"
 import { useTheme } from "../context/theme"

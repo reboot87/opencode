@@ -1,3 +1,7 @@
+/**
+ * 对话框 — DialogStories。
+ * 模态对话框组件中负责 DialogStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Overlay, Portal, Root, Trigger } from "@kobalte/core/dialog"
 import { Dialog, DialogBody, DialogFooter, DialogHeader, DialogTitle, DialogTitleGroup } from "./dialog"
 import { Button } from "@opencode/ui/button"

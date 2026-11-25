@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — Jobs。
+ * 内置浏览器功能的 GUI 插件中负责 Jobs 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, getOwner, onCleanup, runWithOwner, untrack } from "solid-js"
 import { createKeyed, createLatest, usePlugin, type IpcClient } from "@opencode/plugin/gui"
 import type { Choice } from "./choices"

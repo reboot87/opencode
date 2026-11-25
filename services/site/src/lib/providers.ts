@@ -3,6 +3,8 @@
  * order they appear. Each ID is a provider in OpenCode's bundled models.dev catalog
  * (packages/core/src/models-dev/snapshot.txt, 226 providers); Ollama and LM Studio also run locally.
  * The marks are in public/providers (see its README).
+ *
+ * 站点共享逻辑：供应商。
  */
 export const providerMarks = [
   { id: "anthropic", name: "Anthropic", model: "Claude" },

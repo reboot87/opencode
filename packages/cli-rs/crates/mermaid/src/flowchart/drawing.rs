@@ -1,3 +1,5 @@
+//! Mermaid 图表渲染：`drawing`。
+
 use std::collections::{HashMap, HashSet};
 
 use indexmap::IndexMap;

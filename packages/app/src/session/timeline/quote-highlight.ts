@@ -1,3 +1,7 @@
+/**
+ * 会话时间线 — QuoteHighlight。
+ * 会话消息时间线的渲染中负责 QuoteHighlight 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, onCleanup } from "solid-js"
 import type { QuoteSource, createComposerQuoteSource } from "@/composer/quote-source"
 import { createQuoteBackground } from "./quote-background"

@@ -11,7 +11,10 @@ import { $, $$, html, on, t, target } from "./dom"
 // its button; any link chosen in one, a wider window or a page restored from the back/forward cache
 // closes them all.
 
-/** Registers a menu's close with closeMenus: islands' menus too, and the Solid overlays' (menu-closers.ts). */
+/** Registers a menu's close with closeMenus: islands' menus too, and the Solid overlays' (menu-closers.ts).
+ *
+ * 浏览器端脚本：菜单。
+ */
 export function onCloseMenus(close: () => void) {
   addMenuCloser(close)
 }

@@ -1,3 +1,8 @@
+/**
+ * 插件对等性场景：TUI。
+ *
+ * 插件能力的对等性场景：验证 Rust 与 TypeScript 插件行为一致。
+ */
 // The fence-margin test plugin, TypeScript side: a code-block renderer for `parity` fences that draws `fence: <code>`
 // and sets no margin of its own, as a plugin that does not know Core's top-level Markdown keeps none for it.
 // parity/scenarios/P.2/plugin-fence-margin.app.ts loads this directory through the cli.json `plugins` entry; the

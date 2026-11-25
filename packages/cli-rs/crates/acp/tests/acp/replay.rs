@@ -1,3 +1,5 @@
+//! ACP 协议测试：回放。
+
 use serde_json::{Value, json};
 
 use crate::wire::{WireOptions, assert_matches, assistant_message, file_diff, make_session, start_wire};

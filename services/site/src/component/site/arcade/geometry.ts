@@ -3,6 +3,8 @@ import screenMask from "./screen-mask.json"
  * One shared coordinate space for the arcade 404: "world" units are pixels of the straight-on
  * cabinet plate (front-3072, 3072×5504). Every other layer is registered into it from
  * measurements taken on the generated images, so the camera can move continuously across them.
+ *
+ * 街机小游戏组件：几何。
  */
 
 export type Rect = { x: number; y: number; w: number; h: number }

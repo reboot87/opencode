@@ -1,3 +1,7 @@
+/**
+ * API 仿真工具。
+ * 解析并模拟 JSON-RPC 风格的 API 调用，用于测试与客户端联调。
+ */
 import { Effect, Schema } from "effect"
 import { Rpc, RpcGroup } from "effect/rpc"
 

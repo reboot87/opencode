@@ -1,10 +1,15 @@
+/**
+ * 文本清理工具。
+ * 去除字符串与键中的孤立 UTF-16 代理项，避免部分 provider 拒绝非法 JSON；未变化子树按引用返回以减少拷贝。
+ */
 import { Schema } from "effect"
 import { Media } from "../media.js"
 import { isRecord } from "./record.js"
 
 /**
- * Replace lone UTF-16 surrogates in every string, key and nested value. Unchanged
- * subtrees are returned by reference so requests with large histories are not copied.
+ * 清理所有字符串、键和嵌套值里的孤立 UTF-16 代理项（lone surrogate）。
+ * 某些 provider 拒绝含非法代理对的 JSON，发送前需要修正。
+ * 未变化的子树按引用返回，因此含大量历史消息的请求不会被整体拷贝。
  */
 export const sanitizeSurrogates = <T>(value: T): T => {
   if (typeof value === "string") return (value.isWellFormed() ? value : value.toWellFormed()) as T

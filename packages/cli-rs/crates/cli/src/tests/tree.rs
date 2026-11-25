@@ -1,3 +1,5 @@
+//! 命令行入口测试：树。
+
 use serde_json::{Value, json};
 
 use crate::args::{Arg, BUILTINS, Count, Default, Flag, Kind, ROOT, Spec};

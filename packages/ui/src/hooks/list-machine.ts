@@ -1,3 +1,7 @@
+/**
+ * UI Hook — ListMachine。
+ * 可复用的 React Hook中负责 ListMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import fuzzysort from "fuzzysort"
 
 /** How long an async `items(query)` may run before the list reports it failed rather than loading forever. */

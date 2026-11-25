@@ -14,6 +14,8 @@ type Block =
 /**
  * The page's Markdown source shown as a document: every marker stays visible (`#`, `-`, `**`,
  * fences), and links keep their `[text](url)` form but still work.
+ *
+ * 站点界面组件：Markdown·视图。
  */
 export function MarkdownView(props: { source: string; file: string; href?: string; home: string; onHome: () => void }) {
   const [copied, setCopied] = createSignal(false)

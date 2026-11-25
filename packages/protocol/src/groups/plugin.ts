@@ -1,3 +1,7 @@
+/**
+ * 插件 API 分组。
+ * 定义插件的列举与安装端点。
+ */
 import { Location } from "@opencode/schema/location"
 import { Plugin } from "@opencode/schema/plugin"
 import { Schema } from "effect"

@@ -1,3 +1,10 @@
+/**
+ * 主机·模型的测试。
+ *
+ * 被测模块：@opencode/core/plugin/host-model
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { expect } from "bun:test"
 import { Agent } from "@opencode/core/agent"
 import { Plugin } from "@opencode/core/plugin"

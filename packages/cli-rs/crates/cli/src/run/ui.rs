@@ -1,3 +1,5 @@
+//! 命令行入口：`ui`。
+
 use std::io::Write;
 use std::sync::atomic::{AtomicBool, Ordering};
 

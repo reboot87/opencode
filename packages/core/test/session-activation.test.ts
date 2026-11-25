@@ -1,3 +1,10 @@
+/**
+ * 会话·activation的测试。
+ *
+ * 被测模块：@opencode/core/session-activation
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, setDefaultTimeout } from "bun:test"
 import { Effect } from "effect"
 import path from "path"

@@ -1,3 +1,7 @@
+/**
+ * 数据站文案 — Es。
+ * 数据站点的多语言文案中负责 Es 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "app.title": "Clasificaciones de uso de modelos de IA | OpenCode Data",
   "app.description":

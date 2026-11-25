@@ -1,3 +1,7 @@
+/**
+ * 应用外壳 — MobileDrawer。
+ * 浏览器应用的窗口框架与路由外壳中负责 MobileDrawer 部分，提供该部分所需的实现与类型定义。
+ */
 import Drawer from "@corvu/drawer"
 import type { ParentProps } from "solid-js"
 import { useLanguage } from "@/runtime/i18n/language"

@@ -1,5 +1,7 @@
 //! One sandboxed VM per activation. Modules resolve within the staged sources. The heap cap and interrupt budget
 //! apply to every plugin call.
+//!
+//! Luau 插件运行时：`vm`。
 
 use std::cell::{Cell, OnceCell, RefCell};
 use std::collections::{BTreeMap, BTreeSet};

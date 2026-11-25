@@ -1,3 +1,10 @@
+/**
+ * 持久化·伪终端的测试。
+ *
+ * 被测模块：@opencode/server/persistent-pty
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { existsSync } from "node:fs"
 import fs from "node:fs/promises"
 import os from "node:os"

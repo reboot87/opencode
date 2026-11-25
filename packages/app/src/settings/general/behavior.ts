@@ -1,3 +1,7 @@
+/**
+ * 通用设置 — Behavior。
+ * 语言、启动行为等通用设置中负责 Behavior 部分，提供该部分所需的实现与类型定义。
+ */
 import { onCleanup } from "solid-js"
 import {
   createSoundPreviewState,

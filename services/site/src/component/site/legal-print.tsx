@@ -39,7 +39,10 @@ const entity = "Anomaly Innovations, Inc."
 const address = ["2443 Fillmore St #380-6343", "San Francisco, CA 94115", "United States"]
 const contact = "help@anoma.ly"
 
-/** The numbered references for the links in the document text, by href. */
+/** The numbered references for the links in the document text, by href.
+ *
+ * 站点界面组件：法律·print。
+ */
 export const LegalReferences = createContext<Map<string, number>>()
 
 /** The reference number a link prints with, or undefined (anchors, mail, outside a print style). */

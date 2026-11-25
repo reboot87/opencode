@@ -1,3 +1,7 @@
+/**
+ * 语音夹具 — History。
+ * 语音功能的测试夹具中负责 History 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageInfo } from "@opencode/client/promise"
 
 // Recorded from this implementation session's GET /message on 2026-10-22.

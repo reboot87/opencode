@@ -1,4 +1,6 @@
 //! Renders fenced LaTeX and inline math as Unicode terminal cells.
+//!
+//! LaTeX 公式渲染入口。
 
 pub mod inline;
 pub mod layout;

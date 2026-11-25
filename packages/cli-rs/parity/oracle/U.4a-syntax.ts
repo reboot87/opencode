@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：U.4a·syntax。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-ORACLE for U.4a: the syntax style the TUI derives from a theme (`generateSyntax`, packages/theme/src/tui/syntax.ts)
 // for a few built-in themes and modes. Writes parity/fixtures/U.4a/syntax.json; crates/ui/tests/all/content.rs builds
 // opencode_ui::code::syntax_theme for the same themes and compares every scope.

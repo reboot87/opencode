@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — TabGroupsUi。
+ * 自定义窗口标题栏中负责 TabGroupsUi 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, For, on, onCleanup, Show, untrack, type JSX } from "solid-js"
 import { createStore, produce } from "solid-js/store"
 import { createSimpleContext } from "@opencode/ui/context"

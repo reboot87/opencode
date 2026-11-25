@@ -1,3 +1,7 @@
+/**
+ * 审查插件 — Kinds。
+ * 变更审查界面的 GUI 插件中负责 Kinds 部分，提供该部分所需的实现与类型定义。
+ */
 import type { FileDiffInfo } from "@opencode/client/promise"
 import type { ChangeKind } from "@opencode/plugin/gui/review"
 import { artifactKind } from "@opencode/util/artifact"

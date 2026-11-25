@@ -1,3 +1,7 @@
+/**
+ * 连接服务端 — MachineTest。
+ * 添加与连接远程服务端中负责 MachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   CAMERA_PROBE_TIMEOUT_MS,

@@ -1,3 +1,7 @@
+/**
+ * 会话头部 — SessionHeaderActionsStories。
+ * 会话界面顶部的标题与操作区中负责 SessionHeaderActionsStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal } from "solid-js"
 import { useLanguage } from "@/runtime/i18n/language"
 import { formatKeybindParts } from "@/shell/commands/command"

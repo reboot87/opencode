@@ -1,3 +1,7 @@
+/**
+ * 数据站路由 — [404]。
+ * 数据站点的路由页面中负责 [404] 部分，提供该部分所需的实现与类型定义。
+ */
 import { Title } from "@solidjs/meta"
 import { NotFoundMeta } from "../component/not-found-meta"
 import { useLanguage } from "../context/language"

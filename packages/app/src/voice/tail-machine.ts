@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — TailMachine。
+ * 实时语音会话的界面中负责 TailMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export const UTTERANCE_MERGE_WINDOW = 1_500
 
 export const MAX_UTTERANCES = 60

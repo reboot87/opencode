@@ -1,3 +1,7 @@
+/**
+ * 引导流程 — MachineTest。
+ * 首次启动的引导界面中负责 MachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   createOnboardingState,

@@ -1,3 +1,7 @@
+/**
+ * 引导流程 — Index 出口。
+ * 集中导出 引导流程 中 Index 相关的实现、组件与类型。
+ */
 import { ServerConnection, useCurrentRoute, useGlobal, useLanguage, useServers, useTabs } from "@opencode/app/desktop"
 import { showToast } from "@opencode/ui/toast"
 import { createEffect, createSignal, onCleanup, untrack } from "solid-js"

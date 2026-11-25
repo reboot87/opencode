@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：国际化。
+ */
 import { expect, test } from "bun:test"
 import { checkLocale } from "~/i18n/check"
 import { LOCALES } from "~/lib/language"

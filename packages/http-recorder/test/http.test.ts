@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — HttpTest。
+ * 终端界面的测试中负责 HttpTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { Effect, Exit } from "effect"
 import { FetchHttpClient, HttpClient, HttpClientRequest } from "effect/http"

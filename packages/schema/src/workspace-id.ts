@@ -1,3 +1,7 @@
+/**
+ * 工作区 ID 类型。
+ * 定义工作区的品牌 ID 类型。
+ */
 import { Schema } from "effect"
 import { ascending } from "./identifier.js"
 import { statics } from "./schema.js"

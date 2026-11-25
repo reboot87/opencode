@@ -1,3 +1,7 @@
+/**
+ * Mistral Chat Completions 协议实现。
+ * Mistral 风格的 chat 协议，含其特有的工具调用与流式帧处理。
+ */
 import { Effect, Schema } from "effect"
 import { Auth } from "../route/auth.js"
 import { Route } from "../route/client.js"

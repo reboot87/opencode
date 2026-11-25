@@ -17,6 +17,8 @@
 //! ```compile_fail,E0639
 //! let fetch = opencode_plugin_abi::Fetch { path: "/api/x".to_owned(), ..Default::default() };
 //! ```
+//!
+//! Rust 构建脚本。
 
 use crate::interact::{self, Anchor, Bind, LayerScope, OpenPanel, Overlay};
 use crate::v2::{self, DiffView, Fit, MountId, Node, Paint, Source, Split};

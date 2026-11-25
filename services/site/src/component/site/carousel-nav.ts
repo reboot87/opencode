@@ -3,6 +3,8 @@
  * in the app and on the static pages): shown while the cards overflow, each end aria-disabled once
  * the cards reach it, and a press moves by as many whole cards as fit (at least one), which the snap
  * lines up. No framework code. `nav` holds the two buttons; returns its stop.
+ *
+ * 站点界面组件：轮播导航。
  */
 export function carouselNav(nav: HTMLElement, track: HTMLElement) {
   const [previous, next] = nav.querySelectorAll("button")

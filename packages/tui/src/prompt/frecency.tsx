@@ -1,3 +1,7 @@
+/**
+ * 提示输入 — Frecency。
+ * 提示输入的解析、编辑与提交中负责 Frecency 部分，提供该部分所需的实现与类型定义。
+ */
 import path from "path"
 import { onMount } from "solid-js"
 import { createStore } from "solid-js/store"

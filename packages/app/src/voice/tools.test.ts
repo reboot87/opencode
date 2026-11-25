@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — ToolsTest。
+ * 实时语音会话的界面中负责 ToolsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, describe, expect, setSystemTime, test } from "bun:test"
 import type { SessionInfo } from "@opencode/client/promise"
 import type { ServerCtx } from "@/runtime/server/runtime"

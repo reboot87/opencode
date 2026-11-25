@@ -1,3 +1,7 @@
+/**
+ * 性能测试 — HomeBench。
+ * 界面渲染性能基准中负责 HomeBench 部分，提供该部分所需的实现与类型定义。
+ */
 // Home with a large session index: 500 to 20,000 root sessions across 12 folders, at 1440×900. Home always shows
 // the newest 64, so what grows with the index is the work of handling it, not what is on screen.
 import { bench, web } from "@hona/strobe"

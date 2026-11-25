@@ -1,6 +1,8 @@
 //! Cross-process directory lock compatible with `Flock`. Each owner refreshes a heartbeat. A contender takes the
 //! breaker lock and rechecks before removing a stale lock; release verifies the owner's token. Run blocking calls off
 //! the UI thread.
+//!
+//! 本地配置与路径：锁。
 
 use std::fs;
 use std::io::{self, Write};

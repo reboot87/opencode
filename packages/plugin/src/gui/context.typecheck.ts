@@ -1,3 +1,7 @@
+/**
+ * GUI 上下文类型检查样例。
+ * 以 Contract 校验 GUI 插件上下文与树形结构的类型一致性。
+ */
 // Type-level contract of the setup contexts, checked by `bun typecheck`. Nothing imports this file. Each
 // `@ts-expect-error` fails the typecheck if its line stops being an error.
 import type { Accessor } from "solid-js"

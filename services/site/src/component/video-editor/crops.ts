@@ -41,7 +41,10 @@ export const crops: Record<"portrait" | "landscape" | "feature", Crop[]> = {
   ],
 }
 
-/** The centred rectangle of a W×H output that a crop shows, in output px. */
+/** The centred rectangle of a W×H output that a crop shows, in output px.
+ *
+ * 视频编辑器组件：`crops`。
+ */
 export function cropRect(size: [number, number], ratio: number) {
   const [W, H] = size
   if (ratio < W / H) return { x: (W - H * ratio) / 2, y: 0, w: H * ratio, h: H }

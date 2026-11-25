@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：extmark·chips·伪终端。
+ *
+ * 规格编号：OT。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Two `[Image 1]` labels with the space between them deleted. From the end of the second, Left skips only the second
 // label; from the line start, two Rights skip only the first (OpenTUI #2104, on both sides since 0.9.4). A typed key
 // shows where the cursor is.

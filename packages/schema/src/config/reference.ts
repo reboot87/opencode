@@ -1,3 +1,7 @@
+/**
+ * 引用配置类型。
+ * 定义 reference 配置项的 Schema。
+ */
 export * as ConfigReference from "./reference.js"
 
 import { Schema } from "effect"

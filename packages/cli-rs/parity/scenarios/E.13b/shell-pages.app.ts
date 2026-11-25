@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：Shell·页面·app。
+ *
+ * 规格编号：E.13b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The server pages shell output at UTF-8 boundaries (#63984). The running shell wrote 65,535 bytes of ASCII, then
 // `😀 end` and two of the three bytes of `€`. The first page stops before the emoji rather than cut it at 65,536
 // bytes, the second starts with it, and the third answers nothing and keeps its cursor before `€`: the dialog waits

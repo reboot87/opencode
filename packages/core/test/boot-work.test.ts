@@ -1,3 +1,10 @@
+/**
+ * boot·work的测试。
+ *
+ * 被测模块：@opencode/core/boot-work
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 // Counts the work a cold Location boot and one session turn do, so a speedup can't silently regress:
 // catalog lookups per step (#58601), Azure model edits per model rebuild (#58600) and git spawns (#58602).
 // These are exact counts, not timings. Changing one is fine when the change is intended; update the expected

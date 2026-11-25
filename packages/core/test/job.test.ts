@@ -1,3 +1,10 @@
+/**
+ * 作业的测试。
+ *
+ * 被测模块：@opencode/core/job
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import { Database } from "@opencode/core/database/database"
 import jobMigration from "@opencode/core/database/migration/20261030054400_job"

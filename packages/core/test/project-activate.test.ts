@@ -1,3 +1,10 @@
+/**
+ * project·activate的测试。
+ *
+ * 被测模块：@opencode/core/project-activate
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import { Effect, Exit, Fiber, Layer, Scope, Tracer } from "effect"
 import { Agent } from "@opencode/schema/agent"

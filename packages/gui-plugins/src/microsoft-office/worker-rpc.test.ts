@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — WorkerRpcTest。
+ * Microsoft Office 文档预览插件中负责 WorkerRpcTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, describe, expect, test } from "bun:test"
 import type { FixtureMethods } from "./worker-rpc.fixture"
 import { AbortedError, createWorkerClient, SupersededError, WorkerClosedError } from "./worker-rpc"

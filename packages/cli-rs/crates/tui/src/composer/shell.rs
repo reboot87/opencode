@@ -1,4 +1,6 @@
 //! Shell tab and its output dialog.
+//!
+//! 终端界面：Shell。
 
 use opencode_api::generated::{LocationQueryInput, SessionMessageShellStatus, ShellRemoveInput};
 use opencode_store::Shell;

@@ -1,3 +1,7 @@
+/**
+ * 斜体文本 — SlashStories。
+ * 以斜体呈现的文本组件中负责 SlashStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Slash } from "./slash"
 
 export default {

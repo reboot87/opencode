@@ -1,3 +1,5 @@
+//! 终端界面测试：调整尺寸。
+
 use crate::support::{self, DIRECTORY, Fake, Harness};
 
 use std::sync::Arc;

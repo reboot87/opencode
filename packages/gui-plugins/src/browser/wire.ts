@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — Wire。
+ * 内置浏览器功能的 GUI 插件中负责 Wire 部分，提供该部分所需的实现与类型定义。
+ */
 import { Browser } from "@opencode/plugin-browser/rpc"
 import { Option, Schema } from "effect"
 

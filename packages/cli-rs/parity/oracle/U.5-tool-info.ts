@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：U.5·工具·info。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-ORACLE for U.5: runs a corpus of tool parts, built with the TUI's own `canonicalToolPart` fixture, through
 // `toolInlineInfo`, and the tool display helpers over a few inputs each. Writes parity/fixtures/U.5/tool-info.json;
 // crates/ui/tests/all/tool_info_oracle.rs feeds the same parts to the Rust port and compares.

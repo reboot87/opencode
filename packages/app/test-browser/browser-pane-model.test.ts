@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — BrowserPaneModelTest。
+ * 浏览器环境下的测试中负责 BrowserPaneModelTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, expect, jest, spyOn, test } from "bun:test"
 import { createRoot, createSignal } from "solid-js"
 import type { IpcClient, SessionRef, SetupContext } from "@opencode/plugin/gui"

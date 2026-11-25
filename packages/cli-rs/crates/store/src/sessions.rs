@@ -1,3 +1,5 @@
+//! 会话存储层：会话。
+
 use std::collections::{HashMap, HashSet};
 use std::ops::{Index, IndexMut};
 

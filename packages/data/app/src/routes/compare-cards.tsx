@@ -1,3 +1,7 @@
+/**
+ * 数据站路由 — CompareCards。
+ * 数据站点的路由页面中负责 CompareCards 部分，提供该部分所需的实现与类型定义。
+ */
 import { ProviderIcon } from "@opencode/ui/provider-icon"
 import { For, Show } from "solid-js"
 import { providerIconId } from "../lib/provider-icon"

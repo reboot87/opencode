@@ -1,3 +1,8 @@
+/**
+ * 模式定义脚本。
+ *
+ * CLI 包的开发脚本：构建校验、配置生成与发布准备。
+ */
 import { Schema } from "effect"
 import { format } from "prettier"
 import { Info, SchemaURL } from "../src/config/schema"

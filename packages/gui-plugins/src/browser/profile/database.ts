@@ -1,3 +1,7 @@
+/**
+ * 浏览器配置 — Database。
+ * 浏览器插件的用户配置与身份中负责 Database 部分，提供该部分所需的实现与类型定义。
+ */
 import { randomUUID } from "node:crypto"
 import { copyFile, lstat, mkdir, readdir, rm, rmdir, unlink } from "node:fs/promises"
 import path from "node:path"

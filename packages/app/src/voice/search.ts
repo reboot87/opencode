@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — Search。
+ * 实时语音会话的界面中负责 Search 部分，提供该部分所需的实现与类型定义。
+ */
 // Ported from the OpenCode iOS app's `VoiceSessionSearch` and `VoiceDelegatorWorkspace.matching`: spoken
 // names arrive with filler, in any order and sometimes misheard.
 const filler = new Set([

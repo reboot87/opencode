@@ -1,3 +1,8 @@
+/**
+ * structured·补丁脚本。
+ *
+ * Rust CLI 的代码生成器：由 TypeScript 单一来源生成 Rust 代码。
+ */
 // Records jsdiff's structured patch hunk ranges for the ACP diff tests.
 import { createRequire } from "node:module"
 

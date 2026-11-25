@@ -1,3 +1,7 @@
+/**
+ * 路径工具测试。
+ * 验证路径规范化、文件名提取与 file:// URL 转换。
+ */
 import { describe, expect, test } from "bun:test"
 import { encodeFilePath, getDirectory, getFilename, getFilenameTruncated, truncateMiddle } from "./path.js"
 

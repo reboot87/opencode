@@ -1,3 +1,7 @@
+/**
+ * 浏览器扩展 API — PermissionsTest。
+ * 浏览器插件暴露给扩展的接口中负责 PermissionsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { holds } from "./permissions"
 

@@ -1,3 +1,7 @@
+/**
+ * 桌面插件 — LifecycleMachine。
+ * 桌面端插件的加载与宿主能力中负责 LifecycleMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Scope } from "@opencode/plugin/gui/host"
 
 /** One running copy of a plugin's main code; the machine only compares its scope. */

@@ -1,3 +1,10 @@
+/**
+ * 供应商·选项的测试。
+ *
+ * 被测模块：@opencode/core/config/provider-options
+ *
+ * 覆盖配置加载、合并、校验与分层覆盖（global / project / local）的行为。
+ */
 import { describe, expect, test } from "bun:test"
 import { ConfigProviderOptionsV1 } from "@opencode/core/v1/config/provider-options"
 

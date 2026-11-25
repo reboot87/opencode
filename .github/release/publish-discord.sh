@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：发布·Discord。
 # publish-discord.sh: announces the v<version> release in Discord with OPENCODE_RELEASE_NOTES (DISCORD_WEBHOOK).
 # Discord caps an embed description at 4096 characters, so longer notes are cut and link to the GitHub release.
 . "$(dirname "$0")/lib.sh"

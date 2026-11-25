@@ -1,3 +1,7 @@
+/**
+ * Photon 图片归一化。
+ * 把 Photon 解码结果归一化为统一的图片内容结构。
+ */
 export * as PhotonNormalize from "./photon-normalize.js"
 
 import photonWasm from "#photon-wasm"

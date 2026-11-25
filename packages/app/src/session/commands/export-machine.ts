@@ -1,3 +1,7 @@
+/**
+ * 会话命令 — ExportMachine。
+ * 会话界面提供的命令中负责 ExportMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ServerConnection } from "@/runtime/server/registry"
 import type { SessionExportData } from "./export"
 

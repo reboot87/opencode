@@ -1,3 +1,7 @@
+/**
+ * Claude Agent 集成。
+ * 注册 claude-login 集成方法用于 Claude 账号登录。
+ */
 export * as ClaudeIntegration from "./integration.js"
 
 import type { Context } from "@opencode/plugin/effect/plugin"

@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — DialogMachine。
+ * 内置浏览器功能的 GUI 插件中负责 DialogMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // A page's JavaScript dialogs and the commands running against it. A dialog blocks the renderer, so it interrupts
 // every running command but a dialog command, and refuses new ones until it is handled. Commands register here before
 // their first await, so a dialog or a cancellation that arrives while one still inspects its target interrupts it too.

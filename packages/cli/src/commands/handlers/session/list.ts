@@ -1,3 +1,7 @@
+/**
+ * session list 命令。
+ * 列出会话（支持分页与过滤）。
+ */
 import { OpenCode, type SessionInfo } from "@opencode/client"
 import { Service } from "@opencode/client/effect/service"
 import { Effect, Option, Stream } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * 压缩配置类型。
+ * 定义 compaction 配置项的 Schema。
+ */
 export * as ConfigCompaction from "./compaction.js"
 
 import { Schema } from "effect"

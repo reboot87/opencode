@@ -1,3 +1,7 @@
+/**
+ * 命令类型。
+ * 定义命令信息与调用（Invocation）结构。
+ */
 export * as Command from "./command.js"
 
 import { Command } from "@opencode/schema/command"

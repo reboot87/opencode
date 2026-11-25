@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：失败·轻提示·app。
+ *
+ * 规格编号：E.19a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A failed execution of the open session shows the notifications plugin's error toast (F09): "Session failed" and
 // the error message, without an action, since the session is already open.
 import { defineApp, session } from "../../lib/app"

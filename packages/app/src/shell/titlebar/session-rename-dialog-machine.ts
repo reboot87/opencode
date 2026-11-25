@@ -1,4 +1,8 @@
-/** How long the dialog waits for a save before it gives control back. The request itself keeps running. */
+/**
+ * How long the dialog waits for a save before it gives control back. The request itself keeps running.
+ *
+ * 标题栏中负责 SessionRenameDialogMachine 部分：自定义标题栏中与 SessionRenameDialogMachine 相关的状态、交互与渲染逻辑。
+ */
 export const SESSION_RENAME_SAVE_TIMEOUT_MS = 15_000
 
 /**

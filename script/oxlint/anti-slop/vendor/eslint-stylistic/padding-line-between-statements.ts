@@ -35,6 +35,8 @@ const CJS_IMPORT = /^require\(/u
  * patching easier for future contributors.
  *
  * Reference rule - https://github.com/eslint/eslint/blob/main/lib/rules/padding-line-between-statements.js
+ *
+ * 移植自 eslint-stylistic 的规则：内边距行之间·statements。
  */
 
 type NodeTest = (

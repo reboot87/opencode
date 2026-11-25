@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — OpenaiTest。
+ * 终端界面的测试中负责 OpenaiTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { DEFAULT_BASE_URL, PATH } from "@opencode/ai/protocols/openai-chat"
 import { Effect, Stream } from "effect"

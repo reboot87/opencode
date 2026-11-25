@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：SIGINT·后台·CLI。
+ *
+ * 规格编号：C.10。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // SIGINT while waiting on a background job: the run interrupts the session, removes the shell job this
 // prompt started (not the older one), waits until the tree is quiet, and exits with 130.
 import { defineCli } from "../../cli/run"

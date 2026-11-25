@@ -1,3 +1,7 @@
+/**
+ * SQLite 运行时（Workerd）。
+ * 在 workerd 运行时提供 SqlClient 实现与能力声明。
+ */
 import { Context, Effect, Exit, Layer, Semaphore, Stream } from "effect"
 import { Reactivity } from "effect/reactivity"
 import { SqlClient, Statement } from "effect/sql"

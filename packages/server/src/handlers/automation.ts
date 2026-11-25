@@ -1,3 +1,7 @@
+/**
+ * automation 接口处理器。
+ * 自动化接口处理器：自动化的列举、创建与执行。
+ */
 import { Automation } from "@opencode/core/automation"
 import { Permission } from "@opencode/core/permission"
 import { AutomationNotFoundError, ForbiddenError, InvalidRequestError } from "@opencode/protocol/errors"

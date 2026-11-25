@@ -1,3 +1,5 @@
+//! Mermaid 图表渲染：`routing`。
+
 use std::collections::{HashMap, HashSet};
 use std::rc::Rc;
 

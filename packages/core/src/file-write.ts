@@ -1,3 +1,7 @@
+/**
+ * 文件写入服务（FileWrite）。
+ * 提供文本写入能力并返回变更结果。
+ */
 export * as FileWrite from "./file-write.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

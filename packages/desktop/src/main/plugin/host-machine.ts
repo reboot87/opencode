@@ -1,3 +1,7 @@
+/**
+ * 桌面插件 — HostMachine。
+ * 桌面端插件的加载与宿主能力中负责 HostMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { BuiltinCatalog } from "@opencode/plugin/gui/builtin"
 import type { Messages } from "@opencode/plugin/gui/main"
 import { Predicate } from "effect"

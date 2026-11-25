@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：security·txt。
+ */
 import { describe, expect, test } from "bun:test"
 
 // Served at /.well-known/security.txt by src/middleware.ts.

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：拆分·paste·伪终端。
+ *
+ * 规格编号：OT。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A bracketed paste whose start marker arrives in two reads, 300 ms apart. The client waits for the rest of the
 // marker and inserts the paste whole, on two rows, so the prompt grows by one (OpenTUI #2046, on both sides since
 // 0.9.4).

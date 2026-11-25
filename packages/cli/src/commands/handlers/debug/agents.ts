@@ -1,3 +1,7 @@
+/**
+ * debug agents 命令。
+ * 打印服务端已注册的 agent 列表。
+ */
 import { EOL } from "os"
 import { Effect } from "effect"
 import { OpenCode } from "@opencode/client"

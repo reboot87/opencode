@@ -1,3 +1,7 @@
+/**
+ * 消息渲染 — PacedTextMachine。
+ * 会话消息的渲染组件中负责 PacedTextMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export const TEXT_RENDER_PACE_MS = 24
 
 /** A live backlog up to this many characters shows at once; a larger one reveals in paced slices. */

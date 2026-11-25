@@ -1,3 +1,7 @@
+/**
+ * 模型类型。
+ * 定义模型的 ID、变体、能力、成本与限流结构。
+ */
 export * as Model from "./model.js"
 
 import { Schema, Struct } from "effect"

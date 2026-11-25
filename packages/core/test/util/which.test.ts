@@ -1,3 +1,10 @@
+/**
+ * 哪个的测试。
+ *
+ * 被测模块：@opencode/core/util/which
+ *
+ * 覆盖通用工具函数的行为与边界。
+ */
 import { describe, expect, test } from "bun:test"
 import fs from "fs/promises"
 import path from "path"

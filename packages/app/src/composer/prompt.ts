@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — Prompt。
+ * 会话输入区的组合逻辑与附件处理中负责 Prompt 部分，提供该部分所需的实现与类型定义。
+ */
 import type { FileAttachmentPart, ImageAttachmentPart, PathAttachmentPart, Prompt } from "@/composer/state"
 import { createLegacyBlobReference } from "@/runtime/persistence/drafts"
 import type { PromptAttachment, SessionMessageUser } from "@opencode/client/promise"

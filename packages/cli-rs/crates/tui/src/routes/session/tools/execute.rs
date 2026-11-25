@@ -1,4 +1,6 @@
 //! Expandable nested calls and code-mode execution results.
+//!
+//! 终端界面路由：`execute`。
 
 use opencode_api::generated::SessionMessageAssistantTool;
 use opencode_ui::tool_info::{ExecuteCall, ExecuteStatus, execute_call_summary, execute_calls};

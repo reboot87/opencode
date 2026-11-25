@@ -1,3 +1,7 @@
+/**
+ * 会话搜索索引构建服务（SessionSearchBuild）。
+ * 增量构建会话消息的搜索索引，带节流（PAUSE）控制。
+ */
 export * as SessionSearchBuild from "./search-build.js"
 
 import { Cause, Clock, Context, Effect, Exit, Latch, Layer } from "effect"

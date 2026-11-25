@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — ClosedTabsView。
+ * 浏览器端的插件加载与扩展点中负责 ClosedTabsView 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, Show, createMemo, createSignal, createUniqueId, onCleanup, untrack, type JSX } from "solid-js"
 import { createStore } from "solid-js/store"
 import { FileIcon } from "@opencode/ui/file-icon"

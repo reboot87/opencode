@@ -1,3 +1,7 @@
+/**
+ * auth import 命令。
+ * 从文件或标准输入导入登录凭据。
+ */
 import { EOL } from "node:os"
 import { isConflictError, type CredentialCreateInput } from "@opencode/client"
 import { CredentialLegacy } from "@opencode/schema/credential-legacy"

@@ -1,3 +1,7 @@
+/**
+ * 来源插件 — Renderer。
+ * 来源（source）管理的 GUI 插件中负责 Renderer 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, lazy, onCleanup, Show, Suspense } from "solid-js"
 import { turnMessages, turnSources } from "@opencode/session-ui/sources"
 import { sourcesExperiment } from "@opencode/session-ui/sources/experiment"

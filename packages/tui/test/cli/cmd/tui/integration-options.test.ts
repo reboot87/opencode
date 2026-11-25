@@ -1,3 +1,7 @@
+/**
+ * CLI 命令测试 — IntegrationOptionsTest。
+ * CLI 启动终端界面的测试中负责 IntegrationOptionsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { IntegrationInfo } from "@opencode/client"
 import {

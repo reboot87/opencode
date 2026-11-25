@@ -1,3 +1,8 @@
+/**
+ * 管道示例：TUI。
+ *
+ * 管道示例：演示插件管道各阶段的串联方式。
+ */
 // JS counterpart to `../kept.rs` for mount and subtree reuse checks.
 
 export default {

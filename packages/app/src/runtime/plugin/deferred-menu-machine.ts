@@ -1,4 +1,8 @@
-/** How long a chosen item waits for the closing menu to return focus before it runs anyway. */
+/**
+ * How long a chosen item waits for the closing menu to return focus before it runs anyway.
+ *
+ * 插件运行时中负责 DeferredMenuMachine 部分：浏览器端插件运行时中与 DeferredMenuMachine 相关的状态、交互与渲染逻辑。
+ */
 export const DEFERRED_MENU_FALLBACK_MS = 50
 
 /** What a press on a dual trigger asks for: its menu, or the trigger's own action (a new tab). */

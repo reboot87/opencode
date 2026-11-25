@@ -1,3 +1,7 @@
+/**
+ * OpenCode provider 插件。
+ * 注册 OpenCode 自有 provider（设备码登录），并代理控制台的模型与产物能力。
+ */
 import { isDeepStrictEqual } from "node:util"
 import { Duration, Effect, Equal, FiberHandle, Option, Schema, Scope, Semaphore, Stream } from "effect"
 import type { IntegrationOAuthMethodRegistration } from "@opencode/plugin/effect/integration"

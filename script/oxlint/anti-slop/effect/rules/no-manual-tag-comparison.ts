@@ -1,3 +1,6 @@
+/**
+ * Effect 架构 Oxlint 规则：无·manual·标签比较。
+ */
 import { defineRule } from "@oxlint/plugins";
 
 import {

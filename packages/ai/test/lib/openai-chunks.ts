@@ -2,6 +2,8 @@
  * Shared chunk shapes for OpenAI Chat / OpenAI-compatible Chat fixture tests.
  * Multiple test files build the same `{ id, choices: [{ delta, finish_reason }], usage }`
  * envelope; consolidating here keeps tool-call event shapes consistent.
+ *
+ * OpenaiChunks：该文件实现 OpenaiChunks 相关的状态与逻辑。
  */
 
 const FIXTURE_ID = "chatcmpl_fixture"

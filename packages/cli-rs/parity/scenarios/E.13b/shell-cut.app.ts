@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：Shell·cut·app。
+ *
+ * 规格编号：E.13b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The shell output dialog keeps the newest 64 KiB, counted in UTF-16 code units, and starts it on a whole character
 // (#63967): the output is an emoji and then 65,535 units, so the 65,536-unit tail would start on the emoji's second
 // half. Every read answers the whole output, so each poll appends it again and the tail stays the same text; Home

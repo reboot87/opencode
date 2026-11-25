@@ -1,3 +1,7 @@
+/**
+ * 上下文测试 — SessionRetentionTest。
+ * 终端上下文的测试中负责 SessionRetentionTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import type { OpenCodeEvent } from "@opencode/client"
 import { createData, createSessionRetention } from "@opencode/client/solid"

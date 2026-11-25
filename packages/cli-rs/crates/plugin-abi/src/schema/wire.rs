@@ -1,4 +1,6 @@
 //! Wire schemas for plugin metadata, manifests, requests, replies and binary draw lists.
+//!
+//! 插件 ABI 边界：`wire`。
 
 use super::*;
 use crate::claim::{self, FencePart, ToolPart};

@@ -1,3 +1,7 @@
+/**
+ * 端到端测试工具 — SettingsWslFixture。
+ * 端到端测试的公共辅助中负责 SettingsWslFixture 部分，提供该部分所需的实现与类型定义。
+ */
 import { MemoryRouter, createMemoryHistory } from "@solidjs/router"
 import { createMemo, Show } from "solid-js"
 import { createStore, unwrap } from "solid-js/store"

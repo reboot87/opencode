@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — Connection。
+ * GUI 插件的实现中负责 Connection 部分，提供该部分所需的实现与类型定义。
+ */
 export * as BrowserConnection from "./connection.js"
 
 import { hostname } from "node:os"

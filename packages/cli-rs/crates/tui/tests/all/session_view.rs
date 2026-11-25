@@ -1,4 +1,6 @@
 //! Session viewport behavior and its store subscriptions.
+//!
+//! 终端界面测试：会话视图。
 
 use crate::support::{self, WAIT};
 

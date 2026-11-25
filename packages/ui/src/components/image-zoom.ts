@@ -3,6 +3,8 @@
  *
  * `scale` is relative to the fitted size, so 1 is "fit". `x` and `y` offset the image center from the viewport
  * center in screen pixels, and anchors use the same viewport-center coordinates.
+ *
+ * 适配视口内的图片缩放与平移计算：scale 相对于适配尺寸（1 表示恰好铺满），x/y 表示图片中心相对视口中心的屏幕像素偏移。
  */
 export type ZoomView = { scale: number; x: number; y: number }
 

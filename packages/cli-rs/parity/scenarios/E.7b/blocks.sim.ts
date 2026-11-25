@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：块·模拟。
+ *
+ * 规格编号：E.7b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // P-TUI version of `E.7b/blocks.app.ts`: block tool rows (V05b, V23) from the real tool runtime: a `patch` that
 // updates one file and deletes another, one that adds a file, one that fails on a context mismatch, an `execute`
 // run that throws, and a glob and a grep, each call in its own row (`session.grouping: none`). The server offers no

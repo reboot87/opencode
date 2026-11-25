@@ -1,3 +1,6 @@
+/**
+ * 文档站组件：`Callout`。
+ */
 import type { JSX } from "solid-js"
 import { useI18n } from "~/context/i18n"
 

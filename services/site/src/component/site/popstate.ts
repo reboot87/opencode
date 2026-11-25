@@ -5,7 +5,10 @@ import { isServer } from "solid-js/web"
 // event first. A page can hold a back or forward step here and hand the router a copy later.
 let hold: ((event: PopStateEvent) => boolean) | undefined
 
-/** While set, `handler` sees each popstate first; returning true keeps it from the router. */
+/** While set, `handler` sees each popstate first; returning true keeps it from the router.
+ *
+ * 站点界面组件：`popstate`。
+ */
 export function holdPopstate(handler: (event: PopStateEvent) => boolean) {
   hold = handler
   return () => {

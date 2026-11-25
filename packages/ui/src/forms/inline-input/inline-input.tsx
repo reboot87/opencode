@@ -1,3 +1,7 @@
+/**
+ * 行内输入 — InlineInput。
+ * 嵌入文本流的输入组件中负责 InlineInput 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ComponentProps } from "solid-js"
 import { splitProps } from "solid-js"
 

@@ -64,7 +64,10 @@ const leader = (left: string, right: string) =>
 
 let cached: Promise<string> | undefined
 
-/** The file, laid out once per process. */
+/** The file, laid out once per process.
+ *
+ * 站点共享逻辑：robots.txt·txt。
+ */
 export function robotsTxt() {
   cached ??= build()
   return cached

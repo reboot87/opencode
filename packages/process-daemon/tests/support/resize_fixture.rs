@@ -1,3 +1,5 @@
+//! 进程守护服务测试：调整尺寸夹具。
+
 use std::env;
 use std::io::{self, Read, Write};
 use std::net::{TcpListener, TcpStream};

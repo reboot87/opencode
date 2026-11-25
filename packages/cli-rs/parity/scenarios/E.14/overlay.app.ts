@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：浮层·app。
+ *
+ * 规格编号：E.14。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The sidebar below 120 columns (V19): hidden by default, `<leader>b` shows it over the dimmed session on the
 // right, and Escape closes it.
 import { assistant, defineApp, session, user } from "../../lib/app"

@@ -1,3 +1,7 @@
+/**
+ * 浏览器配置 — Sites。
+ * 浏览器插件的用户配置与身份中负责 Sites 部分，提供该部分所需的实现与类型定义。
+ */
 import { parse } from "tldts"
 
 /** A cookie of another browser as the site list counts it: its host, expiry and last use, never its name or value. */

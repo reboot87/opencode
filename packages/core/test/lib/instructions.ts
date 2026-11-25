@@ -1,3 +1,10 @@
+/**
+ * 指令的测试辅助模块。
+ *
+ * 被测模块：@opencode/core/lib/instructions
+ *
+ * 核心测试的公共辅助模块：内存数据库、会话夹具与事件收集工具。
+ */
 import { Effect, Option, Schema } from "effect"
 import { Instructions } from "@opencode/core/instructions/index"
 

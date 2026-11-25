@@ -1,3 +1,7 @@
+/**
+ * Effect 文件锁。
+ * 基于 Effect 的文件锁实现，含超时（LockTimeoutError）与锁失效（LockCompromisedError）错误。
+ */
 import path from "path"
 import os from "os"
 import { randomUUID } from "crypto"

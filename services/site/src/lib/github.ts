@@ -6,7 +6,10 @@ export type Contributor = { login: string; avatar: string }
 
 export type RepoStats = {
   stars?: number
-  /** Everyone with a commit on the default branch, including authors without a GitHub account (as GitHub counts them on the repo page). */
+  /** Everyone with a commit on the default branch, including authors without a GitHub account (as GitHub counts them on the repo page).
+ *
+ * 站点共享逻辑：GitHub。
+ */
   contributors?: number
   /** The contributors whose avatar is a photo of their face (lib/contributor-faces.ts), pinned ones first. Never empty. */
   people: Contributor[]

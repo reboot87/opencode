@@ -1,3 +1,7 @@
+/**
+ * 运行时国际化 — Es。
+ * 运行时加载多语言文案的机制中负责 Es 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "common.color.orange": "naranja",
   "common.color.yellow": "amarillo",

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：夹具。
+ *
+ * 规格编号：C.6。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // MCP servers and routes the C.6 (`mcp`) scenarios share; the integrations are C.5's.
 import type { Route } from "../../lib/fake-server"
 import { location } from "../C.5/fixture"

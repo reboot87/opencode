@@ -1,3 +1,10 @@
+/**
+ * 伪终端·windows的测试。
+ *
+ * 被测模块：@opencode/core/pty/pty-windows
+ *
+ * 覆盖伪终端的创建、读写与尺寸变更行为。
+ */
 import { expect } from "bun:test"
 import { spawn } from "node:child_process"
 import path from "node:path"

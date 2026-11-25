@@ -1,4 +1,6 @@
 //! Fork a session in full or before a selected prompt.
+//!
+//! 终端弹窗组件：分叉。
 
 use opencode_api::generated::{SessionForkInput, SessionMessageID};
 use opencode_ui::dialog::{DIALOG_LIST_INSET, layout_with};

@@ -1,3 +1,7 @@
+/**
+ * Meta Llama Messages 协议实现。
+ * Messages API 风格，处理 Llama 系列模型的特有语义。
+ */
 import { Effect, Schema } from "effect"
 import { Protocol } from "../route/protocol.js"
 import { CacheTTL, type LLMRequest } from "../schema/index.js"

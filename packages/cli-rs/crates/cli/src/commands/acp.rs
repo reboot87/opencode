@@ -1,3 +1,5 @@
+//! CLI 子命令：ACP。
+
 use opencode_service::ts_command::TsCommand;
 use opencode_util::error;
 

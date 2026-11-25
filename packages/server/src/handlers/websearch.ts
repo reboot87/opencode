@@ -1,3 +1,7 @@
+/**
+ * websearch 接口处理器。
+ * 网络搜索接口处理器：搜索 provider 与搜索执行。
+ */
 import { WebSearch } from "@opencode/core/websearch"
 import { InvalidRequestError, ServiceUnavailableError } from "@opencode/protocol/errors"
 import { Effect } from "effect"

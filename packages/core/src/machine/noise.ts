@@ -1,3 +1,7 @@
+/**
+ * Noise 协议加密。
+ * 实现 Noise_XX_25519_AESGCM_SHA256 握手与会话密钥派生。
+ */
 export * as Noise from "./noise.js"
 
 import {

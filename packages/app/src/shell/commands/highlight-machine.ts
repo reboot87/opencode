@@ -1,6 +1,8 @@
 /**
  * The preview a palette shows for its highlighted command, such as a theme. Choosing an entry commits the palette:
  * the chosen entry's preview stays, any other preview reverts, and nothing previews while the dialog closes.
+ *
+ * 外壳命令中负责 HighlightMachine 部分：外壳提供的命令中与 HighlightMachine 相关的状态、交互与渲染逻辑。
  */
 export type PaletteHighlightState =
   | { readonly status: "idle" }

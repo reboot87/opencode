@@ -14,6 +14,8 @@
 //! // build the widget...
 //! opencode_parity::assert_fixture(&app.render(), "U.3/alert");
 //! ```
+//!
+//! 双实现对等性校验入口。
 
 pub mod app;
 mod fixture;

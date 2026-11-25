@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid DialogShellOutputTest：该文件实现 DialogShellOutputTest 相关的状态与逻辑。
+ */
 import { ScrollBoxRenderable } from "@opentui/core"
 import { testRender } from "@opentui/solid"
 import type { ShellInfo } from "@opencode/client"

@@ -1,3 +1,16 @@
+/**
+ * 对话消息的数据模型（AI SDK 核心类型之一）。
+ *
+ * 定义 LLM 对话的完整结构：
+ *   - MessageRole / 四种消息：SystemMessage / UserMessage / AssistantMessage / ToolMessage；
+ *   - ContentPart：消息内容的原子单元——文本、媒体、工具调用、工具结果、推理、压缩、effort 等；
+ *   - ToolOutput / ToolResultValue：工具结果的标准化表示；
+ *   - ToolDefinition / ToolNamespace / ToolEntry / ToolChoice：工具在请求中的声明形式；
+ *   - LLMRequest：一次请求的完整结构（模型、系统、消息、工具、生成参数等）。
+ *
+ * 大量使用 withStatics 给 Schema 附加静态构造函数（如 Message.user(...)），
+ * 让调用方无需手写冗长的对象字面量。
+ */
 import { Option, Schema } from "effect"
 import { withStatics } from "@opencode/schema/schema"
 import { Tool } from "@opencode/schema/tool"
@@ -17,6 +30,7 @@ import { Media } from "../media.js"
 import { Json } from "../utils/json.js"
 import type { ToolChangesInput } from "../tool.js"
 
+/** 消息的四种角色。 */
 export const MessageRole = Schema.Literals(["system", "user", "assistant", "tool"])
 export type MessageRole = Schema.Schema.Type<typeof MessageRole>
 
@@ -87,6 +101,7 @@ const toolResultValueSchema = Schema.Union([
 export type ToolResultValue = Schema.Schema.Type<typeof toolResultValueSchema>
 const isToolResultValue = Schema.is(toolResultValueSchema)
 
+/** 工具结果的标准化值：提供类型守卫 is 和构造器 make（默认按 json 类型包装）。 */
 export const ToolResultValue = withStatics(toolResultValueSchema, {
   is: isToolResultValue,
   make: (value: unknown, type: ToolResultValue["type"] = "json"): ToolResultValue => {
@@ -510,8 +525,10 @@ export namespace ToolChoice {
 }
 
 /**
- * A normalized text request, the plain object `ai.request(...)` returns. Edit it with a spread, such as
- * `{ ...request, messages: [...request.messages, next] }`, or pass the edited object back to `ai.request`.
+ * 规范化后的文本请求——即 ai.request(...) 返回的普通对象。
+ * 可用展开语法编辑，如 { ...request, messages: [...request.messages, next] }，
+ * 也可把编辑后的对象传回 ai.request。
+ * 它是所有底层协议构建器的统一输入。
  */
 export interface LLMRequest<Model extends LanguageModel = LanguageModel>
   extends BaseRequest<Model, LanguageModelProviderOptions<Model>>,

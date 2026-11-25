@@ -1,4 +1,6 @@
 //! Persistent prompt stash shared across sessions.
+//!
+//! 终端输入提示：贮藏。
 
 use std::path::{Path, PathBuf};
 

@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid P3Markdown：该文件实现 P3Markdown 相关的状态与逻辑。
+ */
 // P-COMP for P.3: `TextPart`'s <markdown> (routes/session/message-parts.tsx) with the `opencode.merman` plugin's
 // code-block renderer, as the TUI registers it, over a message with a flowchart and a sequence diagram fence.
 // crates/mermaid/tests/all/markdown.rs compares opencode_ui::markdown with the Mermaid plugin's renderer against it.

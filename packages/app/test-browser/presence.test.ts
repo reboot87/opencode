@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — PresenceTest。
+ * 浏览器环境下的测试中负责 PresenceTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, describe, expect, jest, test } from "bun:test"
 import { createRoot, createSignal } from "solid-js"
 import { createPresence } from "../src/runtime/presence"

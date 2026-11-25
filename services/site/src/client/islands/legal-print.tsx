@@ -15,6 +15,8 @@ let shown = false
  * put them: the cover first on the page, the colophon after the text. Synchronous, so a `beforeprint`
  * listener can call it and the printout has them. As legal.tsx picks them, with production's settings
  * and a layout saved in the layout editor.
+ *
+ * 客户端交互岛：法律·print。
  */
 export function showPrint() {
   const document = legalDocuments.find((item) => item.path === strip(location.pathname))

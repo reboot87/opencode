@@ -1,6 +1,8 @@
 //! Project plugins require approval for the discovered directory, its resolved path and the SHA-256 of its files. A
 //! changed tree or path needs a new decision. Clients share decisions through a locked, user-private state file; if the
 //! project can reach the file or others can write it, decisions stay in memory.
+//!
+//! 插件系统：批准。
 
 use std::cell::RefCell;
 use std::fs::File;

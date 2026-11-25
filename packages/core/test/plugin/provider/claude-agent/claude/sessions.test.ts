@@ -1,3 +1,10 @@
+/**
+ * 会话的测试。
+ *
+ * 被测模块：@opencode/core/plugin/provider/claude-agent/claude/sessions
+ *
+ * 覆盖 Claude Agent 供应商插件的请求转换、工具桥接与流式事件映射。
+ */
 import { describe, expect } from "bun:test"
 import path from "node:path"
 import { Effect, Fiber, SubscriptionRef } from "effect"

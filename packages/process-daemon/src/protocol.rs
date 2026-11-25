@@ -1,3 +1,5 @@
+//! 进程守护服务实现：协议。
+
 use std::collections::HashMap;
 use std::io::{Read, Write};
 use std::path::PathBuf;

@@ -1,3 +1,7 @@
+/**
+ * 外壳状态 — ScrollMachine。
+ * 应用外壳的全局状态中负责 ScrollMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // Session scroll positions wait in a debounce before they are written to the layout store. `dirty` holds the sessions
 // with a write still waiting.
 export type ScrollPersistenceState =

@@ -1,3 +1,7 @@
+/**
+ * 插件监督器。
+ * 解析插件选择器与目标的匹配关系，管理插件的启用状态与过滤。
+ */
 export * as PluginSupervisor from "./supervisor.js"
 
 import { Event } from "@opencode/schema/config"

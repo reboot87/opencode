@@ -1,3 +1,7 @@
+/**
+ * 时间线工具块 — ContextGroup。
+ * 时间线中工具调用的展示中负责 ContextGroup 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageAssistantTool } from "@opencode/client/promise"
 import { AnimatedNumber } from "@opencode/ui/animated-number"
 import { Badge } from "@opencode/ui/badge"

@@ -1,4 +1,8 @@
 #!/usr/bin/env bun
+
+/**
+ * 站点构建脚本：抓取静态资源。
+ */
 // Captures the official product screenshots from the real product with demo data, in light and dark,
 // at 2x, and writes a manifest (OpenCode version, date, size and hash of each file) next to them.
 // See script/assets/README.md. Run from packages/console/app:

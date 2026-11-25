@@ -1,3 +1,10 @@
+/**
+ * 会话·驱动·录制的的测试。
+ *
+ * 被测模块：@opencode/core/session-runner-recorded
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { HttpRecorder } from "@opencode/http-recorder"
 import { OpenAIChat } from "@opencode/ai/protocols/openai-chat"
 import { Auth, LLMClient, type LLMClientService, RequestExecutor } from "@opencode/ai/route"

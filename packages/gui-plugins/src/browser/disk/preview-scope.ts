@@ -1,3 +1,7 @@
+/**
+ * 浏览器磁盘 — PreviewScope。
+ * 浏览器插件的磁盘数据存储中负责 PreviewScope 部分，提供该部分所需的实现与类型定义。
+ */
 import { homedir } from "node:os"
 import { lstat, realpath } from "node:fs/promises"
 import { createHash } from "node:crypto"

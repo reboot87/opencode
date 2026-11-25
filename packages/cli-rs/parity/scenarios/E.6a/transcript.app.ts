@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：transcript·app。
+ *
+ * 规格编号：E.6a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A finished turn: a user message with chips, collapsed reasoning, Markdown text, the footer with tokens per
 // second counted from the first token and no time to it (#63759), and the turn's token usage (V01 to V04, V12).
 import { defineApp, session } from "../../lib/app"

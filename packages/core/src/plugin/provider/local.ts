@@ -1,3 +1,7 @@
+/**
+ * 本地 Provider 插件。
+ * 注册本地推理 provider（如 llama.cpp / ollama 兼容端点），含 15 秒请求超时。
+ */
 import { define } from "@opencode/plugin/effect/plugin"
 import type { Entry } from "@opencode/schema/config"
 import { Duration, Effect, FiberSet, Option, Schedule, type Schema, Semaphore, Stream } from "effect"

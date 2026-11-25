@@ -7,6 +7,8 @@ import { docsFileIcons } from "./docs-file-icons"
  * subset (docs-file-icons.ts), drawn inline so the folders' currentColor takes the label grey.
  * Coloured, with the _light variant in light mode where there is one; inside
  * [data-file-icons="mono"] every fill is currentColor instead (docs-variants.css).
+ *
+ * 站点界面组件：文件类型图标。
  */
 export function FileTypeIcon(props: { path: string; directory?: boolean }) {
   const type = () => (props.directory ? "directory" : "file")

@@ -1,3 +1,5 @@
+//! Mermaid 图表渲染：限额。
+
 use std::time::{Duration, Instant};
 
 use opencode_mermaid::{Palette, Rendered, render};

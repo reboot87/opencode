@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid PromptMoveTest：该文件实现 PromptMoveTest 相关的状态与逻辑。
+ */
 import { expect, test } from "bun:test"
 import { InputRenderable, TextareaRenderable } from "@opentui/core"
 import { testRender } from "@opentui/solid"

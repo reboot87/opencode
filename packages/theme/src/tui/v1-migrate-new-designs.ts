@@ -1,3 +1,7 @@
+/**
+ * 模块 — V1MigrateNewDesigns。
+ * 该目录下的功能模块中负责 V1MigrateNewDesigns 部分，提供该部分所需的实现与类型定义。
+ */
 import { RGBA } from "@opentui/core"
 import { oklchToHex } from "./color.js"
 import type { HueDefinition, Mode, ModeDefinition, ThemeDefinition, ThemeDocument } from "./index.js"

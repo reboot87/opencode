@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：压缩·伪终端。
+ *
+ * 规格编号：M.3。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The permission and form footers in a short, narrow, monochrome terminal: the compact layouts, without padding
 // and scrollbars, and ASCII glyphs.
 import { definePty } from "../../pty/run"

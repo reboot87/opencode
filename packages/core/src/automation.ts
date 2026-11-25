@@ -1,3 +1,7 @@
+/**
+ * 自动化服务（Automation）。
+ * 自动化任务（定时/触发的流程）的注册、执行与状态管理，含 NotFound/Invalid/Disabled 等错误。
+ */
 export * as Automation from "./automation.js"
 
 import { randomUUID } from "node:crypto"

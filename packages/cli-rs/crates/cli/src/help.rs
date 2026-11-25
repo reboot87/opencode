@@ -1,4 +1,6 @@
 //! Help, version, completions and usage-error output.
+//!
+//! 命令行入口：`help`。
 
 use opencode_util::error;
 use std::io::IsTerminal;

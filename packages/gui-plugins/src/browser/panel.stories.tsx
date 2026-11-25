@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — PanelStories。
+ * 内置浏览器功能的 GUI 插件中负责 PanelStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { createSignal, For, Show } from "solid-js"
 import { usePlugin } from "@opencode/plugin/gui"

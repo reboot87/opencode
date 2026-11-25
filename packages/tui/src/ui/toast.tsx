@@ -1,3 +1,7 @@
+/**
+ * 终端 UI — Toast。
+ * 终端界面的通用 UI 组件中负责 Toast 部分，提供该部分所需的实现与类型定义。
+ */
 import { createContext, createSignal, onCleanup, useContext, type ParentProps, Show } from "solid-js"
 import { createStore } from "solid-js/store"
 import { useTheme } from "../context/theme"

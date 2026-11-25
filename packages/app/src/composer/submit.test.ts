@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — SubmitTest。
+ * 会话输入区的组合逻辑与附件处理中负责 SubmitTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, describe, expect, jest, test } from "bun:test"
 import type { SessionRef } from "@opencode/plugin/gui"
 import type { ModelSelection } from "@/providers/models/selection"

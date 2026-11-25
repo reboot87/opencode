@@ -1,3 +1,7 @@
+/**
+ * service set 命令。
+ * 设置服务配置项。
+ */
 import { Effect, Option } from "effect"
 import { Commands } from "../../commands"
 import { Runtime } from "../../../framework/runtime"

@@ -1,3 +1,7 @@
+/**
+ * 会话输入区 — PluginPills。
+ * 会话界面输入区的实现中负责 PluginPills 部分，提供该部分所需的实现与类型定义。
+ */
 import { Icon } from "@opencode/ui/icon"
 import { Menu } from "@opencode/ui/menu"
 import { Popover } from "@kobalte/core/popover"

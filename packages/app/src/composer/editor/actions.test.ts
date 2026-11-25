@@ -1,3 +1,7 @@
+/**
+ * 输入编辑器 — ActionsTest。
+ * 输入区文本编辑器的实现中负责 ActionsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { createStore } from "solid-js/store"
 import { Skill } from "@opencode/schema/skill"

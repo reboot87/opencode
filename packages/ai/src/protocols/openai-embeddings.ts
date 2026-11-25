@@ -1,3 +1,7 @@
+/**
+ * OpenAI 文本嵌入协议。
+ * 把文本转成向量。
+ */
 import { Effect, Schema } from "effect"
 import { Base64 } from "effect/encoding"
 import { EmbeddingResponse, EmbeddingUsage, type EmbeddingRequest } from "../embedding.js"

@@ -1,3 +1,8 @@
+/**
+ * 插件对等性场景：TUI。
+ *
+ * 插件能力的对等性场景：验证 Rust 与 TypeScript 插件行为一致。
+ */
 // The P0a test plugin, TypeScript side (rich plugins, ABI 1.5): F6 asks `dialog.confirm` and toasts the answer, F7
 // shows `dialog.alert` and toasts once it closes, F8 inserts text into the focused composer and F9 sets it, as npm
 // plugins do through `renderer.currentFocusedEditor`, and a styled box is appended to home.footer. parity/scenarios/P.1/p0a-*.app.ts load

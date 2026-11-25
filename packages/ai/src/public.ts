@@ -1,3 +1,7 @@
+/**
+ * 公开 API 的集中再导出（public surface）。
+ * 供 @opencode/ai 的消费者使用：错误分类工具、协议/模型标识、schema 类型等。
+ */
 export { isContextOverflow, isContextOverflowFailure, isRetryable } from "./provider-error.js"
 export {
   ProtocolID,

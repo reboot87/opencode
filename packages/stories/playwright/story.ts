@@ -1,3 +1,7 @@
+/**
+ * 模块 — Story 故事。
+ * 以 Storybook 故事的形式展示 Story 的各种状态与用法。
+ */
 import { expect, test } from "@playwright/test"
 import type { Locator } from "@playwright/test"
 

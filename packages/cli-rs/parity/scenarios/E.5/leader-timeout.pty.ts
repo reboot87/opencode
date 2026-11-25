@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：leader·超时·伪终端。
+ *
+ * 规格编号：E.5。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The leader sequence expires `leader.timeout` (2,000 ms by default) after the leader key (`keymap.tsx:137-146`).
 // One second after Ctrl+X, `l` still completes `session.list` (<leader>l); past the timeout, `l` is typed into the
 // prompt. `settle` waits at least that long, so the first wait stays under the timeout and the second goes past it.

@@ -1,3 +1,7 @@
+/**
+ * 行注释 — Machine。
+ * 展示代码行注释的组件中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 export const MENTION_LIMIT = 10
 
 /** A file search that never answers stops holding Enter and Tab after this long. */

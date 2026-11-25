@@ -1,3 +1,7 @@
+/**
+ * Google 图片生成协议。
+ * 调用 Google 图片模型，返回图片资产。
+ */
 import { Effect, Schema } from "effect"
 import type { HttpClientResponse } from "effect/http"
 import { ImageModel, ImageResponse, type ImageRequest } from "../image.js"

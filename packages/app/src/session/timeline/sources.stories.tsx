@@ -1,3 +1,7 @@
+/**
+ * 会话时间线 — SourcesStories。
+ * 会话消息时间线的渲染中负责 SourcesStories 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageAssistant, SessionMessageAssistantTool, SessionMessageInfo } from "@opencode/client/promise"
 import { SourcesProvider } from "@opencode/session-ui/context/sources"
 import type { SessionDocument } from "@opencode/session-ui/document"

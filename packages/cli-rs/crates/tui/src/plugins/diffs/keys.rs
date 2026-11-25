@@ -1,4 +1,6 @@
 //! Diff commands and key bindings for route and docked views.
+//!
+//! 终端插件视图：密钥。
 
 use opencode_plugin::abi::interact::{Bind, Layer, LayerScope};
 

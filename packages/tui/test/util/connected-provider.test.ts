@@ -1,3 +1,7 @@
+/**
+ * 工具测试 — ConnectedProviderTest。
+ * 终端工具函数的测试中负责 ConnectedProviderTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { hasConnectedProvider } from "../../src/util/connected-provider"
 

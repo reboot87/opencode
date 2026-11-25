@@ -1,3 +1,7 @@
+/**
+ * 运行时平台 — Platform。
+ * 识别浏览器平台能力并做适配中负责 Platform 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSimpleContext } from "@opencode/ui/context"
 import type { AsyncStorage, SyncStorage } from "@solid-primitives/storage"
 import type { Accessor } from "solid-js"

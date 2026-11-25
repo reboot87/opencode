@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：标签页·滚动字幕·伪终端。
+ *
+ * 规格编号：E.12。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A hovered vertical tab scrolls its overflowing title (`createMarquee` in `session-tabs.tsx`): after 600 ms it steps
 // a cell every 80 ms through the title and a ` · ` separator, so the title's start comes round after the dot. Leaving
 // the tab puts the title back at its start. Mouse reports are SGR motion with no button (`35`), 1-based cells. Only

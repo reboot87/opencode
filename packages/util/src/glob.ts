@@ -1,3 +1,7 @@
+/**
+ * Glob 匹配。
+ * 实现 glob 模式的路径匹配规则。
+ */
 import { glob, type GlobOptionsWithFileTypesFalse } from "glob"
 import { minimatch } from "minimatch"
 

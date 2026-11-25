@@ -1,4 +1,6 @@
 //! Shows paths relative to the working directory where possible.
+//!
+//! 基础 UI 组件库：路径。
 
 use std::borrow::Cow;
 use std::path::Path;

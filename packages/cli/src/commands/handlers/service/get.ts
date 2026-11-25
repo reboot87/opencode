@@ -1,3 +1,7 @@
+/**
+ * service get 命令。
+ * 读取服务配置项。
+ */
 import { EOL } from "os"
 import { Effect, Option } from "effect"
 import { Commands } from "../../commands"

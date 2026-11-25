@@ -1,4 +1,6 @@
 //! Statically linked tree-sitter languages and their highlight queries.
+//!
+//! 基础 UI 组件库入口。
 
 use opentui::syntax::tree_sitter::Language;
 use opentui::syntax::{self, CompiledGrammar, Grammar, GrammarError};

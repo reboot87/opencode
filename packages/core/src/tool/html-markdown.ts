@@ -1,3 +1,7 @@
+/**
+ * HTML→Markdown 转换器。
+ * 把抓取到的 HTML 清洗并转换为适合模型消费的 Markdown，剔除 script/style 等无关元素，带体积上限（MAX_MARKDOWN_BYTES）。
+ */
 import { Parser } from "htmlparser2"
 
 const omitted = new Set(["script", "style", "noscript", "iframe", "object", "embed", "meta", "link", "template"])

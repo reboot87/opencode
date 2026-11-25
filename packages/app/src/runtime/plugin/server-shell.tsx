@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — ServerShell。
+ * 浏览器端的插件加载与扩展点中负责 ServerShell 部分，提供该部分所需的实现与类型定义。
+ */
 import { Match } from "effect"
 import { createEffect, createMemo, Show, type ParentProps } from "solid-js"
 import { usePlatform } from "@/runtime/platform/platform"

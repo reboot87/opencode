@@ -1,3 +1,7 @@
+/**
+ * 会话工作目录（SessionCwd）工具。
+ * 解析、描述与格式化会话工作目录位置，供提示词与执行环境使用。
+ */
 export * as SessionCwd from "./cwd.js"
 
 import { Effect, Option } from "effect"

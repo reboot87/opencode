@@ -1,3 +1,7 @@
+/**
+ * Claude Agent 语言模型。
+ * 实现 LanguageModelV3 接口，把请求委派给 Claude Agent SDK。
+ */
 export * as ClaudeAgentLanguageModel from "./claude-agent-language-model.js"
 
 import type {

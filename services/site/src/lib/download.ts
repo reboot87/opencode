@@ -5,7 +5,10 @@ import { desktopBuild, desktopDownload, desktopOS, type OS } from "~/lib/desktop
 
 export { desktopAssets, desktopOS, getDownloadHref, updateApi, type OS } from "~/lib/desktop-build"
 
-/** The desktop OS once mounted (detectPlatform); null for phones, tablets and unknown systems. */
+/** The desktop OS once mounted (detectPlatform); null for phones, tablets and unknown systems.
+ *
+ * 站点共享逻辑：下载。
+ */
 export function detectOS(): OS {
   if (typeof navigator === "undefined") return null
   return desktopOS(detectPlatform())

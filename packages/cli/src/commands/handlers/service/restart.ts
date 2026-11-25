@@ -1,3 +1,7 @@
+/**
+ * service restart 命令。
+ * 重启后台服务。
+ */
 import { EOL } from "os"
 import { Effect } from "effect"
 import { Service } from "@opencode/client/effect/service"

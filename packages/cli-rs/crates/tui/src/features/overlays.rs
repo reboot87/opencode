@@ -1,5 +1,7 @@
 //! Connection and data-migration overlays. Delay the first reconnect indication longer than subsequent ones to avoid
 //! flashing during startup.
+//!
+//! 终端界面功能模块：浮层。
 
 use opencode_api::events::{State, Status};
 use opencode_ui::motion::Spinner;

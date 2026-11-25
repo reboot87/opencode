@@ -1,3 +1,7 @@
+/**
+ * Pierre 组件 — CommentHoverMachineTest。
+ * 会话界面的基础组件库中负责 CommentHoverMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import {
   DISPOSED_HOVER_COMMENT_STATE,

@@ -1,3 +1,7 @@
+/**
+ * 浏览器历史 — MatchTest。
+ * 浏览器插件的访问历史中负责 MatchTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { markMatches, parseQuery } from "./match"
 import { MAX_TITLE_LENGTH, MAX_URL_LENGTH, pageKey, pageTitle } from "./page"

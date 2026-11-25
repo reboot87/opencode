@@ -1,3 +1,7 @@
+/**
+ * 命令类型定义。
+ * 定义命令信息与调用结构。
+ */
 export * as Command from "./command.js"
 
 import { Schema } from "effect"

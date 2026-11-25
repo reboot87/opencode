@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：部署文件。
 # deploy-files.sh <dev|production> <dir>: deploys the files Worker from a
 # verified bundle artifact (index.js built by `wrangler deploy --dry-run`)
 # with the wrangler CLI pinned in wrangler/package-lock.json.

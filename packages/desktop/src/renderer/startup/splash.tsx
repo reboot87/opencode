@@ -1,3 +1,7 @@
+/**
+ * 模块 — Splash。
+ * 该目录下的功能模块中负责 Splash 部分，提供该部分所需的实现与类型定义。
+ */
 import { Splash } from "@opencode/ui/logo"
 import { Wordmark } from "@opencode/ui/wordmark"
 import type { Platform } from "@opencode/app/desktop"

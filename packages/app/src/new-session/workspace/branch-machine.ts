@@ -1,4 +1,7 @@
-/** A preload or revalidation that has not answered by then fails, so the picker can offer Retry. */
+/**
+ * 
+ * A preload or revalidation that has not answered by then fails, so the picker can offer Retry. 工作区选择中负责 BranchMachine 部分：新建会话时的工作区选择中与 BranchMachine 相关的状态、交互与渲染逻辑。
+ */
 export const BRANCH_PRELOAD_TIMEOUT_MS = 10_000
 
 export type BranchList = {

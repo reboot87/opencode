@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：extmark·滚轮·伪终端。
+ *
+ * 规格编号：OT。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Wheel steps up a prompt of short lines that do not wrap, with the cursor at column 8 of each line, until the cursor
 // reaches the line whose `[Image 1]` label spans that column. Both clients move it to the label's start, TS since
 // #63989 (Core with #2064, parity/deviations/OT2064-extmark-mouse.md).

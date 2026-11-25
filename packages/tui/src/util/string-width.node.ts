@@ -1,3 +1,7 @@
+/**
+ * 终端工具 — StringWidthNode。
+ * 终端界面的通用工具函数中负责 StringWidthNode 部分，提供该部分所需的实现与类型定义。
+ */
 import measure from "string-width"
 import stripAnsi from "strip-ansi"
 import { eastAsianWidth } from "get-east-asian-width"

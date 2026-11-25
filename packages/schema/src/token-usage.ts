@@ -1,3 +1,7 @@
+/**
+ * Token 用量类型。
+ * 定义 token 用量与成本记录结构。
+ */
 export * as TokenUsage from "./token-usage.js"
 
 import { Schema } from "effect"

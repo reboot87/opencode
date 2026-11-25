@@ -7,6 +7,8 @@ import { GitHubMark } from "./icons"
  * The repo, as a GitHub mark: fixed in the top-right corner beside the sidebar (and at every width on
  * bare pages), in the top bar on small screens (site.tsx), and in the 404 arcade's phone bar. It needs
  * no router, so the docs render it too.
+ *
+ * 站点界面组件：GitHub·链接。
  */
 export function GitHubLink(props: { owner: "corner" | "topbar" }) {
   const i18n = useI18n()

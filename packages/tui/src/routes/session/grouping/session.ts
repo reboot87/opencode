@@ -1,3 +1,7 @@
+/**
+ * 消息分组 — Session。
+ * 会话消息的分组与折叠展示中负责 Session 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageAssistant, SessionMessageInfo } from "@opencode/client"
 import { groupEntries, mergeGroups, splitGroups, type GroupNode } from "./tree"
 

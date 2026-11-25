@@ -1,3 +1,7 @@
+/**
+ * 全局同步 — ChildStoreTest。
+ * 跨会话的全局状态同步中负责 ChildStoreTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { createRoot, getOwner } from "solid-js"
 import { createStore } from "solid-js/store"

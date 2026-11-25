@@ -1,3 +1,7 @@
+/**
+ * 已保存权限规则（PermissionSaved）。
+ * 持久化用户批准的站点级/项目级权限规则类型与操作。
+ */
 export * as PermissionSaved from "./saved.js"
 
 import { eq } from "drizzle-orm"

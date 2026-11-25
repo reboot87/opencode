@@ -18,6 +18,8 @@ const shown = import.meta.env.DEV
 /**
  * Runs while the page is parsed, after the settings script has set data-banner: drops it again when
  * the message the banner will show was dismissed.
+ *
+ * 站点界面组件：站点横幅脚本。
  */
 export const bannerDismissScript = `(()=>{try{const r=document.currentScript.parentElement;if(!r.hasAttribute("data-banner"))return;const d=localStorage.getItem(${JSON.stringify(dismissKey)});if(!d)return;const m=${shown};if(d===m)r.removeAttribute("data-banner")}catch{}})()`
 

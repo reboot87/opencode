@@ -1,3 +1,7 @@
+/**
+ * RPC 服务。
+ * 定义远程过程调用的接口、事件负载与失败类型。
+ */
 export * as Rpc from "./rpc.js"
 export { define } from "@opencode/schema/rpc"
 export type { Definition, EventPayload, Failure } from "@opencode/schema/rpc"

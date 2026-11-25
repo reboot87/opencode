@@ -1,3 +1,7 @@
+/**
+ * 本地存储 — Database。
+ * 桌面端配置的本地持久化中负责 Database 部分，提供该部分所需的实现与类型定义。
+ */
 import { renameSync } from "node:fs"
 import { DatabaseSync } from "node:sqlite"
 import { drizzle } from "drizzle-orm/node-sqlite"

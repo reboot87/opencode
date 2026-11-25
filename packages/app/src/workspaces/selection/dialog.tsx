@@ -1,3 +1,7 @@
+/**
+ * 工作区选择 — Dialog。
+ * 工作区切换与选择中负责 Dialog 部分，提供该部分所需的实现与类型定义。
+ */
 import "@pierre/trees/web-components"
 import { FileTree } from "@pierre/trees"
 import { Dialog, DialogBody, DialogFooter, DialogHeader, DialogTitle } from "@opencode/ui/dialog"

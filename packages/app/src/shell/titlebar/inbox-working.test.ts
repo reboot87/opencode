@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — InboxWorkingTest。
+ * 自定义窗口标题栏中负责 InboxWorkingTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { compareWorking, workingSince } from "./inbox-working"
 

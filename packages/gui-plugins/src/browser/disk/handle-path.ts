@@ -1,3 +1,7 @@
+/**
+ * 浏览器磁盘 — HandlePath。
+ * 浏览器插件的磁盘数据存储中负责 HandlePath 部分，提供该部分所需的实现与类型定义。
+ */
 import { readlink } from "node:fs/promises"
 import { FileVerificationError } from "../file-verification"
 

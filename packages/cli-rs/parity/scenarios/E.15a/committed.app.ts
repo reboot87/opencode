@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：已提交·app。
+ *
+ * 规格编号：E.15a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The committed source without base metadata (F15): the server reports no base, so the viewer asks for one instead
 // of requesting a diff, at the full-screen route's size of 100 columns with no file tree to show.
 import { defineApp, HOME_PLACEHOLDER, location } from "../../lib/app"

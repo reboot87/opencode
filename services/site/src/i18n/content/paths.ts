@@ -1,7 +1,10 @@
 // How page copy and its translations line up: which fields are never copy, and how list items are
 // matched. Shared by the merge (content/index.ts), the source (content/source.ts) and the checks.
 
-/** Fields that hold links, identifiers, logos, names of models and media, never copy. */
+/** Fields that hold links, identifiers, logos, names of models and media, never copy.
+ *
+ * 多语言内容文案：路径。
+ */
 export const structural = [
   "href",
   "id",

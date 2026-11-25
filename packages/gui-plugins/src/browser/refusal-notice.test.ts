@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — RefusalNoticeTest。
+ * 内置浏览器功能的 GUI 插件中负责 RefusalNoticeTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { activityOwner, downloadOwner, recordTabFocus, type TabActivity } from "./policy"
 import { externalTarget, navigationNotice, popupActivated } from "./refusal-notice"

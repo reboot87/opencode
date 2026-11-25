@@ -1,3 +1,7 @@
+/**
+ * Effect 风格插件 API — MCP 领域。
+ * 插件对 MCP 服务器与工具的编辑能力。此文件定义 Effect 风格 下该领域的接口与类型，与其它领域共同构成插件 API 表面。
+ */
 import type { McpApi } from "@opencode/client/effect/api"
 import type { Mcp } from "@opencode/schema/mcp"
 import type { Effect, Types } from "effect"

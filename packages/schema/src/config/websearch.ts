@@ -1,3 +1,7 @@
+/**
+ * 网络搜索配置类型。
+ * 定义 websearch 配置项的 Schema。
+ */
 export * as ConfigWebSearch from "./websearch.js"
 
 import { Schema } from "effect"

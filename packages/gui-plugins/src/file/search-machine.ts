@@ -1,4 +1,7 @@
-/** How long one file search may take before the browser shows it failed, so a wedged server never loads forever. */
+/**
+ * 
+ * How long one file search may take before the browser shows it failed, so a wedged server never loads forever. 文件插件中负责 SearchMachine 部分：文件预览与操作中与 SearchMachine 相关的状态、交互与渲染逻辑。
+ */
 export const FILE_SEARCH_TIMEOUT_MS = 10_000
 
 /** The workspace a search reads. Results never carry over to another. */

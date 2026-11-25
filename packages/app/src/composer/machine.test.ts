@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — MachineTest。
+ * 会话输入区的组合逻辑与附件处理中负责 MachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { SessionMessage } from "@opencode/schema/session-message"
 import type { ComposerSession } from "./adapter"

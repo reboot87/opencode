@@ -1,3 +1,7 @@
+/**
+ * 机器身份标识。
+ * 生成并持久化机器的本地身份密钥（文件 + KV 双写）。
+ */
 export * as Identity from "./identity.js"
 
 import crypto from "node:crypto"

@@ -1,4 +1,6 @@
 //! Paints shimmer and fade effects through a mask over the text.
+//!
+//! 基础 UI 组件库：文本。
 
 use super::curve::{clamp, coast, intensity_at, smootherstep};
 use super::{Motion, channels, millis, running};

@@ -1,4 +1,7 @@
-/** From this width the list and the open feature sit side by side. */
+/**
+ * 
+ * From this width the list and the open feature sit side by side. 调试插件中负责 MotionMachine 部分：调试面板中与 MotionMachine 相关的状态、交互与渲染逻辑。
+ */
 export const MOTION_WIDE_AT = 560
 
 /** How long Focus frames its target. */

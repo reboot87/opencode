@@ -1,3 +1,7 @@
+/**
+ * 项目头像 — Procedural。
+ * 项目标识头像组件中负责 Procedural 部分，提供该部分所需的实现与类型定义。
+ */
 // Experimental generators for the default project avatar, compared side by side in the components lab. Each keeps the
 // mesh's contract (see generated.ts): the values that define an icon are resolved once from a key, so a stored icon
 // never changes, and drawing is a CPU pass on a 2D canvas clipped to the same rounded tile. Most styles paint a small

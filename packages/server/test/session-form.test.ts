@@ -1,3 +1,10 @@
+/**
+ * 会话·form的测试。
+ *
+ * 被测模块：@opencode/server/session-form
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import fs from "fs/promises"
 import { Effect } from "effect"

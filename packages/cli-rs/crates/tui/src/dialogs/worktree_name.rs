@@ -1,4 +1,6 @@
 //! Choose or generate a name for a new worktree.
+//!
+//! 终端弹窗组件：工作树名称。
 
 use opencode_ui::prompt::{PromptAction, PromptProps, prompt};
 

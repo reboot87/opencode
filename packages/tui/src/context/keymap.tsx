@@ -1,3 +1,7 @@
+/**
+ * UI 上下文 — Keymap。
+ * UI 包的上下文提供者中负责 Keymap 部分，提供该部分所需的实现与类型定义。
+ */
 import type { KeymapActive, KeymapCommand, KeymapLayer, KeymapPending } from "@opencode/plugin/tui/context"
 import { InputRenderable, TextareaRenderable, type KeyEvent, type Renderable } from "@opentui/core"
 import { stringifyKeyStroke, type Binding, type CommandContext } from "@opentui/keymap"

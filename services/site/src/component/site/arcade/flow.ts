@@ -1,6 +1,8 @@
 /**
  * The arcade 404's flow, shared by every version of the page: where the visitor is, and what
  * Escape (or the touch Back control) does from there.
+ *
+ * 街机小游戏组件：流动。
  */
 
 export type ArcadeMoment = "floor" | "drag" | "inserting" | "climb" | "select" | "play"

@@ -1,3 +1,7 @@
+/**
+ * RPC 运行时。
+ * 按方法定义解码 RPC 的输出与错误负载。
+ */
 export * as RpcRuntime from "./rpc-runtime.js"
 
 import type { Rpc } from "@opencode/schema/rpc"

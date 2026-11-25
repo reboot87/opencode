@@ -11,6 +11,8 @@
 //! delivery operations, not aliases for cancellation. In particular, a future
 //! named-pipe backend must not emulate Unix half-close: it must retain final
 //! bytes until peer close or a bounded, cancellable deadline.
+//!
+//! 进程间传输通道入口。
 
 #[cfg(unix)]
 mod unix;

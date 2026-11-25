@@ -1,3 +1,7 @@
+/**
+ * 提示输入测试 — DisplayTest。
+ * 提示输入处理的测试中负责 DisplayTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterAll, describe, expect, test } from "bun:test"
 import { measureEditText, TextareaRenderable } from "@opentui/core"
 import { createTestRenderer } from "@opentui/core/testing"

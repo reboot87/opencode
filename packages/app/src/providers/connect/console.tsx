@@ -1,3 +1,7 @@
+/**
+ * Provider 连接 — Console。
+ * 连接 provider 的授权界面中负责 Console 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, Show } from "solid-js"
 import { Button } from "@opencode/ui/button"
 import { useLanguage } from "@/runtime/i18n/language"

@@ -1,3 +1,6 @@
+/**
+ * 文本处理实现：选择器。
+ */
 import { initYoga } from "@textjs/core"
 import { Box, renderToConsole, Select, Text, useInput, type SelectOption } from "@textjs/react"
 

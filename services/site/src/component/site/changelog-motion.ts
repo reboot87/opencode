@@ -3,7 +3,10 @@ import { isRtl } from "~/lib/direction"
 // The changelog's motion (changelog-entry.tsx), with no Solid, so the hydrated pages and the static
 // changelog pages (src/client/islands/changelog.ts) run the same code.
 
-/** On a phone the filter row scrolls sideways: brings the last chosen area into view (sideways only). */
+/** On a phone the filter row scrolls sideways: brings the last chosen area into view (sideways only).
+ *
+ * 站点界面组件：更新日志动效。
+ */
 export function revealChosenFilter(nav: HTMLElement) {
   const chosen = [...nav.querySelectorAll<HTMLElement>('[aria-current="true"]')].at(-1)
   if (!chosen) return

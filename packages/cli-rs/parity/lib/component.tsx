@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid Component：该文件实现 Component 相关的状态与逻辑。
+ */
 // P-COMP, TypeScript side: renders one TUI component in createTestRenderer at a fixed size and theme and
 // writes its cells to parity/fixtures/<fixture>.json (format in cells.ts). Run each component script
 // from parity/ so bun picks up parity/bunfig.toml, for example `bun run component/H.1-alert.tsx`.

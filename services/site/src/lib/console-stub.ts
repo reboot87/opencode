@@ -1,6 +1,9 @@
 import type { install } from "./console-api"
 
-/** Set when a visitor quits OpenCode Lite: it no longer starts on its own in this browser until opencode.try(). */
+/** Set when a visitor quits OpenCode Lite: it no longer starts on its own in this browser until opencode.try().
+ *
+ * 站点共享逻辑：控制台桩。
+ */
 export const liteQuitKey = "opencode-lite-quit"
 
 /**

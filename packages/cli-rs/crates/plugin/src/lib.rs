@@ -1,4 +1,6 @@
 //! The plugin registry activates plugins, resolves slot claims and routes calls through `opencode-plugin-abi`.
+//!
+//! 插件系统入口。
 
 mod activation;
 pub mod behave;

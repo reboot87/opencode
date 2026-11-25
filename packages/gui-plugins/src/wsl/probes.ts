@@ -1,3 +1,7 @@
+/**
+ * WSL 插件 — Probes。
+ * Windows Subsystem for Linux 相关的 GUI 插件中负责 Probes 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, onCleanup, untrack } from "solid-js"
 import type { Accessor } from "solid-js"
 import { createKeyed, type IpcClient } from "@opencode/plugin/gui"

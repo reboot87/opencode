@@ -1,3 +1,5 @@
+//! CLI 子命令：MCP。
+
 use std::path::{Path, PathBuf};
 
 use opencode_api::generated::{

@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid DataTest：该文件实现 DataTest 相关的状态与逻辑。
+ */
 import { expect, test } from "bun:test"
 import { testRender } from "@opentui/solid"
 import type { OpenCodeEvent } from "@opencode/client"

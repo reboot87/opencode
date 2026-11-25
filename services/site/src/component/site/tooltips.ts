@@ -6,6 +6,8 @@
  * it is centred over the element and kept 4px inside the window. Near the top of the window, with no
  * room above, it shows below instead. Escape dismisses it. No Solid, so the hydrated pages (tooltip.tsx)
  * and the static pages (src/client/entry.ts) share it. Returns the function that stops it.
+ *
+ * 站点界面组件：悬浮提示。
  */
 export function startTooltips(tip: HTMLElement) {
   let timer: ReturnType<typeof setTimeout> | undefined

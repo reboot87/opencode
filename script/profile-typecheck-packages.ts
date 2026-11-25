@@ -1,5 +1,9 @@
 #!/usr/bin/env bun
 
+/**
+ * 仓库脚本：性能剖析类型检查包。
+ */
+
 import path from "path"
 
 const root = path.resolve(import.meta.dir, "..")

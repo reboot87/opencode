@@ -1,4 +1,6 @@
 //! Ctrl+Y copies the console selection while the overlay is visible.
+//!
+//! 终端界面功能模块：控制台拷贝。
 
 use crate::prelude::*;
 

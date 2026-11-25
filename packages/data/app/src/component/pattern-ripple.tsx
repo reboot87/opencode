@@ -1,3 +1,7 @@
+/**
+ * 数据站组件 — PatternRipple。
+ * 数据站点的界面组件中负责 PatternRipple 部分，提供该部分所需的实现与类型定义。
+ */
 import { onCleanup, onMount } from "solid-js"
 
 const PATTERNS = '[data-page="stats"] [data-slot$="-pattern"]'

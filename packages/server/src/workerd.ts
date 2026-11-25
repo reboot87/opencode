@@ -1,3 +1,7 @@
+/**
+ * Workerd 部署入口。
+ * 把服务端打包为可在 workerd 运行的处理器。
+ */
 export * as ServerWorkerd from "./workerd"
 
 import { Context, Effect, Layer } from "effect"

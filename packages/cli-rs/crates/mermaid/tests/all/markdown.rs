@@ -1,3 +1,5 @@
+//! Mermaid 图表渲染：Markdown。
+
 use std::rc::Rc;
 
 use opencode_mermaid::{Palette, Rendered, fenced, render};

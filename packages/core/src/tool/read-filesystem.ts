@@ -1,3 +1,7 @@
+/**
+ * 文件读取工具底层实现。
+ * 有界读取文件：限制行数（MAX_READ_LINES）、字节数（MAX_READ_BYTES）与媒体摄取大小（MAX_MEDIA_INGEST_BYTES）。
+ */
 export * as ReadToolFileSystem from "./read-filesystem.js"
 
 import path from "path"

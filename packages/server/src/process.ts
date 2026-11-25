@@ -1,3 +1,7 @@
+/**
+ * 服务端进程生命周期。
+ * 定义服务端的启动、停止与变换（Transform）管道。
+ */
 export * as ServerProcess from "./process"
 
 import { NodeHttpServer } from "@effect/platform-node"

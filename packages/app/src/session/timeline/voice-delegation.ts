@@ -1,3 +1,7 @@
+/**
+ * 会话时间线 — VoiceDelegation。
+ * 会话消息时间线的渲染中负责 VoiceDelegation 部分，提供该部分所需的实现与类型定义。
+ */
 import { Option, Schema } from "effect"
 
 // Voice calls send each request as plain prompt text: a header line, then a JSON body. Nothing else marks the

@@ -1,3 +1,7 @@
+/**
+ * 数据站组件 — AgentMeta。
+ * 数据站点的界面组件中负责 AgentMeta 部分，提供该部分所需的实现与类型定义。
+ */
 import { Link } from "@solidjs/meta"
 import { Show } from "solid-js"
 import { getRequestEvent } from "solid-js/web"

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：服务·重启·CLI。
+ *
+ * 规格编号：C.13。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The root command with a background service of another version registered in its channel: "Restarting
 // background server (version mismatch)..." on stderr, the old service stopped, then the replacement started, which
 // fails as in `service-start.cli.ts`, and exit 1. Only the first stderr line is compared: what follows is the failed

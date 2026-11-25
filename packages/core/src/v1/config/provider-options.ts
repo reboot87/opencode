@@ -1,3 +1,7 @@
+/**
+ * v1 Provider 选项。
+ * 解析 v1 版本的 provider 选项并归一化。
+ */
 export * as ConfigProviderOptionsV1 from "./provider-options.js"
 
 import { isRecord } from "@opencode/util/record"

@@ -3,7 +3,10 @@
 // the Solid overlays a static page mounts close with its own menus.
 const closers = new Set<() => void>()
 
-/** Adds a close; the returned function removes it. */
+/** Adds a close; the returned function removes it.
+ *
+ * 站点界面组件：菜单·closers。
+ */
 export function addMenuCloser(close: () => void) {
   closers.add(close)
   return () => void closers.delete(close)

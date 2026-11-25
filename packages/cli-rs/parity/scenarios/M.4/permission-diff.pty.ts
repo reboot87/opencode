@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：权限·差异·伪终端。
+ *
+ * 规格编号：M.4。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // An edit waits for permission with its diff: the footer draws it with line numbers and signs, as the scrollback
 // draws an edit.
 import { definePty } from "../../pty/run"

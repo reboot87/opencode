@@ -1,3 +1,7 @@
+/**
+ * 模块 — MarkdownTest。
+ * 该目录下的功能模块中负责 MarkdownTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterAll, afterEach, beforeAll, expect, test } from "bun:test"
 import { mkdir } from "node:fs/promises"
 import { tmpdir } from "node:os"

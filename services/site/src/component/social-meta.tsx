@@ -1,3 +1,6 @@
+/**
+ * 通用界面组件：social·meta。
+ */
 import { Meta } from "@solidjs/meta"
 import { config } from "~/config"
 import { useLanguage } from "~/context/language"

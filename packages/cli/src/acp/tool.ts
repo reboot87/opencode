@@ -1,3 +1,7 @@
+/**
+ * ACP 工具转换。
+ * 把 OpenCode 工具转换为 ACP 工具调用及其输入输出。
+ */
 import { isAbsolute, resolve } from "node:path"
 import type { ToolCall, ToolCallContent, ToolCallLocation, ToolCallUpdate, ToolKind } from "@agentclientprotocol/sdk"
 import type { Tool } from "@opencode/schema/tool"

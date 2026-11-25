@@ -22,6 +22,8 @@ type Style = "products" | "strip" | "thumbnails" | "filmstrip" | "grid" | "wall"
  * The press media, one group per product, in one of seven layouts (Settings › Press media layout).
  * Every layout opens the same lightbox: arrow keys move through the product's media, Escape closes,
  * focus stays inside, and each still or video downloads from there.
+ *
+ * 媒体中心路由：媒体画廊。
  */
 export function MediaGallery(props: { products: Product[]; style: Style }) {
   const i18n = useI18n()

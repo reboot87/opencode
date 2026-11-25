@@ -1,3 +1,7 @@
+/**
+ * 命令运行时。
+ * 命令树的运行时：解析参数、执行处理器并归一化输出。
+ */
 import { Effect, FileSystem, Scope } from "effect"
 import { Command } from "effect/cli"
 import { PrintLogs } from "../commands/commands"

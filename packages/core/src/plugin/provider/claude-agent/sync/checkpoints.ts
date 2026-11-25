@@ -1,3 +1,7 @@
+/**
+ * Claude 同步检查点。
+ * 构建 Claude 侧的会话检查点历史。
+ */
 export * as Checkpoints from "./checkpoints.js"
 
 import type { LanguageModelV3Prompt, LanguageModelV3TextPart, LanguageModelV3ToolCallPart } from "@ai-sdk/provider"

@@ -1,3 +1,7 @@
+/**
+ * 终端 UI — Subcell。
+ * 终端界面的通用 UI 组件中负责 Subcell 部分，提供该部分所需的实现与类型定义。
+ */
 // Masks use row-major bits in a 2x4 grid. Unicode reuses these older glyphs
 // instead of duplicating them in the otherwise mask-ordered octant block.
 const OCTANTS = new Map<number, string>([

@@ -1,3 +1,5 @@
+//! CLI 子命令：`stats`。
+
 use std::future::Future;
 use std::io::IsTerminal;
 use std::time::Duration;

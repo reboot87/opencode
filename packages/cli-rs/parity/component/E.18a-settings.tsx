@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid E18aSettings：该文件实现 E18aSettings 相关的状态与逻辑。
+ */
 // P-COMP fixtures for the settings and experiments dialogs (packages/tui/src/component/dialog-config.tsx,
 // dialog-experiments.tsx): crates/tui/tests/all/settings.rs. The harness has no config service, so a changed value is
 // shown by starting from a config that already holds it.

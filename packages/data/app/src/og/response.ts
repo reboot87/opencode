@@ -1,3 +1,7 @@
+/**
+ * 数据站图像 — Response。
+ * 生成社交分享图像中负责 Response 部分，提供该部分所需的实现与类型定义。
+ */
 import { bannerPng, edgeCache, renderOgCard, waitUntil } from "#resource"
 import { statsPageCacheControl } from "../routes/stats-cache"
 import type { OgCard } from "./card"

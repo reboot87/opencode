@@ -1,3 +1,7 @@
+/**
+ * 文件插件 — View。
+ * 文件预览与操作的 GUI 插件中负责 View 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createSignal, Match, on, onCleanup, Switch, untrack } from "solid-js"
 import { Dynamic } from "solid-js/web"
 import { makeEventListener } from "@solid-primitives/event-listener"

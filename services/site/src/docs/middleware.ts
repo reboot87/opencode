@@ -60,7 +60,10 @@ export const docsMiddleware = createMiddleware({
   },
 })
 
-/** A prerendered docs file from the Worker's assets, or rendered on request by the development server. */
+/** A prerendered docs file from the Worker's assets, or rendered on request by the development server.
+ *
+ * V2 文档站：中间件。
+ */
 async function asset(set: DocsSet, slug: string, markdown: boolean, url: URL, request: Request) {
   const href = markdown ? docsMarkdownHref(slug, set) : docsHref(slug, set)
   const binding = assets()

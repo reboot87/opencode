@@ -1,3 +1,10 @@
+/**
+ * 供应商·GitLab·OAuth的测试。
+ *
+ * 被测模块：@opencode/core/plugin/provider-gitlab-oauth
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { describe, expect } from "bun:test"
 import { Clock, Effect, Schedule } from "effect"
 import { HttpClient, HttpClientRequest, HttpClientResponse } from "effect/http"

@@ -1,3 +1,7 @@
+/**
+ * 数据站工具 — DataPath。
+ * 数据站点的通用工具中负责 DataPath 部分，提供该部分所需的实现与类型定义。
+ */
 // How src/middleware.ts reads a /data path: which page it names and whether it asks for an alternate format
 // (Markdown, JSON, llms.txt) or the page's Open Graph image.
 

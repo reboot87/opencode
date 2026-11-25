@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — SessionActivityElapsedTest。
+ * 浏览器环境下的测试中负责 SessionActivityElapsedTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, mock, test } from "bun:test"
 import { dict } from "@opencode/ui/i18n/en"
 

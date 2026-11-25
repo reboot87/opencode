@@ -1,3 +1,7 @@
+/**
+ * 数据站工具 — ResourceNode。
+ * 数据站点的通用工具中负责 ResourceNode 部分，提供该部分所需的实现与类型定义。
+ */
 // The stand-in for resource.cloudflare.ts under `vite dev` and tests: cards render in-process from node_modules and
 // the source fonts, there is no edge cache, and waitUntil just awaits.
 import { readFile } from "node:fs/promises"

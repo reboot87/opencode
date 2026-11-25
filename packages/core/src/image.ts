@@ -1,3 +1,7 @@
+/**
+ * 图片处理服务。
+ * 图片解码、缩放与尺寸校验，含 ResizerUnavailable/Decode/Size 错误。
+ */
 export * as Image from "./image.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

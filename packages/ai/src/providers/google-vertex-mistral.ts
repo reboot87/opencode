@@ -1,3 +1,7 @@
+/**
+ * Google Vertex Mistral（独立）provider 门面。
+ * 以独立入口提供 Vertex 上托管的 Mistral 模型能力。
+ */
 import { Effect, Schema, Struct } from "effect"
 import type { ProviderPackage } from "../provider-package.js"
 import { MistralChat } from "../protocols/mistral-chat.js"

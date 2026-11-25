@@ -1,3 +1,7 @@
+/**
+ * Promise 风格插件 API — 产物领域。
+ * 插件对 artifact 产物的创建与更新能力。此文件定义 Promise 风格 下该领域的接口与类型，与其它领域共同构成插件 API 表面。
+ */
 import type { Artifact } from "@opencode/schema/artifact"
 import type { Session } from "@opencode/schema/session"
 import type { Transform } from "./registration.js"

@@ -1,3 +1,7 @@
+/**
+ * 会话服务（Session）。
+ * 会话的创建与管理入口：封装数据库与事件总线，提供会话生命周期操作。
+ */
 export * as Session from "./session.js"
 
 import { DateTime, Effect, Fiber, Scope } from "effect"

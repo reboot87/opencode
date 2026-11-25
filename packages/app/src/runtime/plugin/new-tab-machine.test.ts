@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — NewTabMachineTest。
+ * 浏览器端的插件加载与扩展点中负责 NewTabMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { SessionPane } from "@/shell/state/session-tabs"
 import {

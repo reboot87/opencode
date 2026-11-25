@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：更新日志·status。
+ */
 import { describe, expect, test } from "bun:test"
 import type { ChangelogRelease } from "../src/lib/changelog"
 import { changelogEntryView, entryStatus, parseReleaseNotes } from "../src/lib/changelog-notes"

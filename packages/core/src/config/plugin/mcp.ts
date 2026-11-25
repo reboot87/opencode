@@ -1,3 +1,7 @@
+/**
+ * MCP 配置插件。
+ * 从配置中注册 MCP 服务器到 Mcp 服务。
+ */
 export * as ConfigMcpPlugin from "./mcp.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

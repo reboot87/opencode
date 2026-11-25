@@ -1,3 +1,7 @@
+/**
+ * 提示输入 — Mention。
+ * 提示输入的解析、编辑与提交中负责 Mention 部分，提供该部分所需的实现与类型定义。
+ */
 import type { PromptInput, PromptMention } from "@opencode/schema"
 import { measureEditText, type WidthMethod } from "@opentui/core"
 import type { EditablePromptInput } from "./codec"

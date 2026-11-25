@@ -1,3 +1,8 @@
+/**
+ * 路由（开发期支持）。
+ *
+ * CLI 开发服务器的热更新支持：按需刷新与错误浮层。
+ */
 import { createEffect, on, type ComponentProps } from "solid-js"
 import { unwrap } from "solid-js/store"
 import { host } from "@opencode/cli/vite-host"

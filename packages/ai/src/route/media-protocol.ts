@@ -1,3 +1,10 @@
+/**
+ * 媒体协议的语义契约（MediaProtocol）。
+ *
+ * 定义一个媒体 provider 协议如何：提交生成任务、查询状态、取结果、取消。
+ * 把 provider 各异的状态字段归一成 generation.ts 的 Snapshot / Reason，
+ * 让上层的 MediaClient 能用统一方式驱动不同 provider。
+ */
 import { Clock, Duration, Effect, Schema, type Stream } from "effect"
 import { HttpClientResponse } from "effect/http"
 import type { Reason, Snapshot } from "../generation.js"

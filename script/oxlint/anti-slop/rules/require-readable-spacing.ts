@@ -34,7 +34,10 @@ const paddingRule = createPaddingLineRule([
   },
 ]);
 
-/** Restore structural blank lines with whitespace-only fixes; keep local short bindings and overloads grouped. */
+/** Restore structural blank lines with whitespace-only fixes; keep local short bindings and overloads grouped.
+ *
+ * Oxlint 规则：要求·readable·spacing。
+ */
 export const requireReadableSpacingRule: CreateRule = {
   ...paddingRule,
   meta: {

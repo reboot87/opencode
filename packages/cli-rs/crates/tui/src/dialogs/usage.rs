@@ -1,4 +1,6 @@
 //! Workspace usage limits and account status.
+//!
+//! 终端弹窗组件：用量。
 
 use opencode_api::generated::{
     ModelInfo, ProviderInfo, UsageLimitsBudget, UsageLimitsBudgetCoverage, UsageLimitsBudgetPer,

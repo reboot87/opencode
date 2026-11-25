@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid DiffViewerImage：该文件实现 DiffViewerImage 相关的状态与逻辑。
+ */
 import { useTerminalDimensions } from "@opentui/solid"
 import type { MouseEvent } from "@opentui/core"
 import { createResource, createSignal, Match, onCleanup, Show, Switch } from "solid-js"

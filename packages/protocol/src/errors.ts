@@ -1,3 +1,7 @@
+/**
+ * 协议错误类型。
+ * 定义服务端对外暴露的错误结构（位置不存在、非法请求、RPC 失败等），供 API 契约复用。
+ */
 import { Schema } from "effect"
 import { Skill } from "@opencode/schema/skill"
 import { Location } from "@opencode/schema/location"

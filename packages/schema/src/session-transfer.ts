@@ -1,3 +1,7 @@
+/**
+ * 会话传输类型。
+ * 定义会话导出/导入的数据结构。
+ */
 export * as SessionTransfer from "./session-transfer.js"
 
 import { Schema } from "effect"

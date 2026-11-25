@@ -1,3 +1,7 @@
+/**
+ * 渲染进程 — IpcClient。
+ * Electron 渲染进程的界面逻辑中负责 IpcClient 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Effect } from "effect"
 import type { RpcMessage } from "effect/rpc"
 import type { DesktopRpcClient } from "../shared/ipc-rpc"

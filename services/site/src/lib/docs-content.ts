@@ -138,7 +138,10 @@ export const docsToc = [
   { id: "learn", label: "Learn" },
 ]
 
-/** The Intro article: its prose, by section. */
+/** The Intro article: its prose, by section.
+ *
+ * 站点共享逻辑：文档内容。
+ */
 export const docsIntro = {
   title: "Intro",
   /** The page's `<title>`, 50–60 characters. */

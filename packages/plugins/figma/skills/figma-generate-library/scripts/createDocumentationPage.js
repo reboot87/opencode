@@ -30,6 +30,10 @@
  *   frameIds: string[]
  * }>}
  *   `frameIds` is an ordered list of IDs for the root frame and each section frame.
+ *
+ * Figma 组件库生成脚本：创建文档页面。
+ *
+ * Figma 组件库生成脚本：创建文档页面。
  */
 async function createDocumentationPage(pageName, config) {
   // Verify required fonts are available before loading

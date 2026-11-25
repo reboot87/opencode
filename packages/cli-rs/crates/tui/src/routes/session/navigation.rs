@@ -1,4 +1,6 @@
 //! Navigate between transcript messages, loading earlier history as needed.
+//!
+//! 终端界面路由：导航。
 
 use std::collections::HashSet;
 

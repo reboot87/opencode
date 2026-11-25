@@ -7,6 +7,8 @@ import { anomalyMark } from "./anomaly-mark"
  * still itself (as an environment map), takes its key light from the painting's moonlit window, the
  * cabinet screen's glow from above and, near the door, the slot lamp. Loaded on demand, so three.js
  * never blocks the first paint.
+ *
+ * 街机小游戏组件：`coin3d`。
  */
 
 export type CoinPose = {

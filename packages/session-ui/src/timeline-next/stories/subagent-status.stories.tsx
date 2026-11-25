@@ -1,3 +1,7 @@
+/**
+ * 时间线故事 — SubagentStatusStories。
+ * 新版时间线的 Storybook 展示中负责 SubagentStatusStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, type JSX } from "solid-js"
 import { CurrentSessionProviders } from "../../storybook/current-session-story"
 import { storyDocument } from "../../storybook/current-session-scenarios"

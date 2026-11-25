@@ -1,3 +1,5 @@
+//! Mermaid 图表渲染入口。
+
 pub mod drawing;
 pub mod parser;
 pub mod placement;

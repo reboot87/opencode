@@ -1,3 +1,6 @@
+/**
+ * 接口路由：能力。
+ */
 import { voiceMode } from "~/component/site/voice/flag"
 
 // Which parts of the voice assistant run on a server key here: ElevenLabs speech and transcription

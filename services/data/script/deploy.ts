@@ -1,3 +1,6 @@
+/**
+ * 数据服务脚本：`deploy`。
+ */
 // Builds and deploys the data site's Workers: the OG Worker first, since the site binds to it, then the sync Worker,
 // then the site. --secrets-file is a JSON object of secret values (the deploy job writes it from AWS Secrets Manager);
 // each Worker gets only the secrets its config declares, through a file in the same directory removed afterwards.

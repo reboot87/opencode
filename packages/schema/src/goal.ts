@@ -1,3 +1,7 @@
+/**
+ * 目标类型。
+ * 定义自主目标（goal）的结构与轮次状态。
+ */
 export * as Goal from "./goal.js"
 
 import { Schema } from "effect"

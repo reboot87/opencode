@@ -1,3 +1,5 @@
+//! 进程守护服务测试：传输层已保留。
+
 #[path = "../src/transport/retained.rs"]
 mod retained;
 

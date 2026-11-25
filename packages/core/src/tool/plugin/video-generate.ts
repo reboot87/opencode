@@ -1,3 +1,7 @@
+/**
+ * video-generate 工具。
+ * 根据提示词生成视频的工具：分块上传大输入，提交异步任务并轮询结果。
+ */
 export * as VideoGenerateTool from "./video-generate.js"
 
 import path from "path"

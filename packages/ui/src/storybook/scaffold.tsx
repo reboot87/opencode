@@ -1,3 +1,7 @@
+/**
+ * Storybook 配置 — Scaffold。
+ * Storybook 的构建与主题配置中负责 Scaffold 部分，提供该部分所需的实现与类型定义。
+ */
 import { ErrorBoundary, type ValidComponent } from "solid-js"
 import { Dynamic } from "solid-js/web"
 

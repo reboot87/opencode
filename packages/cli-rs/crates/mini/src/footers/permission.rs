@@ -1,4 +1,6 @@
 //! Always-allow needs confirmation; rejection offers a reason field.
+//!
+//! 精简版实现：权限。
 
 use opencode_api::generated::{PermissionReply, PermissionRequest};
 use opencode_ui::permission::{Presentation, always_lines, presentation};

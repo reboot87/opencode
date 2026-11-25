@@ -1,3 +1,7 @@
+/**
+ * 详情插件 — Popover。
+ * 展示对象详细信息的 GUI 插件中负责 Popover 部分，提供该部分所需的实现与类型定义。
+ */
 import { Popover } from "@kobalte/core/popover"
 import { Icon } from "@opencode/ui/icon"
 import { IconButton } from "@opencode/ui/icon-button"

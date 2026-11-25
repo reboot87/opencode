@@ -1,3 +1,7 @@
+/**
+ * 工作树（Worktree）服务。
+ * 管理 Git worktree 的创建策略、隔离与清理。
+ */
 export * as Worktree from "./worktree.js"
 
 import { Context, Effect, Layer, Schema } from "effect"

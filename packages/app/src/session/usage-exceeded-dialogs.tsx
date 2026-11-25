@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — UsageExceededDialogs。
+ * 会话主界面的视图与状态中负责 UsageExceededDialogs 部分，提供该部分所需的实现与类型定义。
+ */
 import { useWorkspaceLocation } from "@/workspaces/location"
 import { Persist, persisted } from "@/runtime/persistence/storage"
 import type { SessionStepFailed } from "@opencode/client/promise"

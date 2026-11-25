@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：代码围栏·外边距·app。
+ *
+ * 规格编号：P.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The rows around the built-in LaTeX and Mermaid fences in the transcript: a paragraph then a formula, a formula then
 // a paragraph, two formulas in a row, a list then a diagram, and a diagram that ends the text. TS's renderers set one
 // row of top margin on top of Core 0.9.4's row between blocks, so TS has two blank rows above each fence that follows

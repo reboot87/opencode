@@ -1,3 +1,5 @@
+//! 进程守护服务实现：守护进程。
+
 use std::path::{Path, PathBuf};
 
 use anyhow::{Result, bail};

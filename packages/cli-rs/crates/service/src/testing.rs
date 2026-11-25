@@ -1,4 +1,6 @@
 //! A fake transport for the crate's tests: fixed replies per URL, and a record of the requests.
+//!
+//! 服务层：测试。
 
 use std::collections::HashMap;
 use std::sync::Mutex;

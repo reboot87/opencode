@@ -1,3 +1,7 @@
+/**
+ * MCP 指令渲染。
+ * 把已连接 MCP 服务器的能力汇总渲染为可注入系统提示词的指令文本。
+ */
 export * as McpInstructions from "./instructions.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

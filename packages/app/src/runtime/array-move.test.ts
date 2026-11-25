@@ -1,3 +1,7 @@
+/**
+ * 应用运行时 — ArrayMoveTest。
+ * 浏览器端应用的运行时环境与服务装配中负责 ArrayMoveTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { arrayMove } from "./array-move"
 

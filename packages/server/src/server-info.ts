@@ -1,3 +1,7 @@
+/**
+ * 服务端信息服务。
+ * 提供服务端对外公布的地址与版本信息。
+ */
 import { Context, Layer } from "effect"
 import { networkInterfaces } from "node:os"
 import type { ServerOptions } from "./options"

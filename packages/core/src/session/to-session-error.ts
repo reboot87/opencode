@@ -1,3 +1,7 @@
+/**
+ * 错误 → 会话错误转换。
+ * 把 provider/用量/预算等各类错误文本映射为规范的 SessionError（含免费额度、预算上限等提示）。
+ */
 import { AIError, ToolFailure, type FinishReasonDetails } from "@opencode/ai/effect"
 import { Tool } from "@opencode/schema/tool"
 import { SessionError } from "@opencode/schema/session-error"

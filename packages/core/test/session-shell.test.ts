@@ -1,3 +1,10 @@
+/**
+ * 会话·Shell的测试。
+ *
+ * 被测模块：@opencode/core/session-shell
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, setDefaultTimeout } from "bun:test"
 import fs from "fs/promises"
 import path from "path"

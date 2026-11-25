@@ -1,3 +1,8 @@
+/**
+ * opencode·伪终端脚本。
+ *
+ * CLI 包的开发脚本：构建校验、配置生成与发布准备。
+ */
 import { createHash } from "node:crypto"
 import { readFile } from "node:fs/promises"
 import { createRequire } from "node:module"

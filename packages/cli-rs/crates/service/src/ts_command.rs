@@ -1,5 +1,7 @@
 //! Resolves the server binary from `OPENCODE_TS_BIN`, the bundled `opencode` beside the client, or `PATH`, in that
 //! order.
+//!
+//! 服务层：TypeScript·命令。
 
 use std::ffi::OsString;
 use std::path::{Path, PathBuf};

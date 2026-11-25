@@ -1,3 +1,7 @@
+/**
+ * 提示输入 — Part。
+ * 提示输入的解析、编辑与提交中负责 Part 部分，提供该部分所需的实现与类型定义。
+ */
 import type { WidthMethod } from "@opentui/core"
 import { promptOffsetIndex } from "./display"
 

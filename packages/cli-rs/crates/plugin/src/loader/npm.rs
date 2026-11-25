@@ -1,6 +1,8 @@
 //! Resolves installed plugins without fetching anything. The package cache keys a registry spec by its requested
 //! version or tag, and a git spec by its slug and a hash of the literal spec. Use the highest numbered generation.
 //! Unclassified specs can have cache keys but must never be joined to the cache path.
+//!
+//! 插件系统：`npm`。
 
 use std::path::{Path, PathBuf};
 

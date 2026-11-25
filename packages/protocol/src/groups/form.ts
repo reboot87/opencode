@@ -1,3 +1,7 @@
+/**
+ * 表单 API 分组。
+ * 定义表单的提交端点，按 Location 定制。
+ */
 import { Form } from "@opencode/schema/form"
 import { Location } from "@opencode/schema/location"
 import { Context, Schema } from "effect"

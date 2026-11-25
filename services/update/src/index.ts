@@ -1,3 +1,6 @@
+/**
+ * 更新服务实现：索引。
+ */
 import { createRemoteJWKSet, jwtVerify, type JWTPayload } from "jose"
 import type { Pipeline } from "cloudflare:pipelines"
 import semver from "semver"

@@ -10,6 +10,8 @@
 //!   still holds open.
 //! - A cancelled reader closes the pipe, so leftover writers get `SIGPIPE`
 //!   once the drain deadline passes.
+//!
+//! 守护服务接口：`unix`。
 
 use std::fs::OpenOptions;
 use std::io::{self, PipeReader, PipeWriter, Read};

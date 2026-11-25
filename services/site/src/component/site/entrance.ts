@@ -1,3 +1,6 @@
+/**
+ * 站点界面组件：`entrance`。
+ */
 // When an entrance plays. Kept apart from reveal.ts so marks that animate in (the footer wordmark)
 // can share the rule without the reveal styles.
 

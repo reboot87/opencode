@@ -1,4 +1,7 @@
-/** How the details popover opened: a pointer focuses the popover itself, the keyboard its first row. */
+/**
+ * 
+ * How the details popover opened: a pointer focuses the popover itself, the keyboard its first row. 详情插件中负责 PopoverMachine 部分：对象详情展示中与 PopoverMachine 相关的状态、交互与渲染逻辑。
+ */
 export type DetailsPopoverVia = "pointer" | "keyboard"
 
 /**

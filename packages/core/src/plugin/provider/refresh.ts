@@ -1,3 +1,7 @@
+/**
+ * Provider 刷新。
+ * 在切换集成或按间隔刷新时重新加载 provider 凭据与模型目录。
+ */
 export * as ProviderRefresh from "./refresh.js"
 
 import { Duration, Effect, Equal, Fiber, FiberHandle, Scope, Semaphore, Stream } from "effect"

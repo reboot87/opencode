@@ -1,3 +1,9 @@
+/*
+ * 站点第三方资源（vendored）：basis·transcoder。
+ */
+/*
+ * 站点第三方资源（vendored）：basis·transcoder。
+ */
 
 var BASIS = (() => {
   var _scriptName = typeof document != 'undefined' ? document.currentScript?.src : undefined;

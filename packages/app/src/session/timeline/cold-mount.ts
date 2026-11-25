@@ -1,3 +1,7 @@
+/**
+ * 会话时间线 — ColdMount。
+ * 会话消息时间线的渲染中负责 ColdMount 部分，提供该部分所需的实现与类型定义。
+ */
 // A pinned timeline without cached measurements mounts hidden: first only the cheap tail, then the full range, and it
 // reveals once a pass finds every row measured, Markdown ready and the view at its end. The fallback timer bounds that
 // wait, so a block that never reports ready or a gate that never clears cannot leave the timeline invisible.

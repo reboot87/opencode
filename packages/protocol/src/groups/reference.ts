@@ -1,3 +1,7 @@
+/**
+ * 引用 API 分组。
+ * 定义本地与 Git 引用来源的公开结构与相关端点。
+ */
 import { Location } from "@opencode/schema/location"
 import { Reference } from "@opencode/schema/reference"
 import { Schema, Struct } from "effect"

@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# Nix 哈希校验脚本：发布。
 # publish.sh <hashes.json>: run from a checkout of dev. Puts <hashes.json> on bot/nix-hashes as one commit on top of dev,
 # opens or updates the pull request into dev, dispatches its required checks and enables auto-merge. Closes the pull
 # request instead when dev already has these hashes. Uses git, gh and jq only; never runs repository code.

@@ -1,3 +1,7 @@
+/**
+ * 端到端测试工具 — Console。
+ * 端到端测试的公共辅助中负责 Console 部分，提供该部分所需的实现与类型定义。
+ */
 export const CONSOLE_URL = "https://opencode.ai/console"
 
 // An MCP server OpenCode Console delivers through its gateway, with the gateway token that names its workspace.

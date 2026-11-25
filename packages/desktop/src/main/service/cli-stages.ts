@@ -1,3 +1,7 @@
+/**
+ * 后台服务 — CliStages。
+ * 桌面端托管的后台服务进程中负责 CliStages 部分，提供该部分所需的实现与类型定义。
+ */
 import { Effect, FileSystem, Path } from "effect"
 
 // Each version and architecture stages its own copy of the CLI, and only the current one (plus any adopted

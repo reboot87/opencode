@@ -1,4 +1,7 @@
-/** A command chord takes at most this many strokes; its row offers no + past that. */
+/**
+ * 
+ * A command chord takes at most this many strokes; its row offers no + past that. 快捷键设置中负责 Machine 部分：快捷键绑定设置中与 Machine 相关的状态、交互与渲染逻辑。
+ */
 export const MAX_CHORD_STROKES = 4
 
 /** A key pressed while recording, classified by the driver; a stroke carries the commands its chord would clash with. */

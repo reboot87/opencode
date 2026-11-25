@@ -1,3 +1,7 @@
+/**
+ * 时间线故事 — SessionReplay。
+ * 新版时间线的 Storybook 展示中负责 SessionReplay 部分，提供该部分所需的实现与类型定义。
+ */
 import type {
   JsonValue,
   SessionMessageAssistant,

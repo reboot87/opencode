@@ -1,4 +1,6 @@
 //! Exercise plugin-manager actions, subscriptions, and resources held while disabled.
+//!
+//! 终端界面测试：插件·manager。
 
 use std::cell::{Cell, RefCell};
 use std::collections::BTreeSet;

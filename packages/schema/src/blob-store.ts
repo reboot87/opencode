@@ -1,3 +1,7 @@
+/**
+ * Blob 存储类型定义。
+ * 定义 BlobStore 的 ID 与 Info 结构。
+ */
 export * as BlobStore from "./blob-store.js"
 
 import { Schema } from "effect"

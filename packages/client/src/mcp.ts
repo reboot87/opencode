@@ -1,3 +1,7 @@
+/**
+ * MCP 客户端桥接。
+ * 把 OpenCode 客户端暴露为 MCP 服务器（工具与资源）。
+ */
 export type ClientMcpOptions = {
   /** Base URL of the opencode server, for example `http://127.0.0.1:4096`. Its query params are kept. */
   readonly url: string

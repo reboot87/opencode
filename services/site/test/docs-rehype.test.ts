@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：文档·rehype。
+ */
 import { describe, expect, test } from "bun:test"
 import { compile } from "@mdx-js/mdx"
 import type { Element, ElementContent, Root } from "hast"

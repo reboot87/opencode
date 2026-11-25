@@ -1,4 +1,6 @@
 //! Offer to background a running shell after three seconds. Subagents already run in the background.
+//!
+//! 终端界面路由：后台。
 
 use opencode_api::generated::{SessionMessageAssistantContentItem, SessionMessageAssistantToolState};
 use opencode_ui::tool_info::ToolKind;

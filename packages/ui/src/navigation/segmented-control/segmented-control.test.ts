@@ -1,3 +1,7 @@
+/**
+ * 分段控件 — SegmentedControlTest。
+ * 互斥选项的分段切换组件中负责 SegmentedControlTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   HIDDEN_INDICATOR,

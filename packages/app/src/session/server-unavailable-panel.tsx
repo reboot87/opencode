@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — ServerUnavailablePanel。
+ * 会话主界面的视图与状态中负责 ServerUnavailablePanel 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { useDialog } from "@opencode/ui/context/dialog"
 import { Icon } from "@opencode/ui/icon"

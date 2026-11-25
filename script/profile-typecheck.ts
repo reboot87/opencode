@@ -1,5 +1,9 @@
 #!/usr/bin/env bun
 
+/**
+ * 仓库脚本：性能剖析类型检查。
+ */
+
 import { mkdir } from "fs/promises"
 import path from "path"
 

@@ -9,7 +9,10 @@ import {
 } from "~/lib/changelog-notes"
 import { blocks, link, type MarkdownContext } from "~/lib/markdown"
 
-/** The changelog page as Markdown: one page of the timeline by day, its filter, and links to the other pages and the feed. */
+/** The changelog page as Markdown: one page of the timeline by day, its filter, and links to the other pages and the feed.
+ *
+ * 站点共享逻辑：更新日志·Markdown。
+ */
 export function changelogMarkdown(context: MarkdownContext) {
   const view = context.changelog
   if (!view?.ok) return blocks(`# ${context.t("changelog.hero.title")}`, unavailable(context))

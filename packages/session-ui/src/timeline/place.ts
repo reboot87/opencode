@@ -1,3 +1,7 @@
+/**
+ * 时间线 — Place。
+ * 按时间顺序展示会话消息的视图中负责 Place 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageAssistant, SessionMessageInfo } from "@opencode/client/promise"
 import { untrack } from "solid-js"
 import { timelineNoticeRequired, type TimelineDetail, type TimelinePlacement } from "./detail"

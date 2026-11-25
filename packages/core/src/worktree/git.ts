@@ -1,3 +1,7 @@
+/**
+ * Worktree Git 实现。
+ * 基于 Git 实现 worktree 的创建与清理。
+ */
 export * as WorktreeGit from "./git.js"
 
 import { Effect } from "effect"

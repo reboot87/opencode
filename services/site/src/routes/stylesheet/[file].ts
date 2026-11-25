@@ -1,3 +1,6 @@
+/**
+ * 样式表路由：`[file]`。
+ */
 import type { APIEvent } from "@solidjs/start/server"
 import { assets } from "#resource"
 import { edgeCache } from "~/lib/edge-cache"

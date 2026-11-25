@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：计划发布。
 # plan-release.sh: decides version, channel and npm dist-tag from the event, ref and dispatch inputs
 # (INPUT_BUMP, INPUT_VERSION) only, and writes them to $GITHUB_OUTPUT. Nothing here reads repository files.
 #

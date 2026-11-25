@@ -1,3 +1,7 @@
+/**
+ * 项目头像 — ProjectIconStylesStories。
+ * 项目标识头像组件中负责 ProjectIconStylesStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, For, on, onCleanup, onMount, Show, type JSX } from "solid-js"
 import { createStore } from "solid-js/store"
 import { Icon as Glyph } from "../../icons/icon/icon"

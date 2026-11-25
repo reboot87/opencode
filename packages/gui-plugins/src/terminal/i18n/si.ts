@@ -1,3 +1,7 @@
+/**
+ * 终端文案 — Si。
+ * 终端插件的多语言文案中负责 Si 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.category": "පර්යන්තය",
   "command.toggle": "පර්යන්තය ටොගල් කරන්න",

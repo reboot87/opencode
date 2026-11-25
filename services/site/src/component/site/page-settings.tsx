@@ -79,7 +79,10 @@ const sectionColumnSettings = [
   { key: "consoleColumns", label: "Console", copy: "consoleCopyColumns" },
 ] as const
 
-/** The home and product page rows for one section of the settings panel. */
+/** The home and product page rows for one section of the settings panel.
+ *
+ * 站点界面组件：页面设置。
+ */
 export default function PageSettings(props: { home?: boolean; terminal?: boolean; section: SettingsSectionID }) {
   const [width, setWidth] = createSignal(0)
 

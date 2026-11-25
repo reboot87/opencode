@@ -2,6 +2,8 @@
  * The first renderer's burst of asset requests, which the entry module waits out before it evaluates the main bundle
  * on the thread that serves them. The burst is answered once no request has been in flight for `quietMs` after the
  * last one finished, or `capMs` after the wait began. Once settled, requests are no longer tracked.
+ *
+ * 窗口协议的状态机：管理自定义协议（如 opencode://）的唤起处理。
  */
 export type ProtocolBurstState =
   /** Nobody waits yet; requests are counted so a wait can start from where the burst stands. */

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：路由·伪终端。
+ *
+ * 规格编号：E.15a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The diff viewer in a real terminal (F15): on home, `/diff` opens the full-screen route with the file tree,
 // `]` steps to a hunk, a wheel step scrolls the cards, a right press on a tree row opens the file menu, enter marks the
 // file complete, and `q` goes back home. The source is Uncommitted, so no base is read.

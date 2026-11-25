@@ -1,3 +1,7 @@
+/**
+ * Shell 权限校验。
+ * 校验 shell 命令的权限请求，含 Unverifiable 错误（无法验证时需人工确认）。
+ */
 export * as ShellPermissions from "./permissions.js"
 
 import { Effect, Result, Schema } from "effect"

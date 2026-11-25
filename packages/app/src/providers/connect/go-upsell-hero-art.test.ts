@@ -1,3 +1,7 @@
+/**
+ * Provider 连接 — GoUpsellHeroArtTest。
+ * 连接 provider 的授权界面中负责 GoUpsellHeroArtTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, beforeEach, expect, spyOn, test } from "bun:test"
 import { mountGoUpsellHero } from "./go-upsell-hero-art"
 

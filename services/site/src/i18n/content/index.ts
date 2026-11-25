@@ -13,7 +13,10 @@ export { loadLanguage, loadSlice } from "~/i18n"
 // localized links), or the English source of one (content/areas, through useArea).
 const merged = new WeakMap<object, Map<Locale, { overlay: unknown; value: unknown }>>()
 
-/** One area's copy built with the page's own localized links, with the locale's translations over it. */
+/** One area's copy built with the page's own localized links, with the locale's translations over it.
+ *
+ * 多语言内容文案：索引。
+ */
 export function localize<K extends keyof Content>(locale: Locale, key: K, base: Content[K]): Content[K] {
   if (locale === "en") return base
   const overlay = contentArea(locale, key)

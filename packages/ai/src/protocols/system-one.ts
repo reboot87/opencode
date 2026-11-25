@@ -1,3 +1,7 @@
+/**
+ * System One 风格的响应协议实现。
+ * 定义其特有的请求体编码与响应转换。
+ */
 import { Effect, Schema } from "effect"
 import {
   DecisionResponse,

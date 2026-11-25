@@ -1,3 +1,5 @@
+//! 精简版实现：信号。
+
 use std::fs::{self, OpenOptions};
 use std::io::Write;
 use std::path::{Path, PathBuf};

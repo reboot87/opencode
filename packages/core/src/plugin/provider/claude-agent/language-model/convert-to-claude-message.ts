@@ -1,3 +1,7 @@
+/**
+ * Claude 消息转换。
+ * 把统一提示词转换为 Claude SDK 的消息与内容块。
+ */
 export * as ConvertToClaudeMessage from "./convert-to-claude-message.js"
 
 import type { LanguageModelV3FilePart, LanguageModelV3Prompt } from "@ai-sdk/provider"

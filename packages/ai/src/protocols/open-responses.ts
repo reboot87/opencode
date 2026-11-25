@@ -1,3 +1,7 @@
+/**
+ * provider 中立的 Responses API 基线协议。
+ * 定义 Responses 风格的输入/输出项模型与状态机，作为 OpenAI Responses 及其它 provider Responses 变体的共同基础。
+ */
 import { Effect, Option, Schema } from "effect"
 import type { Content } from "@opencode/schema/tool"
 import { HttpTransport } from "../route/transport/index.js"

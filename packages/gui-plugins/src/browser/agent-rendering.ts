@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — AgentRendering。
+ * 内置浏览器功能的 GUI 插件中负责 AgentRendering 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Browser } from "@opencode/plugin-browser/rpc"
 
 /** A paused page cannot paint the frame that its dialog or a recovery navigation would unblock. */

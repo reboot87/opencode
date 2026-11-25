@@ -1,3 +1,7 @@
+/**
+ * OpenAI Responses API 协议实现。
+ * 基于 Responses 端点的协议：支持输入项（文本/图片/文件）、推理模式、上下文管理和后台压缩。
+ */
 import { Effect, Schema } from "effect"
 import { Base64 } from "effect/encoding"
 import { Headers } from "effect/http"

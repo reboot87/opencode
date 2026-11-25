@@ -1,4 +1,6 @@
 //! Finds `themes/*.json` in configuration directories.
+//!
+//! 主题解析与应用：发现文档。
 
 use std::io;
 use std::path::{Path, PathBuf};

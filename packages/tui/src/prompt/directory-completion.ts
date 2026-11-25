@@ -1,3 +1,7 @@
+/**
+ * 提示输入 — DirectoryCompletion。
+ * 提示输入的解析、编辑与提交中负责 DirectoryCompletion 部分，提供该部分所需的实现与类型定义。
+ */
 import type { KeymapCommand } from "@opencode/plugin/tui/context"
 import type { OpenCodeClient } from "@opencode/client"
 import { measureEditText, type WidthMethod } from "@opentui/core"

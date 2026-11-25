@@ -1,3 +1,7 @@
+/**
+ * 压缩配置插件。
+ * 把配置中的压缩设置应用到 SessionCompaction 服务。
+ */
 export * as ConfigCompactionPlugin from "./compaction.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

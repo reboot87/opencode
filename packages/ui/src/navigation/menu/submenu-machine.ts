@@ -2,6 +2,8 @@
  * A menu opens at most one submenu at a time. A submenu stays open while focus crosses the other items of its menu, so
  * the next submenu replaces it in the same frame, and the pointer can still reach it, instead of every move closing it
  * and leaving the menu without one until the next opens.
+ *
+ * 子菜单的状态机：管理子菜单的展开层级与延迟关闭。
  */
 export type SubmenuState =
   | { readonly status: "closed" }

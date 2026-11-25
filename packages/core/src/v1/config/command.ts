@@ -1,3 +1,7 @@
+/**
+ * v1 命令配置。
+ * 定义 v1 版本的命令配置结构。
+ */
 export * as ConfigCommandV1 from "./command.js"
 
 import { Schema } from "effect"

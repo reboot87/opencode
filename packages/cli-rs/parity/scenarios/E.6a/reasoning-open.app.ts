@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：推理·打开·app。
+ *
+ * 规格编号：E.6a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // An opened reasoning block whose text is Markdown: TS draws it in rendered mode with Core's Markdown, as an answer is
 // drawn, in the reasoning colors (#63989's `ReasoningBody`); Rust draws it with its Markdown widget (V04).
 import { defineApp, session } from "../../lib/app"

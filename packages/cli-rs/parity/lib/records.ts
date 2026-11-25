@@ -1,3 +1,8 @@
+/**
+ * 对等性公共库：记录。
+ *
+ * 对等性校验的公共库：伪造服务端、PTY 套接字与录制回放工具。
+ */
 // The record-per-line JSON layout of the oracle fixtures. `records(value, paths)` returns the same JSON value
 // as `JSON.stringify(value)`, with the same key order, but laid out so that each record (one test case) sits
 // on one compact line. A re-record then diffs one line per changed case, and readers keep parsing it with

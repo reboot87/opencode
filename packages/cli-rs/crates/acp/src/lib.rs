@@ -1,4 +1,6 @@
 //! `opencode acp` serves the Agent Client Protocol over stdio and starts a private HTTP server for the session.
+//!
+//! ACP 协议实现入口。
 
 pub mod agent;
 pub mod capabilities;

@@ -1,5 +1,7 @@
 //! The fake delegated CLI records arguments, stdio and exit status without installing or removing anything.
 #![cfg(unix)]
+//!
+//! 命令行入口测试：委派。
 
 use std::io::Write;
 use std::path::Path;

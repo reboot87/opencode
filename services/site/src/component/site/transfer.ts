@@ -1,6 +1,9 @@
 import { z } from "zod"
 
-/** The Settings › Export format. Every setting is included, defaults too, so an import restores it exactly. */
+/** The Settings › Export format. Every setting is included, defaults too, so an import restores it exactly.
+ *
+ * 站点界面组件：`transfer`。
+ */
 export function transferJson(data: { settings: unknown; designCopy: unknown; theme: string }) {
   return JSON.stringify({ version: 1, ...data }, null, 2)
 }

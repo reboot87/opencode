@@ -1,3 +1,10 @@
+/**
+ * Shell·重启的测试。
+ *
+ * 被测模块：@opencode/core/shell-restart
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 // A foreground shell call across a graceful restart, through the whole app: server 1 runs the turn, prepares a
 // handoff and is torn down mid-call, server 2 recovers the command from the same process daemon and resumes the session.
 import { describe, expect } from "bun:test"

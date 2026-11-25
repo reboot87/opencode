@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — ScrollViewStories。
+ * 跨场景复用的通用 UI 组件中负责 ScrollViewStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, Show } from "solid-js"
 import { ScrollView, type ScrollViewProps } from "./scroll-view"
 

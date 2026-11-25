@@ -213,6 +213,8 @@ const preloadRules: [string, string, (s: SiteSettings, el: HTMLElement, d: SiteS
  * The pre-paint script: Site renders it as an inline script on the development server only, as saved
  * settings are a development tool; test/preload-settings.test.ts runs it. A production build leaves
  * it empty, so the browser's bundle doesn't carry it and the functions it inlines.
+ *
+ * 站点界面组件：预加载设置。
  */
 export const preloadSettings = import.meta.env.PROD
   ? ""

@@ -11,6 +11,8 @@
  *
  * No framework code: `view` shows the state, as signals in the app and attributes on the static
  * pages. `media` is the card's media box, holding the video, and the loop or the still. Returns its stop.
+ *
+ * 站点界面组件：卡片视频。
  */
 export function cardVideo(
   media: HTMLElement,

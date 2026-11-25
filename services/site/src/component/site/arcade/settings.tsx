@@ -15,6 +15,8 @@ import { SettingsSelect, SettingsSlider } from "../site"
  * The site's Settings panel on the 404 arcade, with a "404 arcade" section first. Loaded the first
  * time Settings opens (it brings the panel and its styles). `rows` adds version-specific controls
  * (the image version's are below; the three.js version passes its own).
+ *
+ * 街机小游戏组件：设置。
  */
 export default function ArcadeSettingsPanel(props: { onClose: () => void; rows?: () => JSX.Element }) {
   return (

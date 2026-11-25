@@ -1,3 +1,7 @@
+/**
+ * 模块 — Select。
+ * 该目录下的功能模块中负责 Select 部分，提供该部分所需的实现与类型定义。
+ */
 import { mergeTheme } from "./expand.js"
 import type { Mode, ThemeDefinition, ThemeDocument } from "./index.js"
 

@@ -1,3 +1,7 @@
+/**
+ * 调试文案 — Ja。
+ * 调试插件的多语言文案中负责 Ja 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.toggle": "デバッグバーを切り替え",
   providerAriaLabel: "プロバイダーのパフォーマンス診断",

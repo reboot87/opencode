@@ -1,3 +1,7 @@
+/**
+ * Node 目标平台。
+ * 解析当前平台对应的 Node 分发目标。
+ */
 const platforms = ["darwin", "linux", "win32"] as const
 
 export type NodeTarget = ReturnType<typeof nodeTarget>

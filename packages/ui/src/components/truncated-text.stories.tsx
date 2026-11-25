@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — TruncatedTextStories。
+ * 跨场景复用的通用 UI 组件中负责 TruncatedTextStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { TruncatedText } from "./truncated-text"
 
 const args = { text: "Workspace tools for shared development environments", width: 216, rtl: false }

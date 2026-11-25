@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：attach·伪终端。
+ *
+ * 规格编号：M.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A pasted image path becomes an atomic `[Image 1]` part; Enter sends it as a file of the prompt.
 import { definePty } from "../../pty/run"
 import { config, leave, opened, server, statusMask } from "./fixture"

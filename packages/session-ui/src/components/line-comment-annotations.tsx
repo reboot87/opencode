@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — LineCommentAnnotations。
+ * 跨场景复用的通用 UI 组件中负责 LineCommentAnnotations 部分，提供该部分所需的实现与类型定义。
+ */
 import { type DiffLineAnnotation, type SelectedLineRange } from "@pierre/diffs"
 import { createEffect, createMemo, createSignal, onCleanup, Show, untrack, type Accessor, type JSX } from "solid-js"
 import { render as renderSolid } from "solid-js/web"

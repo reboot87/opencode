@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：标题·untitled·伪终端。
+ *
+ * 规格编号：D131。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // D131: a session the home prompt creates and the server never titles. The tab shows the fallback title, as in TS;
 // the exit summary names it "New session" where TS prints an
 // empty title (D131-epilogue-untitled).

@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：语音球体。
+ */
 import { describe, expect, test } from "bun:test"
 import { siteSettingsSchema } from "~/component/site/settings"
 

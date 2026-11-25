@@ -17,7 +17,10 @@ type FunctionWithReturnType =
   | ESTree.TSFunctionType
   | ESTree.TSMethodSignature;
 
-/** Ban function contracts that return unknown instead of a parsed domain type. */
+/** Ban function contracts that return unknown instead of a parsed domain type.
+ *
+ * Oxlint 规则：无未知·returns。
+ */
 export const noUnknownReturnsRule = defineRule({
   meta: {
     type: "problem",

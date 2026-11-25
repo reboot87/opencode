@@ -521,6 +521,8 @@ export default function Home() {
  * before first paint for a saved value) opens it, and changes animate its height and opacity.
  * On the development server ⇧A (or the older ⇧N) toggles it, like ⇧S and ⇧D for Settings and Design
  * mode, except while typing.
+ *
+ * 页面路由：索引。
  */
 function Announcement() {
   const language = useLanguage()

@@ -1,3 +1,10 @@
+/**
+ * 供应商·opencode·watches的测试。
+ *
+ * 被测模块：@opencode/core/plugin/provider-opencode-watches
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { describe, expect } from "bun:test"
 import type { Plugin as PluginContext } from "@opencode/plugin/effect"
 import { DateTime, Effect, Layer } from "effect"

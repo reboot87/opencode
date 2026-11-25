@@ -1,3 +1,7 @@
+/**
+ * Exa 搜索插件。
+ * 通过 Exa 的 MCP 端点提供网络搜索。
+ */
 export * as WebSearchExa from "./exa.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

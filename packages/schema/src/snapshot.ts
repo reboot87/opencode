@@ -1,3 +1,7 @@
+/**
+ * 快照类型。
+ * 定义文件系统快照与差异结构。
+ */
 export * as Snapshot from "./snapshot.js"
 
 import { Schema } from "effect"

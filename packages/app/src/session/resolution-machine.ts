@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — ResolutionMachine。
+ * 会话主界面的视图与状态中负责 ResolutionMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import { isFallbackTitle } from "@opencode/util/session-title-fallback"
 import { isSessionNotFoundError } from "@/runtime/server/errors"
 import type { ServerHealth } from "@/runtime/server/health-machine"

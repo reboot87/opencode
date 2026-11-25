@@ -1,3 +1,7 @@
+/**
+ * 运行时平台 — BasePathTest。
+ * 识别浏览器平台能力并做适配中负责 BasePathTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { normalizeBasePath, stripBasePath, withBasePath } from "./base-path"
 

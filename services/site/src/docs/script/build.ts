@@ -152,6 +152,8 @@ console.log(`docs: built ${Object.values(render.docsSlugs).flat().length} pages`
 /**
  * Fails when the docs' first JavaScript or stylesheet outgrows its budget (gzipped): every docs
  * page loads both, and nothing else is render-blocking.
+ *
+ * 文档站脚本：构建。
  */
 async function checkBudget() {
   // The shared nav menus (packages/nav-menus) are the script's one file of its own, loaded on first use (nav-intent.ts).

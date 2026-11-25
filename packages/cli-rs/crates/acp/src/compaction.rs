@@ -1,3 +1,5 @@
+//! ACP 协议实现：上下文压缩。
+
 use std::borrow::Cow;
 use std::collections::HashMap;
 

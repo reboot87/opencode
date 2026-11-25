@@ -1,3 +1,7 @@
+/**
+ * 模型配置类型。
+ * 定义 model 配置项的 Schema。
+ */
 export * as ConfigModel from "./model.js"
 
 import { Schema, SchemaGetter } from "effect"

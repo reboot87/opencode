@@ -1,3 +1,10 @@
+/**
+ * v1·迁移的测试。
+ *
+ * 被测模块：@opencode/core/v1-migration
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { SqliteClient } from "@effect/sql-sqlite-bun"
 import { EffectDrizzleSqlite } from "@opencode/core/database/drizzle"

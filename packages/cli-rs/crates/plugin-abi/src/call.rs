@@ -10,6 +10,8 @@
 //!     Ok(items.len())
 //! }
 //! ```
+//!
+//! 插件 ABI 边界：调用。
 
 use std::future::Future;
 

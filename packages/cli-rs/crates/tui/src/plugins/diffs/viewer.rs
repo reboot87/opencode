@@ -1,6 +1,8 @@
 //! One viewer: the state of a mount of the panel or the route, and what its keys, presses and replies do to it.
 //! Positions are the host's: the hunk cursor is [`Scroll::Step`], the reading position [`ScrollAlign::Keep`], and the
 //! current file the top anchor of the last settled frame ([`Read::top_anchor`]).
+//!
+//! 终端插件视图：`viewer`。
 
 use std::collections::{BTreeSet, HashMap};
 

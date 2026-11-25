@@ -1,4 +1,8 @@
-/** How long loading the actions chunk may take, so a missing or stalled chunk never holds the window's update actions. */
+/**
+ * How long loading the actions chunk may take, so a missing or stalled chunk never holds the window's update actions.
+ *
+ * 更新插件中负责 WindowMachine 部分：应用更新提示中与 WindowMachine 相关的状态、交互与渲染逻辑。
+ */
 export const ACTION_CHUNK_TIMEOUT_MS = 15_000
 
 /**

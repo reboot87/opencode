@@ -1,3 +1,7 @@
+/**
+ * 会话请求 — PermissionMachine。
+ * 会话界面的请求发起与状态跟踪中负责 PermissionMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export const PERMISSION_REPLY_TIMEOUT_MS = 15_000
 
 export const PERMISSION_REPLIED_LIMIT = 256

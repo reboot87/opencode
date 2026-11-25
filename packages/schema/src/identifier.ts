@@ -1,3 +1,7 @@
+/**
+ * 标识符工具。
+ * 提供带前缀的标识符生成与校验。
+ */
 export * as Identifier from "./identifier.js"
 
 const length = 26

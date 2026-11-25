@@ -1,3 +1,5 @@
+//! 终端界面测试：评审·ms34。
+
 use crate::support::{self, WAIT};
 
 use std::rc::Rc;

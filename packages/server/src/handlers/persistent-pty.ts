@@ -1,3 +1,7 @@
+/**
+ * persistent-pty 接口处理器。
+ * 持久 PTY 接口处理器：持久终端连接与票据。
+ */
 import { PersistentPty } from "@opencode/core/persistent-pty"
 import { PtyTicket } from "@opencode/core/pty/ticket"
 import {

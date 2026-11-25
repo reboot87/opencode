@@ -4,6 +4,10 @@
  * when the cache key has one, otherwise the remote default branch. Content
  * follows "newest wins": refresh fetches and hard-resets, so readers may
  * observe the checkout move underneath them.
+ *
+ * 远端 Git 引用的本地跟踪检出（checkout），每个 remote+branch 一份。
+ * 每个检出永久跟踪单一 ref：缓存键中带分支时跟踪该分支，否则跟踪远端默认分支。
+ * 内容遵循「最新优先」：刷新时 fetch 后硬重置，读者可能观察到检出在脚下发生移动。
  */
 import path from "path"
 import { Clock, Context, Duration, Effect, Layer, Option, Schema } from "effect"

@@ -1,3 +1,10 @@
+/**
+ * 配置的测试。
+ *
+ * 被测模块：@opencode/cli/config
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { NodeFileSystem } from "@effect/platform-node"
 import { Flock } from "@opencode/util/flock"
 import { Global } from "@opencode/util/global"

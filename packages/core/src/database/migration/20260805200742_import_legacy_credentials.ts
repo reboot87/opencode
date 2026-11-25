@@ -1,3 +1,7 @@
+/**
+ * 数据库迁移脚本。
+ * 由 drizzle-kit 生成，记录一次结构变更的 up/down SQL；迁移按 id 顺序执行，不应手工修改。
+ */
 import { readFile } from "node:fs/promises"
 import path from "node:path"
 import { sql } from "drizzle-orm"

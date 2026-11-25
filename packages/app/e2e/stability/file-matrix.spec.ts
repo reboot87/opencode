@@ -1,3 +1,7 @@
+/**
+ * 稳定性测试 — FileMatrixSpec。
+ * 检测界面抖动与渲染稳定性的端到端用例中负责 FileMatrixSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { test } from "@playwright/test"
 import { createTwoFilesPatch } from "diff"
 import {

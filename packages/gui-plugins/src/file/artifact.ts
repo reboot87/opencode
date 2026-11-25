@@ -1,3 +1,7 @@
+/**
+ * 文件插件 — Artifact。
+ * 文件预览与操作的 GUI 插件中负责 Artifact 部分，提供该部分所需的实现与类型定义。
+ */
 import { base64ToBytes } from "@opencode/util/base64"
 import type { FileContent } from "@opencode/plugin/gui"
 

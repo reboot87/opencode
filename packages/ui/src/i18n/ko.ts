@@ -1,3 +1,7 @@
+/**
+ * 国际化 — Ko。
+ * 多语言文案资源中负责 Ko 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "ui.sessionReview.title": "세션 변경 사항",
   "ui.sessionReview.title.lastTurn": "마지막 턴 변경 사항",

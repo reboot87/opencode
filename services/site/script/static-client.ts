@@ -23,6 +23,8 @@ const virtual = "virtual:static-client"
  * the script's file name from `virtual:static-client`. A stylesheet already in the shell's or a
  * group's file is on the page, so this build leaves it empty; the ones loaded on demand (search, the
  * Markdown view) come with their code.
+ *
+ * 站点构建脚本：静态客户端。
  */
 export function staticClient(): Plugin {
   let script: string | undefined

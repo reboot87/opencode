@@ -1,3 +1,7 @@
+/**
+ * 工作区界面 — Inventory。
+ * 工作区的管理界面中负责 Inventory 部分，提供该部分所需的实现与类型定义。
+ */
 import type { QueryClient } from "@tanstack/solid-query"
 import type { WorktreeDirectory } from "@opencode/client/promise"
 import type { ServerApi } from "@/runtime/server/api"

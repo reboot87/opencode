@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — DialogWorktreeName。
+ * 终端界面（Solid）组件中负责 DialogWorktreeName 部分，提供该部分所需的实现与类型定义。
+ */
 import { Slug } from "@opencode/core/util/slug"
 import { useNewDesigns } from "../config"
 import { type DialogContext } from "../ui/dialog"

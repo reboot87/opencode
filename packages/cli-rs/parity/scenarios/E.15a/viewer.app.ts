@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：viewer·app。
+ *
+ * 规格编号：E.15a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The diff viewer (F15) over a repository fixture: `/diff` docks the viewer beside the session (compact, unified),
 // `]` jumps to a hunk, `n` to the next file, `m` marks it reviewed, `f` goes full screen with the file tree and the
 // split view, `v` switches to unified, `s` shows one file, `b` hides the tree, and `q` closes the viewer.

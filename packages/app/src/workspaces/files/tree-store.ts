@@ -1,3 +1,7 @@
+/**
+ * 工作区文件 — TreeStore。
+ * 工作区内文件浏览界面中负责 TreeStore 部分，提供该部分所需的实现与类型定义。
+ */
 import { getOwner, onCleanup, untrack } from "solid-js"
 import { createStore, reconcile, unwrap } from "solid-js/store"
 import type { FileNode } from "@/runtime/server/types"

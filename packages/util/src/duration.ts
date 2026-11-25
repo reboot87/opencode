@@ -1,4 +1,8 @@
-/** Compact elapsed time, e.g. `850ms`, `12.4s`, `3m 5s`, `2h 10m` or `1d 4h`. */
+/**
+ * Compact elapsed time, e.g. `850ms`, `12.4s`, `3m 5s`, `2h 10m` or `1d 4h`.
+ *
+ * 紧凑的已用时格式，例如 `850ms`、`12.4s`、`3m 5s`、`2h 10m` 或 `1d 4h`。
+ */
 export function duration(input: number) {
   if (input < 1000) {
     return `${input}ms`

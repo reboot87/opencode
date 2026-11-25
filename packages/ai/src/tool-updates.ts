@@ -1,19 +1,25 @@
-// A request's top-level `tools` is shorthand for a leading `Message.tools({ add: tools })`: tool state is one
-// ordered list of declarations, that leading one and then each marker in message order. Folding the whole list
-// gives the tools a route without in-place changes sends. A protocol that can send some changes in place keeps
-// them where they are, so the leading declaration, and the prompt cache behind it, stays fixed.
+/**
+ * 工具状态更新（tool updates）的归一化与协议能力适配。
+ *
+ * 背景：请求的顶层 tools 只是“开头放一条 Message.tools({ add: tools })”的简写。
+ * 工具状态本质上是一个有序的声明列表：开头那条 + 按消息顺序出现的各个标记。
+ * 把整个列表折叠（fold）起来，就能在不支持原地变更的协议里表达工具变化；
+ * 而支持原地变更的协议可以保留标记位置，让开头的声明及其后面的提示词缓存保持稳定。
+ *
+ * ToolUpdateEncoding 描述某个协议能以何种方式原地发送工具变更。
+ */
 import { Message, SystemMessage, type LLMRequest, type ToolChanges, type ToolEntry } from "./schema/messages.js"
 import type { Capabilities } from "./schema/options.js"
 import { flattenTools } from "./protocols/shared.js"
 
 export type ToolUpdate = NonNullable<NonNullable<Capabilities["tools"]>["updates"]>[number]
 
-/** What a protocol can send in place of a `Message.tools(...)` marker; the model's `tools.updates` narrows it. */
+/** 协议能原地替代 Message.tools(...) 标记的方式；模型的 tools.updates 能力会进一步收窄它。 */
 export interface ToolUpdateEncoding {
   readonly kinds: ReadonlyArray<ToolUpdate>
-  /** Whether the marker at this message index can be sent where it is. Defaults to anywhere. */
+  /** 该消息下标处的标记能否原地发送，默认任意位置都可以。 */
   readonly placeable?: (request: LLMRequest, index: number) => boolean
-  /** Whether a tool can be added or removed in place. Defaults to every tool. */
+  /** 某个工具能否原地增删，默认所有工具都可以。 */
   readonly declarable?: (tool: ToolEntry) => boolean
 }
 

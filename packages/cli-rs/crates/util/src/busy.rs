@@ -1,4 +1,6 @@
 //! Paths Windows reports busy while another process has them open or is deleting them, tried again for a bounded time.
+//!
+//! 通用工具：繁忙。
 
 use std::fs::{self, OpenOptions};
 use std::io::{self, Write};

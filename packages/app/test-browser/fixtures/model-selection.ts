@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试夹具 — ModelSelection。
+ * 浏览器测试使用的夹具中负责 ModelSelection 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, expect, mock, test } from "bun:test"
 import { createRequire } from "node:module"
 import { createComponent, createRoot } from "solid-js"

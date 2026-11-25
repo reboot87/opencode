@@ -1,3 +1,7 @@
+/**
+ * 会话状态事件类型。
+ * 定义会话运行状态变化事件。
+ */
 export * as SessionStatusEvent from "./session-status-event.js"
 
 import { Schema } from "effect"

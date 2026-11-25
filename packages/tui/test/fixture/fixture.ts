@@ -1,3 +1,7 @@
+/**
+ * 测试夹具 — Fixture。
+ * 终端测试使用的夹具数据中负责 Fixture 部分，提供该部分所需的实现与类型定义。
+ */
 import { mkdir, mkdtemp, realpath, rm, symlink } from "node:fs/promises"
 import path from "node:path"
 import os from "node:os"

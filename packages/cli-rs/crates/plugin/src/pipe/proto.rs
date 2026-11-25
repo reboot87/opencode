@@ -3,6 +3,8 @@
 //! on receipt and answers with [`Up::Done`] once its handler returned; a mount generation, a base and a revision on
 //! every tree; a layout epoch, the count of inputs the tree saw; and snapshots the host pushes for the reads the
 //! plugin watches, in order before the event that may read them.
+//!
+//! 插件系统：`proto`。
 
 use opencode_plugin_abi::{Blob, HostRequest, Level, Manifest, Request, v2};
 use serde::{Deserialize, Serialize};

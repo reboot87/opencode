@@ -1,3 +1,10 @@
+/**
+ * 状态机·噪声的测试。
+ *
+ * 被测模块：@opencode/core/machine-noise
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { createCipheriv, createHmac, createPrivateKey, createPublicKey, diffieHellman } from "node:crypto"
 import { Noise } from "@opencode/core/machine/noise"

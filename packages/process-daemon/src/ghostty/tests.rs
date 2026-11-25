@@ -1,3 +1,5 @@
+//! 进程守护服务实现：`tests`。
+
 use super::*;
 use std::panic::{AssertUnwindSafe, catch_unwind};
 

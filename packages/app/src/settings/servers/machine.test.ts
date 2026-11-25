@@ -1,3 +1,7 @@
+/**
+ * 服务端设置 — MachineTest。
+ * 已连接服务端的管理设置中负责 MachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { ServerConnection } from "@/runtime/server/registry"
 import type { PluginServer } from "@/runtime/plugin/servers"

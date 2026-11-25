@@ -1,3 +1,7 @@
+/**
+ * 主页会话 — SearchMachine。
+ * 主页中会话列表的展示中负责 SearchMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import { looksLikeSessionID } from "@/session/search"
 import type { HomeSessionRecord } from "./records"
 

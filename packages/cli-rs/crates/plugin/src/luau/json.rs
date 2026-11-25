@@ -7,6 +7,8 @@
 //! decoder takes an empty table as an array unless it carries the object marker.
 
 #![allow(unsafe_code)]
+//!
+//! Luau 插件运行时：JSON。
 
 use std::ffi::CStr;
 use std::os::raw::c_int;

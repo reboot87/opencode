@@ -1,3 +1,7 @@
+/**
+ * 系统提示词工具（SessionSystemPrompt）。
+ * 构造并渲染系统提示词，按启用工具注入差异化的工具指引（替换 ${OPENCODE_TOOL_GUIDANCE}）。
+ */
 export * as SessionSystemPrompt from "./system-prompt.js"
 
 import PROMPT from "./runner/prompt/system.txt"
@@ -6,6 +10,8 @@ export function make(tools: string[]) {
   return render(PROMPT, tools)
 }
 
+// 按实际启用的工具集合生成差异化指引：shell / write / edit 各有专门约束，
+// 最终替换系统提示词模板中的 ${OPENCODE_TOOL_GUIDANCE} 占位符；未启用的工具不注入对应指引。
 export function render(prompt: string, tools: string[]) {
   const instructions: string[] = []
   if (tools.includes("shell")) {

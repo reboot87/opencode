@@ -1,3 +1,7 @@
+/**
+ * 更新插件 — Main。
+ * 应用更新提示的 GUI 插件中负责 Main 部分，提供该部分所需的实现与类型定义。
+ */
 import { existsSync } from "node:fs"
 import { join } from "node:path"
 import { dialog } from "electron"

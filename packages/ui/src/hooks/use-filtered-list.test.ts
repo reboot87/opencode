@@ -1,3 +1,7 @@
+/**
+ * UI Hook — UseFilteredListTest。
+ * 可复用的 React Hook中负责 UseFilteredListTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { groupItems } from "./use-filtered-list"
 

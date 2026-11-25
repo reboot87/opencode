@@ -1,6 +1,8 @@
 //! Worker panics go to the log, leaving the renderer in control of the screen. An uncaught UI-thread panic restores
 //! the terminal and exits with 101. A panic caught by the plugin host must leave both the app and its terminal
 //! running.
+//!
+//! 命令行入口：`panic`。
 
 use std::backtrace::Backtrace;
 

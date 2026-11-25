@@ -1,3 +1,7 @@
+/**
+ * Google Vertex Interactions（独立）provider 门面。
+ * 以独立入口提供 Vertex Interactions 多模态会话能力。
+ */
 import type { ProviderPackage } from "../provider-package.js"
 import { GoogleInteractions } from "../protocols/google-interactions.js"
 import { Auth } from "../route/auth.js"

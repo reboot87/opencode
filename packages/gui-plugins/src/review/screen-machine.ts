@@ -1,3 +1,7 @@
+/**
+ * 审查插件 — ScreenMachine。
+ * 变更审查界面的 GUI 插件中负责 ScreenMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Demand } from "./model"
 
 /** One `Changes.watch` hold: which view shows the screen's changes. */

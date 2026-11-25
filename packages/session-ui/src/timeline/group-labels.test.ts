@@ -1,3 +1,7 @@
+/**
+ * 时间线 — GroupLabelsTest。
+ * 按时间顺序展示会话消息的视图中负责 GroupLabelsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { useI18n } from "@opencode/ui/context/i18n"
 import { storyTool } from "../storybook/current-session-scenarios"

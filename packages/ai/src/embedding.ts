@@ -1,3 +1,10 @@
+/**
+ * 文本嵌入（Embedding）API。
+ *
+ * 把文本（或文本数组）转成向量。与生成类任务不同，嵌入是同步的：
+ * 通过 EmbeddingClient 直接调用模型，没有轮询/Generation 抽象。
+ * 支持自定义模型（EmbeddingModel + route），向量作为 number[] 返回。
+ */
 import { Effect, Schema } from "effect"
 import { EmbeddingClient, Service, type Execute } from "./embedding-client.js"
 import { Media } from "./media.js"

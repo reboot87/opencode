@@ -1,3 +1,7 @@
+/**
+ * reference 接口处理器。
+ * 引用接口处理器：引用来源列举。
+ */
 import { Reference } from "@opencode/core/reference"
 import { HttpApiBuilder } from "effect/http-api"
 import { Api } from "../api"

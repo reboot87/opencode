@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — SheetProtocol。
+ * Microsoft Office 文档预览插件中负责 SheetProtocol 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SheetInfo } from "@betteroffice/xlsx"
 import type { CellAddr, CellRange, GridMeta, HyperlinkRegion } from "@betteroffice/xlsx/headless"
 import type { Span } from "./sheet-cells"

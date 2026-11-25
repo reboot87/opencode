@@ -1,3 +1,7 @@
+/**
+ * 文件查找库（Node 平台）。
+ * 在 Node 运行时绑定原生文件查找库（fff）。
+ */
 import { bind } from "./fff.js"
 
 export type { Directory, DirSearch, File, Init, Mixed, MixedSearch, Picker, Result, Search } from "./fff.js"

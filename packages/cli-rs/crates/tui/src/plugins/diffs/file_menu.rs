@@ -1,4 +1,6 @@
 //! Context menu for a file heading or file-tree entry.
+//!
+//! 终端插件视图：文件菜单。
 
 use opencode_plugin::abi::interact::{Anchor, Bind, Button, Event, Handled, Interact, Layer, Overlay, PointerKind};
 use opencode_plugin::abi::v2::{self, Node};

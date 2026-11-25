@@ -1,3 +1,7 @@
+/**
+ * 测试夹具 — DiffImage。
+ * 终端测试使用的夹具数据中负责 DiffImage 部分，提供该部分所需的实现与类型定义。
+ */
 // A 96 x 48 PNG fixture: a golden sun over blue mountains and a lake.
 export const diffImageFixture = Uint8Array.from(
   atob(

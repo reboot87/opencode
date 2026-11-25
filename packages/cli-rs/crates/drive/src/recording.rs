@@ -1,5 +1,7 @@
 //! Records a headless app as a drive timeline. TS records the bytes its renderer writes; a headless opentui-rust app
 //! writes none, so each presented frame that differs from the last is written as a full repaint.
+//!
+//! 本地驱动：录制。
 
 use base64::Engine;
 use opentui::native::Capture;

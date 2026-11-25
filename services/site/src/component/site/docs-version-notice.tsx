@@ -7,6 +7,8 @@ import { siteSettings } from "./settings"
  * On the V1 docs: a bar with a way back to the latest docs, at the top of the content column, or in the
  * logo row (`placement="header"`, the docs), where the sentence shortens with "…" before the link does.
  * On phones the header placement is a bar on the screen's bottom edge saying only "V1 docs" (docs.css).
+ *
+ * 站点界面组件：文档版本提示。
  */
 export function DocsVersionNotice(props: { latest: string; onLatest?: () => void; placement?: "header" }) {
   const i18n = useI18n()

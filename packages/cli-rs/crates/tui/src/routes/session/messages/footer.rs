@@ -1,4 +1,6 @@
 //! Assistant footer, token usage, and throughput.
+//!
+//! 终端界面路由：页脚。
 
 use opencode_api::generated::{
     ModelRef, SessionMessageAssistant, SessionMessageAssistantContentItem, SessionMessageAssistantFinish,

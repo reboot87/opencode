@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：paste·click·伪终端。
+ *
+ * 规格编号：E.4。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A click on a `[Pasted ~5 lines]` label expands it in place and selects nothing (`expandPastedText`, whose
 // mouse-down handler prevents the default). The release lands on the expanded text and copies nothing, and the next
 // key types at the cursor, after the pasted text.

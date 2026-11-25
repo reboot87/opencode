@@ -17,6 +17,8 @@ const localized = (view: () => JSX.Element) => () => <I18nContext.Provider value
 /**
  * Renders `view` at the end of `host` with the page language's strings (the shell's, loaded first).
  * With `replace`, it takes the place of what `host` held, in the same task, so nothing blinks.
+ *
+ * 浏览器端脚本：SolidJS。
  */
 export async function mount(view: () => JSX.Element, host: Element, replace = false) {
   await loadSlice("shell", locale).catch(() => undefined)

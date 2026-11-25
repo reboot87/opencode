@@ -1,3 +1,7 @@
+/**
+ * 自动化 API 分组。
+ * 定义自动化的列举、创建与执行端点（部分为实验性）。
+ */
 import { Automation } from "@opencode/schema/automation"
 import { Session } from "@opencode/schema/session"
 import { Schema } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * provider 接口处理器。
+ * Provider 接口处理器：模型提供方列举与配置。
+ */
 import { Provider } from "@opencode/core/provider"
 import { ProviderNotFoundError } from "@opencode/protocol/errors"
 import { Effect } from "effect"

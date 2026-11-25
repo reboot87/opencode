@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid DiffViewerFileMenu：该文件实现 DiffViewerFileMenu 相关的状态与逻辑。
+ */
 import type { Plugin } from "@opencode/plugin/tui"
 import { BoxRenderable, MouseButton } from "@opentui/core"
 import { Portal, useTerminalDimensions } from "@opentui/solid"

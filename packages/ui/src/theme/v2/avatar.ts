@@ -1,3 +1,7 @@
+/**
+ * UI 主题（v2） — Avatar。
+ * 第二版设计令牌定义中负责 Avatar 部分，提供该部分所需的实现与类型定义。
+ */
 import type { V2ColorValue } from "../types"
 
 /** Fixed project avatar colors (OC-2); theme-independent like v1 `avatar-background-*`. */

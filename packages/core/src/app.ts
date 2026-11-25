@@ -1,3 +1,7 @@
+/**
+ * 应用服务（App）。
+ * 描述应用级信息与服务的最小接口，提供 make() 工厂。
+ */
 export * as App from "./app.js"
 
 import { Context, Layer } from "effect"

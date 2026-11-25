@@ -1,4 +1,6 @@
 //! Starts a detached `opencode` service with closed stdin and stdout and a bounded stderr tail.
+//!
+//! 服务层：派生。
 
 use std::ffi::OsString;
 use std::io::Read;

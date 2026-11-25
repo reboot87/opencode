@@ -1,3 +1,7 @@
+/**
+ * DeepSeek provider 门面。
+ * 基于 OpenAI 兼容 chat 协议，提供 DeepSeek 模型工厂与鉴权。
+ */
 import type { ProviderPackage } from "../provider-package.js"
 import { OpenAIChat } from "../protocols/openai-chat.js"
 import type { ProviderAuthOption } from "../route/auth-options.js"

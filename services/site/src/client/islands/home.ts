@@ -12,6 +12,8 @@ import { $, $$, reducedMotion } from "../dom"
  * numbers that spin as they near the window and the contributors' avatars that wash in after them,
  * the tool and subscription tiles that wash in as they scroll into view (fetching their logos a
  * screen early), the Console section's dots, and the carousel's arrows for a mouse.
+ *
+ * 客户端交互岛：主目录。
  */
 export default function home() {
   const stats = $('[data-component="stats"]')

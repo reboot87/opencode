@@ -1,3 +1,7 @@
+/**
+ * AWS Bedrock Converse provider 门面。
+ * 基于 Bedrock Converse API，配合 SigV4 鉴权与二进制事件流解析，提供 chat 能力与模型工厂。
+ */
 import type { ProviderPackage } from "../provider-package.js"
 import { ProviderConfigurationError, ProviderID, type ModelID, type RequestOptions } from "../schema/index.js"
 import * as BedrockConverse from "../protocols/bedrock-converse.js"

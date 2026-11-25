@@ -1,3 +1,7 @@
+/**
+ * Mini 精简界面 — Runtime。
+ * 精简交互模式（mini）的界面与交互中负责 Runtime 部分，提供该部分所需的实现与类型定义。
+ */
 // Top-level orchestrator for `opencode mini`.
 //
 // Wires the boot sequence, lifecycle (renderer + footer), stream transport,

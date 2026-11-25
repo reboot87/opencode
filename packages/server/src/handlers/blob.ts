@@ -1,3 +1,7 @@
+/**
+ * blob 接口处理器。
+ * Blob 接口处理器：按 ID 下载二进制资源。
+ */
 import { BlobStore } from "@opencode/core/blob-store"
 import { BlobNotFoundError } from "@opencode/protocol/errors"
 import { FSUtil } from "@opencode/util/fs-util"

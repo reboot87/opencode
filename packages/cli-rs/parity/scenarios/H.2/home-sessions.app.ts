@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：主目录·会话·app。
+ *
+ * 规格编号：H.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Home with two sessions, the session list, and opening the newest session from it (T01, DLG14).
 import { assistant, defineApp, HOME_PLACEHOLDER, session, user } from "../../lib/app"
 

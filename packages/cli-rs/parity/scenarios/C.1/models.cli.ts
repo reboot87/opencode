@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：模型·CLI。
+ *
+ * 规格编号：C.1。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `models`: `provider/model` lines in `localeCompare` order (case and punctuation included), for the
 // working directory. Fields the client does not read stay out of the fixture: it must not decode them.
 import { defineCli } from "../../cli/run"

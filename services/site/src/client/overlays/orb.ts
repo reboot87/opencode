@@ -4,6 +4,8 @@ import { site, t } from "../dom"
 /**
  * The corner orb (voice/host.ts on the hydrated pages): the Hex promo's orb at rest, with no
  * framework code; its pop-up loads on intent (hex-panel.tsx).
+ *
+ * 客户端浮层：球体。
  */
 export default function mountOrb() {
   const root = document.createElement("div")

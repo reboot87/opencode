@@ -1,3 +1,7 @@
+/**
+ * 输入附件 — Destination。
+ * 输入区附件的上传与管理中负责 Destination 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Accessor } from "solid-js"
 import { useServer } from "@/runtime/server/current"
 import { useServerSDK } from "@/runtime/server/client"

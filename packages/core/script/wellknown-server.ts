@@ -1,3 +1,8 @@
+/**
+ * wellknown·服务端脚本。
+ *
+ * 核心包的开发脚本：本地服务桩、数据准备与问题排查。
+ */
 const token = "dummy-wellknown-token"
 const port = Number(process.env.PORT ?? 8787)
 const config = {

@@ -22,6 +22,8 @@ export const Resource = new Proxy({} as Resources, {
  * The Worker's static assets. Code that needs a built file reads it here: a fetch to the site's
  * own URL would not reach this Worker again (Cloudflare sends a Worker's subrequests to its own
  * routes past it).
+ *
+ * 站点共享逻辑：resource·Cloudflare。
  */
 export function assets() {
   return bindings.ASSETS as AssetsBinding

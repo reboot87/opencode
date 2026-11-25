@@ -1,3 +1,7 @@
+/**
+ * 工具展示 — ShellOutputTest。
+ * 工具调用与结果的展示组件中负责 ShellOutputTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test, vi } from "bun:test"
 import type { ShellOutputInput, ShellOutputOutput } from "@opencode/client/promise"
 import { createShellFollower, followShellOutput } from "./shell-output"

@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — Context。
+ * 实时语音会话的界面中负责 Context 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSimpleContext } from "@opencode/ui/context"
 import { useLocation, useNavigate } from "@solidjs/router"
 import { createMemo, createSignal, onCleanup, untrack } from "solid-js"

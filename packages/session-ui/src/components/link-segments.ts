@@ -1,4 +1,8 @@
-/** Splits plain text into runs, marking each http(s) URL with its link target. */
+/**
+ * Splits plain text into runs, marking each http(s) URL with its link target.
+ *
+ * 把纯文本切分为片段，并标记其中的 http(s) 链接及其跳转目标。
+ */
 export function linkSegments(text: string) {
   const result: { text: string; href?: string }[] = []
   let last = 0

@@ -1,4 +1,6 @@
 //! Digests from `ring` (the same `ring` that TLS links), as lowercase hex.
+//!
+//! 通用工具：哈希。
 
 use ring::digest;
 

@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — ThemePreloadTest。
+ * GUI 插件的实现中负责 ThemePreloadTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { beforeEach, describe, expect, test } from "bun:test"
 
 const src = await Bun.file(new URL("../public/oc-theme-preload.js", import.meta.url)).text()

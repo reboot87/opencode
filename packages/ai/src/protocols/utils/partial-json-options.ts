@@ -1,3 +1,7 @@
+/**
+ * 部分 JSON 解析选项。
+ * 配置流式 JSON 增量的解析行为。
+ */
 /*
  * Adapted from partial-json by the Promplate Dev Team:
  * https://github.com/promplate/partial-json-parser-js/blob/main/src/options.ts

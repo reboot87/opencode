@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — InputSurfacesSpec。
+ * 应用界面组件的测试中负责 InputSurfacesSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, story } from "../../stories/playwright/story"
 
 story("active search options keep their system highlight in forced colours", async ({ mount, page }) => {

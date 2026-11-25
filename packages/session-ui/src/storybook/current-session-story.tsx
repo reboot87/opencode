@@ -1,3 +1,7 @@
+/**
+ * Storybook 配置 — CurrentSessionStory。
+ * Storybook 的构建与主题配置中负责 CurrentSessionStory 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionDocument } from "../document"
 import { File } from "../components/file"
 import { DataProvider, type ReadMediaUrlFn, type TurnDiffSource } from "../context/data"

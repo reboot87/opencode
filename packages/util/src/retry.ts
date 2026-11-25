@@ -1,3 +1,7 @@
+/**
+ * 重试工具。
+ * 按可重试条件与指数退避重试操作。
+ */
 export interface RetryOptions {
   attempts?: number
   delay?: number

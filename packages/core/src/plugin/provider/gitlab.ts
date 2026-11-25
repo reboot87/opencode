@@ -1,3 +1,7 @@
+/**
+ * GitLab 插件。
+ * 注册 GitLab AI provider 与对应集成（模型列表、推理选项）。
+ */
 import os from "os"
 import { App } from "../../app.js"
 import { Clock, Deferred, Effect, Equal, Exit, Option, Schema, Semaphore } from "effect"

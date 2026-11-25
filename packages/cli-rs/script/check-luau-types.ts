@@ -1,3 +1,8 @@
+/**
+ * 检查·Luau·类型定义脚本。
+ *
+ * Rust CLI 的开发脚本：代码生成、依赖漂移检查与性能采样。
+ */
 // Type-checks every Luau plugin in packages/cli-rs (a directory with a plugin.toml and .luau files) with
 // `luau-analyze` at the runtime's Luau release, the new solver, and `--formatter=gnu` (`plain` always exits 0). Each
 // plugin is one run over its files by absolute path: a module given by a relative path and also required is checked

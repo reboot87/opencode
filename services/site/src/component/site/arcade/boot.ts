@@ -1,6 +1,8 @@
 /**
  * The cabinet's boot log, shared by the DOM screen (screen.tsx) and the canvas renderer
  * (screen-canvas.ts): a straight BIOS-style boot with OpenCode references. It always plays through.
+ *
+ * 街机小游戏组件：启动引导。
  */
 
 /** How long the boot runs before the start screen, in ms. */

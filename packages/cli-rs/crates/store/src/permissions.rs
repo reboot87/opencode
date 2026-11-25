@@ -1,3 +1,5 @@
+//! 会话存储层：权限。
+
 use opencode_api::generated::*;
 
 use crate::changes::Touched;

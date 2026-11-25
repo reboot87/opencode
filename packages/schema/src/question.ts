@@ -1,3 +1,7 @@
+/**
+ * 问题类型。
+ * 定义向用户提问的结构与选项。
+ */
 export * as Question from "./question.js"
 
 import { Schema } from "effect"

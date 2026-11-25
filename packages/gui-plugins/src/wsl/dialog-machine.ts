@@ -1,4 +1,8 @@
-/** Ceiling for the dialog's quick calls (`refreshDistros`, `addServer`), above main's 20 s `wsl.exe` timeout. */
+/**
+ * Ceiling for the dialog's quick calls (`refreshDistros`, `addServer`), above main's 20 s `wsl.exe` timeout.
+ *
+ * WSL 插件中负责 DialogMachine 部分：WSL 支持中与 DialogMachine 相关的状态、交互与渲染逻辑。
+ */
 export const WSL_ACTION_TIMEOUT_MS = 60_000
 
 /**

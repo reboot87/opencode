@@ -1,5 +1,7 @@
 //! Timers (contract-ergonomics 2.3): a plugin keeps time on the host's clock, with no thread of its own, and a timer
 //! whose plugin changes nothing costs no frame.
+//!
+//! 终端界面测试：插件·timers。
 
 use std::cell::Cell;
 use std::ops::ControlFlow;

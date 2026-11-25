@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：冷·app。
+ *
+ * 规格编号：E.1。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A cold Location (AGENTS.md "Plugin Loading"): the catalogs answer before the plugins load, so agents, models,
 // providers, and commands are empty. The home shows no agent or model line, and the model picker opens empty.
 import { defineApp, HOME_PLACEHOLDER } from "../../lib/app"

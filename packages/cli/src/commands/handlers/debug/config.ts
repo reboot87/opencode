@@ -1,3 +1,7 @@
+/**
+ * debug config 命令。
+ * 打印服务端生效的配置条目。
+ */
 import { EOL } from "os"
 import { Effect } from "effect"
 import { OpenCode } from "@opencode/client"

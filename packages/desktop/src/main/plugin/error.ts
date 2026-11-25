@@ -1,3 +1,7 @@
+/**
+ * 桌面插件 — Error。
+ * 桌面端插件的加载与宿主能力中负责 Error 部分，提供该部分所需的实现与类型定义。
+ */
 import type { PluginErrorCode, PluginFailure } from "../../shared/ipc-rpc/plugins"
 
 /** A failure the renderer maps to its own copy by `code`. */

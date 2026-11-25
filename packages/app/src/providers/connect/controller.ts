@@ -1,3 +1,7 @@
+/**
+ * Provider 连接 — Controller。
+ * 连接 provider 的授权界面中负责 Controller 部分，提供该部分所需的实现与类型定义。
+ */
 import { useDialog } from "@opencode/ui/context/dialog"
 import { createEffect, createMemo, createSignal, on, onCleanup, untrack } from "solid-js"
 import { consoleCatalogLoaded, consoleProviderGroup } from "@/providers/catalog/console"

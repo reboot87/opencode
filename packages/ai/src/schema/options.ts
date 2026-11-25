@@ -1,11 +1,23 @@
+/**
+ * 请求选项与配置相关的 Schema 定义。
+ *
+ * 包含：JSON Schema 表示、配置合并工具（mergeJsonRecords）、provider options、
+ * 缓存策略（CachePolicy / CacheHint）、推理强度、工具定义输入等。
+ * 这些类型被 LLMRequest 和各协议层共享，是"请求的非消息部分"的类型基础。
+ */
 import { Schema } from "effect"
 import { ModelID, ProviderID } from "./ids.js"
 import type { AnyRoute, CompactionOperations } from "../route/client.js"
 import { isRecord } from "../utils/record.js"
 
+/** JSON 对象的 Schema 表示（字符串键 → 任意值）。 */
 export const JsonSchema = Schema.Record(Schema.String, Schema.Unknown)
 export type JsonSchema = Schema.Schema.Type<typeof JsonSchema>
 
+/**
+ * 合并多个 JSON 记录：跳过 undefined，后面的覆盖前面的；
+ * 若某项所有值都非 undefined 且只有一个输入，直接返回该输入（避免不必要拷贝）。
+ */
 export const mergeJsonRecords = (
   ...items: ReadonlyArray<Record<string, unknown> | undefined>
 ): Record<string, unknown> | undefined => {
@@ -403,8 +415,10 @@ export const LanguageModelSchema = Schema.declare((value): value is LanguageMode
   expected: "LLM.LanguageModel",
 })
 
-// Provider cache lifetime such as "5m", "30m", "1h" or "24h", in models.dev's duration format. It is sent as given;
-// each provider accepts its own set, and omitting it keeps the provider default.
+/**
+ * provider 缓存生存时间（如 "5m"、"1h"），采用 models.dev 的时长格式。
+ * 原样发送给 provider——各家接受的取值不同，省略则使用 provider 默认值。
+ */
 export const CacheTTL = Schema.TemplateLiteral([Schema.Number, Schema.Literals(["ms", "s", "m", "h", "d"])]).check(
   Schema.isPattern(/^\d+(ms|s|m|h|d)$/),
 )
@@ -415,18 +429,18 @@ export class CacheHint extends Schema.Class<CacheHint>("LLM.CacheHint")({
   ttl: Schema.optional(CacheTTL),
 }) {}
 
-// Auto-placement policy for prompt caching. The protocol-neutral lowering step
-// reads this and injects `CacheHint`s at the configured boundaries; the
-// per-protocol body builders then translate those hints into wire markers as
-// usual. `"auto"` is the default for agent loops — it places
-// breakpoints at the last tool definition, the first and last distinct system
-// parts, and the conversation tail so recent prefixes remain reusable during
-// tool loops.
-//
-// Pass `"none"` to opt out entirely (the legacy behavior). Pass the granular
-// object form to choose placements exactly; an object with only `ttl` keeps
-// the automatic placements and sets their lifetime. Routes without inline
-// markers send `ttl` as a request-level cache option where one exists.
+/**
+ * 提示词缓存的自动放置策略。
+ *
+ * 协议无关的降级步骤读取它，在配置的边界注入 CacheHint；随后各协议的 body 构建器
+ * 再把标记翻译成相应的 wire 标记。"auto" 是 agent 循环的默认值：
+ * 在最后一个工具定义、首个和末个不同系统部分、对话末尾放置断点，
+ * 让工具循环期间最近的前缀保持可复用。
+ *
+ * 传 "none" 完全退出（旧行为）；传细粒度对象可精确选择放置位置；
+ * 只含 ttl 的对象保留自动放置并设置其生存时间。
+ * 不支持内联标记的路由会在支持的情况下把 ttl 作为请求级缓存选项发送。
+ */
 export const CachePolicyObject = Schema.Struct({
   tools: Schema.optional(Schema.Boolean),
   system: Schema.optional(Schema.Boolean),

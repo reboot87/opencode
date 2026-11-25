@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — ShimmerText。
+ * 终端界面（Solid）组件中负责 ShimmerText 部分，提供该部分所需的实现与类型定义。
+ */
 import { RGBA, type OptimizedBuffer, type RenderContext, type TextOptions } from "@opentui/core"
 import { extend, type JSX } from "@opentui/solid"
 import { splitProps } from "solid-js"

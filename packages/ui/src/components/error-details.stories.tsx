@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — ErrorDetailsStories。
+ * 跨场景复用的通用 UI 组件中负责 ErrorDetailsStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal, on, onCleanup, Show } from "solid-js"
 import { Button } from "@opencode/ui/button"
 import { ErrorDetails } from "./error-details"

@@ -1,3 +1,14 @@
+/**
+ * AI SDK 的主入口：make() 工厂构建统一的客户端，聚合所有能力。
+ *
+ * Client 把多个领域的 API 挂在一个对象上：
+ *   - language / chat：文本模型调用（LLM.generate / stream / loop）；
+ *   - embedding / decision / image / speech / transcription / video：各模态能力；
+ *   - 统一的生成任务句柄（GenerationHandle）与 dispose（释放运行时）。
+ *
+ * 所有底层服务（LLMClient、各媒体 Client、RequestExecutor）通过 Effect Layer 组装成 ManagedRuntime，
+ * 由 make 持有并在 dispose 时统一关闭。也导出一个开箱即用的单例 `ai = make()`。
+ */
 import { Effect, Layer, ManagedRuntime, Schema, Stream } from "effect"
 import { AIClient } from "./ai-client.js"
 import { Decision, type DecisionModel, type DecisionQuestions, type DecisionRequestInput } from "./decision.js"
@@ -63,30 +74,30 @@ export interface RunOptions {
   readonly http?: HttpMiddleware
 }
 
-/** Options for reading or writing an asset. Downloads use the asset's own `middleware`, never a caller's `http`. */
+/** 读写 asset 的选项：下载使用 asset 自带的 middleware，不用调用方的 http。 */
 export type AssetRunOptions = Omit<RunOptions, "http">
 
 export type Services = AIClient.Services
 
 /**
- * Promise view of a `Generation`. Its fields are a snapshot taken when the handle was created; `refresh()` resolves to a
- * new handle rather than updating this one.
+ * Generation 的 Promise 风格视图（给非 Effect 调用方用）。
+ * 字段是句柄创建时的快照；refresh() 返回一个新句柄，而不是就地更新当前句柄。
  */
 export type GenerationHandle<Response> = Snapshot & {
   readonly snapshot: Snapshot
   readonly terminal: boolean
-  /** Serializable JSON; pass it back to `resume` from another process. */
+  /** 可序列化的 JSON token；可在另一个进程里传给 resume 恢复该任务。 */
   readonly token: unknown
   readonly await: (options?: AwaitOptions & RunOptions) => Promise<Response>
-  /** Status observations until the first terminal one, polling like `await`; abort throws `signal.reason`. */
+  /** 持续输出状态直到第一个终态，轮询行为同 await；中止时抛出 signal.reason。 */
   readonly events: (options?: AwaitOptions & RunOptions) => AsyncIterable<Event>
-  /** The result without polling; fails when the generation has not completed. */
+  /** 不轮询直接取结果；任务未完成时失败。 */
   readonly result: (options?: RunOptions) => Promise<Response>
   readonly refresh: (options?: RunOptions) => Promise<GenerationHandle<Response>>
   readonly cancel: (options?: RunOptions) => Promise<void>
 }
 
-// Fails with `signal.reason` so aborted calls reject and aborted streams throw like `fetch`: an `AbortError` by default.
+// 中止时用 signal.reason 失败，让被中止的调用 reject、被中止的流抛错（默认 AbortError），行为对齐 fetch。
 const abortEffect = (signal: AbortSignal | undefined) =>
   signal === undefined
     ? Effect.never
@@ -100,10 +111,11 @@ const abortEffect = (signal: AbortSignal | undefined) =>
         return Effect.sync(() => signal.removeEventListener("abort", onAbort))
       })
 
+/** 构建客户端。核心是创建一个 ManagedRuntime，把所有底层服务 Layer 装配进去。 */
 export const make = (options: Options = {}) => {
   const runtime = ManagedRuntime.make(AIClient.layerWith(options.layer ?? RequestExecutor.fetchLayer))
 
-  /** Run any package Effect (for example `ai.compact(...)` from `@opencode/ai/effect`) inside this runtime. */
+  /** 在此运行时内执行任意包级 Effect（如 @opencode/ai/effect 的 ai.compact(...)），支持 http 覆盖与 AbortSignal 中止。 */
   const run = <A, E>(effect: Effect.Effect<A, E, Services>, options?: RunOptions) =>
     runtime.runPromise(Effect.raceFirst(scoped(effect, options?.http), abortEffect(options?.signal)))
 

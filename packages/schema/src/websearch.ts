@@ -1,3 +1,7 @@
+/**
+ * 网络搜索类型。
+ * 定义搜索 provider、请求与结果结构。
+ */
 export * as WebSearch from "./websearch.js"
 
 import { Schema } from "effect"

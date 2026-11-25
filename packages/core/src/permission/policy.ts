@@ -1,3 +1,7 @@
+/**
+ * 权限策略（PermissionPolicy）。
+ * 实现 allow/ask/deny 有序规则匹配（最后匹配生效），处理 shell 命令扫描、外部目录规则与大小写/通配模式，是权限判定的核心。
+ */
 export * as PermissionPolicy from "./policy.js"
 
 import type { Permission } from "@opencode/schema/permission"
@@ -71,6 +75,8 @@ export function fallback(base: Policy, secondary: Policy): Policy {
   return { _tag: "fallback", base, secondary }
 }
 
+// 在单个 ruleset 内匹配规则：使用 findLast，即「最后匹配生效」的语义——
+// 用户可以先写宽泛的 allow，再用更具体的 deny 覆盖它（但不能反过来）。
 function matchLast(rules: Permission.Ruleset, action: string, resource: string): Permission.Rule | undefined {
   const ignoreCase = ignoresCase(action)
   return rules.findLast(
@@ -78,6 +84,11 @@ function matchLast(rules: Permission.Ruleset, action: string, resource: string):
   )
 }
 
+// 按策略类型递归求值：
+// - rules：直接在规则集内找最后匹配项。
+// - override：先查覆盖层 next，未命中再回落到 base。
+// - restrict：在 base 之上叠加 deny 列表，命中即拒绝（restrict 永远无法被 base 放宽）。
+// - fallback：查主策略 base，只有当结果为 undefined 或 ask 时才用次策略 secondary 兜底。
 function evaluateRule(policy: Policy, action: string, resource: string): Permission.Rule | undefined {
   switch (policy._tag) {
     case "rules":
@@ -100,6 +111,7 @@ function evaluateRule(policy: Policy, action: string, resource: string): Permiss
   }
 }
 
+// 权限判定的对外入口：无任何规则命中时默认「ask」（需用户批准），而非默认放行。
 export function evaluate(policy: Policy, action: string, resource: string): Permission.Rule {
   return evaluateRule(policy, action, resource) ?? { action, resource: "*", effect: "ask" }
 }

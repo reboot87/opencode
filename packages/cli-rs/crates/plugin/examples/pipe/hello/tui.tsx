@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid Tui：该文件实现 Tui 相关的状态与逻辑。
+ */
 // The quick start as a TypeScript TUI plugin, which the JS host runs.
 import { Plugin } from "@opencode/plugin/tui"
 

@@ -1,3 +1,7 @@
+/**
+ * 数据领域 — Model。
+ * 数据采集的领域模型中负责 Model 部分，提供该部分所需的实现与类型定义。
+ */
 import { and, asc, eq, inArray, or } from "drizzle-orm"
 import { Effect, Layer } from "effect"
 import * as Context from "effect/Context"

@@ -1,3 +1,7 @@
+/**
+ * 时间线（新版） — Separator。
+ * 重构中的会话消息时间线中负责 Separator 部分，提供该部分所需的实现与类型定义。
+ */
 import { hasProviderIcon, ProviderIcon } from "@opencode/ui/provider-icon"
 import { Tooltip } from "@opencode/ui/tooltip"
 import { Show } from "solid-js"

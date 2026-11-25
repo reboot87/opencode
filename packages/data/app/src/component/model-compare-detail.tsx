@@ -1,3 +1,7 @@
+/**
+ * 数据站组件 — ModelCompareDetail。
+ * 数据站点的界面组件中负责 ModelCompareDetail 部分，提供该部分所需的实现与类型定义。
+ */
 import { Link, Meta, Title } from "@solidjs/meta"
 import { ProviderIcon } from "@opencode/ui/provider-icon"
 import {

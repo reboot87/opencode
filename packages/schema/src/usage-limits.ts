@@ -1,3 +1,7 @@
+/**
+ * 用量上限类型。
+ * 定义用量上限查询结果结构。
+ */
 export * as UsageLimits from "./usage-limits.js"
 
 import { Schema } from "effect"

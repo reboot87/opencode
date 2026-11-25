@@ -1,3 +1,7 @@
+/**
+ * BOM 测试。
+ * 验证各种编码下 BOM 的检测与去除。
+ */
 import { expect, test } from "bun:test"
 import { Bom } from "./bom.js"
 

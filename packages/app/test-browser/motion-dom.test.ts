@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — MotionDomTest。
+ * 浏览器环境下的测试中负责 MotionDomTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, beforeEach, describe, expect, it, mock, spyOn } from "bun:test"
 import { createRoot, createSignal } from "solid-js"
 import { enter, frameLoop, prefersReducedMotion, slideFrom } from "@opencode/ui/motion"

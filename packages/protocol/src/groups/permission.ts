@@ -1,3 +1,7 @@
+/**
+ * 权限 API 分组。
+ * 定义权限规则的列举、授予与拒绝端点，按 Location 定制。
+ */
 import { Agent } from "@opencode/schema/agent"
 import { Location } from "@opencode/schema/location"
 import { Permission } from "@opencode/schema/permission"

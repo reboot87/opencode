@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — WorkerRpcMachine。
+ * Microsoft Office 文档预览插件中负责 WorkerRpcMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // Both ends of an Office worker's call protocol as pure machines: the window's calls waiting for replies, and the
 // worker's queue, which runs one call at a time. `worker-rpc.ts` drives them: it posts the messages and runs handlers.
 

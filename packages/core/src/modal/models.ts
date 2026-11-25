@@ -1,3 +1,7 @@
+/**
+ * Modal 模型目录。
+ * 定义 Modal provider 的模型与推理选项。
+ */
 export * as ModalModels from "./models.js"
 
 import { Money } from "@opencode/schema/money"

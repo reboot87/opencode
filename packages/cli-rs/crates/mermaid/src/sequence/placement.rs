@@ -1,3 +1,5 @@
+//! Mermaid 图表渲染：`placement`。
+
 use std::collections::HashMap;
 use std::sync::LazyLock;
 

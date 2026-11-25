@@ -1,3 +1,7 @@
+/**
+ * 插件来源（Bun）。
+ * 在 Bun 运行时加载本地插件文件并跟踪依赖变更。
+ */
 import { createRequire } from "node:module"
 import { readFileSync } from "node:fs"
 import path from "node:path"

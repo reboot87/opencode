@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：路由·缺失·app。
+ *
+ * 规格编号：E.1。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `OPENCODE_ROUTE` names a plugin route no plugin registers (T14b, T26): the missing route screen, centered.
 import { defineApp, location } from "../../lib/app"
 

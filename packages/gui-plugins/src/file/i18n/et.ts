@@ -1,3 +1,7 @@
+/**
+ * 文件文案 — Et。
+ * 文件插件的多语言文案中负责 Et 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "tree.all": "Kõik failid",
   "tab.notFound": "Faili ei leitud: {{name}}",

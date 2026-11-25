@@ -1,3 +1,7 @@
+/**
+ * 深度链接 — Machine。
+ * 处理 opencode:// 等外部链接唤起中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 import { consoleReturnWindow } from "../lifecycle/deep-link"
 
 export type DeepLinkWindow = { readonly status: "loading" } | { readonly status: "ready"; readonly clientID: number }

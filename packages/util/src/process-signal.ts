@@ -1,3 +1,7 @@
+/**
+ * 进程信号处理。
+ * 注册与卸载进程信号处理器，支持多个监听者。
+ */
 export * as ProcessSignal from "./process-signal.js"
 
 const handlers = new Map<NodeJS.Signals, Set<() => void>>()

@@ -1,3 +1,7 @@
+/**
+ * 调试插件 — MemoryLog。
+ * 面向开发者的调试 GUI 插件中负责 MemoryLog 部分，提供该部分所需的实现与类型定义。
+ */
 import { mkdir } from "node:fs/promises"
 import path from "node:path"
 import { app, webContents } from "electron"

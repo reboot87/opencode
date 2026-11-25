@@ -22,7 +22,10 @@ type PageMarkdown = {
   title: string
   description: string
   markdown: (context: MarkdownContext) => string
-  /** Lists releases: the changelog view the page shows, from the releases and the page's query. */
+  /** Lists releases: the changelog view the page shows, from the releases and the page's query.
+ *
+ * 站点共享逻辑：页面·Markdown。
+ */
   changelog?: (releases: ChangelogRelease[], query: URLSearchParams) => ChangelogView
   /** Reads the releases themselves. */
   releases?: boolean

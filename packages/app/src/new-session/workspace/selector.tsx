@@ -1,3 +1,7 @@
+/**
+ * 新会话工作区 — Selector。
+ * 新建会话时的工作区选择中负责 Selector 部分，提供该部分所需的实现与类型定义。
+ */
 import { createComputed, createEffect, createSignal, onCleanup, Show, untrack } from "solid-js"
 import { createStore } from "solid-js/store"
 import { Popover } from "@kobalte/core/popover"

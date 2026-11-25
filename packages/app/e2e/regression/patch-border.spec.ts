@@ -1,3 +1,7 @@
+/**
+ * 回归测试 — PatchBorderSpec。
+ * 防止既有行为退化的端到端用例中负责 PatchBorderSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "@playwright/test"
 import { createTwoFilesPatch } from "diff"
 import { assistantMessage, setupTimeline, toolPart, userMessage } from "../utils/timeline"

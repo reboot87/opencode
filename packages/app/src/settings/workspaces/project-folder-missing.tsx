@@ -1,3 +1,7 @@
+/**
+ * 工作区设置 — ProjectFolderMissing。
+ * 工作区相关设置中负责 ProjectFolderMissing 部分，提供该部分所需的实现与类型定义。
+ */
 import { Icon } from "@opencode/ui/icon"
 import { Show } from "solid-js"
 import { useLanguage } from "@/runtime/i18n/language"

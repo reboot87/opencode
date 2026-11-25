@@ -1,4 +1,6 @@
 //! Sends a connection's event batches, with its status, to the store's owner.
+//!
+//! 会话存储层：`connection`。
 
 use std::collections::VecDeque;
 

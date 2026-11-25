@@ -3,6 +3,8 @@ import type { Inline, RichText } from "~/lib/markdown"
 /**
  * Turns copy with Markdown-style links into rich text: `[MCP servers](mcp)` becomes a link to
  * `links.mcp`. Translations keep each `(id)` and may move the links anywhere in the sentence.
+ *
+ * 多语言文案：`rich`。
  */
 export function rich(text: string, links: Record<string, string | { href: string; external: true }>): RichText {
   return text.split(/(\[[^\]]+\]\(\w+\))/).flatMap((part): Inline[] => {

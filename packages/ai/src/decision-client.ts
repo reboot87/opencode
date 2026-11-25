@@ -1,3 +1,10 @@
+/**
+ * 决策模型的客户端服务（Effect Context.Service）。
+ *
+ * Interface.generate 定义“执行一次决策请求”的能力；layer 用 RequestExecutor 实现它——
+ * 调用模型的 DecisionModelRoute，并把返回解析成 DecisionResponse。
+ * 对上层（decision.ts 的 generate）来说，只需 Effect.flatMap(Service) 即可，无需关心底层 HTTP。
+ */
 import { Context, Effect, Layer } from "effect"
 import type {
   DecisionAnswer,

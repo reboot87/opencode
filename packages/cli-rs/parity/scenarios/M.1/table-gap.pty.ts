@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：表格·gap·伪终端。
+ *
+ * 规格编号：M.1。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Mini replays two replies of three blocks each, a paragraph, a left-aligned table and a paragraph, then three
 // paragraphs. Both clients commit a reply's leading blocks first and the rest at the end, and both keep the blank row
 // at that cut (before the table, before `Three.`), as the replies rendered whole show. TS lost it before #63989.

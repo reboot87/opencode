@@ -1,3 +1,7 @@
+/**
+ * 系统功能插件 — Plugins。
+ * 以插件形式提供的系统级功能中负责 Plugins 部分，提供该部分所需的实现与类型定义。
+ */
 import type { PluginInfo } from "@opencode/client"
 import { Plugin } from "@opencode/plugin/tui"
 import path from "path"

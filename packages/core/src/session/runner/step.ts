@@ -1,3 +1,7 @@
+/**
+ * 单步（Step）执行内核。
+ * 负责一次 LLM 调用与工具执行：流式输出、边流边 fork 工具 fiber 并行执行、等待全部工具、快照文件差异，产出 Outcome 五态（Completed / Retry / RecoverFull / Compacted / OutputLimit）。同时处理中断、取消与工具结果缺失等异常。
+ */
 export * as SessionStep from "./step.js"
 
 import {
@@ -27,6 +31,12 @@ import { SessionRunnerModel } from "./model.js"
 import { createLLMEventPublisher } from "./publish-llm-event.js"
 import { SessionRunnerRetry } from "./retry.js"
 
+// 单步执行的结果五态，驱动 llm.ts 的 while 循环下一步动作：
+// - Completed：正常完成，needsContinuation 决定是否需要继续下一轮（例如还有工具调用后续）。
+// - Retry：模型调用失败且策略判定可重试，携带错误与重试决策（attempt/delay）。
+// - RecoverFull：需要恢复完整上下文后重跑。
+// - Compacted：本步触发了上下文压缩，需用压缩后的上下文继续。
+// - OutputLimit：输出 token 触顶，needsContinuation 决定是否拆分后续工作继续。
 export type Outcome = Data.TaggedEnum<{
   Completed: { readonly needsContinuation: boolean }
   Retry: {
@@ -335,6 +345,8 @@ export const make = Effect.gen(function* () {
   return { attempt }
 })
 
+// 判断一次 LLM 流失败是否属于「被中断」：不完整的流或读取阶段传输错误视为中断（可恢复），
+// 其余（如解析错误、HTTP 状态错误）视为真实失败交由重试策略处理。
 const isInterruptedStream = (failure: AIError) => {
   if (failure.reason._tag === "InvalidProviderOutput") return failure.reason.classification === "incomplete-stream"
   if (failure.reason._tag === "Transport") return failure.reason.operation === "read"
@@ -342,6 +354,8 @@ const isInterruptedStream = (failure: AIError) => {
 }
 
 /** Tool.Error settles in each fiber; only user declines remain in the typed error channel. */
+// 分类所有工具 fiber 的退出结果：工具自身错误已在各自 fiber 内结算，这里只挑出
+// 用户拒绝（declines）、致命缺陷（failure，仅 die 非中断）与是否被中断三类信息。
 const classifyToolExits = (
   exits: ReadonlyArray<Exit.Exit<void, Permission.DeclinedError | QuestionTool.CancelledError>>,
   runs: ReadonlyArray<{ readonly call: ToolCall }>,

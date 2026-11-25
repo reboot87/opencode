@@ -1,3 +1,10 @@
+/**
+ * 错误·摘要的测试。
+ *
+ * 被测模块：@opencode/core/util/error-summary
+ *
+ * 覆盖通用工具函数的行为与边界。
+ */
 import { describe, expect, test } from "bun:test"
 import { ErrorSummary } from "../../src/util/error-summary"
 

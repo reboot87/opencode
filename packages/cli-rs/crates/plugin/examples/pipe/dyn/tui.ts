@@ -1,3 +1,8 @@
+/**
+ * 管道示例：TUI。
+ *
+ * 管道示例：演示插件管道各阶段的串联方式。
+ */
 // Registers the command count in the configured file so the harness can change registrations without editing the
 // plugin.
 

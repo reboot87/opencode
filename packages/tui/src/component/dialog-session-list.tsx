@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — DialogSessionList。
+ * 终端界面（Solid）组件中负责 DialogSessionList 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createResource, createSignal, onMount, Show, type JSX } from "solid-js"
 import path from "path"
 import type { SessionInfo } from "@opencode/client"

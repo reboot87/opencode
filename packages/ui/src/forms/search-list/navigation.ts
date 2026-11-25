@@ -1,3 +1,7 @@
+/**
+ * 搜索列表 — Navigation。
+ * 带搜索过滤的列表组件中负责 Navigation 部分，提供该部分所需的实现与类型定义。
+ */
 export type SearchListMove = "next" | "previous" | "nextSection" | "previousSection" | "first" | "last"
 
 /** The move a key asks of a search list, or nothing when the key belongs to the input. */

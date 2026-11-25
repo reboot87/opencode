@@ -1,3 +1,7 @@
+/**
+ * 数据站源码 — App。
+ * 模型能力对比站点的实现中负责 App 部分，提供该部分所需的实现与类型定义。
+ */
 import { MetaProvider, Title } from "@solidjs/meta"
 import { Router } from "@solidjs/router"
 import { FileRoutes } from "@solidjs/start/router"

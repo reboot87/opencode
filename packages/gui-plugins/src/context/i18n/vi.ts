@@ -1,3 +1,7 @@
+/**
+ * 上下文文案 — Vi。
+ * GUI 上下文的多语言文案中负责 Vi 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "tab.title": "Ngữ cảnh",
   "mobile.title": "Cách sử dụng",

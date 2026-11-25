@@ -1,3 +1,7 @@
+/**
+ * Meta 图片生成协议。
+ * 图片生成 provider 实现。
+ */
 import { Effect, Schema } from "effect"
 import type { HttpClientResponse } from "effect/http"
 import { ImageModel, ImageResponse, type ImageRequest } from "../image.js"

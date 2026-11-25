@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — MarkdownClipboard。
+ * 跨场景复用的通用 UI 组件中负责 MarkdownClipboard 部分，提供该部分所需的实现与类型定义。
+ */
 import { sessionReferenceRange } from "./markdown-session-links"
 
 // Chromium's default copy inlines computed styles, so text copied from a dark theme pastes as light text on the

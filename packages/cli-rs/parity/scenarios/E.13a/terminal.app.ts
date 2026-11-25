@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：终端·app。
+ *
+ * 规格编号：E.13a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The terminal pane on a fake persistent PTY socket (W06, A04): `<leader>t` shows the session's terminal, which
 // replays its snapshot and output, claims control at the pane's size, and echoes typed input; `<leader>up` closes the
 // pane, `<leader>t` opens it again on a new socket, and a closed socket shows "Terminal disconnected".

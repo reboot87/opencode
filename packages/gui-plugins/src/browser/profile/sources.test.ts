@@ -1,3 +1,7 @@
+/**
+ * 浏览器配置 — SourcesTest。
+ * 浏览器插件的用户配置与身份中负责 SourcesTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, expect, test } from "bun:test"
 import { lutimes, mkdir, mkdtemp, readdir, rm, symlink, utimes, writeFile } from "node:fs/promises"
 import { tmpdir } from "node:os"

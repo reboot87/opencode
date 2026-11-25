@@ -4,6 +4,8 @@
 //! test executable's ignored `terminal_fixture::child` test. The private TCP
 //! channel controls the fixture and observes stdin without echoing it back into
 //! the PTY (which could conceal lost or duplicated terminal replies).
+//!
+//! 进程守护服务测试：终端夹具。
 
 use std::env;
 use std::io::{self, BufRead, BufReader, Read, Write};

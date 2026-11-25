@@ -1,3 +1,7 @@
+/**
+ * subagent 工具。
+ * 启动子代理执行任务的工具，支持前台与后台结果处理。
+ */
 export * as SubagentTool from "./subagent.js"
 
 import { ToolFailure } from "@opencode/ai/effect"

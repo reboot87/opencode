@@ -1,3 +1,7 @@
+/**
+ * 对话框 — Dialog。
+ * 模态对话框组件中负责 Dialog 部分，提供该部分所需的实现与类型定义。
+ */
 import { CloseButton, Content, Description, Title } from "@kobalte/core/dialog"
 import {
   type ComponentProps,

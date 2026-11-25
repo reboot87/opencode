@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — Main。
+ * 内置浏览器功能的 GUI 插件中负责 Main 部分，提供该部分所需的实现与类型定义。
+ */
 import path from "node:path"
 import { builtinMainContext } from "@opencode/plugin/gui/builtin"
 import { MenubarItem, type Plugin } from "@opencode/plugin/gui/main"

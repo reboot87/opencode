@@ -1,3 +1,7 @@
+/**
+ * SSH 插件 — RemoteCli。
+ * 远程主机管理的 GUI 插件中负责 RemoteCli 部分，提供该部分所需的实现与类型定义。
+ */
 export * as RemoteCli from "./remote-cli"
 
 import { Effect, Schema } from "effect"

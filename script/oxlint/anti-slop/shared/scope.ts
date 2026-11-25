@@ -1,6 +1,9 @@
 import type { ESTree, Scope, SourceCode, Variable } from "@oxlint/plugins";
 
-/** Resolve an identifier to its binding by walking lexical scopes upward. */
+/** Resolve an identifier to its binding by walking lexical scopes upward.
+ *
+ * Oxlint 规则共享工具：作用域。
+ */
 export function resolveVariable(
 	sourceCode: SourceCode,
 	identifier: ESTree.IdentifierReference,

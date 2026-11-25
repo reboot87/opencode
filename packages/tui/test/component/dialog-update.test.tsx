@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid DialogUpdateTest：该文件实现 DialogUpdateTest 相关的状态与逻辑。
+ */
 import { testRender } from "@opentui/solid"
 import { expect, test } from "bun:test"
 import { createSignal, onCleanup } from "solid-js"

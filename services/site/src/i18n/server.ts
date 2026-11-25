@@ -1,3 +1,6 @@
+/**
+ * 多语言文案：服务端。
+ */
 // Every language for the server, which renders any of them on any request; the browser loads only what
 // the page shows (i18n/index.ts). Imported by entry-server.tsx and middleware.ts, never by client code.
 import { register } from "~/i18n"

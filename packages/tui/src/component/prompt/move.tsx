@@ -1,3 +1,7 @@
+/**
+ * 提示区组件 — Move。
+ * 提示输入区的终端组件中负责 Move 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, onCleanup } from "solid-js"
 import { useTuiPaths } from "../../context/runtime"
 import { errorMessage } from "../../util/error"

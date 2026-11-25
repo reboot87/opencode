@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — Context。
+ * 会话输入区的组合与快捷键中负责 Context 部分，提供该部分所需的实现与类型定义。
+ */
 import { createContext, useContext } from "solid-js"
 
 export interface ComposerHint {

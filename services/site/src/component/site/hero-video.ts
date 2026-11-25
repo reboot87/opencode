@@ -7,6 +7,8 @@ import { afterLoad } from "./card-video"
  * and the tab is visible. With reduced motion it rests on that frame until `toggle` plays it, and
  * downloads nothing until then. No framework code. Returns the play button's toggle, `refresh` for
  * when the sources change (a theme change), and a stop.
+ *
+ * 站点界面组件：主视觉视频。
  */
 export function heroVideo(video: HTMLVideoElement) {
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches

@@ -1,4 +1,6 @@
 //! Launches the external editor and realigns mentions to the edited text.
+//!
+//! 基础 UI 组件库：编辑器。
 
 use std::path::Path;
 use std::process::Command;

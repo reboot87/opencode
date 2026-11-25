@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — Machine。
+ * 浏览器端的插件加载与扩展点中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 import { pluginEnabled, type EnableState, type Installed } from "@opencode/plugin/gui/host"
 
 /** Main's reply to the one installed-list request, while it has not answered or after it failed. */

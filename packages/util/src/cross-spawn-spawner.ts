@@ -1,3 +1,7 @@
+/**
+ * 跨平台子进程启动器。
+ * 封装 child_process.spawn：管理进程组、超时强杀（3 秒）与信号转发。
+ */
 import { isArrayNonEmpty } from "effect/Array"
 import * as NodeSink from "@effect/platform-node/NodeSink"
 import * as NodeStream from "@effect/platform-node/NodeStream"

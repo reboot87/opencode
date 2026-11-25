@@ -1,5 +1,7 @@
 //! Finished entries are painted once; streaming entries commit only their settled rows. Text written to terminal
 //! scrollback cannot be rewritten.
+//!
+//! 精简版实现：`scrollback`。
 
 use std::sync::Arc;
 

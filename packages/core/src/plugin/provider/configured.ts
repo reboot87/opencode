@@ -1,3 +1,7 @@
+/**
+ * 已配置 Provider。
+ * 把配置中显式声明的 provider 汇总为设置列表。
+ */
 import { Effect, Option } from "effect"
 import type { Document, Entry } from "@opencode/schema/config"
 import { Config } from "../../config.js"

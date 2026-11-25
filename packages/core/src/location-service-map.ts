@@ -1,3 +1,7 @@
+/**
+ * Location 服务映射。
+ * 管理 Location 到服务实例的映射，支持运行时 reload。
+ */
 import { Context, Effect, Exit, Layer, LayerMap, RcMap } from "effect"
 import { LayerNode } from "@opencode/util/effect/layer-node"
 import { Node } from "@opencode/util/effect/app-node"

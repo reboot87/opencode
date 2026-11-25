@@ -1,3 +1,7 @@
+/**
+ * models.dev 目录客户端。
+ * 拉取并解析 models.dev 的模型元数据（价格、上下文长度、限流等）。
+ */
 import { Cause, Context, Duration, Effect, Layer, Option, Result, Schedule, Schema, Semaphore } from "effect"
 import { HttpClient, HttpClientError, HttpClientRequest, HttpClientResponse } from "effect/http"
 import { ConfigProvider } from "@opencode/schema/config/provider"

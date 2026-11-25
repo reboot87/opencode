@@ -1,3 +1,7 @@
+/**
+ * Mistral provider 门面。
+ * 基于 Mistral chat 协议，提供模型工厂与鉴权配置。
+ */
 import type { ProviderPackage } from "../provider-package.js"
 import { MistralChat } from "../protocols/mistral-chat.js"
 import type { ProviderAuthOption } from "../route/auth-options.js"

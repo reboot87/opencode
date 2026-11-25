@@ -1,3 +1,7 @@
+/**
+ * Claude 查询选项。
+ * 构造 Claude SDK 查询的选项与隔离环境变量。
+ */
 export * as ClaudeQueryOptions from "./query-options.js"
 
 import type { LanguageModelV3FunctionTool } from "@ai-sdk/provider"

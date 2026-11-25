@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — MarkdownProjection。
+ * 跨场景复用的通用 UI 组件中负责 MarkdownProjection 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Block, Projection } from "./markdown-stream"
 
 export function completedProjection(text: string): Projection {

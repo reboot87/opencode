@@ -1,3 +1,10 @@
+/**
+ * 持久化·伪终端·守护进程的测试。
+ *
+ * 被测模块：@opencode/core/persistent-pty-daemon
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import { spawn } from "node:child_process"
 import { mkdir, writeFile } from "node:fs/promises"

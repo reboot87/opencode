@@ -1,3 +1,7 @@
+/**
+ * 服务端请求入口。
+ * 把 HTTP 请求分派到 HttpApi 路由，是服务端的主入口。
+ */
 export * as ServerFetch from "./fetch"
 
 import { Context, Effect, Layer } from "effect"

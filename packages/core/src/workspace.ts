@@ -1,3 +1,7 @@
+/**
+ * 工作区服务（Workspace）。
+ * 管理多工作区的标识、切换与成员关系。
+ */
 export * as Workspace from "./workspace.js"
 
 import { Workspace } from "@opencode/schema/workspace"

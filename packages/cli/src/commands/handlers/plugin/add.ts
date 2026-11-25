@@ -1,3 +1,7 @@
+/**
+ * plugin add 命令。
+ * 通过 npm 安装插件。
+ */
 import { EOL } from "node:os"
 import path from "node:path"
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises"

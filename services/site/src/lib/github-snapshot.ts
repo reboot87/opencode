@@ -2,7 +2,10 @@
 // not committed). Pages fall back to it when a new Worker isolate has nothing better and GitHub
 // doesn't answer quickly, so no render waits on GitHub. Loaded only on that path.
 
-/** A release as GitHub's API lists it, with only the fields the site reads. */
+/** A release as GitHub's API lists it, with only the fields the site reads.
+ *
+ * 站点共享逻辑：GitHub·快照。
+ */
 export type GithubRelease = {
   tag_name: string
   name: string

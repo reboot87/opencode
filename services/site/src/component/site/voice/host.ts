@@ -29,7 +29,10 @@ export function adoptVoice(site: HTMLElement) {
   if (host.parentElement !== site) site.appendChild(host)
 }
 
-/** Settings › Voice orb off: take it out of the page and end any session. */
+/** Settings › Voice orb off: take it out of the page and end any session.
+ *
+ * 语音交互组件：主机。
+ */
 export function dropVoice() {
   setVoicePhase("closed")
   host?.remove()

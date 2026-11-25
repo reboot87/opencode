@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — SessionTimelineReasoningSpec。
+ * 会话界面组件的测试中负责 SessionTimelineReasoningSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, story } from "../../stories/playwright/story"
 
 for (const mode of ["hidden", "compact", "full"] as const) {

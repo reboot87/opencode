@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：标准输入·伪终端。
+ *
+ * 规格编号：M.1。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `printf 'piped text' | mini -s ses_mini --prompt 'from flag'`: the pipe and the flag become the first prompt, and
 // keys still come from the terminal (Ctrl+C twice leaves).
 import { definePty } from "../../pty/run"

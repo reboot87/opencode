@@ -1,3 +1,10 @@
+/**
+ * 会话·用量的测试。
+ *
+ * 被测模块：@opencode/core/session-usage
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { Usage } from "@opencode/ai/effect"
 import { Money } from "@opencode/schema/money"

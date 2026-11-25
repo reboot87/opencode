@@ -1,3 +1,10 @@
+/**
+ * 进程的测试。
+ *
+ * 被测模块：@opencode/server/process
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import { Effect } from "effect"
 import { HttpServer, HttpServerRequest, HttpServerResponse } from "effect/http"

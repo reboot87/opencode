@@ -1,4 +1,7 @@
-/** About 5k tokens. */
+/**
+ * 
+ * About 5k tokens. 会话时间线中负责 QuoteText 部分：会话消息时间线中与 QuoteText 相关的状态、交互与渲染逻辑。
+ */
 export const QUOTE_MAX_LENGTH = 20_000
 
 // Diff viewers render their lines in a shadow root.

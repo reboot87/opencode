@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid U3Alert：该文件实现 U3Alert 相关的状态与逻辑。
+ */
 // P-COMP fixture for DialogAlert (packages/tui/src/ui/dialog-alert.tsx): crates/ui/tests/all/dialogs.rs.
 import { DialogAlert } from "../../../tui/src/ui/dialog-alert"
 import { renderComponent } from "../lib/component"

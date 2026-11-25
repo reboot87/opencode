@@ -1,3 +1,7 @@
+/**
+ * 窗口管理 — Index 出口。
+ * 集中导出 窗口管理 中 Index 相关的实现、组件与类型。
+ */
 import { randomUUID } from "node:crypto"
 import { app, BrowserWindow, nativeTheme, screen } from "electron"
 import { Effect, FileSystem, Path } from "effect"

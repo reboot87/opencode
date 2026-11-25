@@ -1,3 +1,7 @@
+/**
+ * 时间线 — MermaidStories。
+ * 按时间顺序展示会话消息的视图中负责 MermaidStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal } from "solid-js"
 import type { SessionDocument } from "../document"
 import { CURRENT_SESSION_ID, STORY_MODEL, STORY_TIME } from "../storybook/current-session-fixtures"

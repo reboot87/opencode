@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — CommentFocusMachine。
+ * 会话输入区的组合逻辑与附件处理中负责 CommentFocusMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // An unanswered request stops waiting for its view, so a panel opened minutes later does not jump to an old comment.
 export const COMMENT_FOCUS_TIMEOUT_MS = 5_000
 

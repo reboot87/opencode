@@ -2,6 +2,10 @@
  * Host-internal contract between the renderer host (packages/app) and the main host (packages/desktop).
  * Plugins never use this directly; they use Ipc tokens.
  * Payloads are structured-clone values already encoded with the Ipc's schemas. The `ipc` fields name an Ipc by id.
+ *
+ * 渲染进程宿主（packages/app）与主进程宿主（packages/desktop）之间的内部契约。
+ * 插件不直接使用它，而是通过 Ipc token 通信。
+ * 负载均为已按 Ipc schema 编码的结构化克隆值；`ipc` 字段以 id 命名一个 Ipc。
  */
 
 import type { PluginInfo } from "@opencode/client/promise"

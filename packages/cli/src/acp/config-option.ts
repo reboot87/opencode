@@ -1,3 +1,7 @@
+/**
+ * ACP 配置选项。
+ * 解析 ACP 会话的配置选项与模型变体选择。
+ */
 import type { SessionConfigOption } from "@agentclientprotocol/sdk"
 import type { Agent } from "@opencode/schema/agent"
 import { Model } from "@opencode/schema/model"

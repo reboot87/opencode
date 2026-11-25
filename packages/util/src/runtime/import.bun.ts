@@ -1,3 +1,7 @@
+/**
+ * 动态导入（Bun）。
+ * 在 Bun 运行时动态导入模块。
+ */
 import { pathToFileURL } from "node:url"
 
 export function importModule(specifier: string) {

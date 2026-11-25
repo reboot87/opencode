@@ -1,10 +1,16 @@
+/**
+ * AI SDK 的各类标识符（带品牌类型）。
+ *
+ * 用 Schema.brand 把普通字符串提升为品牌类型（如 ModelID），
+ * 让编译器能区分"任意字符串"和"模型 ID"，防止 ID 混用。
+ */
 import { Schema } from "effect"
 
-/** Stable string identifier for a protocol implementation. */
+/** 协议实现的稳定字符串标识。 */
 export const ProtocolID = Schema.String
 export type ProtocolID = Schema.Schema.Type<typeof ProtocolID>
 
-/** Stable string identifier for the runnable route. */
+/** 可运行路由（route）的稳定字符串标识。 */
 export const RouteID = Schema.String
 export type RouteID = Schema.Schema.Type<typeof RouteID>
 

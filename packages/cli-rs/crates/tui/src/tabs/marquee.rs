@@ -3,6 +3,8 @@
 //! scrolls in each. It waits [`DELAY`], then steps a cell every [`INTERVAL`] on the app's shared animation clock, and
 //! after one cycle it stops on the title's start until the pointer enters another tab. The leading edge fades in while
 //! it scrolls. As in TypeScript the scroll runs with animations off too; only that fade jumps instead of easing.
+//!
+//! 终端界面：滚动字幕。
 
 use std::time::Instant;
 

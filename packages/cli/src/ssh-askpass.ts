@@ -1,3 +1,7 @@
+/**
+ * SSH Askpass 服务。
+ * 为 SSH 密钥加载提供 askpass 助手服务，返回凭据口令。
+ */
 import { NodeSocket } from "@effect/platform-node"
 import { Effect, Schema, Stdio, Stream } from "effect"
 import { Socket } from "effect/socket"

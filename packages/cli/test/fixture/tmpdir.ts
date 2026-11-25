@@ -1,3 +1,8 @@
+/**
+ * tmpdir测试夹具。
+ *
+ * 为 CLI 测试提供配置文件与工作区样例。
+ */
 import { mkdtemp, rm } from "node:fs/promises"
 import os from "node:os"
 import path from "node:path"

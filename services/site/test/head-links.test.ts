@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：头部链接。
+ */
 import { expect, test } from "bun:test"
 import { stylesheetLinks } from "~/lib/head-links"
 

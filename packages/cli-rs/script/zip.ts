@@ -1,3 +1,8 @@
+/**
+ * 拉链脚本。
+ *
+ * Rust CLI 的开发脚本：代码生成、依赖漂移检查与性能采样。
+ */
 import { inflateRawSync } from "node:zlib"
 
 /** The files of a flat zip (stored or deflated), by name, read from its central directory; `fail` gets what is wrong. */

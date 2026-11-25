@@ -1,3 +1,7 @@
+/**
+ * 插件来源目录发现。
+ * 在 plugin/plugins 目录中发现本地插件。
+ */
 export * as PluginSourceDirectory from "./source-directory.js"
 
 import { FSUtil } from "@opencode/util/fs-util"

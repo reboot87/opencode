@@ -1,4 +1,6 @@
 //! Shared form validation and answer rules.
+//!
+//! 基础 UI 组件库：表单。
 
 use std::collections::HashMap;
 

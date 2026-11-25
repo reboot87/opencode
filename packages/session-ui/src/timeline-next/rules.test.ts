@@ -1,3 +1,7 @@
+/**
+ * 时间线（新版） — RulesTest。
+ * 重构中的会话消息时间线中负责 RulesTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { SessionMessageAssistantTool, SessionMessageInfo } from "@opencode/client/promise"
 import { timelinePresets, type TimelineDetail } from "../timeline/detail"

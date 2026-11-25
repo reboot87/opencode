@@ -1,4 +1,6 @@
 //! MCP and skill dialogs.
+//!
+//! 终端界面测试：MCP。
 
 use crate::support::{self, Fake, Harness, Log, WAIT, deref_harness, list};
 

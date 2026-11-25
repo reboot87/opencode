@@ -1,3 +1,6 @@
+/**
+ * 站点共享逻辑：resource·节点。
+ */
 // `vite dev`'s stand-in for resource.cloudflare.ts: the same shape, read from process.env
 // (STAGE and any secrets you export), waitUntil that just awaits, and no assets binding (the dev
 // server serves built files itself).

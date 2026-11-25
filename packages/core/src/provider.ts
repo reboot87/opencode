@@ -1,3 +1,7 @@
+/**
+ * Provider 服务。
+ * 模型提供方的注册表：加载 provider 包、维护可用模型清单与错误类型。
+ */
 export * as Provider from "./provider.js"
 
 import { Context, Effect, Layer, Option, Schema, Stream, Struct } from "effect"

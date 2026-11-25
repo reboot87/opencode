@@ -1,3 +1,7 @@
+/**
+ * 复选框 — Checkbox。
+ * 多选勾选组件中负责 Checkbox 部分，提供该部分所需的实现与类型定义。
+ */
 import { Control, Description, ErrorMessage, Indicator, Input, Label, Root } from "@kobalte/core/checkbox"
 import { Match, Show, Switch, splitProps } from "solid-js"
 import type { ComponentProps, JSX, ParentProps } from "solid-js"

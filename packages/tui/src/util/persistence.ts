@@ -1,3 +1,7 @@
+/**
+ * 终端工具 — Persistence。
+ * 终端界面的通用工具函数中负责 Persistence 部分，提供该部分所需的实现与类型定义。
+ */
 import path from "path"
 import { appendFile, mkdir, readFile, rename, rm, writeFile } from "fs/promises"
 

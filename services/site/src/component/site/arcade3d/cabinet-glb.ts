@@ -26,6 +26,8 @@ import { mediaUrl } from "~/lib/media"
  * origin is the slit; the coin goes in along -Z), "coinReturn", "marquee" (dark until the credit),
  * "edges" (the T-molding, tinted by the edge light), "bezel" and "body" (scaled to the painting).
  * Returns undefined when there is no GLB, so the stage builds the procedural cabinet instead.
+ *
+ * 3D 街机场景组件：机台·GLB 模型。
  */
 
 // The painted cabinet's screen is larger and a little lower than the model's: the bezel and the

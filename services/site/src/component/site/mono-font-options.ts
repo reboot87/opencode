@@ -10,7 +10,10 @@ import localMonoFonts from "~/lib/local-mono-fonts.json"
 
 const [liveFonts, setLiveFonts] = createSignal<string[]>([])
 
-/** The installed families, with the saved one even if this computer doesn't list it. */
+/** The installed families, with the saved one even if this computer doesn't list it.
+ *
+ * 站点界面组件：等宽字体选项。
+ */
 export function installedMonoFonts() {
   const builtIn: readonly string[] = monoFontsBuiltIn
   return [...new Set([...localMonoFonts, ...liveFonts(), siteSettings.monoFont])]

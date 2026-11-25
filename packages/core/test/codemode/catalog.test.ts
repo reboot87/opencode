@@ -1,3 +1,10 @@
+/**
+ * 目录清单的测试。
+ *
+ * 被测模块：@opencode/core/codemode/catalog
+ *
+ * 覆盖 Code Mode 的脚本执行、差异计算与指令下发。
+ */
 import { describe, expect, test } from "bun:test"
 import { CodeModeCatalog } from "@opencode/core/codemode/catalog"
 import { CodeModeInstructions } from "@opencode/core/codemode/instructions"

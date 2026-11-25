@@ -1,3 +1,5 @@
+//! ACP 协议实现：子级。
+
 use std::borrow::Cow;
 use std::sync::Arc;
 

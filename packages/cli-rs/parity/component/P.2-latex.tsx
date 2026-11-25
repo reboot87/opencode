@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid P2Latex：该文件实现 P2Latex 相关的状态与逻辑。
+ */
 // P-COMP fixtures of the LaTeX plugin (packages/latex/src/plugin.ts) in `TextPart`'s <markdown>
 // (routes/session/message-parts.tsx): fences from packages/latex/src/markdown.test.ts, rendered, wide, and
 // invalid. crates/latex/src/tests.rs renders the same documents with opencode_latex::renderer.

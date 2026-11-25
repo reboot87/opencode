@@ -1,3 +1,7 @@
+/**
+ * 运行时持久化 — DraftsMachine。
+ * 浏览器端配置的本地持久化中负责 DraftsMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // Decoded image bytes the renderer pins through object URLs. Every consumer of a `blob.url` is a
 // persisted draft document (composer prompt, prompt history), so an image is pinned exactly while a
 // stored document, or a save writing one, references it. Once the last reference disappears (removed

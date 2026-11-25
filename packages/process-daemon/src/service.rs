@@ -1,3 +1,5 @@
+//! 进程守护服务实现：服务。
+
 #[cfg(target_os = "linux")]
 use std::collections::HashSet;
 use std::collections::{HashMap, VecDeque};

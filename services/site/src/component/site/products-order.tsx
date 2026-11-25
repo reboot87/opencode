@@ -9,6 +9,8 @@ import { normalizeProductsOrder, productIds, setSiteSetting, siteSettings } from
  * arrow key). The cards keep their markup order; a style element gives each one a grid `order`, so
  * a saved order applies before first paint (productsOrderScript) and changes without re-rendering.
  * Like the nav's drag (nav-order.tsx), a press only becomes a drag once the pointer moves.
+ *
+ * 站点界面组件：products·顺序。
  */
 
 const styleId = "products-order"

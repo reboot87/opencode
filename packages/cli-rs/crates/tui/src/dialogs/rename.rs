@@ -1,4 +1,6 @@
 //! Rename a session or generate its title.
+//!
+//! 终端弹窗组件：`rename`。
 
 use opencode_api::generated::SessionUpdateInput;
 use opencode_ui::prompt::{PromptProps, prompt};

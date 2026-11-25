@@ -1,3 +1,7 @@
+/**
+ * 数据源 — SourcesExpandMachineTest。
+ * 会话界面所用的数据来源定义中负责 SourcesExpandMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   COLLAPSE_SOURCES_EXPAND_EVENT,

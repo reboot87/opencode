@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — DialogSkill。
+ * 终端界面（Solid）组件中负责 DialogSkill 部分，提供该部分所需的实现与类型定义。
+ */
 import { TextAttributes } from "@opentui/core"
 import { DialogSelect, type DialogSelectOption } from "../ui/dialog-select"
 import { createResource, createMemo, createSignal, Match, Switch } from "solid-js"

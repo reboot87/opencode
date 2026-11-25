@@ -1,3 +1,7 @@
+/**
+ * 模块 — Geometry。
+ * 该目录下的功能模块中负责 Geometry 部分，提供该部分所需的实现与类型定义。
+ */
 export type DiagramAxis = "x" | "y"
 export type DiagramDirection = "up" | "down" | "left" | "right"
 export type DiagramSide = "left" | "right" | "top" | "bottom"

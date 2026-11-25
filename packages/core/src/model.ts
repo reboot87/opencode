@@ -1,3 +1,7 @@
+/**
+ * 模型类型。
+ * 定义模型 ID/变体 ID 的品牌类型与信息 Schema。
+ */
 import { Model } from "@opencode/schema/model"
 import { Provider } from "./provider.js"
 import type { DeepMutable } from "./schema.js"

@@ -1,3 +1,7 @@
+/**
+ * 详情插件 — WorkspaceMoveMachine。
+ * 展示对象详细信息的 GUI 插件中负责 WorkspaceMoveMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import { containsDirectory, sameDirectory } from "@opencode/util/path"
 import { workspaceDirectories, type WorkspaceProject } from "./paths"
 

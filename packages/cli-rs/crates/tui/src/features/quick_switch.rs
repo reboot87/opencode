@@ -1,4 +1,6 @@
 //! With tabs off, the leader and a digit open pinned root sessions in pin order.
+//!
+//! 终端界面功能模块：快捷开关。
 
 use crate::dialogs::session_list::pins;
 use crate::features::events::Handled;

@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — RenderTest。
+ * GUI 插件的实现中负责 RenderTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { renderLatex, renderLatexToString } from "./render"
 

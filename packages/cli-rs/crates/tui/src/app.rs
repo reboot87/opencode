@@ -1,4 +1,6 @@
 //! The TUI shell, route lifecycle, and application keymap.
+//!
+//! 终端界面：`app`。
 
 use opencode_api::client::Client;
 use opencode_api::events::{self, Connection};

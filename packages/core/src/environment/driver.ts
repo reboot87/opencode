@@ -1,3 +1,7 @@
+/**
+ * 环境驱动接口。
+ * 定义 Environment Driver 的契约：进程启动、文件访问与环境变量。
+ */
 export * as EnvironmentDriver from "./driver.js"
 
 import { Effect, PlatformError, Scope } from "effect"

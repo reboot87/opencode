@@ -1,3 +1,7 @@
+/**
+ * 工作区界面 — CreateTest。
+ * 工作区的管理界面中负责 CreateTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { OpenCode } from "@opencode/client/promise"
 import { createData } from "@opencode/client/solid"

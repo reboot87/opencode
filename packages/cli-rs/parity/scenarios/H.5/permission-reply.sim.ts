@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：权限·回复·模拟。
+ *
+ * 规格编号：H.5。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // MS1 end to end: a new session from home, one prompt, a streamed reply with one shell call that asks for
 // permission, the permission allowed with a click, and the final reply.
 import { HOME_PLACEHOLDER } from "../../lib/app"

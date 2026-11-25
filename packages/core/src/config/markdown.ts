@@ -1,3 +1,7 @@
+/**
+ * Markdown 配置解析。
+ * 解析 Markdown 形式的配置（含 legacy variant 兼容），支持可选解析与合并。
+ */
 export * as ConfigMarkdown from "./markdown.js"
 
 import matter from "gray-matter"

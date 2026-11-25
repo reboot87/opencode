@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — LineCommentSpec。
+ * 应用界面组件的测试中负责 LineCommentSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, story } from "../../stories/playwright/story"
 
 story("keeps the comment options button pressed while its menu is open", async ({ mount, page }) => {

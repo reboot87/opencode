@@ -1,3 +1,7 @@
+/**
+ * IPC 处理器 — WindowTest。
+ * 主进程与渲染进程之间的 IPC 处理中负责 WindowTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, describe, expect, test } from "bun:test"
 import { focusWindow, showWindow } from "../windows/focus"
 

@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid E10aActions：该文件实现 E10aActions 相关的状态与逻辑。
+ */
 // P-COMP fixtures for the session action dialogs: the timeline (packages/tui/src/routes/session/dialog-timeline.tsx),
 // fork (dialog-fork.tsx), rename (component/dialog-session-rename.tsx), and export options
 // (ui/dialog-export-options.tsx). crates/tui/tests/all/actions.rs (`dialogs_match_typescript`) mounts the Rust TUI over

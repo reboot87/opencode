@@ -1,3 +1,7 @@
+/**
+ * Git VCS 插件。
+ * 基于 Git 实现版本控制能力：状态、diff、提交与分支操作，是 OpenCode 默认的 VCS 后端。
+ */
 export * as VcsGitPlugin from "./git.js"
 
 import { randomUUID } from "crypto"

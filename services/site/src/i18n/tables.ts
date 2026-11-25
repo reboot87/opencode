@@ -27,7 +27,10 @@ export const tables: Record<Locale, () => Promise<Table>> = {
   tr: () => language(import("./tr"), import("./content/tr")),
 }
 
-/** A language's payload from its two source files: the dictionary over the English, and its page copy. */
+/** A language's payload from its two source files: the dictionary over the English, and its page copy.
+ *
+ * 多语言文案：`tables`。
+ */
 export function payload(dict: Partial<Record<keyof typeof en, string>>, content: ContentOverlay): Payload {
   const keys = Object.keys(en) as (keyof typeof en)[]
   return {

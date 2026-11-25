@@ -1,3 +1,7 @@
+/**
+ * 稳定性测试 — FixtureTest。
+ * 检测界面抖动与渲染稳定性的端到端用例中负责 FixtureTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   assistantMessage,

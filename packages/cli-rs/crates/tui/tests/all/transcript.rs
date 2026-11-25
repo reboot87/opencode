@@ -1,3 +1,5 @@
+//! 终端界面测试：`transcript`。
+
 use crate::support::{self, Harness, WAIT, deref_harness, user};
 
 use std::collections::HashMap;

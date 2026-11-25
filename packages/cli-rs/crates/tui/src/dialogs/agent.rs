@@ -1,4 +1,6 @@
 //! Agent picker.
+//!
+//! 终端弹窗组件：智能体。
 
 use crate::local::Local;
 use crate::prelude::*;

@@ -1,3 +1,6 @@
+/**
+ * 文档站组件：代码标签页。
+ */
 import { For, Show } from "solid-js"
 import { CopyButton } from "~/component/site/code-frame"
 import { FileTypeIcon } from "~/component/site/file-type-icon"

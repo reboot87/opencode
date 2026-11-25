@@ -1,4 +1,6 @@
 //! Search and manage sessions in the current location or across projects.
+//!
+//! 终端弹窗组件：会话列表。
 
 use std::borrow::Cow;
 use std::collections::HashSet;

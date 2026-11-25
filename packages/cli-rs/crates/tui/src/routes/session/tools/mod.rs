@@ -1,4 +1,6 @@
 //! Session tool views.
+//!
+//! 终端界面路由入口。
 
 pub mod diagnostics;
 pub mod dispatch;

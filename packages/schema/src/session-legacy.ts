@@ -1,3 +1,7 @@
+/**
+ * 旧版会话类型。
+ * 兼容旧版本的会话结构（仅用于迁移）。
+ */
 export * as SessionLegacy from "./session-legacy.js"
 
 /**

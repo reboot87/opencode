@@ -1,3 +1,7 @@
+/**
+ * 网络搜索 API 分组。
+ * 定义网络搜索 provider 的列举与搜索端点。
+ */
 import { Location } from "@opencode/schema/location"
 import { WebSearch } from "@opencode/schema/websearch"
 import { Schema } from "effect"

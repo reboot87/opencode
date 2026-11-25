@@ -1,3 +1,7 @@
+/**
+ * Well-Known 配置。
+ * 解析远端服务公开的 well-known 认证与远程配置信息。
+ */
 export * as WellKnown from "./wellknown.js"
 
 import { Integration } from "@opencode/schema/integration"

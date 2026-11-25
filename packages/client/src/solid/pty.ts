@@ -1,3 +1,7 @@
+/**
+ * Solid PTY 消息。
+ * 定义持久 PTY 的消息 Schema 与对应类型。
+ */
 import { PersistentPty } from "@opencode/schema/persistent-pty"
 import { Schema } from "effect"
 import type { ExperimentalPersistentPtyConnectTokenInput, OpenCodeClient } from "../promise"

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：目录清单。
+ *
+ * 规格编号：C.13。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The catalogs a prompt needs before it can submit: one agent, one provider, one model, as full wire objects.
 import { location } from "../../lib/app"
 import type { Route } from "../../lib/app"

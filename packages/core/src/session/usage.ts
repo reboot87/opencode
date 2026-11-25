@@ -1,3 +1,7 @@
+/**
+ * 会话用量（SessionUsage）。
+ * 规范化 token/cost 用量数据，提供安全的数值转换与记录结构。
+ */
 export * as SessionUsage from "./usage.js"
 
 import type { Usage } from "@opencode/ai/effect"

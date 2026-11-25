@@ -13,7 +13,10 @@ const ELF_MACHINES: Record<number, string> = { 62: "x64", 183: "arm64", 3: "x86"
 const MACHO_CPUS: Record<number, string> = { 0x01000007: "x64", 0x0100000c: "arm64", 7: "x86", 12: "arm" }
 
 export namespace NativeArch {
-  /** Every PE, ELF and Mach-O image in `bytes`, including the libraries Bun embeds in a compiled executable. */
+  /** Every PE, ELF and Mach-O image in `bytes`, including the libraries Bun embeds in a compiled executable.
+ *
+ * 仓库脚本：原生架构。
+ */
   export function images(bytes: Buffer) {
     const universal = find(bytes, "\xca\xfe\xba\xbe", fat)
     const thin = find(bytes, "\xcf\xfa\xed\xfe", macho).filter(

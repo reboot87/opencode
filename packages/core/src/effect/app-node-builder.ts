@@ -1,3 +1,7 @@
+/**
+ * 应用节点构建器。
+ * 构建按 Location 作用域装配的服务节点图。
+ */
 import { buildLocationServiceMap } from "../location-services.js"
 import { LocationServiceMap } from "../location-service-map.js"
 import { LayerNode } from "@opencode/util/effect/layer-node"

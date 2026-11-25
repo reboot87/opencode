@@ -33,7 +33,10 @@ const counterGroups = [...new Set(letters.map(counterModules))].map((counter) =>
 const percent = (value: number) => `${Math.round(value * 100)}%`
 const number = (value: number) => value.toLocaleString("en")
 
-/** A small glyph, with the letter as text for screen readers (it heads table rows). */
+/** A small glyph, with the letter as text for screen readers (it heads table rows).
+ *
+ * 字体展示组件：`analysis`。
+ */
 function Mini(props: { letter: Letter }) {
   return (
     <>

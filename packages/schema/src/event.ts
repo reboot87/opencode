@@ -1,3 +1,7 @@
+/**
+ * 事件类型。
+ * 定义事件的通用结构与类型构造器。
+ */
 export * as Event from "./event.js"
 
 import { Schema, SchemaTransformation } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — ProtocolTest。
+ * 终端界面的测试中负责 ProtocolTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { Effect, Schema } from "effect"
 import { Backend, Frontend, Handshake, JsonRpc } from "../src/protocol"

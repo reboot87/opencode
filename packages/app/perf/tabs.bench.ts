@@ -1,3 +1,7 @@
+/**
+ * 性能测试 — TabsBench。
+ * 界面渲染性能基准中负责 TabsBench 部分，提供该部分所需的实现与类型定义。
+ */
 // Switching between two open session tabs of 200 long markdown exchanges each (headings, tables, task lists and four
 // highlighted code fences per answer), loaded in full, at 1440×900.
 //

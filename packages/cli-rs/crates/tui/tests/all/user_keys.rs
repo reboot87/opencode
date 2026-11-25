@@ -1,5 +1,7 @@
 //! The user's `keybinds` and `tabs` from `cli.json` (rs-user-keys), fed as the bytes real terminals send: legacy,
 //! Kitty (Ghostty adds the Num Lock bit, `CSI 92;133u`), and xterm's modifyOtherKeys.
+//!
+//! 终端界面测试：用户密钥。
 
 use crate::support::{self, Harness, WAIT, deref_harness};
 

@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — FileIconMachine。
+ * 跨场景复用的通用 UI 组件中负责 FileIconMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { IconName } from "./file-icons/types"
 
 export const FILE_ICON_LOAD_TIMEOUT_MS = 10_000

@@ -1,3 +1,7 @@
+/**
+ * IPC 处理器 — App。
+ * 主进程与渲染进程之间的 IPC 处理中负责 App 部分，提供该部分所需的实现与类型定义。
+ */
 import { BrowserWindow } from "electron"
 import { parseDesktopNativeBundle } from "@opencode/app/i18n/desktop-native"
 import { Effect } from "effect"

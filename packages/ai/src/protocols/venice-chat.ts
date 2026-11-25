@@ -1,3 +1,7 @@
+/**
+ * Venice AI 的 Chat 协议实现。
+ * 基于 chat 风格接口的 provider 变体。
+ */
 import { Effect, Schema } from "effect"
 import { Protocol } from "../route/protocol.js"
 import {

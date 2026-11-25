@@ -1,3 +1,7 @@
+/**
+ * auth account 命令。
+ * 选择并切换已登录的账号。
+ */
 import { autocomplete } from "@clack/prompts"
 import { Effect } from "effect"
 import type { IntegrationInfo } from "@opencode/client"

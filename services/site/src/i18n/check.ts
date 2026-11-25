@@ -28,7 +28,10 @@ type Report = {
 
 const stampDir = path.join(import.meta.dir, "stamps")
 
-/** Every check for one locale. `stamps` is what --stamp would write. */
+/** Every check for one locale. `stamps` is what --stamp would write.
+ *
+ * 多语言文案：检查。
+ */
 export async function checkLocale(locale: Exclude<Locale, "en">): Promise<Report> {
   const dict: Record<string, string> = (await import(`./${locale}.ts`)).dict
   const content: unknown = (await import(`./content/${locale}.ts`)).content

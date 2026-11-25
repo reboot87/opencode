@@ -1,3 +1,10 @@
+/**
+ * 工具的类型定义（类型断言用）。
+ *
+ * 被测模块：@opencode/ai/tool
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { Effect, Schema } from "effect"
 import { ai, type ExecutableTool, toDefinitions, tool, ToolRuntime } from "../src/effect.js"
 import * as OpenAIChat from "../src/protocols/openai-chat.js"

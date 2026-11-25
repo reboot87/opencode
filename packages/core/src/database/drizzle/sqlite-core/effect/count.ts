@@ -1,3 +1,7 @@
+/**
+ * drizzle SQLite Effect 计数。
+ * drizzle-orm count 构件在 Effect 下的实现（本文件源自 drizzle-orm 上游）。
+ */
 /* oxlint-disable */
 import type * as Effect from "effect/Effect"
 import { applyEffectWrapper, type QueryEffectHKTBase } from "drizzle-orm/effect-core/query-effect"

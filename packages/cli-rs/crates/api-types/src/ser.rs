@@ -1,4 +1,6 @@
 //! Serde helpers the generated types use to write numbers as `JSON.stringify` does.
+//!
+//! API 类型定义：`ser`。
 
 use serde::Serializer;
 

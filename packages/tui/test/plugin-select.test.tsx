@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — PluginSelectTest。
+ * 终端界面的测试中负责 PluginSelectTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { InputRenderable } from "@opentui/core"
 import { testRender } from "@opentui/solid"
 import { expect, test } from "bun:test"

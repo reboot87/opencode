@@ -1,4 +1,6 @@
 //! Gantt charts with left-aligned labels and a faint track.
+//!
+//! Mermaid 图表渲染：`gantt`。
 
 use std::collections::{HashMap, HashSet};
 use std::sync::LazyLock;

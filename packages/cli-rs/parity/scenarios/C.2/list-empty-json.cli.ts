@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：列表·空值·JSON·CLI。
+ *
+ * 规格编号：C.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `session list --format json` with no sessions prints `[]`.
 import { defineCli } from "../../cli/run"
 import { list, location } from "./fixture"

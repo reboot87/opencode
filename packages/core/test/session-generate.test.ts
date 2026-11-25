@@ -1,3 +1,10 @@
+/**
+ * 会话·生成的测试。
+ *
+ * 被测模块：@opencode/core/session-generate
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import {
   AIError,

@@ -1,3 +1,10 @@
+/**
+ * 认证·选项的类型定义（类型断言用）。
+ *
+ * 被测模块：@opencode/ai/auth-options
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { Config } from "effect"
 import { Auth } from "../src/route.js"
 import type { ProviderAuthOption } from "../src/route/auth-options.js"

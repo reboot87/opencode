@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：子级·权限·app。
+ *
+ * 规格编号：E.13b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A child session prompts for its own permission request, and the prompt hides the composer the child shows in place
 // of a prompt (`composerVisible`, #64343). Enter allows it once; the composer comes back.
 import { assistant, defineApp, session, user } from "../../lib/app"

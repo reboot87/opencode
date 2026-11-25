@@ -31,6 +31,8 @@ const transcript = [
  * motion), beside three things a fork lets you do. In development it always renders and the
  * section's data-oss-variant (set before first paint from Settings) shows it; production renders it
  * only when "fork" is the default (index.tsx, script/fold-settings.ts).
+ *
+ * 站点界面组件：打开来源分叉。
  */
 export function OpenSourceFork() {
   const i18n = useI18n()

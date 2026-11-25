@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — InstanceMachineTest。
+ * 浏览器端的插件加载与扩展点中负责 InstanceMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { Schema } from "effect"
 import { Store } from "@opencode/plugin/gui"

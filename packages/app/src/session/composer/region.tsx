@@ -1,3 +1,7 @@
+/**
+ * 会话输入区 — Region。
+ * 会话界面输入区的实现中负责 Region 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionUserActions } from "@opencode/session-ui/message"
 import type { ShellOutputInput } from "@opencode/client/promise"
 import { getFilename, sameDirectory } from "@opencode/util/path"

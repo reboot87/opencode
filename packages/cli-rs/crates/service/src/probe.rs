@@ -1,4 +1,6 @@
 //! Classifies a registered service by its response to `/api/info`.
+//!
+//! 服务层：探针。
 
 use std::sync::Arc;
 use std::time::Duration;

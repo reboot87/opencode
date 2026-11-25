@@ -1,4 +1,8 @@
-/** A heading's anchor as GitHub writes it: lowercased, punctuation dropped, spaces as hyphens. */
+/**
+ * A heading's anchor as GitHub writes it: lowercased, punctuation dropped, spaces as hyphens.
+ *
+ * Markdown 片段链接：处理锚点形式的内部链接。
+ */
 export function headingSlug(text: string) {
   return text
     .trim()

@@ -1,4 +1,6 @@
 //! Transport failures and declared server errors.
+//!
+//! API 客户端：错误。
 
 use serde_json::Value;
 

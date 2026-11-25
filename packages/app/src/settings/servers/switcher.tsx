@@ -1,3 +1,7 @@
+/**
+ * 服务端设置 — Switcher。
+ * 已连接服务端的管理设置中负责 Switcher 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { Icon } from "@opencode/ui/icon"
 import { Menu } from "@opencode/ui/menu"

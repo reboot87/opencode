@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：leader·超时·配置·伪终端。
+ *
+ * 规格编号：E.5。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A configured `leader.timeout` of 1,000 ms (`keymap.tsx:143`): 200 ms after Ctrl+X, `l` still completes
 // `session.list` (<leader>l); 1,600 ms after it, under the 2,000 ms default, `l` is typed into the prompt.
 import { definePty } from "../../pty/run"

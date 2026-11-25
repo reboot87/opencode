@@ -1,3 +1,6 @@
+/**
+ * 站点构建脚本：GitHub·快照。
+ */
 // Writes src/lib/github-snapshot.json (lib/github-snapshot.ts): the repo numbers and the newest 100
 // releases as GitHub lists them at build time. A new Worker isolate renders from it when it has no
 // cached value and GitHub doesn't answer within 300 ms, so no page waits on GitHub. Uses

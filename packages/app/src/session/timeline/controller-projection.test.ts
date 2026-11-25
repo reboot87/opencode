@@ -1,3 +1,7 @@
+/**
+ * 会话时间线 — ControllerProjectionTest。
+ * 会话消息时间线的渲染中负责 ControllerProjectionTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { SessionInboxInfo, SessionMessageInfo } from "@opencode/client/promise"
 import { createRoot } from "solid-js"

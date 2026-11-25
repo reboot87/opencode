@@ -1,3 +1,7 @@
+/**
+ * 浏览器扩展 API — Styles。
+ * 浏览器插件暴露给扩展的接口中负责 Styles 部分，提供该部分所需的实现与类型定义。
+ */
 import { once } from "node:events"
 import { realpath } from "node:fs/promises"
 import type { Extension, WebFrameMain } from "electron"

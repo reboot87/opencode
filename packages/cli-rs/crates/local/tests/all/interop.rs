@@ -1,4 +1,6 @@
 //! Checks locks, registrations and service configs across both clients.
+//!
+//! 本地配置与路径：`interop`。
 
 use std::ffi::OsString;
 use std::fs;

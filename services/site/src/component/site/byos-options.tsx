@@ -14,6 +14,8 @@ import { Rich } from "./rich-text"
  * to show that OpenCode works with nearly every subscription, provider and model. Like the section's
  * other styles, every option renders in development and the section's data-style shows one
  * (byos-options.css); production renders none while the default is "grid" (script/fold-settings.ts).
+ *
+ * 站点界面组件：自带订阅选项。
  */
 
 // The providers with a mark (lib/providers.ts), never Anthropic's.

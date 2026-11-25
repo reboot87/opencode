@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — Renderer。
+ * Microsoft Office 文档预览插件中负责 Renderer 部分，提供该部分所需的实现与类型定义。
+ */
 import { lazy, Suspense, type Component } from "solid-js"
 import { Loader } from "@opencode/ui/loader"
 import type { ArtifactKind } from "@opencode/util/artifact"

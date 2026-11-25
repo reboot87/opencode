@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid U3SelectScroll：该文件实现 U3SelectScroll 相关的状态与逻辑。
+ */
 // P-COMP fixtures for DialogSelect's scrolling (packages/tui/src/ui/dialog-select.tsx `scrollToSelection`):
 // crates/ui/tests/all/dialogs.rs. A list of 30 options in three categories, one with a detail row, at 72x30 (a list
 // of 9 rows). Keys sent with no frame between them reach OpenTUI's scroll box in one layout, which sums the

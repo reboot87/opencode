@@ -1,3 +1,10 @@
+/**
+ * language·边界的测试。
+ *
+ * 被测模块：@opencode/codemode/language-boundary
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { Glob } from "bun"
 import path from "node:path"

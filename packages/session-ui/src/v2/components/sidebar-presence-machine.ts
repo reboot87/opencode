@@ -1,4 +1,8 @@
-/** The CSS slide's 200ms, plus slack, after which a close lands even when no `transitionend` arrives. */
+/**
+ * The CSS slide's 200ms, plus slack, after which a close lands even when no `transitionend` arrives.
+ *
+ * 侧栏在线状态的状态机：管理用户在场状态的展示与切换。
+ */
 export const SIDEBAR_EXIT_TIMEOUT_MS = 300
 
 /**

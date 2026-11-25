@@ -19,6 +19,8 @@ import { letters, SLOT, wordmark, wordmarkTiming } from "./wordmark"
  * settles reports through `onOrder` whether the word is out of order (the footer then shows a line
  * about the font) and turns the whole mark blue. The letter under the pointer, in focus or in hand
  * stands out: it is blue and the others dim.
+ *
+ * 站点界面组件：`marks`。
  */
 export function Wordmark(props: {
   hatch?: number

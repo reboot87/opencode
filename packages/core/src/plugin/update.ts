@@ -1,3 +1,7 @@
+/**
+ * 插件更新服务。
+ * 检查并拉取插件更新，间隔 24 小时。
+ */
 export * as PluginUpdate from "./update.js"
 
 import { Context, Effect, Exit, Layer, Option, PubSub, Stream } from "effect"

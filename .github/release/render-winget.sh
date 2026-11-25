@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：render·winget。
 # render-winget.sh <sign-windows dir> <sign-desktop-windows-installer dir> <out dir>: writes the WinGet manifests for
 # Anomaly.OpenCode and Anomaly.OpenCode.Desktop. Submission to microsoft/winget-pkgs is paused until the packages
 # are accepted, so the workflow only uploads them.

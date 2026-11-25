@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — MarkdownStreamingTest。
+ * 终端界面的测试中负责 MarkdownStreamingTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, expect, test } from "bun:test"
 import { CodeRenderable, MarkdownRenderable, SyntaxStyle } from "@opentui/core"
 import { testRender, useRenderer } from "@opentui/solid"

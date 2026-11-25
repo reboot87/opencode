@@ -17,6 +17,8 @@ import { providerLogo } from "~/lib/providers"
  * - "200+ providers": the snapshot lists 230 (models.dev's live API 235), written as 200+ like the
  *   rest of the site.
  * No Anthropic mark or name anywhere in these.
+ *
+ * 站点共享逻辑：自带订阅选项。
  */
 export const byosOptions = {
   leads: {

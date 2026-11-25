@@ -1,3 +1,7 @@
+/**
+ * 图标 — Registry。
+ * 图标资源与定义中负责 Registry 部分，提供该部分所需的实现与类型定义。
+ */
 import { observeReducedMotion, prefersReducedMotion } from "../motion/reduced"
 
 /**

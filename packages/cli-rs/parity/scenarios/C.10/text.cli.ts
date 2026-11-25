@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：文本·CLI。
+ *
+ * 规格编号：C.10。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `run hello`: a step with text and a read tool, printed as text (stdout is a pipe, so the text goes there
 // and the step and tool lines go to stderr).
 import { defineCli } from "../../cli/run"

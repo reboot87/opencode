@@ -1,3 +1,5 @@
+//! 守护进程主体：`unix`。
+
 use std::fs::{self, File, OpenOptions};
 use std::io::Write;
 use std::os::unix::ffi::OsStrExt;

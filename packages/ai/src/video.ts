@@ -1,3 +1,10 @@
+/**
+ * 视频生成 API。
+ *
+ * 视频生成耗时更长，几乎都是异步任务：用 composeQueuedRoute 构造“排队式”路由，
+ * 返回 Generation 句柄，调用方通过 await / events 等待完成或监听进度。
+ * 结果是 Media 视频 Asset。
+ */
 import { Duration, Effect, Schema } from "effect"
 import type { Reason, Status } from "./generation.js"
 import { Media } from "./media.js"

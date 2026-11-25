@@ -1,3 +1,7 @@
+/**
+ * machine add 命令。
+ * 添加远程机器到已知列表。
+ */
 import { Effect } from "effect"
 import { Commands } from "../../commands"
 import { Runtime } from "../../../framework/runtime"

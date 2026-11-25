@@ -1,3 +1,7 @@
+/**
+ * 全局样式 — BlueTokensStories。
+ * UI 包的全局样式与主题变量中负责 BlueTokensStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, Show, createSignal } from "solid-js"
 import { Badge } from "../data-display/badge/badge"
 import { ProjectAvatar } from "../data-display/project-avatar/project-avatar"

@@ -1,5 +1,11 @@
 #!/usr/bin/env bun
 
+/**
+ * 生成·API·技能脚本。
+ *
+ * 核心包的开发脚本：本地服务桩、数据准备与问题排查。
+ */
+
 // Writes the `opencode` skill's API reference (`skill://opencode/api.md` and `api/<group>.md`) from the protocol's
 // OpenAPI document. Protocol's `bun run generate` runs it after writing openapi.json; `bun run generate:api-skill` from
 // packages/core runs it alone. test/opencode-api-skill.test.ts fails when the files are stale.

@@ -1,4 +1,6 @@
 //! Finding, probing, and starting the OpenCode server.
+//!
+//! 服务层入口。
 
 pub mod connect;
 pub mod contender;

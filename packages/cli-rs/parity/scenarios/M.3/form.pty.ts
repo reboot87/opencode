@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：form·伪终端。
+ *
+ * 规格编号：M.3。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Two forms wait when mini opens the session. The first takes Yes, then the second option, and its review submits
 // the answers; Escape dismisses the second. Both answer 204, and the server's `form.replied` and `form.cancelled`
 // take the forms away.

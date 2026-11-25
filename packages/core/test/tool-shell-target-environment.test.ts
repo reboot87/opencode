@@ -1,3 +1,10 @@
+/**
+ * 工具·Shell·目标·环境的测试。
+ *
+ * 被测模块：@opencode/core/tool-shell-target-environment
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import { Bus } from "@opencode/core/bus"
 import { Context, Effect, Layer, Sink, Stream } from "effect"

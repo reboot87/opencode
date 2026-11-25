@@ -1,3 +1,7 @@
+/**
+ * 主页项目 — View。
+ * 主页中项目列表的展示中负责 View 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, For, type JSX, onCleanup, Show, splitProps } from "solid-js"
 import { createStore } from "solid-js/store"
 import { createResizeObserver } from "@solid-primitives/resize-observer"

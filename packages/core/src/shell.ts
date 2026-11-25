@@ -1,3 +1,7 @@
+/**
+ * Shell 服务。
+ * Shell 命令执行服务：进程管理、输出保留（7 天）与退出记录上限。
+ */
 export * as Shell from "./shell.js"
 
 import path from "path"

@@ -1,3 +1,7 @@
+/**
+ * 轻提示 — ToastStories。
+ * 短时非阻塞消息提示组件中负责 ToastStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { onCleanup, onMount } from "solid-js"
 import { Toast, showToast, toaster, type ToastRegionProps } from "./toast"
 import { Button } from "@opencode/ui/button"

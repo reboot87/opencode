@@ -1,3 +1,5 @@
+//! 基础 UI 组件库：确认。
+
 use crate::dialog::{DIALOG_INSET, DialogButton, DialogButtons, DialogCx, HeaderProps, header, layout_view};
 use crate::keymap::{KeymapLayer, TuiCommand};
 use crate::tool_info::titlecase;

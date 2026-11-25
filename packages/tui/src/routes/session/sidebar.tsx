@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — Sidebar。
+ * 会话主界面的视图与状态中负责 Sidebar 部分，提供该部分所需的实现与类型定义。
+ */
 import { useData } from "../../context/data"
 import { createMemo, Show } from "solid-js"
 import { useTheme } from "../../context/theme"

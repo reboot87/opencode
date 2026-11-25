@@ -1,3 +1,7 @@
+/**
+ * Location 类型。
+ * 定义工作位置（目录/仓库）的结构。
+ */
 export * as Location from "./location.js"
 
 import { Schema, Struct } from "effect"

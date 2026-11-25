@@ -1,3 +1,10 @@
+/**
+ * 会话·回滚的测试。
+ *
+ * 被测模块：@opencode/core/session-revert
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { $ } from "bun"
 import { describe, expect } from "bun:test"
 import fs from "fs/promises"

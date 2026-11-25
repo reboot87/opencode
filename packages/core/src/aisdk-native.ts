@@ -1,3 +1,7 @@
+/**
+ * AI SDK 原生模式标识。
+ * 用 aisdk: 前缀标记「按 AI SDK 原生方式调用」的模型标识，提供判定与规范化工具。
+ */
 export * as AISDKNative from "./aisdk-native.js"
 
 import { Effect, Option, Schema, Struct } from "effect"

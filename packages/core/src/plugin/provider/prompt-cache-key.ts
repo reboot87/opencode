@@ -1,3 +1,7 @@
+/**
+ * 提示词缓存键插件。
+ * 为支持的 provider 注入提示词缓存键（prompt cache key）。
+ */
 import { Effect } from "effect"
 import { define } from "@opencode/plugin/effect/plugin"
 

@@ -1,6 +1,8 @@
 //! Renders Mermaid fences in the transcript as styled terminal cells.
 // Bounds checks keep TS's inclusive `right = left + width - 1` form, so each condition reads as its source.
 #![allow(clippy::int_plus_one)]
+//!
+//! Mermaid 图表渲染入口。
 
 pub mod core;
 pub mod flowchart;

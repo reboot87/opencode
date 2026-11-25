@@ -1,3 +1,10 @@
+/**
+ * 技能的测试。
+ *
+ * 被测模块：@opencode/core/plugin/skill
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { describe, expect } from "bun:test"
 import { AppNodeBuilder } from "@opencode/core/effect/app-node-builder"
 import { Config } from "@opencode/core/config"

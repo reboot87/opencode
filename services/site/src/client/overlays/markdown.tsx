@@ -17,7 +17,10 @@ const load = () =>
     response.ok ? response.text() : Promise.reject(new Error(String(response.status))),
   ))
 
-/** Starts fetching the page's Markdown, for a pointer on the switch or the shortcut's "m". */
+/** Starts fetching the page's Markdown, for a pointer on the switch or the shortcut's "m".
+ *
+ * 客户端浮层：Markdown。
+ */
 export function prefetch() {
   if (href()) void load().catch(() => (source = undefined))
 }

@@ -1,4 +1,6 @@
 //! The transport trait and its `reqwest` implementation.
+//!
+//! API 客户端：传输层。
 
 use std::future::Future;
 use std::marker::PhantomData;

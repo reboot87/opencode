@@ -1,3 +1,7 @@
+/**
+ * 详情插件 — Renderer。
+ * 展示对象详细信息的 GUI 插件中负责 Renderer 部分，提供该部分所需的实现与类型定义。
+ */
 import { lazy, onCleanup, Show, Suspense } from "solid-js"
 import { Panel, Slot, Style, usePanel, type Plugin } from "@opencode/plugin/gui"
 import type Details from "./index"

@@ -1,3 +1,7 @@
+/**
+ * 工作区文件 — ContentMachineTest。
+ * 工作区内文件浏览界面中负责 ContentMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { FileContent } from "@opencode/plugin/gui"
 import {

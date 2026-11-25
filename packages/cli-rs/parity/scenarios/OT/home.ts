@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：主目录。
+ *
+ * 规格编号：OT。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The TUI home against the fake server, as E.20/copy runs it, for the OpenTUI deviation scenarios.
 const config = JSON.stringify({ experimental: { "new-designs": true }, debug: { devtools: false } })
 

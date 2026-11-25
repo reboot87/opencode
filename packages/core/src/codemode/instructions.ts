@@ -1,3 +1,7 @@
+/**
+ * Code Mode 指令提示词。
+ * 生成 Code Mode 的系统提示词与工具检索说明，含更新预算控制。
+ */
 export * as CodeModeInstructions from "./instructions.js"
 
 import { searchSignature, toolExpression } from "@opencode/codemode"

@@ -1,3 +1,7 @@
+/**
+ * 新建会话 — DraftStandaloneStories。
+ * 创建新会话的向导与表单中负责 DraftStandaloneStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal, on, Show } from "solid-js"
 import { createStore } from "solid-js/store"
 import { createComposerEditor } from "@/composer/editor/interaction"

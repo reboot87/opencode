@@ -15,6 +15,8 @@ const FILM = {
 /**
  * Plate 00 of the specimen: the film. Nothing loads until the reader presses play, it
  * never plays by itself, and the narration has captions.
+ *
+ * 字体动画胶片组件：区段。
  */
 export function FilmPlate() {
   const [started, setStarted] = createSignal(false)

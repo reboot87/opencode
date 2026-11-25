@@ -1,3 +1,7 @@
+/**
+ * 会话请求 — QuestionKeys。
+ * 会话界面的请求发起与状态跟踪中负责 QuestionKeys 部分，提供该部分所需的实现与类型定义。
+ */
 // Where focus sits in the question dock when a key goes down: on an answer, on the custom answer's toggle, in the
 // custom answer's text field, or anywhere else in the dock (progress, footer buttons).
 export type QuestionKeyZone = "option" | "custom" | "input" | "other"

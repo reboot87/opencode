@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — ContextMenuStories。
+ * 跨场景复用的通用 UI 组件中负责 ContextMenuStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, onMount, type ParentProps } from "solid-js"
 import { Icon } from "@opencode/ui/icon"
 import { ContextMenu } from "./context-menu"

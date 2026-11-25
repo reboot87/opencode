@@ -1,3 +1,6 @@
+/**
+ * 法律文档生成逻辑：隐私策略。
+ */
 import type { LegalDocumentContent } from "~/lib/legal"
 
 export const privacyPolicy: LegalDocumentContent = {

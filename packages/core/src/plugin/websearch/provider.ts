@@ -1,3 +1,7 @@
+/**
+ * 搜索 Provider 注册。
+ * 把已连接的网络搜索集成注册为可用 provider。
+ */
 export * as WebSearchProvider from "./provider.js"
 
 import type { Context } from "@opencode/plugin/effect/plugin"

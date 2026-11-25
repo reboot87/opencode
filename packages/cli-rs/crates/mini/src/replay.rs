@@ -1,4 +1,6 @@
 //! Rebuilds scrollback from session history and follows live events without duplicating entries.
+//!
+//! 精简版实现：回放。
 
 use std::borrow::Cow;
 use std::sync::{Arc, Mutex};

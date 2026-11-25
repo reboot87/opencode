@@ -1,3 +1,7 @@
+/**
+ * 文件查找库（Bun 平台）。
+ * 在 Bun 运行时绑定原生文件查找库（fff）。
+ */
 import { FileFinder } from "@ff-labs/fff-bun"
 import { bind } from "./fff.js"
 

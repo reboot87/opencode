@@ -1,3 +1,7 @@
+/**
+ * 终端配置（v1） — Keybind。
+ * 旧版终端配置的兼容读取中负责 Keybind 部分，提供该部分所需的实现与类型定义。
+ */
 export * as TuiKeybind from "./keybind"
 
 import type { KeyEvent, Renderable } from "@opentui/core"

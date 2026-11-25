@@ -1,4 +1,6 @@
 //! Check composer edits, dialogs, and styled nodes of a linked plugin.
+//!
+//! 终端界面测试：插件·P0-A。
 
 use crate::prompt::{Setup, session_route};
 use crate::support::{self, Harness};

@@ -1,3 +1,10 @@
+/**
+ * 抓取的测试。
+ *
+ * 被测模块：@opencode/server/fetch
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import fs from "node:fs/promises"
 import { createServer } from "node:http"

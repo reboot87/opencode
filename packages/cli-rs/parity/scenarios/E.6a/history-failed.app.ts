@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：history·失败·app。
+ *
+ * 规格编号：E.6a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The session's first transcript read fails with a handler defect. TS's data layer drops the error, so the session
 // opens with an empty transcript and no sign of the failure. Rust shows the same transcript and adds a toast with the
 // error's message alone (O89-transcript-read-toast). The wait outlasts the read, so the toast is up at the checkpoint.

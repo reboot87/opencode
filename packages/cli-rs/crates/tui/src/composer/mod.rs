@@ -1,5 +1,7 @@
 //! Session composer tabs for subagents, shells, scripts, and terminals. The open composer owns the input until a permission
 //! prompt takes it.
+//!
+//! 终端界面入口。
 
 mod scripts;
 mod shell;

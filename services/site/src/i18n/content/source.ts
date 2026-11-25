@@ -20,6 +20,8 @@ import type { Overlay } from "./paths"
  *
  * Pages don't load this whole: each reads its areas' English from content/areas (useArea), so a page
  * ships only the copy it shows. This gathers them for the checks and the `Content` type.
+ *
+ * 多语言内容文案：来源。
  */
 export function contentSource(t: Translate) {
   return {

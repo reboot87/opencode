@@ -1,3 +1,7 @@
+/**
+ * 产物类型测试。
+ * 验证按扩展名推断的产物展示类型。
+ */
 import { describe, expect, test } from "bun:test"
 import { artifactKind } from "./artifact.js"
 

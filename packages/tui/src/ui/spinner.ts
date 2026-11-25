@@ -1,3 +1,7 @@
+/**
+ * 终端 UI — Spinner。
+ * 终端界面的通用 UI 组件中负责 Spinner 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ColorInput } from "@opentui/core"
 import { RGBA } from "@opentui/core"
 import type { ColorGenerator } from "../component/spinner-renderable"

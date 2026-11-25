@@ -1,4 +1,6 @@
 //! Location catalogs are read once per invalidation. Events refresh only their affected location.
+//!
+//! 会话存储层：位置。
 
 use std::sync::Arc;
 use std::time::Duration;

@@ -1,3 +1,7 @@
+/**
+ * 更新器测试。
+ * 验证更新方式与版本比较的正确性。
+ */
 import { describe, expect, test } from "bun:test"
 import { action } from "./updater-action"
 import { decodePolicy } from "./updater"

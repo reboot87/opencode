@@ -1,3 +1,5 @@
+//! 基础 UI 组件库：动效·oracle。
+
 use opencode_parity::fixtures_dir;
 use opencode_ui::motion::{
     OneCellMotion, ScannerOptions, ScannerStyle, WORK_SPINNER_NAMES, octant_glyph, one_cell_frame, scanner_frames,

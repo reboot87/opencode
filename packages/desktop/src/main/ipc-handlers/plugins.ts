@@ -1,3 +1,7 @@
+/**
+ * IPC 处理器 — Plugins。
+ * 主进程与渲染进程之间的 IPC 处理中负责 Plugins 部分，提供该部分所需的实现与类型定义。
+ */
 import { BrowserWindow } from "electron"
 import { Effect } from "effect"
 import { PluginRpcs } from "../../shared/ipc-rpc"

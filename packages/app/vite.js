@@ -35,7 +35,12 @@ const officeDeps = ["@betteroffice/docx", "@betteroffice/fonts", "@betteroffice/
 // code that tree shaking drops. A file that no other emitted file names never loads, so it is left out of the build.
 const officeEmitted = /^(?:docx_\w+_bg|ooxml_opc_bg|pptx_wasm_bg|xlsx_wasm_bg|residentEngineWorker)\b/
 
-/** @type {import("vite").Plugin} */
+/** @type {import("vite").Plugin}
+ *
+ * 仓库脚本：Vite。
+ *
+ * 仓库脚本：Vite。
+ */
 const dropUnloadedOfficeFiles = {
   name: "opencode-desktop:drop-unloaded-office-files",
   apply: "build",

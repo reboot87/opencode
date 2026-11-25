@@ -1,3 +1,7 @@
+/**
+ * 生命周期 — MachineTest。
+ * 桌面端窗口与应用的启动退出流程中负责 MachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { Scope } from "@opencode/plugin/gui/host"
 import {

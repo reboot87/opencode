@@ -1,6 +1,8 @@
 /**
  * Every tooltip trigger runs this machine, so it never allocates: each reachable state, event and transition is a
  * frozen module singleton, and an event that changes nothing returns the state it was given.
+ *
+ * 悬浮提示的状态机：管理提示的显示、定位与延迟。
  */
 export type TooltipState =
   /** Kobalte is not mounted yet. Most triggers are never hovered, so it mounts on the first hover or focus. */

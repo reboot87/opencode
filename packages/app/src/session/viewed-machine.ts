@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — ViewedMachine。
+ * 会话主界面的视图与状态中负责 ViewedMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export type SessionViewedState =
   | { readonly status: "waiting"; readonly sessionID?: string }
   | { readonly status: "viewed"; readonly sessionID: string }

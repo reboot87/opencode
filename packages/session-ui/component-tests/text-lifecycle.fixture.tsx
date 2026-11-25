@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — TextLifecycleFixture。
+ * 会话界面组件的测试中负责 TextLifecycleFixture 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal } from "solid-js"
 import { render } from "solid-js/web"
 import { TextShimmer } from "@opencode/ui/text-shimmer"

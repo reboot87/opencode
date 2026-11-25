@@ -1,3 +1,7 @@
+/**
+ * MCP 类型。
+ * 定义 MCP 服务器、能力与调用结构。
+ */
 export * as Mcp from "./mcp.js"
 
 import { Schema } from "effect"

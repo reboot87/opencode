@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — ModelOptions。
+ * 终端界面（Solid）组件中负责 ModelOptions 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ModelInfo } from "@opencode/client"
 import { For, Show } from "solid-js"
 import { useTheme } from "../context/theme"

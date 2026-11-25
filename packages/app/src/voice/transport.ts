@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — Transport。
+ * 实时语音会话的界面中负责 Transport 部分，提供该部分所需的实现与类型定义。
+ */
 import type { OpenCodeClient } from "@opencode/client/promise"
 import { uuid } from "@opencode/util/uuid"
 import { decodeEvent, type VoiceEvent } from "./protocol"

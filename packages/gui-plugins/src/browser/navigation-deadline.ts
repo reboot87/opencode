@@ -1,4 +1,7 @@
-/** A navigation still under way when its command's deadline passed. The page goes on loading and reports how it ends. */
+/**
+ * 
+ * A navigation still under way when its command's deadline passed. The page goes on loading and reports how it ends. 浏览器插件中负责 NavigationDeadline 部分：内置浏览器功能中与 NavigationDeadline 相关的状态、交互与渲染逻辑。
+ */
 export class NavigationDeadlineError extends Error {
   constructor() {
     super("The browser page did not finish starting or navigating. Reload the tab and inspect it before retrying.")

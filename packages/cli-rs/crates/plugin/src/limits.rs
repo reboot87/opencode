@@ -1,4 +1,6 @@
 //! Bounds the UI work and memory a plugin can request. Charge trees, rows and content before building widgets.
+//!
+//! 插件系统：限额。
 
 use std::cell::{Cell, RefCell};
 use std::collections::HashMap;

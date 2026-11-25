@@ -1,4 +1,6 @@
 //! Sidebar warning for the selected model's remaining workspace allowance.
+//!
+//! 终端插件视图：侧边栏限额。
 
 use opencode_plugin::abi::v2::{Node, Place, Surface};
 use opencode_plugin::abi::{self, Placement, Span};

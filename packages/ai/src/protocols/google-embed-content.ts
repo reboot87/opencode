@@ -1,3 +1,7 @@
+/**
+ * Google 内容嵌入协议。
+ * 含 Vertex 变体，支持批量嵌入。
+ */
 import { Effect, Schema } from "effect"
 import { EmbeddingResponse, EmbeddingUsage, type EmbeddingRequest } from "../embedding.js"
 import { EmbeddingRoute } from "../route/embedding.js"

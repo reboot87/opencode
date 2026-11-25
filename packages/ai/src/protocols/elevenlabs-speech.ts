@@ -1,3 +1,7 @@
+/**
+ * ElevenLabs 语音合成协议。
+ * TTS provider 实现。
+ */
 import { Effect, Schema } from "effect"
 import { Framing } from "../route/framing.js"
 import { MediaProtocol } from "../route/media-protocol.js"

@@ -1,3 +1,7 @@
+/**
+ * 国际化 — Dv。
+ * 多语言文案资源中负责 Dv 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "ui.sessionReview.title": "ސެޝަން ބަދަލުވެއެވެ",
   "ui.sessionReview.title.git": "Git ބަދަލުވެއެވެ",

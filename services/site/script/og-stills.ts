@@ -1,3 +1,6 @@
+/**
+ * 站点构建脚本：og·stills。
+ */
 // Captures the flat stills script/og.ts angles into the link preview cards: real pages rendered
 // headless in the dark theme, and a frame of the terminal feature clip with the blue themes dialog.
 // The rest of the cards use files already in public/ (the product card covers and clips).

@@ -1,3 +1,7 @@
+/**
+ * 图片生成的客户端服务。
+ * 基于 MediaClient + RequestExecutor 实现图片模型的 generate / stream / 异步任务操作。
+ */
 import { Context, Effect, Layer, Schema, Stream } from "effect"
 import type { AwaitOptions } from "./generation.js"
 import { MediaClient } from "./media-client.js"

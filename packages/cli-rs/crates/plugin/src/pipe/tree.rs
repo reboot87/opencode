@@ -12,6 +12,8 @@
 //!   ([`Trees::staged`]).
 //!
 //! The stamp is the metadata of the plugin's own files and of each dependency's package directory and `package.json`.
+//!
+//! 插件系统：树。
 
 use std::collections::HashMap;
 use std::hash::{DefaultHasher, Hash, Hasher};

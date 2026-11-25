@@ -1,3 +1,7 @@
+/**
+ * 环境文件类型。
+ * 定义环境中 file/directory 等文件类型与相关结构。
+ */
 import { Effect, Schema } from "effect"
 
 export const FileType = Schema.Literals(["file", "directory", "symlink", "other"])

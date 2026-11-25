@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：`browse`。
+ */
 import { describe, expect, test } from "bun:test"
 import { extensionPages } from "~/component/site/extension-data"
 

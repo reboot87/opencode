@@ -1,3 +1,10 @@
+/**
+ * Vite·刷新的测试。
+ *
+ * 被测模块：@opencode/cli/vite-refresh
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { createComponent, createContext, createRoot, useContext } from "solid-js"
 import { $$context, $$registry } from "solid-refresh/dist/solid-refresh.mjs"

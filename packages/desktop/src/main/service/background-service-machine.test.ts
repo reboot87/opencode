@@ -1,3 +1,7 @@
+/**
+ * 后台服务 — BackgroundServiceMachineTest。
+ * 桌面端托管的后台服务进程中负责 BackgroundServiceMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { Deferred, Effect, Fiber } from "effect"
 import { BackgroundServiceMachine } from "./background-service-machine"

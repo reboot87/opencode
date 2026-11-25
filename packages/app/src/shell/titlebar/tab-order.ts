@@ -1,4 +1,7 @@
-/** The nearest other tab in the offset's direction, wrapping around, that `include` accepts. */
+/**
+ * 
+ * The nearest other tab in the offset's direction, wrapping around, that `include` accepts. 标题栏中负责 TabOrder 部分：自定义标题栏中与 TabOrder 相关的状态、交互与渲染逻辑。
+ */
 export function adjacentTabKey(
   order: string[],
   current: string | undefined,

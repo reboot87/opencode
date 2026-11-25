@@ -1,3 +1,10 @@
+/**
+ * LLM的测试。
+ *
+ * 被测模块：@opencode/ai/llm
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { Effect, Schema, Stream } from "effect"
 import { ai, CacheHint, GENERATION_KEYS, LLMEvent, LLMResponse, ToolEntry, ToolNamespace } from "../src/effect.js"

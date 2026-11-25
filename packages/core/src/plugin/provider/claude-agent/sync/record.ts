@@ -1,3 +1,7 @@
+/**
+ * Claude 同步记录。
+ * 持久化 Claude 会话同步的检查点记录。
+ */
 export * as SessionRecord from "./record.js"
 
 import { Effect, Option, Schema } from "effect"

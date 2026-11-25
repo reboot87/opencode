@@ -1,3 +1,7 @@
+/**
+ * shell 接口处理器。
+ * Shell 接口处理器：执行 shell 命令。
+ */
 import { Shell } from "@opencode/core/shell"
 import { Location } from "@opencode/core/location"
 import { Effect } from "effect"

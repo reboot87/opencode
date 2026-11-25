@@ -1,3 +1,7 @@
+/**
+ * MIME 类型识别。
+ * 按文件字节签名检测 MIME 与媒体类型。
+ */
 export * as Mime from "./mime.js"
 
 export function detect(bytes: Uint8Array) {

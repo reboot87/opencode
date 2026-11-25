@@ -1,3 +1,7 @@
+/**
+ * 用量展示 — Model。
+ * 用量统计的界面中负责 Model 部分，提供该部分所需的实现与类型定义。
+ */
 import { onMount } from "solid-js"
 import { isFreeModel } from "@/providers/models/models"
 import { useLanguage } from "@/runtime/i18n/language"

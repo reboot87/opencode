@@ -1,3 +1,7 @@
+/**
+ * 终端文案 — Sr。
+ * 终端插件的多语言文案中负责 Sr 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.category": "Терминал",
   "command.toggle": "Пребаци терминал",

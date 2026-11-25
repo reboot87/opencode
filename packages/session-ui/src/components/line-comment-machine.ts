@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — LineCommentMachine。
+ * 跨场景复用的通用 UI 组件中负责 LineCommentMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SelectedLineRange } from "@pierre/diffs"
 import { cloneSelectedLineRange } from "../pierre/selection-bridge"
 

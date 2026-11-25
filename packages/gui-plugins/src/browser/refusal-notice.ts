@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — RefusalNotice。
+ * 内置浏览器功能的 GUI 插件中负责 RefusalNotice 部分，提供该部分所需的实现与类型定义。
+ */
 import { destinationOrigin, type Policy } from "./policy"
 
 const apps: readonly string[] = ["mailto", "tel", "sms", "facetime", "slack", "msteams", "zoommtg", "zoomus", "discord", "spotify", "figma", "linear", "notion", "obsidian", "tg", "whatsapp", "x-github-client", "github-windows", "github-mac"]

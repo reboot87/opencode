@@ -1,4 +1,6 @@
 //! A reconnect must refresh state even if the UI never observes the disconnected status.
+//!
+//! 终端界面测试：`reconnect`。
 
 use crate::support::{self, WAIT};
 

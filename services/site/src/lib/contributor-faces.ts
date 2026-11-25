@@ -1,3 +1,6 @@
+/**
+ * 站点共享逻辑：贡献者头像。
+ */
 // Contributors whose GitHub avatar is a photo of a human face, the only ones the home page's
 // contributor wall shows (no logos, organisations, default identicons or illustrations). Reviewed
 // by hand from the top 200 contributors on Nov 2, 2026; borderline ones (a small figure in a

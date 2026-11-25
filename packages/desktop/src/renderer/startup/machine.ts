@@ -1,3 +1,7 @@
+/**
+ * 模块 — Machine。
+ * 该目录下的功能模块中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { LayoutRoute, Locale } from "@opencode/app/desktop"
 import type { ServerReadyData } from "../../shared/ipc-contract"
 import { localServerStartupError } from "./initialization"

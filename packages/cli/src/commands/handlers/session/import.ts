@@ -1,3 +1,7 @@
+/**
+ * session import 命令。
+ * 从文件导入会话数据。
+ */
 import { OpenCode } from "@opencode/client"
 import { Service } from "@opencode/client/effect/service"
 import { Session } from "@opencode/schema/session"

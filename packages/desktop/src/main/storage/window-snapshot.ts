@@ -1,3 +1,7 @@
+/**
+ * 本地存储 — WindowSnapshot。
+ * 桌面端配置的本地持久化中负责 WindowSnapshot 部分，提供该部分所需的实现与类型定义。
+ */
 import { existsSync, readdirSync } from "node:fs"
 import path from "node:path"
 import { DatabaseSync } from "node:sqlite"

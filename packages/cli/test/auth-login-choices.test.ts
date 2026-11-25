@@ -1,3 +1,10 @@
+/**
+ * 认证·登录·选项的测试。
+ *
+ * 被测模块：@opencode/cli/auth-login-choices
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import type { IntegrationInfo } from "@opencode/client"
 import { loginChoices } from "../src/commands/handlers/auth/login"

@@ -1,6 +1,8 @@
 /**
  * The shared Web Lock a focused window holds so other windows skip system notifications. `requesting` waits for the
  * grant and tracks focus meanwhile; a grant that arrives after the window lost focus is released at once.
+ *
+ * 外壳通知中负责 FocusLockMachine 部分：应用级通知中与 FocusLockMachine 相关的状态、交互与渲染逻辑。
  */
 export type FocusLockState =
   | { readonly status: "unfocused"; readonly attempt: number }

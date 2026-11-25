@@ -57,7 +57,10 @@ const SPECKS = Array.from({ length: 36 }, (_, index) => {
   return [0.08 + Math.abs(x) * 0.84, 0.08 + Math.abs(y) * 0.84] as const
 }).filter((point) => Math.hypot(point[0] - ATOM[0] - 0.05, point[1] - ATOM[1] - 0.05) > 0.12)
 
-/** Draws level `value` (1–35, fractional while zooming) into `canvas`, at `alpha`. */
+/** Draws level `value` (1–35, fractional while zooming) into `canvas`, at `alpha`.
+ *
+ * 字体展示组件：全集。
+ */
 function drawNesting(canvas: HTMLCanvasElement, value: number, alpha: number) {
   const dpr = Math.min(2, Math.max(1, Math.round(window.devicePixelRatio || 1)))
   const width = Math.round(canvas.clientWidth * dpr)

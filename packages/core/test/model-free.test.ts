@@ -1,3 +1,10 @@
+/**
+ * 模型·free的测试。
+ *
+ * 被测模块：@opencode/core/model-free
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { Agent } from "@opencode/core/agent"
 import { expect } from "bun:test"
 import { DateTime, Effect, Layer } from "effect"

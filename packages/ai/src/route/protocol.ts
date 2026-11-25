@@ -1,11 +1,31 @@
+/**
+ * 协议（Protocol）契约定义。
+ * 描述某一模型服务器家族的语义 API：请求体编解码、流式解析、工具更新编码与兼容性声明，是各具体协议实现的基类约定。
+ */
 import { Schema, type Effect } from "effect"
 import type { AIError, LanguageModelSanitizerCompatibility, LLMEvent, LLMRequest, ProtocolID } from "../schema/index.js"
 import { flattenRequest } from "../protocols/shared.js"
 import type { ToolUpdateEncoding } from "../tool-updates.js"
 
 /**
- * The semantic API contract of one model server family.
+ * 某一模型服务器家族的语义 API 契约。
  *
+ * 架构分层（重要）：Protocol 只关心"这个 API 长什么样"——
+ * 通用 LLMRequest 如何转成 provider 原生请求体、请求体需满足什么 schema、
+ * 流式响应如何解码回通用 LLMEvent。
+ *
+ * Protocol **不是**部署配置：它不知道用哪个 URL、哪些 header、哪种鉴权方式。
+ * 这些由 Route.make(...) 结合 Endpoint / Auth / Framing 负责。
+ * 正是这种分离让 DeepSeek、TogetherAI、Cerebras 等能复用同一个 OpenAIChat.protocol，
+ * 而不必为每个 provider 复制数百行代码。
+ *
+ * 四个类型参数对应处理流水线：
+ * - Body：provider 原生请求体候选，Route.make 用 body.schema 校验并 JSON 编码；
+ * - Frame：分帧响应流的一个单元（SSE 是 JSON 字符串，AWS event stream 是解析后的二进制帧）；
+ * - Event：从一帧解码出的 provider 事件；
+ * （详见原文后续说明）
+ *
+ * 原文：
  * A `Protocol` owns the parts of a route that are intrinsic to "what does
  * this API look like": how a common `LLMRequest` becomes a provider-native
  * body, what schema that body must satisfy before it is JSON-encoded, and

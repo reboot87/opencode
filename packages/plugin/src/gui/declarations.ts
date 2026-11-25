@@ -1,3 +1,7 @@
+/**
+ * GUI 声明类型。
+ * 定义插件可声明的存储（Stores）、图标（Icons）等资源类型。
+ */
 import type { Catalog, OS, StoreDeclaration } from "./core.js"
 
 /** The stores a plugin's GUI may declare. */

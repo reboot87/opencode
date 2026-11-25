@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — TabPopoverMachine。
+ * 自定义窗口标题栏中负责 TabPopoverMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // Initial hover delay before the preview appears, per design.
 export const TAB_PREVIEW_OPEN_DELAY_MS = 750
 

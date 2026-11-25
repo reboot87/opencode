@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — SidebarCustomized。
+ * 自定义窗口标题栏中负责 SidebarCustomized 部分，提供该部分所需的实现与类型定义。
+ */
 import { Schema } from "effect"
 import { createEffect, createMemo, For, onCleanup, Show, type JSX } from "solid-js"
 import { createStore } from "solid-js/store"

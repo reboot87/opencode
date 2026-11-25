@@ -1,3 +1,7 @@
+/**
+ * 标签页 — Closed。
+ * 多标签页的打开与切换中负责 Closed 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionTab, Tab, TabInfo } from "./tabs"
 import type { TabStorage } from "./schema"
 

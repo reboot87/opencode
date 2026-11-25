@@ -1,4 +1,6 @@
 //! Session pane widths and breakpoints.
+//!
+//! 终端界面：布局。
 
 pub const SESSION_SIDEBAR_WIDTH: u16 = 42;
 pub const SESSION_TABS_COMPACT_WIDTH: i64 = 5;

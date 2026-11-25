@@ -1,3 +1,7 @@
+/**
+ * 动态导入（Node）。
+ * 在 Node 运行时用 vm.Script 动态导入模块。
+ */
 import { Script, constants } from "node:vm"
 import { registerHooks } from "node:module"
 import { statSync } from "node:fs"

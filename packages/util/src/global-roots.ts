@@ -1,3 +1,7 @@
+/**
+ * 全局数据目录。
+ * 解析应用在系统上的数据/配置/缓存根目录（遵循 XDG 约定）。
+ */
 import os from "os"
 import path from "path"
 

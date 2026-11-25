@@ -1,4 +1,6 @@
 //! Vertical session tab rail.
+//!
+//! 终端界面：导轨。
 
 use opencode_store::Location;
 use opencode_ui::theme::tint;

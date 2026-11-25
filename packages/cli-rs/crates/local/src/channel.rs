@@ -1,4 +1,6 @@
 //! The runtime channel selects the service registration, config file and default port.
+//!
+//! 本地配置与路径：通道。
 
 use std::ffi::OsString;
 

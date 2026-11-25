@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：typing·伪终端。
+ *
+ * 规格编号：M.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Typing grows the footer one row per line (Shift+Enter), up to six; Enter sends the prompt with `steer` and the
 // footer shrinks back.
 import { definePty } from "../../pty/run"

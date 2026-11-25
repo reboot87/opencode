@@ -1,4 +1,6 @@
 //! Drive the headless TUI over its simulation endpoint from another thread.
+//!
+//! 终端界面测试：驱动。
 
 use crate::support;
 

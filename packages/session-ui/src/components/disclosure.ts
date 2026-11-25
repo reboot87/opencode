@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — Disclosure。
+ * 跨场景复用的通用 UI 组件中负责 Disclosure 部分，提供该部分所需的实现与类型定义。
+ */
 import { createComputed, createMemo, createSignal, on, onCleanup, onMount, untrack } from "solid-js"
 import {
   createDisclosureState,

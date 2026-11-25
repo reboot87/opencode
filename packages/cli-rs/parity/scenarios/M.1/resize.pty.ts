@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：调整尺寸·伪终端。
+ *
+ * 规格编号：M.1。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A resize replays the transcript at the new width: the terminal is cleared, the messages are listed again, and the
 // header and the wrapped rows follow the new width. The history is plain text (prompts and errors).
 import { definePty } from "../../pty/run"

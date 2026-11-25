@@ -1,3 +1,7 @@
+/**
+ * 会话命令 — ForkDialogStories。
+ * 会话界面提供的命令中负责 ForkDialogStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { useDialog } from "@opencode/ui/context/dialog"
 import { onMount } from "solid-js"

@@ -1,4 +1,6 @@
 //! Resolves session, model, agent and worktree selections for `--session`, `--continue` and `--fork`.
+//!
+//! 会话存储层：目标。
 
 use std::future::Future;
 

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：夹具。
+ *
+ * 规格编号：C.10。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A fake server for `run`: one session `ses_run`, an event stream, and a prompt route that pushes the events a
 // scenario scripts. The prompt ID is random on both sides, so events and the message list read it from the
 // logged prompt request.

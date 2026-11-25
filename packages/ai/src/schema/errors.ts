@@ -1,3 +1,11 @@
+/**
+ * AI SDK 的错误类型体系（AIError 及其子类）。
+ *
+ * AIError 是顶层错误，reason 字段是一个可辨识联合（tagged union），
+ * 每个子类表示一类具体失败：鉴权、限流、额度、上下文溢出、provider 内部错误、传输错误等。
+ * 很多子类携带 isRetryable 标志供会话重试策略判断；这条分类链正是 provider-error.ts 分类的目标。
+ * 同时保留 HTTP 上下文（状态码、headers、rateLimit 详情）便于诊断。
+ */
 import { Schema } from "effect"
 import { NonNegativeInt } from "@opencode/schema"
 import { Tool } from "@opencode/schema/tool"
@@ -5,6 +13,7 @@ import { ProviderID, RouteID } from "./ids.js"
 import type { LLMResponse } from "./events.js"
 import { awsErrorType, providerCodes } from "../utils/provider-codes.js"
 
+/** provider 失败可归类的两种确定类型：上下文溢出、请求体过大。 */
 export const ProviderFailureClassification = Schema.Literals(["context-overflow", "payload-too-large"])
 export type ProviderFailureClassification = typeof ProviderFailureClassification.Type
 

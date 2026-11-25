@@ -1,3 +1,7 @@
+/**
+ * MCP 客户端。
+ * 实现 Model Context Protocol 客户端：启动超时、目录/执行超时，管理请求/响应、能力与会话，是与 MCP 服务器通信的核心。
+ */
 export * as McpClient from "./client.js"
 
 import { pathToFileURL } from "node:url"

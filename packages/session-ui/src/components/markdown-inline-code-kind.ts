@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — MarkdownInlineCodeKind。
+ * 跨场景复用的通用 UI 组件中负责 MarkdownInlineCodeKind 部分，提供该部分所需的实现与类型定义。
+ */
 import { parsePathLineSuffix } from "@opencode/util/path"
 
 // Common files with no extension. Anything else needs a `.` or `/` to look like a file.

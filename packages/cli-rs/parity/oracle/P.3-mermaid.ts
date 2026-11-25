@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：P.3·Mermaid。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-ORACLE for P.3: every Mermaid source in the merman tests, rendered by the TypeScript plugin's own code-block
 // renderer (`createMermaidCodeBlockRenderer`, as `plugin.ts` registers it) with the `opencode` dark palette at a
 // few terminal widths. Writes parity/fixtures/P.3/corpus.json; crates/mermaid/tests/all/oracle.rs renders the same

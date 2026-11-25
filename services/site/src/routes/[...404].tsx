@@ -1,3 +1,6 @@
+/**
+ * 页面路由：[·404]。
+ */
 import { NotFoundPage } from "~/component/site/arcade3d/not-found-page"
 import { useI18n } from "~/context/i18n"
 

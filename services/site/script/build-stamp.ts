@@ -1,3 +1,6 @@
+/**
+ * 站点构建脚本：构建标记。
+ */
 // Writes src/lib/build-stamp.json, the view-source comment's build line (src/lib/source-logo.ts):
 // the release version from package.json (the release workflow syncs it), the short commit
 // (GITHUB_SHA in the deploy workflow, else the local HEAD) and the UTC build date, or "dev" with --dev,

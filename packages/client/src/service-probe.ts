@@ -1,3 +1,7 @@
+/**
+ * 服务探测。
+ * 探测候选服务是否可用并做出选择决策。
+ */
 import { homedir } from "node:os"
 import { join } from "node:path"
 import type { DiscoverOptions, Endpoint, Info } from "./service.js"

@@ -1,3 +1,5 @@
+//! 基础 UI 组件库：权限。
+
 use serde_json::{Map, Value};
 
 use crate::tool_info::{

@@ -2,6 +2,8 @@
  * The preview a `<Select>` shows for its highlighted option (`onHighlight`, which may return an undo). Unlike a one-shot
  * palette, a select opens and closes repeatedly: choosing the previewed option keeps its preview, choosing another
  * reverts it first, and closing without a choice reverts it. Nothing previews while the menu is closed or closing.
+ *
+ * 下拉选择的状态机：管理选项高亮、展开与选中。
  */
 export type SelectHighlightState =
   | { readonly status: "closed" }

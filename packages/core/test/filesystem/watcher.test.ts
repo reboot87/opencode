@@ -1,3 +1,10 @@
+/**
+ * 监听器的测试。
+ *
+ * 被测模块：@opencode/core/filesystem/watcher
+ *
+ * 覆盖文件系统抽象层：路径解析、原子写入与权限处理。
+ */
 import { $ } from "bun"
 import { describe, expect } from "bun:test"
 import fs from "fs/promises"

@@ -1,3 +1,7 @@
+/**
+ * 命令定义表。
+ * 定义 CLI 的全部子命令、全局开关与参数说明，是命令树的唯一来源。
+ */
 import { Argument, Flag, GlobalFlag } from "effect/cli"
 import { Schema } from "effect"
 import { CliFlag } from "../framework/flag"

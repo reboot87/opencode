@@ -1,3 +1,7 @@
+/**
+ * 本地存储 — State。
+ * 桌面端配置的本地持久化中负责 State 部分，提供该部分所需的实现与类型定义。
+ */
 import { and, eq, sql } from "drizzle-orm"
 import type { Database } from "./database"
 import { state } from "./schema"

@@ -1,3 +1,7 @@
+/**
+ * Provider 连接 — GoUpsellHero。
+ * 连接 provider 的授权界面中负责 GoUpsellHero 部分，提供该部分所需的实现与类型定义。
+ */
 import { onCleanup, onMount } from "solid-js"
 import { mountGoUpsellHero } from "./go-upsell-hero-art"
 

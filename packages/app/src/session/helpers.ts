@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — Helpers。
+ * 会话主界面的视图与状态中负责 Helpers 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, onCleanup, onMount, untrack } from "solid-js"
 import { makeEventListener } from "@solid-primitives/event-listener"
 import { createSizingState, isSizingActive, transitionSizing, type SizingEvent } from "./sizing-machine"

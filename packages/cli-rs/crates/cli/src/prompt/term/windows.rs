@@ -2,6 +2,8 @@
 //! into the escape sequences a Unix terminal sends (virtual terminal input) where libuv translates them itself; sizes
 //! from OpenTUI's console; and waits on the console input handle. Stdin that is not a console, a pipe or a file, is
 //! read on a thread of its own ([`Piped`]), because a pipe cannot be waited on with a timeout.
+//!
+//! CLI 交互提示：`windows`。
 
 use std::sync::atomic::{AtomicBool, AtomicU64, Ordering};
 use std::sync::{Mutex, MutexGuard, OnceLock, PoisonError};

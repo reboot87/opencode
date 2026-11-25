@@ -1,3 +1,7 @@
+/**
+ * Cartesia provider 门面。
+ * 语音合成（TTS）provider，支持字节流与 SSE 两种传输，提供 speech 模型工厂。
+ */
 import { AuthOptions, type ProviderAuthOption } from "../route/auth-options.js"
 import { MediaRoute } from "../route/media.js"
 import { ProviderID, type ModelID, type TransportOptions } from "../schema/index.js"

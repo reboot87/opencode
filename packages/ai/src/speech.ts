@@ -1,3 +1,10 @@
+/**
+ * 语音合成（Text-to-Speech）API。
+ *
+ * 把文本转换成音频 Media Asset。与 image.ts 类似：
+ * 通过 MediaModel + composeRoute 适配各 provider，generate 一次性生成、stream 流式输出。
+ * 异步任务同样复用 generation.ts 的轮询机制。
+ */
 import { Effect, Schema, Stream } from "effect"
 import { ProgressEvent } from "./generation.js"
 import { Media } from "./media.js"

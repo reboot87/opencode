@@ -1,3 +1,7 @@
+/**
+ * Provider 设置 — ConsoleExtensions。
+ * provider 的账号与密钥设置中负责 ConsoleExtensions 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ConfigEntry, SkillInfo } from "@opencode/client/promise"
 import type { ServerConfig } from "@opencode/schema/mcp"
 import { Option, Result, Schema } from "effect"

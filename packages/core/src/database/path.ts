@@ -1,3 +1,7 @@
+/**
+ * 数据库路径列类型。
+ * 定义以绝对路径文本存储的 drizzle 自定义列类型，处理 Windows 路径分隔符归一化。
+ */
 import nodePath from "path"
 import { customType } from "drizzle-orm/sqlite-core"
 import { Schema } from "effect"

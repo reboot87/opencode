@@ -1,3 +1,7 @@
+/**
+ * 会话二进制资产（Blob）管理。
+ * 从消息部件中提取文件引用与工具产生的媒体内容，统一存取会话中的二进制资产。
+ */
 export * as SessionBlob from "./blob.js"
 
 import { createHash } from "node:crypto"

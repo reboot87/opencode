@@ -1,3 +1,7 @@
+/**
+ * 测试夹具 — TuiClient。
+ * 终端测试使用的夹具数据中负责 TuiClient 部分，提供该部分所需的实现与类型定义。
+ */
 import { OpenCode, type OpenCodeEvent } from "@opencode/client"
 
 export const worktree = "/tmp/opencode"

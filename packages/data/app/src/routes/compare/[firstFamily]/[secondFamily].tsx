@@ -1,3 +1,7 @@
+/**
+ * 对比族页 — [secondFamily]。
+ * 按模型族维度的对比页面中负责 [secondFamily] 部分，提供该部分所需的实现与类型定义。
+ */
 import { Title } from "@solidjs/meta"
 import { createAsync, useParams } from "@solidjs/router"
 import { createMemo, Show } from "solid-js"

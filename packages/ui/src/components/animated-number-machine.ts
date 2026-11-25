@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — AnimatedNumberMachine。
+ * 跨场景复用的通用 UI 组件中负责 AnimatedNumberMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export const ANIMATED_NUMBER_TRACK_LENGTH = 30
 
 /** Added to the measured transition time before a roll or resize that never reported its end settles anyway. */

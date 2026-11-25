@@ -1,3 +1,7 @@
+/**
+ * 进度圆环 — ProgressCircleStories。
+ * 环形进度指示组件中负责 ProgressCircleStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { For } from "solid-js"
 import { ProgressCircle, type ProgressCircleProps } from "./progress-circle"
 

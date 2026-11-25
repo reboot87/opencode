@@ -1,3 +1,7 @@
+/**
+ * 主页 — Scroll。
+ * 应用主页的视图与数据中负责 Scroll 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal, onCleanup, type Accessor } from "solid-js"
 import { createStore } from "solid-js/store"
 import type { HomeSessionGroup } from "./sessions/controller"

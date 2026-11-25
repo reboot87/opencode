@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：压缩·加载指示器·伪终端。
+ *
+ * 规格编号：E.12。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A busy tab's spinner in the compact rail steps on its own (W04, `TabIndicator` in `session-tabs.tsx:190-198`):
 // `-s ses_a` opens a session, a select opens `ses_b` beside it, a drag of the rail's handle (SGR reports, 1-based
 // cells) makes the rail compact, and `ses_a` starts working in the background. With no input and no more events, the

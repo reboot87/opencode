@@ -1,3 +1,10 @@
+/**
+ * meta·能力的测试。
+ *
+ * 被测模块：@opencode/ai/provider/meta-capabilities
+ *
+ * 覆盖各家供应商的接入实现：请求构造、响应解析与错误映射。
+ */
 import { expect } from "bun:test"
 import { Effect, Layer } from "effect"
 import { HttpClientRequest } from "effect/http"

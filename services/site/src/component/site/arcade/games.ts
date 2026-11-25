@@ -1,4 +1,7 @@
-/** The Anomaly Arcade games (anoma.ly/arcade) and their controls, from the arcade repo's docs/controls.md. */
+/** The Anomaly Arcade games (anoma.ly/arcade) and their controls, from the arcade repo's docs/controls.md.
+ *
+ * 街机小游戏组件：游戏。
+ */
 
 export type ButtonAction = { label: string; code: string; key: string } | { label: string; mouse: true }
 

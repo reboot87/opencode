@@ -1,3 +1,10 @@
+/**
+ * 录制器的测试。
+ *
+ * 被测模块：@opencode/core/plugin/provider/claude-agent/claude/recorder
+ *
+ * 覆盖 Claude Agent 供应商插件的请求转换、工具桥接与流式事件映射。
+ */
 import { describe, expect, test } from "bun:test"
 import { readdirSync, readFileSync } from "node:fs"
 import path from "node:path"

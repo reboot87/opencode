@@ -1,3 +1,7 @@
+/**
+ * 原生能力 — InstallCliMachine。
+ * 调用系统原生能力的封装中负责 InstallCliMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export type InstallCliOutcome =
   | { readonly ok: true; readonly path: string }
   | { readonly ok: false; readonly error: string }

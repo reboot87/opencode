@@ -1,4 +1,8 @@
-/** How far the panel may move from its home while staying inside the window. */
+/**
+ * How far the panel may move from its home while staying inside the window.
+ *
+ * 语音界面中负责 PanelMachine 部分：实时语音会话界面中与 PanelMachine 相关的状态、交互与渲染逻辑。
+ */
 export type PanelBounds = {
   readonly minX: number
   readonly maxX: number

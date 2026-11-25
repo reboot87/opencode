@@ -1,3 +1,7 @@
+/**
+ * 服务配置。
+ * 读取、写入并校验服务安装配置（安装方式、端口、用户等）。
+ */
 import { Global } from "@opencode/util/global"
 import { OPENCODE_CHANNEL, OPENCODE_VERSION } from "../version"
 import { Hash } from "@opencode/util/hash"

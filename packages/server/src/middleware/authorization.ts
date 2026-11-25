@@ -1,3 +1,7 @@
+/**
+ * 授权中间件实现。
+ * 校验请求授权，支持 Token 与 Basic 认证，未授权时返回 WWW-Authenticate。
+ */
 import { ServerAuth } from "../auth"
 import { UnauthorizedError } from "@opencode/protocol/errors"
 import { Authorization } from "@opencode/protocol/middleware/authorization"

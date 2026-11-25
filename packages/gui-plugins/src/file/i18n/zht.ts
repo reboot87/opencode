@@ -1,3 +1,7 @@
+/**
+ * 文件文案 — Zht。
+ * 文件插件的多语言文案中负责 Zht 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "tree.all": "所有檔案",
   "tab.notFound": "找不到檔案：{{name}}",

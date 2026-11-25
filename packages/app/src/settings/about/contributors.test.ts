@@ -1,3 +1,7 @@
+/**
+ * 关于 — ContributorsTest。
+ * 版本与致谢等信息中负责 ContributorsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { FALLBACK_OTHER_CONTRIBUTORS, otherContributorCount } from "./contributors"
 

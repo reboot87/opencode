@@ -1,6 +1,8 @@
 //! Scripted HTTP transport for store tests.
 
 #![allow(dead_code)]
+//!
+//! 存储层测试入口。
 
 use std::sync::{Arc, Mutex};
 use std::time::{Duration, Instant};

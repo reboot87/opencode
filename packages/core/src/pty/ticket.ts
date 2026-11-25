@@ -1,3 +1,7 @@
+/**
+ * PTY 票据。
+ * 为 PTY 会话签发带 60 秒 TTL 的短期票据，容量上限 1 万。
+ */
 export * as PtyTicket from "./ticket.js"
 
 import type { Workspace } from "@opencode/schema/workspace"

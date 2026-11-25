@@ -1,4 +1,6 @@
 //! Resolves the drive manifest from `OPENCODE_DRIVE`.
+//!
+//! 本地驱动：清单。
 
 use opencode_util::path::Flavor;
 use serde::Deserialize;

@@ -1,3 +1,7 @@
+/**
+ * 数据站工具 — ComparisonPages。
+ * 数据站点的通用工具中负责 ComparisonPages 部分，提供该部分所需的实现与类型定义。
+ */
 import { catalogSlug, findModelCatalogEntry, type ModelCatalog, type ModelCatalogEntry } from "../routes/model-catalog"
 
 type ComparisonFamilyDefinition = {

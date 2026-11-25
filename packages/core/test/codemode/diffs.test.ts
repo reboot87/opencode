@@ -1,3 +1,10 @@
+/**
+ * 差异的测试。
+ *
+ * 被测模块：@opencode/core/codemode/diffs
+ *
+ * 覆盖 Code Mode 的脚本执行、差异计算与指令下发。
+ */
 import { describe, expect, test } from "bun:test"
 import { Effect } from "effect"
 import { CodeModeDiffs } from "../../src/codemode/diffs"

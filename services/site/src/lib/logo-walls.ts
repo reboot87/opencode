@@ -5,6 +5,8 @@ import { logoMetrics } from "~/component/site/logo-metrics"
  * public/logos/companies/README.md), or the model providers OpenCode works with (marks from
  * models.dev). Data only, with no strings to translate, so the static pages' script can cycle them
  * without loading any (home.ts).
+ *
+ * 站点共享逻辑：标识·walls。
  */
 export const logoWalls = {
   companies: [

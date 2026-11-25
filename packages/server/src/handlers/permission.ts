@@ -1,3 +1,7 @@
+/**
+ * permission 接口处理器。
+ * 权限接口处理器：权限规则列举、授予与拒绝。
+ */
 import { Instance } from "@opencode/core/instance/service"
 import { Location } from "@opencode/core/location"
 import { Permission } from "@opencode/core/permission"

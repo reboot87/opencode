@@ -1,4 +1,6 @@
 //! Check built-in surfaces through real mounts, revisions, and theme and size changes.
+//!
+//! 终端界面测试：插件内置项。
 
 use crate::support::{self, DIRECTORY, Fake, Harness};
 

@@ -1,3 +1,7 @@
+/**
+ * Effect 风格插件 API 出口。
+ * 集中导出 Effect 风格插件的各领域接口与类型。
+ */
 export * as Plugin from "./plugin.js"
 export type { StorageEntry, StorageScanOptions, StorageScanResult } from "../storage.js"
 

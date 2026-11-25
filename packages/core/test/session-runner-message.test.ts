@@ -1,3 +1,10 @@
+/**
+ * 会话·驱动·消息的测试。
+ *
+ * 被测模块：@opencode/core/session-runner-message
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { Message, Media } from "@opencode/ai/effect"
 import { Model } from "@opencode/core/model"

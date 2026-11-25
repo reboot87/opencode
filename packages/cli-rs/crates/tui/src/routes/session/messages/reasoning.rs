@@ -1,4 +1,6 @@
 //! Expandable assistant reasoning.
+//!
+//! 终端界面路由：推理。
 
 use opencode_api::generated::{
     SessionMessageAssistant, SessionMessageAssistantContentItem, SessionMessageAssistantReasoning,

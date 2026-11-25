@@ -1,3 +1,7 @@
+/**
+ * glob 工具。
+ * 按 glob 模式匹配文件路径的搜索工具。
+ */
 export * as GlobTool from "./glob.js"
 
 import { ToolFailure } from "@opencode/ai/effect"

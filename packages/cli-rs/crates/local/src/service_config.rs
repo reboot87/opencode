@@ -1,5 +1,7 @@
 //! Reads and edits the per-channel service config. Preserve schema field order and append new keys. The caller
 //! handles any required service stop or tunnel setup.
+//!
+//! 本地配置与路径：服务配置。
 
 use std::fmt;
 use std::fs;

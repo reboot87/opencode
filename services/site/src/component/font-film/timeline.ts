@@ -5,6 +5,8 @@
  * scenes and the mixer find their cues by name. To re-time the film for a new take, paste the new
  * numbers here; gaps stretch toward TARGET (never below MIN_GAP), and every shot, caption and sound
  * cue follows.
+ *
+ * 字体动画胶片组件：时间线。
  */
 export const fps = 30
 

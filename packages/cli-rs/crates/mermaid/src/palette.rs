@@ -1,3 +1,5 @@
+//! Mermaid 图表渲染：调色板。
+
 use opencode_plugin_abi::{Read, Rgba, ThemeMode};
 
 use crate::core::color::{blend, with_alpha};

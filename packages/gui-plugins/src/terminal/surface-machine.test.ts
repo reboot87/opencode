@@ -1,3 +1,7 @@
+/**
+ * 终端插件 — SurfaceMachineTest。
+ * 内嵌终端的 GUI 插件中负责 SurfaceMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   initialSurfaceState,

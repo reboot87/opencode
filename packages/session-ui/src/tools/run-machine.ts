@@ -1,3 +1,7 @@
+/**
+ * 工具展示 — RunMachine。
+ * 工具调用与结果的展示组件中负责 RunMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import { stripAnsi } from "./ansi"
 
 /** A shell tool call as the renderer decoded it: tool state, input and metadata. */

@@ -1,3 +1,5 @@
+//! 精简版实现：启动画面。
+
 use crate::prelude::*;
 use crate::theme::SplashTheme;
 

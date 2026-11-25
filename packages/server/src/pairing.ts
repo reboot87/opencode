@@ -1,3 +1,7 @@
+/**
+ * 配对码服务。
+ * 生成短期配对码（5 分钟 TTL）用于设备绑定。
+ */
 export * as ServerPairing from "./pairing"
 
 import { Cache, Context, Duration, Effect, Layer } from "effect"

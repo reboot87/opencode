@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：repack·Windows。
 # repack-windows.sh <work dir> <out dir>: checks every signature in <work dir>, then writes the signed CLI back
 # into npm tarballs and opencode-<target>.zip archives in <out dir>.
 . "$(dirname "$0")/lib.sh"

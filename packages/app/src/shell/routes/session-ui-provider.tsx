@@ -1,3 +1,7 @@
+/**
+ * 外壳路由 — SessionUiProvider。
+ * 应用外壳的路由定义中负责 SessionUiProvider 部分，提供该部分所需的实现与类型定义。
+ */
 import { DataProvider, type TurnDiffInput } from "@opencode/session-ui/context"
 import { MarkdownProvider, type ReadMarkdownImage } from "@opencode/session-ui/context/markdown"
 import { useNavigate, useParams } from "@solidjs/router"

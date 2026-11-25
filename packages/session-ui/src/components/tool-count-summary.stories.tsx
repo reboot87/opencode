@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — ToolCountSummaryStories。
+ * 跨场景复用的通用 UI 组件中负责 ToolCountSummaryStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { createEffect } from "solid-js"
 import { createStore } from "solid-js/store"

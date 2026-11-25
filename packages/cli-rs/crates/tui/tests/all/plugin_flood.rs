@@ -1,4 +1,6 @@
 //! Check mailbox fairness and per-frame work under repeated wakes of linked plugins.
+//!
+//! 终端界面测试：插件·flood。
 
 use crate::support::model::{self, Failure, Model, Rng};
 use crate::support::{self, Harness};

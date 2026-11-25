@@ -1,3 +1,8 @@
+/**
+ * 插件对等性场景：TUI。
+ *
+ * 插件能力的对等性场景：验证 Rust 与 TypeScript 插件行为一致。
+ */
 // The Pr `fence` test plugin, TypeScript side: a Markdown code-block renderer for `parity` fences that draws each
 // line of the fence after a label. parity/scenarios/Pr/fence.app.ts loads this directory through the cli.json
 // `plugins` entry; the Rust TUI skips that entry and registers its Rust twin, a renderer claim of the fence

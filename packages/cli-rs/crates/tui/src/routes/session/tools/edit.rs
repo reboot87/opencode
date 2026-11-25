@@ -1,4 +1,6 @@
 //! Display the edit diff when a patch is available.
+//!
+//! 终端界面路由：`edit`。
 
 use opentui::widget::DiffView;
 

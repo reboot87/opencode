@@ -15,6 +15,8 @@ const status = {
  * and the day's reported events in local storage; on deletes `oc_optout`. It writes the cookies itself,
  * so it works without the tracker. A browser with Global Privacy Control is always off, so it shows no
  * button.
+ *
+ * 站点界面组件：分析埋点选项。
  */
 export function analyticsChoice(host: HTMLElement) {
   const gpc = readState() === "gpc"

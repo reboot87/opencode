@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — TabHintsMachine。
+ * 自定义窗口标题栏中负责 TabHintsMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export const TAB_HINTS_DELAY_MS = 400
 
 /** `pending` waits out the delay after the mod key went down alone; `shown` draws the numbers. */

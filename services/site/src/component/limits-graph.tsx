@@ -1,3 +1,6 @@
+/**
+ * 通用界面组件：限额图。
+ */
 import "./limits-graph.css"
 import { For, Show, createMemo, createSignal, createUniqueId, onCleanup, onMount } from "solid-js"
 import { useI18n } from "~/context/i18n"

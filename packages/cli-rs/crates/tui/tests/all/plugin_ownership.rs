@@ -1,5 +1,7 @@
 //! Exercise request and effect ownership across carriers. The expected result depends on which call owns the operation
 //! and when its mount closes.
+//!
+//! 终端界面测试：插件·ownership。
 
 use std::cell::{Cell, RefCell};
 use std::path::{Path, PathBuf};

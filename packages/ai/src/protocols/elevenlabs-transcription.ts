@@ -1,3 +1,7 @@
+/**
+ * ElevenLabs 语音转写协议。
+ * STT provider 实现。
+ */
 import { Effect, Schema } from "effect"
 import type { HttpClientResponse } from "effect/http"
 import { MediaProtocol } from "../route/media-protocol.js"

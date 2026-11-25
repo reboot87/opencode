@@ -16,6 +16,8 @@ import {
  * The moonlight: a volumetric shaft from the window to the floor, the pool of light it leaves there
  * and the dust drifting through it. The shaft's direction and width can be changed live; the dust
  * follows the shaft, because each mote is placed along the shaft's axis rather than in the room.
+ *
+ * 3D 街机场景组件：浅色。
  */
 
 export const maxDust = 20000

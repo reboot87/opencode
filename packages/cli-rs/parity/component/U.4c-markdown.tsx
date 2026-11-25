@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid U4cMarkdown：该文件实现 U4cMarkdown 相关的状态与逻辑。
+ */
 // P-COMP fixtures of `TextPart`'s <markdown> options (routes/session/message-parts.tsx) beyond U.4a's rendered
 // prose: U.4a's prose with markers shown (`session.markdown` is `raw`), a grid table with `cellPaddingX: 1`, and
 // thematic breaks.

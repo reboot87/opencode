@@ -1,5 +1,7 @@
 //! Link known, unarchived session IDs in transcript text, compaction summaries, and `/btw` answers. Title changes
 //! invalidate only blocks that mention the session.
+//!
+//! 终端界面功能模块：会话链接。
 
 use std::collections::HashSet;
 

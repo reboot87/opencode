@@ -1,3 +1,7 @@
+/**
+ * 外壳命令 — DialogStandaloneStories。
+ * 应用外壳提供的命令中负责 DialogStandaloneStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { useDialog } from "@opencode/ui/context/dialog"
 import { onMount } from "solid-js"

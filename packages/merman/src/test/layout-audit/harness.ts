@@ -1,3 +1,7 @@
+/**
+ * 模块 — Harness。
+ * 该目录下的功能模块中负责 Harness 部分，提供该部分所需的实现与类型定义。
+ */
 import { orthogonalPathPoints, segmentBetween, type DiagramPoint } from "../../core/geometry.js"
 import { SpatialIndex, spatialPathClaim, spatialRectClaim } from "../../core/spatial.js"
 import { diagramTextWidth } from "../../core/text.js"

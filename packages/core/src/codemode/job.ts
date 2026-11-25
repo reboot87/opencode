@@ -1,3 +1,7 @@
+/**
+ * Code Mode 任务通知。
+ * 把后台任务状态渲染为通知文本，处理运行中被中断等情形。
+ */
 export * as CodeModeJob from "./job.js"
 
 import { Identifier } from "@opencode/schema/identifier"

@@ -1,3 +1,5 @@
+//! 守护进程主体：`sweep`。
+
 use std::fs::{self, OpenOptions};
 use std::path::Path;
 use std::time::{Duration, SystemTime};

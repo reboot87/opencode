@@ -1,3 +1,7 @@
+/**
+ * Provider 设置 — AccountName。
+ * provider 的账号与密钥设置中负责 AccountName 部分，提供该部分所需的实现与类型定义。
+ */
 import { InlineInput } from "@opencode/ui/inline-input"
 import { useLanguage } from "@/runtime/i18n/language"
 import { showToast } from "@/shell/notifications/toast"

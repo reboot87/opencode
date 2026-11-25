@@ -1,3 +1,7 @@
+/**
+ * 火山引擎 provider 门面。
+ * 视频生成 provider，封装异步视频任务，提供 video 模型工厂。
+ */
 import type { ProviderPackage } from "../provider-package.js"
 import { SeedanceVideo } from "../protocols/seedance-video.js"
 import { AuthOptions, type ProviderAuthOption } from "../route/auth-options.js"

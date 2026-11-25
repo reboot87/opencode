@@ -1,3 +1,7 @@
+/**
+ * Azure OpenAI provider 门面。
+ * 封装 Azure OpenAI 的 chat / responses / images / embeddings 能力，处理 Azure 特有的部署名端点与 api-key 鉴权。
+ */
 import { Auth } from "../route/auth.js"
 import { AuthOptions, type AtLeastOne, type ProviderAuthOption } from "../route/auth-options.js"
 import type { Route, CompactionOperations } from "../route/client.js"

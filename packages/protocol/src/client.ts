@@ -1,3 +1,7 @@
+/**
+ * API 客户端。
+ * 构造调用服务端 API 的客户端，暴露各分组的命名空间方法与路径前缀常量。
+ */
 import { LocationNotFoundError, InvalidRequestError, SessionNotFoundError } from "./errors.js"
 import { makeDefaultApi } from "./api.js"
 import type { Api } from "./api.js"

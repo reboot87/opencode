@@ -1,4 +1,6 @@
 //! MCP sidebar actions and persisted section state.
+//!
+//! 终端界面测试：侧边栏。
 
 use crate::support::{self, DIRECTORY, Fake, deref_harness, list};
 

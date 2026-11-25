@@ -1,3 +1,7 @@
+/**
+ * 浏览器扩展 API — ApiTest。
+ * 浏览器插件暴露给扩展的接口中负责 ApiTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { allowed, apiReply, namespaceOf, type ApiNamespace } from "./api"
 import { apiManifest } from "./manifest"

@@ -1,3 +1,8 @@
+/**
+ * 文件锁·工作单元测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import fs from "fs/promises"
 import { Flock } from "@opencode/util/flock"
 

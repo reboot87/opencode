@@ -1,5 +1,7 @@
 //! Compare plugin scroll commands, sticky headers, and windowed lists with an independently laid-out board. Each
 //! input's first frame must already be settled.
+//!
+//! 终端界面测试：插件·behave。
 
 use crate::support::{
     self,

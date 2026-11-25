@@ -1,3 +1,7 @@
+/**
+ * project 接口处理器。
+ * 项目接口处理器：项目列举、更新与目录管理。
+ */
 import { Project } from "@opencode/core/project"
 import { Effect } from "effect"
 import { HttpApiBuilder } from "effect/http-api"

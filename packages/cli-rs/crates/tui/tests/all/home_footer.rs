@@ -1,4 +1,6 @@
 //! Home footer status claims across carriers and screen sizes.
+//!
+//! 终端界面测试：主目录页脚。
 
 use crate::support::{self, DIRECTORY, Fake, Harness, list};
 

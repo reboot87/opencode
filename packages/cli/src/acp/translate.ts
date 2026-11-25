@@ -1,3 +1,7 @@
+/**
+ * ACP 事件翻译。
+ * 在 OpenCode 会话事件与 ACP 协议消息之间双向翻译。
+ */
 import type { PromptResponse, SessionUpdate } from "@agentclientprotocol/sdk"
 import type { OpenCodeEvent } from "@opencode/client/effect"
 import type { Session } from "@opencode/schema/session"

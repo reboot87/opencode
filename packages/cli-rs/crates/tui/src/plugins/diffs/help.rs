@@ -1,4 +1,6 @@
 //! Diff viewer keyboard help.
+//!
+//! 终端插件视图：`help`。
 
 use opencode_plugin::abi::{Dialog, Host, Layout, Node, Panel, PanelSize, Read, Span, Width};
 

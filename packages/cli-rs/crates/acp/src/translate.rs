@@ -1,4 +1,6 @@
 //! Translates server events into ACP updates and the final prompt response.
+//!
+//! ACP 协议实现：`translate`。
 
 use std::borrow::Cow;
 use std::collections::{HashMap, HashSet};

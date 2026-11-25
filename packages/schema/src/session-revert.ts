@@ -1,3 +1,7 @@
+/**
+ * 会话回退类型。
+ * 定义回退点与回退结果结构。
+ */
 import { Schema, SchemaTransformation } from "effect"
 import { FileDiff } from "./file-diff.js"
 import { optional } from "./schema.js"

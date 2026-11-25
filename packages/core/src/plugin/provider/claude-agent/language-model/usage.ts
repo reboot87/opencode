@@ -1,3 +1,7 @@
+/**
+ * Claude 用量统计。
+ * 按消息 ID 汇总 Claude 的输入/输出/缓存 token 用量。
+ */
 export * as ClaudeUsage from "./usage.js"
 
 import type { LanguageModelV3Usage } from "@ai-sdk/provider"

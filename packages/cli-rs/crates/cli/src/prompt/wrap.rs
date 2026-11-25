@@ -1,5 +1,7 @@
 //! `wrap-ansi` 8 in hard mode with its default trimming, which Clack applies to every frame, and the
 //! `string-width` and `strip-ansi` it uses.
+//!
+//! 命令行入口：折行。
 
 use std::sync::LazyLock;
 

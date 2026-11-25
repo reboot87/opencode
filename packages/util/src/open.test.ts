@@ -1,3 +1,7 @@
+/**
+ * 打开 URL 测试。
+ * 验证 URL 与文件路径的打开行为。
+ */
 import { describe, expect, test } from "bun:test"
 import { openUrl } from "./open.js"
 

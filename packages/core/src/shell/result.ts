@@ -1,3 +1,7 @@
+/**
+ * Shell 结果渲染。
+ * 渲染 shell 执行结果，输出已过期时给出明确说明。
+ */
 export * as ShellResult from "./result.js"
 
 import os from "os"

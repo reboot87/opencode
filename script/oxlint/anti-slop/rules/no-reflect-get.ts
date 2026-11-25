@@ -2,7 +2,10 @@ import { defineRule } from "@oxlint/plugins";
 
 import { isGlobalReflectMethodCall } from "../shared/reflect-method.ts";
 
-/** Ban Reflect.get, which bypasses ordinary property access and useful type evidence. */
+/** Ban Reflect.get, which bypasses ordinary property access and useful type evidence.
+ *
+ * Oxlint 规则：无·reflect·获取。
+ */
 export const noReflectGetRule = defineRule({
   meta: {
     type: "problem",

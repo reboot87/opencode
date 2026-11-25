@@ -1,3 +1,7 @@
+/**
+ * 应用资源清单。
+ * 描述前端资源与 Brotli 预压缩资源的映射。
+ */
 import { Effect, FileSystem, Option } from "effect"
 import { readFileSync } from "node:fs"
 import path from "node:path"

@@ -1,3 +1,6 @@
+/**
+ * Vite·节点·配置。
+ */
 import path from "node:path"
 import { readFile } from "node:fs/promises"
 import { createRequire } from "node:module"
@@ -25,9 +28,13 @@ function rawTextPlugin(modelsSnapshot?: string): Plugin {
   }
 }
 
-/** The web UI archive's SEA asset key. The prelude leaves it in place, and the server reads it from SEA memory. */
+/**
+ * The web UI archive's SEA asset key. The prelude leaves it in place, and the server reads it from SEA memory.
+ *
+ * Web UI 归档资源在 SEA（单文件可执行应用）里的资源键名：前置脚本（prelude）会把它原样保留，
+ * 服务端启动时从 SEA 内存镜像中按这个键读出前端资源包。
+ */
 export const appArchiveAsset = "app-archive.bin"
-
 function appAssetsPlugin(): Plugin {
   return {
     name: "opencode:app-assets",

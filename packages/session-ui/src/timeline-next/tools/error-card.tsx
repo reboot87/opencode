@@ -1,3 +1,7 @@
+/**
+ * 时间线工具块 — ErrorCard。
+ * 时间线中工具调用的展示中负责 ErrorCard 部分，提供该部分所需的实现与类型定义。
+ */
 import { Badge } from "@opencode/ui/badge"
 import { Card, CardDescription } from "@opencode/ui/card"
 import { Collapsible } from "@opencode/ui/collapsible"

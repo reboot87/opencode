@@ -1,3 +1,10 @@
+/**
+ * HTTP·钩子的测试。
+ *
+ * 被测模块：@opencode/ai/http-hooks
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { Effect, Layer } from "effect"
 import { HttpClientResponse } from "effect/http"

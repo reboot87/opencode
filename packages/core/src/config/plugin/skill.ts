@@ -1,3 +1,7 @@
+/**
+ * 技能配置插件。
+ * 从配置与扫描结果中加载并注册技能。
+ */
 export * as ConfigSkillPlugin from "./skill.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

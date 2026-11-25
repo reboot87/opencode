@@ -8,6 +8,8 @@ import { legalDocuments } from "~/lib/legal-documents"
 /**
  * /sitemap.xml is the one public sitemap, an index of the sitemaps below. Search engines read it from
  * robots.txt; the others are only listed here.
+ *
+ * 站点共享逻辑：站点地图。
  */
 export const sitemapFiles = [
   "/sitemap-pages.xml", // this app's pages, built below

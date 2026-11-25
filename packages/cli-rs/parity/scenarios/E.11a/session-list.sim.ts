@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：会话·列表·模拟。
+ *
+ * 规格编号：E.11a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Two sessions created on the server, then listed over the home
 // (DLG16): opened with <leader>l, the first delete press marks the row, the second deletes the session on the
 // server. The whole screen is compared except the home's placeholder row.

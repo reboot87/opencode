@@ -1,3 +1,8 @@
+/**
+ * 服务测试夹具。
+ *
+ * 为客户端测试提供响应体与错误码样例。
+ */
 import { appendFile, rename, rm, writeFile } from "node:fs/promises"
 
 const [registration, mode, delay] = process.argv.slice(2)

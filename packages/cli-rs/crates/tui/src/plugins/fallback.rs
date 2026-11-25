@@ -1,4 +1,6 @@
 //! Host fallback for `/plugins` when the plugin manager fails.
+//!
+//! 终端插件视图：回退。
 
 use opencode_plugin::{Entry, Source, Status};
 

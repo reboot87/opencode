@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — SizingMachine。
+ * 会话主界面的视图与状态中负责 SizingMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export const SIZING_SETTLE_MS = 120
 
 // Whether a pane is being resized, so panes skip their size animations. A held pointer keeps it sizing however long

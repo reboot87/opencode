@@ -1,3 +1,7 @@
+/**
+ * 终端插件 — ConnectionMachine。
+ * 内嵌终端的 GUI 插件中负责 ConnectionMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import { decodePersistentPtyMessage, persistentPtyFrame, type PersistentPtyMessage } from "@opencode/client/solid"
 import { Option } from "effect"
 

@@ -1,3 +1,7 @@
+/**
+ * 主页 — HomeStandaloneStories。
+ * 应用主页的视图与数据中负责 HomeStandaloneStories 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionInfo } from "@opencode/client/promise"
 import { createEffect, createMemo, on, onCleanup, Show } from "solid-js"
 import { createStore } from "solid-js/store"

@@ -1,3 +1,7 @@
+/**
+ * 数据领域 — Stat。
+ * 数据采集的领域模型中负责 Stat 部分，提供该部分所需的实现与类型定义。
+ */
 import { sql } from "drizzle-orm"
 
 export const UPSERT_CHUNK_SIZE = 500

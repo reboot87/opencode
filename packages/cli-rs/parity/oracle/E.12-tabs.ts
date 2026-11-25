@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：E.12·标签页。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-FILE for the `tabs` and `layout` storage keys (E.12): crates/tui/tests/all/tabs.rs runs this against the state
 // directory the Rust TUI writes, through the TS storage (`context/storage.tsx`, the same lock and atomic write) and
 // the TS tab model.

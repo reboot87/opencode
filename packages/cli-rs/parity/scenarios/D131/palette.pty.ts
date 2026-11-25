@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：调色板·伪终端。
+ *
+ * 规格编号：D131。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // D131: the command palette at first run. Its suggested commands and groups come in the order of TS's layers:
 // `app.tsx`'s commands last in their order, the home prompt's before them, and the built-in plugins' first, as TS
 // loads those once the first route has mounted. Up from the top shows the end of the list.

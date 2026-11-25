@@ -1,5 +1,7 @@
 //! One worker thread that runs blocking file jobs in the order they were sent, so writes that wait
 //! on a file lock stay off the UI thread and land in order.
+//!
+//! 本地配置与路径：串行。
 
 use std::sync::mpsc;
 

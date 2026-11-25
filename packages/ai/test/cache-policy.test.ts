@@ -1,3 +1,10 @@
+/**
+ * 缓存·策略的测试。
+ *
+ * 被测模块：@opencode/ai/cache-policy
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { Effect } from "effect"
 import { ai, CacheHint, CompactionPart, Message, ProviderID, ToolCallPart } from "../src/effect.js"

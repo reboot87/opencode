@@ -1,3 +1,7 @@
+/**
+ * OpenAI 兼容 Responses provider 门面。
+ * 用通用 Responses 协议快速构造任意兼容端点的 provider，提供模型工厂。
+ */
 import type { ProviderPackage } from "../provider-package.js"
 import { OpenAICompatibleResponses } from "../protocols/openai-compatible-responses.js"
 import { AuthOptions, type ProviderAuthOption } from "../route/auth-options.js"

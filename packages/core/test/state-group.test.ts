@@ -1,3 +1,10 @@
+/**
+ * 状态·分组的测试。
+ *
+ * 被测模块：@opencode/core/state-group
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import { Effect } from "effect"
 import { State } from "@opencode/core/state"

@@ -1,3 +1,7 @@
+/**
+ * 提示区组件 — DraftStash。
+ * 提示输入区的终端组件中负责 DraftStash 部分，提供该部分所需的实现与类型定义。
+ */
 import type { WidthMethod } from "@opentui/core"
 import { appendPrompt, type PromptInfo } from "../../prompt/history"
 import type { PromptRef } from "./index"

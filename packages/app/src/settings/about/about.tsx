@@ -1,3 +1,7 @@
+/**
+ * 关于 — About。
+ * 版本与致谢等信息中负责 About 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createResource, createSignal, onCleanup, untrack } from "solid-js"
 import { writeClipboard } from "@opencode/session-ui/copy"
 import { useDialog } from "@opencode/ui/context/dialog"

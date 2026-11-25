@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：标题·off·退出·伪终端。
+ *
+ * 规格编号：P.0b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // With `terminal.title` off and no plugin title, the TUI sets no title, and exiting still clears it, as TS's
 // `destroyRenderer` clears the title whatever the setting. The counterpart of a plugin title with the setting off.
 // Only the title OSC log is compared.

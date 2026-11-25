@@ -1,3 +1,7 @@
+/**
+ * 模块 — ServerCurrent。
+ * 该目录下的功能模块中负责 ServerCurrent 部分，提供该部分所需的实现与类型定义。
+ */
 import { createContext, Show, useContext, type ParentProps } from "solid-js"
 import { ServerConnection } from "@/runtime/server/registry"
 import { useGlobal, type ServerCtx } from "@/runtime/server/runtime"

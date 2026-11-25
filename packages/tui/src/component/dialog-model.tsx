@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — DialogModel。
+ * 终端界面（Solid）组件中负责 DialogModel 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ModelInfo } from "@opencode/client"
 import { createMemo, createSignal, Show } from "solid-js"
 import { useLocal } from "../context/local"

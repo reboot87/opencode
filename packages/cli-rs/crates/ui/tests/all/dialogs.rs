@@ -1,3 +1,5 @@
+//! 基础 UI 组件库：弹窗。
+
 use opencode_parity::assert_fixture;
 use opencode_ui::dialog::{DialogKeymap, Dialogs, route_keys};
 use opencode_ui::keymap::{Keybinds, Options};

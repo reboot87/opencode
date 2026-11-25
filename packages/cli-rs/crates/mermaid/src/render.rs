@@ -1,4 +1,6 @@
 //! Renders source to styled lines, including partial diagrams while streaming.
+//!
+//! Mermaid 图表渲染：`render`。
 
 use opencode_plugin_abi::Rgba;
 

@@ -1,3 +1,7 @@
+/**
+ * 会话 ID 类型。
+ * 定义会话的品牌 ID 类型。
+ */
 import { Schema } from "effect"
 import { descending } from "./identifier.js"
 import { statics } from "./schema.js"

@@ -1,3 +1,7 @@
+/**
+ * 浏览器配置 — Install。
+ * 浏览器插件的用户配置与身份中负责 Install 部分，提供该部分所需的实现与类型定义。
+ */
 import { mkdir, mkdtemp, readdir, rename, rm } from "node:fs/promises"
 import path from "node:path"
 import type { Session } from "electron"

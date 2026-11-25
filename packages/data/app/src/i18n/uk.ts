@@ -1,3 +1,7 @@
+/**
+ * 数据站文案 — Uk。
+ * 数据站点的多语言文案中负责 Uk 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "app.title": "Рейтинги використання моделей ШІ | OpenCode Data",
   "app.description":

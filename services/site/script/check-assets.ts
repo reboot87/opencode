@@ -1,4 +1,8 @@
 #!/usr/bin/env bun
+
+/**
+ * 站点构建脚本：检查静态资源。
+ */
 // Checks that the captured product screenshots are fresh: compares the manifest written by
 // script/capture-assets.ts with the latest stable OpenCode release on GitHub. Run from packages/console/app:
 //   bun script/check-assets.ts [--manifest public/product-assets/manifest.json] [--max-behind 3]

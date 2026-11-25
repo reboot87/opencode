@@ -1,3 +1,7 @@
+/**
+ * 控制台访问地址。
+ * 根据凭据元数据解析 OpenCode 控制台的服务端地址。
+ */
 export * as ConsoleAccess from "./console-access.js"
 
 import type { Credential } from "./credential.js"

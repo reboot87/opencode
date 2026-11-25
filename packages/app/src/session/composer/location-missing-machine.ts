@@ -1,4 +1,7 @@
-/** A move the server accepted waits this long for the session's new Location to unmount the notice. */
+/**
+ * 
+ * A move the server accepted waits this long for the session's new Location to unmount the notice. LocationMissingMachine：该文件实现 LocationMissingMachine 相关的状态与逻辑。
+ */
 export const LOCATION_MOVE_SETTLE_TIMEOUT_MS = 5_000
 
 export type LocationMissingSource = "worktree" | "directory"

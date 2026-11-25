@@ -1,3 +1,7 @@
+/**
+ * 国际化 — Bs。
+ * 多语言文案资源中负责 Bs 部分，提供该部分所需的实现与类型定义。
+ */
 import { dict as en } from "./en"
 
 type Keys = keyof typeof en

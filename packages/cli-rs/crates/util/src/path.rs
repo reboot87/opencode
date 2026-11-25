@@ -1,6 +1,8 @@
 //! Node's `path.posix` and `path.win32` on strings. TypeScript code uses `path`, which is `path.win32` when
 //! `process.platform` is `win32`; [`Flavor::NATIVE`] picks the same one. The functions are pure, so either flavour
 //! runs on any host, except that [`Flavor::resolve`] on Windows reads the working directory's drive.
+//!
+//! 通用工具：路径。
 
 use std::borrow::Cow;
 use std::path::{Path, PathBuf};

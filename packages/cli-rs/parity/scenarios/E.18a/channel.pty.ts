@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：通道·伪终端。
+ *
+ * 规格编号：E.18a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // T08: without `debug.devtools`, the DevTools bar shows on the `local` channel only. The TS CLI run from source has
 // no embedded channel, so it is `local` and draws the bar; Rust reads its channel at run time, `latest` without
 // `OPENCODE_CHANNEL`, and draws none (parity/deviations/T08-devtools-channel.md). `channel-local.pty.ts` gives Rust

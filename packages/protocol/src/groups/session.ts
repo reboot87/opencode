@@ -1,3 +1,7 @@
+/**
+ * 会话 API 分组。
+ * 定义会话的创建、列举、消息、压缩、权限、统计等全部端点，是最大的 API 分组。
+ */
 import { SessionMessage } from "@opencode/schema/session-message"
 import { SessionInbox } from "@opencode/schema/session-inbox"
 import { PromptInput } from "@opencode/schema/prompt-input"

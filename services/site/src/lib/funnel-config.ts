@@ -29,7 +29,10 @@ const stores: Record<string, string> = {
   "plugins.jetbrains.com": "ide",
 }
 
-/** The config `start` of `/console/funnel/v1.js` takes for this site's and the docs' pages. */
+/** The config `start` of `/console/funnel/v1.js` takes for this site's and the docs' pages.
+ *
+ * 站点共享逻辑：漏斗配置。
+ */
 export function funnelConfig() {
   const stamp = Object.values(
     import.meta.glob<{ default: { commit?: string; build?: string } }>("./build-stamp.json", { eager: true }),

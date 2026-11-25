@@ -1,3 +1,7 @@
+/**
+ * V2 组件 — LineCommentAnnotationsV2。
+ * 第二版会话界面组件中负责 LineCommentAnnotationsV2 部分，提供该部分所需的实现与类型定义。
+ */
 import { type SelectedLineRange } from "@pierre/diffs"
 import { Show, type Accessor, type JSX } from "solid-js"
 import {

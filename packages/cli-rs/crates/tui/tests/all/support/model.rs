@@ -1,5 +1,7 @@
 //! Generate deterministic command traces, check the host and ABI after each run, and shrink failures while preserving
 //! their property and check site. `MODEL_SEED`, `MODEL_SEEDS`, and `MODEL_SKIP` select the cases.
+//!
+//! 终端界面测试：模型。
 
 use std::fmt::Debug;
 

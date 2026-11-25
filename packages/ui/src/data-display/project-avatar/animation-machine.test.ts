@@ -1,3 +1,7 @@
+/**
+ * 项目头像 — AnimationMachineTest。
+ * 项目标识头像组件中负责 AnimationMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   AVATAR_DISPOSED,

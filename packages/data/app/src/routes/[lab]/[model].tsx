@@ -1,3 +1,7 @@
+/**
+ * 实验室页 — [model]。
+ * 单个实验室的数据展示页中负责 [model] 部分，提供该部分所需的实现与类型定义。
+ */
 import { Meta, Title } from "@solidjs/meta"
 import { ProviderIcon } from "@opencode/ui/provider-icon"
 import { scaleSqrt } from "d3-scale"

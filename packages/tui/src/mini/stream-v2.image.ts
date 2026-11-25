@@ -1,3 +1,7 @@
+/**
+ * Mini 精简界面 — StreamV2Image。
+ * 精简交互模式（mini）的界面与交互中负责 StreamV2Image 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageAssistantTool, SessionMessageUser } from "@opencode/client/promise"
 import { deduplicateVisibleImages } from "../prompt/attachment"
 import { toolDisplayContent } from "../util/tool-display"

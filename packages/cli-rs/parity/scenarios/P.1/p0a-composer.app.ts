@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：P0-A·输入框·app。
+ *
+ * 规格编号：P.1。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A plugin's composer edits (rich plugins P0a, ABI 1.5): F8 inserts text at the cursor, in the middle of typed text,
 // and typing goes on after it; F9 sets the text and puts the cursor at its end. TS's plugin inserts through `renderer.currentFocusedEditor`, as npm plugins do; Rust's twin
 // through `edit_composer`. TS loads the plugin from parity/plugins/p0a as a local plugin; Rust registers its twin when

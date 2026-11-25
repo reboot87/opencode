@@ -1,3 +1,7 @@
+/**
+ * ACP 内容转换。
+ * 把 ACP 提示内容转换为会话消息部件。
+ */
 import type { ContentBlock, ContentChunk, ResourceLink } from "@agentclientprotocol/sdk"
 import path from "node:path"
 import { fileURLToPath, pathToFileURL } from "node:url"

@@ -8,6 +8,8 @@ import { $, $$, on, t, target } from "../dom"
  * src/client/menus.ts opens their menus and sheets). A desktop Download button starts the OS's usual
  * build until the browser has said which chip or Linux build this computer needs, then that one. An
  * install command's row copies its command and says "Copied" for 1.5s.
+ *
+ * 客户端交互岛：product·动作。
  */
 export default function productAction() {
   const buttons = $$("[data-desktop-download]")

@@ -1,3 +1,7 @@
+/**
+ * 深度链接 — Index 出口。
+ * 集中导出 深度链接 中 Index 相关的实现、组件与类型。
+ */
 export * as DeepLinks from "./index"
 
 import type { BrowserWindow } from "electron"

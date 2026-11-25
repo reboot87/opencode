@@ -1,4 +1,6 @@
 //! The store contents as plain data. [`crate::Data`] owns them on its thread and runs their requests.
+//!
+//! 会话存储层：状态。
 
 use std::collections::{HashMap, HashSet};
 use std::hash::Hash;

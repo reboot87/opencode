@@ -1,4 +1,6 @@
 //! Parses mention triggers, line ranges and slash commands.
+//!
+//! 基础 UI 组件库：解析。
 
 use opentui::App;
 

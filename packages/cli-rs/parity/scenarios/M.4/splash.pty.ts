@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：启动画面·伪终端。
+ *
+ * 规格编号：M.4。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `mini.splash: show`: the transcript starts under the entry header, and leaving writes the exit banner with the
 // session's title and the command that resumes it.
 import { definePty } from "../../pty/run"

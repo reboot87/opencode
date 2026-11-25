@@ -1,3 +1,6 @@
+/**
+ * 遗留服务：Cloudflare·配置。
+ */
 import { bindings, defineConfig } from "cf/config"
 
 // Deprecated: what is left of V1's hosted services, deployed on its own instead of through SST. Don't add features

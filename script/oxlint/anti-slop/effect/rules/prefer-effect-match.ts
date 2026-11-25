@@ -1,3 +1,6 @@
+/**
+ * Effect 架构 Oxlint 规则：偏好·Effect·match。
+ */
 import { defineRule, type ESTree } from "@oxlint/plugins";
 
 const equalityOperators = new Set(["==", "===", "!=", "!=="]);

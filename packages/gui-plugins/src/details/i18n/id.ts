@@ -1,3 +1,7 @@
+/**
+ * 详情文案 — Id。
+ * 详情插件的多语言文案中负责 Id 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   title: "Detail sesi",
   tooltip: "Ringkasan",

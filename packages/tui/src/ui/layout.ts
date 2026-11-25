@@ -1,3 +1,7 @@
+/**
+ * 终端 UI — Layout。
+ * 终端界面的通用 UI 组件中负责 Layout 部分，提供该部分所需的实现与类型定义。
+ */
 export const SESSION_SIDEBAR_WIDTH = 42
 export const SESSION_TABS_COMPACT_WIDTH = 5
 export const SESSION_TABS_COMPACT_BREAKPOINT = 12

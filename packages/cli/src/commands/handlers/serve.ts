@@ -1,3 +1,7 @@
+/**
+ * serve 命令。
+ * 启动 HTTP 服务端。
+ */
 import { Effect, Option } from "effect"
 import { Commands } from "../commands"
 import { Runtime } from "../../framework/runtime"

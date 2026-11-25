@@ -1,3 +1,10 @@
+/**
+ * 条目·观察者的测试。
+ *
+ * 被测模块：@opencode/core/config/entry-observer
+ *
+ * 覆盖配置加载、合并、校验与分层覆盖（global / project / local）的行为。
+ */
 import { describe, expect } from "bun:test"
 import { Config } from "@opencode/core/config"
 import { Document, Info, type Entry } from "@opencode/schema/config"

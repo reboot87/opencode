@@ -1,3 +1,7 @@
+/**
+ * 数据源 — SourcesTitle。
+ * 会话界面所用的数据来源定义中负责 SourcesTitle 部分，提供该部分所需的实现与类型定义。
+ */
 import { useI18n } from "@opencode/ui/context/i18n"
 import { Icon } from "@opencode/ui/icon"
 import { Show } from "solid-js"

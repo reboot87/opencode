@@ -1,4 +1,6 @@
 //! Session inbox dock and actions on queued prompts.
+//!
+//! 终端界面路由：`queued`。
 
 use opencode_api::generated::{
     SessionInboxCancelInput, SessionInboxDelivery, SessionInboxInfo, SessionInboxUpdateInput, SessionInboxUser,

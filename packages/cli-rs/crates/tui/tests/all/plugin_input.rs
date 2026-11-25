@@ -1,4 +1,6 @@
 //! Exercise input ownership across plugin panels, fields, modes, holds, and overlays.
+//!
+//! 终端界面测试：插件输入。
 
 use crate::support::{self, Harness};
 

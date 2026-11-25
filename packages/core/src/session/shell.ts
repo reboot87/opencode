@@ -1,3 +1,7 @@
+/**
+ * 会话 Shell 执行（SessionShell）。
+ * 在会话上下文中启动 shell 命令执行。
+ */
 export * as SessionShell from "./shell.js"
 
 import type { Session } from "@opencode/schema/session"

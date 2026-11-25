@@ -1,3 +1,6 @@
+/**
+ * 通用界面组件：请求头。
+ */
 import logoLight from "../asset/logo-ornate-light.svg"
 import logoDark from "../asset/logo-ornate-dark.svg"
 import copyLogoLight from "../asset/lander/logo-light.svg"

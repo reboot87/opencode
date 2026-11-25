@@ -1,3 +1,7 @@
+/**
+ * 主页项目 — Menu。
+ * 主页中项目列表的展示中负责 Menu 部分，提供该部分所需的实现与类型定义。
+ */
 import { Show } from "solid-js"
 import { Menu } from "@opencode/ui/menu"
 import { useLanguage } from "@/runtime/i18n/language"

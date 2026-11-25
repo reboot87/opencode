@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid SpinnerRenderableTest：该文件实现 SpinnerRenderableTest 相关的状态与逻辑。
+ */
 import { expect, test } from "bun:test"
 import { RGBA } from "@opentui/core"
 import { ManualClock } from "@opentui/core/testing"

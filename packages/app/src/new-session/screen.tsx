@@ -1,3 +1,7 @@
+/**
+ * 新建会话 — Screen。
+ * 创建新会话的向导与表单中负责 Screen 部分，提供该部分所需的实现与类型定义。
+ */
 import { createPromptProjectController } from "@/new-session/project/selector"
 import { useNewSessionLocationDialog } from "@/new-session/location/dialog"
 import { useTabs, type DraftTab } from "@/shell/tabs/tabs"

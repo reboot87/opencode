@@ -1,4 +1,6 @@
 //! Transcript errors, usage-limit notices, retries, and free-limit prompt recovery.
+//!
+//! 终端界面路由：错误。
 
 use std::collections::HashSet;
 

@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — ChildStoreEvictionTest。
+ * 浏览器环境下的测试中负责 ChildStoreEvictionTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { createMemo, createRoot, getOwner } from "solid-js"
 import { createStore, reconcile } from "solid-js/store"

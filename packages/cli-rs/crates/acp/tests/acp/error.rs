@@ -1,3 +1,5 @@
+//! ACP 协议测试：错误。
+
 use serde_json::json;
 
 use crate::wire::{Server, WireOptions, delivered, events, start_session, text_delta};

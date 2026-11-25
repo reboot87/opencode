@@ -7,7 +7,10 @@ import "./sheet.css"
 
 export type { SheetControl } from "./sheet-motion"
 
-/** Touch phones and tablets get sheets, with the device preview's platform. */
+/** Touch phones and tablets get sheets, with the device preview's platform.
+ *
+ * 站点界面组件：浮层面板。
+ */
 export function prefersSheet(platform = detectPlatform()) {
   return touchDevice(platform)
 }

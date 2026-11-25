@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：插件·代码围栏·外边距·app。
+ *
+ * 规格编号：P.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A plugin's fences with no margin of their own (parity/plugins/fence-margin): after a paragraph, after another fence
 // and after a list. Both clients put one blank row before each, as between any two blocks (Core 0.9.4's Markdown gap;
 // `parity/deviations/F16-plugin-fence-margin.md` has the history).

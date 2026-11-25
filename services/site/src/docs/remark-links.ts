@@ -1,3 +1,6 @@
+/**
+ * V2 文档站：备注链接。
+ */
 interface MarkdownNode {
   type: string
   url?: string

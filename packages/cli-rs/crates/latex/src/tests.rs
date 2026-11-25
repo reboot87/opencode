@@ -1,3 +1,5 @@
+//! LaTeX 公式渲染：`tests`。
+
 use std::rc::Rc;
 
 use opencode_plugin::node::Fences;

@@ -1,3 +1,10 @@
+/**
+ * 状态机·iroh的测试。
+ *
+ * 被测模块：@opencode/server/machine-iroh
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import { NodeHttpServer } from "@effect/platform-node"
 import { OpenCode } from "@opencode/client"

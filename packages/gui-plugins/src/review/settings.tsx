@@ -1,3 +1,7 @@
+/**
+ * 审查插件 — Settings。
+ * 变更审查界面的 GUI 插件中负责 Settings 部分，提供该部分所需的实现与类型定义。
+ */
 import { usePlugin } from "@opencode/plugin/gui"
 import type Review from "./index"
 

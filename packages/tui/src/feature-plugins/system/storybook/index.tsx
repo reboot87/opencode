@@ -1,3 +1,7 @@
+/**
+ * 系统插件故事 — Index 出口。
+ * 集中导出 系统插件故事 中 Index 相关的实现、组件与类型。
+ */
 import { Plugin } from "@opencode/plugin/tui"
 import { useTerminalDimensions } from "@opentui/solid"
 import { createSignal, For, type JSX } from "solid-js"

@@ -1,3 +1,7 @@
+/**
+ * Provider 模型 — Details。
+ * provider 下模型的展示与配置中负责 Details 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, Show } from "solid-js"
 import { Icon } from "@opencode/ui/icon"
 import type { IconName } from "@opencode/ui/icons/catalog"

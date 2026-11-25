@@ -1,3 +1,7 @@
+/**
+ * 按钮 — ButtonStories。
+ * 按钮组件中负责 ButtonStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { For } from "solid-js"
 import { iconNames } from "@opencode/ui/icons/catalog"
 import { Button, type ButtonProps } from "./button"

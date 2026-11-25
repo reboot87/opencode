@@ -1,3 +1,7 @@
+/**
+ * 会话 Location 中间件。
+ * 根据会话 ID 解析并注入对应的 Location 服务。
+ */
 import { Instance } from "@opencode/core/instance/service"
 import { Session } from "@opencode/core/session"
 import { Effect, Layer } from "effect"

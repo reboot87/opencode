@@ -1,3 +1,7 @@
+/**
+ * 行内输入 — InlineInputStories。
+ * 嵌入文本流的输入组件中负责 InlineInputStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { InlineInput, type InlineInputProps } from "./inline-input"
 
 const docs = `### Overview

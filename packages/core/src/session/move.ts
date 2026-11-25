@@ -1,3 +1,7 @@
+/**
+ * 会话迁移（SessionMove）。
+ * 把会话迁移到新目录/位置，处理目标校验、错误与资源搬运。
+ */
 export * as SessionMove from "./move.js"
 
 import type { Session } from "@opencode/schema/session"

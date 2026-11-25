@@ -1,3 +1,7 @@
+/**
+ * GUI 主入口。
+ * GUI 插件运行时的主入口：窗口装配与嵌入。
+ */
 import type { BrowserWindow, NativeImage, WebContentsView } from "electron"
 import type { Schema } from "effect"
 import {

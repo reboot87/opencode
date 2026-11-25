@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — MarkdownCodeMachine。
+ * 跨场景复用的通用 UI 组件中负责 MarkdownCodeMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { MarkdownCodeBlock, MarkdownCodeBlockMatch } from "../context/markdown"
 
 /** A complete block as plugin content or actions received it; another key means the content must mount again. */

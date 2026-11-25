@@ -1,3 +1,5 @@
+//! 终端插件视图：负载。
+
 use opencode_api::client::Client;
 use opencode_api::generated::{
     FileDiffInfo, FileReadInput, SessionDiffInput, SessionID, VcsBaseInput, VcsBaseOutput, VcsDiffInput, VcsDiffOutput,

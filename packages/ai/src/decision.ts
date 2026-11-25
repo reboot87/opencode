@@ -1,3 +1,15 @@
+/**
+ * 决策模型（Decision Model）API：让模型对一组结构化“问题”给出结构化“答案”。
+ *
+ * 与 chat 的区别：这里不是开放对话，而是让模型做三类确定性判断：
+ *   - predicate：判断真伪（可附 true/false 判定标准）；
+ *   - choice：从候选项里选一个（值区分类型：true 与 "true" 不同）；
+ *   - score：按分级标签打分。
+ *
+ * 文件结构：输入类型（Parts / Questions）→ 答案类型（Answer）→ 模型封装（DecisionModel / Route）
+ * → 请求构建（request）→ generate（生成并校验答案）。
+ * 大量使用 Schema 做运行时校验和类型推导，AnswerFor / AnswersFor 在类型层面把答案形状和问题对应起来。
+ */
 import { Effect, Schema } from "effect"
 import { DecisionClient, Service, type Execute } from "./decision-client.js"
 import { Media } from "./media.js"
@@ -43,7 +55,7 @@ export type DecisionInput = typeof Schema.JsonObject.Type | ReadonlyArray<Decisi
 // Questions
 // ---------------------------------------------------------------------------
 
-/** Choice values are typed: `true` and `"true"` are different values. */
+/** 选项值带类型：布尔 true 与字符串 "true" 是两个不同的值。 */
 export const ChoiceValue = Schema.Union([Schema.String, Schema.Boolean])
 export type ChoiceValue = Schema.Schema.Type<typeof ChoiceValue>
 
@@ -51,7 +63,7 @@ export const PredicateQuestion = Schema.Struct({
   name: Schema.String,
   type: Schema.Literal("predicate"),
   instructions: Schema.String,
-  /** What counts as true and as false, for statements the instructions alone leave ambiguous. */
+  /** 判定标准：当指令本身不足以区分真伪时，说明什么算 true、什么算 false。 */
   criteria: Schema.optional(
     Schema.Struct({ true: Schema.optional(Schema.String), false: Schema.optional(Schema.String) }),
   ),
@@ -80,7 +92,7 @@ export const DecisionQuestion = Schema.Union([PredicateQuestion, ChoiceQuestion,
 export type DecisionQuestion = Schema.Schema.Type<typeof DecisionQuestion>
 export type DecisionQuestions = ReadonlyArray<DecisionQuestion>
 
-// Only what makes a request meaningless is checked here; counts and sizes are the host's to enforce.
+// 这里只校验会让请求变得“无意义”的部分；数量、大小等限制由宿主（调用方）负责。
 const DecisionQuestionList = Schema.Array(DecisionQuestion).pipe(
   Schema.refine((x): x is typeof x => x.length > 0, { message: "Decision questions must not be empty" }),
   Schema.refine((x): x is typeof x => new Set(x.map((question) => question.name)).size === x.length, {
@@ -170,19 +182,22 @@ export type AnswersFor<Questions extends DecisionQuestions> = {
 
 export type DecisionOptions = Record<string, unknown>
 
-/** What a decision model's route does; `DecisionRoute.make(...).model(...)` builds one from a protocol. */
+/**
+ * 决策模型的路由抽象：定义一个决策模型“如何生成答案”。
+ * 协议实现通过 `DecisionRoute.make(...).model(...)` 构造它。
+ */
 export interface DecisionModelRoute<Options extends DecisionOptions = DecisionOptions> {
   readonly id: string
   generate(request: DecisionRequest<DecisionModel<Options>>, execute: Execute): Effect.Effect<DecisionResponse, AIError>
 }
 
-/** Host quirks a protocol adapts to, like `LanguageModelCompatibility` for language models. */
+/** 协议需要适配的宿主特性（类似语言模型的 LanguageModelCompatibility）。 */
 export class DecisionModelCompatibility extends Schema.Class<DecisionModelCompatibility>("Decision.ModelCompatibility")(
   {
     /**
-     * Where a System One host reads media, from models.dev `[api.systemone] compatibility.media_input`, named after
-     * where the media goes in the body: `assets` (TypeSafe's assets map, referenced from the state), `state` (items
-     * inside a state list) or `root` (one top-level list per kind: `images`, `audio`, `videos`).
+     * System One 宿主从哪里读取媒体，取自 models.dev 的 `[api.systemone] compatibility.media_input`。
+     * 命名依据是媒体在请求体中的位置：assets（TypeSafe 的 assets 映射，从 state 引用）、
+     * state（state 列表内的条目）、root（每类一个顶层列表：images / audio / videos）。
      */
     mediaInput: Schema.optional(Schema.Literals(["assets", "state", "root"])),
   },
@@ -200,10 +215,10 @@ export class DecisionModel<Options extends DecisionOptions = DecisionOptions> {
   readonly id: ModelID
   readonly provider: ProviderID
   readonly route: DecisionModelRoute<Options>
-  /** Deployment headers, timeouts and `http` overlays, below each request's own. */
+  /** 部署级的 headers / 超时 / http 覆盖，优先级低于每个请求自己的设置。 */
   readonly transport?: TransportOptions
   readonly compatibility?: DecisionModelCompatibility
-  /** Defaults under each request's `providerOptions`, such as options a provider package reads from its settings. */
+  /** 每个请求 providerOptions 的默认值，例如 provider 包从自身 settings 读取的选项。 */
   readonly providerOptions?: ProviderOptions
 
   constructor(input: DecisionModel.Input<Options>) {
@@ -299,7 +314,10 @@ export type DecisionResponseFor<Questions extends DecisionQuestions> = Omit<Deci
 // Call API
 // ---------------------------------------------------------------------------
 
-/** Normalize decision request input into a plain `DecisionRequest`; a plain object `input` becomes one `json` part. */
+/**
+ * 把高层输入规范化为 DecisionRequest：
+ * 若 input 是数组就逐项转成 DecisionPart；若是普通 JSON 对象，则包装成一个 json part。
+ */
 export const request = <const Model extends DecisionModel, const Questions extends DecisionQuestions>(
   input: DecisionRequestInput<Model, Questions>,
 ): DecisionRequest<Model, Questions> => ({
@@ -309,7 +327,7 @@ export const request = <const Model extends DecisionModel, const Questions exten
 
 const validate = Schema.decodeUnknownSync(DecisionRequestSchema)
 
-// `Array.isArray` doesn't narrow a readonly array union, so the object branch would keep the parts type.
+// 用显式类型守卫而不是裸 Array.isArray：后者无法收窄 readonly 数组联合类型，会让对象分支仍保留 parts 类型。
 const isParts = (input: DecisionInput): input is ReadonlyArray<DecisionPartInput> => Array.isArray(input)
 
 const decisionPart = (part: DecisionPartInput): DecisionPart => {
@@ -324,6 +342,7 @@ export function generate<const Model extends DecisionModel, const Questions exte
 export function generate(input: DecisionRequestInput) {
   return tryRequest(() => {
     const normalized = request(input)
+    // 运行时校验请求合法性（数量/结构），校验失败作为 InvalidRequest 错误抛出
     validate(normalized)
     return normalized
   }).pipe(Effect.flatMap(DecisionClient.generate))

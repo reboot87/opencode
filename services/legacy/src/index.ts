@@ -1,3 +1,6 @@
+/**
+ * 遗留服务实现：索引。
+ */
 import api, { type Env } from "./api"
 import share from "./share"
 

@@ -1,3 +1,10 @@
+/**
+ * 会话·存储层的测试。
+ *
+ * 被测模块：@opencode/core/session-store
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import { asc, eq } from "drizzle-orm"
 import { Effect } from "effect"

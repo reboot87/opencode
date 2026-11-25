@@ -1,3 +1,10 @@
+/**
+ * 内部·开关的测试。
+ *
+ * 被测模块：@opencode/core/plugin/internal-flag
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { describe, expect } from "bun:test"
 import { Duration, Effect, Layer, LayerMap, Stream } from "effect"
 import { App } from "@opencode/core/app"

@@ -1,3 +1,7 @@
+/**
+ * 会话消息类型。
+ * 定义会话消息（用户/助手/系统/压缩等）的完整结构与内容部件。
+ */
 export * as SessionMessage from "./session-message.js"
 
 import { Schema } from "effect"

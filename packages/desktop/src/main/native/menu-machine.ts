@@ -1,3 +1,7 @@
+/**
+ * 原生能力 — MenuMachine。
+ * 调用系统原生能力的封装中负责 MenuMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { MenubarEntry } from "./menu"
 
 export type MenubarProvider = () => readonly MenubarEntry[]

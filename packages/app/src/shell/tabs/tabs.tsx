@@ -1,3 +1,7 @@
+/**
+ * 标签页 — Tabs。
+ * 多标签页的打开与切换中负责 Tabs 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionInfo, SessionMessageUser } from "@opencode/client/promise"
 import type { ComposerSelection } from "@/composer/adapter"
 import { createSimpleContext } from "@opencode/ui/context"

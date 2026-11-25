@@ -1,3 +1,8 @@
+/**
+ * CLI 对等性校验：差异。
+ *
+ * CLI 交互的对等性校验：比对命令输出与退出码。
+ */
 // A readable report of how two P-CLI or P-PTY records differ: one block per differing field, with
 // the lines of each side marked where they differ. An empty string means equal.
 

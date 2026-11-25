@@ -1,3 +1,7 @@
+/**
+ * 浏览器磁盘 — ContainedFile。
+ * 浏览器插件的磁盘数据存储中负责 ContainedFile 部分，提供该部分所需的实现与类型定义。
+ */
 import { constants } from "node:fs"
 import { open, realpath, stat } from "node:fs/promises"
 import { isAbsolute, join } from "node:path"

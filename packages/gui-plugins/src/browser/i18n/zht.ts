@@ -1,3 +1,7 @@
+/**
+ * 浏览器文案 — Zht。
+ * 浏览器插件的多语言文案中负责 Zht 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.open": "開啟瀏覽器",
   "command.reload": "重新載入瀏覽器頁面",

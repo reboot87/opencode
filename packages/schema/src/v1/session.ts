@@ -1,3 +1,7 @@
+/**
+ * v1 会话类型。
+ * 兼容 v1 的会话结构（仅用于迁移）。
+ */
 export * as SessionV1 from "./session.js"
 
 import { Effect, Schema, Types } from "effect"

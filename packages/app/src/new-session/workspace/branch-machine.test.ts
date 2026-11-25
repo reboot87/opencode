@@ -1,3 +1,7 @@
+/**
+ * 新会话工作区 — BranchMachineTest。
+ * 新建会话时的工作区选择中负责 BranchMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   INITIAL_BRANCH_PICKER_STATE,

@@ -1,3 +1,7 @@
+/**
+ * 会话请求 — SessionQuestionDockClassic。
+ * 会话界面的请求发起与状态跟踪中负责 SessionQuestionDockClassic 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, Show, createEffect, createMemo, onCleanup, onMount, type Component } from "solid-js"
 import { createStore } from "solid-js/store"
 import { Button } from "@opencode/ui/button"

@@ -1,3 +1,10 @@
+/**
+ * 模型的测试。
+ *
+ * 被测模块：@opencode/core/models
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { Money } from "@opencode/schema/money"
 import { Effect, Exit, Fiber, Layer, Ref, Scope, Stream, Tracer } from "effect"

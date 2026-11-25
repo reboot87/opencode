@@ -1,3 +1,7 @@
+/**
+ * 上下文文案 — It。
+ * GUI 上下文的多语言文案中负责 It 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "tab.title": "Contesto",
   "mobile.title": "Utilizzo",

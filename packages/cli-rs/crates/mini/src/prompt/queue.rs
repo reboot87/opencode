@@ -1,4 +1,6 @@
 //! Serializes local operations and turns. Follow-up prompts can reach the server while a turn is running.
+//!
+//! 精简版实现：队列。
 
 use std::collections::VecDeque;
 

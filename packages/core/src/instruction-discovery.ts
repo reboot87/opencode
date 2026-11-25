@@ -1,3 +1,7 @@
+/**
+ * 指令发现服务。
+ * 发现并加载项目指令文件（CLAUDE.md/AGENTS.md 等），产出带键的指令条目。
+ */
 export * as InstructionDiscovery from "./instruction-discovery.js"
 
 import { Context, Effect, Layer, Schema, Types } from "effect"

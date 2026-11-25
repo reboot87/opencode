@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — PatchmarkTest。
+ * 终端界面的测试中负责 PatchmarkTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { createMarkdownStream, renderBlocksToHtml, splitPendingMarker, type MarkdownBlock } from "../src/index"
 

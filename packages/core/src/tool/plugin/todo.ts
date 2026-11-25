@@ -1,3 +1,7 @@
+/**
+ * todo 工具。
+ * 维护任务待办清单（todowrite）的工具。
+ */
 export * as TodoTool from "./todo.js"
 
 import { ToolFailure } from "@opencode/ai/effect"

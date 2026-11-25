@@ -1,3 +1,7 @@
+/**
+ * SSH 插件 — WindowMachine。
+ * 远程主机管理的 GUI 插件中负责 WindowMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SshConfig, SshItem } from "./contract"
 
 /** Who shows the attempt's prompts: nobody yet, a prompt dialog whose chunk is loading, or an open dialog. */

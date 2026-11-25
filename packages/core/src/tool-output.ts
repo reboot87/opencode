@@ -1,3 +1,7 @@
+/**
+ * 工具输出保留。
+ * 控制工具输出的行数（2000）与字节数（50KiB）上限，并按 7 天保留期清理。
+ */
 export * as ToolOutput from "./tool-output.js"
 
 import path from "path"

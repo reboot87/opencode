@@ -1,4 +1,7 @@
-/** Remote preview requests use portable workspace-relative segments, never a server or OS address. */
+/**
+ * 
+ * Remote preview requests use portable workspace-relative segments, never a server or OS address. 浏览器插件中负责 PreviewPath 部分：浏览器扩展实现中与 PreviewPath 相关的状态、交互与渲染逻辑。
+ */
 export function previewPath(path: string, windows = false) {
   return !/^[a-z]:\//i.test(path) && path.split("/").every((part) => !!part && part !== "." && part !== ".." &&
     !/[\\\u0000-\u001f]/.test(part) && (!windows || windowsPreviewSegment(part)))

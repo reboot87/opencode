@@ -1,3 +1,7 @@
+/**
+ * 回归测试 — SettingsWslSpec。
+ * 防止既有行为退化的端到端用例中负责 SettingsWslSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { base64Encode } from "@opencode/util/encode"
 import { expect, test, type Locator } from "@playwright/test"
 import { NO_PROVIDER, REMOTE_SERVER, SERVER, holdRoute, project, provider, session } from "../utils/app"

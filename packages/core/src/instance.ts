@@ -1,3 +1,7 @@
+/**
+ * 实例服务图（Instance）。
+ * 定义实例级别的服务节点图（graph）与聚合 Services 类型，是 Location 服务装配的基础。
+ */
 import { Context, Effect, Layer } from "effect"
 import { Agent } from "./agent.js"
 import { App } from "./app.js"

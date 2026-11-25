@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — ImagePreview。
+ * 跨场景复用的通用 UI 组件中负责 ImagePreview 部分，提供该部分所需的实现与类型定义。
+ */
 import { Dialog as Kobalte, useDialogContext } from "@kobalte/core/dialog"
 import { makeEventListener } from "@solid-primitives/event-listener"
 import { createResizeObserver } from "@solid-primitives/resize-observer"

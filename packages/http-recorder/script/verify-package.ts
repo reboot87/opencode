@@ -1,4 +1,9 @@
 #!/usr/bin/env bun
+
+/**
+ * UI 构建脚本 — VerifyPackage。
+ * 前端 UI 包的构建与生成脚本中负责 VerifyPackage 部分，提供该部分所需的实现与类型定义。
+ */
 import { mkdtemp, rm, writeFile } from "node:fs/promises"
 import { tmpdir } from "node:os"
 import path from "node:path"

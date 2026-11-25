@@ -1,3 +1,7 @@
+/**
+ * Provider 设置 — Providers。
+ * provider 的账号与密钥设置中负责 Providers 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { Badge } from "@opencode/ui/badge"
 import { useDialog } from "@opencode/ui/context/dialog"

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：报告·伪终端。
+ *
+ * 规格编号：M.5。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Subagents always run in the background (#63382), and each time a child goes idle its report wakes the parent
 // (#63209). With `mini.tools: show`, a prompt's turn launches a subagent: the launch completes while the child
 // still runs, so the scrollback shows the subagent card, not the launch instructions (#63389). Then the child goes

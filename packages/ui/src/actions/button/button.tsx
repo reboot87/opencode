@@ -1,3 +1,7 @@
+/**
+ * 按钮 — Button。
+ * 按钮组件中负责 Button 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Root } from "@kobalte/core/button"
 import { type ComponentProps, Show, splitProps } from "solid-js"
 import { Icon, type IconProps } from "@opencode/ui/icon"

@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — Network。
+ * 内置浏览器功能的 GUI 插件中负责 Network 部分，提供该部分所需的实现与类型定义。
+ */
 import { net, session, type WebContents } from "electron"
 import type { RpcClient } from "@opencode/client/effect/api"
 import type { Session } from "@opencode/schema/session"

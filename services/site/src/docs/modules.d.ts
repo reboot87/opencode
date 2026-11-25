@@ -1,3 +1,6 @@
+/**
+ * V2 文档站：模块·d。
+ */
 // The slug of every docs page, by set (vite.ts), so the Worker knows them without loading any content.
 declare module "virtual:docs-pages" {
   export const docsSlugs: Record<"latest" | "v1", string[]>

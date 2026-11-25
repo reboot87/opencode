@@ -1,3 +1,7 @@
+/**
+ * Poe 插件。
+ * 注册 Poe provider 与浏览器登录集成。
+ */
 import { define } from "@opencode/plugin/effect/plugin"
 import { Clock, Deferred, Effect, Option, Schema } from "effect"
 import { HttpClient, HttpClientRequest, HttpClientResponse } from "effect/http"

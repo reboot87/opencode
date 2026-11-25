@@ -1,3 +1,7 @@
+/**
+ * Provider 模型 — Manage。
+ * provider 下模型的展示与配置中负责 Manage 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { Dialog, DialogBody, DialogHeader, DialogTitleGroup } from "@opencode/ui/dialog"
 import { Icon } from "@opencode/ui/icon"

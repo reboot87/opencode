@@ -1,3 +1,7 @@
+/**
+ * Agent 配置插件。
+ * 从配置中发现并加载 agent 定义，兼容旧来源目录（agent/agents/mode/modes）。
+ */
 export * as ConfigAgentPlugin from "./agent.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

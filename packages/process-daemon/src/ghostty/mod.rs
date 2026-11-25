@@ -1,5 +1,7 @@
 //! The service's small, actor-local adapter to the official libghostty C API.
 //! Native handles and borrowed grid references never leave this module.
+//!
+//! Ghostty 终端集成入口。
 
 mod effects;
 mod ffi;

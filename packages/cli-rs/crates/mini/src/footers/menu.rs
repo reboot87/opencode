@@ -1,4 +1,6 @@
 //! Grouped footer menus. Autocomplete uses a separate flat menu.
+//!
+//! 精简版实现：菜单。
 
 use crate::prelude::*;
 use crate::prompt::menu::{COMPACT_WIDTH, Selection, fit};

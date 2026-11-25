@@ -1,3 +1,7 @@
+/**
+ * 图标 — Catalog。
+ * 图标资源与定义中负责 Catalog 部分，提供该部分所需的实现与类型定义。
+ */
 // Every icon the app draws, one entry per artwork. Consumers center the SVG viewport, so each icon must center its
 // artwork within its viewBox.
 const icons = {

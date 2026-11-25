@@ -1,3 +1,7 @@
+/**
+ * 调试文案 — Ca。
+ * 调试插件的多语言文案中负责 Ca 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.toggle": "Commuta la barra de depuració",
   providerAriaLabel: "Diagnòstic del rendiment del proveïdor",

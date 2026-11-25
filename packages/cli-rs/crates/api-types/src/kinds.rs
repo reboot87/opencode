@@ -1,4 +1,6 @@
 //! Sets of event types, matched by [`EventKind`] rather than by name.
+//!
+//! API 类型定义：`kinds`。
 
 use crate::types::{EventKind, V2Event};
 

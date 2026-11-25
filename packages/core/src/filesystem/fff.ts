@@ -1,3 +1,7 @@
+/**
+ * 文件查找抽象。
+ * 定义文件查找（fff）能力的统一接口与结果类型，各平台实现绑定原生库。
+ */
 export type Result<T> = { ok: true; value: T } | { ok: false; error: string }
 
 export interface Init {

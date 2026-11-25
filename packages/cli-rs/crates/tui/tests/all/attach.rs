@@ -1,4 +1,6 @@
 //! Clipboard reads use a test sink; the fake server records attachment and stash requests.
+//!
+//! 终端界面测试：`attach`。
 
 use crate::support::{self, DIRECTORY, Fake, Harness, Log, WAIT, deref_harness};
 

@@ -1,3 +1,7 @@
+/**
+ * 消息渲染 — AttachmentMediaMachine。
+ * 会话消息的渲染组件中负责 AttachmentMediaMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { PromptAttachment } from "@opencode/client/promise"
 
 /** A media read that never settles shows the failed tile after this long, as file and markdown images do. */

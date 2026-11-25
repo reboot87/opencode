@@ -1,3 +1,7 @@
+/**
+ * 端到端测试工具 — Notifications。
+ * 端到端测试的公共辅助中负责 Notifications 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Page } from "@playwright/test"
 
 export async function recordNotifications(page: Page) {

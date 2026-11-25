@@ -9,6 +9,8 @@ import { addCustomNavItem, navVersions, removedNavItems, resetNav, restoreNavIte
  * ⌥] step through them; the active one carries an "edited" dot while the nav differs from it), and
  * a menu to save the nav as a new version, update or delete the active one, rename any saved one,
  * reset the nav and add items back. Built-in versions (Default and the presets) are read-only.
+ *
+ * 站点界面组件：导航版本。
  */
 // The menu is open or a version is being renamed: Design mode hides its own overlay meanwhile.
 const [open, setOpen] = createSignal(false)

@@ -1,3 +1,7 @@
+/**
+ * 加载指示 — LoaderStories。
+ * 加载中状态指示组件中负责 LoaderStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Loader } from "./loader"
 
 const docs = `### Overview

@@ -1,3 +1,7 @@
+/**
+ * 重试工具测试。
+ * 验证可重试条件的判定与退避次数。
+ */
 import { describe, expect, test } from "bun:test"
 import { retry } from "./retry.js"
 

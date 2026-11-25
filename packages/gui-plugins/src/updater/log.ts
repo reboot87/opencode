@@ -1,3 +1,7 @@
+/**
+ * 更新插件 — Log。
+ * 应用更新提示的 GUI 插件中负责 Log 部分，提供该部分所需的实现与类型定义。
+ */
 import { Effect, Layer, Logger, References } from "effect"
 
 /** Services for running the updater's effects: every log goes to the desktop log file, debug included. */

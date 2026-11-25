@@ -1,4 +1,8 @@
-/** Timestamps are performance.now()-style milliseconds. Fixed ring buffer; push allocates nothing. */
+/**
+ * Timestamps are performance.now()-style milliseconds. Fixed ring buffer; push allocates nothing.
+ *
+ * 时间戳为 performance.now() 风格的毫秒数；使用固定大小的环形缓冲区，push 不产生任何分配。
+ */
 export class VelocityTracker {
   private xs = new Float64Array(128)
   private ys = new Float64Array(128)

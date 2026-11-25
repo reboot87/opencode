@@ -1,5 +1,7 @@
 //! Callback state shared with Ghostty through retained userdata. Keep this module
 //! independent of native calls so its ownership rules can also be checked by Miri.
+//!
+//! Ghostty 终端集成：`effects`。
 
 use std::any::Any;
 use std::cell::{Cell, RefCell};

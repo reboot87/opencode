@@ -1,3 +1,7 @@
+/**
+ * GUI 响应式原语。
+ * 定义基于 Accessor 的响应式数据源与订阅机制。
+ */
 import {
   createMemo,
   createRenderEffect,

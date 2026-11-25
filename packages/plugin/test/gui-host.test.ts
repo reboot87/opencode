@@ -1,3 +1,10 @@
+/**
+ * gui·主机的测试。
+ *
+ * 被测模块：@opencode/plugin/gui-host
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { evaluatePluginBundle, inertModule, pluginIdAvailable, type InertModule } from "../src/gui/host"
 import { Contract } from "../src/gui/core"

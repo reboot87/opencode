@@ -1,3 +1,7 @@
+/**
+ * 国际化 — Ru。
+ * 多语言文案资源中负责 Ru 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "ui.sessionReview.title": "Изменения сессии",
   "ui.sessionReview.title.git": "Изменения Git",

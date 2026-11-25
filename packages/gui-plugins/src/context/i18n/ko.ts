@@ -1,3 +1,7 @@
+/**
+ * 上下文文案 — Ko。
+ * GUI 上下文的多语言文案中负责 Ko 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "tab.title": "컨텍스트",
   "mobile.title": "용법",

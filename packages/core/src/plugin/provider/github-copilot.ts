@@ -1,3 +1,7 @@
+/**
+ * GitHub Copilot 插件。
+ * 注册 GitHub Copilot provider，实现设备码登录与模型目录拉取。
+ */
 import type { IntegrationOAuthMethodRegistration } from "@opencode/plugin/effect/integration"
 import type { SessionRequestKind, SessionTitle } from "@opencode/plugin/effect/session"
 import { isRecord } from "@opencode/util/record"

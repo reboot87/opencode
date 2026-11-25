@@ -1,3 +1,18 @@
+/**
+ * 工具定义与构造模块（tool definition）。
+ *
+ * 这里的 Tool 是一个“自带 schema 的可执行单元”：把工具名、描述、输入/输出 schema、
+ * 执行器打包在一起，并在内部缓存好编解码器与模型可见的定义，避免每次调用重建。
+ *
+ * 主要导出：
+ *   - tool(...)：构造一个只有定义、可能带执行器的工具；
+ *   - build(...)：构造带执行器的工具，并从 schema 推导出输入输出类型；
+ *   - toDefinitions：把工具集合转成发给模型的 ToolDefinition 列表；
+ *   - 各种 type：ToolInput / ToolExecute / FreeformOption 等类型约束。
+ *
+ * 类型安全是这个文件的核心：`FreeformOption` 等类型级技巧保证只有符合条件
+ * （例如恰好有一个必填字符串字段）的工具才能声明 freeform 输入。
+ */
 import { Effect, JsonSchema, Schema } from "effect"
 import type { Content } from "@opencode/schema/tool"
 import type {
@@ -16,16 +31,15 @@ import {
 import { isRecord } from "./utils/record.js"
 
 /**
- * Schema constraint for tool input / success values: no decoding or
- * encoding services are allowed. Tools should be self-contained — anything
- * beyond pure data conversion belongs in the handler closure.
+ * 工具输入/输出值的 schema 约束：不允许依赖任何编解码服务（R=never）。
+ * 工具应当自包含——纯数据转换之外的逻辑都放进执行器闭包里。
  */
 export type ToolSchema<T> = Schema.Codec<T, any, never, never>
 
-/** A tool's `input`: an Effect Schema decodes and types it; a raw JSON Schema leaves it `unknown`. */
+/** 工具的 input：Effect Schema 可解码并推导类型；裸 JSON Schema 只能得到 unknown。 */
 export type ToolInput = ToolSchema<any> | JsonSchema.JsonSchema
 
-/** The value `execute` receives for a tool `input`. */
+/** execute 处理器拿到的输入值类型：从 ToolSchema 推导 T，裸 JSON Schema 则为 unknown。 */
 export type ToolInputType<Input extends ToolInput> = Input extends ToolSchema<infer T> ? T : unknown
 
 export interface ToolExecuteContext {
@@ -64,8 +78,11 @@ type RequiredStringField<T> = {
 }[keyof T]
 
 /**
- * `Freeform` for exactly one required string field or unknown ones (a JSON Schema `input`), `Freeform` naming its
- * `field` for a required string field among others, otherwise `undefined`.
+ * 类型级推导：决定一个工具能否声明 freeform（自由文本）输入，以及字段名。
+ *   - 输入类型未知（裸 JSON Schema）→ 允许 Freeform；
+ *   - 存在多个字符串字段 → 允许 Freeform 且可指定 field；
+ *   - 恰好一个必填字符串字段 → 允许 Freeform 并自动指向该字段；
+ *   - 没有字符串字段 → 为 undefined（不能声明 freeform）。
  */
 export type FreeformOption<Input extends ToolInput> =
   unknown extends ToolInputType<Input>
@@ -77,19 +94,14 @@ export type FreeformOption<Input extends ToolInput> =
       : Freeform & { readonly field?: FreeformField<ToolInputType<Input>> }
 
 /**
- * A type-safe LLM tool. Each tool bundles its own description, input
- * Schema and success Schema. The execute handler is optional: omit it when you
- * only want to expose a tool schema to the model and handle tool calls outside
- * this package.
+ * 类型安全的 LLM 工具。每个工具自带描述、输入 schema 和成功 schema。
+ * execute 执行器是可选的：若只想把工具 schema 暴露给模型、在别处处理调用，可以省略。
  *
- * Errors must be expressed as `ToolFailure`. Unmapped errors and defects fail
- * the stream.
- *
- * Internally each tool also carries memoized codecs and a precomputed
- * `ToolDefinition` so callers do not rebuild them per invocation.
+ * 错误必须用 ToolFailure 表达；未映射的错误和缺陷会让整个流失败。
+ * 内部还缓存了编解码器和预先算好的 ToolDefinition，避免每次调用重建。
  */
 export interface Tool<Input extends ToolInput = any, Success extends ToolSchema<any> = any> {
-  /** The tool name the model sees and calls. */
+  /** 模型看到并调用的工具名。 */
   readonly name: string
   readonly description: string
   readonly input: Input
@@ -97,20 +109,20 @@ export interface Tool<Input extends ToolInput = any, Success extends ToolSchema<
   readonly execute?: ToolExecute<Input, Success>
   readonly toModelOutput?: ToolToModelOutput<Input, Success>
   readonly toStructuredOutput?: (output: Success["Encoded"]) => unknown
-  /** @internal */
+  /** @internal 把模型传入的未知输入解码成工具输入类型。 */
   readonly _decode: (input: unknown) => Effect.Effect<ToolInputType<Input>, Schema.SchemaError>
-  // Method syntax keeps these parameters bivariant, so a concrete tool stays assignable to `ExecutableTool`.
-  /** @internal */
+  // 用方法语法保持参数双变（bivariant），使具体工具可赋值给 ExecutableTool。
+  /** @internal 把执行结果编码回对外值。 */
   _encode(value: Schema.Schema.Type<Success>): Effect.Effect<unknown, Schema.SchemaError>
-  /** @internal */
+  /** @internal 把原始输出投影成 ToolOutput。 */
   _project(input: ToolInputType<Input>, id: ToolCallPart["id"], output: unknown): ToolOutputType
-  /** @internal */
+  /** @internal 是否为旧式结果格式。 */
   readonly _legacyResult: boolean
-  /** @internal */
+  /** @internal 预先算好的、发给模型的工具定义。 */
   readonly _definition: ToolDefinitionClass
 }
 
-/** Tool changes for `Message.tools`: `add` takes what a request's `tools` takes, `remove` the same tools or their names. */
+/** Message.tools 的工具变更：add 接受请求 tools 的参数类型，remove 接受同样的工具或工具名。 */
 export interface ToolChangesInput {
   readonly add?: ReadonlyArray<Tool | ToolEntryInput>
   readonly remove?: ReadonlyArray<Tool | ToolEntryInput | string>
@@ -166,10 +178,16 @@ export const tool = <
 ) => build(config, config.execute)
 
 declare const noExecute: unique symbol
-/** @internal The inferred `execute` result when `execute` is omitted; no function can return it. */
+/** @internal 省略 execute 时推导出的结果类型；没有任何函数能真正返回它，用于类型层面区分“无执行器”。 */
 export type NoExecute = { readonly [noExecute]: never }
 
-/** @internal Builds a tool for both clients from its options and an Effect `execute`. */
+/**
+ * @internal 根据配置和执行器构造工具（同时服务客户端与服务端）。
+ * 重载签名用类型技巧判断：有 execute → ExecutableTool；没有 → 普通 Tool；Result 为 any 时按可执行处理。
+ * 实现里根据 input 是不是 Effect Schema 分两条路：
+ *   - Effect Schema：用 decodeUnknownEffect / encodeEffect 做输入输出编解码；
+ *   - 裸 JSON Schema：直接放行（解码/编码都是 Effect.succeed），因为无法做类型级编解码。
+ */
 export function build<Input extends ToolInput, Success extends ToolSchema<any>, Result>(
   config: ToolOptions<Input, Success, (...args: never) => Result>,
   execute: ((input: ToolInputType<Input>, context?: ToolExecuteContext) => unknown) | undefined,
@@ -195,6 +213,7 @@ export function build(
       project(config.toModelOutput, config.toStructuredOutput, input, id, output),
   }
   const input = config.input
+  // 裸 JSON Schema 分支：无法类型级编解码，直接放行；结果格式按是否自定义输出判断
   if (!Schema.isSchema(input))
     return {
       ...shared,
@@ -211,6 +230,7 @@ export function build(
         freeform: config.freeform,
       }),
     }
+  // Effect Schema 分支：用 schema 做真正的编解码
   return {
     ...shared,
     input,
@@ -228,18 +248,18 @@ export function build(
   }
 }
 
-/** The `ToolDefinition[]` that `LLMRequest.tools` expects, in array order. */
+/** 取出每个工具的预计算定义，供 LLMRequest.tools 使用（保持数组顺序）。 */
 export const toDefinitions = (tools: ReadonlyArray<Tool>): ReadonlyArray<ToolDefinitionClass> =>
   tools.map((item) => item._definition)
 
 /**
- * Describes a no-argument Effect tool input as an empty object, or returns
- * `undefined` when the input takes arguments.
+ * 把“无参数”的 Effect 工具输入描述成空对象；若工具带参数则返回 undefined。
  *
- * Effect emits `{ not: { type: "null" } }` only for an encoded struct with no
- * properties or index signatures, but providers require tool parameters to
- * describe an object. Annotations are kept; any other keyword, such as a
- * check's `minProperties`, leaves the schema as Effect emitted it.
+ * 背景：Effect 对没有任何属性/索引签名的 struct 会生成 `{ not: { type: "null" } }`，
+ * 但模型提供方要求工具参数必须描述成一个 object。这里识别这种情况并转成
+ * `type: "object", properties: {}, additionalProperties: false`。
+ * 只保留注解关键字（title/description 等）；出现其它约束（如 minProperties）则原样返回，
+ * 交由 toJsonSchema 处理。
  */
 export const emptyInputJsonSchema = (schema: Schema.Top): JsonSchema.JsonSchema | undefined => {
   const { not, ...rest } = Schema.toJsonSchemaDocument(schema, { referencePolicy: () => undefined }).schema
@@ -248,7 +268,9 @@ export const emptyInputJsonSchema = (schema: Schema.Top): JsonSchema.JsonSchema 
   return { ...rest, type: "object", properties: {}, additionalProperties: false }
 }
 
+/** 构造 ToolDefinition，并校验 freeform 配置是否符合 schema（否则 early error）。 */
 const definition = (input: ToolDefinitionInput) => {
+  // freeform 要求 schema 里有合适的字符串字段，找不到就报错
   if (input.freeform !== undefined && ToolDefinition.freeformField(input.inputSchema, input.freeform) === undefined)
     throw new Error(
       input.freeform.field === undefined
@@ -258,14 +280,21 @@ const definition = (input: ToolDefinitionInput) => {
   return new ToolDefinition(input)
 }
 
+/** JSON Schema 的注解型关键字：这些关键字不影响数据形状，仅在 emptyInputJsonSchema 里被保留。 */
 const annotationKeywords = new Set(["title", "description", "default", "examples", "readOnly", "writeOnly"])
 
+/** 把 Effect Schema 转成 JSON Schema；若有定义（$defs），把它们一并附上。 */
 const toJsonSchema = (schema: Schema.Top): JsonSchema.JsonSchema => {
   const document = Schema.toJsonSchemaDocument(schema, { onExcessProperty: "error" })
   if (Object.keys(document.definitions).length === 0) return document.schema
   return { ...document.schema, $defs: document.definitions }
 }
 
+/**
+ * 把工具原始输出投影成 ToolOutput：
+ *   - 若有 toStructuredOutput 就用它转换结构化输出，否则原样；
+ *   - 若有 toModelOutput 就用它生成给模型看的内容，否则默认：字符串直接当文本，其它类型给空内容。
+ */
 const project = (
   toModelOutput: ((input: ToolModelOutputInput<any, any>) => ReadonlyArray<Content>) | undefined,
   toStructuredOutput: ((output: unknown) => unknown) | undefined,

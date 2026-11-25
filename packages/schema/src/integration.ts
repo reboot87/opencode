@@ -1,3 +1,7 @@
+/**
+ * 集成类型。
+ * 定义集成的方法、连接与状态结构。
+ */
 export * as Integration from "./integration.js"
 
 import { Schema } from "effect"

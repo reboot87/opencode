@@ -1,3 +1,7 @@
+/**
+ * Firecrawl 搜索插件。
+ * 通过 Firecrawl 的 MCP 端点提供网络搜索。
+ */
 export * as WebSearchFirecrawl from "./firecrawl.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

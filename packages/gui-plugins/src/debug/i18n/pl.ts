@@ -1,3 +1,7 @@
+/**
+ * 调试文案 — Pl。
+ * 调试插件的多语言文案中负责 Pl 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.toggle": "Przełącz pasek debugowania",
   providerAriaLabel: "Diagnostyka wydajności dostawcy",

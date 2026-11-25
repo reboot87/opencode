@@ -1,3 +1,10 @@
+/**
+ * logging的测试。
+ *
+ * 被测模块：@opencode/sdk/logging
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { Effect } from "effect"
 import type { LogEntry } from "../src/logging"

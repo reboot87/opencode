@@ -1,3 +1,7 @@
+/**
+ * 会话消息 → LLM 消息转换。
+ * 把持久化的会话消息（含用户附件、助手工具调用/结果、模型切换等）转换为协议层 Message 数组：处理图片/文本/目录附件、工具输入输出解码、provider 元数据与推理 effort 变体，供每轮请求拼装 transcript。
+ */
 import {
   Media,
   Message,
@@ -242,6 +246,10 @@ const modelSwitched = (message: SessionMessage.ModelSelected, model: Model.Ref):
   return [Message.effort({ effort: to.effort, previous: from.effort })]
 }
 
+// 把单条持久化的会话消息转换为 0..N 条协议层 Message：
+// user 消息拼接技能文本与附件；assistant 消息走 assistant() 拆解工具调用/结果；
+// compaction 消息优先重放原生窗口，否则注入包含摘要与近期上下文的 checkpoint 文本；
+// agent-switched/idle 等无内容消息被丢弃；后台 shell 结果只通过 inbox 进入一次。
 function toLLMMessage(message: SessionMessage.Info, model: Model.Ref, providerMetadataKey: string): Message[] {
   switch (message.type) {
     case "agent-switched":

@@ -1,4 +1,6 @@
 //! Handles editing and validation, redrawing only the changed lines.
+//!
+//! CLI 交互提示：核心。
 
 use std::sync::atomic::AtomicBool;
 use std::sync::{Arc, Mutex};

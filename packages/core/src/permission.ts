@@ -1,3 +1,7 @@
+/**
+ * 权限服务（Permission）。
+ * 权限服务入口：组合策略、已保存规则与 agent 默认规则，提供 evaluate 等判定入口。
+ */
 export * as Permission from "./permission.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

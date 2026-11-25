@@ -1,3 +1,10 @@
+/**
+ * WebSocket·服务端的测试辅助模块。
+ *
+ * 被测模块：@opencode/core/lib/websocket-server
+ *
+ * 核心测试的公共辅助模块：内存数据库、会话夹具与事件收集工具。
+ */
 import { Buffer } from "node:buffer"
 import { Effect } from "effect"
 

@@ -1,4 +1,6 @@
 //! A filterable select dialog with keyboard and mouse navigation.
+//!
+//! 基础 UI 组件库：选择。
 
 use crate::bind;
 use crate::dialog::{

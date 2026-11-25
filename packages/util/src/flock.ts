@@ -1,3 +1,7 @@
+/**
+ * 文件锁。
+ * 跨平台的文件锁实现（flock），支持全局锁实例注入。
+ */
 import path from "path"
 import os from "os"
 import { randomBytes, randomUUID } from "crypto"

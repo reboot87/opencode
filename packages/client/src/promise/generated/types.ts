@@ -1,3 +1,7 @@
+/**
+ * Promise 客户端类型（生成）。
+ * 由协议生成的 Promise 风格请求/响应类型集合。
+ */
 export type JsonValue = null | boolean | number | string | Array<JsonValue> | { [key: string]: JsonValue }
 
 export type ServerInfo = {

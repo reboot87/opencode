@@ -1,3 +1,8 @@
+/**
+ * 校验·产物脚本。
+ *
+ * CLI 包的开发脚本：构建校验、配置生成与发布准备。
+ */
 import { stat } from "node:fs/promises"
 import path from "node:path"
 import { collectFiles } from "./files"

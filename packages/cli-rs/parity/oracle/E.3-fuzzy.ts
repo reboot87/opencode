@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：E.3·模糊匹配。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-ORACLE for the autocomplete's ranking (`rank` in crates/tui/src/prompt/autocomplete/mod.rs): runs fuzzysort.go
 // exactly as the `options` memo calls it (packages/tui/src/component/prompt/autocomplete.tsx:569-590), with its keys,
 // scoreFn, threshold, and limit, over a corpus of the 244 keybind definitions as `/` commands and `@` mentions.

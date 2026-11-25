@@ -1,3 +1,5 @@
+//! 守护服务接口：`windows`。
+
 use std::time::Duration;
 
 use crossbeam_channel::{Receiver, RecvTimeoutError, Sender};

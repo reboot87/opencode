@@ -1,3 +1,7 @@
+/**
+ * 项目服务（Project）。
+ * 管理项目（工作区内的代码根）定义与 VCS 类型。
+ */
 export * as Project from "./project.js"
 
 import { Cache, Context, Duration, Effect, Layer, Schedule, Schema, Scope } from "effect"

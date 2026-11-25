@@ -1,3 +1,7 @@
+/**
+ * 终端配置 — Keybind。
+ * 终端界面的配置读取与默认值中负责 Keybind 部分，提供该部分所需的实现与类型定义。
+ */
 export * as TuiKeybind from "./keybind"
 
 import type { KeyEvent, Renderable } from "@opentui/core"

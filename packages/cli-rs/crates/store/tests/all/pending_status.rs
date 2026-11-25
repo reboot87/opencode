@@ -1,3 +1,5 @@
+//! 存储层测试：待处理·status。
+
 use crate::common;
 
 use std::sync::atomic::{AtomicU64, Ordering};

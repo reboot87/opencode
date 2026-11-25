@@ -1,3 +1,7 @@
+/**
+ * Location 服务装配。
+ * 按 Location 构建服务集合，并在长时间持有时给出警告。
+ */
 import { Context, Duration, Effect, Exit, Layer, LayerMap, MutableHashMap, Option, Scope } from "effect"
 import { LayerNode } from "@opencode/util/effect/layer-node"
 import { Instance } from "./instance.js"

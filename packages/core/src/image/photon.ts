@@ -1,3 +1,7 @@
+/**
+ * Photon 图像处理服务。
+ * 通过 Worker 承载 Photon 图像处理（缩放/编码），含 10 秒空闲回收与 WorkerUnavailable 错误。
+ */
 export * as Photon from "./photon.js"
 
 import { Effect, Exit, Schema, Semaphore } from "effect"

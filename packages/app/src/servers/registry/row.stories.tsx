@@ -1,3 +1,7 @@
+/**
+ * 服务端注册表 — RowStories。
+ * 已知服务端的登记与状态中负责 RowStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { For } from "solid-js"
 import { ServerHealthIndicator } from "./row"
 import type { ServerHealth } from "@/runtime/server/health-machine"

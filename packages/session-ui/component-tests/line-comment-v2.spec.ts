@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — LineCommentV2Spec。
+ * 会话界面组件的测试中负责 LineCommentV2Spec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, story } from "../../stories/playwright/story"
 
 story("renders the line comment cancel action as a ghost button", async ({ mount }) => {

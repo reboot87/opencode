@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：working·目录·app。
+ *
+ * 规格编号：E.20。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The working directory dialog (DLG42, T23): a click on the prompt footer's location opens "Working directory"
 // with "Copy path", "Open folder", and "Workspaces" (`ui/working-directory-actions.tsx`). Escape closes it. No
 // option is chosen: copying and opening reach the system, which the Rust tests cover with a sink.

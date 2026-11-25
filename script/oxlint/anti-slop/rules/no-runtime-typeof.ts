@@ -23,7 +23,10 @@ function isInsideTypeGuard(node: ESTree.Node): boolean {
 	return false;
 }
 
-/** Return whether typeof safely probes for the existence of a possibly absent binding. */
+/** Return whether typeof safely probes for the existence of a possibly absent binding.
+ *
+ * Oxlint 规则：无运行时·typeof。
+ */
 function isExistenceProbe(node: ESTree.UnaryExpression): boolean {
 	const parent = node.parent;
 	if (parent.type !== "BinaryExpression") return false;

@@ -1,5 +1,10 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 对等性组件脚本：U.4b·语法定义。
+ *
+ * 对等性组件脚本：驱动 TUI 组件渲染并记录输出，供 Rust 实现比对。
+ */
 // P-COMP fixtures of highlighted code, one per grammar of the default build but TypeScript (U.4a has it): each snippet
+/** @jsxImportSource @opentui/solid */
 // of the corpus below (written to parity/fixtures/U.4b/corpus.json for Rust) in <code conceal={false} fg={text.base}>,
 // with the TUI's parsers registered as routes/session/index.tsx registers them. crates/ui/tests/all/grammars.rs compares opencode_ui::code::view with them.
 import { addDefaultParsers } from "@opentui/core"

@@ -1,3 +1,10 @@
+/**
+ * 会话·后台的测试。
+ *
+ * 被测模块：@opencode/core/session-background
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import { Effect } from "effect"
 import type { Job } from "@opencode/core/job"

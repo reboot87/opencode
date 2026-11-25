@@ -1,3 +1,8 @@
+/**
+ * 插件对等性场景：TUI。
+ *
+ * 插件能力的对等性场景：验证 Rust 与 TypeScript 插件行为一致。
+ */
 // A V2 `{ id, setup }` plugin (FT-12): `/find` opens a select whose own search matches the options' descriptions. TS
 // loads it as a local plugin; the Rust client runs it unmodified on the JS host through the V2 compatibility layer. A picked row's value shows as a toast; a line in the home footer says it loaded.
 import { createElement, insert, setProp } from "@opentui/solid"

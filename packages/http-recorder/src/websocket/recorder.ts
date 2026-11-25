@@ -1,3 +1,7 @@
+/**
+ * 模块 — Recorder。
+ * 该目录下的功能模块中负责 Recorder 部分，提供该部分所需的实现与类型定义。
+ */
 import { NodeFileSystem } from "@effect/platform-node-shared"
 import { Cause, Deferred, Effect, Exit, Layer, Ref, Scope, Semaphore } from "effect"
 import { Socket } from "effect/socket"

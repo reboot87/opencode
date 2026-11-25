@@ -1,3 +1,7 @@
+/**
+ * 机器协议帧。
+ * 定义消息帧格式，区分末帧（FINAL）与续帧（MORE）。
+ */
 export * as Frames from "./frames.js"
 
 import { Deferred, Effect, Queue, Result, Stream } from "effect"

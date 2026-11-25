@@ -1,4 +1,7 @@
-/** Where a tab shows: the side pane, the pane split below it, or the bottom pane under the session. */
+/**
+ * 
+ * Where a tab shows: the side pane, the pane split below it, or the bottom pane under the session. 外壳状态中负责 SessionTabs 部分：应用外壳全局状态中与 SessionTabs 相关的状态、交互与渲染逻辑。
+ */
 export type SessionPane = "side" | "split" | "bottom"
 
 export const SESSION_PANES: readonly SessionPane[] = ["side", "split", "bottom"]

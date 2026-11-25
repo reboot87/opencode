@@ -1,3 +1,7 @@
+/**
+ * 时间线 — TurnPhaseMachineTest。
+ * 按时间顺序展示会话消息的视图中负责 TurnPhaseMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { SessionMessageAssistant, SessionMessageInfo, SessionStatus } from "@opencode/client/promise"
 import { timelinePresets, type TimelineDetail } from "./detail"

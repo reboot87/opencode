@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — PreviewControls。
+ * 跨场景复用的通用 UI 组件中负责 PreviewControls 部分，提供该部分所需的实现与类型定义。
+ */
 import { Icon } from "@opencode/ui/icon"
 import { IconButton } from "@opencode/ui/icon-button"
 import { Tooltip } from "@opencode/ui/tooltip"

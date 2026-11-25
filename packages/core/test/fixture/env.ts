@@ -1,3 +1,8 @@
+/**
+ * 环境变量测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { Effect } from "effect"
 
 export function withEnv<A, E, R>(variables: Record<string, string | undefined>, effect: () => Effect.Effect<A, E, R>) {

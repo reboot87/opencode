@@ -1,3 +1,8 @@
+/**
+ * 对等性校验入口：场景。
+ *
+ * Rust 与 TypeScript 双实现的对等性校验：驱动全部 oracle / component / 场景脚本并刷新基线。
+ */
 // P-TUI scenarios (docs/testing.md): one file per scenario, `parity/scenarios/<step>/<name>.sim.ts`, with
 // `export default defineSim({...})`. parity/sim/run.ts runs each one through both clients against the simulated
 // server.

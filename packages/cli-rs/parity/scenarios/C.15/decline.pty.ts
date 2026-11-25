@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：拒绝·伪终端。
+ *
+ * 规格编号：C.15。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `mcp add --wizard`: optional flags left out, a repeatable key=value flag (a count below its minimum is an
 // error), a boolean, the arguments, and No at the confirmation, so nothing is written.
 import { definePty } from "../../pty/run"

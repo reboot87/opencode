@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — WordLayoutMachine。
+ * Microsoft Office 文档预览插件中负责 WordLayoutMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { WordPageSize } from "./word-protocol"
 
 /** How long one worker step may hold back a paint that waits behind it, in milliseconds. */

@@ -1,3 +1,7 @@
+/**
+ * 消息渲染 — CurrentMessage。
+ * 会话消息的渲染组件中负责 CurrentMessage 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageAssistant, SessionMessageAssistantTool, SessionMessageUser } from "@opencode/client/promise"
 import { Match, Switch, type ComponentProps } from "solid-js"
 import type { SessionUserActions, SessionUserAttachmentReference, SessionUserComment } from "../actions"

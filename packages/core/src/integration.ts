@@ -1,3 +1,7 @@
+/**
+ * 集成服务（Integration）。
+ * 外部系统集成的方法定义、鉴权与调用编排。
+ */
 export * as Integration from "./integration.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

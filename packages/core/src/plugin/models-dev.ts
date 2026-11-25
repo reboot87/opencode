@@ -1,3 +1,7 @@
+/**
+ * models.dev 插件。
+ * 从 models.dev 加载模型目录，并为特定模型（如仅支持 Bedrock profile 的模型）做约束。
+ */
 import { define } from "@opencode/plugin/effect/plugin"
 import { Event } from "@opencode/schema/config"
 import { Integration } from "@opencode/schema/integration"

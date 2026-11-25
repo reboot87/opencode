@@ -1,3 +1,12 @@
+/**
+ * 传输层（Transport）的统一出口与接口定义。
+ *
+ * Transport 负责"把请求字节送出去、把响应字节流收回来"，与协议（Protocol）解耦：
+ *   - http.ts：普通 HTTP 请求/流式响应；
+ *   - websocket.ts：WebSocket 双向通信（部分 provider 用 WS 传输流式事件）。
+ *
+ * 本文件导出公共类型（Transport / TransportRuntime / HttpMiddleware 等）和构造函数。
+ */
 import type { Effect, Scope, Stream } from "effect"
 import { Endpoint } from "../endpoint.js"
 import { Auth } from "../auth.js"

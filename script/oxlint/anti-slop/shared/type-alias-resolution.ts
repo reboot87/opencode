@@ -113,7 +113,10 @@ function collectTypeBindings(
 	}
 }
 
-/** Collect every lexical type alias and competing type binding in a program. */
+/** Collect every lexical type alias and competing type binding in a program.
+ *
+ * Oxlint 规则共享工具：类型别名分辨率。
+ */
 export function createTypeAliasEnvironment(
 	program: ESTree.Program,
 	visitorKeys: VisitorKeys,

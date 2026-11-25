@@ -1,5 +1,7 @@
 //! The prompt terminal where there is no backend (neither Unix nor Windows): never interactive, so prompts
 //! fail as they do without a terminal, and the input ends at once. Sizes come from OpenTUI's console.
+//!
+//! CLI 交互提示：桩。
 
 use std::io::IsTerminal;
 use std::time::Duration;

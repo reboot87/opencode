@@ -1,4 +1,7 @@
-/** Stores of sessions no tab has listed beyond this close, oldest first, so preloads without a tab stay bounded. */
+/**
+ * 
+ * Stores of sessions no tab has listed beyond this close, oldest first, so preloads without a tab stay bounded. 插件运行时中负责 SessionStoreMachine 部分：浏览器端插件运行时中与 SessionStoreMachine 相关的状态、交互与渲染逻辑。
+ */
 export const SESSION_STORE_MAX_UNLISTED = 16
 
 export type SessionStoreEntry<E> = {

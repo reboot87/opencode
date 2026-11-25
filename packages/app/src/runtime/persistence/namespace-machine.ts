@@ -1,3 +1,7 @@
+/**
+ * 运行时持久化 — NamespaceMachine。
+ * 浏览器端配置的本地持久化中负责 NamespaceMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export const NAMESPACE_FLUSH_DELAY_MS = 100
 
 // Retries after failed batches double the flush delay up to 2^8 × 100 ms (about 26 s).

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：导轨·调整尺寸·app。
+ *
+ * 规格编号：E.12。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The vertical tab rail and its resize handle (W01, W04): two tabs in the rail at 120 columns, a drag of the
 // handle from column 41 to 30 narrows the rail to 31, and a drag to column 8 makes it compact.
 import { assistant, defineApp, session, user } from "../../lib/app"

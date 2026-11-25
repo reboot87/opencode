@@ -1,3 +1,7 @@
+/**
+ * Mercurial VCS 插件。
+ * 基于 Mercurial（hg）实现版本控制能力。
+ */
 export * as VcsHgPlugin from "./hg.js"
 
 import path from "path"

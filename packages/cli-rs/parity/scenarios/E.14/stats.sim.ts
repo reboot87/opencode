@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：stats·模拟。
+ *
+ * 规格编号：E.14。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // P-TUI version of `E.14/stats.app.ts`: `/stats` (F11) over the simulated server's own
 // `GET /api/experimental/session/stats` (never the user's service, whose stats endpoint crashes it), after one
 // session with two turns ran on it. The range and the activity calendar end today, so the server and both clients

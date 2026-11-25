@@ -1,3 +1,7 @@
+/**
+ * 服务端注册表 — Label。
+ * 已知服务端的登记与状态中负责 Label 部分，提供该部分所需的实现与类型定义。
+ */
 import { Show } from "solid-js"
 import { type ServerConnection, useServers } from "@/runtime/server/registry"
 

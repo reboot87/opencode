@@ -1,3 +1,10 @@
+/**
+ * 工具·会话·搜索的测试。
+ *
+ * 被测模块：@opencode/core/tool-session-search
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import { DateTime, Effect, Layer, Schema } from "effect"
 import { Bus } from "@opencode/core/bus"

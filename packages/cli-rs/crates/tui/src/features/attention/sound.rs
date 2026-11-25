@@ -1,5 +1,7 @@
 //! Prefer configured sounds over bundled ones. The audio engine starts on demand; headless clients mix without a
 //! playback device.
+//!
+//! 终端界面功能模块：音效。
 
 use std::cell::{Cell, OnceCell, RefCell};
 use std::collections::HashMap;

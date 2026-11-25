@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：发布·npm。
 # publish-npm.sh <build-npm dir> <signed dir>...: publishes every release tarball to npm with OPENCODE_NPM_TAG.
 # Names, the version and the package set come from this script, never from the tarballs: each tarball's
 # package.json is read as data and must match. macOS and Windows CLI packages must come from a signed dir.

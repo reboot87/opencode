@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — ReadImageFixture。
+ * 会话界面组件的测试中负责 ReadImageFixture 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, Show } from "solid-js"
 import { createStore } from "solid-js/store"
 import { render } from "solid-js/web"

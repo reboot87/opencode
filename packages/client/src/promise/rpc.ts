@@ -1,3 +1,7 @@
+/**
+ * Promise RPC 客户端。
+ * 定义 Promise 风格的 RPC 客户端与调用参数推导。
+ */
 import type { Rpc } from "@opencode/schema/rpc"
 import type { make, RequestOptions } from "./generated/client.js"
 import { isRpcError, isRpcInternalError } from "./generated/types.js"

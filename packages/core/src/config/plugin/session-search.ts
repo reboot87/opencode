@@ -1,3 +1,7 @@
+/**
+ * 会话搜索配置插件。
+ * 按配置与 flag 触发会话搜索索引构建。
+ */
 export * as ConfigSessionSearchPlugin from "./session-search.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

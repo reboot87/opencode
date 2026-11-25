@@ -1,3 +1,7 @@
+/**
+ * 机器线路格式。
+ * 定义机器协议在网络上传输的字节编码与进程 ID 类型。
+ */
 import { Schema } from "effect"
 import { FileType } from "../environment/files.js"
 

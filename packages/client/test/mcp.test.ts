@@ -1,3 +1,10 @@
+/**
+ * MCP的测试。
+ *
+ * 被测模块：@opencode/client/mcp
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { afterEach, describe, expect, jest, test } from "bun:test"
 import { Client, type JSONRPCMessage, type Transport } from "@modelcontextprotocol/client"
 import type { ServerWebSocket } from "bun"

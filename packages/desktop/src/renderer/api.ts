@@ -1,3 +1,7 @@
+/**
+ * 渲染进程 — Api。
+ * Electron 渲染进程的界面逻辑中负责 Api 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ElectronAPI } from "./api-types"
 import { cancellable, invoke, listen, send } from "./ipc-client"
 

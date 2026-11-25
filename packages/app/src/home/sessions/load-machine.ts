@@ -1,3 +1,7 @@
+/**
+ * 主页会话 — LoadMachine。
+ * 主页中会话列表的展示中负责 LoadMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ServerConnection } from "@/runtime/server/registry"
 
 /** Matches `staleTime` in `queries.ts`: a cached list younger than this shows without a refetch. */

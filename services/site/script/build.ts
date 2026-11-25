@@ -92,7 +92,10 @@ await writeWorkerConfig({
 await Bun.$`bun ./script/check-worker-start.ts`.cwd(root).env(env)
 console.log(`site: built ${config.worker.name} (${mode}), ${shipped.length} assets`)
 
-/** In CI the snapshot is what /changelog.json serves when GitHub fails, so it must have releases. */
+/** In CI the snapshot is what /changelog.json serves when GitHub fails, so it must have releases.
+ *
+ * 站点构建脚本：构建。
+ */
 async function requireSnapshot() {
   const snapshot = await Bun.file(path.join(root, "src/lib/github-snapshot.json"))
     .json()

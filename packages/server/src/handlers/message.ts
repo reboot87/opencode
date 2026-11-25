@@ -1,3 +1,7 @@
+/**
+ * message 接口处理器。
+ * 消息接口处理器：会话消息的列举与发送。
+ */
 import { SessionMessage } from "@opencode/core/session/message"
 import { Session } from "@opencode/core/session"
 import { Effect, Option, Schema } from "effect"

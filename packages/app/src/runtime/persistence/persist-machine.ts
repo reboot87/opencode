@@ -3,6 +3,8 @@
  * that serializes to it writes nothing. `remote` is the newest value another window wrote while a local
  * edit was unsaved. `baseline` is the store serialized just before the first edit made while loading:
  * a save that still serializes to it made no real change, so the loaded or remote value wins.
+ *
+ * 本地持久化中负责 PersistMachine 部分：浏览器端配置持久化中与 PersistMachine 相关的状态、交互与渲染逻辑。
  */
 export type PersistStoreState =
   | {

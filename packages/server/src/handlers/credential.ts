@@ -1,3 +1,7 @@
+/**
+ * credential 接口处理器。
+ * 凭据接口处理器：凭据的列举、创建与删除。
+ */
 import { Credential } from "@opencode/core/credential"
 import { FileSystem } from "@opencode/core/filesystem"
 import { Integration } from "@opencode/core/integration"

@@ -1,4 +1,8 @@
-/** A delete that has not settled by then counts as failed, so the dialog's buttons cannot stay disabled. */
+/**
+ * A delete that has not settled by then counts as failed, so the dialog's buttons cannot stay disabled.
+ *
+ * 会话界面中负责 DeleteMachine 部分：会话主界面中与 DeleteMachine 相关的状态、交互与渲染逻辑。
+ */
 export const SESSION_DELETE_TIMEOUT_MS = 15_000
 
 /** The delete confirmation for one session, in the session header or on Home: asking, or waiting for the server. */

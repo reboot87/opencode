@@ -1,3 +1,7 @@
+/**
+ * session-search 工具。
+ * 搜索与读取历史会话记录的工具。
+ */
 export * as SessionSearchTools from "./session-search.js"
 
 import { ToolFailure } from "@opencode/ai/effect"

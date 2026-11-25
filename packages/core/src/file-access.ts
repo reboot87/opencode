@@ -1,3 +1,7 @@
+/**
+ * 文件访问服务（FileAccess）。
+ * 提供受限的文件读取与目录列举能力，区分 file/directory 两类目标与位置（Place）。
+ */
 export * as FileAccess from "./file-access.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

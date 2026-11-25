@@ -1,3 +1,7 @@
+/**
+ * 工作区驱动。
+ * 定义工作区绑定（Binding）与驱动契约。
+ */
 export * as WorkspaceDriver from "./driver.js"
 
 import { Workspace } from "@opencode/schema/workspace"

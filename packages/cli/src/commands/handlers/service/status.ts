@@ -1,3 +1,7 @@
+/**
+ * service status 命令。
+ * 查看后台服务状态。
+ */
 import { EOL } from "os"
 import { Effect } from "effect"
 import { Service } from "@opencode/client/effect/service"

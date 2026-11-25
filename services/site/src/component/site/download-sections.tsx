@@ -19,7 +19,10 @@ import { copyOnClick } from "~/lib/clipboard"
 
 type Command = { id: string; command: string }
 
-/** The copied-command state for one set of rows, and the copy action. */
+/** The copied-command state for one set of rows, and the copy action.
+ *
+ * 站点界面组件：下载区段。
+ */
 function useCopy() {
   const [copied, setCopied] = createSignal<string>()
   const copy = (item: Command) => {

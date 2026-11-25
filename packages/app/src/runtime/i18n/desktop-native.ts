@@ -1,3 +1,7 @@
+/**
+ * 运行时国际化 — DesktopNative。
+ * 运行时加载多语言文案的机制中负责 DesktopNative 部分，提供该部分所需的实现与类型定义。
+ */
 import { flow, Option, Schema } from "effect"
 
 export const DESKTOP_NATIVE_LOCALES = [

@@ -1,3 +1,7 @@
+/**
+ * 消息渲染 — AttachmentCard。
+ * 会话消息的渲染组件中负责 AttachmentCard 部分，提供该部分所需的实现与类型定义。
+ */
 import type { JSX } from "solid-js"
 import "./attachment-card.css"
 

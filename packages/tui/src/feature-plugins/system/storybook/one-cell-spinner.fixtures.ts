@@ -1,3 +1,7 @@
+/**
+ * 系统插件故事 — OneCellSpinnerFixtures。
+ * 系统功能插件的 Storybook 展示中负责 OneCellSpinnerFixtures 部分，提供该部分所需的实现与类型定义。
+ */
 import { SEED_LAUNCH, SEED_WORK, WORK_SPINNERS, type OneCellMotion } from "../../../ui/one-cell-motion"
 import { SUBCELL_SPINNERS } from "./subcell-spinner.fixtures"
 

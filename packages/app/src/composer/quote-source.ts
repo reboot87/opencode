@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — QuoteSource。
+ * 会话输入区的组合逻辑与附件处理中负责 QuoteSource 部分，提供该部分所需的实现与类型定义。
+ */
 import { createStore } from "solid-js/store"
 import { selectQuoteHighlightKey } from "./quote-comment-machine"
 import type { ComposerStore, TimelineQuoteSource } from "./schema"

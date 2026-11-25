@@ -1,3 +1,7 @@
+/**
+ * 消息渲染 — RelativeTime。
+ * 会话消息的渲染组件中负责 RelativeTime 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, onCleanup } from "solid-js"
 
 const MINUTE = 60_000

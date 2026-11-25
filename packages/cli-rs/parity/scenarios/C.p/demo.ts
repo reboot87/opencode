@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：演示。
+ *
+ * 规格编号：C.p。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The C.p scenarios run one prompt script on each side: `parity/oracle/C.p-prompts.ts` with
 // `@clack/prompts`, and the same script in `opencode-prompt-demo` with the Rust kit.
 import path from "node:path"

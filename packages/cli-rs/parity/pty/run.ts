@@ -1,3 +1,8 @@
+/**
+ * 伪终端对等性校验：运行。
+ *
+ * 伪终端能力的对等性校验：比对终端渲染与尺寸处理。
+ */
 // P-PTY: runs one command with the TS CLI and with `opencode-native` under a fixed-size
 // pseudo-terminal, renders the output through OpenTUI's embedded terminal (which also answers the
 // program's terminal queries), and compares the OSC log, the screens at checkpoints, and the exit.

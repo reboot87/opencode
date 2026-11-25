@@ -1,3 +1,7 @@
+/**
+ * OpenCode 自带 provider 门面。
+ * 通过 OpenCode 服务端点转发，提供 decision 等模型工厂。
+ */
 import {
   mergeTransport,
   ProviderID,

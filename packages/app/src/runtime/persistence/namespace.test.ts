@@ -1,3 +1,7 @@
+/**
+ * 运行时持久化 — NamespaceTest。
+ * 浏览器端配置的本地持久化中负责 NamespaceTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, beforeEach, describe, expect, test, vi } from "bun:test"
 import { createNamespaceStorage, type NamespaceDriver, type NamespaceStorage } from "./namespace"
 

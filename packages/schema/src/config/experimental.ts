@@ -1,3 +1,7 @@
+/**
+ * 实验性配置类型。
+ * 定义 experimental 配置项的 Schema。
+ */
 export * as ConfigExperimental from "./experimental.js"
 
 import { Record, Schema } from "effect"

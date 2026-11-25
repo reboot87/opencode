@@ -1,3 +1,7 @@
+/**
+ * 浏览器能力接口。
+ * 定义 GUI 插件访问浏览器标签页的能力接口。
+ */
 import { Contract } from "./core.js"
 import type { Brand } from "effect"
 import type { SessionRef } from "./host-apis.js"

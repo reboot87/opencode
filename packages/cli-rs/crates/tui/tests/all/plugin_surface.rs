@@ -1,4 +1,6 @@
 //! Exercise plugin surface lifecycle and compare visible frames, callback logs, and retained resources of linked plugins.
+//!
+//! 终端界面测试：插件表面。
 
 use crate::support::model::{self, Failure, Model, Rng};
 use crate::support::{self, Harness};

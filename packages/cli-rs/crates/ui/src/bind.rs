@@ -1,4 +1,6 @@
 //! Weak captures prevent callbacks from keeping their owner alive.
+//!
+//! 基础 UI 组件库：绑定。
 
 use std::rc::{Rc, Weak};
 

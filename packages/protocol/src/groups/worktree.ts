@@ -1,3 +1,7 @@
+/**
+ * Worktree API 分组。
+ * 定义工作树的列举、创建与删除端点。
+ */
 import { Worktree } from "@opencode/schema/worktree"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, HttpApiSchema, OpenApi } from "effect/http-api"

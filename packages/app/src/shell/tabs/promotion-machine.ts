@@ -1,3 +1,7 @@
+/**
+ * 标签页 — PromotionMachine。
+ * 多标签页的打开与切换中负责 PromotionMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ServerConnection } from "@/runtime/server/registry"
 import type { ComposerState } from "@/composer/state"
 import type { DraftTab, PendingSession, SessionTab } from "./tabs"

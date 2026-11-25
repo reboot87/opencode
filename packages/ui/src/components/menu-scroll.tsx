@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — MenuScroll。
+ * 跨场景复用的通用 UI 组件中负责 MenuScroll 部分，提供该部分所需的实现与类型定义。
+ */
 import { createResizeObserver } from "@solid-primitives/resize-observer"
 import { createSignal, onCleanup, onMount, Show, splitProps, untrack, type ComponentProps, type JSX } from "solid-js"
 import { createStore } from "solid-js/store"

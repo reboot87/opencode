@@ -1,5 +1,7 @@
 //! For the tests: a program that witnesses its own launch, on every platform, without a shell. It adds a line to the
 //! file its one argument names, and prints nothing (`tests/all/plugin_ownership.rs`).
+//!
+//! 终端界面：插件·launch·witness。
 
 use std::io::Write;
 

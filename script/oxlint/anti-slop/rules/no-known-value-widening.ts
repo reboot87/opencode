@@ -258,7 +258,10 @@ function hasParentAssertion(node: ESTree.Node): boolean {
 	return node.parent?.type === "TSAsExpression" || node.parent?.type === "TSTypeAssertion";
 }
 
-/** Detect sound syntactic cases where a known value is explicitly widened and loses evidence. */
+/** Detect sound syntactic cases where a known value is explicitly widened and loses evidence.
+ *
+ * Oxlint 规则：无·known·值·widening。
+ */
 export const noKnownValueWideningRule = defineRule({
 	meta: {
 		type: "problem",

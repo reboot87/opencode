@@ -1,4 +1,6 @@
 //! Exercise the diff viewer's lifecycle and controls over real input and recorded server responses.
+//!
+//! 终端界面测试：差异。
 
 use crate::support;
 

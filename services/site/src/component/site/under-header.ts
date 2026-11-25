@@ -14,6 +14,8 @@ const watched = new WeakMap<HTMLElement, () => void>()
  * The header's lower edge in the window, 0 when nothing is pinned: the bars stacked down from the
  * window's top edge (a Contents row further down the page isn't pinned yet). A bar that holds `menu`
  * doesn't count.
+ *
+ * 站点界面组件：低于请求头。
  */
 export function headerBottom(menu: HTMLElement) {
   const bars = [...document.querySelectorAll<HTMLElement>(header)]

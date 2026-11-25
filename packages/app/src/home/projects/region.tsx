@@ -1,3 +1,7 @@
+/**
+ * 主页项目 — Region。
+ * 主页中项目列表的展示中负责 Region 部分，提供该部分所需的实现与类型定义。
+ */
 import type { HomeProjectsController } from "./controller"
 import { HomeProjectsView } from "./view"
 import type { HomeScrollController } from "../scroll"

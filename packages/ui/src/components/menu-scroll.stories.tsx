@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — MenuScrollStories。
+ * 跨场景复用的通用 UI 组件中负责 MenuScrollStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, For } from "solid-js"
 import { Button } from "@opencode/ui/button"
 import { MenuScroll } from "./menu-scroll"

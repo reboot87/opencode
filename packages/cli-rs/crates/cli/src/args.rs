@@ -1,4 +1,6 @@
 //! Command-line grammar and typed handler arguments.
+//!
+//! 命令行入口：`args`。
 
 use crate::parse::Values;
 

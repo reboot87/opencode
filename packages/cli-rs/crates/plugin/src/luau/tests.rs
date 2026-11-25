@@ -1,3 +1,5 @@
+//! 插件系统：`tests`。
+
 use std::fs;
 use std::path::{Path, PathBuf};
 use std::rc::Rc;

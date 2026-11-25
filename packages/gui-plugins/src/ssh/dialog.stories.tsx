@@ -1,3 +1,7 @@
+/**
+ * SSH 插件 — DialogStories。
+ * 远程主机管理的 GUI 插件中负责 DialogStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { useDialog } from "@opencode/ui/context/dialog"
 import { QueryClient, QueryClientProvider } from "@tanstack/solid-query"

@@ -1,3 +1,7 @@
+/**
+ * Claude 会话运行。
+ * 启动并驱动 Claude Agent 会话，桥接 SDK 用户消息流。
+ */
 export * as ClaudeSession from "./session.js"
 
 import type { LanguageModelV3FunctionTool } from "@ai-sdk/provider"

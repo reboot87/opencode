@@ -1,3 +1,7 @@
+/**
+ * 消息渲染 — CurrentToolState。
+ * 会话消息的渲染组件中负责 CurrentToolState 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageAssistant, SessionMessageAssistantTool } from "@opencode/client/promise"
 import { Option, Predicate, Schema } from "effect"
 import type { ToolProps } from "../tools/tool-renderer"

@@ -1,3 +1,7 @@
+/**
+ * 提示词输入类型。
+ * 定义用户输入的文本与附件结构。
+ */
 export * as PromptInput from "./prompt-input.js"
 
 import { Schema } from "effect"

@@ -1,3 +1,10 @@
+/**
+ * 内置项的测试。
+ *
+ * 被测模块：@opencode/core/instructions/builtins
+ *
+ * 覆盖指令文件的解析、拼接与注入顺序。
+ */
 import { describe, expect } from "bun:test"
 import os from "os"
 import { Effect, Layer } from "effect"

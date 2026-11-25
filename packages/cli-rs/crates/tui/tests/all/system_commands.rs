@@ -1,4 +1,6 @@
 //! System commands, clipboard actions, and working-directory interactions.
+//!
+//! 终端界面测试：系统命令。
 
 use crate::support::{self, Fake, WAIT, wait_for};
 

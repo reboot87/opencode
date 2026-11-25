@@ -57,7 +57,10 @@ const bump = (d: number, w: number) => Math.exp(-(d / w) * (d / w))
 const clamp = (v: number, lo: number, hi: number) => Math.min(Math.max(v, lo), hi)
 const mod = (a: number, m: number) => ((a % m) + m) % m
 
-/** A meter's RMS as dBFS (`loudness`). */
+/** A meter's RMS as dBFS (`loudness`).
+ *
+ * 语音交互组件：点作用域。
+ */
 export const loudness = (rms: number) => 20 * Math.log10(Math.max(rms, 0) + 1e-6)
 
 /**

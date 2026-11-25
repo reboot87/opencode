@@ -1,4 +1,6 @@
 //! Show the current location's global form over home. The prompt keeps its place but yields its keys.
+//!
+//! 终端界面功能模块：主目录·forms。
 
 use opencode_store::Location;
 use opencode_store::forms::GLOBAL;

@@ -1,3 +1,7 @@
+/**
+ * Google Vertex provider 共享工具。
+ * 抽取 Vertex 系列各入口共用的鉴权（OAuth / 服务账号）、端点与选项归一化逻辑。
+ */
 import type { AnyAuthClient, GoogleAuthOptions } from "google-auth-library"
 import { Effect, Redacted } from "effect"
 import type { ProviderPackage } from "../provider-package.js"

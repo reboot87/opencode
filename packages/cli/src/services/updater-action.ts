@@ -1,3 +1,7 @@
+/**
+ * 更新动作策略。
+ * 决定更新行为：禁用、仅通知或自动更新。
+ */
 export type Policy = "disable" | "notify" | "auto"
 export type Action = "none" | "notify" | "auto"
 

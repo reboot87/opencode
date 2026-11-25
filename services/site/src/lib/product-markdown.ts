@@ -20,7 +20,10 @@ import { fourthClips } from "~/component/site/videos"
 import { english } from "~/i18n/english"
 import { blocks, codeFence, link, type MarkdownContext } from "~/lib/markdown"
 
-/** A product page as Markdown: the intro, how to get it, its features and its latest releases. */
+/** A product page as Markdown: the intro, how to get it, its features and its latest releases.
+ *
+ * 站点共享逻辑：product·Markdown。
+ */
 export function productMarkdown(slug: PageSlug) {
   return (context: MarkdownContext) => {
     const product = allProductPages.find((item) => item.slug === slug)!

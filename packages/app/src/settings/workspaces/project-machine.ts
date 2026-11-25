@@ -1,3 +1,7 @@
+/**
+ * 工作区设置 — ProjectMachine。
+ * 工作区相关设置中负责 ProjectMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ProjectUpdateInput } from "@opencode/client/promise"
 import { getFilename } from "@opencode/util/path"
 

@@ -1,3 +1,7 @@
+/**
+ * 文件插件 — OpenInApp。
+ * 文件预览与操作的 GUI 插件中负责 OpenInApp 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createSignal, For, onCleanup, Show, type JSX, type ParentProps } from "solid-js"
 import { AppIcon } from "@opencode/ui/app-icon"
 import { Icon } from "@opencode/ui/icon"

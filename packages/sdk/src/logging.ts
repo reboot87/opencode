@@ -1,3 +1,7 @@
+/**
+ * SDK 日志。
+ * 定义日志级别、日志条目与写入选项。
+ */
 import { Context, Formatter, Layer, Logger, References } from "effect"
 
 export type LogLevel = "trace" | "debug" | "info" | "warn" | "error" | "fatal"

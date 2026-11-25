@@ -1,3 +1,7 @@
+/**
+ * 独立服务启动。
+ * 启动一次性（standalone）服务并等待其就绪。
+ */
 import { CrossSpawnSpawner } from "@opencode/util/cross-spawn-spawner"
 import { LayerNode } from "@opencode/util/effect/layer-node"
 import { Deferred, Effect, Schema, Stream } from "effect"

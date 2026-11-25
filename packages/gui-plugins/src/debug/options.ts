@@ -1,6 +1,8 @@
 /**
  * Builds with the debug tools: the dev server and Beta, as for the debug bar's Motion tools. Stable builds never run
  * memory diagnostics or open a debugging port, whatever the environment says.
+ *
+ * 构建with the debug tools: the dev server and Beta, as for the debug bar's Motion tools.。
  */
 export function debugBuild(build: { readonly packaged: boolean; readonly channel: string }) {
   return !build.packaged || build.channel === "beta"

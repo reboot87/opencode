@@ -1,6 +1,9 @@
 import { allProductPages, extensions, type PageSlug } from "~/component/site/product-data"
 
-/** The product cards' English copy: each product page's card, and the extensions card. */
+/** The product cards' English copy: each product page's card, and the extensions card.
+ *
+ * 多语言分区文案：`products`。
+ */
 export const productsSource = Object.fromEntries(
   allProductPages.map((product) => [product.slug, { name: product.name, body: product.body, action: product.action }]),
 ) as Record<PageSlug, { name: string; body: string; action: string }>

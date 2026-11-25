@@ -1,3 +1,7 @@
+/**
+ * GUI 上下文 — Index 出口。
+ * 集中导出 GUI 上下文 中 Index 相关的实现、组件与类型。
+ */
 import { builtinCatalog } from "@opencode/plugin/gui/builtin"
 import { Plugin } from "@opencode/plugin/gui"
 import en from "./i18n/en"

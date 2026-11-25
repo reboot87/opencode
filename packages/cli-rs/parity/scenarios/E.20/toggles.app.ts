@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：开关切换·app。
+ *
+ * 规格编号：E.20。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The config toggles (T19): `app.toggle.animations`, `app.toggle.diffwrap`, `app.toggle.file_context`,
 // `app.toggle.paste_summary`, and `terminal.title.toggle`, bound to F5 to F9 here (all are `none` by default and
 // not in the palette). Each writes `cli.json`; the settings dialog then shows the new values, one filtered row

@@ -1,3 +1,7 @@
+/**
+ * session delete 命令。
+ * 删除指定会话。
+ */
 import { OpenCode } from "@opencode/client"
 import { Service } from "@opencode/client/effect/service"
 import { Effect } from "effect"

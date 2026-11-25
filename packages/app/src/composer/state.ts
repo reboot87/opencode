@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — State。
+ * 会话输入区的组合逻辑与附件处理中负责 State 部分，提供该部分所需的实现与类型定义。
+ */
 import { batch, getOwner, onCleanup, untrack, type Accessor } from "solid-js"
 import { createStore, unwrap, type SetStoreFunction } from "solid-js/store"
 import { Persist, persisted } from "@/runtime/persistence/storage"

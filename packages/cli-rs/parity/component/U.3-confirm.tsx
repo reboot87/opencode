@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid U3Confirm：该文件实现 U3Confirm 相关的状态与逻辑。
+ */
 // P-COMP fixtures for DialogConfirm (packages/tui/src/ui/dialog-confirm.tsx): crates/ui/tests/all/dialogs.rs. The
 // second one presses Left, which moves the legacy footer from Confirm to Cancel.
 import { DialogConfirm } from "../../../tui/src/ui/dialog-confirm"

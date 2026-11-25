@@ -1,3 +1,5 @@
+//! 精简版实现：面板。
+
 use opencode_ui::fuzzy;
 
 use super::menu::{self, Groups, Item, Look};

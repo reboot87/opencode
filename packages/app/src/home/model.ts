@@ -1,3 +1,7 @@
+/**
+ * 主页 — Model。
+ * 应用主页的视图与数据中负责 Model 部分，提供该部分所需的实现与类型定义。
+ */
 import { useGlobal, useServerCtx } from "@/runtime/server/runtime"
 import { useLayout } from "@/shell/state/layout"
 import { ServerConnection, useServers } from "@/runtime/server/registry"

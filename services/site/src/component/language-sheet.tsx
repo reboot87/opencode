@@ -10,6 +10,8 @@ import "./language-sheet.css"
 /**
  * The language list as a bottom sheet, for touch phones (the dropdown is for pointers). One per page,
  * rendered by the site; the footer's LanguagePicker opens it with openLanguageSheet.
+ *
+ * 通用界面组件：语言浮层面板。
  */
 
 let active: SheetControl | undefined

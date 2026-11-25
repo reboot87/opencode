@@ -1,3 +1,7 @@
+/**
+ * 文本输入 — TextInputStories。
+ * 单行文本输入组件中负责 TextInputStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal, splitProps } from "solid-js"
 import { Field } from "@opencode/ui/field"
 import { Icon } from "@opencode/ui/icon"

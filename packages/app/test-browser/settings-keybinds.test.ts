@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — SettingsKeybindsTest。
+ * 浏览器环境下的测试中负责 SettingsKeybindsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { createRoot, createSignal } from "solid-js"
 import { createKeybindSettingsController } from "../src/settings/keybinds/keybinds"

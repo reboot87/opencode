@@ -1,3 +1,7 @@
+/**
+ * 时间线（新版） — PlacementReactivityTest。
+ * 重构中的会话消息时间线中负责 PlacementReactivityTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { isServer } from "solid-js/web"
 import { timelinePresets } from "../timeline/detail"

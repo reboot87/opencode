@@ -1,3 +1,7 @@
+/**
+ * 插件钩子定义。
+ * 定义插件可监听的事件域（Domains）与事件提供者解析，是整个钩子体系的类型契约。
+ */
 export * as PluginHooks from "./hooks.js"
 
 import type { AISDKHooks } from "@opencode/plugin/effect/aisdk"

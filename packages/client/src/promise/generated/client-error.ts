@@ -1,3 +1,7 @@
+/**
+ * Promise 客户端错误类型。
+ * 定义 Promise 风格客户端的错误原因与错误类。
+ */
 export type ClientErrorReason =
   | "Transport"
   | "UnexpectedStatus"

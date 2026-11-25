@@ -1,4 +1,8 @@
 #!/usr/bin/env bun
+
+/**
+ * 仓库脚本：Lint·changed。
+ */
 // Fails when a GUI package file this branch adds or edits has any oxlint problem, including warn-level rules (anti-slop):
 // a change that touches a file leaves the whole file clean. Untouched files and other packages are not checked.
 // Usage: bun script/lint-changed.ts [base-ref]   (default: merge base with upstream/dev, origin/dev, or dev)

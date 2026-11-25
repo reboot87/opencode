@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：主目录·页脚·app。
+ *
+ * 规格编号：E.14。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The home footer (F01): the connected MCP servers of the default location with `/mcps`, then the version.
 import { defineApp, HOME_PLACEHOLDER, location } from "../../lib/app"
 

@@ -1,3 +1,7 @@
+/**
+ * 插件模块加载。
+ * 从文件或 npm 包加载插件模块并求值其导出。
+ */
 export * as PluginModule from "./module.js"
 
 import type { Plugin } from "@opencode/plugin/effect/plugin"

@@ -1,4 +1,6 @@
 //! Session route: transcript, docks, prompts, and sidebar.
+//!
+//! 终端界面路由入口。
 
 pub mod actions;
 pub mod form;

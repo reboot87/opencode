@@ -1,3 +1,7 @@
+/**
+ * 迁移执行器。
+ * 定义迁移的类型契约与执行逻辑：按序应用迁移、记录迁移版本，并处理旧版凭据导入与 schema 校验。
+ */
 export * as DatabaseMigration from "./migration.js"
 
 import { sql } from "drizzle-orm"

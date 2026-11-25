@@ -1,3 +1,7 @@
+/**
+ * 窗口管理 — Security。
+ * 浏览器窗口的创建与布局管理中负责 Security 部分，提供该部分所需的实现与类型定义。
+ */
 import type { BrowserWindow, Session } from "electron"
 import { SidecarCredentials } from "../service/sidecar-credentials"
 import { addRendererHeaders, hasHeader, upsertHeader } from "./headers"

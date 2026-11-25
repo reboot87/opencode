@@ -1,3 +1,7 @@
+/**
+ * 下拉选择 — SelectStories。
+ * 下拉选择组件中负责 SelectStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal } from "solid-js"
 import { Field } from "@opencode/ui/field"
 import { Select, type SelectProps } from "./select"

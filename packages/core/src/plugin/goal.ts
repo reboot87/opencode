@@ -1,3 +1,7 @@
+/**
+ * 目标驱动插件。
+ * 实现以目标（goal）为单位的自主推进循环，带目标长度（4000 字符）与轮次（50）上限。
+ */
 export * as GoalPlugin from "./goal.js"
 
 import { isContextOverflowFailure, Message } from "@opencode/ai/effect"

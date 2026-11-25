@@ -1,3 +1,7 @@
+/**
+ * 调试插件 — Signal。
+ * 面向开发者的调试 GUI 插件中负责 Signal 部分，提供该部分所需的实现与类型定义。
+ */
 import path from "node:path"
 
 /** Where SIGUSR2 writes heap snapshots while memory diagnostics are on: a caller-chosen absolute folder, or none. */

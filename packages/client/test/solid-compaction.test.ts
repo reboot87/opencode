@@ -1,3 +1,10 @@
+/**
+ * SolidJS·上下文压缩的测试。
+ *
+ * 被测模块：@opencode/client/solid-compaction
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { createRoot } from "solid-js"
 import { createData, type CreateDataInput } from "../src/solid"

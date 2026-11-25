@@ -1,3 +1,7 @@
+/**
+ * 输入附件 — UploadMachine。
+ * 输入区附件的上传与管理中负责 UploadMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // An upload whose body stops advancing for this long is stuck on a dead connection; it fails instead of blocking sends.
 export const UPLOAD_STALL_TIMEOUT_MS = 60_000
 

@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — PaneDragMachineTest。
+ * 浏览器端的插件加载与扩展点中负责 PaneDragMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   DISPOSED_PANE_DRAG_STATE,

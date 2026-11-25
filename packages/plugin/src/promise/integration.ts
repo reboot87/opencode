@@ -1,3 +1,7 @@
+/**
+ * Promise 风格插件 API — 集成领域。
+ * 插件定义外部集成的 OAuth/命令方法。此文件定义 Promise 风格 下该领域的接口与类型，与其它领域共同构成插件 API 表面。
+ */
 import type { ConnectionInfo } from "@opencode/client"
 import type { IntegrationApi } from "@opencode/client/promise/api"
 import { Connection } from "@opencode/schema/connection"

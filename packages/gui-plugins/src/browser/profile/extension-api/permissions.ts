@@ -1,3 +1,7 @@
+/**
+ * 浏览器扩展 API — Permissions。
+ * 浏览器插件暴露给扩展的接口中负责 Permissions 部分，提供该部分所需的实现与类型定义。
+ */
 import { Schema } from "effect"
 import { method, none, type ApiModule } from "./api"
 import { coversPattern } from "./match-pattern"

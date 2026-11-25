@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — Errors。
+ * 内置浏览器功能的 GUI 插件中负责 Errors 部分，提供该部分所需的实现与类型定义。
+ */
 import { Browser } from "@opencode/plugin-browser/rpc"
 import { CAPTURE_DEADLINE_MS, FULL_PAGE_DEADLINE_MS } from "./capture"
 import { FileVerificationError } from "./file-verification"

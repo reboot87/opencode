@@ -1,3 +1,7 @@
+/**
+ * 会话输入区 — FreeLimitPanelStandaloneStories。
+ * 会话界面输入区的实现中负责 FreeLimitPanelStandaloneStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Show } from "solid-js"
 import { DialogStoryRuntime } from "@/components-lab/dialog-story-runtime"
 import { SessionFreeLimitPanel } from "./free-limit-panel"

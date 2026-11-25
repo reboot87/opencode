@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：stats·app。
+ *
+ * 规格编号：E.14。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `/stats` (F11): the stats route over a recorded `GET /api/experimental/session/stats` (never the live
 // service, whose stats endpoint crashes it): the range, the token total in large digits, the activity calendar,
 // and the streak, active days, and sessions. Escape goes back home. The range runs from noon to noon UTC, so

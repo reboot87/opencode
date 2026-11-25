@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：sign·桌面端·macOS。
 # sign-desktop-macos.sh <out dir> <app tarball>...: signs each unsigned .app inside-out with hardened runtime,
 # notarizes them in one submission, staples them, and only then builds opencode-desktop-mac-<arch>.{zip,dmg,app.tar.gz}
 # from the stapled apps. Dry runs sign ad-hoc and skip notarization. Dev and beta trade larger files for faster

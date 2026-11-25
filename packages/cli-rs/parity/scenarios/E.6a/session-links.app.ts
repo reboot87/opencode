@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：会话·链接·app。
+ *
+ * 规格编号：E.6a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Session IDs in a reply link to their sessions (#63224, #63247): a loaded session shows as `@<title>`, the current,
 // an archived and an unknown session stay IDs, and so does a code span that is more than the ID. A rename draws the
 // new title, and a click on the link opens that session.

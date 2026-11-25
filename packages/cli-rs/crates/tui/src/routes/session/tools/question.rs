@@ -1,4 +1,6 @@
 //! Show pending and answered questions in the transcript. The separate form collects answers.
+//!
+//! 终端界面路由：问题。
 
 use super::dispatch::{Block, BlockTool, Header, Inline, InlineTool, Props, content_width};
 use crate::prelude::*;

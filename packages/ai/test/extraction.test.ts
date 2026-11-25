@@ -1,3 +1,10 @@
+/**
+ * 抽取的测试。
+ *
+ * 被测模块：@opencode/ai/extraction
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import { Effect } from "effect"
 import { Extraction } from "../src/experimental.js"

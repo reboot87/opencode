@@ -1,3 +1,7 @@
+/**
+ * 输入建议 — MachineTest。
+ * 输入区的补全建议中负责 MachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import type { ComposerHistoryEntry, ComposerPersistedState, ComposerSuggestion } from "../types"
 import {

@@ -1,3 +1,7 @@
+/**
+ * 预加载脚本 — Index 出口。
+ * 集中导出 预加载脚本 中 Index 相关的实现、组件与类型。
+ */
 import { contextBridge, ipcRenderer, webUtils } from "electron"
 import {
   DragCancelEvent,

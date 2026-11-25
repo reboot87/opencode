@@ -1,3 +1,7 @@
+/**
+ * 测试夹具 — AnimationTicks。
+ * 终端测试使用的夹具数据中负责 AnimationTicks 部分，提供该部分所需的实现与类型定义。
+ */
 import { spyOn } from "bun:test"
 import { CliRenderer } from "@opentui/core"
 

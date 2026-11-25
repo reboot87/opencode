@@ -1,3 +1,5 @@
+//! ACP 协议实现：工具。
+
 pub mod patch;
 
 use std::borrow::Cow;

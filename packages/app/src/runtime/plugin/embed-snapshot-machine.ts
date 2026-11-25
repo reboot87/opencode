@@ -1,4 +1,8 @@
-/** How long a still of a covered embed may take before the native view hides over the box background instead. */
+/**
+ * How long a still of a covered embed may take before the native view hides over the box background instead.
+ *
+ * 插件运行时中负责 EmbedSnapshotMachine 部分：浏览器端插件运行时中与 EmbedSnapshotMachine 相关的状态、交互与渲染逻辑。
+ */
 export const SNAPSHOT_CAPTURE_TIMEOUT_MS = 5_000
 
 /** How long a decoded still waits for Element Timing to report its frame before the native view hides anyway. */

@@ -1,4 +1,8 @@
 #!/usr/bin/env bun
+/**
+ * CLI 入口。
+ * 解析命令行参数、选择子命令并启动对应的运行模式。
+ */
 
 import { ensurePluginRuntime } from "@opencode/plugin/runtime"
 import { NodeRuntime, NodeServices } from "@effect/platform-node"

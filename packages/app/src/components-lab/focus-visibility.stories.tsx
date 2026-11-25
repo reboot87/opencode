@@ -1,3 +1,7 @@
+/**
+ * 组件实验室 — FocusVisibilityStories。
+ * 用于试用与调试 UI 组件的页面中负责 FocusVisibilityStories 部分，提供该部分所需的实现与类型定义。
+ */
 import "@/composer/editor/editor.css"
 import "@/home/projects/view.css"
 import "@/home/sessions/view.css"

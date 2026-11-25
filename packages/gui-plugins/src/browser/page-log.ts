@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — PageLog。
+ * 内置浏览器功能的 GUI 插件中负责 PageLog 部分，提供该部分所需的实现与类型定义。
+ */
 // What the desktop log says when a tab's page ends or stalls. The log goes into bug reports, so a line never carries
 // an address beyond its origin, a title, page text, or a command's arguments. Electron-free, so it stays unit-testable
 // under Bun.

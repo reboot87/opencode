@@ -6,7 +6,10 @@ import { isLetter, letters, type Letter } from "~/lib/font-content"
 const mapping: Record<string, Letter> = Object.create(null)
 const [version, setVersion] = createSignal(0)
 
-/** Changes whenever the map is shuffled, for views that show it. */
+/** Changes whenever the map is shuffled, for views that show it.
+ *
+ * 字体展示组件：`mapping`。
+ */
 export const mapVersion = version
 
 function randomLetter() {

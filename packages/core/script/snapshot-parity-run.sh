@@ -1,4 +1,6 @@
 #!/bin/sh
+
+# 核心包脚本：快照双实现对等性运行。
 # Run the snapshot parity corpus from two worktrees under every Git config variant and compare.
 #   script/snapshot-parity-run.sh <baseline-worktree> [variant...]
 set -e

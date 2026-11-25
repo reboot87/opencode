@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — MarkdownCacheMachine。
+ * 跨场景复用的通用 UI 组件中负责 MarkdownCacheMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export type MarkdownCacheEntry = {
   raw: string
   src?: string

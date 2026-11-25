@@ -1,3 +1,7 @@
+/**
+ * 技能文件扫描。
+ * 按深度上限与忽略规则扫描目录中的技能文件。
+ */
 export * as SkillScan from "./skill-scan.js"
 
 import { FSUtil } from "@opencode/util/fs-util"

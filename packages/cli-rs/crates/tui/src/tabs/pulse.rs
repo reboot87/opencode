@@ -1,4 +1,6 @@
 //! Tab activity, completion, and unread indicators. With animations off, only the static glow remains.
+//!
+//! 终端界面：脉冲。
 
 use std::time::Duration;
 

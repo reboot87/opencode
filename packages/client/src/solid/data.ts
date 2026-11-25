@@ -1,3 +1,7 @@
+/**
+ * Solid 数据层。
+ * 把服务端数据（会话状态、待办、消息等）组织为 Solid 的响应式资源与派生状态。
+ */
 // Client data layer: apply server events and cache API reads into a Solid store.
 // Prefer straightforward projection. Invalidated reads revalidate serially so an older
 // response cannot commit after its replacement. Reconnect invalidates cached reads;

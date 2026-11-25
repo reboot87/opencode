@@ -1,4 +1,6 @@
 //! One-time pairing links. Remote pairing enables the tunnel before requesting its URL.
+//!
+//! CLI 子命令：`pair`。
 
 use std::time::Duration;
 

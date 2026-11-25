@@ -3,6 +3,9 @@
  * Location. Absolute paths inside that Location are accepted, while explicit
  * absolute external paths retain mutation capability through a separate
  * external_directory approval before edit approval.
+ *
+ * 面向模型的文件写入工具：相对路径在当前 Location 内解析；Location 内的绝对路径同样允许；
+ * 显式的外部绝对路径需先通过 external_directory 授权，随后再经过 edit 授权。
  */
 export * as WriteTool from "./write.js"
 

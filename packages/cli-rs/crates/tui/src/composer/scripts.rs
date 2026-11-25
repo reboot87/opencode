@@ -1,4 +1,6 @@
 //! Scripts tab: the Code Mode scripts the session runs in the background (`scripts-tab.tsx`).
+//!
+//! 终端界面：脚本。
 
 use opencode_api::generated::{
     JobInfo, SessionMessageAssistantContentItem, SessionMessageAssistantToolState, SessionMessageInfo,

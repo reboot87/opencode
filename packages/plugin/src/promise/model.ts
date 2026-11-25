@@ -1,3 +1,7 @@
+/**
+ * Promise 风格插件 API — 模型领域。
+ * 插件对模型目录与解析的编辑能力。此文件定义 Promise 风格 下该领域的接口与类型，与其它领域共同构成插件 API 表面。
+ */
 import type { ModelApi } from "@opencode/client/promise/api"
 import type { Model } from "@opencode/schema/model"
 import type { Types } from "effect"

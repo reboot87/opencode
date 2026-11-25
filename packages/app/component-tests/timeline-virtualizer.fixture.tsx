@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — TimelineVirtualizerFixture。
+ * 应用界面组件的测试中负责 TimelineVirtualizerFixture 部分，提供该部分所需的实现与类型定义。
+ */
 import { TimelineRow } from "@opencode/session-ui/timeline/projection"
 import { createComputed, createMemo, createSignal, onCleanup } from "solid-js"
 import { createStore } from "solid-js/store"

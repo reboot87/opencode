@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：Shell·输出·伪终端。
+ *
+ * 规格编号：M.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `session.shell` answers before its `session.shell.ended` event arrives: the shell turn stays running for up to
 // 1.5 s until the event ends it, then goes idle.
 import type { Logged } from "../../lib/fake-server"

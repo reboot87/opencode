@@ -1,4 +1,6 @@
 //! Stdin that cannot be waited on with a timeout, such as a pipe on Windows, read on a thread of its own.
+//!
+//! CLI 交互提示：`piped`。
 
 use std::sync::mpsc::{self, RecvTimeoutError};
 use std::time::Duration;

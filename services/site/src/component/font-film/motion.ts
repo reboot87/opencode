@@ -1,4 +1,7 @@
-/** Pure motion curves for the film, kept apart from the scenes so they can be checked frame by frame. */
+/** Pure motion curves for the film, kept apart from the scenes so they can be checked frame by frame.
+ *
+ * 字体动画胶片组件：动效。
+ */
 
 const clamp = (value: number) => Math.min(1, Math.max(0, value))
 const inOut = (t: number) => {

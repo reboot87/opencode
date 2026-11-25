@@ -101,7 +101,10 @@ function shouldReportType(node: ESTree.TSType, environment: TypeEnvironment): bo
 	return true;
 }
 
-/** Disallow object-dictionary contracts whose direct value type is an unsafe escape hatch. */
+/** Disallow object-dictionary contracts whose direct value type is an unsafe escape hatch.
+ *
+ * Oxlint 规则：无·unsafe·dictionary·类型。
+ */
 export const noUnsafeDictionaryTypeRule = defineRule({
 	meta: {
 		type: "problem",

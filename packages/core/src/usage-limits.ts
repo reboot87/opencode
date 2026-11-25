@@ -1,3 +1,7 @@
+/**
+ * 用量上限服务。
+ * 查询 provider/工作区的用量上限状态，含 Unavailable 错误。
+ */
 export * as UsageLimits from "./usage-limits.js"
 
 import { Model } from "@opencode/schema/model"

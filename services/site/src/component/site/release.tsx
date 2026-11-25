@@ -43,7 +43,10 @@ export function Inline(props: { text: string }) {
   )
 }
 
-/** A release note line, with an optional label (the sections it was listed under) before it and `children` (its links) after it. */
+/** A release note line, with an optional label (the sections it was listed under) before it and `children` (its links) after it.
+ *
+ * 站点界面组件：发布。
+ */
 export function ReleaseItem(props: { item: string; label?: string; children?: JSX.Element }) {
   const parts = () => {
     const match = props.item.match(/^(.+?)(\s*\(@([\w-]+)\))?$/)

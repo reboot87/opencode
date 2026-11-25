@@ -1,3 +1,7 @@
+/**
+ * 行注释 — MachineTest。
+ * 展示代码行注释的组件中负责 MachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   createLineCommentEditorState,

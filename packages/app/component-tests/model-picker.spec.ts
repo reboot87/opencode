@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — ModelPickerSpec。
+ * 应用界面组件的测试中负责 ModelPickerSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Locator } from "@playwright/test"
 import { expect, story } from "../../stories/playwright/story"
 

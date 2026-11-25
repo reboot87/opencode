@@ -1,3 +1,7 @@
+/**
+ * 浏览器历史 — StoreTest。
+ * 浏览器插件的访问历史中负责 StoreTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, beforeEach, describe, expect, setSystemTime, test } from "bun:test"
 import { mkdtemp, readFile, rm } from "node:fs/promises"
 import { tmpdir } from "node:os"

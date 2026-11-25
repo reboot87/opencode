@@ -6,6 +6,8 @@ import { setFaq } from "../faq"
  * The Press page (routes/press/index.tsx): the boilerplate accordion, the copy buttons (each
  * boilerplate, the Anomaly logo SVGs) and the media gallery's lightbox, which renders in the browser
  * on the first thumbnail click (press-lightbox.tsx).
+ *
+ * 客户端交互岛：媒体中心。
  */
 export default function press() {
   const list = $('[data-slot="boilerplate-accordion"]')

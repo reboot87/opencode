@@ -6,6 +6,8 @@ import { watchMenus } from "../menu-watch"
  * (orb.css) and can't be focused. `panel` loads its pop-up (hex-panel.tsx) the first time the orb is
  * hovered, focused or pressed, and resolves with what a click does; until then a page has no
  * framework code for it. Returns the button and its stop.
+ *
+ * 语音交互组件：十六进制球体。
  */
 export function hexOrb(label: string, panel: () => Promise<() => void>) {
   const template = document.createElement("template")

@@ -1,5 +1,13 @@
 #!/usr/bin/env node
 
+/*
+ * 守护进程 npm 包装：opencode·伪终端。
+ */
+
+/*
+ * 守护进程 npm 包装：opencode·伪终端。
+ */
+
 import { spawnSync } from "node:child_process"
 import { binaryPath } from "../index.js"
 

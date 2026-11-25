@@ -1,3 +1,7 @@
+/**
+ * 主页项目 — Actions。
+ * 主页中项目列表的展示中负责 Actions 部分，提供该部分所需的实现与类型定义。
+ */
 import { Schema } from "effect"
 import { useLocation } from "@solidjs/router"
 import { createSignal, onCleanup, untrack } from "solid-js"

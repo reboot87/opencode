@@ -1,3 +1,7 @@
+/**
+ * 调试插件 — MemoryInfra。
+ * 面向开发者的调试 GUI 插件中负责 MemoryInfra 部分，提供该部分所需的实现与类型定义。
+ */
 import { Option, Schema } from "effect"
 
 /** The trace config that makes Chromium dump every process's memory, broken down by allocator. */

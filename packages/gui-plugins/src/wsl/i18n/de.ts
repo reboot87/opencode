@@ -1,3 +1,7 @@
+/**
+ * WSL 文案 — De。
+ * WSL 插件的多语言文案中负责 De 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "server.add": "WSL-Server hinzufügen",
   "server.label": "WSL",

@@ -1,5 +1,7 @@
 //! Drives the CLI and prompt demo on a Windows pseudoconsole.
 #![cfg(windows)]
+//!
+//! 命令行入口测试：windows·冒烟。
 
 use std::cell::{Cell, RefCell};
 use std::io::{BufRead, BufReader, Read, Write};

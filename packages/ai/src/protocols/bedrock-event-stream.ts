@@ -1,3 +1,7 @@
+/**
+ * Bedrock 二进制事件流解码。
+ * 解析带长度前缀与 CRC 的事件帧。
+ */
 import { EventStreamCodec } from "@smithy/eventstream-codec"
 import { fromUtf8, toUtf8 } from "@smithy/util-utf8"
 import { Effect, Schema, Stream } from "effect"

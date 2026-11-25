@@ -1,3 +1,7 @@
+/**
+ * 渲染进程 — ApiTypes。
+ * Electron 渲染进程的界面逻辑中负责 ApiTypes 部分，提供该部分所需的实现与类型定义。
+ */
 import type { DesktopMenuAction, DesktopZoomLevel } from "@opencode/app/desktop-menu"
 import type { DesktopNativeBundle } from "@opencode/app/i18n/desktop-native"
 import type { StorageSnapshot } from "../shared/ipc-transport"

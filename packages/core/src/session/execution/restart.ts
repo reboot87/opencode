@@ -1,3 +1,8 @@
+/**
+ * 会话重启（SessionRestart）服务。
+ * 在会话执行被中断后重建执行环境：恢复 shell、Code Mode 任务、视频生成等后台工作，
+ * 并把会话状态重新推进到可继续执行的位置。
+ */
 export * as SessionRestart from "./restart.js"
 
 import { Cause, Context, Effect, Layer, Option, Schema } from "effect"

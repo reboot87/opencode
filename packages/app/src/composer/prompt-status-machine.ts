@@ -4,6 +4,8 @@
  * - `optimistic`: a prompt dispatched to an idle Session marked it running before the server said so, and no prompt
  *   has been admitted since. `latest` is the newest prompt dispatched to the Session; only its failure puts the status
  *   back to idle, so an older prompt that fails cannot hide the turn a newer prompt started.
+ *
+ * 输入组合器中负责 PromptStatusMachine 部分：会话输入区中与 PromptStatusMachine 相关的状态、交互与渲染逻辑。
  */
 export type PromptStatusState = { readonly type: "server" } | { readonly type: "optimistic"; readonly latest: string }
 

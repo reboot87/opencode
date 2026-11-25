@@ -1,3 +1,7 @@
+/**
+ * 标签页 — Tabs。
+ * 标签页导航组件中负责 Tabs 部分，提供该部分所需的实现与类型定义。
+ */
 import { Content, List, Root, Trigger } from "@kobalte/core/tabs"
 import { createContext, Show, splitProps, useContext, type JSX } from "solid-js"
 import type { Component, ComponentProps, ParentProps } from "solid-js"

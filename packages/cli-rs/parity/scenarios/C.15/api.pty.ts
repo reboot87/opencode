@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：API·伪终端。
+ *
+ * 规格编号：C.15。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `api --wizard`: a text flag, a repeatable flag (a count, then each value), a skipped key=value flag, and the
 // variadic positional (a count, then each word). Runs the request against the fake server.
 import { definePty } from "../../pty/run"

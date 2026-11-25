@@ -1,4 +1,6 @@
 //! Exercise completion through key bindings, submitted parts, and persisted recents.
+//!
+//! 终端界面测试：完整。
 
 use crate::support::{self, DIRECTORY, Fake, Harness, Log, WAIT, deref_harness, list};
 

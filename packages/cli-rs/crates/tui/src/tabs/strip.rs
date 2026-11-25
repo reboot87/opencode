@@ -1,4 +1,6 @@
 //! Horizontal session tab strip.
+//!
+//! 终端界面：`strip`。
 
 use std::time::{Duration, Instant};
 

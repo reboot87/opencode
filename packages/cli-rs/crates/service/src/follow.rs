@@ -1,5 +1,7 @@
 //! Follows a managed service across port and password changes. A failed connection or 401 triggers rediscovery for
 //! future requests; replaying the failed request could duplicate a write.
+//!
+//! 服务层：`follow`。
 
 use std::sync::{Arc, RwLock};
 

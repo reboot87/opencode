@@ -73,7 +73,10 @@ const round = (value: number, digits = 3) => Math.round(value * 10 ** digits) / 
 export const camOf = (cam: EngineCam): Cam =>
   Object.fromEntries(PROPS.map((prop) => [prop, round(cam[prop], prop === "s" ? 4 : 2)])) as Cam
 
-/** JSON with short arrays and flat objects on one line, so a shot list stays readable in a diff. */
+/** JSON with short arrays and flat objects on one line, so a shot list stays readable in a diff.
+ *
+ * 视频编辑器组件：`edit`。
+ */
 export function formatEdit(edit: Edit) {
   const oneLine = (inner: string) => inner.replace(/\s*\n\s*/g, " ")
   return (

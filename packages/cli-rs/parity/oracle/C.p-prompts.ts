@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：C.p·提示词。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // C.p helper: runs one named prompt script with the `@clack/prompts` that `packages/cli` uses.
 // `crates/cli/src/prompt/demo.rs` (the `opencode-prompt-demo` binary) runs the same scripts with the
 // Rust prompt kit, so P-PTY and P-CLI can compare the two screen for screen.

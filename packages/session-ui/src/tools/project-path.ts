@@ -1,3 +1,7 @@
+/**
+ * 工具展示 — ProjectPath。
+ * 工具调用与结果的展示组件中负责 ProjectPath 部分，提供该部分所需的实现与类型定义。
+ */
 import { comparablePath, containsDirectory } from "@opencode/util/path"
 
 /** `path` relative to the project `directory`, or `path` itself when it is outside the project. */

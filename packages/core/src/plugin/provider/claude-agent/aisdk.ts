@@ -1,3 +1,7 @@
+/**
+ * Claude Agent AI SDK 注册。
+ * 把 Claude Agent 的 AI SDK 集成注册进 provider 注册表。
+ */
 export * as ClaudeAISDK from "./aisdk.js"
 
 import type { Context } from "@opencode/plugin/effect/plugin"

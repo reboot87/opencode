@@ -1,3 +1,8 @@
+/**
+ * app·execution·别名测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { existsSync, lstatSync, readdirSync } from "fs"
 import path from "path"
 

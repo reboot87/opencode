@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：发布·AUR。
 # publish-aur.sh <build-npm dir>: updates opencode-beta on the AUR over SSH (AUR_KEY, pinned host key) and
 # registers the aur update artifact.
 . "$(dirname "$0")/lib.sh"

@@ -1,7 +1,10 @@
 import { For } from "solid-js"
 import type { RichText } from "~/lib/markdown"
 
-/** Renders shared page copy: text runs, inline code and links. */
+/** Renders shared page copy: text runs, inline code and links.
+ *
+ * 站点界面组件：rich·文本。
+ */
 export function Rich(props: { value: RichText }) {
   return (
     <For each={props.value}>

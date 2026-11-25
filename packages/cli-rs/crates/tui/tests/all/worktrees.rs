@@ -1,4 +1,6 @@
 //! Worktree selection, creation, and session moves through the TUI.
+//!
+//! 终端界面测试：工作树。
 
 use crate::support::{self, DIRECTORY, Fake, Harness, Log, WAIT, deref_harness};
 

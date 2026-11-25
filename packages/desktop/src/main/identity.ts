@@ -1,3 +1,7 @@
+/**
+ * 桌面端主进程 — Identity。
+ * Electron 主进程的核心逻辑中负责 Identity 部分，提供该部分所需的实现与类型定义。
+ */
 import path from "node:path"
 
 export type Channel = "local" | "dev" | "beta" | "prod"

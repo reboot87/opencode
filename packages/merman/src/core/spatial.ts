@@ -1,3 +1,7 @@
+/**
+ * 模块 — Spatial。
+ * 该目录下的功能模块中负责 Spatial 部分，提供该部分所需的实现与类型定义。
+ */
 import { orthogonalPathPoints, type DiagramBounds, type DiagramPoint } from "./geometry.js"
 
 export type SpatialRole = "body" | "boundary" | "terminal" | "route" | "label"

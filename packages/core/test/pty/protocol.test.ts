@@ -1,3 +1,10 @@
+/**
+ * 协议的测试。
+ *
+ * 被测模块：@opencode/core/pty/protocol
+ *
+ * 覆盖伪终端的创建、读写与尺寸变更行为。
+ */
 import { describe, expect, test } from "bun:test"
 import { PtyProtocol } from "@opencode/core/pty/protocol"
 

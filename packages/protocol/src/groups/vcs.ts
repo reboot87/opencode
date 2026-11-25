@@ -1,3 +1,7 @@
+/**
+ * 版本控制 API 分组。
+ * 定义版本控制的初始化、分支与 diff 端点。
+ */
 import { FileDiff } from "@opencode/schema/file-diff"
 import { Location } from "@opencode/schema/location"
 import { NonNegativeInt, PositiveInt, optional } from "@opencode/schema/schema"

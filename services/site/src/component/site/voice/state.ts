@@ -14,5 +14,8 @@ const restored = typeof sessionStorage !== "undefined" && sessionStorage.getItem
 
 export const [voicePhase, setVoicePhase] = createSignal<VoicePhase>(restored ? "active" : "closed")
 
-/** The live voice level, 0–1 (the microphone, or the assistant while it speaks), written every frame. */
+/** The live voice level, 0–1 (the microphone, or the assistant while it speaks), written every frame.
+ *
+ * 语音交互组件：状态。
+ */
 export const voiceLevel = { value: 0 }

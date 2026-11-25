@@ -1,3 +1,6 @@
+/**
+ * 页面路由：终端。
+ */
 import { ProductPage } from "~/component/site/product-page"
 import { productAreas } from "~/component/site/product-data"
 import { productChangelog } from "~/lib/changelog"

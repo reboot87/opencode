@@ -1,4 +1,6 @@
 //! Binds Luau setup, reads and effects to the linked SDK. A Luau error fails the call and discards its effects.
+//!
+//! Luau 插件运行时：绑定。
 
 use std::any::Any;
 use std::cell::RefCell;

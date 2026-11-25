@@ -1,3 +1,7 @@
+/**
+ * 托管配置文档。
+ * 定义托管配置的 Document 扩展类型。
+ */
 export * as ConfigManaged from "./managed.js"
 
 import { Config } from "@opencode/schema/config"

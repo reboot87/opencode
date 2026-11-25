@@ -1,3 +1,10 @@
+/**
+ * 部分·JSON的测试。
+ *
+ * 被测模块：@opencode/ai/partial-json
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { Allow, MalformedJSON, PartialJSON, parse } from "../src/protocols/utils/partial-json.js"
 

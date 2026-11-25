@@ -1,3 +1,7 @@
+/**
+ * 自动化 Shell 授权。
+ * 判定并执行自动化中 shell 命令的权限授权。
+ */
 export * as AutomationShell from "./shell.js"
 
 import type { Automation } from "@opencode/schema/automation"

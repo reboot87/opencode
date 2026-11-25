@@ -1,3 +1,8 @@
+/**
+ * 对等性校验入口：代理。
+ *
+ * Rust 与 TypeScript 双实现的对等性校验：驱动全部 oracle / component / 场景脚本并刷新基线。
+ */
 // The recording proxy: forwards a client's HTTP requests to the simulated server, streams the responses (the event
 // stream included), and logs every request for P-REQ.
 import { Option, Schema } from "effect"

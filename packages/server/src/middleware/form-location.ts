@@ -1,3 +1,7 @@
+/**
+ * 表单 Location 中间件。
+ * 为表单相关端点注入 Location 作用域。
+ */
 import { Instance } from "@opencode/core/instance/service"
 import { LocationServiceMap } from "@opencode/core/location-services"
 import { Session } from "@opencode/core/session"

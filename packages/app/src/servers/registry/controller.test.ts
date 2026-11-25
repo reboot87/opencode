@@ -1,3 +1,7 @@
+/**
+ * 服务端注册表 — ControllerTest。
+ * 已知服务端的登记与状态中负责 ControllerTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { ServerConnection } from "@/runtime/server/registry"
 import { sortServerConnections } from "./controller"

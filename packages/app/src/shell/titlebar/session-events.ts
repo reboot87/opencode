@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — SessionEvents。
+ * 自定义窗口标题栏中负责 SessionEvents 部分，提供该部分所需的实现与类型定义。
+ */
 import { ServerConnection } from "@/runtime/server/registry"
 
 export const SESSION_TABS_REMOVED_EVENT = "opencode:session-tabs-removed"

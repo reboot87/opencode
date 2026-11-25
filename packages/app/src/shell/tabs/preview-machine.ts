@@ -1,3 +1,7 @@
+/**
+ * 标签页 — PreviewMachine。
+ * 多标签页的打开与切换中负责 PreviewMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionTab, Tab } from "./tabs"
 
 export type PreviewState = { readonly status: "idle" } | { readonly status: "previewing"; readonly tab: SessionTab }

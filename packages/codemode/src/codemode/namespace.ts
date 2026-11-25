@@ -1,3 +1,7 @@
+/**
+ * Code Mode 命名空间。
+ * 定义沙箱代码可访问的命名空间与选项。
+ */
 import type { Tools } from "./tools.js"
 
 /** A tool namespace with optional model-visible metadata. */

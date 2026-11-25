@@ -8,7 +8,10 @@ import type { Locale } from "~/lib/language"
 import { blocks, feedbackLine, link, markdownPath, richToMarkdown, sourceNote } from "~/lib/markdown"
 import { markdownContext, pageMarkdown } from "~/lib/page-markdown"
 
-/** The llms.txt index (https://llmstxt.org): what OpenCode is and the Markdown version of every page. */
+/** The llms.txt index (https://llmstxt.org): what OpenCode is and the Markdown version of every page.
+ *
+ * 站点共享逻辑：llms.txt。
+ */
 export async function llmsText(locale: Locale) {
   const context = await markdownContext(locale)
   const content = homeContent(context.t, context.route)

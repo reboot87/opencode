@@ -8,6 +8,8 @@ const events = "contextmenu keydown focusin pointerdown pointerup pointercancel 
  * the logo, the pointer, focus or ↓ on a product's name. The trigger's events from then until the code
  * has loaded play again, so that first right-click or hover opens its menu. A failed load leaves the
  * next sign to try again. No Solid here: the docs script is plain DOM.
+ *
+ * 站点界面组件：导航意图。
  */
 export function navMenusOnIntent(options: NavMenusOptions) {
   let early: Event[] | undefined

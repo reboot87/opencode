@@ -1,3 +1,7 @@
+/**
+ * WSL 文案 — Ca。
+ * WSL 插件的多语言文案中负责 Ca 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "server.add": "Afegeix el servidor WSL.",
   "server.label": "WSL",

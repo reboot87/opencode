@@ -1,3 +1,7 @@
+/**
+ * 实时工具元数据叠加层。
+ * 在工具执行期间于内存中保存每个消息/工具调用的元数据（live map），并在读取消息时把实时元数据覆盖（overlay）到持久化消息上，使 UI 能即时看到进行中的工具状态。
+ */
 export * as LiveToolMetadata from "./live-tool-metadata.js"
 
 import type { Tool } from "../../tool.js"

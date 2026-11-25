@@ -1,6 +1,8 @@
 /**
  * A page's link preview card: its file (a site path) and alt text, rendered by script/og.ts.
  * Cards from OG Studio can also have a video (og:video) and a translated image for each locale.
+ *
+ * 站点共享逻辑：`og`。
  */
 export type OgImage = { src: string; alt: string; video?: string; locales?: Record<string, { src: string; alt: string }> }
 

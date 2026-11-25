@@ -1,4 +1,6 @@
 //! `/cd` moves the current session or selects the directory of the next session on home.
+//!
+//! 终端输入提示：`cd`。
 
 use opencode_api::generated::{AbsolutePath, LocationGetInput, LocationQueryInput, SessionMoveInput};
 use opencode_ui::keymap::Slash;

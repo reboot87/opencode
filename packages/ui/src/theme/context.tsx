@@ -1,3 +1,7 @@
+/**
+ * UI 主题 — Context。
+ * 配色、间距与字号等设计令牌中负责 Context 部分，提供该部分所需的实现与类型定义。
+ */
 // @refresh reload
 
 import { createMemo, createSignal, onCleanup, onMount, untrack } from "solid-js"

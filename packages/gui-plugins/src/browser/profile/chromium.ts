@@ -1,3 +1,7 @@
+/**
+ * 浏览器配置 — Chromium。
+ * 浏览器插件的用户配置与身份中负责 Chromium 部分，提供该部分所需的实现与类型定义。
+ */
 import { createDecipheriv, createHash, pbkdf2Sync } from "node:crypto"
 import { chromiumTime, type CookieRead, type ImportedCookie } from "./cookie"
 import { snapshotDatabase, type SnapshotScratch } from "./database"

@@ -1,3 +1,10 @@
+/**
+ * convert的测试。
+ *
+ * 被测模块：@opencode/core/plugin/provider/claude-agent/language-model/convert
+ *
+ * 覆盖 Claude Agent 供应商插件的请求转换、工具桥接与流式事件映射。
+ */
 import { describe, expect, test } from "bun:test"
 import { ConvertClaudeStream } from "@opencode/core/plugin/provider/claude-agent/language-model/convert-claude-stream"
 import { ConvertToClaudeMessage } from "@opencode/core/plugin/provider/claude-agent/language-model/convert-to-claude-message"

@@ -1,3 +1,7 @@
+/**
+ * 外壳命令 — SessionSearch。
+ * 应用外壳提供的命令中负责 SessionSearch 部分，提供该部分所需的实现与类型定义。
+ */
 import { useDialog, useDialogLayer } from "@opencode/ui/context/dialog"
 import { startTransition } from "solid-js"
 import { useGlobal } from "@/runtime/server/runtime"

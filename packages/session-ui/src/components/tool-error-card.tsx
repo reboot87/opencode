@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — ToolErrorCard。
+ * 跨场景复用的通用 UI 组件中负责 ToolErrorCard 部分，提供该部分所需的实现与类型定义。
+ */
 import { type ComponentProps, createMemo, onMount, Show, splitProps } from "solid-js"
 import { createStore } from "solid-js/store"
 import { Card, CardDescription } from "@opencode/ui/card"

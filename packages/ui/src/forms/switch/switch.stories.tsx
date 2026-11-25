@@ -1,3 +1,7 @@
+/**
+ * 开关 — SwitchStories。
+ * 布尔开关组件中负责 SwitchStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal } from "solid-js"
 import { Switch, type SwitchProps } from "./switch"
 

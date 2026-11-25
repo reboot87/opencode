@@ -1,3 +1,7 @@
+/**
+ * 后台任务管理（SessionBackground）。
+ * 跟踪会话中的后台工作项（如后台 shell、子代理），提供查询、列表过滤与未结算项管理。
+ */
 export * as SessionBackground from "./background.js"
 
 import type { Kind, Status } from "@opencode/schema/job"

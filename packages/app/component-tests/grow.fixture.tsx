@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — GrowFixture。
+ * 应用界面组件的测试中负责 GrowFixture 部分，提供该部分所需的实现与类型定义。
+ */
 import { createStore } from "solid-js/store"
 import { render } from "solid-js/web"
 import { Grow } from "../src/session/composer/spring-height"

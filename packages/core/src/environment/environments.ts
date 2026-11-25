@@ -1,3 +1,7 @@
+/**
+ * 环境注册表服务。
+ * 管理可用环境清单与环境解析。
+ */
 export * as Environments from "./environments.js"
 
 import { CrossSpawnSpawner } from "@opencode/util/cross-spawn-spawner"

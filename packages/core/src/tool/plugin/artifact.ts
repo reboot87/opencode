@@ -1,3 +1,7 @@
+/**
+ * artifact 工具。
+ * 创建、读取与更新会话产物（artifact）的工具定义与处理逻辑。
+ */
 export * as ArtifactTools from "./artifact.js"
 
 import { ToolFailure } from "@opencode/ai/effect"

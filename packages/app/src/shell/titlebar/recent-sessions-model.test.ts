@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — RecentSessionsModelTest。
+ * 自定义窗口标题栏中负责 RecentSessionsModelTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import type { OpenCodeEvent, SessionInfo } from "@opencode/client/promise"
 import { resolveServerList, ServerConnection } from "@/runtime/server/registry"

@@ -1,3 +1,8 @@
+/**
+ * 时间脚本。
+ *
+ * Rust CLI 的代码生成器：由 TypeScript 单一来源生成 Rust 代码。
+ */
 // Writes crates/util/fixtures/time.tsv: what the TypeScript client's `Date` and `Intl` calls give under Bun, in five
 // time zones, for the known-answer tests of opencode-util's `time` module. Each zone runs in a child process with `TZ`
 // set, as the client reads it. Rows are `kind input output...`, tab-separated. The `parse` rows come first, then a

@@ -1,3 +1,7 @@
+/**
+ * 提示区组件 — Autocomplete。
+ * 提示输入区的终端组件中负责 Autocomplete 部分，提供该部分所需的实现与类型定义。
+ */
 import {
   measureEditText,
   type RGBA,

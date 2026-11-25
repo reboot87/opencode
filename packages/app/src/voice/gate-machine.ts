@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — GateMachine。
+ * 实时语音会话的界面中负责 GateMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // Adapted from voice-lab's QuietGate. User speech is never subject to the chatter cap; a held announcement may
 // interrupt only the agent, and only after holding for five seconds.
 

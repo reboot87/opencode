@@ -1,3 +1,7 @@
+/**
+ * 时间线（新版） — SpacingTest。
+ * 重构中的会话消息时间线中负责 SpacingTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { SessionMessageAssistant, SessionMessageInfo } from "@opencode/client/promise"
 import { TimelineRow } from "../timeline/timeline-row"

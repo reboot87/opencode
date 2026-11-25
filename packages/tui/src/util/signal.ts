@@ -1,3 +1,7 @@
+/**
+ * 终端工具 — Signal。
+ * 终端界面的通用工具函数中负责 Signal 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal, on, onCleanup, type Accessor } from "solid-js"
 import { createAnimatable, tween } from "../ui/animation"
 

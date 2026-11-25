@@ -1,3 +1,7 @@
+/**
+ * 会话收件箱（SessionInbox）。
+ * 管理待处理的输入、 steering 与压缩/移动等控制项：入队、选取可提升项、序列化消费，是执行器驱动的输入源。
+ */
 export * as SessionInbox from "./inbox.js"
 
 import { and, asc, eq, or } from "drizzle-orm"

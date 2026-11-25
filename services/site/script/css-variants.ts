@@ -1,3 +1,6 @@
+/**
+ * 站点构建脚本：CSS·变体。
+ */
 // Writes src/component/site/css-variants.json: each settings attribute and the one value production
 // renders for it (the default settings; null when it is left off), on the site root and on the
 // elements the pre-paint rules name. script/css-variants-plugin.ts drops, from the production CSS

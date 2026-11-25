@@ -1,3 +1,7 @@
+/**
+ * UI 上下文 — Location。
+ * UI 包的上下文提供者中负责 Location 部分，提供该部分所需的实现与类型定义。
+ */
 import { isLocationNotFoundError, type LocationGetOutput, type LocationRef } from "@opencode/client"
 import { retry } from "@opencode/util/retry"
 import { createContext, createMemo, createSignal, onCleanup, useContext, type ParentProps } from "solid-js"

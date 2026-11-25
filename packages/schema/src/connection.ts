@@ -1,3 +1,7 @@
+/**
+ * 集成连接类型。
+ * 定义外部集成连接的凭据与元数据结构。
+ */
 export * as Connection from "./connection.js"
 
 import { Schema } from "effect"

@@ -1,3 +1,8 @@
+/**
+ * 升级测试夹具。
+ *
+ * 为 CLI 测试提供配置文件与工作区样例。
+ */
 import { NodeServices } from "@effect/platform-node"
 import { Effect } from "effect"
 import { Command } from "effect/cli"

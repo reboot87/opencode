@@ -1,3 +1,7 @@
+/**
+ * pty 接口处理器。
+ * PTY 接口处理器：伪终端的创建、读写与票据。
+ */
 import { Pty } from "@opencode/core/pty"
 import { PtyProtocol } from "@opencode/core/pty/protocol"
 import { PtyTicket } from "@opencode/core/pty/ticket"

@@ -1,3 +1,7 @@
+/**
+ * UI Hook — CreateAutoScroll。
+ * 可复用的 React Hook中负责 CreateAutoScroll 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, on, onCleanup, untrack } from "solid-js"
 import { createStore } from "solid-js/store"
 import { createEventListener } from "@solid-primitives/event-listener"

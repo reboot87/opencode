@@ -9,7 +9,10 @@ import { Resource } from "#resource"
 
 type Middleware = ReturnType<typeof createMiddleware>[number]
 
-/** The headers every response from a stage carries: none in production. */
+/** The headers every response from a stage carries: none in production.
+ *
+ * 站点共享逻辑：`noindex`。
+ */
 export function stageHeaders(stage: "dev" | "production"): Record<string, string> {
   return stage === "dev" ? { "X-Robots-Tag": "noindex, nofollow" } : {}
 }

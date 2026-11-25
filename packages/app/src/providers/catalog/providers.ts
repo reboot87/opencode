@@ -1,3 +1,7 @@
+/**
+ * Provider 目录 — Providers。
+ * 可用模型目录的浏览界面中负责 Providers 部分，提供该部分所需的实现与类型定义。
+ */
 import { useData } from "@/runtime/server/current"
 import { useServerSDK } from "@/runtime/server/client"
 import { normalizeProviderList } from "@/runtime/server/global-sync/utils"

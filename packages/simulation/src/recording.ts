@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — Recording。
+ * GUI 插件的实现中负责 Recording 部分，提供该部分所需的实现与类型定义。
+ */
 import { createWriteStream, type WriteStream } from "node:fs"
 import { mkdir } from "node:fs/promises"
 import { dirname } from "node:path"

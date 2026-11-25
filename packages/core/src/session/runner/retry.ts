@@ -1,3 +1,7 @@
+/**
+ * 会话重试策略（SessionRunnerRetry）。
+ * 基于 ModelRetry 策略判断 AIError 是否可重试，触发 session.retry 插件 hook 让插件改写决定，规范化延迟，并发布 RetryScheduled 事件后按延迟等待。
+ */
 export * as SessionRunnerRetry from "./retry.js"
 
 import { AIError, isRetryable } from "@opencode/ai/effect"

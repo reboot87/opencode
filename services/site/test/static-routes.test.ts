@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：静态路由。
+ */
 import { describe, expect, test } from "bun:test"
 import { fileURLToPath } from "node:url"
 // SolidStart's own file router, which builds the route manifest the static renderer finds pages in.

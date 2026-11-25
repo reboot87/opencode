@@ -1,3 +1,7 @@
+/**
+ * 测试夹具 — Websocket。
+ * 终端测试使用的夹具数据中负责 Websocket 部分，提供该部分所需的实现与类型定义。
+ */
 import { Effect } from "effect"
 
 // For callers that must name a port before the process binds it (a layer that reports no URL), unlike the parity

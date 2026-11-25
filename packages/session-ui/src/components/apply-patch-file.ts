@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — ApplyPatchFile。
+ * 跨场景复用的通用 UI 组件中负责 ApplyPatchFile 部分，提供该部分所需的实现与类型定义。
+ */
 /* oxlint-disable anti-slop/no-runtime-typeof, anti-slop/no-unknown-parameters, anti-slop-effect/prefer-effect-match --
    this file parses tool metadata as it did before the New timeline, which only added the optional `context`; the
    parsing is shared with the current timeline and keeps its shape until it is rewritten on its own. */

@@ -1,3 +1,7 @@
+/**
+ * 生成 API 分组。
+ * 定义文本/图片/视频等生成端点及其契约。
+ */
 import { Generate } from "@opencode/schema/generate"
 import { Model } from "@opencode/schema/model"
 import { Schema } from "effect"

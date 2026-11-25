@@ -1,3 +1,7 @@
+/**
+ * 实验性设置 — Experimental。
+ * 实验性功能开关中负责 Experimental 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Component } from "solid-js"
 import { Switch } from "@opencode/ui/switch"
 import { Select } from "@opencode/ui/select"

@@ -1,3 +1,7 @@
+/**
+ * 桌面插件 — Host。
+ * 桌面端插件的加载与宿主能力中负责 Host 部分，提供该部分所需的实现与类型定义。
+ */
 import { app, BrowserWindow } from "electron"
 import { sameLoopbackServer } from "@opencode/app/loopback"
 import { builtins } from "@opencode/gui-plugins/main"

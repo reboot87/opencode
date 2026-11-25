@@ -1,3 +1,7 @@
+/**
+ * 更新文案 — Ko。
+ * 更新插件的多语言文案中负责 Ko 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "status.label": "업데이트",
   "action.checkNow": "지금 확인",

@@ -1,3 +1,7 @@
+/**
+ * Databricks 插件。
+ * 注册 Databricks provider，基于环境变量中的主机地址。
+ */
 import { Effect } from "effect"
 import { define } from "@opencode/plugin/effect/plugin"
 

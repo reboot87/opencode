@@ -1,3 +1,7 @@
+/**
+ * 插件清单。
+ * 检查本地插件清单并汇总其状态。
+ */
 import { EOL } from "node:os"
 import { Cause, Effect, Exit } from "effect"
 import { OpenCode } from "@opencode/client"

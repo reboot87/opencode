@@ -1,3 +1,7 @@
+/**
+ * 远程机器 API 分组。
+ * 定义远程机器的列举与连接端点（实验性，需开启 machines 开关）。
+ */
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiSchema, OpenApi } from "effect/http-api"
 import { ConflictError, ForbiddenError, InvalidRequestError, MachineNotFoundError } from "../errors.js"

@@ -1,3 +1,7 @@
+/**
+ * 监听器绑定。
+ * 按 libc 差异解析原生文件监听模块。
+ */
 import { createRequire } from "node:module"
 
 declare const OPENCODE_LIBC: string | undefined

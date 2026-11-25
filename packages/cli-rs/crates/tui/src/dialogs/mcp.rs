@@ -1,4 +1,6 @@
 //! MCP server status and actions.
+//!
+//! 终端弹窗组件：MCP。
 
 use opencode_api::generated::{
     ExperimentalMcpConnectInput, ExperimentalMcpDisconnectInput, LocationQueryInput, McpServer, McpServerStatus,

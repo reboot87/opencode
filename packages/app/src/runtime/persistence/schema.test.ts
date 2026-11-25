@@ -1,3 +1,7 @@
+/**
+ * 运行时持久化 — SchemaTest。
+ * 浏览器端配置的本地持久化中负责 SchemaTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { Effect, Option, Predicate, Schema, SchemaGetter } from "effect"
 import { Persistence } from "./schema"

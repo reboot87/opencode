@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：发布·GitHub·发布。
 # publish-github-release.sh <dir>...: attaches the CLI archives and desktop builds in the given artifact dirs, plus
 # a SHA256SUMS, to the v<version> GitHub release with OPENCODE_RELEASE_NOTES. Immutable releases lock assets once
 # published, so they go to a draft first.

@@ -1,3 +1,7 @@
+/**
+ * 配置 API 分组。
+ * 定义配置读取与更新的端点。
+ */
 import { Config } from "@opencode/schema/config"
 import { ConfigShell } from "@opencode/schema/config/shell"
 import { Schema } from "effect"

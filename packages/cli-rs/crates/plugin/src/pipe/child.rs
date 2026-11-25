@@ -23,6 +23,8 @@
 //! ends the child. On Windows a job holds the child and everything it starts, and the system closes it with the host.
 
 #![allow(unsafe_code)]
+//!
+//! 插件系统：子级。
 
 use std::collections::VecDeque;
 use std::io::{BufRead, BufReader, Write};

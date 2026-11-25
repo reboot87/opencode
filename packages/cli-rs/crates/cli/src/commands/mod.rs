@@ -1,3 +1,5 @@
+//! CLI 子命令入口。
+
 pub mod acp;
 pub mod api;
 pub mod auth;

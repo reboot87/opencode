@@ -1,3 +1,7 @@
+/**
+ * Code Mode 文件差异。
+ * 计算沙箱代码执行后的文件变更（added/deleted/modified），带补丁体积与文件数上限。
+ */
 export * as CodeModeDiffs from "./diffs.js"
 
 import { Context, Effect, Option, Schema } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * Google Vertex predict 嵌入协议。
+ * Vertex AI 的预测式嵌入端点。
+ */
 import { Effect, Schema } from "effect"
 import { EmbeddingResponse, EmbeddingUsage, type EmbeddingRequest } from "../embedding.js"
 import { EmbeddingRoute } from "../route/embedding.js"

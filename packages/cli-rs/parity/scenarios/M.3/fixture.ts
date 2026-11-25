@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：夹具。
+ *
+ * 规格编号：M.3。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // M.2's `ses_mini` server with the requests M.3's footer views answer: pending permissions and forms listed when
 // mini opens the session, the replies they send, and the inbox changes the pending-prompt panel makes. Each write
 // pushes the event the real server sends once it took effect.

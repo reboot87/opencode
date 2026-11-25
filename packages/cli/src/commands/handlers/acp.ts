@@ -1,3 +1,7 @@
+/**
+ * acp 命令。
+ * 启动 ACP 服务模式。
+ */
 import { MessageTooLargeError, ndJsonStream } from "@agentclientprotocol/sdk"
 import { OpenCode } from "@opencode/client/effect"
 import { Service } from "@opencode/client/effect/service"

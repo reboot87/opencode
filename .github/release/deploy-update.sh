@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：部署更新。
 # deploy-update.sh <production> <dir>: deploys the update Worker from a verified
 # bundle artifact (index.js built by `wrangler deploy --dry-run`) with the
 # wrangler CLI pinned in wrangler/package-lock.json.

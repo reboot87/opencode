@@ -1,3 +1,7 @@
+/**
+ * 会话请求 — AutoApproveMachine。
+ * 会话界面的请求发起与状态跟踪中负责 AutoApproveMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export const AUTO_APPROVE_RETRY_LIMIT = 2
 
 export const AUTO_APPROVE_RETRY_DELAY_MS = 1000

@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：E.3·访问频次排序。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-FILE helper for E.3, driven by crates/tui/tests/all/complete.rs. Run it from <ts-root>/packages/tui with
 // OpenTUI's Solid preload, as parity/lib/provider.ts says.
 //

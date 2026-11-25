@@ -1,3 +1,7 @@
+/**
+ * 工具 schema 转换工具。
+ * 把通用工具定义转成各 provider 的 schema 格式。
+ */
 import { ToolDefinition, type JsonSchema, type LanguageModel, type LLMRequest } from "../../schema/index.js"
 import { isRecord } from "../../utils/record.js"
 import { GeminiJsonSchema } from "./gemini-json-schema.js"

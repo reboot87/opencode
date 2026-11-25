@@ -1,3 +1,8 @@
+/**
+ * 关停·hang测试夹具。
+ *
+ * 为 CLI 测试提供配置文件与工作区样例。
+ */
 import { NodeRuntime } from "@effect/platform-node"
 import { CrossSpawnSpawner } from "@opencode/util/cross-spawn-spawner"
 import { LayerNode } from "@opencode/util/effect/layer-node"

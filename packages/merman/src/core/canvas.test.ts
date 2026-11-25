@@ -1,3 +1,7 @@
+/**
+ * 模块 — CanvasTest。
+ * 该目录下的功能模块中负责 CanvasTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import stringWidth from "string-width"
 import { DiagramCanvas, DiagramCanvasSizeError, type DiagramCanvasCell } from "./canvas.js"

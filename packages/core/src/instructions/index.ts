@@ -1,3 +1,7 @@
+/**
+ * 指令模块主文件。
+ * 定义指令的键、信息结构与发现/渲染入口。
+ */
 export * as Instructions from "./index.js"
 
 import { createHash } from "crypto"

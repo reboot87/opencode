@@ -1,3 +1,7 @@
+/**
+ * Location 活跃度服务。
+ * 根据会话事件维护 Location 的活跃时间，用于回收与 TTL 判断。
+ */
 export * as LocationActivity from "./location-activity.js"
 
 import { Clock, Context, Duration, Effect, Layer, Option, RcMap, Schema } from "effect"

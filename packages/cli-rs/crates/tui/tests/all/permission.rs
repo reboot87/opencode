@@ -1,4 +1,6 @@
 //! Drive permission decisions and inspect their server requests.
+//!
+//! 终端界面测试：权限。
 
 use crate::support::{self, Fake, Harness, WAIT, deref_harness};
 

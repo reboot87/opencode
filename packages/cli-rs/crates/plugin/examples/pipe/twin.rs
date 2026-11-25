@@ -1,4 +1,6 @@
 //! Linked counterpart to `twin/tui.ts`: a route of memoized cards with a content handle per patch.
+//!
+//! 插件系统：孪生实现。
 
 use std::cell::RefCell;
 use std::rc::Rc;

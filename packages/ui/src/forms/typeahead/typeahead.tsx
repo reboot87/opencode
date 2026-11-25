@@ -1,3 +1,7 @@
+/**
+ * 类型提示 — Typeahead。
+ * 边输入边建议的自动完成组件中负责 Typeahead 部分，提供该部分所需的实现与类型定义。
+ */
 import { createResizeObserver } from "@solid-primitives/resize-observer"
 import { createEffect, createMemo, createSignal, For, type JSX, on, onCleanup, Show, untrack } from "solid-js"
 import { Icon } from "@opencode/ui/icon"

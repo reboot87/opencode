@@ -1,5 +1,11 @@
 #!/usr/bin/env bun
 
+/**
+ * 目录清单·冒烟脚本。
+ *
+ * CLI 包的开发脚本：构建校验、配置生成与发布准备。
+ */
+
 import fs from "node:fs/promises"
 import os from "node:os"
 import path from "node:path"

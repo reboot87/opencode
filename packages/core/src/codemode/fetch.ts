@@ -1,3 +1,7 @@
+/**
+ * Code Mode fetch 实现。
+ * 为沙箱代码提供带超时的 fetch，复用 Code Mode Bun 的 body 处理。
+ */
 export * as CodeModeFetch from "./fetch.js"
 
 import { Extension } from "@opencode/codemode"

@@ -1,6 +1,8 @@
 //! [`Data`] runs the store on the thread that owns it: the [`State`], the tasks its requests run as, and what the
 //! consumer has not taken yet. Requests fetch on a runtime and send their answers back through the store's mailbox,
 //! which the owner drains on its own thread. So a read borrows the state, and a read inside a read borrows it again.
+//!
+//! 会话存储层入口。
 
 use std::cell::{Cell, Ref, RefCell, RefMut};
 use std::collections::{HashMap, VecDeque};

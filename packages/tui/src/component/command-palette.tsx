@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — CommandPalette。
+ * 终端界面（Solid）组件中负责 CommandPalette 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo } from "solid-js"
 import { DialogSelect, type DialogSelectRef } from "../ui/dialog-select"
 import { type DialogContext } from "../ui/dialog"

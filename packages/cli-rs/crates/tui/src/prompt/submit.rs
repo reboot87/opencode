@@ -1,4 +1,6 @@
 //! Submit, queue, and steer prompts. Restore the snapshot on failure only if the user has not started a new draft.
+//!
+//! 终端输入提示：`submit`。
 
 use indexmap::IndexMap;
 use opencode_api::client::Client;

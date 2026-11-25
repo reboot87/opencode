@@ -1,3 +1,7 @@
+/**
+ * Responses 托管工具支持。
+ * 处理由 provider 托管执行的工具调用。
+ */
 import { Effect } from "effect"
 import { LLMEvent, type AIError, type LLMRequest, type ToolResultPart } from "../../schema/index.js"
 import { OpenResponses } from "../open-responses.js"

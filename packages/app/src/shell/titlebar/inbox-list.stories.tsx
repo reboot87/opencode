@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — InboxListStories。
+ * 自定义窗口标题栏中负责 InboxListStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { createEffect, createMemo, For, Show } from "solid-js"
 import { createStore } from "solid-js/store"

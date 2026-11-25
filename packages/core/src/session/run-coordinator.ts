@@ -1,3 +1,7 @@
+/**
+ * 运行协调器（SessionRunCoordinator）。
+ * 按 key 协调会话的并发执行，避免同一会话重复运行并管理执行生命周期。
+ */
 export * as SessionRunCoordinator from "./run-coordinator.js"
 
 import { Deferred, Effect, Exit, Fiber, FiberSet, Scope } from "effect"

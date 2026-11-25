@@ -1,3 +1,7 @@
+/**
+ * 会话命令 — ExportMachineTest。
+ * 会话界面提供的命令中负责 ExportMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import type { SessionInfo } from "@opencode/client/promise"
 import { ServerConnection } from "@/runtime/server/registry"

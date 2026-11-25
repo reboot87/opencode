@@ -1,4 +1,6 @@
 //! Run linked plugins in a real TUI and exercise rendering, effects, faults, and storage.
+//!
+//! 终端界面测试：插件。
 
 use crate::support::{self, Fake, Harness};
 

@@ -1,3 +1,7 @@
+/**
+ * 工作区设置 — DeleteMachineTest。
+ * 工作区相关设置中负责 DeleteMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   createWorkspaceDeleteState,

@@ -1,6 +1,8 @@
 //! P-APP (`docs/testing.md`): the recordings `parity/app/scenarios.test.tsx` writes, masks, and the checkpoint
 //! and request comparisons. The runner that drives the Rust TUI is `crates/tui/tests/all/app.rs`; this module does
 //! not depend on the TUI.
+//!
+//! 双实现对等性校验：`app`。
 
 use std::collections::BTreeMap;
 use std::fmt::Write;

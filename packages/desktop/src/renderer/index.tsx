@@ -1,3 +1,7 @@
+/**
+ * 渲染进程 — Index 出口。
+ * 集中导出 渲染进程 中 Index 相关的实现、组件与类型。
+ */
 // @refresh reload
 
 import "./diagnostics"

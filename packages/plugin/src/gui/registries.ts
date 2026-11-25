@@ -1,3 +1,7 @@
+/**
+ * GUI 注册表。
+ * 集中定义图标、菜单等 GUI 注册表的完整条目集合。
+ */
 import type { JSX } from "solid-js"
 import type { AppIconName } from "./icon-name.js"
 import { Registry, type PluginIconName } from "./core.js"

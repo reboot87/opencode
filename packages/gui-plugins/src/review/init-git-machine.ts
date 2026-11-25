@@ -1,4 +1,8 @@
-/** How long `vcs.init`, and then the cache refresh after it, may each run before the button is released. */
+/**
+ * How long `vcs.init`, and then the cache refresh after it, may each run before the button is released.
+ *
+ * 审查插件中负责 InitGitMachine 部分：变更审查界面中与 InitGitMachine 相关的状态、交互与渲染逻辑。
+ */
 export const REVIEW_INIT_GIT_TIMEOUT_MS = 30_000
 
 /** One session's Git initialization; a session without an entry offers the button. */

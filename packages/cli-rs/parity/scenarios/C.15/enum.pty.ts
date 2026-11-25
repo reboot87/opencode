@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：enum·伪终端。
+ *
+ * 规格编号：C.15。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `session list --wizard`: an integer flag (a non-number beeps, a number is kept) and a choice flag.
 import { definePty } from "../../pty/run"
 import { list, location, sessions } from "../C.2/fixture"

@@ -1,3 +1,7 @@
+/**
+ * server 接口处理器。
+ * 服务端接口处理器：服务端信息与配对码。
+ */
 import { hostname } from "node:os"
 import { Duration, Effect } from "effect"
 import { HttpServerRequest, HttpServerResponse } from "effect/http"

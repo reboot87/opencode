@@ -33,6 +33,10 @@
  *   componentSet: ComponentSetNode,
  *   variants: ComponentNode[]
  * }>}
+ *
+ * Figma 组件库生成脚本：创建·Component·含变体。
+ *
+ * Figma 组件库生成脚本：创建·Component·含变体。
  */
 async function createComponentWithVariants(config) {
   const { name, variantAxes, baseProps, page } = config

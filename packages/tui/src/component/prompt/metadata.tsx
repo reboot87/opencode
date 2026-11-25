@@ -1,3 +1,7 @@
+/**
+ * 提示区组件 — Metadata。
+ * 提示输入区的终端组件中负责 Metadata 部分，提供该部分所需的实现与类型定义。
+ */
 import { RGBA, TextAttributes, type BoxRenderable } from "@opentui/core"
 import { useTerminalDimensions } from "@opentui/solid"
 import { createMemo, createSignal, Show } from "solid-js"

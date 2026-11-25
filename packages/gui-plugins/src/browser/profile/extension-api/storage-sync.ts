@@ -1,3 +1,7 @@
+/**
+ * 浏览器扩展 API — StorageSync。
+ * 浏览器插件暴露给扩展的接口中负责 StorageSync 部分，提供该部分所需的实现与类型定义。
+ */
 import { Option, Schema } from "effect"
 import type { Persisted, Storage } from "@opencode/plugin/gui/main"
 import { method, none, optional, type ApiModule, type Emit, type Wire } from "./api"

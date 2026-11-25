@@ -1,3 +1,7 @@
+/**
+ * 运行时服务端连接 — SessionIndex。
+ * 浏览器端与服务端的连接与同步中负责 SessionIndex 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionInfo } from "@opencode/client/promise"
 import { rawTime } from "./data"
 

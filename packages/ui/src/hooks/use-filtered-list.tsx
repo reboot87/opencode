@@ -1,3 +1,7 @@
+/**
+ * UI Hook — UseFilteredList。
+ * 可复用的 React Hook中负责 UseFilteredList 部分，提供该部分所需的实现与类型定义。
+ */
 import { batch, createComputed, createMemo, createReaction, createSignal, on, onCleanup, untrack } from "solid-js"
 import {
   createListState,

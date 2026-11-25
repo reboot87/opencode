@@ -1,3 +1,7 @@
+/**
+ * 运行时持久化 — StorageMachine。
+ * 浏览器端配置的本地持久化中负责 StorageMachine 部分，提供该部分所需的实现与类型定义。
+ */
 const EVICTION_RETRY_BASE_MS = 5_000
 
 const EVICTION_RETRY_MAX_MS = 60_000

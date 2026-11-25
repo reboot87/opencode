@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：模型·伪终端。
+ *
+ * 规格编号：M.4。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The status row names the model and provider from the catalog. The command menu's "Switch model" lists the
 // catalog (opencode first, deprecated models left out); a pick names the new model, and the variant cycle steps
 // through its variants. `/settings` lists mini's settings, and right on Verbosity saves the next preset.

@@ -1,3 +1,7 @@
+/**
+ * 后台任务 API 分组。
+ * 定义后台任务的列举、取消与查询端点。
+ */
 import { Job } from "@opencode/schema/job"
 import { Session } from "@opencode/schema/session"
 import { Schema, SchemaGetter } from "effect"

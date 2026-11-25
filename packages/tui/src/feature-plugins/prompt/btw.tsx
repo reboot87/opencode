@@ -1,3 +1,7 @@
+/**
+ * 提示功能插件 — Btw。
+ * 以插件形式提供的提示输入功能中负责 Btw 部分，提供该部分所需的实现与类型定义。
+ */
 import { Plugin } from "@opencode/plugin/tui"
 import { TextAttributes, type ScrollBoxRenderable } from "@opentui/core"
 import { useKeyboard, useTerminalDimensions } from "@opentui/solid"

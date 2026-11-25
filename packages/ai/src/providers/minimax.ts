@@ -1,3 +1,7 @@
+/**
+ * MiniMax provider 门面。
+ * 封装 chat / messages / responses / images / videos 能力，提供统一模型工厂。
+ */
 import { Effect, Schema } from "effect"
 import type { ProviderPackage } from "../provider-package.js"
 import { AnthropicMessages } from "../protocols/anthropic-messages.js"

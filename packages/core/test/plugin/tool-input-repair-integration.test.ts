@@ -1,3 +1,10 @@
+/**
+ * 工具·输入·修复·集成的测试。
+ *
+ * 被测模块：@opencode/core/plugin/tool-input-repair-integration
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { expect } from "bun:test"
 import { Effect, Schema } from "effect"
 import { Agent } from "@opencode/core/agent"

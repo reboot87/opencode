@@ -1,3 +1,7 @@
+/**
+ * Cloudflare provider 共享配置工具。
+ * 抽取 Cloudflare Workers AI 与 AI Gateway 共用的端点、鉴权与选项归一化逻辑。
+ */
 import { Endpoint } from "../route/endpoint.js"
 import { ProviderConfigurationError, type ProviderID } from "../schema/index.js"
 

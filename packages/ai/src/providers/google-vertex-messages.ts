@@ -1,3 +1,7 @@
+/**
+ * Google Vertex Messages（独立）provider 门面。
+ * 以独立入口提供 Vertex Messages 风格能力。
+ */
 import { Effect, Schema, Struct } from "effect"
 import type { ProviderPackage } from "../provider-package.js"
 import { AnthropicMessages } from "../protocols/anthropic-messages.js"

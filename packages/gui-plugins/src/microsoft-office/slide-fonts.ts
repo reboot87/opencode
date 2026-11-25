@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — SlideFonts。
+ * Microsoft Office 文档预览插件中负责 SlideFonts 部分，提供该部分所需的实现与类型定义。
+ */
 import type { PresentationHandle, SlideDisplayList } from "@betteroffice/pptx"
 import type { BundledFontFace } from "@betteroffice/fonts"
 import { loadFace, presentationFace, scriptFace } from "./fonts"

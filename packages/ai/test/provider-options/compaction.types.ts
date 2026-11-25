@@ -1,3 +1,10 @@
+/**
+ * 上下文压缩的类型定义（类型断言用）。
+ *
+ * 被测模块：@opencode/ai/provider-options/compaction
+ *
+ * 覆盖供应商级可配置项（温度、思考预算、缓存策略等）的生效行为。
+ */
 import { Effect } from "effect"
 import {
   ai,

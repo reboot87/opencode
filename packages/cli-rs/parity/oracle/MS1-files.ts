@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：MS1·文件。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-FILE for the shared state files of the MS1 and MS3/MS4 reviews, driven by
 // crates/local/tests/all/shared_files.rs. Run it from <ts-root>/packages/tui with OpenTUI's Solid preload, as
 // E.2-history.ts runs. Each writing command prints `ready` and waits for one line on stdin, so the Rust

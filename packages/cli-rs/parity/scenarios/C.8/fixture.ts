@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：夹具。
+ *
+ * 规格编号：C.8。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // What the C.8 (`service`) and C.9 (`pair`) scenarios share. Both clients run in the sandbox as channel
 // `local`, the channel of the TS CLI from source: config and registration are `service-local.json` under the
 // sandbox's XDG roots. A registered service is the fake server, under this runner's pid, so discovery accepts

@@ -33,6 +33,8 @@ const secondaryDescriptions: Record<string, string> = {
 /**
  * The sidebar's secondary nav as it shows by default (Settings › Footer links "community": no X,
  * Discord named "Community"), then Status. The language picker isn't a page, so it has no row.
+ *
+ * 站点共享逻辑：来源标识导航。
  */
 function defaultSecondary() {
   const links = siteLinks(translator("en"), (path) => path)

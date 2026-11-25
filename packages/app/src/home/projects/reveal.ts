@@ -1,3 +1,7 @@
+/**
+ * 主页项目 — Reveal。
+ * 主页中项目列表的展示中负责 Reveal 部分，提供该部分所需的实现与类型定义。
+ */
 import { useLanguage } from "@/runtime/i18n/language"
 import { usePlatform } from "@/runtime/platform/platform"
 import { ServerConnection, useServers } from "@/runtime/server/registry"

@@ -1,3 +1,7 @@
+/**
+ * UI 性能测试 — StartupBench。
+ * UI 渲染性能基准中负责 StartupBench 部分，提供该部分所需的实现与类型定义。
+ */
 import { app, bench, command, type LaunchContext, type Milestone } from "@hona/strobe"
 import { Service } from "@opencode/client/service"
 import { spawn, spawnSync } from "node:child_process"

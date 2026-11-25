@@ -1,3 +1,7 @@
+/**
+ * iroh 传输。
+ * 基于 iroh（p2p）建立机器连接，使用自定义 ALPN 与 64KiB 分块。
+ */
 export * as Iroh from "./iroh.js"
 
 import type { BiStream, Endpoint, Incoming } from "@number0/iroh"

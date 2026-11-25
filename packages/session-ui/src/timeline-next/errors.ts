@@ -1,3 +1,7 @@
+/**
+ * 时间线（新版） — Errors。
+ * 重构中的会话消息时间线中负责 Errors 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageAssistant } from "@opencode/client/promise"
 import { Effect, Option, Schema } from "effect"
 import type { TurnErrorInfo } from "../timeline/turn-phase-machine"

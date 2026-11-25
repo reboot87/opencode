@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — Desktop。
+ * GUI 插件的实现中负责 Desktop 部分，提供该部分所需的实现与类型定义。
+ */
 export { AppBaseProviders, AppInterface, preloadRoute } from "./app"
 
 export { useCommand } from "./shell/commands/command"

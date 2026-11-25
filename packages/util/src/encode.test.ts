@@ -1,3 +1,7 @@
+/**
+ * 编码测试。
+ * 验证字符串与字节的 Base64 编码（含超长输入）。
+ */
 import { describe, expect, test } from "bun:test"
 import { base64Decode, base64Encode, checksum, sampledChecksum } from "./encode.js"
 

@@ -1,3 +1,7 @@
+/**
+ * 会话提示词准备（SessionPrompt）。
+ * 把用户输入（含附件、可调整尺寸的图片）准备为可执行的提示词输入。
+ */
 export * as SessionPrompt from "./prompt.js"
 
 import { Base64, FileAttachment } from "@opencode/schema/prompt"

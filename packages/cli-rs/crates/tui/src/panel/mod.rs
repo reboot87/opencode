@@ -1,4 +1,6 @@
 //! Session plugin panels. Show a panel beside the session when it fits, or full-screen when requested.
+//!
+//! 终端界面入口。
 
 use crate::frame::layout::SESSION_PANEL_SPLIT_MIN_WIDTH;
 use crate::prelude::*;

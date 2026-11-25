@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：编辑器·伪终端。
+ *
+ * 规格编号：E.5。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // External editor (P09): `prompt.editor` (<leader>e) writes the prompt to a temporary file, hands the terminal to
 // $EDITOR, and reads the file back into the prompt. $EDITOR is fake-editor.sh beside this file, which rewrites the
 // file and records whether it had the terminal; no real editor runs. The temporary file goes to the sandbox's

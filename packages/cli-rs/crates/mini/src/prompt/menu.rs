@@ -1,4 +1,6 @@
 //! Flat scrolling menu for prompt completions.
+//!
+//! 精简版实现：菜单。
 
 use crate::prelude::*;
 

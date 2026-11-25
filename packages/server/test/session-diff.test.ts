@@ -1,3 +1,10 @@
+/**
+ * 会话·差异的测试。
+ *
+ * 被测模块：@opencode/server/session-diff
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, setDefaultTimeout } from "bun:test"
 import { Agent } from "@opencode/core/agent"
 import { Bus } from "@opencode/core/bus"

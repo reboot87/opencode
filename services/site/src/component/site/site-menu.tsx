@@ -5,7 +5,10 @@ import { placeMenu } from "./place-menu"
 import { Sheet, prefersSheet, type SheetControl } from "./sheet"
 import { staticRender } from "~/lib/static-render"
 
-/** One row: a link, with the external arrow and a new-tab note when it opens in a new tab. */
+/** One row: a link, with the external arrow and a new-tab note when it opens in a new tab.
+ *
+ * 站点界面组件：站点菜单。
+ */
 export type SiteMenuItem = { label: string; href: string; external?: boolean }
 
 /**

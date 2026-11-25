@@ -1,3 +1,7 @@
+/**
+ * 数据站组件 — PeriodToggle。
+ * 数据站点的界面组件中负责 PeriodToggle 部分，提供该部分所需的实现与类型定义。
+ */
 import { For } from "solid-js"
 import { useI18n } from "../context/i18n"
 

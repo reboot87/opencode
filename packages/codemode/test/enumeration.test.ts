@@ -1,3 +1,10 @@
+/**
+ * 枚举的测试。
+ *
+ * 被测模块：@opencode/codemode/enumeration
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { Effect, Schema } from "effect"
 import { CodeMode, Tool } from "../src/index.js"

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：输入框·app。
+ *
+ * 规格编号：E.13b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The composer (V20, DLG18): Down on the empty prompt opens the Subagents tab with the running subagents of the
 // session's family; Down moves, Ctrl+A shows the inactive ones, Enter opens a subagent, whose session shows the
 // composer instead of a prompt, and Escape goes back to the parent. Right goes to the Shell tab, Enter opens the shell

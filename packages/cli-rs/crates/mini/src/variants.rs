@@ -1,4 +1,6 @@
 //! Catalog display names and per-model variant selection.
+//!
+//! 精简版实现：变体。
 
 use indexmap::IndexMap;
 use opencode_api::client::Client;

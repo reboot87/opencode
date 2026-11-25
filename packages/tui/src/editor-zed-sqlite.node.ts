@@ -1,3 +1,7 @@
+/**
+ * 终端界面 — EditorZedSqliteNode。
+ * OpenCode 终端界面的整体骨架与入口中负责 EditorZedSqliteNode 部分，提供该部分所需的实现与类型定义。
+ */
 import { DatabaseSync, type SQLInputValue } from "node:sqlite"
 
 export class Database {

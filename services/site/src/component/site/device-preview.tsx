@@ -6,6 +6,8 @@ import { devicePreviewFrame, devicePreviewOpenEvent, inDevicePreview } from "~/l
  * tablet and desktop sizes. Shift+P, the ⌘K action or Settings opens it. Like Design mode it is a
  * development tool: Site loads it only on the development server, so production has none of it. The
  * panel itself is in device-preview-panel.tsx and loads the first time the preview opens.
+ *
+ * 站点界面组件：device·预览。
  */
 
 export { devicePreviewFrame, devicePreviewOpenEvent, inDevicePreview }

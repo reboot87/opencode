@@ -1,3 +1,7 @@
+/**
+ * debug paths 命令。
+ * 打印各全局路径与数据库位置。
+ */
 import { EOL } from "os"
 import { Effect, Option } from "effect"
 import { Global } from "@opencode/util/global"

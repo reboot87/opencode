@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：授权同意·取消·伪终端。
+ *
+ * 规格编号：C.9。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Escape at the consent prompt: the red cancel line, exit 130, nothing written.
 import { definePty } from "../../pty/run"
 import { command } from "../../cli/client"

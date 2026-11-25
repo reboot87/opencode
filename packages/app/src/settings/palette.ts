@@ -1,3 +1,7 @@
+/**
+ * 设置界面 — Palette。
+ * 应用设置页面的框架中负责 Palette 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo } from "solid-js"
 import { useLanguage } from "@/runtime/i18n/language"
 import type { CommandPaletteEntry } from "@/shell/commands/palette"

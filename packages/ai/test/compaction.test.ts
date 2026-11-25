@@ -1,3 +1,10 @@
+/**
+ * 上下文压缩的测试。
+ *
+ * 被测模块：@opencode/ai/compaction
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { Effect, Schema } from "effect"
 import { CompactionPart, CompactionResponse, LLMEvent, LLMResponse, Message, ProviderID } from "../src/schema/index.js"

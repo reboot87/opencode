@@ -1,3 +1,7 @@
+/**
+ * WSL 插件 — Machine。
+ * Windows Subsystem for Linux 相关的 GUI 插件中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 import type {
   WslDistroProbe,
   WslInstalledDistro,

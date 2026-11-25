@@ -1,3 +1,7 @@
+/**
+ * 全局同步 — Machine。
+ * 跨会话的全局状态同步中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 import { DIR_IDLE_TTL_MS, MAX_DIR_STORES } from "./types"
 import type { DirectoryKey } from "./utils"
 

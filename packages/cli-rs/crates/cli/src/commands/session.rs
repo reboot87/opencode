@@ -1,3 +1,5 @@
+//! CLI 子命令：会话。
+
 use opencode_util::path::Flavor;
 use opencode_util::{bail, err, error, json_object, time::Zone};
 use std::io::{IsTerminal, Write};

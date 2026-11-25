@@ -1,4 +1,6 @@
 //! Browse prompts newest first and jump to the highlighted message.
+//!
+//! 终端弹窗组件：时间线。
 
 use opencode_util::time::Zone;
 

@@ -14,6 +14,8 @@ const shell = /[\\/]src[\\/](app|component[\\/]site[\\/]site)\.tsx$/
  * of stylesheets for each: the stylesheets a page's code imports, and none that load on demand
  * (search, the Markdown view, the Hex pop-up), which stay with their own code (script/static-client.ts).
  * Chunks of stylesheets alone leave no JavaScript (Vite's pure CSS chunks).
+ *
+ * 站点构建脚本：stylesheet·groups。
  */
 export function stylesheetGroups(): PluginOption {
   return {

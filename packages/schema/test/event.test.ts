@@ -1,3 +1,10 @@
+/**
+ * 事件的测试。
+ *
+ * 被测模块：@opencode/schema/event
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { Schema } from "effect"
 import { Event } from "../src/event.js"

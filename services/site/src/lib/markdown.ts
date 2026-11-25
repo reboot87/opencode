@@ -3,7 +3,10 @@ import type { Translate } from "~/i18n"
 import type { ChangelogRelease } from "~/lib/changelog"
 import type { ChangelogView } from "~/lib/changelog-notes"
 
-/** A run of page copy: plain text, inline code or a link. Pages render it as HTML, the Markdown versions as Markdown. */
+/** A run of page copy: plain text, inline code or a link. Pages render it as HTML, the Markdown versions as Markdown.
+ *
+ * 站点共享逻辑：Markdown。
+ */
 export type Inline = string | { code: string } | { text: string; href: string; external?: boolean }
 export type RichText = Inline[]
 

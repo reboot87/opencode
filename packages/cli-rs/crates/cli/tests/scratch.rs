@@ -1,5 +1,7 @@
 //! Runs of the client in a scratch home: an argument that is not UTF-8, a stale `PWD`, and the log file's channel.
 #![cfg(unix)]
+//!
+//! 命令行入口测试：`scratch`。
 
 use std::ffi::OsStr;
 use std::os::unix::ffi::OsStrExt;

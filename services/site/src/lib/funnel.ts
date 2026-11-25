@@ -8,7 +8,10 @@ export * as Funnel from "./funnel"
 
 type Value = string | number | boolean | null
 
-/** An event the page reports itself, such as a search; the tracker adds the view's surface and path. */
+/** An event the page reports itself, such as a search; the tracker adds the view's surface and path.
+ *
+ * 站点共享逻辑：漏斗。
+ */
 export type FunnelEvent = {
   name: string
   action: string

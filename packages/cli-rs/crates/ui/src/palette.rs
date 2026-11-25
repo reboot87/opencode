@@ -1,4 +1,6 @@
 //! Lists commands reachable from the active keymap.
+//!
+//! 基础 UI 组件库：调色板。
 
 use crate::dialog::{DialogCx, DialogKeymap, DialogOptions, Dialogs};
 use crate::keymap::COMMAND_PALETTE_COMMAND;

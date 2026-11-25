@@ -1,3 +1,7 @@
+/**
+ * 文件插件 — ArtifactTest。
+ * 文件预览与操作的 GUI 插件中负责 ArtifactTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { bytesFromContent, contentBytes, parseDelimited, resolveArtifactPath, splitFrontmatter } from "./artifact"
 

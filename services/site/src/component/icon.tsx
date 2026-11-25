@@ -1,3 +1,6 @@
+/**
+ * 通用界面组件：图标。
+ */
 import { JSX } from "solid-js"
 
 export function IconGo(_props: JSX.SvgSVGAttributes<SVGSVGElement>) {

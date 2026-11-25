@@ -1,3 +1,7 @@
+/**
+ * 嵌入（Embedding）协议的通用执行逻辑。
+ * 把 EmbeddingRequest 编码成 provider 请求体、调用 HTTP、把响应解析成 EmbeddingResponse。
+ */
 import { Effect } from "effect"
 import type { HttpClientResponse } from "effect/http"
 import {

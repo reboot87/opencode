@@ -2,6 +2,8 @@
 //! The small NativeOwner stand-in retains the same userdata pointer that C would.
 //! Also run by the isolated tests/ghostty-effects Cargo manifest under Miri.
 #![cfg(test)]
+//!
+//! 进程守护服务测试：ghostty·effects。
 
 #[path = "../src/ghostty/effects.rs"]
 mod effects;

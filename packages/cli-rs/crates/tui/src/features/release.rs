@@ -4,6 +4,8 @@
 //! lives: after a long scroll, most of what the rows held stays resident. A release runs once the drops stop: when at
 //! least [`ROWS`] rows dropped since the last one, [`QUIET`] after the last drop, and at most once per [`EVERY`].
 //! One takes under 20 ms, on idle, never in a frame that answers a key.
+//!
+//! 终端界面功能模块：发布。
 
 use std::cell::Cell;
 use std::time::{Duration, Instant};

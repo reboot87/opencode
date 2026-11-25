@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：自动补全·伪终端。
+ *
+ * 规格编号：C.p。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Typing filters with a match count, arrows navigate (and then typing shows dim), no matches, submit.
 import { definePty } from "../../pty/run"
 import { demo, press } from "./demo"

@@ -6,6 +6,8 @@ import { mediaUrl } from "~/lib/media"
  * The arcade's sound. Recorded sounds come from /arcade404/audio/manifest.json; anything missing
  * there is synthesised with Web Audio. The ambience tries to start on arrival; browsers block that
  * until a gesture, so the first pointer or key press anywhere starts it. Mute persists.
+ *
+ * 街机小游戏组件：音效。
  */
 
 export type SoundName =

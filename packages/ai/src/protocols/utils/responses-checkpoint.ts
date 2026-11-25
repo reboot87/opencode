@@ -1,3 +1,7 @@
+/**
+ * Responses 检查点工具。
+ * 创建与管理压缩检查点。
+ */
 import { Effect, Schema, Stream } from "effect"
 import { Route, type RouteBody, type TriggerCompactOperation } from "../../route/client.js"
 import { Protocol } from "../../route/protocol.js"

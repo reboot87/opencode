@@ -1,3 +1,7 @@
+/**
+ * Mini 精简界面 — SessionShared。
+ * 精简交互模式（mini）的界面与交互中负责 SessionShared 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageInfo, SessionMessageUser } from "@opencode/client/promise"
 import { projectedPromptInput } from "../prompt/codec"
 import { requestOptions } from "./catalog.shared"

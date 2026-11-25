@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：会话。
+ *
+ * 规格编号：D131。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A session the home prompt creates (D131): the fake server echoes the ID the client minted, answers the session's
 // reads, and admits the prompt; nothing replies. Without `session.renamed` the session stays untitled, as when the
 // server generates no title.

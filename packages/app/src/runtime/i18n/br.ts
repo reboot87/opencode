@@ -1,3 +1,7 @@
+/**
+ * 运行时国际化 — Br。
+ * 运行时加载多语言文案的机制中负责 Br 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "common.color.orange": "laranja",
   "common.color.yellow": "amarelo",

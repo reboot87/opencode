@@ -1,3 +1,6 @@
+/**
+ * 法律页路由：索引。
+ */
 import "../legal.css"
 import "./index.css"
 import { LegalDocument } from "~/component/site/legal"

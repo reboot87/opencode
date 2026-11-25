@@ -1,3 +1,7 @@
+/**
+ * 时间线悬疑复现 — PlaywrightConfig。
+ * 复现特定时间线渲染问题的端到端用例中负责 PlaywrightConfig 部分，提供该部分所需的实现与类型定义。
+ */
 import { defineConfig, devices } from "@playwright/test"
 
 const port = Number(process.env.PLAYWRIGHT_TIMELINE_SUSPENSE_PORT ?? 4317)

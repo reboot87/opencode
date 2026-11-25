@@ -1,3 +1,7 @@
+/**
+ * 数据库路径。
+ * 根据数据目录解析 SQLite 数据库文件路径。
+ */
 import path from "node:path"
 import { OPENCODE_CHANNEL } from "./version"
 

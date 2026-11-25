@@ -1,3 +1,7 @@
+/**
+ * v1 MCP 配置。
+ * 定义 v1 版本的 MCP 服务器配置（本地与远程）。
+ */
 export * as ConfigMCPV1 from "./mcp.js"
 
 import { Schema } from "effect"

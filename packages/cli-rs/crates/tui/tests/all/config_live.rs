@@ -1,4 +1,6 @@
 //! Apply live config changes from both settings writes and external file replacements.
+//!
+//! 终端界面测试：配置·live。
 
 use std::path::Path;
 use std::rc::Rc;

@@ -1,5 +1,7 @@
 //! Local model and agent selections. The composer commits drafts on submit; selection events settle them. Serialize
 //! preference writes off the UI thread because the file lock blocks.
+//!
+//! 终端界面：本地。
 
 use std::collections::HashSet;
 use std::path::PathBuf;

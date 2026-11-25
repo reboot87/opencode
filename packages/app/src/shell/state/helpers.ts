@@ -1,3 +1,7 @@
+/**
+ * 外壳状态 — Helpers。
+ * 应用外壳的全局状态中负责 Helpers 部分，提供该部分所需的实现与类型定义。
+ */
 import { Predicate } from "effect"
 import type { Accessor } from "solid-js"
 import type { ServerConnection } from "@/runtime/server/registry"

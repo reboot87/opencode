@@ -11,6 +11,8 @@ export type Theme = (typeof themes)[number]
  * next one. `label` names the switch for the theme it shows and the one it goes to; `bar`, while it
  * gives a colour, replaces the browser bar's. Returns `show`, which shows a theme (by default the
  * current one) without saving it.
+ *
+ * 站点界面组件：主题开关。
  */
 export function startThemeSwitch(
   site: HTMLElement,

@@ -1,3 +1,7 @@
+/**
+ * 会话请求 — QuestionKeysTest。
+ * 会话界面的请求发起与状态跟踪中负责 QuestionKeysTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { questionKey, type QuestionKeyZone } from "./question-keys"
 

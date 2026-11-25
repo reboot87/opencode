@@ -4,6 +4,8 @@ import { marks } from "~/i18n/rich"
 /**
  * Copy with named runs (`[ for {{os}}](os)`, see `marks`), each named run in a span with the
  * data-slot that `slots` gives it, so translations can place the run anywhere in the string.
+ *
+ * 站点界面组件：`marked`。
  */
 export function Marked(props: { text: string; slots: Record<string, string> }) {
   return (

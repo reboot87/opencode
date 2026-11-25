@@ -1,3 +1,7 @@
+/**
+ * 主页会话 — Index 出口。
+ * 集中导出 主页会话 中 Index 相关的实现、组件与类型。
+ */
 import type { SessionInfo, SessionsResponse } from "@opencode/client/promise"
 import { pathKey } from "@/workspaces/path-key"
 import { mergeRootSessionIndex } from "@/runtime/server/session-index"

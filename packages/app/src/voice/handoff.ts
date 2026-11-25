@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — Handoff。
+ * 实时语音会话的界面中负责 Handoff 部分，提供该部分所需的实现与类型定义。
+ */
 // Mirrors the OpenCode iOS app's `VoiceHandoff` (VoiceTranscript.swift) so sessions read voice
 // delegations from either client the same way. parseVoiceDelegation reads them back.
 export const header =

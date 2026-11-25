@@ -1,3 +1,7 @@
+/**
+ * Provider 模型 — Selection。
+ * provider 下模型的展示与配置中负责 Selection 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSimpleContext } from "@opencode/ui/context"
 import { base64Encode } from "@opencode/util/encode"
 import { useParams } from "@solidjs/router"

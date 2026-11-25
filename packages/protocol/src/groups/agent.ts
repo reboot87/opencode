@@ -1,3 +1,7 @@
+/**
+ * Agent API 分组。
+ * 定义 agent 列举与获取的 HTTP 端点。
+ */
 import { Agent } from "@opencode/schema/agent"
 import { Location } from "@opencode/schema/location"
 import { Schema } from "effect"

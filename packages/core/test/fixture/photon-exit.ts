@@ -1,3 +1,8 @@
+/**
+ * Photon·退出测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import photon from "@silvia-odwyer/photon-node"
 import { Effect } from "effect"
 import { Photon } from "@opencode/core/image/photon"

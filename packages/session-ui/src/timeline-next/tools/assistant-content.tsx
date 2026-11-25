@@ -1,3 +1,7 @@
+/**
+ * 时间线工具块 — AssistantContent。
+ * 时间线中工具调用的展示中负责 AssistantContent 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageAssistant } from "@opencode/client/promise"
 import { Match, Switch } from "solid-js"
 import { AssistantTextContent } from "../../message/message-content"

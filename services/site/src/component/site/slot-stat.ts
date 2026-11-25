@@ -4,6 +4,8 @@
  * or shows a zero, easing out in 1.1s, left to right and stat by stat (`place`, `stat`). The random
  * digits are drawn only now, so the server's markup (the digit alone) never differs. No framework
  * code, so the static pages' script spins the server's reels too. Returns its stop.
+ *
+ * 站点界面组件：槽位·stat。
  */
 export function spinReel(strip: HTMLElement, digit: number, place: number, stat: number, start: number) {
   const reel = strip.parentElement!

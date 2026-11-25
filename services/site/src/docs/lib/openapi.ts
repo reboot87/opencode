@@ -1,3 +1,6 @@
+/**
+ * 文档站共享逻辑：OpenAPI。
+ */
 export type OpenApiSchema = {
   $ref?: string
   type?: string | string[]

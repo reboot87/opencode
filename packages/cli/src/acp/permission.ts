@@ -1,3 +1,7 @@
+/**
+ * ACP 权限请求。
+ * 把 ACP 的权限询问映射为 OpenCode 权限选项。
+ */
 import type { PermissionOption, SessionUpdate } from "@agentclientprotocol/sdk"
 import type { OpenCodeClient, OpenCodeEvent } from "@opencode/client/effect"
 import { FileDiff } from "@opencode/schema/file-diff"

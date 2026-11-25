@@ -1,3 +1,7 @@
+/**
+ * 工作目录指令（SessionCwdInstructions）。
+ * 从会话工作目录约定的指令文件中读取并注入项目级指令，带字节上限控制。
+ */
 export * as SessionCwdInstructions from "./cwd-instructions.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

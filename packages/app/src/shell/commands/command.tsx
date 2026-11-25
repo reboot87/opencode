@@ -1,3 +1,7 @@
+/**
+ * 外壳命令 — Command。
+ * 应用外壳提供的命令中负责 Command 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSimpleContext } from "@opencode/ui/context"
 import { useDialog } from "@opencode/ui/context/dialog"
 import { type Accessor, batch, createEffect, createMemo, createSignal, onCleanup, onMount, untrack } from "solid-js"

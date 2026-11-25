@@ -1,3 +1,7 @@
+/**
+ * Mini 精简界面 — Tool。
+ * 精简交互模式（mini）的界面与交互中负责 Tool 部分，提供该部分所需的实现与类型定义。
+ */
 // Per-tool display rules shared across `opencode run` output paths.
 //
 // Each known tool (shell, edit, write, subagent, etc.) has a ToolRule that controls

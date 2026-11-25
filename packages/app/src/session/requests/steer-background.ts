@@ -4,6 +4,8 @@
  * The move reads the blocking work once the steer is admitted, so work that started during admission moves too.
  * Nothing is claimed: the server moves each job once and ignores repeated moves, so overlapping steers, a failed
  * move, or one that ran before a job started never leave work for a later steer to skip.
+ *
+ * 会话请求中负责 SteerBackground 部分：会话请求的发起与跟踪中与 SteerBackground 相关的状态、交互与渲染逻辑。
  */
 export function createSteerBackground(input: {
   sessionID: () => string | undefined

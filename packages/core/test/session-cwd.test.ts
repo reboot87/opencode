@@ -1,3 +1,10 @@
+/**
+ * 会话·当前工作目录的测试。
+ *
+ * 被测模块：@opencode/core/session-cwd
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import { eq } from "drizzle-orm"
 import { Effect, Fiber, Layer } from "effect"

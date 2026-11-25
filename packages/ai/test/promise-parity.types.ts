@@ -1,3 +1,10 @@
+/**
+ * Promise·双实现对等性的类型定义（类型断言用）。
+ *
+ * 被测模块：@opencode/ai/promise-parity
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import type { Effect, Stream } from "effect"
 import type { Client, GenerationHandle, RunOptions } from "../src/index.js"
 import type { Generation, ai } from "../src/effect.js"

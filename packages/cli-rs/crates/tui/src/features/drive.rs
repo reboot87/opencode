@@ -1,4 +1,6 @@
 //! Headless simulation endpoint.
+//!
+//! 终端界面功能模块：驱动。
 
 use crate::app::{Launch, Tui};
 use opencode_drive::Manifest;

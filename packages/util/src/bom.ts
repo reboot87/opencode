@@ -1,3 +1,7 @@
+/**
+ * BOM 处理。
+ * 检测并去除 UTF-8/UTF-16 的字节序标记（BOM）。
+ */
 export * as Bom from "./bom.js"
 
 import { Effect } from "effect"

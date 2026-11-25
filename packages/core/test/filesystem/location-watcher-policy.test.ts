@@ -1,3 +1,10 @@
+/**
+ * 位置·监听器·策略的测试。
+ *
+ * 被测模块：@opencode/core/filesystem/location-watcher-policy
+ *
+ * 覆盖文件系统抽象层：路径解析、原子写入与权限处理。
+ */
 import { describe, expect } from "bun:test"
 import { Effect, Scope } from "effect"
 import { AppNodeBuilder } from "@opencode/core/effect/app-node-builder"

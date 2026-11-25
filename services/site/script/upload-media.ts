@@ -1,3 +1,6 @@
+/**
+ * 站点构建脚本：上传媒体。
+ */
 // Uploads the heavy media in public/ (src/lib/media.ts `inBucket`) to the existing files bucket,
 // which the /files route serves (services/files), under site/2026-11 at the same path, and writes
 // media-manifest.txt. Not part of the build.

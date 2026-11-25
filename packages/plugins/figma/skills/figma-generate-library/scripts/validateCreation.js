@@ -26,6 +26,10 @@
  * }}
  *   `passed`: Array of nodeIds that passed all checks.
  *   `failed`: Array of objects with the nodeId and a human-readable reason string.
+ *
+ * Figma 组件库生成脚本：校验·Creation。
+ *
+ * Figma 组件库生成脚本：校验·Creation。
  */
 function validateCreation(checks) {
   const passed = []

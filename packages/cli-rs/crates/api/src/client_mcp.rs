@@ -1,5 +1,7 @@
 //! Serves MCP tools to the OpenCode server, one JSON-RPC message per WebSocket text frame. [`connect`] reconnects
 //! with backoff until the connection closes or drops.
+//!
+//! API 客户端：客户端·MCP。
 
 use std::sync::Arc;
 use std::time::Duration;

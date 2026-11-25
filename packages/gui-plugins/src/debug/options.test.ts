@@ -1,3 +1,7 @@
+/**
+ * 调试插件 — OptionsTest。
+ * 面向开发者的调试 GUI 插件中负责 OptionsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { debugBuild, memoryLogInterval } from "./options"
 

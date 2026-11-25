@@ -1,3 +1,7 @@
+/**
+ * OpenAI 语音转写（STT）协议。
+ * 上传音频，返回转写文本。
+ */
 import { Effect, Schema, SchemaGetter, Stream } from "effect"
 import { classifyProviderFailure } from "../provider-error.js"
 import { Framing } from "../route/framing.js"

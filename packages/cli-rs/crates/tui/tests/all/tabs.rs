@@ -1,4 +1,6 @@
 //! Session tabs and panes over temporary shared storage.
+//!
+//! 终端界面测试：标签页。
 
 use crate::support::{self, Harness, WAIT, deref_harness};
 

@@ -1,3 +1,7 @@
+/**
+ * Provider 目录 — SettleMachine。
+ * 可用模型目录的浏览界面中负责 SettleMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // The server loads a Console workspace's providers after a credential change, so the first catalog
 // refresh can still show only the free catalog. This machine polls briefly for the workspace.
 export const CONSOLE_SETTLE_POLL_MS = 250

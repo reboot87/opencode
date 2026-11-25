@@ -1,3 +1,7 @@
+/**
+ * 终端工具 — ConnectedProvider。
+ * 终端界面的通用工具函数中负责 ConnectedProvider 部分，提供该部分所需的实现与类型定义。
+ */
 import type { IntegrationInfo, ModelInfo, ProviderInfo } from "@opencode/client"
 
 // Any stored or detected connection, or a listed provider with models beyond the keyless OpenCode catalog, such as

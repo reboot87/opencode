@@ -1,5 +1,7 @@
 //! Reads service registrations and migrates legacy filenames. The registration contains a private password and must
 //! have mode 0600.
+//!
+//! 本地配置与路径：`registration`。
 
 use std::fmt;
 use std::fs;

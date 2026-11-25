@@ -1,3 +1,7 @@
+/**
+ * 设置界面 — SearchResultsTest。
+ * 应用设置页面的框架中负责 SearchResultsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { dict } from "@opencode/ui/i18n/en"
 import en from "@/runtime/i18n/en"

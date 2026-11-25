@@ -1,3 +1,7 @@
+/**
+ * Claude 工具结果转换。
+ * 把 Claude 工具结果转换为统一的 Tool.Content 结构。
+ */
 export * as ToolResult from "./result.js"
 
 import type {

@@ -1,3 +1,7 @@
+/**
+ * 位置监听服务。
+ * 监听 Location 目录下的文件变化。
+ */
 export * as LocationWatcher from "./location-watcher.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

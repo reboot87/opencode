@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：部署站点。
 # deploy-site.sh <dev|production> <dir>: deploys the site Worker from a verified
 # Build Output artifact (services/site/.cloudflare/output) with the cf CLI
 # pinned in cf/package-lock.json, which the workflow installs before the token

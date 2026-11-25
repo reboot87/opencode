@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid FormTest：该文件实现 FormTest 相关的状态与逻辑。
+ */
 import type { OpenCodeEvent } from "@opencode/client"
 import { InputRenderable, TextareaRenderable } from "@opentui/core"
 import { testRender } from "@opentui/solid"

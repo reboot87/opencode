@@ -1,4 +1,6 @@
 //! Drive session and global forms through their visible fields and inspect the submitted answers.
+//!
+//! 终端界面测试：表单。
 
 use crate::support::{self, Fake, Harness, WAIT, deref_harness};
 

@@ -1,3 +1,7 @@
+/**
+ * 外壳通知 — Sound。
+ * 应用级通知的展示中负责 Sound 部分，提供该部分所需的实现与类型定义。
+ */
 let files: Record<string, () => Promise<string>> | undefined
 
 let loads: Record<SoundID, () => Promise<string>> | undefined

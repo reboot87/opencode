@@ -1,3 +1,6 @@
+/**
+ * Effect 规则共享工具：tagged·值。
+ */
 import type { ESTree } from "@oxlint/plugins";
 
 const equalityOperators = new Set(["==", "===", "!=", "!=="]);

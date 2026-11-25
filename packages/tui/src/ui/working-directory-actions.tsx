@@ -1,3 +1,7 @@
+/**
+ * 终端 UI — WorkingDirectoryActions。
+ * 终端界面的通用 UI 组件中负责 WorkingDirectoryActions 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal } from "solid-js"
 import { openPath } from "@opencode/util/open"
 import { useRenderer } from "@opentui/solid"

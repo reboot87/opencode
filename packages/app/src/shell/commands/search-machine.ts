@@ -1,3 +1,7 @@
+/**
+ * 外壳命令 — SearchMachine。
+ * 应用外壳提供的命令中负责 SearchMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionInfo } from "@opencode/client/promise"
 import type { CommandPaletteEntry } from "./palette"
 

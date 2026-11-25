@@ -1,5 +1,7 @@
 //! Resolve the initial route, model, agent, and prompt. An unknown `--session` ID becomes the ID of the first session
 //! created from home.
+//!
+//! 终端界面功能模块：`startup`。
 
 use indexmap::IndexMap;
 use opencode_api::generated::{SessionForkInput, SessionListInput, SessionListInputOrder};

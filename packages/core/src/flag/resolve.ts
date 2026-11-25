@@ -1,3 +1,8 @@
+/**
+ * 功能开关解析（FlagResolve）。
+ * 解析实验性功能开关的最终状态与来源优先级：环境变量 OPENCODE_FLAGS 优先于配置，配置优先于默认值。
+ * 支持 `all` 批量开启与 `-name` 前缀关闭。
+ */
 export * as FlagResolve from "./resolve.js"
 
 import { Context, Record } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * Promise 风格插件 API — 版本控制领域。
+ * 插件对分支、提交等版本控制操作的封装。此文件定义 Promise 风格 下该领域的接口与类型，与其它领域共同构成插件 API 表面。
+ */
 import type { VcsApi } from "@opencode/client/promise/api"
 import type { FileDiff } from "@opencode/schema/file-diff"
 import type { Vcs } from "@opencode/schema/vcs"

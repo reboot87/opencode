@@ -1,3 +1,7 @@
+/**
+ * Provider 模型 — ManageStandaloneStories。
+ * provider 下模型的展示与配置中负责 ManageStandaloneStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { useDialog } from "@opencode/ui/context/dialog"
 import { createEffect, on, onMount } from "solid-js"

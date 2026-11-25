@@ -1,4 +1,6 @@
 //! Desktop notifications and sounds obey separate focus rules and settings.
+//!
+//! 终端界面功能模块：通知。
 
 use std::cell::{Cell, RefCell};
 use std::sync::LazyLock;

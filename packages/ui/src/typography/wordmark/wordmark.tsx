@@ -1,3 +1,7 @@
+/**
+ * 字标 — Wordmark。
+ * 产品名称标识组件中负责 Wordmark 部分，提供该部分所需的实现与类型定义。
+ */
 import { createUniqueId, type ComponentProps } from "solid-js"
 
 export function Wordmark(

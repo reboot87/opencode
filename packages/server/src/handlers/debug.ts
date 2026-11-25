@@ -1,3 +1,7 @@
+/**
+ * debug 接口处理器。
+ * 调试接口处理器：暴露内部运行时调试信息。
+ */
 import { LocationServiceMap } from "@opencode/core/location-service-map"
 import { InvalidRequestError, UnknownError } from "@opencode/protocol/errors"
 import { Global } from "@opencode/util/global"

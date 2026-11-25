@@ -1,3 +1,7 @@
+/**
+ * 媒体 API 分组。
+ * 定义媒体资产（图片/音频等）的下载端点。
+ */
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiSchema, OpenApi } from "effect/http-api"
 import { FileNotFoundError, InvalidRequestError } from "../errors.js"

@@ -1,3 +1,5 @@
+//! 终端输入提示：`attach`。
+
 use opentui::native::ImageFit;
 use opentui::widget::ImageView;
 

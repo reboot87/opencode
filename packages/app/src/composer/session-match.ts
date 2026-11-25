@@ -2,6 +2,8 @@
  * Ranks a title against a typed query: 0 for the exact title, 1 when the title starts with the query, 2 when a later
  * title word does, and undefined otherwise. Each query word must start consecutive title words, case-insensitively.
  * A trailing space asks for one more title word, so `@HOME ` stops matching "HOME" and the popover gives way to prose.
+ *
+ * 输入组合器中负责 SessionMatch 部分：会话输入区中与 SessionMatch 相关的状态、交互与渲染逻辑。
  */
 export function rankSessionTitle(title: string, query: string) {
   if (title.toLowerCase() === query.toLowerCase()) return 0

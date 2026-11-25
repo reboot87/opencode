@@ -1,3 +1,7 @@
+/**
+ * UI 主题 — Resolve。
+ * 配色、间距与字号等设计令牌中负责 Resolve 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ColorValue, HexColor, ResolvedTheme, ThemeVariant } from "./types"
 import { blend, generateNeutralScale, generateScale, hexToOklch, hexToRgb, shift, withAlpha } from "./color"
 

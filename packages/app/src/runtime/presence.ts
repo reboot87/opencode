@@ -1,3 +1,7 @@
+/**
+ * 应用运行时 — Presence。
+ * 浏览器端应用的运行时环境与服务装配中负责 Presence 部分，提供该部分所需的实现与类型定义。
+ */
 import { observeReducedMotion, prefersReducedMotion } from "@opencode/ui/motion"
 import { createEffect, createSignal, onCleanup, untrack, type Accessor } from "solid-js"
 import {

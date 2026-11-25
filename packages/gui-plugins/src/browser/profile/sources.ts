@@ -1,3 +1,7 @@
+/**
+ * 浏览器配置 — Sources。
+ * 浏览器插件的用户配置与身份中负责 Sources 部分，提供该部分所需的实现与类型定义。
+ */
 import { spawn } from "node:child_process"
 import { access, readdir, readFile, stat } from "node:fs/promises"
 import { homedir } from "node:os"

@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid DiffViewerFileTreeTest：该文件实现 DiffViewerFileTreeTest 相关的状态与逻辑。
+ */
 import { describe, expect, test } from "bun:test"
 import { testRender } from "@opentui/solid"
 import type { JSX } from "solid-js"

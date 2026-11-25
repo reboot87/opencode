@@ -1,3 +1,7 @@
+/**
+ * Provider 连接 — UsageExceeded。
+ * 连接 provider 的授权界面中负责 UsageExceeded 部分，提供该部分所需的实现与类型定义。
+ */
 import { usePlatform } from "@/runtime/platform/platform"
 import { useLanguage } from "@/runtime/i18n/language"
 import { Button } from "@opencode/ui/button"

@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — PageIcon。
+ * 内置浏览器功能的 GUI 插件中负责 PageIcon 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, Show } from "solid-js"
 import { Icon } from "@opencode/ui/icon"
 

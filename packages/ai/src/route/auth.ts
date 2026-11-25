@@ -1,3 +1,10 @@
+/**
+ * 认证（Auth）抽象。
+ *
+ * 定义 provider 鉴权方式的统一接口（API key / Bearer token / header 等），
+ * 通过 Effect Config 读取凭据（Redacted 保护敏感值），渲染成 HTTP headers。
+ * provider 部署时选择合适的 Auth 策略附加到请求上。
+ */
 import { Config, Effect, Option, Redacted } from "effect"
 import { Headers } from "effect/http"
 import { AuthenticationError, AIError, type HttpOptions } from "../schema/index.js"

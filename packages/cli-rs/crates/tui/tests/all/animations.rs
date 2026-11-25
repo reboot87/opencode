@@ -1,4 +1,6 @@
 //! Animation and idle-frame behavior on the app clock.
+//!
+//! 终端界面测试：`animations`。
 
 use crate::support;
 

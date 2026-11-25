@@ -1,3 +1,7 @@
+/**
+ * 会话请求 — ElicitationController。
+ * 会话界面的请求发起与状态跟踪中负责 ElicitationController 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createSignal, onCleanup, runWithOwner, untrack } from "solid-js"
 import type { FormInfo, LocationRef } from "@opencode/client/promise"
 import type { Data } from "@opencode/client/solid"

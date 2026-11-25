@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：导航语言包。
+ */
 import { expect, test } from "bun:test"
 import { navConfigRules, navFlags, navSequence } from "~/component/site/nav-config"
 import { navDefaults, normalizeNavConfig } from "~/component/site/settings"

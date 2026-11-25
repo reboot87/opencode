@@ -1,3 +1,7 @@
+/**
+ * Provider 连接 — GoUpsellHeroArt。
+ * 连接 provider 的授权界面中负责 GoUpsellHeroArt 部分，提供该部分所需的实现与类型定义。
+ */
 // The Go upsell hero: the OpenCode GO letters on a dot grid. Lightspeed brings GO in from far away, and the
 // warp's brake settles into a ring that the Ripple loop then continues. Every frame is a pure function of art
 // time `t` (ms since the dialog opened), so the reduced-motion still is just one chosen frame.

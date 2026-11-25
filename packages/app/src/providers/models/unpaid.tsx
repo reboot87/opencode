@@ -1,3 +1,7 @@
+/**
+ * Provider 模型 — Unpaid。
+ * provider 下模型的展示与配置中负责 Unpaid 部分，提供该部分所需的实现与类型定义。
+ */
 import { DialogBody, DialogHeader, DialogTitle, Dialog } from "@opencode/ui/dialog"
 import { Badge } from "@opencode/ui/badge"
 import { Icon } from "@opencode/ui/icon"

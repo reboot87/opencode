@@ -1,3 +1,7 @@
+/**
+ * 工作区选择 — QueueMachine。
+ * 工作区切换与选择中负责 QueueMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export type TaskPriority = "user" | "background"
 
 /**

@@ -1,4 +1,7 @@
-/** One package update on its way; `id` tells it apart from an update of the same package on an earlier server. */
+/**
+ * 
+ * One package update on its way; `id` tells it apart from an update of the same package on an earlier server. Provider 设置中负责 PluginUpdateMachine 部分：模型提供方设置中与 PluginUpdateMachine 相关的状态、交互与渲染逻辑。
+ */
 export type RunningPluginUpdate = { readonly id: number; readonly target: string }
 
 /** What a check or update learned about one package; `at` is that operation's id, so an older result never wins. */

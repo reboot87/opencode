@@ -1,3 +1,7 @@
+/**
+ * Shell 选择器。
+ * 从可用 shell 中按元数据（是否允许、是否登录 shell）选择合适的 shell。
+ */
 export * as ShellSelect from "./select.js"
 
 import path from "path"

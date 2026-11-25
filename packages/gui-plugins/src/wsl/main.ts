@@ -1,3 +1,7 @@
+/**
+ * WSL 插件 — Main。
+ * Windows Subsystem for Linux 相关的 GUI 插件中负责 Main 部分，提供该部分所需的实现与类型定义。
+ */
 import { Option, Schema } from "effect"
 import { builtinMainContext } from "@opencode/plugin/gui/builtin"
 import type { Plugin } from "@opencode/plugin/gui/main"

@@ -1,3 +1,7 @@
+/**
+ * 工作区文件 — ViewCache。
+ * 工作区内文件浏览界面中负责 ViewCache 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createRoot } from "solid-js"
 import { produce } from "solid-js/store"
 import { Schema } from "effect"

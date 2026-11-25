@@ -2,6 +2,8 @@
  * Icons for the logo fan's Press item, on the same 16px grid as the Brand item's ruler: 1.25px
  * strokes centred on .625 / .375 lines so the edges land on whole pixels, square corners. Shapes
  * marked `fill` are solid blocks. Settings › Press icon (Design mode on the logo) picks one.
+ *
+ * 站点界面组件：媒体中心·icons。
  */
 export const pressIcons = {
   newspaper: {

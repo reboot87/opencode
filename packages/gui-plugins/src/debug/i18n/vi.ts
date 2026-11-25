@@ -1,3 +1,7 @@
+/**
+ * 调试文案 — Vi。
+ * 调试插件的多语言文案中负责 Vi 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.toggle": "Bật/tắt thanh gỡ lỗi",
   providerAriaLabel: "Chẩn đoán hiệu suất nhà cung cấp",

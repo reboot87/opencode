@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid FooterKeymapTest：该文件实现 FooterKeymapTest 相关的状态与逻辑。
+ */
 import { testRender } from "@opentui/solid"
 import { Keymap } from "../../src/context/keymap"
 import { resolve } from "../../src/config"

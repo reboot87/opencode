@@ -1,4 +1,6 @@
 //! System commands and settings toggles. Restart is unavailable because the client shares its background service.
+//!
+//! 终端界面功能模块：系统命令。
 
 use opencode_local::cli_config::{CursorStyle, DiffWrap, Info, PromptPaste, Resolved};
 use opentui::native::{Control, MouseTracking};

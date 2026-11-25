@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — PromptOffsetTest。
+ * 终端界面的测试中负责 PromptOffsetTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { beforeEach, expect, test } from "bun:test"
 import path from "node:path"
 import { takeDraft } from "../src/component/prompt/draft-stash"

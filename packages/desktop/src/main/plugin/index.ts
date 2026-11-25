@@ -1,3 +1,7 @@
+/**
+ * 桌面插件 — Index 出口。
+ * 集中导出 桌面插件 中 Index 相关的实现、组件与类型。
+ */
 export * as Plugins from "./index"
 
 import { app } from "electron"

@@ -1,3 +1,7 @@
+/**
+ * MCP 连接池。
+ * 管理多个 MCP 服务器连接的池，提供选择、复用与生命周期管理。
+ */
 export * as McpPool from "./pool.js"
 
 import type { AuthProvider } from "@modelcontextprotocol/client"

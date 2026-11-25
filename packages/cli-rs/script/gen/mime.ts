@@ -1,3 +1,8 @@
+/**
+ * mime脚本。
+ *
+ * Rust CLI 的代码生成器：由 TypeScript 单一来源生成 Rust 代码。
+ */
 // Generates the extension-to-MIME table used for `run -f` attachments.
 import { createRequire } from "node:module"
 

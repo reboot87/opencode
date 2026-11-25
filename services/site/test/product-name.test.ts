@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：product·名称。
+ */
 import { describe, expect, test } from "bun:test"
 import path from "node:path"
 import { Glob } from "bun"

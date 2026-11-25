@@ -1,3 +1,7 @@
+/**
+ * 设置界面 — RenameMachine。
+ * 应用设置页面的框架中负责 RenameMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export const INLINE_RENAME_TIMEOUT_MS = 15_000
 
 /** Account names save when clicking away; project rows discard, as Home session rows do. */

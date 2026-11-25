@@ -1,3 +1,7 @@
+/**
+ * 全局路径。
+ * 定义 opencode 应用的全局路径布局（数据、配置、日志等）。
+ */
 import path from "path"
 import fs from "fs"
 import os from "os"

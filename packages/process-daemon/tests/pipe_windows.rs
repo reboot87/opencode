@@ -7,6 +7,8 @@
 //! <command>`), and longer checks use a PowerShell script file. Windows
 //! PowerShell needs `SystemRoot` in its environment to start, so test
 //! children get a PATH, SystemRoot and TEMP, never the daemon's own.
+//!
+//! 进程守护服务测试：管道·windows。
 
 use std::collections::HashMap;
 use std::env;

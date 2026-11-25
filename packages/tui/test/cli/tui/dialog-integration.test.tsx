@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid DialogIntegrationTest：该文件实现 DialogIntegrationTest 相关的状态与逻辑。
+ */
 import { InputRenderable, TextareaRenderable } from "@opentui/core"
 import type { FormFields, LocationRef } from "@opencode/client"
 import { testRender } from "@opentui/solid"

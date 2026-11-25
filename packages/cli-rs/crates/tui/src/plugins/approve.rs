@@ -1,4 +1,6 @@
 //! Ask before running a project plugin. Approval belongs to the displayed artifact, not its path alone.
+//!
+//! 终端插件视图：批准。
 
 use opencode_plugin::loader::approval::{Artifact, Decision};
 use opencode_ui::confirm::{ConfirmProps, confirm};

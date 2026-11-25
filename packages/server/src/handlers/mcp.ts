@@ -1,3 +1,7 @@
+/**
+ * mcp 接口处理器。
+ * MCP 接口处理器：MCP 客户端接入与票据签发。
+ */
 import { Location } from "@opencode/core/location"
 import { LocationServiceMap } from "@opencode/core/location-service-map"
 import { Mcp } from "@opencode/core/mcp/index"

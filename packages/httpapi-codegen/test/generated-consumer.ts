@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — GeneratedConsumer。
+ * 终端界面的测试中负责 GeneratedConsumer 部分，提供该部分所需的实现与类型定义。
+ */
 import { Effect, Stream } from "effect"
 import { HttpClient } from "effect/http"
 import { ClientError, OpenCode } from "./generated"

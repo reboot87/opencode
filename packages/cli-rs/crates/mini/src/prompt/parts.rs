@@ -1,4 +1,6 @@
 //! Converts between editable prompts, wire requests and history entries.
+//!
+//! 精简版实现：片段。
 
 use opencode_api::generated::{
     PromptBase64, PromptFileAttachment, PromptFileSource, PromptFileSourceInline, PromptMention, tag,

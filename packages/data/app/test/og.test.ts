@@ -1,3 +1,7 @@
+/**
+ * 数据站测试 — OgTest。
+ * 数据站点的测试中负责 OgTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, mock, test } from "bun:test"
 import { readdir, rm } from "node:fs/promises"
 import { tmpdir } from "node:os"

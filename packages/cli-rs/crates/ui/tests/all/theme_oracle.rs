@@ -1,3 +1,5 @@
+//! 基础 UI 组件库：主题·oracle。
+
 use indexmap::IndexMap;
 use opencode_ui::theme::{Catalog, TerminalColors, Theme, ThemeMode, generate_system, terminal_mode};
 use opentui::style::Color;

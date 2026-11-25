@@ -1,3 +1,7 @@
+/**
+ * 渲染进程 — IpcClientMachine。
+ * Electron 渲染进程的界面逻辑中负责 IpcClientMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { RpcMessage } from "effect/rpc"
 
 /** How long a renderer waits for main to post its IPC port before failing the calls waiting on it. */

@@ -1,3 +1,6 @@
+/**
+ * 站点构建脚本：设置默认值。
+ */
 // Writes src/component/site/settings-defaults.json: the default settings, which production renders
 // without building the settings schema, so zod stays out of the browser's bundle (settings.ts). Run
 // after changing a setting or its default; test/settings-defaults.test.ts fails while the file is out

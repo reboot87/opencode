@@ -1,3 +1,8 @@
+/**
+ * 模型测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { ModelsDev } from "@opencode/core/models-dev"
 
 // Core is env-free, so the default ModelsDev node refreshes from models.dev

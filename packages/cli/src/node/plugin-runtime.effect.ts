@@ -1,3 +1,7 @@
+/**
+ * 插件运行时（Effect）。
+ * 为 Node 下的 Effect 风格插件提供运行时宿主。
+ */
 import {
   Agent,
   Command,

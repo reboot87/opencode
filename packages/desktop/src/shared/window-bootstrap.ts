@@ -1,3 +1,7 @@
+/**
+ * 共享代码 — WindowBootstrap。
+ * 主进程与渲染进程共用的类型与工具中负责 WindowBootstrap 部分，提供该部分所需的实现与类型定义。
+ */
 // What the main process already knows when it creates a window, handed to the renderer through the
 // preload's argv so the shell can mount before the IPC port exists. Undefined means "ask over IPC".
 export type WindowBootstrap = {

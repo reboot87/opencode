@@ -1,3 +1,7 @@
+/**
+ * Provider 类型。
+ * 定义模型提供方的标识、模型清单与设置结构。
+ */
 export * as Provider from "./provider.js"
 
 import { Effect, Schema } from "effect"

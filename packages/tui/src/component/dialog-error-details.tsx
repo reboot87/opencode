@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — DialogErrorDetails。
+ * 终端界面（Solid）组件中负责 DialogErrorDetails 部分，提供该部分所需的实现与类型定义。
+ */
 import { TextAttributes, type ScrollBoxRenderable } from "@opentui/core"
 import { useKeyboard, useTerminalDimensions } from "@opentui/solid"
 import { createSignal, Show } from "solid-js"

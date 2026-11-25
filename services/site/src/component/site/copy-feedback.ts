@@ -8,6 +8,8 @@
  * hears when "copied" starts and ends (the static pages' buttons draw their copy icon as a check
  * meanwhile; the docs' have no icon). A later copy from the same button owns the mark; the state the
  * button rests in comes back after.
+ *
+ * 站点界面组件：拷贝反馈。
  */
 export async function copyWithFeedback(
   button: HTMLElement,

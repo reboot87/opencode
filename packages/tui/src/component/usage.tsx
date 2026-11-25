@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — Usage。
+ * 终端界面（Solid）组件中负责 Usage 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ModelInfo, SessionMessageAssistant } from "@opencode/client"
 import { TextAttributes } from "@opentui/core"
 import { createEffect, createMemo, createSignal, For, Match, onCleanup, onMount, Show, Switch } from "solid-js"

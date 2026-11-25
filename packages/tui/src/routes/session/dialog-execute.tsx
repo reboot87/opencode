@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — DialogExecute。
+ * 会话主界面的视图与状态中负责 DialogExecute 部分，提供该部分所需的实现与类型定义。
+ */
 import { TextAttributes, type CodeRenderable, type LineInfo, type ScrollBoxRenderable } from "@opentui/core"
 import { useTerminalDimensions } from "@opentui/solid"
 import type { SessionMessageAssistantTool } from "@opencode/client/promise"

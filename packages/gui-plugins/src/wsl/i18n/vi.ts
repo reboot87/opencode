@@ -1,3 +1,7 @@
+/**
+ * WSL 文案 — Vi。
+ * WSL 插件的多语言文案中负责 Vi 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "server.add": "Thêm máy chủ WSL",
   "server.label": "WSL",

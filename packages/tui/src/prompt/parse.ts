@@ -1,3 +1,7 @@
+/**
+ * 提示输入 — Parse。
+ * 提示输入的解析、编辑与提交中负责 Parse 部分，提供该部分所需的实现与类型定义。
+ */
 export function parseFileLineRange(input: string) {
   const hash = input.lastIndexOf("#")
   if (hash <= 0) return { base: input }

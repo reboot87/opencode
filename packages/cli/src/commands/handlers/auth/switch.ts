@@ -1,3 +1,7 @@
+/**
+ * auth switch 命令。
+ * 切换当前使用的账号。
+ */
 import { intro, outro, spinner } from "@clack/prompts"
 import { Effect, Option } from "effect"
 import { Commands } from "../../commands"

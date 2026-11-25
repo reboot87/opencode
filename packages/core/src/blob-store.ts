@@ -1,3 +1,7 @@
+/**
+ * Blob 存储类型。
+ * 定义 BlobStore 的 ID/Info 类型别名。
+ */
 export * as BlobStore from "./blob-store.js"
 
 import path from "path"

@@ -33,7 +33,10 @@ export type ChangelogRelease = {
 
 export type ChangelogData = {
   ok: boolean
-  /** Served from the last good response because GitHub failed just now. */
+  /** Served from the last good response because GitHub failed just now.
+ *
+ * 站点共享逻辑：更新日志。
+ */
   stale?: boolean
   releases: ChangelogRelease[]
 }

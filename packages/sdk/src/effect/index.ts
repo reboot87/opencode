@@ -1,3 +1,7 @@
+/**
+ * Effect SDK 出口。
+ * 集中导出 Effect 风格 SDK 的入口。
+ */
 export * as OpenCode from "./opencode"
 export * as Tool from "./tool"
 export { EnvironmentDriver } from "@opencode/core/environment/driver"

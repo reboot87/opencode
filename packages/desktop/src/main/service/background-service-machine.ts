@@ -1,3 +1,7 @@
+/**
+ * 后台服务 — BackgroundServiceMachine。
+ * 桌面端托管的后台服务进程中负责 BackgroundServiceMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export * as BackgroundServiceMachine from "./background-service-machine"
 
 import { Cause, Effect, Exit, FiberSet } from "effect"

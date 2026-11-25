@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：菜单·backgrounds·伪终端。
+ *
+ * 规格编号：M.3。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The command menu's backgrounds under the `system` theme, in a terminal that reports Tokyo Night's colors: the
 // panel's shade, the focused search field, the highlighted row and the half-block edge below the panel.
 import { definePty } from "../../pty/run"

@@ -3,6 +3,8 @@
 //! its siblings in it, and re-adding a child in place is a move (OpenTUI's walk order). A node whose resize must come
 //! last (the plugin behaviors' hook) is therefore put in once and kept last: every child added after it goes in before
 //! it, through [`add`].
+//!
+//! 基础 UI 组件库：根。
 
 use std::cell::RefCell;
 use std::collections::HashMap;

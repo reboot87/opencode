@@ -1,7 +1,10 @@
 import { createMemo } from "solid-js"
 import { pixelCells, pixelWidth } from "./pixel-font"
 
-/** Text in the CRT's bitmap font, drawn as SVG cells so it stays crisp at any zoom. It is decorative: callers give the accessible name. */
+/** Text in the CRT's bitmap font, drawn as SVG cells so it stays crisp at any zoom. It is decorative: callers give the accessible name.
+ *
+ * 街机小游戏组件：像素文本。
+ */
 export function PixelText(props: { text: string; class?: string }) {
   const path = createMemo(() =>
     pixelCells(props.text)

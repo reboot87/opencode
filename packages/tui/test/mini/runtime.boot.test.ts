@@ -1,3 +1,7 @@
+/**
+ * Mini 测试 — RuntimeBootTest。
+ * 精简交互模式的测试中负责 RuntimeBootTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, describe, expect, mock, spyOn, test } from "bun:test"
 import { OpenCode } from "@opencode/client/promise"
 import { resolveMiniSettings, resolveModelInfo, resolveRunTuiConfig } from "../../src/mini/runtime.boot"

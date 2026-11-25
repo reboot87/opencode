@@ -8,6 +8,8 @@ import { createEffect, createSignal, createUniqueId, on, ParentProps, Show } fro
  * rows that are section headings. The answer animates its height (faq-open and faq-close in site.css,
  * from --kb-collapsible-content-height) and stays shown until the closing animation ends. On a
  * static page, src/client/faq.ts opens and closes it.
+ *
+ * 通用界面组件：常见问题。
  */
 export function Faq(
   props: ParentProps & {

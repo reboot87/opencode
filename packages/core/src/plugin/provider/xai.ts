@@ -1,3 +1,7 @@
+/**
+ * xAI provider 插件。
+ * 注册 xAI provider，实现 OAuth 登录流程。
+ */
 import type { IntegrationOAuthMethodRegistration } from "@opencode/plugin/effect/integration"
 import { define } from "@opencode/plugin/effect/plugin"
 import { Clock, Effect, Option, Schema } from "effect"

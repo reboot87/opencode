@@ -1,3 +1,7 @@
+/**
+ * RPC 类型。
+ * 定义远程过程调用的方法、负载与失败结构。
+ */
 export * as Rpc from "./rpc.js"
 
 import type { StandardSchemaV1 } from "@standard-schema/spec"

@@ -1,3 +1,7 @@
+/**
+ * 工作区事件类型。
+ * 定义工作区相关事件结构。
+ */
 export * as WorkspaceEvent from "./workspace-event.js"
 
 import { Schema } from "effect"

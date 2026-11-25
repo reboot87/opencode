@@ -1,3 +1,7 @@
+/**
+ * WSL 插件 — RemoteCli。
+ * Windows Subsystem for Linux 相关的 GUI 插件中负责 RemoteCli 部分，提供该部分所需的实现与类型定义。
+ */
 // The part of the SSH plugin's remote CLI scripts that WSL uses. Plugins share only contracts, so
 // keep the two copies in step.
 

@@ -1,3 +1,7 @@
+/**
+ * 模块 — VitePwa。
+ * 该目录下的功能模块中负责 VitePwa 部分，提供该部分所需的实现与类型定义。
+ */
 import { createHash } from "node:crypto"
 import { readFile } from "node:fs/promises"
 import { resolve } from "node:path"

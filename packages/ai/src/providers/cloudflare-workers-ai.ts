@@ -1,3 +1,7 @@
+/**
+ * Cloudflare Workers AI provider 门面。
+ * 封装 Workers AI 的 chat / images / decision 能力，提供模型工厂与账户鉴权。
+ */
 import type { ProviderPackage } from "../provider-package.js"
 import { CloudflareRunExtraction } from "../experimental/cloudflare-run-extraction.js"
 import { CloudflareRunDecisions } from "../protocols/cloudflare-run-decisions.js"

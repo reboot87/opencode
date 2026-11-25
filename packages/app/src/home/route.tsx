@@ -1,3 +1,7 @@
+/**
+ * 主页 — Route。
+ * 应用主页的视图与数据中负责 Route 部分，提供该部分所需的实现与类型定义。
+ */
 import { ScrollView } from "@opencode/ui/scroll-view"
 import { createMediaQuery } from "@solid-primitives/media"
 import { createMemo, onMount, Show } from "solid-js"

@@ -1,3 +1,7 @@
+/**
+ * Venice AI provider 门面。
+ * 封装 chat / responses 能力，提供模型工厂与鉴权配置。
+ */
 import type { ProviderPackage } from "../provider-package.js"
 import { VeniceChat } from "../protocols/venice-chat.js"
 import { OpenAIChat } from "../protocols/openai-chat.js"

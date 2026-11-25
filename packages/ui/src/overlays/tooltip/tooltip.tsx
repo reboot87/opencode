@@ -1,3 +1,7 @@
+/**
+ * 悬浮提示 — Tooltip。
+ * 悬停显示的说明浮层中负责 Tooltip 部分，提供该部分所需的实现与类型定义。
+ */
 import { Content, Portal, Root, Trigger, useTooltipContext, type TooltipContextValue } from "@kobalte/core/tooltip"
 import { makeEventListener } from "@solid-primitives/event-listener"
 import { createComputed, createSignal, onCleanup, onMount, Show, splitProps, untrack, type JSX } from "solid-js"

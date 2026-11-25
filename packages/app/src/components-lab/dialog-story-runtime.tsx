@@ -1,3 +1,7 @@
+/**
+ * 组件实验室 — DialogStoryRuntime。
+ * 用于试用与调试 UI 组件的页面中负责 DialogStoryRuntime 部分，提供该部分所需的实现与类型定义。
+ */
 import type { IntegrationInfo, PluginInfo } from "@opencode/client/promise"
 import { QueryClient, QueryClientProvider } from "@tanstack/solid-query"
 import type { ParentProps } from "solid-js"

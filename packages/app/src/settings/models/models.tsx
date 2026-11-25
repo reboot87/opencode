@@ -1,3 +1,7 @@
+/**
+ * 模型设置 — Models。
+ * 默认模型与模型偏好设置中负责 Models 部分，提供该部分所需的实现与类型定义。
+ */
 import { useFilteredList } from "@opencode/ui/hooks"
 import { Switch } from "@opencode/ui/switch"
 import {

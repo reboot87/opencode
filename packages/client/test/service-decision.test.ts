@@ -1,3 +1,10 @@
+/**
+ * 服务·决策的测试。
+ *
+ * 被测模块：@opencode/client/service-decision
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { decide, type LocalService } from "../src/service-probe"
 

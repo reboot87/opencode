@@ -1,3 +1,10 @@
+/**
+ * API的类型定义（类型断言用）。
+ *
+ * 被测模块：@opencode/client/api
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { Effect } from "effect"
 import { OpenCode as EffectOpenCode, type AppApi as EffectApi } from "../src/effect"
 import type { Session } from "@opencode/schema/session"

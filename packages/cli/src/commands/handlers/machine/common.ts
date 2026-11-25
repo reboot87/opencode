@@ -1,3 +1,7 @@
+/**
+ * machine 命令公共逻辑。
+ * 为 machine 子命令准备客户端连接。
+ */
 import {
   isConflictError,
   isForbiddenError,

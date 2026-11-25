@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid SelectionCopyOnSelectTest：该文件实现 SelectionCopyOnSelectTest 相关的状态与逻辑。
+ */
 import { expect, test } from "bun:test"
 import { ManualClock } from "@opentui/core/testing"
 import { testRender, useRenderer } from "@opentui/solid"

@@ -1,3 +1,7 @@
+/**
+ * 终端界面 — MotionTuningFeaturesTest。
+ * OpenCode 终端界面的整体骨架与入口中负责 MotionTuningFeaturesTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { motionTuning } from "./motion-tuning"
 import {

@@ -1,3 +1,8 @@
+/**
+ * 对等性公共库：app。
+ *
+ * 对等性校验的公共库：伪造服务端、PTY 套接字与录制回放工具。
+ */
 // P-APP scenarios (docs/testing.md): one file per scenario, `parity/scenarios/<step>/<name>.app.ts`, with
 // `export default defineApp({...})`. parity/app/scenarios.test.tsx records each one through the TS TUI;
 // crates/tui/tests/all/app.rs replays the recording through the Rust TUI.

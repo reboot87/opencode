@@ -1,3 +1,7 @@
+/**
+ * 本地存储 — Store。
+ * 桌面端配置的本地持久化中负责 Store 部分，提供该部分所需的实现与类型定义。
+ */
 import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs"
 import path from "node:path"
 import { Option, Schema } from "effect"

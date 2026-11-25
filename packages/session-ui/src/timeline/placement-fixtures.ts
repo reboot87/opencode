@@ -1,3 +1,7 @@
+/**
+ * 时间线 — PlacementFixtures。
+ * 按时间顺序展示会话消息的视图中负责 PlacementFixtures 部分，提供该部分所需的实现与类型定义。
+ */
 import type { JsonValue, SessionMessageAssistant, SessionMessageInfo } from "@opencode/client/promise"
 import { storyTool } from "../storybook/current-session-scenarios"
 import { timelinePresets, type TimelineDetail } from "./detail"

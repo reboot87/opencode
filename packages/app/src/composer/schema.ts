@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — Schema。
+ * 会话输入区的组合逻辑与附件处理中负责 Schema 部分，提供该部分所需的实现与类型定义。
+ */
 import { Schema, SchemaGetter, Struct } from "effect"
 import { checksum } from "@opencode/util/encode"
 import { SessionMessage } from "@opencode/schema/session-message"

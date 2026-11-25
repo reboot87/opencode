@@ -1,3 +1,7 @@
+/**
+ * 浏览器配置 — CompatibilityTest。
+ * 浏览器插件的用户配置与身份中负责 CompatibilityTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { extensionAccess, extensionCompatibility, reviewHosts } from "./compatibility"
 import type { Manifest } from "./extensions"

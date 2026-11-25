@@ -1,3 +1,7 @@
+/**
+ * 终端工具 — Permission。
+ * 终端界面的通用工具函数中负责 Permission 部分，提供该部分所需的实现与类型定义。
+ */
 import { Locale } from "./locale"
 import { canonicalToolName, finiteNumber, webSearchProviderLabel } from "./tool-display"
 

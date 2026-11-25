@@ -1,3 +1,7 @@
+/**
+ * service unset 命令。
+ * 清除服务配置项。
+ */
 import { Effect, Option } from "effect"
 import { Commands } from "../../commands"
 import { Runtime } from "../../../framework/runtime"

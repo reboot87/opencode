@@ -1,3 +1,7 @@
+/**
+ * OpenCode Artifacts provider 插件。
+ * 通过 x-opencode-artifacts 头接入控制台的产物能力。
+ */
 export * as OpencodeArtifacts from "./opencode-artifacts.js"
 
 import { createHash } from "node:crypto"

@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — ResizeHandleStories。
+ * 跨场景复用的通用 UI 组件中负责 ResizeHandleStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal, on } from "solid-js"
 import { ResizeHandle, type ResizeHandleProps } from "./resize-handle"
 

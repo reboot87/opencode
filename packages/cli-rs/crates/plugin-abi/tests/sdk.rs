@@ -1,4 +1,6 @@
 //! The guide shows the SDK's examples as they are.
+//!
+//! 插件 ABI 边界测试：SDK。
 
 use std::path::Path;
 

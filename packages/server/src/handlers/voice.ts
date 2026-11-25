@@ -1,3 +1,7 @@
+/**
+ * voice 接口处理器。
+ * 语音接口处理器：实时语音会话连接。
+ */
 import { Location } from "@opencode/core/location"
 import { LocationServiceMap } from "@opencode/core/location-services"
 import { AbsolutePath } from "@opencode/core/schema"

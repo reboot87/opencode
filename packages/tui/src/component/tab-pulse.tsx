@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — TabPulse。
+ * 终端界面（Solid）组件中负责 TabPulse 部分，提供该部分所需的实现与类型定义。
+ */
 import { OptimizedBuffer, Renderable, RGBA, type RenderableOptions, type RenderContext } from "@opentui/core"
 import { extend } from "@opentui/solid"
 

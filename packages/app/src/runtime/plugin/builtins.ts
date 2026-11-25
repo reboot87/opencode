@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — Builtins。
+ * 浏览器端的插件加载与扩展点中负责 Builtins 部分，提供该部分所需的实现与类型定义。
+ */
 import { builtins } from "@opencode/gui-plugins/renderer"
 import type { Entry } from "@opencode/plugin/gui/host"
 

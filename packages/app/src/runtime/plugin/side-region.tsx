@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — SideRegion。
+ * 浏览器端的插件加载与扩展点中负责 SideRegion 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, Show, createMemo, createRenderEffect, createSignal, onCleanup, type Accessor, type JSX } from "solid-js"
 import { createStore } from "solid-js/store"
 import { createMediaQuery } from "@solid-primitives/media"

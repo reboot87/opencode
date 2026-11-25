@@ -1,3 +1,7 @@
+/**
+ * SDK 契约再导出。
+ * 再导出 SDK 对外承诺的契约类型。
+ */
 export { Agent } from "@opencode/schema/agent"
 export { Command } from "@opencode/schema/command"
 export { Config } from "@opencode/schema/config"

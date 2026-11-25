@@ -1,3 +1,7 @@
+/**
+ * 堆快照。
+ * 在信号触发时写出 V8 堆快照，带并发锁保护。
+ */
 import { Clock, Effect, Semaphore } from "effect"
 import { mkdir, open } from "node:fs/promises"
 import path from "node:path"

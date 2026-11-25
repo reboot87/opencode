@@ -15,6 +15,8 @@ type Direction = keyof typeof stick
  * The cabinet's control panel for touch screens: a ball-top joystick (8-way, sent as WASD) and six
  * buttons lit per game, plus Start and Pause. In development it drives the same-origin game frame
  * with synthetic events; see `gameUrl` for the production bridge this needs.
+ *
+ * 街机小游戏组件：面板。
  */
 export function ArcadePanel(props: { game: Game; frame?: HTMLIFrameElement; onPause: () => void; onExit: () => void }) {
   const i18n = useI18n()

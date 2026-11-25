@@ -1,3 +1,7 @@
+/**
+ * Pierre 组件 — FileSelection。
+ * 会话界面的基础组件库中负责 FileSelection 部分，提供该部分所需的实现与类型定义。
+ */
 import { type SelectedLineRange } from "@pierre/diffs"
 import { toRange } from "./selection-bridge"
 

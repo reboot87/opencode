@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — SidebarViewMenu。
+ * 自定义窗口标题栏中负责 SidebarViewMenu 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, Show, type JSX } from "solid-js"
 import { Icon } from "@opencode/ui/icon"
 import { IconButton } from "@opencode/ui/icon-button"

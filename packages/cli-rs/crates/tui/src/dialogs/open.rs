@@ -1,4 +1,6 @@
 //! Open a recent session or worktree.
+//!
+//! 终端弹窗组件：打开。
 
 use opencode_api::generated::{
     ProjectID, SessionGetInput, SessionInfo, SessionListInput, SessionListInputOrder, WorktreeCreateInput,

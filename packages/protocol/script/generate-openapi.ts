@@ -1,3 +1,8 @@
+/**
+ * 生成·OpenAPI脚本。
+ *
+ * 协议包的开发脚本：API 定义生成与契约校验。
+ */
 import { OpenApi } from "effect/http-api"
 import { format } from "prettier"
 import { fileURLToPath } from "url"

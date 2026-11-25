@@ -15,6 +15,8 @@ type Feature = { title: string; body: string; href: string }
  * moves after load. "show more", "highlights" and "highlights + list" trim the grid itself (its
  * first five or four items); "accordion" (the default) and "swipe deck" replace it. Production
  * renders only the default's parts (script/fold-settings.ts).
+ *
+ * 站点界面组件：手机·features。
  */
 export function PhoneFeatures(props: { features: readonly Feature[]; listID: string }) {
   const i18n = useI18n()

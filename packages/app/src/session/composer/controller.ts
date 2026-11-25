@@ -1,3 +1,7 @@
+/**
+ * 会话输入区 — Controller。
+ * 会话界面输入区的实现中负责 Controller 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, on, onMount, untrack, type Accessor } from "solid-js"
 import { useDialog } from "@opencode/ui/context/dialog"
 import type { ComposerControls } from "@/composer/adapter"

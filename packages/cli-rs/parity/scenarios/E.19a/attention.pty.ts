@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：attention·伪终端。
+ *
+ * 规格编号：E.19a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Attention (N01, N03, N04, F09): `-s ses_b` opens a session with `attention.notifications` on. The steps report a
 // focus loss, then the session works, asks for a permission, gets the reply and is done; then focus returns and the
 // session fails. Compared: the OSC 7501 program status records (`context/program-status.ts`) and the notifications

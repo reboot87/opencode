@@ -13,6 +13,8 @@ import { siteSettings } from "./settings"
  * (search-palette.tsx, with its styles) and the index (search-index.ts) load on intent: ⌘ or Ctrl
  * pressed (the start of ⌘K), hover or focus of a trigger, or the first open. Neither loads without
  * one.
+ *
+ * 站点界面组件：搜索。
  */
 
 export type SiteSearchProps = {

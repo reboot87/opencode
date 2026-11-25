@@ -1,6 +1,9 @@
 import type { ESTree, Scope, SourceCode, Variable } from "@oxlint/plugins";
 
-/** Unwrap syntax-only wrappers when inspecting array methods and accumulator references. */
+/** Unwrap syntax-only wrappers when inspecting array methods and accumulator references.
+ *
+ * Oxlint 规则共享工具：数组方法。
+ */
 export function unwrapArrayExpression(node: ESTree.Node): ESTree.Node {
   while (
     node.type === "ParenthesizedExpression" ||

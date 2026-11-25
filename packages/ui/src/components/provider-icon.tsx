@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — ProviderIcon。
+ * 跨场景复用的通用 UI 组件中负责 ProviderIcon 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Component, JSX } from "solid-js"
 import { createMemo, splitProps } from "solid-js"
 import sprite from "./provider-icons/sprite.svg"

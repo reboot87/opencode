@@ -1,3 +1,7 @@
+/**
+ * 会话提及测试。
+ * 验证文本中 @session:xxx 的提取与边界情况。
+ */
 import { expect, test } from "bun:test"
 import { parseSessionMention, serializeSessionMention, sessionMentions } from "./session-mention.js"
 

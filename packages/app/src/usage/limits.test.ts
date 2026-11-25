@@ -1,3 +1,7 @@
+/**
+ * 用量展示 — LimitsTest。
+ * 用量统计的界面中负责 LimitsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { UsageLimitsBudget, UsageLimitsInfo } from "@opencode/client/promise"
 import { modelUsage, usageView } from "./limits"

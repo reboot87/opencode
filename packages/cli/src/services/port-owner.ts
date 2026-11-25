@@ -1,3 +1,7 @@
+/**
+ * 端口占用检测。
+ * 检测目标端口被哪个进程占用并给出描述。
+ */
 import { AppProcess } from "@opencode/util/process"
 import { Effect } from "effect"
 import { ChildProcess } from "effect/process"

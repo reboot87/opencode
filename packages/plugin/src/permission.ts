@@ -1,3 +1,7 @@
+/**
+ * 权限断言类型。
+ * 定义插件发起的权限断言输入结构与 Schema。
+ */
 import { Agent } from "@opencode/schema/agent"
 import { Permission } from "@opencode/schema/permission"
 import { Schema } from "effect"

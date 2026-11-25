@@ -1,3 +1,6 @@
+/**
+ * 通用界面组件：go·模型。
+ */
 type GoModel = {
   id: string
   name: string

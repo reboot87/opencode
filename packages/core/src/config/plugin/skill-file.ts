@@ -1,3 +1,7 @@
+/**
+ * 技能文件解析。
+ * 解析技能文件的 Frontmatter 元数据，产出结构化解析结果。
+ */
 export * as SkillFile from "./skill-file.js"
 
 import path from "path"

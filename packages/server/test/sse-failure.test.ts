@@ -1,3 +1,10 @@
+/**
+ * 服务端事件流·失败的测试。
+ *
+ * 被测模块：@opencode/server/sse-failure
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import { OpenCode } from "@opencode/client/effect"
 import { ClientApi } from "@opencode/protocol/client"

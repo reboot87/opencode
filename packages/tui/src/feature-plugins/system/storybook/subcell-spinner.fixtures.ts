@@ -1,3 +1,7 @@
+/**
+ * 系统插件故事 — SubcellSpinnerFixtures。
+ * 系统功能插件的 Storybook 展示中负责 SubcellSpinnerFixtures 部分，提供该部分所需的实现与类型定义。
+ */
 import {
   BLOCK_LOW_COMET,
   BLOCK_SOFT_SLIDE,

@@ -1,3 +1,7 @@
+/**
+ * 文件插件 — Find。
+ * 文件预览与操作的 GUI 插件中负责 Find 部分，提供该部分所需的实现与类型定义。
+ */
 import { Option, Schema } from "effect"
 import { createSignal, onCleanup, Show, untrack } from "solid-js"
 import { makeEventListener } from "@solid-primitives/event-listener"

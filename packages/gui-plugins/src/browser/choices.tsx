@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — Choices。
+ * 内置浏览器功能的 GUI 插件中负责 Choices 部分，提供该部分所需的实现与类型定义。
+ */
 import { Show } from "solid-js"
 import { usePlugin, type IconName } from "@opencode/plugin/gui"
 import type { ProfileSource } from "./profile/ipc"

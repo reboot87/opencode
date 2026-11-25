@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：render·AUR。
 # render-aur.sh <build-npm dir> <aur dir>: writes PKGBUILD, .SRCINFO and the opencode2 shim for opencode-beta.
 # The package installs the published npm tarballs, so their hashes come from the build-npm artifact.
 # LICENSE comes from the AUR repository itself.

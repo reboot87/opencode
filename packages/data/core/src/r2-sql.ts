@@ -1,3 +1,7 @@
+/**
+ * 数据核心源码 — R2Sql。
+ * 数据采集与处理的实现中负责 R2Sql 部分，提供该部分所需的实现与类型定义。
+ */
 import { Context, Effect, Layer, Schedule, Schema } from "effect"
 import { Resource } from "./resource"
 

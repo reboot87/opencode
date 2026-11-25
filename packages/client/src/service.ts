@@ -1,4 +1,8 @@
-/** Connection details for a local OpenCode service. */
+/**
+ * Connection details for a local OpenCode service.
+ *
+ * 本机 OpenCode 服务的连接信息（地址与鉴权方式）。
+ */
 export type Endpoint = {
   /** Base URL of the service. */
   readonly url: string

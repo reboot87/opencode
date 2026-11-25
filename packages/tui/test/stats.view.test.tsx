@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — StatsViewTest。
+ * 终端界面的测试中负责 StatsViewTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { createTestRenderer } from "@opentui/core/testing"
 import { Global } from "@opencode/util/global"

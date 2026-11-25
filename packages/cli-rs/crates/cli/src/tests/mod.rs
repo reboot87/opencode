@@ -1,3 +1,5 @@
+//! 命令行入口测试入口。
+
 mod output;
 mod parse;
 mod tree;

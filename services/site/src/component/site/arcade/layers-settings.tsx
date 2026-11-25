@@ -9,6 +9,8 @@ type Group = keyof typeof layerControls
  * moon beam, floor light, dust and grade, applied live while dragging and saved in localStorage
  * (layers-tuning.ts). Reset returns to the tuned defaults; Copy values puts them on the clipboard
  * as JSON, ready to bake in as new defaults. Shown only while the 404 is in layers mode.
+ *
+ * 街机小游戏组件：层设置。
  */
 export default function LayersSettings() {
   const [copied, setCopied] = createSignal(false)

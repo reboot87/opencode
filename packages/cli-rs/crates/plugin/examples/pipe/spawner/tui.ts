@@ -1,3 +1,8 @@
+/**
+ * 管道示例：TUI。
+ *
+ * 管道示例：演示插件管道各阶段的串联方式。
+ */
 // Exercises descendant cleanup, including a process that leaves the host's process group.
 
 import { writeFileSync } from "node:fs"

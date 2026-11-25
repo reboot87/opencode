@@ -1,3 +1,7 @@
+/**
+ * 外壳路由 — SessionTest。
+ * 应用外壳的路由定义中负责 SessionTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { ServerConnection } from "@/runtime/server/registry"
 import { requireServerKey, rootSession, sessionHref } from "./session"

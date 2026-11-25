@@ -1,3 +1,7 @@
+/**
+ * Provider 目录 — Console。
+ * 可用模型目录的浏览界面中负责 Console 部分，提供该部分所需的实现与类型定义。
+ */
 type Provider = {
   id: string
   integrationID?: string

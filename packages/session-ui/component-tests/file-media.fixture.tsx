@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — FileMediaFixture。
+ * 会话界面组件的测试中负责 FileMediaFixture 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal } from "solid-js"
 import { render } from "solid-js/web"
 import { FileMedia } from "../src/components/file-media"

@@ -1,3 +1,6 @@
+/**
+ * 数据服务脚本：构建。
+ */
 // Builds the data site's three Workers into one Build Output Specification tree (.cloudflare/output) for
 // `cf deploy --prebuilt --worker <dir>` (script/deploy.ts):
 // - default: the SolidStart site (packages/data/app, Nitro's cloudflare-module preset) with .output/public as assets

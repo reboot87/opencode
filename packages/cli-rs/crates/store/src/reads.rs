@@ -1,4 +1,6 @@
 //! Keyed reads (`createSync`): one load per key, shared by every caller, read again once invalidated.
+//!
+//! 会话存储层：`reads`。
 
 use std::ops::{Index, IndexMut};
 

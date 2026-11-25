@@ -1,3 +1,8 @@
+/**
+ * SQLite·节点·客户端测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 // Bundled for Node by sqlite-node.test.ts and run with `node <dir>`, so #sqlite
 // resolves to the node:sqlite client that the standalone Node build ships.
 import { join } from "node:path"

@@ -1,3 +1,7 @@
+/**
+ * 测试夹具 — Frame。
+ * 终端测试使用的夹具数据中负责 Frame 部分，提供该部分所需的实现与类型定义。
+ */
 import { CodeRenderable, type Renderable } from "@opentui/core"
 import type { TestRendererSetup, TestWaitForOptions } from "@opentui/core/testing"
 

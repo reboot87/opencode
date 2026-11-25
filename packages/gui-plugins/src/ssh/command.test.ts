@@ -1,3 +1,7 @@
+/**
+ * SSH 插件 — CommandTest。
+ * 远程主机管理的 GUI 插件中负责 CommandTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { PlatformError } from "effect"
 import { parseTarget, quote, sshArgs, tunnelArgs, commandFailureDetail, SshFailure } from "./command"

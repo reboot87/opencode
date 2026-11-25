@@ -1,3 +1,8 @@
+/**
+ * 会话·基准基准脚本。
+ *
+ * 核心路径的性能基准脚本，用于观测关键操作的耗时分布。
+ */
 import { bench, script } from "@hona/strobe"
 
 // A scripted agent session through the real SessionStep.attempt, each model response 400 ms after

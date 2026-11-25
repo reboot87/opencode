@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — Renderer。
+ * GUI 插件的实现中负责 Renderer 部分，提供该部分所需的实现与类型定义。
+ */
 import { compose, type Entry } from "@opencode/plugin/gui/host"
 import context from "./context"
 import contextRenderer from "./context/renderer"

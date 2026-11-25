@@ -1,3 +1,7 @@
+/**
+ * 表单服务（Form）。
+ * 管理供用户填写的表单及其生命周期，带十分钟保留期。
+ */
 export * as Form from "./form.js"
 
 import { Form } from "@opencode/schema/form"

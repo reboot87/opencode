@@ -1,3 +1,7 @@
+/**
+ * 账户数据库表。
+ * 定义 account 与 account_state 表结构。
+ */
 import { sqliteTable, text, integer, primaryKey } from "drizzle-orm/sqlite-core"
 
 import { Timestamps } from "../database/schema.sql.js"

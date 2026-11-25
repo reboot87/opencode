@@ -1,3 +1,7 @@
+/**
+ * 生命周期 — Index 出口。
+ * 集中导出 生命周期 中 Index 相关的实现、组件与类型。
+ */
 export * as ApplicationLifecycle from "./index"
 
 import { app, BrowserWindow } from "electron"

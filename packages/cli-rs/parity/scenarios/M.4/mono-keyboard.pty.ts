@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：等宽·键盘·伪终端。
+ *
+ * 规格编号：M.4。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `/settings` switches Mono on at runtime: mono turns the Kitty keyboard off (`onMonoChange`), as the keyboard
 // sequences show. Core 0.9.4 queries the flags once more after it pushes them (parity/deviations/OT094-kitty-requery.md).
 import { definePty } from "../../pty/run"

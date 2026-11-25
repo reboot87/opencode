@@ -1,5 +1,7 @@
 //! Debounced, nonrecursive directory watches. A watch survives directory removal and recreation. If setup fails, only
 //! live reload is disabled.
+//!
+//! 本地配置与路径：监听。
 
 use std::ffi::OsStr;
 use std::path::Path;

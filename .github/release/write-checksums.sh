@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：write·checksums。
 # write-checksums.sh <dir>: writes <dir>/SHA256SUMS for every file under <dir> and prints its digest.
 # Every artifact carries this manifest; trusted jobs pass the digest on through job outputs.
 . "$(dirname "$0")/lib.sh"

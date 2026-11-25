@@ -1,3 +1,7 @@
+/**
+ * 数据核心源码 — Database。
+ * 数据采集与处理的实现中负责 Database 部分，提供该部分所需的实现与类型定义。
+ */
 import { Client } from "@planetscale/database"
 import { drizzle } from "drizzle-orm/planetscale-serverless"
 import { Config, ConfigProvider, Effect, Layer, Option, Schema } from "effect"

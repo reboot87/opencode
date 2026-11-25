@@ -1,3 +1,7 @@
+/**
+ * 消息渲染 — CurrentToolStateTest。
+ * 会话消息的渲染组件中负责 CurrentToolStateTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { SessionMessageAssistantTool } from "@opencode/client/promise"
 import { currentToolError, currentToolInput, currentToolMetadata, currentToolOutput } from "./current-tool-state"

@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — ResizeHandle。
+ * 跨场景复用的通用 UI 组件中负责 ResizeHandle 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, onCleanup, splitProps, untrack, type JSX } from "solid-js"
 import {
   INITIAL_RESIZE_HANDLE_STATE,

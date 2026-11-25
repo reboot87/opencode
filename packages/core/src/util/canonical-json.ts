@@ -1,3 +1,7 @@
+/**
+ * 规范化 JSON 序列化。
+ * 按稳定键序输出 JSON，便于哈希与比较。
+ */
 import type { Schema } from "effect"
 
 export function canonicalJson(value: Schema.Json): string {

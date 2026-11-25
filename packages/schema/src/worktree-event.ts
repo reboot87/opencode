@@ -1,3 +1,7 @@
+/**
+ * Worktree 事件类型。
+ * 定义工作树相关事件结构。
+ */
 export * as WorktreeEvent from "./worktree-event.js"
 
 import { Schema } from "effect"

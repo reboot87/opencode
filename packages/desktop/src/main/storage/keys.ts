@@ -1,3 +1,7 @@
+/**
+ * 本地存储 — Keys。
+ * 桌面端配置的本地持久化中负责 Keys 部分，提供该部分所需的实现与类型定义。
+ */
 export const SETTINGS_STORE = "opencode.settings"
 
 export const FIRST_LAUNCH_ONBOARDING_COMPLETE_KEY = "firstLaunchOnboardingComplete"

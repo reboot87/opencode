@@ -1,4 +1,6 @@
 //! Terminal panes against a fake socket and recorded requests.
+//!
+//! 终端界面测试：终端。
 
 use std::path::PathBuf;
 use std::sync::{Arc, Mutex};

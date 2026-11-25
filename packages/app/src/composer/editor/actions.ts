@@ -1,3 +1,7 @@
+/**
+ * 输入编辑器 — Actions。
+ * 输入区文本编辑器的实现中负责 Actions 部分，提供该部分所需的实现与类型定义。
+ */
 import { batch, untrack, type Accessor } from "solid-js"
 import type { SetStoreFunction, Store } from "solid-js/store"
 import type {

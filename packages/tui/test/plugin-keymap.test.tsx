@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — PluginKeymapTest。
+ * 终端界面的测试中负责 PluginKeymapTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { InputRenderable } from "@opentui/core"
 import { beforeEach, expect, test } from "bun:test"
 import { takeDraft } from "../src/component/prompt/draft-stash"

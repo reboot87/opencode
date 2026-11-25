@@ -1,4 +1,6 @@
 //! Select the current model's speed (`DialogSpeed`).
+//!
+//! 终端弹窗组件：速度。
 
 use opencode_ui::locale::titlecase;
 

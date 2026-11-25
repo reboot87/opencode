@@ -1,3 +1,7 @@
+/**
+ * 渲染进程 — HtmlTest。
+ * Electron 渲染进程的界面逻辑中负责 HtmlTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { join } from "node:path"
 

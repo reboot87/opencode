@@ -1,3 +1,7 @@
+/**
+ * Solid 会话保留。
+ * 根据浏览状态计算应保留（清理）的会话集合。
+ */
 import { createEffect, untrack, type Accessor } from "solid-js"
 import type { Data } from "./data"
 

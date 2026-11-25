@@ -1,5 +1,7 @@
 //! Persistent PTY control messages are text; output is binary. Interaction frames start with a type byte (0 claims
 //! control, 1 sends input), big-endian `u16` columns and rows, then input bytes.
+//!
+//! API 客户端：伪终端。
 
 use serde_json::Value;
 use url::Url;

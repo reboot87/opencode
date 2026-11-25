@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：工作树·删除·app。
+ *
+ * 规格编号：E.11b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Deleting a worktree with file changes (DLG25, DLG26): the server refuses the plain delete with
 // `forceRequired`, so the TUI lists the changes and asks again; `d` deletes with `force`. The fake server
 // refuses that too, which shows the failure toast and the list again.

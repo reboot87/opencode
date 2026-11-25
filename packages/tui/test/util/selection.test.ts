@@ -1,3 +1,7 @@
+/**
+ * 工具测试 — SelectionTest。
+ * 终端工具函数的测试中负责 SelectionTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import type { SelectionBehavior } from "@opentui/core"
 import type { ClipboardService } from "../../src/context/clipboard"

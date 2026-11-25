@@ -1,3 +1,10 @@
+/**
+ * Effect·app·节点·platform的测试。
+ *
+ * 被测模块：@opencode/core/effect-app-node-platform
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { WebSocketTransport } from "@opencode/ai/route"
 import { WebSocketConstructor } from "@opencode/core/effect/websocket-constructor"

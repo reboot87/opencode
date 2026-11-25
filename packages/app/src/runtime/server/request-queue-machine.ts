@@ -1,3 +1,7 @@
+/**
+ * 运行时服务端连接 — RequestQueueMachine。
+ * 浏览器端与服务端的连接与同步中负责 RequestQueueMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // Chromium allows six connections per origin. The event stream holds one for the life of the
 // connection and health probes use their own fetch, so the app's API calls stay below that or
 // a burst stalls probes and user actions inside the browser where nothing can observe it.

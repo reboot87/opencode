@@ -1,4 +1,6 @@
 //! Interactive shell output with paging, live follow, and copy actions.
+//!
+//! 终端弹窗组件：Shell·输出。
 
 use opencode_api::client::Client;
 use opencode_api::error::Error;

@@ -1,4 +1,6 @@
 //! Session commands are global for palette and slash completion; their keyboard bindings are base-mode only.
+//!
+//! 终端界面路由：`actions`。
 
 use opencode_api::client::Client;
 use opencode_api::generated::{

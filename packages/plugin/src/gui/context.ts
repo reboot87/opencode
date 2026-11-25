@@ -1,3 +1,7 @@
+/**
+ * GUI 插件上下文。
+ * 定义 GUI 插件运行时可用的上下文（状态、存储、命令、导航等）与装配流程。
+ */
 import type { Accessor } from "solid-js"
 import type {
   BaseContext,

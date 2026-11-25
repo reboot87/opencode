@@ -1,3 +1,7 @@
+/**
+ * TinyFish 搜索插件。
+ * 通过 TinyFish 的 MCP 端点提供网络搜索。
+ */
 export * as WebSearchTinyFish from "./tinyfish.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

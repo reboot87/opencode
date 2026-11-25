@@ -1,3 +1,7 @@
+/**
+ * 会话投影器（SessionProjector）。
+ * 把领域事件投影为持久化的会话与消息状态，是事件溯源写入侧的核心；处理消息编码、工具结果合并与幂等。
+ */
 export * as SessionProjector from "./projector.js"
 
 import { castDraft, produce, type WritableDraft } from "immer"

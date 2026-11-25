@@ -1,3 +1,10 @@
+/**
+ * 请求执行器的服务接口定义（executor service）。
+ *
+ * Interface 描述"执行一次 HTTP 请求"的契约：发请求、拿响应、处理流式体。
+ * executor.ts 提供基于 fetch 的实现；这里定义它依赖的 Context.Service 和共享类型
+ * （HttpMiddleware、响应读取辅助函数等），供各 transport 和 modality client 使用。
+ */
 import { Cause, Context, Effect, Option, Schema, Stream } from "effect"
 import { HttpClientError, type Headers, type HttpClientRequest, type HttpClientResponse } from "effect/http"
 import { AIError, HttpContext, TransportError } from "../schema/errors.js"

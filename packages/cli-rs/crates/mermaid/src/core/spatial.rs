@@ -1,3 +1,5 @@
+//! Mermaid 渲染核心：`spatial`。
+
 use std::collections::{BTreeMap, BTreeSet};
 
 use indexmap::IndexMap;

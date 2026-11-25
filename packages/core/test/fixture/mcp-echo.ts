@@ -1,3 +1,8 @@
+/**
+ * MCP·回显测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { createMcpHandler, Server } from "@modelcontextprotocol/server"
 
 /** A web-standard MCP server with one `echo` tool, for tests that route MCP HTTP through their own fetch. */

@@ -1,3 +1,7 @@
+/**
+ * 桌面端主进程 — Paths。
+ * Electron 主进程的核心逻辑中负责 Paths 部分，提供该部分所需的实现与类型定义。
+ */
 export * as DesktopPaths from "./paths"
 
 import { Effect, Path } from "effect"

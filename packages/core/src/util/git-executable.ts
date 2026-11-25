@@ -1,3 +1,7 @@
+/**
+ * Git 可执行文件定位。
+ * 定位可用的 git 可执行文件，处理 macOS 的 shim 与 xcode-select 路径。
+ */
 import { existsSync, realpathSync } from "node:fs"
 import path from "path"
 import { lazy } from "./lazy.js"

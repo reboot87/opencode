@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — SessionReviewCommentsSpec。
+ * 会话界面组件的测试中负责 SessionReviewCommentsSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, story } from "../../stories/playwright/story"
 
 // Selecting text to copy it used to open the comment editor and move focus into it.

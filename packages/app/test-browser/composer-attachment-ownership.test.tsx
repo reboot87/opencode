@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — ComposerAttachmentOwnershipTest。
+ * 浏览器环境下的测试中负责 ComposerAttachmentOwnershipTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { createRoot } from "solid-js"
 import { createStore, unwrap } from "solid-js/store"

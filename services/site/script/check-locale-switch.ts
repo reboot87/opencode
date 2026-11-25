@@ -1,4 +1,8 @@
 #!/usr/bin/env bun
+
+/**
+ * 站点构建脚本：检查语言包开关。
+ */
 // Checks that switching the language client-side (the picker's dropdown on a desktop, its sheet on a
 // phone, then back and forward) relabels everything: the sidebar nav, the footer, html lang and dir,
 // and the title match what the server renders for that language. Also checks that a nav label

@@ -1,3 +1,7 @@
+/**
+ * Provider 模型 — SpeedTest。
+ * provider 下模型的展示与配置中负责 SpeedTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { cycleModelSpeed, orderedSpeeds } from "./speed"
 

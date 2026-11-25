@@ -15,7 +15,10 @@ export function downloadFile(file: Blob, filename: string) {
   setTimeout(() => URL.revokeObjectURL(url), 1000)
 }
 
-/** Builds OpenCode.otf with this visit's character map and downloads it. Returns a status message. */
+/** Builds OpenCode.otf with this visit's character map and downloads it. Returns a status message.
+ *
+ * 字体展示组件：下载。
+ */
 export async function downloadFont() {
   try {
     const [opentype, font] = await Promise.all([

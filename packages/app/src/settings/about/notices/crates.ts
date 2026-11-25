@@ -1,3 +1,7 @@
+/**
+ * 声明 — Crates。
+ * 第三方声明与开源许可中负责 Crates 部分，提供该部分所需的实现与类型定义。
+ */
 // Generated from the Cargo.lock of each published BetterOffice engine and the license files of the published
 // crate sources. Regenerate it when the @betteroffice packages update; do not edit it by hand.
 export const crates = [

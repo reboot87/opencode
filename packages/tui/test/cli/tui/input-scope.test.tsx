@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid InputScopeTest：该文件实现 InputScopeTest 相关的状态与逻辑。
+ */
 import type { PermissionRequest } from "@opencode/client"
 import type { TextareaRenderable } from "@opentui/core"
 import { testRender, type JSX } from "@opentui/solid"

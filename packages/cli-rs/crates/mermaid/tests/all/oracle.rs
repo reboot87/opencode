@@ -1,3 +1,5 @@
+//! Mermaid 图表渲染：`oracle`。
+
 use opencode_mermaid::{Palette, Rendered, render};
 use opencode_plugin::node::Reader;
 use opencode_plugin_abi::Rgba;

@@ -1,3 +1,7 @@
+/**
+ * 变更统计 — DiffChangesStories。
+ * 展示代码变更行数统计的组件中负责 DiffChangesStories 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ComponentProps } from "solid-js"
 import { DiffChanges } from "./diff-changes"
 

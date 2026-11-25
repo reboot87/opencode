@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — Index 出口。
+ * 集中导出 输入组合器 中 Index 相关的实现、组件与类型。
+ */
 import { createEffect, createMemo, For, onCleanup, Show } from "solid-js"
 import { TextAttributes } from "@opentui/core"
 import { useTheme } from "../../../context/theme"

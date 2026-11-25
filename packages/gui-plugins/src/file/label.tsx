@@ -1,3 +1,7 @@
+/**
+ * 文件插件 — Label。
+ * 文件预览与操作的 GUI 插件中负责 Label 部分，提供该部分所需的实现与类型定义。
+ */
 import type { JSX } from "solid-js"
 import { FileIcon } from "@opencode/ui/file-icon"
 import { getFilename } from "@opencode/util/path"

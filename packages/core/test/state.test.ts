@@ -1,3 +1,10 @@
+/**
+ * 状态的测试。
+ *
+ * 被测模块：@opencode/core/state
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import { State } from "@opencode/core/state"
 import { Cause, Deferred, Effect, Exit, Fiber, Scope } from "effect"

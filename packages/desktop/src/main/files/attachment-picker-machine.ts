@@ -1,3 +1,7 @@
+/**
+ * 文件处理 — AttachmentPickerMachine。
+ * 桌面端的文件打开与拖放处理中负责 AttachmentPickerMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // A renderer may read each file it picked once, within the selection's byte budget. A read claims its file until it
 // settles: a failed or cancelled read gives the file back, so the renderer can retry it.
 export type PickedPath = { readonly status: "unread" } | { readonly status: "reading"; readonly attempt: number }

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：Shell·模式·app。
+ *
+ * 规格编号：E.3。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Prompt shell mode (#63605): `!` turns the prompt into shell mode, whose border and "Shell" label take the second
 // categorical color under the new designs instead of the interactive color the first agent shares.
 import { defineApp, session, user } from "../../lib/app"

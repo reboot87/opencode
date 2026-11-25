@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：登录·paste·伪终端。
+ *
+ * 规格编号：C.5。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // OAuth that also takes the redirect URL (`paste`, #61706): while the browser flow waits, a prompt asks for the URL
 // the browser was redirected to. The pasted URL completes the attempt, whose status then settles the login.
 import type { Logged } from "../../lib/fake-server"

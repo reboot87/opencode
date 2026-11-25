@@ -9,6 +9,8 @@ const runtime = new Set(["data-banner", "data-popover"])
  * Each settings attribute and its production value: on the site root (`root`), and on the element
  * a pre-paint rule names (`scoped`, `[element, attribute, value]`). script/css-variants.ts writes
  * them to JSON.
+ *
+ * 站点界面组件：CSS·变体。
  */
 export function cssVariants() {
   const d = siteSettingsDefaults

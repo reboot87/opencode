@@ -1,3 +1,6 @@
+/**
+ * 接口路由：`transcribe`。
+ */
 import type { APIEvent } from "@solidjs/start/server"
 import { voiceMode } from "~/component/site/voice/flag"
 

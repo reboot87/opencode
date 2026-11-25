@@ -1,3 +1,7 @@
+/**
+ * Mini 夹具 — Catalog。
+ * 精简交互模式的测试夹具中负责 Catalog 部分，提供该部分所需的实现与类型定义。
+ */
 import { spyOn } from "bun:test"
 import type { LocationRef, ModelListOutput, OpenCodeClient, ProviderListOutput } from "@opencode/client/promise"
 

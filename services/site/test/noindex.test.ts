@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：`noindex`。
+ */
 import { afterEach, describe, expect, test } from "bun:test"
 import { H3, HTTPError } from "nitro/h3"
 import { noindexDev } from "../src/lib/noindex"

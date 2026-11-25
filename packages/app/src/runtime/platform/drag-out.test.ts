@@ -1,3 +1,7 @@
+/**
+ * 运行时平台 — DragOutTest。
+ * 识别浏览器平台能力并做适配中负责 DragOutTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { dragOutText, draggingOut, startDragOut } from "./drag-out"
 

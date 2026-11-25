@@ -1,5 +1,7 @@
 //! `machine add`, `machine list` and `machine remove`: remote machines through the experimental API of `--server`
 //! or the background service. Every failure prints one line to stderr and exits 1, as TS's `reportMachineError`.
+//!
+//! CLI 子命令：状态机。
 
 use std::io::IsTerminal;
 

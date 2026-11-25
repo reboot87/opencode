@@ -1,3 +1,6 @@
+/**
+ * Nix 构建脚本：规范化节点模块。
+ */
 import { lstat, mkdir, readdir, rm, symlink } from "fs/promises"
 import { join, relative } from "path"
 

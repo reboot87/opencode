@@ -1,3 +1,8 @@
+/**
+ * 事件·服务端测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { InMemoryTransport, type JSONRPCMessage } from "@modelcontextprotocol/client"
 import { Effect, Queue } from "effect"
 

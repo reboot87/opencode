@@ -1,3 +1,7 @@
+/**
+ * 无超时 fetch 测试。
+ * 验证 fetch 不受默认超时限制并可被取消。
+ */
 import { afterAll, expect, test } from "bun:test"
 import { noTimeoutFetch } from "./no-timeout-fetch.js"
 

@@ -2,6 +2,8 @@
 //! directory to show that comments and formatting stay.
 //!
 //!   bun run --cwd packages/cli-rs cargo run -q -p opencode-local --example cli_config
+//!
+//! 本地配置与路径：CLI·配置。
 
 use std::fs;
 

@@ -1,3 +1,7 @@
+/**
+ * 工作区界面 — Paths。
+ * 工作区的管理界面中负责 Paths 部分，提供该部分所需的实现与类型定义。
+ */
 import { containsDirectory, sameDirectory } from "@opencode/util/path"
 import type { WorkspaceDefaultDestination, WorkspaceLastUsed } from "@/settings/model"
 import type { SessionInfo, WorktreeDirectory } from "@opencode/client/promise"

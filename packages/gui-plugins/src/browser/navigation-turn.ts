@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — NavigationTurn。
+ * 内置浏览器功能的 GUI 插件中负责 NavigationTurn 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Browser } from "@opencode/plugin-browser/rpc"
 
 /** Electron rejects loadURL as soon as a second main-frame navigation starts, before its document commits. */

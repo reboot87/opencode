@@ -1,3 +1,7 @@
+/**
+ * PTY 类型定义。
+ * 定义 PTY 的显示与退出结构。
+ */
 export type Disp = {
   dispose(): void
 }

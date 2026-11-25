@@ -1,3 +1,7 @@
+/**
+ * api 命令。
+ * 直接调用服务端 HTTP API 并输出结果。
+ */
 import { EOL } from "node:os"
 import { Effect, Option } from "effect"
 import { Commands } from "../commands"

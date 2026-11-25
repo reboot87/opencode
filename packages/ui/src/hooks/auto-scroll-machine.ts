@@ -1,3 +1,7 @@
+/**
+ * UI Hook — AutoScrollMachine。
+ * 可复用的 React Hook中负责 AutoScrollMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export const SETTLE_MS = 300
 
 export const END_EPSILON = 0.5

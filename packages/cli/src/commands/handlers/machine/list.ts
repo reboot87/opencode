@@ -1,3 +1,7 @@
+/**
+ * machine list 命令。
+ * 列出已知远程机器。
+ */
 import { Effect } from "effect"
 import { EOL } from "node:os"
 import { Commands } from "../../commands"

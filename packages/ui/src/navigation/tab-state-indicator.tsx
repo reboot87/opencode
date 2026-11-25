@@ -1,3 +1,7 @@
+/**
+ * 导航 — TabStateIndicator。
+ * 界面导航组件中负责 TabStateIndicator 部分，提供该部分所需的实现与类型定义。
+ */
 import { splitProps, type ComponentProps } from "solid-js"
 
 export function TabStateIndicator(props: ComponentProps<"svg">) {

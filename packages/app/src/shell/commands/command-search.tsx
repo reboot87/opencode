@@ -1,3 +1,7 @@
+/**
+ * 外壳命令 — CommandSearch。
+ * 应用外壳提供的命令中负责 CommandSearch 部分，提供该部分所需的实现与类型定义。
+ */
 import { useDialog } from "@opencode/ui/context/dialog"
 import { createMemo } from "solid-js"
 import { useLanguage } from "@/runtime/i18n/language"

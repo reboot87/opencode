@@ -1,3 +1,5 @@
+//! Mermaid 图表渲染：标签。
+
 use super::types::Route;
 use crate::core::geometry::{
     Axis, Direction, Point, Segment, centered_span_start, clamp_point, inset_span, midpoint, point, point_on_segment,

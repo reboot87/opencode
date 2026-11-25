@@ -1,3 +1,7 @@
+/**
+ * 模块 — DiagnosticsTest。
+ * 该目录下的功能模块中负责 DiagnosticsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { MermaidSyntaxError } from "../diagnostics.js"
 import { renderGitGraphDiagram } from "../gitgraph/diagram.js"

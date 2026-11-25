@@ -1,3 +1,5 @@
+//! Mermaid 渲染核心：画布。
+
 use super::text;
 
 const MAX_CELLS: i64 = 250_000;

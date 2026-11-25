@@ -1,3 +1,7 @@
+/**
+ * 数据服务 — Cron。
+ * 提供数据查询的服务端中负责 Cron 部分，提供该部分所需的实现与类型定义。
+ */
 import {
   HISTORY_SCHEDULE,
   instanceId,

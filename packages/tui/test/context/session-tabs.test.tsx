@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid SessionTabsTest：该文件实现 SessionTabsTest 相关的状态与逻辑。
+ */
 import { expect, test } from "bun:test"
 import type { OpenCodeEvent } from "@opencode/client"
 import { testRender } from "@opentui/solid"

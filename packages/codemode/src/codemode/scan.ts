@@ -1,3 +1,7 @@
+/**
+ * 代码扫描。
+ * 静态扫描沙箱代码，识别其调用的工具与程序结构。
+ */
 import type { AnyNode, BlockStatement, ModuleDeclaration, Pattern, Program, Statement } from "acorn"
 import { Result } from "effect"
 import type { Diagnostic } from "./codemode.js"

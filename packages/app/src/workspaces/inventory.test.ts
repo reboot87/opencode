@@ -1,3 +1,7 @@
+/**
+ * 工作区界面 — InventoryTest。
+ * 工作区的管理界面中负责 InventoryTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { QueryClient } from "@tanstack/solid-query"
 import type { WorktreeDirectory } from "@opencode/client/promise"

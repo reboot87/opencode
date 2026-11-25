@@ -16,7 +16,10 @@ const initialLetters = [..."opencode"]
   .join("")
 
 type Motion = { rotation: number; lift: number; scale: number }
-/** public/font/confetti.mjs, shared with the GIF worker. */
+/** public/font/confetti.mjs, shared with the GIF worker.
+ *
+ * 字体展示组件：`typewriter`。
+ */
 type Confetti = {
   CONFETTI_DURATION: number
   LETTER_PERSPECTIVE: number

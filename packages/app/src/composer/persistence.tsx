@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — Persistence。
+ * 会话输入区的组合逻辑与附件处理中负责 Persistence 部分，提供该部分所需的实现与类型定义。
+ */
 import { base64Encode } from "@opencode/util/encode"
 import { createSimpleContext } from "@opencode/ui/context"
 import { useParams, useSearchParams } from "@solidjs/router"

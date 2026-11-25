@@ -1,3 +1,7 @@
+/**
+ * 上下文测试 — ProgramStatusTest。
+ * 终端上下文的测试中负责 ProgramStatusTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import type { ProgramStatus } from "@opentui/core"
 import { createRoot, createSignal } from "solid-js"

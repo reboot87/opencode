@@ -1,3 +1,7 @@
+/**
+ * OpenAI provider 门面。
+ * 封装 Responses 与 Chat 协议，提供 chat / responses / images / speech / transcription / decision / embedding 能力，含托管图片生成工具与 API Key 鉴权。
+ */
 import { AuthOptions, type ProviderAuthOption } from "../route/auth-options.js"
 import type { Route, CompactionOperations } from "../route/client.js"
 import { MediaRoute } from "../route/media.js"
@@ -29,6 +33,7 @@ export type { OptionsInput as OpenAIEmbeddingOptions } from "../protocols/openai
 
 export const id = ProviderID.make("openai")
 
+// provider 暴露的底层路由列表：Responses（新端点）优先，Chat Completions 作为兼容回退。
 export const routes = [OpenAIResponses.route, OpenAIChat.route]
 
 // This provider facade wraps the lower-level Responses and Chat model factories
@@ -54,6 +59,7 @@ export interface ImageGenerationOptions {
   >
 }
 
+// 构造 OpenAI 托管图片生成工具定义（native 字段交由 Responses 协议在服务端执行）。
 export const imageGeneration = (options: ImageGenerationOptions = {}) =>
   ToolDefinition.make({
     name: "image_generation",
@@ -99,6 +105,8 @@ const configuredRoute = <Body, Prepared, Compact extends CompactionOperations | 
     endpoint: { baseURL: input.baseURL, query: input.queryParams },
   })
 
+// 核心工厂：把用户配置绑定鉴权/端点后，构建出各模态的模型工厂集合。
+// 返回的 `model` 默认指向 Responses 端点，同时保留 chat / image / speech 等独立入口。
 export const configure = (input: Config = {}) => {
   const responsesRoute = configuredRoute(OpenAIResponses.route, input)
   const chatRoute = configuredRoute(OpenAIChat.route, input)
@@ -115,6 +123,7 @@ export const configure = (input: Config = {}) => {
     auth(input),
   )
   // The ChatGPT backend (ChatGPT sign-in) rejects multipart image edits with "Unsupported content type".
+  // ChatGPT 后端不接受 multipart 图片编辑，需改用 JSON 形式提交，这里按其端点特征切换输入模式。
   const imageInput = media.baseURL?.startsWith("https://chatgpt.com/") ? "json-edits" : undefined
   const image = (modelID: string | ModelID, providerOptions?: ProviderOptions) =>
     OpenAIImages.model({ ...media, id: modelID, providerOptions, imageInput })

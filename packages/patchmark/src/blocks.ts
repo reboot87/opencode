@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — Blocks。
+ * GUI 插件的实现中负责 Blocks 部分，提供该部分所需的实现与类型定义。
+ */
 // CommonMark 0.31.2 block parser: a line-by-line port of commonmark.js `blocks.js`, extended with GFM tables and
 // OpenCode's `$$`/`$` display-math blocks. The parser is persistent: complete lines are incorporated once, and the
 // streaming tail is produced by forking only the open spine (the open last-child chain) of the tree.

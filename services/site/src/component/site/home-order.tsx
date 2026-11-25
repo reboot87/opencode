@@ -13,6 +13,8 @@ import {
  * The order of the home sections below the hero. The page markup keeps its default order; a style
  * element gives each section a flex `order` (the content column is a flex column), so a saved
  * order applies before first paint (see homeOrderScript) and changes without re-rendering.
+ *
+ * 站点界面组件：主目录顺序。
  */
 
 // Direct children of the home page content. The logo row and the carousel are shared components,

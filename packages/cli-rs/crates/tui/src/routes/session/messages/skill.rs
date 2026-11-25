@@ -1,4 +1,6 @@
 //! Inline transcript notices for skills and session changes.
+//!
+//! 终端界面路由：技能。
 
 use opencode_api::generated::{ModelInfo, ModelRef};
 use unicode_width::{UnicodeWidthChar, UnicodeWidthStr};

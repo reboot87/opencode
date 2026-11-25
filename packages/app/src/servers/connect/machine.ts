@@ -1,3 +1,7 @@
+/**
+ * 连接服务端 — Machine。
+ * 添加与连接远程服务端中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ServerConnection } from "@/runtime/server/registry"
 import { isMixedContent } from "./browser"
 import type { ConnectMethod } from "./method"

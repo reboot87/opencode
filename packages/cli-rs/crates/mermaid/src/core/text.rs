@@ -1,3 +1,5 @@
+//! Mermaid 渲染核心：文本。
+
 use std::sync::LazyLock;
 
 use regex::Regex;

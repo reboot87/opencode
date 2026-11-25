@@ -1,4 +1,8 @@
 #!/usr/bin/env bun
+/**
+ * UI 构建脚本 — Migration。
+ * 前端 UI 包的构建与生成脚本中负责 Migration 部分，提供该部分所需的实现与类型定义。
+ */
 // Renders the drizzle-kit output under src/main/storage/migration into migration.gen.ts so the
 // main bundle and Bun tests import plain TypeScript instead of reading SQL files at runtime.
 //

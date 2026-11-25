@@ -1,3 +1,7 @@
+/**
+ * 运行时国际化 — Hr。
+ * 运行时加载多语言文案的机制中负责 Hr 部分，提供该部分所需的实现与类型定义。
+ */
 import { DESKTOP_NATIVE_KEYS } from "./desktop-native"
 
 const desktop = [

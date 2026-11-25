@@ -1,3 +1,7 @@
+/**
+ * artifact 接口处理器。
+ * 产物接口处理器：产物的列举、读取、更新与删除。
+ */
 import { Artifact } from "@opencode/core/artifact"
 import { KV } from "@opencode/core/kv"
 import { Location } from "@opencode/core/location"

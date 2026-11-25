@@ -1,3 +1,7 @@
+/**
+ * 外壳命令 — KeySequence。
+ * 应用外壳提供的命令中负责 KeySequence 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, Show } from "solid-js"
 import { Portal } from "solid-js/web"
 import { Predicate } from "effect"

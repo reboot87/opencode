@@ -1,3 +1,7 @@
+/**
+ * 数据站工具 — ChartTooltip。
+ * 数据站点的通用工具中负责 ChartTooltip 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, onCleanup } from "solid-js"
 
 /**

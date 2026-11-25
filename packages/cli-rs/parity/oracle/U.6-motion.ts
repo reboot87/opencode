@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：U.6·动效。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-ORACLE for U.6: the TUI's pure motion functions over fixed inputs. Writes parity/fixtures/U.6/functions.json;
 // crates/ui/tests/all/motion_oracle.rs evaluates the Rust ports on the same inputs and compares.
 //

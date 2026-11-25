@@ -1,3 +1,7 @@
+/**
+ * UI 上下文 — HighlightTheme。
+ * UI 包的上下文提供者中负责 HighlightTheme 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Theme } from "@pierre/highlights"
 
 // A Highlights palette: each value names an app CSS variable without its `--`, so code follows the active app theme.

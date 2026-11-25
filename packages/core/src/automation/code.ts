@@ -1,3 +1,7 @@
+/**
+ * 自动化代码执行。
+ * 执行自动化流程中的代码片段，带 30 秒超时与 32KiB 输出上限。
+ */
 export * as AutomationCode from "./code.js"
 
 import { CodeMode } from "@opencode/codemode"

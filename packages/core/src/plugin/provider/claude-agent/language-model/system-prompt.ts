@@ -1,3 +1,7 @@
+/**
+ * Claude 系统提示词选项。
+ * 定义 Claude Agent 的 agent 与指令选项常量。
+ */
 export * as ClaudeSystemPrompt from "./system-prompt.js"
 
 import type { Options } from "@anthropic-ai/claude-agent-sdk"

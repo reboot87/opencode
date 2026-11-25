@@ -7,6 +7,8 @@ import { PixelText } from "./pixel-text"
  * One Anomaly Arcade game, live in a frame that fills its container: a loading screen until it
  * arrives, "Click to play" until it has keyboard focus (not on touch screens), and a message with
  * a link to anoma.ly when the browser lacks WebGPU (`gpu` false). `gpu` undefined means "checking".
+ *
+ * 街机小游戏组件：游戏帧。
  */
 export function GameFrame(props: {
   game: Game

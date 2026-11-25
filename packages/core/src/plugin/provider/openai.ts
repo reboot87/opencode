@@ -1,3 +1,7 @@
+/**
+ * OpenAI provider 插件。
+ * 注册 OpenAI provider，实现 OAuth（device code / PKCE）与 API Key 两种鉴权路径。
+ */
 import type { IntegrationOAuthMethodRegistration } from "@opencode/plugin/effect/integration"
 import { define } from "@opencode/plugin/effect/plugin"
 import type { SessionRequest } from "@opencode/plugin/effect/session"

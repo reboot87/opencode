@@ -5,6 +5,8 @@
  * route answers gets the not-found page, rendered the same way, so production serves no hydrated
  * page at all. The development server keeps them all hydrated: Design mode and Settings need the
  * app. perf/serve.ts serves a production build to try them.
+ *
+ * 静态页面渲染：路由。
  */
 export const staticPaths = [
   "/",

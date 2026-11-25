@@ -1,3 +1,7 @@
+/**
+ * 数据核心源码 — Resource。
+ * 数据采集与处理的实现中负责 Resource 部分，提供该部分所需的实现与类型定义。
+ */
 // The stage's resources, read from the environment. Deployed Workers (services/data) get them as bindings, which
 // nodejs_compat copies into process.env; scripts on your machine read your exported variables. Each value is read
 // when used, so importing this module never touches the environment.

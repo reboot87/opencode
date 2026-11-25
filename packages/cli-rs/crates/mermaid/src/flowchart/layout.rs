@@ -1,4 +1,6 @@
 //! Places ranks and separates top-level subgraphs before routing edges.
+//!
+//! Mermaid 图表渲染：布局。
 
 use std::collections::{HashMap, HashSet};
 use std::rc::Rc;

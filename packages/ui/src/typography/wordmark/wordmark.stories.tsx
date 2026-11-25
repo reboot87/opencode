@@ -1,3 +1,7 @@
+/**
+ * 字标 — WordmarkStories。
+ * 产品名称标识组件中负责 WordmarkStories 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ComponentProps } from "solid-js"
 import { Wordmark } from "./wordmark"
 

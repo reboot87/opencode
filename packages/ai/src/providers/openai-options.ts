@@ -1,3 +1,7 @@
+/**
+ * OpenAI provider 选项工具。
+ * 定义 OpenAI 特有选项（service tier、response includes 等）的输入类型与归一化逻辑。
+ */
 import { mergeProviderOptions, type ProviderOptions } from "../schema/index.js"
 import type { Options, ResponseIncludable, ServiceTier } from "../protocols/utils/open-responses-options.js"
 import type { ContextManagement, ReasoningContext, ReasoningMode } from "../protocols/openai-responses.js"

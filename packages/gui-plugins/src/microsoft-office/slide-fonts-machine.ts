@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — SlideFontsMachine。
+ * Microsoft Office 文档预览插件中负责 SlideFontsMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { PositionedTextRun, SlideDisplayList, SlidePrimitive } from "@betteroffice/pptx"
 import type { DeckText, FallbackScript, FontStyle } from "./slide-text"
 

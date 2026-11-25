@@ -1,4 +1,6 @@
 //! Display and navigate the diff viewer's file tree.
+//!
+//! 终端插件视图：树。
 
 use std::collections::BTreeSet;
 

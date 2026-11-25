@@ -1,4 +1,8 @@
 #!/usr/bin/env bun
+
+/**
+ * 站点构建脚本：本地等宽字体。
+ */
 // Lists the monospaced font families installed on this Mac (the post table's isFixedPitch, read with
 // fontkit) and writes their names to src/lib/local-mono-fonts.json, for Settings › Mono font's
 // "Installed on this Mac" group. Only the names are kept; the fonts are never copied. fontkit

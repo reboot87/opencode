@@ -1,3 +1,7 @@
+/**
+ * Promise 风格插件 API — Agent 领域。
+ * 插件对 agent 的编辑与查询能力。此文件定义 Promise 风格 下该领域的接口与类型，与其它领域共同构成插件 API 表面。
+ */
 import type { AgentApi } from "@opencode/client/promise/api"
 import type { Agent } from "@opencode/schema/agent"
 import type { Types } from "effect"

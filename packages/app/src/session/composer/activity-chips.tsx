@@ -1,3 +1,7 @@
+/**
+ * 会话输入区 — ActivityChips。
+ * 会话界面输入区的实现中负责 ActivityChips 部分，提供该部分所需的实现与类型定义。
+ */
 import { Icon } from "@opencode/ui/icon"
 import { IconButton } from "@opencode/ui/icon-button"
 import { Loader } from "@opencode/ui/loader"

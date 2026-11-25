@@ -1,3 +1,5 @@
+//! 插件系统：`tests`。
+
 use std::cell::Cell;
 use std::rc::Rc;
 

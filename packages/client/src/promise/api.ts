@@ -1,3 +1,7 @@
+/**
+ * Promise 客户端 API 导出。
+ * 再导出 Promise 风格的客户端 API 与事件类型。
+ */
 import type { OpenCode } from "./client.js"
 
 type Client = ReturnType<typeof OpenCode.make>

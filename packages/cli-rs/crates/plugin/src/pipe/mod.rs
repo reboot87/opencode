@@ -2,6 +2,8 @@
 //! push watched reads before dependent events, and acknowledge each mount revision before adopting another.
 //! Supervision restarts the process on failure; unaffected plugins retain their last accepted trees while
 //! reactivating.
+//!
+//! 插件系统入口。
 
 pub mod child;
 mod guest;

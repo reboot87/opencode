@@ -1,3 +1,7 @@
+/**
+ * Provider 设置 — MachineTest。
+ * provider 的账号与密钥设置中负责 MachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import type { ProviderAccount } from "./accounts"
 import {

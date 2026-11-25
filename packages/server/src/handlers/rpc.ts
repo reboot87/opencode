@@ -1,3 +1,7 @@
+/**
+ * rpc 接口处理器。
+ * RPC 接口处理器：通用远程过程调用。
+ */
 import { Rpc } from "@opencode/core/rpc"
 import { RpcError, RpcInternalError } from "@opencode/protocol/errors"
 import { Effect } from "effect"

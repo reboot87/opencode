@@ -1,3 +1,7 @@
+/**
+ * UI 主题 — System。
+ * 配色、间距与字号等设计令牌中负责 System 部分，提供该部分所需的实现与类型定义。
+ */
 import { RGBA, type TerminalColors } from "@opentui/core"
 import { ansiToRgba, tint } from "./color"
 

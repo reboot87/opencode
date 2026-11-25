@@ -1,3 +1,7 @@
+/**
+ * 数据站文案 — Ru。
+ * 数据站点的多语言文案中负责 Ru 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "app.title": "Рейтинги использования ИИ-моделей | OpenCode Data",
   "app.description":

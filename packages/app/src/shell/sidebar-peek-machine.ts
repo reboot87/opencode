@@ -1,3 +1,7 @@
+/**
+ * 应用外壳 — SidebarPeekMachine。
+ * 浏览器应用的窗口框架与路由外壳中负责 SidebarPeekMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // How long the pointer rests before the sidebar peeks, in ms. The edge stays quick: it's crossed in a frame or two and
 // rarely by accident. The toggle waits longer, because the header row is crossed far more often on the way to the
 // breadcrumb or the traffic lights, and a peek there should only open when the pointer means to rest on it.

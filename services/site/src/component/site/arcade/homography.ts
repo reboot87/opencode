@@ -4,6 +4,8 @@ import type { Point } from "./geometry"
  * The CSS `matrix3d` that maps a `width` × `height` box (transform origin at its top-left) onto
  * four points, in order top-left, top-right, bottom-right, bottom-left: a projective transform, so
  * a flat element lands exactly on a quad painted in perspective.
+ *
+ * 街机小游戏组件：单应性。
  */
 export function homography(width: number, height: number, corners: [Point, Point, Point, Point]) {
   const m = coefficients(corners)

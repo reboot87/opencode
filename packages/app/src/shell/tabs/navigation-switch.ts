@@ -1,3 +1,7 @@
+/**
+ * 标签页 — NavigationSwitch。
+ * 多标签页的打开与切换中负责 NavigationSwitch 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, on, type Accessor } from "solid-js"
 import { Schema } from "effect"
 import { Persistence } from "@/runtime/persistence/schema"

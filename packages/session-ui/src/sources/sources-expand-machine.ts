@@ -1,3 +1,7 @@
+/**
+ * 数据源 — SourcesExpandMachine。
+ * 会话界面所用的数据来源定义中负责 SourcesExpandMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { DurationOptions } from "@opencode/ui/motion"
 
 /** Reduced motion trades the height for a short fade. */

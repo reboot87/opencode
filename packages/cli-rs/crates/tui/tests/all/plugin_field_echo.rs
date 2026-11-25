@@ -1,4 +1,6 @@
 //! Verify that a delayed field echo does not overwrite a more recent edit.
+//!
+//! 终端界面测试：插件字段回显。
 
 use crate::support::{self, Harness};
 

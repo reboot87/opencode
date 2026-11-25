@@ -1,3 +1,7 @@
+/**
+ * 会话时间线 — QuoteBackground。
+ * 会话消息时间线的渲染中负责 QuoteBackground 部分，提供该部分所需的实现与类型定义。
+ */
 type Rect = { left: number; top: number; right: number; bottom: number }
 
 /** Native selection fills line boxes; custom highlights only fill the smaller font boxes. */

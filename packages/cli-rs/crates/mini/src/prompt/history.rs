@@ -1,4 +1,6 @@
 //! Stepping back saves the draft; stepping past the newest entry restores it.
+//!
+//! 精简版实现：`history`。
 
 use super::parts::RunPrompt;
 

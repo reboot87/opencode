@@ -1,3 +1,7 @@
+/**
+ * 模块 — Schema。
+ * 该目录下的功能模块中负责 Schema 部分，提供该部分所需的实现与类型定义。
+ */
 import { Schema } from "effect"
 
 export const HueStep = Schema.Literals([100, 200, 300, 400, 500, 600, 700, 800, 900])

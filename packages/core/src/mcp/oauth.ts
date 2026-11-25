@@ -1,3 +1,7 @@
+/**
+ * MCP OAuth 鉴权。
+ * 实现 MCP 远程服务器的 OAuth 流程：客户端元数据、令牌获取与提前刷新，处理各类拒绝情形。
+ */
 export * as McpOAuth from "./oauth.js"
 
 import {

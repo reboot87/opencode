@@ -1,3 +1,7 @@
+/**
+ * 国际化 — Sl。
+ * 多语言文案资源中负责 Sl 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "ui.messagePart.tools.used.two": "{{tools}} uporabljeno {{count}}-krat",
   "ui.messagePart.tools.used.few": "{{tools}} uporabljeno {{count}}-krat",

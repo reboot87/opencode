@@ -1,3 +1,5 @@
+//! Mermaid 图表渲染：解析器。
+
 use std::collections::{HashMap, HashSet};
 use std::rc::Rc;
 use std::sync::LazyLock;

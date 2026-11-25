@@ -1,3 +1,10 @@
+/**
+ * 供应商·OpenRouter的测试。
+ *
+ * 被测模块：@opencode/core/plugin/provider-openrouter
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { describe, expect, test } from "bun:test"
 import { Effect } from "effect"
 import { Model } from "@opencode/core/model"

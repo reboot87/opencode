@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — PromptParts。
+ * 会话输入区的组合逻辑与附件处理中负责 PromptParts 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ContentPart, ImageAttachmentPart, PathAttachmentPart, Prompt } from "./state"
 import { parseSessionMention, serializeSessionMention } from "@opencode/util/session-mention"
 

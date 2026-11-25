@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — PanelHost。
+ * 终端界面（Solid）组件中负责 PanelHost 部分，提供该部分所需的实现与类型定义。
+ */
 import type { BoxRenderable } from "@opentui/core"
 import { onCleanup, onMount } from "solid-js"
 import { usePanel, type PanelTarget } from "../context/panel"

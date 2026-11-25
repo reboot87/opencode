@@ -1,4 +1,6 @@
 #!/bin/sh
+
+# Rust CLI 开发脚本：检查目标。
 # Compile-checks the workspace for another target on Linux: clippy with every target and -D warnings. Nothing is
 # linked or run; only the preview repository's runners do that.
 #

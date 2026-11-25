@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — ServerNotificationStateTest。
+ * 浏览器环境下的测试中负责 ServerNotificationStateTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { beforeAll, beforeEach, expect, mock, setSystemTime, test, vi } from "bun:test"
 import { createEffect, createRoot } from "solid-js"
 import { createStore } from "solid-js/store"

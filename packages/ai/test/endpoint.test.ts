@@ -1,3 +1,10 @@
+/**
+ * 端点的测试。
+ *
+ * 被测模块：@opencode/ai/endpoint
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { ai } from "../src/effect.js"
 import * as OpenAIChat from "../src/protocols/openai-chat.js"

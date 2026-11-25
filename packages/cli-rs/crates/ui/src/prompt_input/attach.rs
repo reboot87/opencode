@@ -1,4 +1,6 @@
 //! Converts pasted or dropped images and documents to prompt attachments.
+//!
+//! 基础 UI 组件库：`attach`。
 
 use std::path::Path;
 

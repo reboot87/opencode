@@ -1,3 +1,7 @@
+/**
+ * 多行输入 — TextareaStories。
+ * 多行文本输入组件中负责 TextareaStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal } from "solid-js"
 import { Field } from "@opencode/ui/field"
 import { Textarea, type TextareaProps } from "./textarea"

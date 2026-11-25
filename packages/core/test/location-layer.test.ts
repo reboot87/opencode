@@ -1,3 +1,10 @@
+/**
+ * 位置·层的测试。
+ *
+ * 被测模块：@opencode/core/location-layer
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import type { FileSystem } from "@opencode/core/filesystem"
 import fs from "fs/promises"
 import path from "path"

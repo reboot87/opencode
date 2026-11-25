@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — DialogConfig。
+ * 终端界面（Solid）组件中负责 DialogConfig 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createSignal } from "solid-js"
 import { useConfig, useNewDesigns } from "../config"
 import { useThemes } from "../context/theme"

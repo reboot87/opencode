@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：ctrl·c·伪终端。
+ *
+ * 规格编号：E.15a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Ctrl+C in the diff viewer (F15, big-boi's review of P6c): TS binds `app.exit` to close the viewer, so the chord in
 // the full-screen route goes back home and the app keeps running; a second one on home, with an empty prompt, exits.
 // Rust's host takes the reserved chord, which no plugin sees, to leave a plugin's route.

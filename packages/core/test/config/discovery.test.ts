@@ -1,3 +1,10 @@
+/**
+ * 发现文档的测试。
+ *
+ * 被测模块：@opencode/core/config/discovery
+ *
+ * 覆盖配置加载、合并、校验与分层覆盖（global / project / local）的行为。
+ */
 import path from "path"
 import fs from "fs/promises"
 import { describe, expect } from "bun:test"

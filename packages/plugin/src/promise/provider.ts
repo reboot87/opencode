@@ -1,3 +1,7 @@
+/**
+ * Promise 风格插件 API — Provider 领域。
+ * 插件对模型提供方记录的编辑能力。此文件定义 Promise 风格 下该领域的接口与类型，与其它领域共同构成插件 API 表面。
+ */
 import type { ProviderApi } from "@opencode/client/promise/api"
 import type { Model } from "@opencode/schema/model"
 import type { Provider } from "@opencode/schema/provider"

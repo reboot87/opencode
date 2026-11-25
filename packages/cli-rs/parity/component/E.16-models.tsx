@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid E16Models：该文件实现 E16Models 相关的状态与逻辑。
+ */
 // P-COMP fixtures for the model, agent, variant, speed, usage, model usage, and Go upsell dialogs (E.16):
 // crates/tui/tests/all/models.rs. Each dialog opens over the real TUI providers, LocalProvider included, against
 // the routes in parity/fixtures/E.16/server.json and the model.json below, which the Rust test serves too. Times

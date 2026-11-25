@@ -1,3 +1,7 @@
+/**
+ * 时间线（新版） — Events。
+ * 重构中的会话消息时间线中负责 Events 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageAssistantTool, SessionMessageInfo } from "@opencode/client/promise"
 import { Option, Schema } from "effect"
 import { currentToolInput, currentToolMetadata } from "../message/current-tool-state"

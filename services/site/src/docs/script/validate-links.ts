@@ -12,7 +12,10 @@ const root = path.resolve(process.argv[2] ?? ".output/public")
 const routes = path.resolve(import.meta.dir, "../../routes")
 const externalRoutes = /^\/(v1\/docs|status|data|console)(\/|$)/
 
-/** Whether the site renders a page at `pathname` (src/routes/x.tsx or src/routes/x/index.tsx). */
+/** Whether the site renders a page at `pathname` (src/routes/x.tsx or src/routes/x/index.tsx).
+ *
+ * 文档站脚本：校验链接。
+ */
 async function sitePage(pathname: string) {
   const route = path.join(routes, pathname.replace(/\/$/, ""))
   const candidates =

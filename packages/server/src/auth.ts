@@ -1,3 +1,7 @@
+/**
+ * 服务端鉴权。
+ * 解析请求凭据（Basic / Token）并解码出用户与组织信息。
+ */
 export * as ServerAuth from "./auth"
 
 import { Context, Layer, Option, Redacted } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * 持久化 PTY 入口。
+ * 定义持久化终端的选项、元数据、角色、信号与流事件。
+ */
 export * as PersistentPty from "./index.js"
 
 import { stat } from "node:fs/promises"

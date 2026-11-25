@@ -1,3 +1,7 @@
+/**
+ * 窗口管理 — Protocol。
+ * 浏览器窗口的创建与布局管理中负责 Protocol 部分，提供该部分所需的实现与类型定义。
+ */
 import { net, protocol } from "electron"
 import path from "node:path"
 import { pathToFileURL } from "node:url"

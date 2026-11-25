@@ -1,3 +1,7 @@
+/**
+ * LayerNode 图结构。
+ * 实现带依赖解析与作用域（global / location）的服务层图构建器。
+ */
 import { Brand, Context, Effect, Layer, Scope } from "effect"
 import { Teardown } from "../teardown.js"
 

@@ -1,3 +1,5 @@
+//! ACP 协议测试：`elicitation`。
+
 use std::sync::Arc;
 use std::sync::atomic::{AtomicUsize, Ordering};
 

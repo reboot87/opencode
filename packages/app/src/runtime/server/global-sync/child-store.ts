@@ -1,3 +1,7 @@
+/**
+ * 全局同步 — ChildStore。
+ * 跨会话的全局状态同步中负责 ChildStore 部分，提供该部分所需的实现与类型定义。
+ */
 import { getOwner, onCleanup, runWithOwner, type Owner } from "solid-js"
 import { createStore, type SetStoreFunction, type Store } from "solid-js/store"
 import { Persist, persisted } from "@/runtime/persistence/storage"

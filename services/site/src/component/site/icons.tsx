@@ -95,7 +95,10 @@ export function ExternalArrow() {
   )
 }
 
-/** Tells screen readers that a `target="_blank"` link opens a new tab; hidden on screen. */
+/** Tells screen readers that a `target="_blank"` link opens a new tab; hidden on screen.
+ *
+ * 站点界面组件：`icons`。
+ */
 export function NewTab() {
   const i18n = useI18n()
   return <span data-slot="sr-only">{i18n.t("site.newTabSuffix")}</span>

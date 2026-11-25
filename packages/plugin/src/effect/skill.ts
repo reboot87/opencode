@@ -1,3 +1,7 @@
+/**
+ * Effect 风格插件 API — 技能领域。
+ * 插件对技能的编辑与查询能力。此文件定义 Effect 风格 下该领域的接口与类型，与其它领域共同构成插件 API 表面。
+ */
 import type { SkillApi } from "@opencode/client/effect/api"
 import { Skill } from "@opencode/schema/skill"
 import type { Effect, Types } from "effect"

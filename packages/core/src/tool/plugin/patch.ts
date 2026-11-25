@@ -1,3 +1,7 @@
+/**
+ * patch 工具。
+ * 对文件应用补丁（patch）的工具，输出逐文件变更结果。
+ */
 export * as PatchTool from "./patch.js"
 
 import type { Context } from "@opencode/plugin/effect/plugin"

@@ -1,3 +1,5 @@
+//! CLI 交互提示：样式。
+
 use std::io::IsTerminal;
 use std::sync::OnceLock;
 

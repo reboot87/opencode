@@ -1,3 +1,7 @@
+/**
+ * 文件系统服务（Filesystem）。
+ * 底层文件系统抽象：读取、写入、列举与错误类型（含 NotFound）。
+ */
 export * as FileSystem from "./filesystem.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid TuiEnvironment：该文件实现 TuiEnvironment 相关的状态与逻辑。
+ */
 import {
   TuiPathsProvider,
   TuiStartupProvider,

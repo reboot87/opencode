@@ -1,3 +1,7 @@
+/**
+ * location 接口处理器。
+ * Location 接口处理器：工作位置列举与切换。
+ */
 import { Location } from "@opencode/core/location"
 import { LocationServiceMap } from "@opencode/core/location-service-map"
 import { ServiceUnavailableError } from "@opencode/protocol/errors"

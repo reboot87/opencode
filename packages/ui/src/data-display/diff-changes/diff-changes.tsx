@@ -1,3 +1,7 @@
+/**
+ * 变更统计 — DiffChanges。
+ * 展示代码变更行数统计的组件中负责 DiffChanges 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, Show } from "solid-js"
 import "./diff-changes.css"
 

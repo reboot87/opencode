@@ -1,3 +1,7 @@
+/**
+ * 插件夹具（setup-keymap） — Tui。
+ * 模拟插件在 setup 中注册快捷键的夹具中负责 Tui 部分，提供该部分所需的实现与类型定义。
+ */
 import { Plugin } from "@opencode/plugin/tui"
 import { batch, createSignal } from "solid-js"
 

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：导出·重定向·term·伪终端。
+ *
+ * 规格编号：C.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `session export > out.json` and SIGTERM while the picker (on stderr) is open: the shutdown leaves the
 // redirected stdout empty. The cursor the picker hid is shown again on stderr, the terminal it hid it on.
 // A shell runs the CLI with stdout redirected and sends the signal once the picker has the terminal in

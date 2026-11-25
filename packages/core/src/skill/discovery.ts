@@ -1,3 +1,7 @@
+/**
+ * 技能发现（SkillDiscovery）。
+ * 从目录中发现 SKILL.md / Markdown 技能文件，校验路径段安全性，带文件与技能并发上限。
+ */
 export * as SkillDiscovery from "./discovery.js"
 
 import path from "path"

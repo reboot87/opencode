@@ -1,3 +1,7 @@
+/**
+ * Promise 风格插件 API — 权限领域。
+ * 插件对权限判定的评估与钩子能力。此文件定义 Promise 风格 下该领域的接口与类型，与其它领域共同构成插件 API 表面。
+ */
 import type { PermissionApi } from "@opencode/client/promise/api"
 import type { Agent } from "@opencode/schema/agent"
 import type { Permission } from "@opencode/schema/permission"

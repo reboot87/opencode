@@ -1,3 +1,7 @@
+/**
+ * UI 上下文 — Panel。
+ * UI 包的上下文提供者中负责 Panel 部分，提供该部分所需的实现与类型定义。
+ */
 import type { PanelPresentation } from "@opencode/plugin/tui/context"
 import { batch, createContext, createMemo, createSignal, useContext, type ParentProps } from "solid-js"
 import { SESSION_PANEL_SPLIT_MIN_WIDTH } from "../ui/layout"

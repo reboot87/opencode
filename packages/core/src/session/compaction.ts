@@ -1,3 +1,7 @@
+/**
+ * 上下文压缩（SessionCompaction）。
+ * 会话上下文压缩的核心实现：估算提示词 token、选择保留消息、生成摘要与检查点，支持自动/手动/溢出压缩以及后台预计算。
+ */
 export * as SessionCompaction from "./compaction.js"
 
 import {

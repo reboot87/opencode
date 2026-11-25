@@ -1,3 +1,8 @@
+/**
+ * 管道实现：索引。
+ *
+ * 管道实现的 TypeScript 兼容适配层。
+ */
 // Virtual modules and JSX entry points served to plugins by the Bun host.
 import { Rpc } from "../../../../../../schema/src/rpc"
 import * as solid from "solid-js"

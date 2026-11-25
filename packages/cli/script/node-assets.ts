@@ -1,3 +1,8 @@
+/**
+ * 节点·静态资源脚本。
+ *
+ * CLI 包的开发脚本：构建校验、配置生成与发布准备。
+ */
 import { createHash } from "node:crypto"
 import { copyFile, mkdir, readFile, stat } from "node:fs/promises"
 import path from "node:path"

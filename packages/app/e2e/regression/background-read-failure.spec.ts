@@ -1,3 +1,7 @@
+/**
+ * 回归测试 — BackgroundReadFailureSpec。
+ * 防止既有行为退化的端到端用例中负责 BackgroundReadFailureSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import type { OpenCodeEvent } from "@opencode/client/promise"
 import { expect, test } from "@playwright/test"
 import { openCommandPalette, paletteSession } from "../utils/command-palette"

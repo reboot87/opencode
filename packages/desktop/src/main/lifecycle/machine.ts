@@ -1,3 +1,7 @@
+/**
+ * 生命周期 — Machine。
+ * 桌面端窗口与应用的启动退出流程中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Scope } from "@opencode/plugin/gui/host"
 
 /** Runs once every other plugin stopped, e.g. quitAndInstall. */

@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — MarkdownCache。
+ * 跨场景复用的通用 UI 组件中负责 MarkdownCache 部分，提供该部分所需的实现与类型定义。
+ */
 import { checksum } from "@opencode/util/encode"
 import { parseSmallMarkdown } from "@opencode/ui/context/marked-base"
 import DOMPurify from "dompurify"

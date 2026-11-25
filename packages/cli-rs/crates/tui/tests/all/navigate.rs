@@ -1,3 +1,5 @@
+//! 终端界面测试：导航。
+
 use crate::support::{self, Fake, Harness, WAIT, deref_harness, user};
 
 use std::rc::Rc;

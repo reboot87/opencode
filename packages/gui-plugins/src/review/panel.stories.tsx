@@ -1,3 +1,7 @@
+/**
+ * 审查插件 — PanelStories。
+ * 变更审查界面的 GUI 插件中负责 PanelStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { lazy, Show, Suspense } from "solid-js"
 import type { ChangesScenario, CommentDelivery } from "../../../stories/mocks/gui-plugins/workspace-panel"
 

@@ -1,4 +1,6 @@
 //! Select, create, or remove a project worktree.
+//!
+//! 终端弹窗组件：工作树。
 
 use opencode_api::generated::{
     AbsolutePath, LocationGetInput, LocationQueryInput, ProjectID, SessionMoveInput, VcsStatusInput, WorktreeDirectory,

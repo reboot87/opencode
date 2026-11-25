@@ -1,3 +1,7 @@
+/**
+ * v1 插件配置。
+ * 定义 v1 版本的插件选项结构。
+ */
 export * as ConfigPluginV1 from "./plugin.js"
 
 import { Schema } from "effect"

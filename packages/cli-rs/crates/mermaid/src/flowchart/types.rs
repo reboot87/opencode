@@ -1,3 +1,5 @@
+//! Mermaid 图表渲染：类型定义。
+
 use std::rc::Rc;
 
 use crate::core::geometry::{Axis, Bounds, Point};

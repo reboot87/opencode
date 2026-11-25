@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：滚轮·已折行·伪终端。
+ *
+ * 规格编号：OT。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // One long paragraph wraps past the prompt's height, and the wheel steps up over it. The view scrolls through the
 // rows and the cursor moves up with them, so `Q` lands mid-paragraph (OpenTUI #2076, on both sides since 0.9.4).
 import { definePty } from "../../pty/run"

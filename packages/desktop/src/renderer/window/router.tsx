@@ -1,3 +1,7 @@
+/**
+ * 模块 — Router。
+ * 该目录下的功能模块中负责 Router 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemoryHistory, MemoryRouter, type BaseRouterProps } from "@solidjs/router"
 import { onCleanup } from "solid-js"
 import { getLastActiveUrl, setLastActiveUrl } from "./route-storage"

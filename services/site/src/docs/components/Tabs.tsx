@@ -1,3 +1,6 @@
+/**
+ * 文档站组件：标签页。
+ */
 import { For, type JSX } from "solid-js"
 import { useI18n } from "~/context/i18n"
 import { CodeTabs } from "./CodeTabs"

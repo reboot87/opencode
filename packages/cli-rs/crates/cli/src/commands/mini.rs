@@ -1,3 +1,5 @@
+//! CLI 子命令：`mini`。
+
 use std::io::IsTerminal;
 use std::time::Instant;
 

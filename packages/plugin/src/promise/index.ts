@@ -1,3 +1,7 @@
+/**
+ * Promise 风格插件 API 出口。
+ * 集中导出 Promise 风格插件的各领域接口与类型。
+ */
 export type { PluginOptions } from "../options.js"
 export type { StorageEntry, StorageScanOptions, StorageScanResult } from "../storage.js"
 export * as Plugin from "./plugin.js"

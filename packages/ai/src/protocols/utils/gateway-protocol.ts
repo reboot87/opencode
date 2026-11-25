@@ -1,3 +1,7 @@
+/**
+ * 网关协议构造器。
+ * 为 API 网关构造统一的协议包装。
+ */
 import { Effect, Option, Schema } from "effect"
 import { Protocol } from "../../route/protocol.js"
 import { LLMEvent, mergeJsonRecords, type AIError, type LLMRequest } from "../../schema/index.js"

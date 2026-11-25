@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：密钥。
+ *
+ * 规格编号：P.8。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The session of `host-keys`: a session whose prompt can be sent, as a primary agent and a model are loaded, and the
 // keys that type into it and send it.
 import { assistant, session, user } from "../../lib/app"

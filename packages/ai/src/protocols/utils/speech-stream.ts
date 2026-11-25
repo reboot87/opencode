@@ -1,3 +1,7 @@
+/**
+ * 语音流工具。
+ * 处理流式语音合成/转写的分块与拼接。
+ */
 import { Effect } from "effect"
 import { Media } from "../../media.js"
 import type { MediaProtocol } from "../../route/media-protocol.js"

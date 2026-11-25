@@ -1,3 +1,7 @@
+/**
+ * 模块 — Layout。
+ * 该目录下的功能模块中负责 Layout 部分，提供该部分所需的实现与类型定义。
+ */
 import { useLocation } from "../../solid-router"
 import { createSignal, type ParentProps } from "solid-js"
 import type { ServerConnection } from "@/runtime/server/registry"

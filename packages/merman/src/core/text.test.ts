@@ -1,3 +1,7 @@
+/**
+ * 模块 — TextTest。
+ * 该目录下的功能模块中负责 TextTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { diagramTextWidth, measureDiagramTextBox, parseDiagramTextLines, splitDiagramLines } from "./text.js"
 

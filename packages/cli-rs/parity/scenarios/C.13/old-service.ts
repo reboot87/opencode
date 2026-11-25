@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：old·服务。
+ *
+ * 规格编号：C.13。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A background service of version 0.0.1 in its own process, registered for the channel `local` in the registration
 // file named by argv[2]: ready on `/api/info`, with no terminals to hand over. The client that restarts it signals
 // this process, never the runner. It ends itself after a minute in case no client did.

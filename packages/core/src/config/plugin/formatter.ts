@@ -1,3 +1,7 @@
+/**
+ * 格式化器配置插件。
+ * 把配置中的 formatter 设置应用到 Formatter 服务。
+ */
 export * as ConfigFormatterPlugin from "./formatter.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

@@ -1,4 +1,6 @@
 //! One-line tool summaries shared by `run`, mini and the full TUI.
+//!
+//! 基础 UI 组件库：工具提示。
 
 use indexmap::IndexMap;
 use opencode_api_types::js::js_string;

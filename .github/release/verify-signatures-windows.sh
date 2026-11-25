@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：校验·signatures·Windows。
 # verify-signatures-windows.sh <dir>: fails unless every .exe and .node under <dir> has a valid Authenticode signature.
 . "$(dirname "$0")/lib.sh"
 

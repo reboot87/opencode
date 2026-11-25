@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 站点脚本：媒体中心媒体。
 # Builds the press page's media from the real product videos in public/product-videos: extra stills
 # (frames picked by hand from the archived real-straight films, the stills only), small JPG thumbnails for the gallery, one zip
 # per product (images/ and videos/ folders) and one zip with everything. Writes public/press-media/manifest.json with the frame

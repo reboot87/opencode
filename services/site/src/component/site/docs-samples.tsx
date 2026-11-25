@@ -10,6 +10,8 @@ import type { DocsVariantKey } from "./settings"
  * (/dev/docs-components), which wraps each sample in its option switcher and status, and the docs
  * reference page (/dev/docs), which shows each one once in its locked option under a plain heading.
  * The pages pass in how a group (Section), a sample (Sample) and a review-only note (Note) render.
+ *
+ * 站点界面组件：文档·samples。
  */
 export function DocsSamples(props: {
   Section: (props: { id: DocsSampleSection["id"]; children: JSX.Element }) => JSX.Element

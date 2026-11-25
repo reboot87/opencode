@@ -15,6 +15,8 @@ import { siteSettings } from "../settings"
  * Hearing: the browser's SpeechRecognition; without it, a recording sent to /api/voice/transcribe
  * (ElevenLabs Scribe, when the server has a key). Answers come from /api/voice/answer. Speaking:
  * the answer's pre-generated ElevenLabs audio, then /api/voice/speech, then speechSynthesis.
+ *
+ * 语音交互组件：语音模式。
  */
 
 type Status = "connecting" | "listening" | "thinking" | "speaking" | "paused" | "failed"

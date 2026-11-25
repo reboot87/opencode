@@ -1,3 +1,7 @@
+/**
+ * 调试插件 — ServerHeap。
+ * 面向开发者的调试 GUI 插件中负责 ServerHeap 部分，提供该部分所需的实现与类型定义。
+ */
 import { ClientError, OpenCode } from "@opencode/client/promise"
 import { Predicate } from "effect"
 import path from "node:path"

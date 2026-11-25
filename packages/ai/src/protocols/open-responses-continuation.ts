@@ -1,3 +1,7 @@
+/**
+ * Open Responses 的续传驱动。
+ * 处理 Responses 会话中断后的继续逻辑。
+ */
 import { AIError, TransportError } from "../schema/index.js"
 import type {
   ChannelCheckpoint,

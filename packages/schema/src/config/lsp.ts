@@ -1,3 +1,7 @@
+/**
+ * LSP 配置类型。
+ * 定义 lsp 配置项的 Schema。
+ */
 export * as ConfigLSP from "./lsp.js"
 
 import { Schema } from "effect"

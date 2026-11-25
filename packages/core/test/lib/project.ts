@@ -1,3 +1,10 @@
+/**
+ * project的测试辅助模块。
+ *
+ * 被测模块：@opencode/core/lib/project
+ *
+ * 核心测试的公共辅助模块：内存数据库、会话夹具与事件收集工具。
+ */
 import { Database } from "@opencode/core/database/database"
 import { Project } from "@opencode/core/project"
 import { upsertProject } from "@opencode/core/project/sql"

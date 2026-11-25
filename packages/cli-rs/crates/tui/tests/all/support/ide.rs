@@ -1,4 +1,6 @@
 //! Fake IDE MCP server shared by the editor tests and app replay.
+//!
+//! 终端界面测试：`ide`。
 use std::sync::{Arc, Mutex};
 
 use futures_util::{SinkExt, StreamExt};

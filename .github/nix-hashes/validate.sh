@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# Nix 哈希校验脚本：校验。
 # validate.sh <file>: fails unless <file> has exactly the shape of nix/hashes.json, so the hashes bot can only ever publish
 # three SRI hashes. Used by bot-nix-hashes.yml before it commits and by check-bot-scope.yml on the bot's pull request.
 # Adding a system to the flake means adding it to SYSTEMS here.

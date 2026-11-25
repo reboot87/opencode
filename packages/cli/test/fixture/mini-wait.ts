@@ -1,3 +1,8 @@
+/**
+ * mini·等待测试夹具。
+ *
+ * 为 CLI 测试提供配置文件与工作区样例。
+ */
 import assert from "node:assert/strict"
 import { ClientError, OpenCode } from "@opencode/client/promise"
 import { createMiniConnection } from "../../src/mini"

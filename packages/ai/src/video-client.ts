@@ -1,3 +1,7 @@
+/**
+ * 视频生成的客户端服务。
+ * 基于 RequestExecutor 实现排队式视频任务的提交、状态查询与结果获取。
+ */
 import { Context, Effect, Layer, Schema } from "effect"
 import { RequestExecutor } from "./route/executor.js"
 import { AIError, UnsupportedOperationError } from "./schema/index.js"

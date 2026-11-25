@@ -1,5 +1,7 @@
 //! Node's `path.resolve` and `FSUtil.resolve`, by the rules of this platform's `path` (`path.win32` on Windows,
 //! where ACP clients such as Zed send `C:\` paths).
+//!
+//! ACP 协议实现：路径。
 
 pub use opencode_util::path::windows_path;
 use opencode_util::path::{Flavor, strip_verbatim};

@@ -1,4 +1,6 @@
 //! Model picker for users without a connected provider.
+//!
+//! 终端弹窗组件：免费模型。
 
 use opencode_api::generated::ModelInfoStatus;
 use opencode_local::model_pref::Model;

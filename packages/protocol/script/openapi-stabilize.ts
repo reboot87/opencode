@@ -1,3 +1,8 @@
+/**
+ * OpenAPI·stabilize脚本。
+ *
+ * 协议包的开发脚本：API 定义生成与契约校验。
+ */
 type Document = { components: { schemas: Record<string, unknown> } }
 
 const prefix = "#/components/schemas/"

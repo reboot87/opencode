@@ -1,3 +1,7 @@
+/**
+ * WSL 插件 — Runtime。
+ * Windows Subsystem for Linux 相关的 GUI 插件中负责 Runtime 部分，提供该部分所需的实现与类型定义。
+ */
 import { spawn } from "node:child_process"
 import { existsSync } from "node:fs"
 import { join } from "node:path"

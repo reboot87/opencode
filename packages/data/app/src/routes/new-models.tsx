@@ -1,3 +1,7 @@
+/**
+ * 数据站路由 — NewModels。
+ * 数据站点的路由页面中负责 NewModels 部分，提供该部分所需的实现与类型定义。
+ */
 import { ProviderIcon } from "@opencode/ui/provider-icon"
 import { createMemo, createSignal, For, Show } from "solid-js"
 import { ChartDataTable } from "../component/chart-data-table"

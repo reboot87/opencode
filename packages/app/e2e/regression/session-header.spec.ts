@@ -1,3 +1,7 @@
+/**
+ * 回归测试 — SessionHeaderSpec。
+ * 防止既有行为退化的端到端用例中负责 SessionHeaderSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageInfo } from "@opencode/client/promise"
 import { expect, test, type Page } from "@playwright/test"
 import { REMOTE_SERVER, seed, sessionHref } from "../utils/app"

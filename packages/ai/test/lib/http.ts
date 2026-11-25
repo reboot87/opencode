@@ -1,3 +1,10 @@
+/**
+ * HTTP的测试辅助模块。
+ *
+ * 被测模块：@opencode/ai/lib/http
+ *
+ * 测试用的公共辅助模块：构造请求桩、解析流式事件与断言工具。
+ */
 import { Effect, Fiber, Layer, Ref } from "effect"
 import * as TestClock from "effect/testing/TestClock"
 import { HttpClient, HttpClientError, HttpClientRequest, HttpClientResponse } from "effect/http"

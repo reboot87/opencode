@@ -1,3 +1,10 @@
+/**
+ * 免密钥·认证的测试。
+ *
+ * 被测模块：@opencode/ai/keyless-auth
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { afterAll, beforeAll, describe, expect, test } from "bun:test"
 import { ai } from "../src/index.js"
 import { Anthropic, OpenAICompatible } from "../src/providers.js"

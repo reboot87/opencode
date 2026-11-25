@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：失败·轻提示·其他·app。
+ *
+ * 规格编号：E.19a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A failed execution of a session that is not open shows the error toast with an "Open" action (F09, the plugin
 // toast's `sessionID`), here on home.
 import { defineApp, HOME_PLACEHOLDER } from "../../lib/app"

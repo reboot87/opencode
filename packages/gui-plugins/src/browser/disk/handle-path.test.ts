@@ -1,3 +1,7 @@
+/**
+ * 浏览器磁盘 — HandlePathTest。
+ * 浏览器插件的磁盘数据存储中负责 HandlePathTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import path from "node:path"
 import { runElectronFixture } from "../electron-run"

@@ -1,3 +1,7 @@
+/**
+ * ACP Agent 连接。
+ * 建立 ACP（Agent Client Protocol）连接并运行协议主循环，把 OpenCode 作为 ACP agent 暴露。
+ */
 import {
   agent,
   RequestError,

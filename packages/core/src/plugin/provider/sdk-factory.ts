@@ -1,3 +1,7 @@
+/**
+ * Provider SDK 工厂。
+ * 定位并加载 provider 包的 SDK 工厂函数（支持 file:// 本地包）。
+ */
 import { Effect } from "effect"
 import { Npm } from "@opencode/util/npm"
 import { importModule, resolveModule } from "@opencode/util/runtime-import"

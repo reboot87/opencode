@@ -1,3 +1,7 @@
+/**
+ * 原生能力 — Logging。
+ * 调用系统原生能力的封装中负责 Logging 部分，提供该部分所需的实现与类型定义。
+ */
 export * as DesktopLogging from "./logging"
 
 import log from "electron-log/main.js"

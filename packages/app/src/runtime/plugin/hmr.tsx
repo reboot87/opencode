@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — Hmr。
+ * 浏览器端的插件加载与扩展点中负责 Hmr 部分，提供该部分所需的实现与类型定义。
+ */
 import { makeEventListener } from "@solid-primitives/event-listener"
 import type { Entry } from "@opencode/plugin/gui/host"
 import { BUILTINS_UPDATED } from "./builtins"

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：列表·pager·中断·伪终端。
+ *
+ * 规格编号：C.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Ctrl+C in the `session list` pager stops `less` and waits for it before the CLI exits 130, so the
 // terminal leaves the alternate screen and no `less` is left behind (TS: the scoped `AppProcess`).
 // A non-interactive shell runs the CLI and keeps the terminal afterwards, as an interactive shell would,

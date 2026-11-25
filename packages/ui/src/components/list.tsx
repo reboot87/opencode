@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — List。
+ * 跨场景复用的通用 UI 组件中负责 List 部分，提供该部分所需的实现与类型定义。
+ */
 import { type FilteredListProps, useFilteredList } from "@opencode/ui/hooks"
 import { createEffect, createMemo, createSignal, For, type JSX, on, Show } from "solid-js"
 import { createStore } from "solid-js/store"

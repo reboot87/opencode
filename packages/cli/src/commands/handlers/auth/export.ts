@@ -1,3 +1,7 @@
+/**
+ * auth export 命令。
+ * 导出一个集成的登录凭据。
+ */
 import { EOL } from "node:os"
 import { Effect, Option } from "effect"
 import { Commands } from "../../commands"

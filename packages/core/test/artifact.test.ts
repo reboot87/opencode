@@ -1,3 +1,10 @@
+/**
+ * 产物的测试。
+ *
+ * 被测模块：@opencode/core/artifact
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import path from "node:path"
 import { describe, expect } from "bun:test"
 import { Effect, Layer, Stream } from "effect"

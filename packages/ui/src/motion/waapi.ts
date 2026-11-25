@@ -1,3 +1,7 @@
+/**
+ * 动效 — Waapi。
+ * 界面过渡与动画效果中负责 Waapi 部分，提供该部分所需的实现与类型定义。
+ */
 import { observeReducedMotion, prefersReducedMotion } from "./reduced"
 
 export const ease = { out: "cubic-bezier(.22, 1, .36, 1)", pop: "cubic-bezier(.34, 1.36, .64, 1)" }

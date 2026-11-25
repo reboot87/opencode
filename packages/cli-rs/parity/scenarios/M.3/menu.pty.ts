@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：菜单·伪终端。
+ *
+ * 规格编号：M.3。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `command.palette.show` (Ctrl+P) opens the command menu. A search narrows it to "Switch agent", which opens the
 // agent panel; picking plan switches the agent the next prompt uses. "Show status" puts the footer's status in
 // the status row, and Escape closes a panel.

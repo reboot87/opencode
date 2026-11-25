@@ -1,3 +1,10 @@
+/**
+ * 会话·标题·回退的测试。
+ *
+ * 被测模块：@opencode/util/session-title-fallback
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { SessionTitleFallback } from "../src/session-title-fallback.js"
 

@@ -1,4 +1,6 @@
 #!/bin/sh
+
+# Rust CLI 开发脚本：线上。
 # Runs opencode-native against the elected opencode background service, as the root `dev:live` does for the
 # TypeScript TUI: the dev storage channel, the service's URL, and its private password.
 #

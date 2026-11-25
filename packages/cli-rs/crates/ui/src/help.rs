@@ -1,3 +1,5 @@
+//! 基础 UI 组件库：`help`。
+
 use crate::dialog::{DialogCx, DialogOptions, Dialogs, FooterAction, FooterProps, HeaderProps, header, layout};
 use crate::keymap::{COMMAND_PALETTE_COMMAND, KeymapLayer, TuiCommand};
 use opentui::prelude::*;

@@ -1,3 +1,7 @@
+/**
+ * 模块 — Types。
+ * 该目录下的功能模块中负责 Types 部分，提供该部分所需的实现与类型定义。
+ */
 import type { DiagramAxis, DiagramBounds, DiagramDirection, DiagramPoint } from "../core/geometry.js"
 
 export type FlowchartDirection = "TB" | "TD" | "BT" | "LR" | "RL"

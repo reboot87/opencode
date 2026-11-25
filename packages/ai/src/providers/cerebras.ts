@@ -1,3 +1,7 @@
+/**
+ * Cerebras provider 门面。
+ * Cerebras 推理服务 provider，基于 OpenAI 兼容 chat 协议提供模型工厂。
+ */
 import type { ProviderPackage } from "../provider-package.js"
 import { OpenAIChat } from "../protocols/openai-chat.js"
 import type { ProviderAuthOption } from "../route/auth-options.js"

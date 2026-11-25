@@ -1,4 +1,6 @@
 //! Application-wide features and terminal services.
+//!
+//! 终端界面功能模块入口。
 
 pub mod attention;
 pub mod clear;

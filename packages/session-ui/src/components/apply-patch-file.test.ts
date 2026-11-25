@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — ApplyPatchFileTest。
+ * 跨场景复用的通用 UI 组件中负责 ApplyPatchFileTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { createTwoFilesPatch } from "diff"
 import { patchFile, patchFileGroups, patchFiles } from "./apply-patch-file"

@@ -1,4 +1,7 @@
-/** How many animation frames a focused file may take to render before the narrow review stops scrolling to it. */
+/**
+ * 
+ * How many animation frames a focused file may take to render before the narrow review stops scrolling to it. 审查插件中负责 ScrollMachine 部分：变更审查界面中与 ScrollMachine 相关的状态、交互与渲染逻辑。
+ */
 export const REVIEW_SCROLL_MAX_FRAMES = 60
 
 /** What decides whether the narrow review can restore its scroll or scroll to a file now. */

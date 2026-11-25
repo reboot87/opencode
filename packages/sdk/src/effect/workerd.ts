@@ -1,3 +1,7 @@
+/**
+ * Effect SDK（Workerd）。
+ * 在 workerd 运行时以 Effect 风格创建嵌入式实例。
+ */
 export * as OpenCodeWorkerd from "./workerd"
 
 import { Layer } from "effect"

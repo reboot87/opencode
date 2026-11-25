@@ -1,3 +1,5 @@
+//! API 客户端：评审。
+
 use opencode_api::error::{DeclaredError, TaggedError};
 use opencode_api::generated::*;
 use serde_json::json;

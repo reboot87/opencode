@@ -1,4 +1,7 @@
-/** How long reading the configuration and opening, revealing or copying its file may take before it gives up. */
+/**
+ * 
+ * How long reading the configuration and opening, revealing or copying its file may take before it gives up. 详情插件中负责 ConfigActionMachine 部分：对象详情展示中与 ConfigActionMachine 相关的状态、交互与渲染逻辑。
+ */
 export const CONFIG_ACTION_TIMEOUT_MS = 15_000
 
 /** How long a copied path keeps its mark. */

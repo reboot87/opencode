@@ -1,3 +1,7 @@
+/**
+ * 工具展示 — ToolRenderer。
+ * 工具调用与结果的展示组件中负责 ToolRenderer 部分，提供该部分所需的实现与类型定义。
+ */
 // Current Session tool presentation grouped by visual family.
 import {
   type Accessor,

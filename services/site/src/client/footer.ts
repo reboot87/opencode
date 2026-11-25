@@ -1,3 +1,6 @@
+/**
+ * 浏览器端脚本：页脚。
+ */
 import { keepOnPixels, watchNavAway } from "~/component/site/site-frame"
 import { watchSurfaces } from "~/component/site/surface"
 import { $, $$ } from "./dom"

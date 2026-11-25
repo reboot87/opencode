@@ -1,3 +1,7 @@
+/**
+ * 项目头像 — ProceduralWorld。
+ * 项目标识头像组件中负责 ProceduralWorld 部分，提供该部分所需的实现与类型定义。
+ */
 // Project icon styles of the world: landscapes and materials, creatures, small objects and emblems. See procedural.ts
 // for the contract.
 

@@ -1,3 +1,10 @@
+/**
+ * 工具·Shell的测试。
+ *
+ * 被测模块：@opencode/core/tool-shell
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import fs from "fs/promises"
 import { realpathSync, watch } from "node:fs"
 import os from "os"

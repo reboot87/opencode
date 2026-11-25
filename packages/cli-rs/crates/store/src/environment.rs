@@ -1,4 +1,6 @@
 //! Only clients connected to a local server upload their terminal environment for shells and tools.
+//!
+//! 会话存储层：环境。
 
 use indexmap::IndexMap;
 use opencode_api::client::Client;

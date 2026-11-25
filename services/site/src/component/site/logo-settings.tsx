@@ -3,7 +3,10 @@ import { replayLogos } from "./logo-wall"
 import { logoEasings, setLogoTuning, setSiteSetting, siteSettings, toggles } from "./settings"
 import { SettingsSelect, SettingsSlider } from "./site"
 
-/** The selected logo animation's own controls, the swap interval and a Replay button. */
+/** The selected logo animation's own controls, the swap interval and a Replay button.
+ *
+ * 站点界面组件：标识设置。
+ */
 export function LogoAnimationSettings() {
   const tuning = () => siteSettings.logoTuning
   const style = () => siteSettings.logoAnimation

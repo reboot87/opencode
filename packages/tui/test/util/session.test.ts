@@ -1,3 +1,7 @@
+/**
+ * 工具测试 — SessionTest。
+ * 终端工具函数的测试中负责 SessionTest 部分，提供该部分所需的实现与类型定义。
+ */
 import type { JobInfo, SessionMessageInfo } from "@opencode/client"
 import { describe, expect, test } from "bun:test"
 import { sessionFamily, ownedJobs, scriptLabel } from "../../src/util/session"

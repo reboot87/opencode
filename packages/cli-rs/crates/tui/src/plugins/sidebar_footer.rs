@@ -1,4 +1,6 @@
 //! Sidebar footer with the session location and dismissible getting-started card.
+//!
+//! 终端插件视图：侧边栏页脚。
 
 use opencode_plugin::abi::v2::{Node, Place, Surface};
 use opencode_plugin::abi::{self, Click, Command, Justify, Layout, Placement, Span, Wrap};

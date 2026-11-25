@@ -1,3 +1,7 @@
+/**
+ * 近期文本提取（SessionRecentText）。
+ * 从压缩消息中提取保留的近期文本与工具输出摘要（带长度上限）。
+ */
 export * as SessionRecentText from "./recent-text.js"
 
 import type { SessionMessage } from "./message.js"

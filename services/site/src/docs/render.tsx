@@ -12,7 +12,10 @@ export { renderSitemap } from "./lib/sitemap"
 // The docs' renderer: script/build.ts prerenders every page with it, and the development server
 // renders on request (middleware.ts). The Worker never renders docs.
 
-/** Every docs page's slug, by set: the content pages, and the latest docs' API reference. */
+/** Every docs page's slug, by set: the content pages, and the latest docs' API reference.
+ *
+ * V2 文档站：`render`。
+ */
 export const docsSlugs = Object.fromEntries(
   docsSets.map((set) => [
     set.id,

@@ -1,4 +1,8 @@
-/** Caps the events held for a window whose renderer has not bound its port yet. */
+/**
+ * Caps the events held for a window whose renderer has not bound its port yet.
+ *
+ * 限制为尚未绑定端口的窗口所缓冲的事件数量；窗口要么等待其文档端口（其间缓冲事件），要么绑定到某个渲染进程客户端。
+ */
 export const MAX_BUFFERED_EVENTS = 1_024
 
 // A window (sender) either waits for its document's port, holding the events sent meanwhile, or is

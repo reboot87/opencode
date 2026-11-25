@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — TerminalPane。
+ * 终端界面（Solid）组件中负责 TerminalPane 部分，提供该部分所需的实现与类型定义。
+ */
 import { EmbeddedTerminalRenderable, type RGBA } from "@opentui/core"
 import { decodePersistentPtyMessage, persistentPtyFrame } from "@opencode/client/solid"
 import { rgbToOklch, type ResolvedThemeTokens } from "@opencode/theme/tui"

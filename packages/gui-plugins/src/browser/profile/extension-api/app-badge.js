@@ -4,6 +4,8 @@
 // the app, so here both resolve and draw nothing, as they do in a browser tab. A frame's initial empty document gets
 // no preload (Electron has nothing to run one with), so a page that reaches into such a frame for its `navigator`
 // still draws.
+// 浏览器扩展接口脚本：app·徽标。
+// 浏览器扩展接口脚本：app·徽标。
 {
   // Runs in the page's own world, so it must not use anything from this file's scope.
   const ignore = () => {

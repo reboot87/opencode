@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid U3Select：该文件实现 U3Select 相关的状态与逻辑。
+ */
 // P-COMP fixtures for DialogSelect (packages/tui/src/ui/dialog-select.tsx): crates/ui/tests/all/dialogs.rs. One list
 // with two categories, a current option, descriptions, footers, details, and an action: as opened (scrolled to
 // the current option), after moving down twice, after typing a filter, and with a filter that matches nothing.

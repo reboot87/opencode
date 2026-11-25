@@ -1,3 +1,7 @@
+/**
+ * 窗口管理 — RevealMachineTest。
+ * 浏览器窗口的创建与布局管理中负责 RevealMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, beforeEach, describe, expect, jest, test } from "bun:test"
 import {
   createRevealDriver,

@@ -1,3 +1,7 @@
+/**
+ * Agent 类型与模型。
+ * 定义 Agent 的 ID/名称等品牌类型，以及 Agent 信息的 Schema 构造器。
+ */
 export * as Agent from "./agent.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

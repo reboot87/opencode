@@ -1,3 +1,7 @@
+/**
+ * SSH 插件 — State。
+ * 远程主机管理的 GUI 插件中负责 State 部分，提供该部分所需的实现与类型定义。
+ */
 import { createRoot, createSignal, onCleanup, untrack, type Accessor } from "solid-js"
 import { createKeyed, type IpcClient } from "@opencode/plugin/gui"
 import type { Ssh, SshConfig, SshHttp, SshItem } from "./contract"

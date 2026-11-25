@@ -1,3 +1,10 @@
+/**
+ * MCP·套接字·客户端的测试。
+ *
+ * 被测模块：@opencode/core/mcp-socket-client
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { Client, type JSONRPCMessage } from "@modelcontextprotocol/client"
 import { fromJsonSchema, McpServer } from "@modelcontextprotocol/server"

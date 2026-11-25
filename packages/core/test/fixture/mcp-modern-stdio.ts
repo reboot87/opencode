@@ -1,3 +1,8 @@
+/**
+ * MCP·现代·标准输入输出测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { appendFileSync } from "node:fs"
 import { Server } from "@modelcontextprotocol/server"
 import { serveStdio } from "@modelcontextprotocol/server/stdio"

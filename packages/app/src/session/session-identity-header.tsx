@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — SessionIdentityHeader。
+ * 会话主界面的视图与状态中负责 SessionIdentityHeader 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionInfo } from "@opencode/client/promise"
 import type { MountedSession, SessionScreen } from "@opencode/plugin/gui"
 import { Icon } from "@opencode/ui/icon"

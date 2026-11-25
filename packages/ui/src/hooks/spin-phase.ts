@@ -1,3 +1,7 @@
+/**
+ * UI Hook — SpinPhase。
+ * 可复用的 React Hook中负责 SpinPhase 部分，提供该部分所需的实现与类型定义。
+ */
 import { onCleanup } from "solid-js"
 
 type PinnableAnimation = {

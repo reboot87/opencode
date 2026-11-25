@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — Schemes。
+ * GUI 插件的实现中负责 Schemes 部分，提供该部分所需的实现与类型定义。
+ */
 import type { CustomScheme } from "electron"
 
 import { previewScheme } from "./browser/scheme"

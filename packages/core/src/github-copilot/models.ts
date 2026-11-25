@@ -1,3 +1,7 @@
+/**
+ * GitHub Copilot 模型目录。
+ * 拉取并解析 GitHub Copilot 的远程模型清单与状态。
+ */
 export * as CopilotModels from "./models.js"
 
 import { Money } from "@opencode/schema/money"

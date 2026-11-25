@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：站点地图。
+ */
 import { describe, expect, test } from "bun:test"
 import { fileURLToPath } from "node:url"
 // SolidStart's own file router, which builds the route manifest the app serves /sitemap-pages.xml from.

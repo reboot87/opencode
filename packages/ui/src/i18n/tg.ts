@@ -1,3 +1,7 @@
+/**
+ * 国际化 — Tg。
+ * 多语言文案资源中负责 Tg 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "ui.sessionReview.title": "Тағйир додани сессия",
   "ui.sessionReview.title.git": "Тағйироти Git",

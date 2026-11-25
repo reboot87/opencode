@@ -1,3 +1,10 @@
+/**
+ * 响应的测试。
+ *
+ * 被测模块：@opencode/ai/response
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { LLMEvent, LLMResponse } from "../src/effect.js"
 import { ResponseFold } from "../src/schema/index.js"

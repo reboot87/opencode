@@ -1,3 +1,7 @@
+/**
+ * 单选框 — RadioStories。
+ * 单选按钮组组件中负责 RadioStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal } from "solid-js"
 import { RadioGroup, RadioItem, type RadioGroupProps } from "./radio"
 

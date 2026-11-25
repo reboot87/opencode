@@ -1,3 +1,10 @@
+/**
+ * Effect 风格 API 入口（@opencode/ai/effect）。
+ *
+ * 与顶层 `ai` 客户端（Promise / AsyncIterable 风格）不同，这里的方法直接返回 Effect / Stream，
+ * 供已经运行在 Effect runtime 里的调用方（如 opencode core）使用，省去 Promise 包装。
+ * 各能力映射到对应模块：LLM / Image / Decision / Embedding / Video，语音与转写暂时标记为实验性。
+ */
 import { Decision } from "./decision.js"
 import { Embedding } from "./embedding.js"
 import { Image } from "./image.js"
@@ -19,7 +26,7 @@ export const ai = {
   decision: Decision,
   embedding: Embedding,
   video: Video,
-  /** Experimental: may change without compatibility guarantees. */
+  /** 实验性 API：可能变动，不保证兼容性。 */
   experimental: {
     speech: Speech,
     transcription: Transcription,

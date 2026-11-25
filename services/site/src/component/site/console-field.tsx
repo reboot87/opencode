@@ -1,7 +1,10 @@
 import { createEffect, on, onCleanup, onMount } from "solid-js"
 import { consoleDots } from "./console-dots"
 
-/** The Console section's dot backdrop (console-dots.ts). */
+/** The Console section's dot backdrop (console-dots.ts).
+ *
+ * 站点界面组件：控制台字段。
+ */
 export function ConsoleField(props: { dot?: number }) {
   // Dot size in CSS pixels: 2 by default, 1 for the inline and slim options, like the Console site.
   const dot = () => props.dot ?? 2

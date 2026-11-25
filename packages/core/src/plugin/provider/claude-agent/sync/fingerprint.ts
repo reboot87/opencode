@@ -1,3 +1,7 @@
+/**
+ * Claude 同步指纹。
+ * 为提示词内容生成分组指纹，用于识别可复用片段。
+ */
 export * as Fingerprint from "./fingerprint.js"
 
 import { createHash } from "node:crypto"

@@ -1,3 +1,7 @@
+/**
+ * 浏览器扩展 API — Index 出口。
+ * 集中导出 浏览器扩展 API 中 Index 相关的实现、组件与类型。
+ */
 import { mkdir } from "node:fs/promises"
 import type { BrowserWindow, Session } from "electron"
 import type { Log, Storage } from "@opencode/plugin/gui/main"

@@ -1,3 +1,7 @@
+/**
+ * 后台任务列表。
+ * 列举持久化任务与运行中任务，提供统一的 Item/Live 视图。
+ */
 export * as JobList from "./list.js"
 
 import { Job } from "@opencode/schema/job"

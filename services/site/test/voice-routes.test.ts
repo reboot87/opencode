@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：语音路由。
+ */
 import { describe, expect, test } from "bun:test"
 import { voiceMode } from "~/component/site/voice/flag"
 import { POST as answer } from "~/routes/api/voice/answer"

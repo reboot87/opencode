@@ -1,3 +1,7 @@
+/**
+ * 堆快照监听。
+ * 按信号写出堆快照文件。
+ */
 import { Global } from "@opencode/util/global"
 import { HeapSnapshot } from "@opencode/util/heap-snapshot"
 import { Effect, Queue } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * 技能服务（Skill）。
+ * 技能定义与来源（目录/URL）管理，支撑技能发现与按需加载。
+ */
 export * as Skill from "./skill.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

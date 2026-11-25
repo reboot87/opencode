@@ -1,3 +1,7 @@
+/**
+ * Mini 精简界面 — Types。
+ * 精简交互模式（mini）的界面与交互中负责 Types 部分，提供该部分所需的实现与类型定义。
+ */
 // Shared type vocabulary for the direct interactive mode (`opencode mini`).
 //
 // Direct mode uses a split-footer terminal layout: immutable scrollback for the

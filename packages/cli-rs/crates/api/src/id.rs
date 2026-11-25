@@ -1,5 +1,7 @@
 //! Identifiers start with 12 hex digits of `timestamp * 0x1000 + counter`, inverted for descending order, followed by
 //! 14 random base-62 characters. The counter orders IDs minted within one millisecond.
+//!
+//! API 客户端：标识。
 
 use std::sync::Mutex;
 use std::time::{SystemTime, UNIX_EPOCH};

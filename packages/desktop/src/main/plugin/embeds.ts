@@ -1,3 +1,7 @@
+/**
+ * 桌面插件 — Embeds。
+ * 桌面端插件的加载与宿主能力中负责 Embeds 部分，提供该部分所需的实现与类型定义。
+ */
 import { randomUUID } from "node:crypto"
 import { BaseWindow, ImageView, screen, View, type BrowserWindow, type WebContentsView } from "electron"
 import type { Embed } from "@opencode/plugin/gui/main"

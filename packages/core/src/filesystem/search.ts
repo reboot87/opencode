@@ -1,3 +1,7 @@
+/**
+ * 文件系统搜索服务。
+ * 提供按名称与内容搜索文件的能力，含选项与结果结构。
+ */
 export * as FileSystemSearch from "./search.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

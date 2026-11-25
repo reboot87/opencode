@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — UsageLimitsTest。
+ * 终端界面的测试中负责 UsageLimitsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { createAppFixture } from "./fixture/app"
 import { tmpdir } from "./fixture/fixture"

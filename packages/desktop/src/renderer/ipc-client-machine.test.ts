@@ -1,3 +1,7 @@
+/**
+ * 渲染进程 — IpcClientMachineTest。
+ * Electron 渲染进程的界面逻辑中负责 IpcClientMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { RpcMessage } from "effect/rpc"
 import {

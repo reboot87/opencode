@@ -1,4 +1,7 @@
-/** JSON-compatible cassette metadata value. */
+/**
+ * 
+ * JSON-compatible cassette metadata value. HTTP 录制中负责 Api 部分：HTTP 录制与回放中与 Api 相关的状态、交互与渲染逻辑。
+ */
 export type JsonValue =
   | null
   | boolean

@@ -1,3 +1,8 @@
+/**
+ * MCP测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { Effect, Layer, Stream } from "effect"
 import { Config } from "@opencode/core/config"
 import { Location } from "@opencode/core/location"

@@ -1,3 +1,7 @@
+/**
+ * usage 接口处理器。
+ * 用量接口处理器：用量上限查询。
+ */
 import { UsageLimits } from "@opencode/core/usage-limits"
 import { ServiceUnavailableError } from "@opencode/protocol/errors"
 import { Effect } from "effect"

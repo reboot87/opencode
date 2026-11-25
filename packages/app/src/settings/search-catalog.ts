@@ -1,3 +1,7 @@
+/**
+ * 设置界面 — SearchCatalog。
+ * 应用设置页面的框架中负责 SearchCatalog 部分，提供该部分所需的实现与类型定义。
+ */
 import type { useLanguage } from "@/runtime/i18n/language"
 import type { SettingsProjectTab, SettingsRootTab, SettingsServerTab } from "./surface"
 

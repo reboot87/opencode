@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — MarkdownReadinessSpec。
+ * 会话界面组件的测试中负责 MarkdownReadinessSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Page } from "@playwright/test"
 import { expect, sourceURL, story } from "../../stories/playwright/story"
 

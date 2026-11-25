@@ -1,4 +1,6 @@
 //! Parse errors are opaque: the agent only needs to know whether the patch is valid.
+//!
+//! ACP 协议实现：补丁。
 
 use opencode_api::js::is_whitespace;
 

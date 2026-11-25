@@ -1,3 +1,8 @@
+/**
+ * 教程示例。
+ *
+ * AI 包的最小可运行示例，演示如何调用一次完整的模型请求。
+ */
 import { Config, Effect, Formatter, Schema, Stream } from "effect"
 import { HttpClientResponse } from "effect/http"
 import { NodeFileSystem } from "@effect/platform-node"

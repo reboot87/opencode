@@ -1,3 +1,7 @@
+/**
+ * 服务端同步 — EndpointMachine。
+ * 与服务端保持数据一致的同步机制中负责 EndpointMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ServerConnection } from "../registry"
 
 /**

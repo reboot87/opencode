@@ -1,3 +1,8 @@
+/**
+ * 位置测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { Location } from "@opencode/core/location"
 import { Project } from "@opencode/core/project"
 import { AbsolutePath } from "@opencode/core/schema"

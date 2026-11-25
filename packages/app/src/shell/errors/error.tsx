@@ -1,3 +1,7 @@
+/**
+ * 错误界面 — Error。
+ * 应用级错误边界的展示中负责 Error 部分，提供该部分所需的实现与类型定义。
+ */
 import { TextField } from "@opencode/ui/text-field"
 import type { captureException } from "@sentry/solid"
 import { Logo } from "@opencode/ui/logo"

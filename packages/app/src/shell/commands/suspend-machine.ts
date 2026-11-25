@@ -1,3 +1,7 @@
+/**
+ * 外壳命令 — SuspendMachine。
+ * 应用外壳提供的命令中负责 SuspendMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // The hold behind `keybinds(false)`. `suspend()` leases start at 1, so they never collide with it.
 const TOGGLE_HOLD = 0
 

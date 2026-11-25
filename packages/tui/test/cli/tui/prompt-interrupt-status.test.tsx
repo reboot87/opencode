@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid PromptInterruptStatusTest：该文件实现 PromptInterruptStatusTest 相关的状态与逻辑。
+ */
 import { RGBA } from "@opentui/core"
 import { testRender } from "@opentui/solid"
 import { expect, test } from "bun:test"

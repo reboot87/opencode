@@ -17,6 +17,8 @@ import { logoLabels, setSiteSetting } from "./settings"
  *
  * A development tool: Site loads this module only on the development server, so production has
  * none of it. Pages read the chosen copy through design-copy.ts.
+ *
+ * 站点界面组件：设计模式。
  */
 
 const modeKey = "opencode-site-design-mode"

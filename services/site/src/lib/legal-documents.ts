@@ -6,7 +6,10 @@ import { termsOfService } from "~/lib/legal/terms-of-service"
 // Every legal document at once, for the legal index, its Markdown, the feed and the sitemap. A
 // document's own page imports only its document, so it doesn't load the others.
 
-/** The published legal documents, in the order the legal pages list them. */
+/** The published legal documents, in the order the legal pages list them.
+ *
+ * 站点共享逻辑：法律·documents。
+ */
 export const legalDocuments: LegalDocumentContent[] = [privacyPolicy, termsOfService]
 
 /**

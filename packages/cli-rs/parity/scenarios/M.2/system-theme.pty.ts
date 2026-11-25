@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：系统·主题·伪终端。
+ *
+ * 规格编号：M.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The `system` theme under a terminal that reports Tokyo Night's colors: the backgrounds of the footer's rows,
 // idle and after a reply. The footer keeps the terminal's background: Rust once painted OpenTUI's dark app
 // background behind it, a darker panel around the composer.

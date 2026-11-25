@@ -14,7 +14,10 @@ export const viewportContent = () =>
     ? "width=device-width, initial-scale=1, viewport-fit=cover"
     : "width=device-width, initial-scale=1"
 
-/** Asks for viewport-fit=cover while the calling component is mounted. */
+/** Asks for viewport-fit=cover while the calling component is mounted.
+ *
+ * 站点共享逻辑：视口。
+ */
 export function useViewportCover() {
   if (isServer) {
     const event = getRequestEvent()

@@ -1,3 +1,7 @@
+/**
+ * 插件配置类型。
+ * 定义 plugin 配置项的 Schema。
+ */
 export * as ConfigPlugin from "./plugin.js"
 
 import { Schema } from "effect"

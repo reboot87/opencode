@@ -1,3 +1,10 @@
+/**
+ * 子智能体·空闲·端到端的测试。
+ *
+ * 被测模块：@opencode/core/subagent-idle-e2e
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import path from "path"
 import { LanguageModel } from "@opencode/ai/effect"

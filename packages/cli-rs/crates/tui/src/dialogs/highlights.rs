@@ -1,4 +1,6 @@
 //! Release highlights dialog.
+//!
+//! 终端弹窗组件：`highlights`。
 
 use opencode_ui::dialog::{DIALOG_INSET, FooterAction, FooterProps, layout};
 use serde::Deserialize;

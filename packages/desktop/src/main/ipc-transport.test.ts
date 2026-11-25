@@ -1,3 +1,7 @@
+/**
+ * 桌面端主进程 — IpcTransportTest。
+ * Electron 主进程的核心逻辑中负责 IpcTransportTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { EventEmitter } from "node:events"
 import { MessageChannel } from "node:worker_threads"

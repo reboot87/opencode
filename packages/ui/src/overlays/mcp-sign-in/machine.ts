@@ -1,4 +1,8 @@
-/** Delay between OAuth status polls while the attempt is pending or the server is unreachable. */
+/**
+ * Delay between OAuth status polls while the attempt is pending or the server is unreachable.
+ *
+ * MCP 登录浮层的状态机：管理登录步骤、错误与成功后的关闭。
+ */
 export const MCP_SIGN_IN_POLL_MS = 1_000
 
 /** How long the MCP server and resource sync after a sign-in may run before it shows a retryable error. */

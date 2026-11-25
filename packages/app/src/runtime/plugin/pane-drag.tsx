@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — PaneDrag。
+ * 浏览器端的插件加载与扩展点中负责 PaneDrag 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, on, onCleanup, Show, untrack, type Accessor } from "solid-js"
 import { Portal } from "solid-js/web"
 import { SESSION_PANES, type SessionPane } from "@/shell/state/session-tabs"

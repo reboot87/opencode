@@ -1,3 +1,7 @@
+/**
+ * 会话类型。
+ * 定义会话的核心信息与列表结构。
+ */
 export * as Session from "./session.js"
 
 import { Effect, Result, Schema, SchemaGetter, SchemaParser } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * 稳定性测试 — PlaywrightConfig。
+ * 检测界面抖动与渲染稳定性的端到端用例中负责 PlaywrightConfig 部分，提供该部分所需的实现与类型定义。
+ */
 import config from "../../playwright.config"
 
 const port = Number(process.env.PLAYWRIGHT_PORT ?? 3000)

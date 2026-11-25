@@ -1,3 +1,7 @@
+/**
+ * 终端 UI — Animation。
+ * 终端界面的通用 UI 组件中负责 Animation 部分，提供该部分所需的实现与类型定义。
+ */
 import type { CliRenderer } from "@opentui/core"
 import { useRenderer } from "@opentui/solid"
 import { createEffect, createSignal, onCleanup, type Accessor } from "solid-js"

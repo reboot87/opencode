@@ -1,6 +1,8 @@
 /**
  * A loopback http(s) URL's origin with `localhost`, `127.0.0.1` and `[::1]` read as one host, so two names for the
  * same port compare equal; undefined for any other URL.
+ *
+ * 服务端连接中负责 Loopback 部分：浏览器与服务端的连接中与 Loopback 相关的状态、交互与渲染逻辑。
  */
 export function loopbackOrigin(url: string) {
   if (!URL.canParse(url)) return

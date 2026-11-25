@@ -1,3 +1,7 @@
+/**
+ * 会话搜索（SessionSearch）。
+ * 跨会话搜索消息，生成带上下文的片段与工具摘要，限制每会话匹配数。
+ */
 export * as SessionSearch from "./search.js"
 
 import { and, asc, desc, eq, gt, inArray, isNull, lt, sql, type SQL } from "drizzle-orm"

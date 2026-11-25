@@ -158,7 +158,10 @@ type Control = {
   values: () => readonly string[]
   index: () => number
   select: (index: number) => void
-  /** Set for copy, where the current option may be one you added. */
+  /** Set for copy, where the current option may be one you added.
+ *
+ * 站点界面组件：设计浮层。
+ */
   remove?: { allowed: () => boolean; run: () => void }
 }
 

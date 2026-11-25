@@ -1,4 +1,6 @@
 //! Reads legacy `{ defs, theme }` color documents.
+//!
+//! 主题解析与应用：`v1`。
 
 use std::collections::HashMap;
 

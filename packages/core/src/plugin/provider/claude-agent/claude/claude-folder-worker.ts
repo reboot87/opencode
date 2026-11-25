@@ -1,3 +1,7 @@
+/**
+ * Claude 目录 Worker 辅助。
+ * 在 Claude 会话目录中调用辅助脚本的桥接。
+ */
 import { parentPort, workerData } from "node:worker_threads"
 import { ClaudeIO } from "./io.js"
 

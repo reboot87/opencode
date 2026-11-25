@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：遗留。
+ */
 import { describe, expect, test } from "bun:test"
 import { legacyRedirect } from "../src/lib/legacy"
 

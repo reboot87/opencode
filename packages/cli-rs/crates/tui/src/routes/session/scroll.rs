@@ -1,4 +1,6 @@
 //! Scroll commands, history loading, and the jump-to-latest hint.
+//!
+//! 终端界面路由：滚动。
 
 use std::time::Instant;
 

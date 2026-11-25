@@ -1,5 +1,7 @@
 //! Open a link only for an unmodified press and release on the same cell with no selection. Leave modified clicks to
 //! the terminal.
+//!
+//! 终端界面功能模块：链接。
 
 use crate::prelude::*;
 

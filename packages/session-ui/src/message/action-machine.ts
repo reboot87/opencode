@@ -1,4 +1,8 @@
-/** A user-message action: `queue` and `remove` act on a pending steer, `revert` and `fork` on a delivered message. */
+/**
+ * A user-message action: `queue` and `remove` act on a pending steer, `revert` and `fork` on a delivered message.
+ *
+ * 消息操作的状态机：管理消息操作按钮的可用与执行状态。
+ */
 export type MessageAction = "queue" | "remove" | "revert" | "fork"
 
 /** What the message offers right now: the host's actions and whether the server has delivered the message yet. */

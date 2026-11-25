@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：标签发布。
 # tag-release.sh: in a checkout of the dispatched dev commit, commits the release versions and changelog
 # (OPENCODE_RELEASE_NOTES) and pushes only the v<version> tag at it. Writes sha=<commit> to $GITHUB_OUTPUT.
 # Runs git only, with hooks disabled; no repository code.

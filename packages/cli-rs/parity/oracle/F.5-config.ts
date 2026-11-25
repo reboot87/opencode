@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：F.5·配置。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-ORACLE and P-FILE helper for F.5, driven by crates/local/tests/all/config_interop.rs. Run it from
 // <ts-root>/packages/cli (`bun --cwd`), so the TUI sources it imports get their JSX settings.
 //

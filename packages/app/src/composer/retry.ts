@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — Retry。
+ * 会话输入区的组合逻辑与附件处理中负责 Retry 部分，提供该部分所需的实现与类型定义。
+ */
 import { checksum } from "@opencode/util/encode"
 import type { SessionMessage } from "@opencode/schema/session-message"
 import type { ComposerDelivery, ComposerSelection } from "./adapter"

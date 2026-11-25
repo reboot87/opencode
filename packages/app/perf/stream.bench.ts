@@ -1,3 +1,7 @@
+/**
+ * 性能测试 — StreamBench。
+ * 界面渲染性能基准中负责 StreamBench 部分，提供该部分所需的实现与类型定义。
+ */
 // A reply streaming into a long session: 160 markdown deltas (bold text, tables, code fences) at 40 a second, from a
 // server that never waits for the renderer. Per-delta cost that grows with the reply or the history shows up here.
 import { bench, web, type Case, type Page } from "@hona/strobe"

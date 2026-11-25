@@ -4,6 +4,8 @@
  * Inline template-literal SSE strings are hard to write and review when chunks
  * contain JSON; this helper accepts plain values and serializes them, so test
  * authors only think about the chunk shapes, not the wire format.
+ *
+ * Sse：该文件实现 Sse 相关的状态与逻辑。
  */
 export const sseEvents = (...chunks: ReadonlyArray<unknown>): string =>
   `${chunks.map(formatChunk).join("")}data: [DONE]\n\n`

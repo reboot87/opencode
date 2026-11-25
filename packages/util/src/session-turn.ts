@@ -1,3 +1,7 @@
+/**
+ * 会话轮次计算。
+ * 按消息序列计算一个完整轮次（用户输入到助手最终回复）的边界。
+ */
 export * as SessionTurn from "./session-turn.js"
 
 /** The fields of a session message that turn measurements read. Client session messages satisfy it as they are. */

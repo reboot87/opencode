@@ -1,3 +1,7 @@
+/**
+ * 模型传输层（SessionModelTransport）。
+ * 管理与模型提供方的连接传输：WebSocket 通道的轮换、连接/空闲超时、关闭等，供会话级复用。
+ */
 export * as SessionModelTransport from "./model-transport.js"
 
 import {

@@ -31,7 +31,10 @@ const views: Record<string, Component> = {
   colophon: Colophon,
 }
 
-/** Renders one of them again in the browser, in place of the server's copy, in the same task. */
+/** Renders one of them again in the browser, in place of the server's copy, in the same task.
+ *
+ * 客户端交互岛：字体。
+ */
 export default function font(root: HTMLElement) {
   const View = views[root.dataset.plate ?? root.dataset.slot ?? root.dataset.component ?? ""]
   if (View) void swap(() => <View />, root)

@@ -1,3 +1,10 @@
+/**
+ * Effect的测试辅助模块。
+ *
+ * 被测模块：@opencode/ai/lib/effect
+ *
+ * 测试用的公共辅助模块：构造请求桩、解析流式事件与断言工具。
+ */
 import { test, type TestOptions } from "bun:test"
 import { Cause, Effect, Exit, Layer } from "effect"
 import type * as Scope from "effect/Scope"

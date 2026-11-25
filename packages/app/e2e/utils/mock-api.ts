@@ -1,3 +1,7 @@
+/**
+ * 端到端测试工具 — MockApi。
+ * 端到端测试的公共辅助中负责 MockApi 部分，提供该部分所需的实现与类型定义。
+ */
 import { Predicate, Schema, SchemaGetter } from "effect"
 import { HttpApi, HttpApiEndpoint, HttpApiGroup, HttpApiSchema } from "effect/http-api"
 import { PersistentPty } from "@opencode/schema/persistent-pty"

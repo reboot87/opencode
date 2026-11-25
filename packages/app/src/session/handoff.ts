@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — Handoff。
+ * 会话主界面的视图与状态中负责 Handoff 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal, onCleanup, untrack } from "solid-js"
 import type { Data } from "@opencode/client/solid"
 import type { ServerSDK } from "@/runtime/server/client"

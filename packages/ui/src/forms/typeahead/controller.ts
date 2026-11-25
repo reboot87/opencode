@@ -1,3 +1,7 @@
+/**
+ * 类型提示 — Controller。
+ * 边输入边建议的自动完成组件中负责 Controller 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createUniqueId } from "solid-js"
 import { createStore } from "solid-js/store"
 

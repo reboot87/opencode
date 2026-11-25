@@ -1,3 +1,7 @@
+/**
+ * 配对插件 — DialogStories。
+ * 设备配对流程的 GUI 插件中负责 DialogStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, onMount } from "solid-js"
 import { PairingHost, pairingRemote } from "../../../stories/mocks/gui-plugins/pairing"
 import PairingPage from "./page"

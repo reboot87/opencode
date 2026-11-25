@@ -1,3 +1,7 @@
+/**
+ * AI SDK 兼容层。
+ * 把 AI SDK 风格的事件与请求适配到本仓库的协议层，含 SDKEvent / LanguageEvent 等事件模型与编解码。
+ */
 export * as AISDK from "./aisdk.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

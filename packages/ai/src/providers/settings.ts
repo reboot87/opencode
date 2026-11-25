@@ -1,3 +1,7 @@
+/**
+ * provider 配置辅助工具。
+ * 提供 bearer 鉴权默认配置、环境变量回退与 Settings → Config 的转换函数，被众多 provider 复用。
+ */
 import type { ProviderPackage } from "../provider-package.js"
 import { AuthOptions, type ProviderAuthOption } from "../route/auth-options.js"
 import type { Auth } from "../route/auth.js"

@@ -1,3 +1,7 @@
+/**
+ * 主题测试（v2） — SelectTest。
+ * 第二版终端主题的测试中负责 SelectTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { selectTheme, selectThemeMode, supportsThemeMode, themeModes } from "@opencode/theme/tui"
 import { getOpenCodeClassicTheme } from "../../../src/theme"

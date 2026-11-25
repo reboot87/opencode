@@ -1,3 +1,7 @@
+/**
+ * 下拉选择 — Select。
+ * 下拉选择组件中负责 Select 部分，提供该部分所需的实现与类型定义。
+ */
 import {
   Content,
   Item,

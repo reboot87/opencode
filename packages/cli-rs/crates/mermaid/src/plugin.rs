@@ -1,4 +1,6 @@
 //! Renders to the available width and reports the diagram's measured height.
+//!
+//! Mermaid 图表渲染：插件。
 
 use std::cell::RefCell;
 use std::collections::HashMap;

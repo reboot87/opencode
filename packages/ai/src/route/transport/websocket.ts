@@ -1,3 +1,9 @@
+/**
+ * WebSocket 传输实现（443 行）。
+ *
+ * 为使用 WebSocket 的 provider 提供流式双向通信：建立连接、发送协议消息、
+ * 把收到的帧转成流。管理连接生命周期（重连/关闭）、消息队列与错误传播。
+ */
 import { Cause, Effect, Queue, Stream } from "effect"
 import { Headers } from "effect/http"
 import { Socket } from "effect/socket"

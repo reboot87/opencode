@@ -1,6 +1,8 @@
 /**
  * How long a worker may take to open a file before the viewer gives up and the file view shows its binary placeholder.
  * Generous, because a large workbook parses for seconds on a slow machine; it only bounds an engine that hangs.
+ *
+ * Generous, because a large workbook parses for seconds on a slow 的状态机。
  */
 export const WORKER_OPEN_TIMEOUT_MS = 60_000
 

@@ -1,3 +1,7 @@
+/**
+ * 文件处理 — HexTest。
+ * 桌面端的文件打开与拖放处理中负责 HexTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { mkdtemp, mkdir, rm, writeFile } from "node:fs/promises"
 import { tmpdir } from "node:os"

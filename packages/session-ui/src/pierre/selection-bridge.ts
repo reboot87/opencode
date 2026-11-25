@@ -1,3 +1,7 @@
+/**
+ * Pierre 组件 — SelectionBridge。
+ * 会话界面的基础组件库中负责 SelectionBridge 部分，提供该部分所需的实现与类型定义。
+ */
 import { type SelectedLineRange } from "@pierre/diffs"
 
 type SelectionKey = "ui.sessionReview.selection.line" | "ui.sessionReview.selection.lines"

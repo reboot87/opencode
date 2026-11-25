@@ -2,6 +2,8 @@
 //! fields disjoint.
 
 #![allow(unsafe_code)]
+//!
+//! 通用工具：页面。
 
 use std::fs::File;
 use std::io;

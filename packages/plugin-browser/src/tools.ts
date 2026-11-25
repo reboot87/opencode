@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — Tools。
+ * GUI 插件的实现中负责 Tools 部分，提供该部分所需的实现与类型定义。
+ */
 export * as BrowserTools from "./tools.js"
 
 import type { Context } from "@opencode/plugin/effect/plugin"

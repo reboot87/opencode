@@ -1,3 +1,7 @@
+/**
+ * 更新插件 — Section。
+ * 应用更新提示的 GUI 插件中负责 Section 部分，提供该部分所需的实现与类型定义。
+ */
 import { Show } from "solid-js"
 import { usePlugin } from "@opencode/plugin/gui"
 import type definition from "./index"

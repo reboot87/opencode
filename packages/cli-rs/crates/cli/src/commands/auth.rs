@@ -1,4 +1,6 @@
 //! Credential management and interactive login. MCP authentication shares the login form.
+//!
+//! CLI 子命令：认证。
 
 use std::collections::HashSet;
 use std::future::Future;

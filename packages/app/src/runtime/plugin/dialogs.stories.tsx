@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — DialogsStories。
+ * 浏览器端的插件加载与扩展点中负责 DialogsStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { useDialog } from "@opencode/ui/context/dialog"
 import { onMount } from "solid-js"

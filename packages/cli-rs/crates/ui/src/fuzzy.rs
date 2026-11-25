@@ -1,4 +1,6 @@
 //! Fuzzy matching and ranking for the select dialog. Preserve tie order as well as scores.
+//!
+//! 基础 UI 组件库：模糊匹配。
 
 mod accents;
 

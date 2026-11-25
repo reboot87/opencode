@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：夹具。
+ *
+ * 规格编号：M.1。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A fake server for `mini`: one session `ses_mini` with a short history, an event stream that stays open, and
 // the reads the split-footer transport makes when it hydrates. The splash is off in every case: it is M.4's.
 import type { Logged, Options, Route } from "../../lib/fake-server"

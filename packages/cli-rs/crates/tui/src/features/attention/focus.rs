@@ -1,4 +1,6 @@
 //! Terminal focus is unknown until the first report. Focus-dependent notifications and sounds wait for it.
+//!
+//! 终端界面功能模块：聚焦。
 
 use crate::prelude::*;
 

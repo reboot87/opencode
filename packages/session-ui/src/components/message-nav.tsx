@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — MessageNav。
+ * 跨场景复用的通用 UI 组件中负责 MessageNav 部分，提供该部分所需的实现与类型定义。
+ */
 import type { FileDiffInfo, SessionMessageUser } from "@opencode/client/promise"
 import { HoverCard } from "@kobalte/core/hover-card"
 import { ComponentProps, For, Match, Show, createMemo, createSignal, splitProps, Switch } from "solid-js"

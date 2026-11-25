@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — AppIcon。
+ * 跨场景复用的通用 UI 组件中负责 AppIcon 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Component, ComponentProps } from "solid-js"
 import { createSignal, onCleanup, onMount, splitProps } from "solid-js"
 import type { IconName } from "./app-icons/types"

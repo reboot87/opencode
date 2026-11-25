@@ -1,3 +1,7 @@
+/**
+ * Effect 服务发现。
+ * 发现本机运行中的 OpenCode 服务并建立连接。
+ */
 import { Effect, FileSystem, Option, Schedule, Schema } from "effect"
 import type { DiscoverOptions, EnsureOptions, StopOptions } from "../service.js"
 import { contenderPool, spawnServiceContender } from "../service-contender.js"

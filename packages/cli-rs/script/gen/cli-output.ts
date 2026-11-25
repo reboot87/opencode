@@ -1,3 +1,8 @@
+/**
+ * CLI·输出脚本。
+ *
+ * Rust CLI 的代码生成器：由 TypeScript 单一来源生成 Rust 代码。
+ */
 // Records what the TypeScript CLI prints for help and usage errors, with colors (FORCE_COLOR=1),
 // into crates/cli/tests/fixtures/cli. Each usage error records the environment it ran in. The Rust tests in
 // crates/cli/src/tests/output.rs compare their own output with these files byte for byte, and with the colors

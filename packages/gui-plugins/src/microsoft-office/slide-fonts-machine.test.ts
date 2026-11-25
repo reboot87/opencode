@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — SlideFontsMachineTest。
+ * Microsoft Office 文档预览插件中负责 SlideFontsMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { PositionedTextRun, SlideDisplayList, SlidePrimitive } from "@betteroffice/pptx"
 import {

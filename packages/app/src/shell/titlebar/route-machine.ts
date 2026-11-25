@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — RouteMachine。
+ * 自定义窗口标题栏中负责 RouteMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ServerConnection } from "@/runtime/server/registry"
 import type { LayoutRoute } from "@/shell/state/layout"
 import { tabKey, type SessionTab, type Tab } from "@/shell/tabs/tabs"

@@ -1,3 +1,7 @@
+/**
+ * 窗口管理 — WindowState。
+ * 浏览器窗口的创建与布局管理中负责 WindowState 部分，提供该部分所需的实现与类型定义。
+ */
 import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs"
 import path from "node:path"
 import { Option, Schema } from "effect"

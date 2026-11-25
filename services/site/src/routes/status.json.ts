@@ -1,3 +1,6 @@
+/**
+ * 页面路由：status·JSON。
+ */
 import { bars } from "~/lib/status"
 
 // The footer's status bars (lib/status.ts) for pages that render without them: the V2 docs are

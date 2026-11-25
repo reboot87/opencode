@@ -35,7 +35,10 @@ const wordmarkSolidDarkSvg = "/brand/files/opencode-wordmark-solid-dark.svg"
 const avatarDark1024Png = "/brand/files/opencode-avatar-dark-1024.png"
 const avatarLight1024Png = "/brand/files/opencode-avatar-light-1024.png"
 
-/** The brand page copy, shared by the page and its Markdown version. */
+/** The brand page copy, shared by the page and its Markdown version.
+ *
+ * 站点共享逻辑：品牌内容。
+ */
 export function brandContent(t: Translate) {
   return {
     title: t("brand.title"),

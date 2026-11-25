@@ -1,3 +1,7 @@
+/**
+ * 调试文案 — Zht。
+ * 调试插件的多语言文案中负责 Zht 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.toggle": "切換偵錯列",
   providerAriaLabel: "提供者效能診斷",

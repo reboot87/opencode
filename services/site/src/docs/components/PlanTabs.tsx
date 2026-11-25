@@ -1,3 +1,6 @@
+/**
+ * 文档站组件：计划标签页。
+ */
 import { For, type JSX } from "solid-js"
 import { SlotScope } from "./Slot"
 

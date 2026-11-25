@@ -1,3 +1,6 @@
+/**
+ * 视频编辑器组件：编辑器。
+ */
 import {
   createEffect,
   createMemo,

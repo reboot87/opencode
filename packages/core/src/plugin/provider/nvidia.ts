@@ -1,3 +1,7 @@
+/**
+ * NVIDIA 插件。
+ * 注册 NVIDIA NIM provider。
+ */
 import { Effect } from "effect"
 import { define } from "@opencode/plugin/effect/plugin"
 

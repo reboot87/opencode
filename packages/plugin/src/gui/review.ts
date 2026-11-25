@@ -1,3 +1,7 @@
+/**
+ * GUI 变更审查。
+ * 定义插件变更集（新增/删除/混合）的结构与审查逻辑。
+ */
 import type { FileDiffInfo } from "@opencode/client/promise"
 import { Contract } from "./core.js"
 import type { SessionRef, SessionScreen } from "./host-apis.js"

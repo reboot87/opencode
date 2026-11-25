@@ -1,3 +1,7 @@
+/**
+ * 会话回退（SessionRevert）。
+ * 把会话回退到历史某个消息点，管理实例与数据库状态。
+ */
 export * as SessionRevert from "./revert.js"
 
 import { and, asc, eq, gt } from "drizzle-orm"

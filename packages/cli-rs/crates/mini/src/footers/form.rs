@@ -1,3 +1,5 @@
+//! 精简版实现：表单。
+
 use indexmap::IndexMap;
 use opencode_api::generated::{FormAnswer, FormField, FormInfo, FormValue};
 use opencode_ui::form::{

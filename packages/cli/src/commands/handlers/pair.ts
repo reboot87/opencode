@@ -1,3 +1,7 @@
+/**
+ * pair 命令。
+ * 生成配对码用于把设备绑定到本机服务。
+ */
 import { cancel, confirm, isCancel, log } from "@clack/prompts"
 import { EOL } from "os"
 import { Effect, Option, Schedule } from "effect"

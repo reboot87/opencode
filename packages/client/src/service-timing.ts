@@ -1,3 +1,7 @@
+/**
+ * 服务计时。
+ * 记录并复用服务连接的时序信息。
+ */
 export type EnsureTiming = {
   readonly pollInterval: number
   readonly requestTimeout: number

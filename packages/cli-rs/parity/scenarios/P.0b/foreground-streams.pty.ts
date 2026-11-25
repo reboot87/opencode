@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：前台·流·伪终端。
+ *
+ * 规格编号：P.0b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A plugin's program in the foreground has the terminal on all three standard streams, so its stderr shows and a
 // program that asks `isatty` takes the interactive path; input it leaves unread is
 // dropped and does not reach the composer once the TUI is back. Rust only.

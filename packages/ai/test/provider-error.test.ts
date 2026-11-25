@@ -1,3 +1,10 @@
+/**
+ * 供应商·错误的测试。
+ *
+ * 被测模块：@opencode/ai/provider-error
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { isContextOverflow, isContextOverflowFailure, isRetryable } from "../src/effect.js"
 import { AIError, HttpContext, RateLimitError, TransportError } from "../src/schema/index.js"

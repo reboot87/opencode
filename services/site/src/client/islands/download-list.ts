@@ -10,6 +10,8 @@ import { $, $$, t, target } from "../dom"
  * does the Mobile page's pairing command (pair-panel.tsx). Every row's button takes the width of the
  * widest, once the web fonts have loaded (alignActions). The Desktop page's list marks this computer's
  * build once the browser has said which it is.
+ *
+ * 客户端交互岛：下载列表。
  */
 export default function downloadList(body: HTMLElement) {
   if ($("li[data-build]", body))

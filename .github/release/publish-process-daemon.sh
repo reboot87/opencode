@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：发布进程守护进程。
 . "$(dirname "$0")/lib.sh"
 
 version=${GITHUB_REF_NAME#process-daemon-v}

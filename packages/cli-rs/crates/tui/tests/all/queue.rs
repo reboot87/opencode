@@ -1,4 +1,6 @@
 //! Interact with queued prompts through the dock and message dialogs.
+//!
+//! 终端界面测试：队列。
 
 use crate::support::{self, Fake, Harness, Log, WAIT, deref_harness, user};
 

@@ -1,3 +1,7 @@
+/**
+ * 终端工具 — Watch。
+ * 终端界面的通用工具函数中负责 Watch 部分，提供该部分所需的实现与类型定义。
+ */
 import { watch, type WatchListener } from "node:fs"
 
 /**

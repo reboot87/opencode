@@ -1,3 +1,5 @@
+//! CLI 子命令：API。
+
 use opencode_api::client::Auth;
 use opencode_api::transport::{Request, Reqwest, Transport};
 use opencode_util::{bail, error};

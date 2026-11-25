@@ -1,3 +1,7 @@
+/**
+ * 渲染进程 — MigrationStatus。
+ * Electron 渲染进程的界面逻辑中负责 MigrationStatus 部分，提供该部分所需的实现与类型定义。
+ */
 import { OpenCode } from "@opencode/client/promise"
 import { useLanguage } from "@opencode/app/desktop"
 import { Loader } from "@opencode/ui/loader"

@@ -1,3 +1,7 @@
+/**
+ * Code Mode 工具目录。
+ * 定义工具、命名空间与清单（Inventory）类型，供沙箱代码检索可用工具。
+ */
 export * as CodeModeCatalog from "./catalog.js"
 
 import { Schema } from "effect"

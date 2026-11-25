@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：debug·配置·CLI。
+ *
+ * 规格编号：C.1。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `debug config`: the entries in server order with secrets, header values, and credential URLs
 // redacted (`debug/redact.ts`).
 import { defineCli } from "../../cli/run"

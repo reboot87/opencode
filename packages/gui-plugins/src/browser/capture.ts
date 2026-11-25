@@ -1,4 +1,8 @@
-/** Why the window cannot draw the tab's next frame, so a screenshot would never finish. */
+/**
+ * Why the window cannot draw the tab's next frame, so a screenshot would never finish.
+ *
+ * 浏览器插件中负责 Capture 部分：内置浏览器功能中与 Capture 相关的状态、交互与渲染逻辑。
+ */
 export type Undrawable = "minimized" | "hidden" | "stalled"
 
 /** How long a viewport or element capture may wait for the tab's frame before it gives up. */

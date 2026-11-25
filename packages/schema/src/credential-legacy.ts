@@ -1,3 +1,7 @@
+/**
+ * 旧版凭据类型。
+ * 兼容旧版本的凭据结构（仅用于迁移）。
+ */
 export * as CredentialLegacy from "./credential-legacy.js"
 
 import { Schema, SchemaTransformation } from "effect"

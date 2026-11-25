@@ -1,3 +1,7 @@
+/**
+ * 数据站组件 — ChartDataTable。
+ * 数据站点的界面组件中负责 ChartDataTable 部分，提供该部分所需的实现与类型定义。
+ */
 import { For } from "solid-js"
 
 // Text equivalent of a chart for screen readers and text-only clients. The wrapper hides it because tables

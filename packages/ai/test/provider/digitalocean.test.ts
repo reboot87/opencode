@@ -1,3 +1,10 @@
+/**
+ * DigitalOcean的测试。
+ *
+ * 被测模块：@opencode/ai/provider/digitalocean
+ *
+ * 覆盖各家供应商的接入实现：请求构造、响应解析与错误映射。
+ */
 import { describe, expect, test } from "bun:test"
 import { Effect } from "effect"
 import { ai, CacheHint } from "../../src/effect.js"

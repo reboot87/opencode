@@ -18,6 +18,8 @@ import { setSiteSetting, siteSettings } from "./settings"
  * scrolls away. On the development server, ⇧A or ⇧N turns the announcement on and off from any page
  * (bringing back a dismissed banner first), except while typing. Production renders the banner only
  * when the default settings turn it on (site.tsx).
+ *
+ * 站点界面组件：站点横幅。
  */
 export function SiteBanner() {
   const language = useLanguage()

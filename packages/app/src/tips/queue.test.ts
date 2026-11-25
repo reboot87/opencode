@@ -1,3 +1,7 @@
+/**
+ * 使用提示 — QueueTest。
+ * 面向新用户的使用提示中负责 QueueTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { selectTip, type Tip } from "./queue"
 

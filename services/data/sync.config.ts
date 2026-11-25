@@ -1,3 +1,6 @@
+/**
+ * 数据服务：同步配置。
+ */
 import { bindings, defineConfig, exports, triggers } from "cf/config"
 import { stage, stageAccount } from "./stage"
 

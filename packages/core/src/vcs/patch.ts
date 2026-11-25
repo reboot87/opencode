@@ -1,3 +1,7 @@
+/**
+ * 版本控制补丁生成。
+ * 生成带上下文的统一 diff 补丁，带补丁体积上限。
+ */
 export * as VcsPatch from "./patch.js"
 
 import { formatPatch, structuredPatch } from "diff"

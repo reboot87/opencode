@@ -1,3 +1,5 @@
+//! 存储层测试：收件箱竞态。
+
 use crate::common;
 
 use common::*;

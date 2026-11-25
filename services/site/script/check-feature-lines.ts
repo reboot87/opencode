@@ -1,4 +1,8 @@
 #!/usr/bin/env bun
+
+/**
+ * 站点构建脚本：检查特性行。
+ */
 // Checks that every feature description wraps to exactly two lines on a 16-inch MacBook Pro (a
 // 1728px wide window): the home page's feature grid and the product pages' key features (the
 // showcase row) and feature points. Run it

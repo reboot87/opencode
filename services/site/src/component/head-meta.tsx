@@ -34,6 +34,8 @@ const escapeHtml = escape as (value: unknown, attribute?: boolean) => string
  * changes in place, files the tag under the wrong key, so a later change can remove it from the
  * <head>. This mounts a fresh tag for each value instead. The server renders one tag and reads the
  * content only when it writes the <head>, after the page has rendered.
+ *
+ * 通用界面组件：头部·meta。
  */
 export function LiveMeta(props: { name: string; media?: string; content: string }) {
   // A function call, not a ternary in the prop: the compiler keeps it a lazy getter.

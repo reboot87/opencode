@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — SitePermissions。
+ * 内置浏览器功能的 GUI 插件中负责 SitePermissions 部分，提供该部分所需的实现与类型定义。
+ */
 // Which device and browser features a web page gets, and the decisions the user kept. Electron-free: the session
 // guard and each page's prompt driver call these, and the settings page lists the decisions through `BrowserSites`.
 import { Schema } from "effect"

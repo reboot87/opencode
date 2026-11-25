@@ -1,3 +1,10 @@
+/**
+ * 共享·事件的测试。
+ *
+ * 被测模块：@opencode/client/shared-events
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { SharedEvents } from "../src/shared-events"
 

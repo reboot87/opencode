@@ -1,3 +1,7 @@
+/**
+ * 配置来源（source）。
+ * 定义配置来源的读取操作与服务接口。
+ */
 export * as ConfigPluginSource from "./source.js"
 
 import { Directory, Document, type Entry } from "@opencode/schema/config"

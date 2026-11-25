@@ -5,6 +5,8 @@
  * - `local-blank`: the user's input left only line breaks or zero-width spaces, which the parser reads as an empty
  *   prompt. The store's empty echo of that input keeps them, so Shift+Enter on an empty prompt and deleting its last
  *   character keep their line and native undo; any later empty update renders.
+ *
+ * 输入编辑器中负责 Machine 部分：输入区文本编辑器中与 Machine 相关的状态、交互与渲染逻辑。
  */
 export type EditorSyncState = { readonly status: "synced" } | { readonly status: "local-blank" }
 

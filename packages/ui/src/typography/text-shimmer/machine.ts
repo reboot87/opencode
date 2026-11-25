@@ -1,4 +1,8 @@
-/** Matches the opacity crossfade in `text-shimmer.css`; the sweep keeps running until the shimmer layer has faded. */
+/**
+ * Matches the opacity crossfade in `text-shimmer.css`; the sweep keeps running until the shimmer layer has faded.
+ *
+ * 微光文本的状态机：管理微光流动的时机与暂停。
+ */
 export const TEXT_SHIMMER_SWAP_MS = 220
 
 /**

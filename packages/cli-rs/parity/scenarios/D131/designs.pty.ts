@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：designs·伪终端。
+ *
+ * 规格编号：D131。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // D131: with the config a release starts with. Since #64988 TS draws the new designs there too, the only ones Rust
 // draws (X02): the palette searches in its title row ("Search commands") and `/debug` copies with `c` in both.
 import { definePty } from "../../pty/run"

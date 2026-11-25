@@ -1,3 +1,7 @@
+/**
+ * SSH 插件 — Command。
+ * 远程主机管理的 GUI 插件中负责 Command 部分，提供该部分所需的实现与类型定义。
+ */
 import { Effect, PlatformError, Predicate, Schema, Stream } from "effect"
 import { ChildProcess, ChildProcessSpawner } from "effect/process"
 import { RemoteCli } from "./remote-cli"

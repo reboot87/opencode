@@ -23,6 +23,8 @@ const loadStage = import.meta.env.SSR ? undefined : () => import("./stage")
  * The 404 page's arcade in three.js: the same story as the image version (arcade/arcade.tsx), told
  * with a modelled cabinet in a projected photograph of the room. It falls back to the image version
  * without WebGL2, or when the GPU cannot keep up even at the lite tier.
+ *
+ * 3D 街机场景组件：`arcade3d`。
  */
 export function Arcade3D() {
   const [fallback, setFallback] = createSignal(false)

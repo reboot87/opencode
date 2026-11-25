@@ -1,3 +1,10 @@
+/**
+ * v1·隔离的测试。
+ *
+ * 被测模块：@opencode/schema/v1-isolation
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import path from "node:path"
 import { LegacyEventV1 } from "../src/legacy-event.js"

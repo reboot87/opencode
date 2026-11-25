@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：zed·app。
+ *
+ * 规格编号：E.5。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Zed editor context (P08): in a Zed terminal with no IDE server, the TUI reads the active editor and its selections
 // from Zed's database, here a temporary one whose only workspace is `/`. The byte range 18..29 runs from line 2 into
 // line 3, and an `index.*` file shows with its directory.

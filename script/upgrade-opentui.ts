@@ -1,5 +1,9 @@
 #!/usr/bin/env bun
 
+/**
+ * 仓库脚本：升级·OpenTUI。
+ */
+
 import path from "node:path"
 
 const args = process.argv.slice(2)

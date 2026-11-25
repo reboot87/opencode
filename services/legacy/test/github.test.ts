@@ -1,3 +1,6 @@
+/**
+ * 遗留服务测试的测试用例：GitHub。
+ */
 import { describe, expect, test } from "bun:test"
 import { parseRepositoryClaim } from "../src/github"
 

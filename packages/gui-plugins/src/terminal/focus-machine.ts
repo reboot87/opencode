@@ -2,6 +2,8 @@
  * The window's one terminal focus request. `pending` waits for a terminal being created; `target` waits for that
  * terminal to show and take focus. `request` is the last request handed out, so an answer for an older one is stale.
  * `overlay` marks a request started from a dialog or menu: closing it returns focus once, which does not cancel.
+ *
+ * 终端插件中负责 FocusMachine 部分：内嵌终端中与 FocusMachine 相关的状态、交互与渲染逻辑。
  */
 export type FocusState =
   | { readonly status: "idle"; readonly request: number }

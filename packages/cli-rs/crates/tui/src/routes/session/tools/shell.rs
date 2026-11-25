@@ -1,4 +1,6 @@
 //! Shell tool view with paged output for named shells.
+//!
+//! 终端界面路由：Shell。
 
 use opencode_api::generated::ShellID;
 use opencode_ui::motion::Spinner;

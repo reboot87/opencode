@@ -1,3 +1,7 @@
+/**
+ * SSH 插件 — MainMachineTest。
+ * 远程主机管理的 GUI 插件中负责 MainMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { Schema } from "effect"
 import { SshStart, type SshConfig } from "./contract"

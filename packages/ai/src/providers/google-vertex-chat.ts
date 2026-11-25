@@ -1,3 +1,7 @@
+/**
+ * Google Vertex AI Chat（独立）provider 门面。
+ * 以独立入口提供 Vertex 的 chat 能力，复用 Vertex 共享协议与鉴权。
+ */
 import type { ProviderPackage } from "../provider-package.js"
 import { OpenAIChat } from "../protocols/openai-chat.js"
 import { Route } from "../route/client.js"

@@ -1,3 +1,6 @@
+/**
+ * V2 文档站：rehype·表格滚动。
+ */
 interface HastNode {
   type: string
   tagName?: string

@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — MotionSpringTest。
+ * 浏览器环境下的测试中负责 MotionSpringTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { useSpring } from "@opencode/ui/motion-spring"
 import { createEffect, createRoot, createSignal } from "solid-js"

@@ -11,6 +11,8 @@ import type { V1Locale } from "../lib/v1-navigation"
  * status, the theme switch with the page's Markdown, the copyright and the wordmark. The latest docs
  * are English; the V1 docs' pages pick their language in a select beside the theme switch. client.ts
  * fills in the status and drives the theme switch and the select.
+ *
+ * 文档站组件：文档页脚。
  */
 export function DocsFooter(props: {
   markdown?: string

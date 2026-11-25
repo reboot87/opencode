@@ -13,6 +13,8 @@ import { siteSettings } from "./settings"
  * "Works great with OpenCode": Anomaly's apps in one row (icon, name and category), the same on
  * every product page. On phones the row scrolls sideways. The `companionStyle` setting swaps the
  * ruled grid for grey tiles or a ruled list.
+ *
+ * 站点界面组件：配套资源。
  */
 export function Companions() {
   const i18n = useI18n()

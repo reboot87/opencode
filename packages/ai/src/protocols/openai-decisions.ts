@@ -1,3 +1,7 @@
+/**
+ * OpenAI 决策模型协议。
+ * 结构化判断/打分请求的 provider 实现。
+ */
 import { Effect, Schema } from "effect"
 import {
   DecisionResponse,

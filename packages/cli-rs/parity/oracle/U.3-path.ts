@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：U.3·路径。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-ORACLE for crates/ui/src/path.rs: the TUI's formatPath and abbreviateHome (packages/tui/src/util/path-format.ts)
 // over POSIX and Windows paths. Writes parity/fixtures/U.3/path.json; crates/ui/tests/all/dialogs.rs expects the same
 // strings.

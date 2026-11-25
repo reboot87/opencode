@@ -1,3 +1,7 @@
+/**
+ * 二分查找测试。
+ * 验证按 id 的二分查找在各种边界下返回正确结果。
+ */
 import { describe, expect, test } from "bun:test"
 import { Binary } from "./binary.js"
 

@@ -1,3 +1,7 @@
+/**
+ * Moonshot（月之暗面 Kimi）provider 门面。
+ * 封装 chat / messages / responses 能力，提供模型工厂与鉴权。
+ */
 import { Effect, Schema } from "effect"
 import type { ProviderPackage } from "../provider-package.js"
 import { AnthropicMessages } from "../protocols/anthropic-messages.js"

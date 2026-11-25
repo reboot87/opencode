@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：行内·math·app。
+ *
+ * 规格编号：P.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Markdown math in an assistant message: inline `$…$` and `\(…\)`, display `$$…$$` and `\[…\]`, a `latex` fence,
 // and dollars that are not math. TS draws only the fence as math and the rest as text; Rust draws the math too
 // (`parity/deviations/P2-latex-inline.md`). The fence and the dollars that are not math are equal.

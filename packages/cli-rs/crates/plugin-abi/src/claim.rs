@@ -9,6 +9,8 @@
 //! calls the view again, also after an earlier mount fell back to the host's row. A tool call's mounts share their
 //! [`v2::MountId::key`], the call's ID, with a new generation each: state a plugin keeps for a call belongs under the
 //! key, not under the whole mount ID. A fence's key is new whenever its Markdown is built.
+//!
+//! 插件 ABI 边界：`claim`。
 
 use std::rc::Rc;
 

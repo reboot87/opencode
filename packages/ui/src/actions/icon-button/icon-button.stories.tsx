@@ -1,3 +1,7 @@
+/**
+ * 图标按钮 — IconButtonStories。
+ * 仅含图标的按钮组件中负责 IconButtonStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, For } from "solid-js"
 import { Icon } from "@opencode/ui/icon"
 import { iconNames } from "@opencode/ui/icons/catalog"

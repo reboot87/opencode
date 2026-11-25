@@ -1,4 +1,6 @@
 //! Transcript messages, notices, errors, retries, and interaction with their rows.
+//!
+//! 终端界面测试：消息。
 
 use crate::support::{self, Fake, Harness, Log, WAIT, deref_harness, user};
 

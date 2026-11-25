@@ -1,5 +1,9 @@
 #!/usr/bin/env bun
 
+/**
+ * 仓库脚本：发布。
+ */
+
 import { $ } from "bun"
 import { OpenCode } from "@opencode/client"
 import { Service } from "@opencode/client/service"

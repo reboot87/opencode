@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — Support。
+ * 终端界面的测试中负责 Support 部分，提供该部分所需的实现与类型定义。
+ */
 import { NodeFileSystem } from "@effect/platform-node-shared"
 import { Cause, Effect, Exit } from "effect"
 import { HttpBody, HttpClient, HttpClientRequest } from "effect/http"

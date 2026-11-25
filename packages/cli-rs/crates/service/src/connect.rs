@@ -1,5 +1,7 @@
 //! Resolves an explicit server, standalone process, or shared service. Only the client's own channel is eligible for
 //! version replacement.
+//!
+//! 服务层：`connect`。
 
 use opencode_api::error::Error as ApiError;
 use opencode_api::transport::Transport;

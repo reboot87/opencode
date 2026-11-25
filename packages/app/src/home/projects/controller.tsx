@@ -1,3 +1,7 @@
+/**
+ * 主页项目 — Controller。
+ * 主页中项目列表的展示中负责 Controller 部分，提供该部分所需的实现与类型定义。
+ */
 import { useDirectoryPicker } from "@/workspaces/selection/picker"
 import { useServerActionsController } from "@/servers/registry/controller"
 import { useSettingsCommand } from "@/settings/command"

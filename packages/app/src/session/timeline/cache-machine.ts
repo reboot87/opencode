@@ -2,6 +2,8 @@
  * One kept session view. Session retention evicts the transcripts of closed sessions, and a detached view would still
  * hold the old transcript and its DOM, so a view whose transcript once loaded and is empty now goes once it is not
  * selected, whichever happened first. `hadTranscript`: a view that never had one, such as a new empty session, stays.
+ *
+ * 会话时间线中负责 CacheMachine 部分：会话消息时间线中与 CacheMachine 相关的状态、交互与渲染逻辑。
  */
 export type TimelineCacheEntryState =
   | { readonly status: "selected"; readonly hadTranscript: boolean }

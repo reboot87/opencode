@@ -1,3 +1,7 @@
+/**
+ * 服务端同步 — Connection。
+ * 与服务端保持数据一致的同步机制中负责 Connection 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, onCleanup, untrack, type Accessor } from "solid-js"
 import type { ServerConnectionStatus } from "../client"
 import { transitionConnectionSync, type ConnectionSyncEvent, type ConnectionSyncState } from "./machine"

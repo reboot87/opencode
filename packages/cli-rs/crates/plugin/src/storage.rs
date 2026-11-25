@@ -1,6 +1,8 @@
 //! An undotted key keeps its TS name `plugin.{id}.{key}`. Dotted keys use `..` as the separator so
 //! `(acme.cloud, token)` and `(acme, cloud.token)` cannot collide. A dotted key's TS name is not read: it is also
 //! another plugin's undotted key's name.
+//!
+//! 插件系统：`storage`。
 
 use crate::Host;
 

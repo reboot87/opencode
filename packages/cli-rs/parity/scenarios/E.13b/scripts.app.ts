@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：脚本·app。
+ *
+ * 规格编号：E.13b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Running work (#64956, #64790): the prompt footer counts the session's background Code Mode scripts and the
 // subagents that own running jobs ("2 scripts · 1 subagent"), and Down opens the picker on its first busy tab,
 // Scripts. A script is named by the first line of its `execute` code, else its title. Down moves, Ctrl+D cancels a

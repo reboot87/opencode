@@ -1,3 +1,7 @@
+/**
+ * Storybook 配置 — CurrentSessionScenarios。
+ * Storybook 的构建与主题配置中负责 CurrentSessionScenarios 部分，提供该部分所需的实现与类型定义。
+ */
 import type { JsonValue, SessionMessageAssistant, SessionMessageAssistantTool } from "@opencode/client/promise"
 import type { SessionDocument } from "../document"
 import { CURRENT_SESSION_ID, STORY_MODEL, STORY_TIME, thinkingDocument } from "./current-session-fixtures"

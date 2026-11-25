@@ -1,3 +1,10 @@
+/**
+ * 网页搜索·夹具的测试辅助模块。
+ *
+ * 被测模块：@opencode/core/plugin/websearch-fixture
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { Effect, Layer } from "effect"
 import { HttpClient, HttpClientResponse } from "effect/http"
 import { AppNodeBuilder } from "@opencode/core/effect/app-node-builder"

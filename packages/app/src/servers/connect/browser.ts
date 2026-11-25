@@ -1,3 +1,7 @@
+/**
+ * 连接服务端 — Browser。
+ * 添加与连接远程服务端中负责 Browser 部分，提供该部分所需的实现与类型定义。
+ */
 import { serverAddress } from "./pairing"
 
 export function isMixedContent(page: string, address: string) {

@@ -1,3 +1,7 @@
+/**
+ * 搜索列表 — SearchList。
+ * 带搜索过滤的列表组件中负责 SearchList 部分，提供该部分所需的实现与类型定义。
+ */
 import {
   createContext,
   createEffect,

@@ -1,3 +1,7 @@
+/**
+ * Mistral 工具调用 ID 工具。
+ * 处理 Mistral 工具调用 ID 的格式与映射。
+ */
 import type { LLMRequest } from "../../schema/index.js"
 
 export const valid = /^[A-Za-z0-9]{9}$/

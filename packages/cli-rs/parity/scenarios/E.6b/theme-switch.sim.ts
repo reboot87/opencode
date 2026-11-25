@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：主题·switch·模拟。
+ *
+ * 规格编号：E.6b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A reply streams a Rust fence, holds inside it, and the theme changes through `/themes` while the fence streams and
 // again after the reply completes. TS restyles in place; Rust remounts the route, and OpenTUI #2091 restyles a kept
 // code view's highlight without parsing again. Both show the fence and the table in each new theme.

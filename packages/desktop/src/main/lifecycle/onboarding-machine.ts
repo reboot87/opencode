@@ -2,6 +2,8 @@
  * First-launch onboarding as main sees it, for every window at once. The first window to finish claims the run before
  * it creates the default project, so a second window that finishes meanwhile creates nothing and opens no draft. A
  * failed run releases the claim for a retry.
+ *
+ * 引导生命周期的状态机：管理首次启动引导的触发与跳过。
  */
 export type MainOnboardingState =
   /** Startup has not decided yet whether this is a first launch. */

@@ -1,3 +1,7 @@
+/**
+ * webfetch 工具。
+ * 抓取网页并转为 Markdown 的工具，限制响应体积与超时。
+ */
 export * as WebFetchTool from "./webfetch.js"
 
 import type { Context } from "@opencode/plugin/effect/plugin"

@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — Revert。
+ * 会话主界面的视图与状态中负责 Revert 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageUser } from "@opencode/client/promise"
 import { toaster } from "@opencode/ui/toast"
 import { createMemo, createSignal, onCleanup, untrack } from "solid-js"

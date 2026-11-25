@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：go·模型。
+ */
 import { describe, expect, test } from "bun:test"
 // Every language, as the Worker registers them at startup.
 import "../src/i18n/server"

@@ -1,3 +1,10 @@
+/**
+ * 参考·指令的测试。
+ *
+ * 被测模块：@opencode/core/reference-instructions
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import { Effect, Layer } from "effect"
 import { AppNodeBuilder } from "@opencode/core/effect/app-node-builder"

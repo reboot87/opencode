@@ -1,4 +1,6 @@
 //! Drive terminal-environment uploads through the root command's TUI arguments.
+//!
+//! 终端界面测试：根。
 
 use crate::support;
 

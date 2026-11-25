@@ -1,3 +1,7 @@
+/**
+ * 通用设置 — Controllers。
+ * 语言、启动行为等通用设置中负责 Controllers 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, onMount, untrack, type Accessor } from "solid-js"
 import type { ConfigShellOption } from "@opencode/client/promise"
 import type { ColorScheme } from "@opencode/ui/theme/context"

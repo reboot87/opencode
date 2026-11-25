@@ -1,4 +1,6 @@
 //! Check built-in plugin fetches through rendered results, errors, and mount cancellation.
+//!
+//! 终端界面测试：插件抓取。
 
 use crate::support::{self, DIRECTORY, Harness, Seen};
 

@@ -1,3 +1,7 @@
+/**
+ * 会话头部 — FitMachineTest。
+ * 会话界面顶部的标题与操作区中负责 FitMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   headerFitCollapse,

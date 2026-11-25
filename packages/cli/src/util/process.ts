@@ -1,3 +1,7 @@
+/**
+ * 自身进程信息。
+ * 解析当前进程的入口与自身命令名。
+ */
 import path from "node:path"
 
 const entrypoint = process.argv[1] ? path.resolve(process.argv[1]) : undefined

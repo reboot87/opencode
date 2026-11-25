@@ -1,3 +1,8 @@
+/**
+ * 管道示例：TUI。
+ *
+ * 管道示例：演示插件管道各阶段的串联方式。
+ */
 // JS counterpart to `../twin.rs` for comparing memoized card views and content handles.
 
 const CARDS = 6

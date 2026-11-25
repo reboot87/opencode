@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：分叉·CLI。
+ *
+ * 规格编号：C.10。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `-s ses_old --fork --archived --format json`: the session is forked, and the fork archived.
 import { defineCli } from "../../cli/run"
 import { server, session, textStep } from "./fixture"

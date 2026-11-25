@@ -1,4 +1,6 @@
 //! The updates of `session/update`, serialized straight to the connection's buffer, each field in its wire order.
+//!
+//! ACP 协议实现：更新。
 
 use std::borrow::Cow;
 use std::sync::Arc;

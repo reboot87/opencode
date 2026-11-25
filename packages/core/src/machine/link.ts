@@ -1,3 +1,7 @@
+/**
+ * 机器链路协议。
+ * 实现机器间的握手与链路协议（含协议版本协商）。
+ */
 export * as Link from "./link.js"
 
 import { Effect, Schema } from "effect"

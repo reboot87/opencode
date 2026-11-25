@@ -1,3 +1,10 @@
+/**
+ * 契约·hygiene的测试。
+ *
+ * 被测模块：@opencode/schema/contract-hygiene
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import path from "node:path"
 import { DateTime, Schema } from "effect"

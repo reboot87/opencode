@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：U.1·主题。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-ORACLE for U.1: resolves every built-in theme in every mode it supports, the generated `system` theme over a few
 // terminal palettes, the V1 built-ins and the `system` theme again as mini parses them, and a few broken custom themes,
 // through the TypeScript TUI's own functions. Writes parity/fixtures/U.1/tokens.json;

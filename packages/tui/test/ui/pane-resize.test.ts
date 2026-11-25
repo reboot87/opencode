@@ -1,3 +1,7 @@
+/**
+ * UI 测试 — PaneResizeTest。
+ * 终端通用 UI 组件的测试中负责 PaneResizeTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, beforeEach, expect, setSystemTime, test } from "bun:test"
 import { MouseButton, MouseEvent } from "@opentui/core"
 import { createRoot, createSignal } from "solid-js"

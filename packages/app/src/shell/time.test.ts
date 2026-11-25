@@ -1,3 +1,7 @@
+/**
+ * 应用外壳 — TimeTest。
+ * 浏览器应用的窗口框架与路由外壳中负责 TimeTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, expect, setSystemTime, test } from "bun:test"
 import { getRelativeTime } from "./time"
 

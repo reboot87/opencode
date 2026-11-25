@@ -1,3 +1,8 @@
+/**
+ * 位置基准脚本。
+ *
+ * 核心路径的性能基准脚本，用于观测关键操作的耗时分布。
+ */
 // The Location service graph, loaded and kept the way a server keeps one per directory a client opens.
 // strobe's script host loads this module once per block and calls its exports (perf/location.bench.ts).
 // Everything runs against a temporary home: its own global folders and database, no filesystem

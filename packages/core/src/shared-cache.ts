@@ -1,3 +1,7 @@
+/**
+ * 共享缓存。
+ * 带刷新间隔（10 分钟）的跨调用缓存。
+ */
 export * as SharedCache from "./shared-cache.js"
 
 import { Cause, Clock, Context, Duration, Effect, Exit, Fiber, FiberSet, Layer, Schedule } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * 快捷键 — KeybindStories。
+ * 展示按键绑定的组件中负责 KeybindStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { For } from "solid-js"
 import { Keybind, type KeybindProps } from "./keybind"
 

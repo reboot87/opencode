@@ -1,4 +1,6 @@
 //! Atomic prompt extmarks for file, agent, and skill mentions.
+//!
+//! 终端输入提示：片段。
 
 use opencode_api::generated::{PromptAgentAttachment, PromptInputSkillAttachment};
 use opentui::widget::{ExtmarkId, ExtmarkOptions};

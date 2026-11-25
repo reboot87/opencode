@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — SessionRetry。
+ * 跨场景复用的通用 UI 组件中负责 SessionRetry 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, on, onCleanup, Show } from "solid-js"
 import type { SessionStatus } from "@opencode/client/promise"
 import { useI18n } from "@opencode/ui/context/i18n"

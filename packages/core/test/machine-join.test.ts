@@ -1,3 +1,10 @@
+/**
+ * 状态机·连接的测试。
+ *
+ * 被测模块：@opencode/core/machine-join
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { createPublicKey, verify } from "node:crypto"
 import { chmod, mkdir, readFile, stat, writeFile } from "node:fs/promises"

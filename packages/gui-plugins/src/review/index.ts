@@ -1,3 +1,7 @@
+/**
+ * 审查插件 — Index 出口。
+ * 集中导出 审查插件 中 Index 相关的实现、组件与类型。
+ */
 import { builtinCatalog } from "@opencode/plugin/gui/builtin"
 import { Schema } from "effect"
 import { Plugin } from "@opencode/plugin/gui"

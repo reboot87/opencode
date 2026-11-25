@@ -1,3 +1,7 @@
+/**
+ * 国际化 — Sr。
+ * 多语言文案资源中负责 Sr 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "ui.messagePart.tools.used.few": "{{tools}} коришћен {{count}} пута",
   "ui.common.fileCount.few": "{{count}} фајла",

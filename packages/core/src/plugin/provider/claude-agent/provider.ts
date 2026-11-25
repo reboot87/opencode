@@ -1,3 +1,7 @@
+/**
+ * Claude Agent provider 定义。
+ * 定义 Claude Agent provider 的 ID、npm 包与模型目录来源。
+ */
 export * as ClaudeProvider from "./provider.js"
 
 import type { AccountInfo } from "@anthropic-ai/claude-agent-sdk"

@@ -1,3 +1,8 @@
+/**
+ * old·协议·服务测试夹具。
+ *
+ * 为 CLI 测试提供配置文件与工作区样例。
+ */
 import { mkdir, rename, rm } from "node:fs/promises"
 import path from "node:path"
 

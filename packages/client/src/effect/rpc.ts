@@ -1,3 +1,7 @@
+/**
+ * Effect RPC 客户端。
+ * 定义 Effect 风格的 RPC 客户端接口与调用选项。
+ */
 export * as RpcClientRuntime from "./rpc.js"
 
 import type { Rpc } from "@opencode/schema/rpc"

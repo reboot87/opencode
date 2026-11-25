@@ -1,3 +1,7 @@
+/**
+ * 国际化 — Fr。
+ * 多语言文案资源中负责 Fr 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "ui.common.fileCount.one": "{{count}} fichier",
   "ui.common.fileCount.other": "{{count}} fichiers",

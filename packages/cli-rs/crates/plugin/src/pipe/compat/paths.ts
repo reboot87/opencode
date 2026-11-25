@@ -1,3 +1,8 @@
+/**
+ * 管道实现：路径。
+ *
+ * 管道实现的 TypeScript 兼容适配层。
+ */
 // Compare canonical paths for containment. On Windows, account for verbatim prefixes, short names and case-
 // insensitive drive letters.
 import nodePath from "node:path"

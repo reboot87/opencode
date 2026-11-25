@@ -1,3 +1,7 @@
+/**
+ * Bedrock 提示词缓存工具。
+ * 把缓存断点转成 Bedrock 的 cachePoint 块。
+ */
 import { Schema } from "effect"
 import { CacheTTL, type CacheHint, type LLMRequest } from "../../schema/index.js"
 import { newBreakpoints, take } from "./cache.js"

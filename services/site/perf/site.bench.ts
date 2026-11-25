@@ -1,3 +1,6 @@
+/**
+ * 站点性能脚本：站点基准。
+ */
 // Main-thread work on the site's pages and interactions, for strobe (https://github.com/anomalyco/strobe).
 // Each variant is the production build (script/build.ts) served in workerd by perf/serve.ts.
 //

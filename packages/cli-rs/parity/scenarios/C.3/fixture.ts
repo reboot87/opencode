@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：夹具。
+ *
+ * 规格编号：C.3。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Shared routes for the C.3 `stats` cases. The fake server answers with fixed statistics whatever the
 // query says; the request log shows the query each client sent.
 import type { Route } from "../../lib/fake-server"

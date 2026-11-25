@@ -1,3 +1,7 @@
+/**
+ * 工具展示 — FileRuns。
+ * 工具调用与结果的展示组件中负责 FileRuns 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageAssistantTool } from "@opencode/client/promise"
 import type { FileFact } from "../timeline/facts"
 

@@ -1,3 +1,10 @@
+/**
+ * 录制的·驱动的测试辅助模块。
+ *
+ * 被测模块：@opencode/ai/recorded-runner
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import type { HttpRecorder } from "@opencode/http-recorder"
 import { test, type TestOptions } from "bun:test"
 import { Effect, type Layer } from "effect"

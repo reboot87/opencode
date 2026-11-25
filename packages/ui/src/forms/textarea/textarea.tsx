@@ -1,3 +1,7 @@
+/**
+ * 多行输入 — Textarea。
+ * 多行文本输入组件中负责 Textarea 部分，提供该部分所需的实现与类型定义。
+ */
 import { type ComponentProps, splitProps } from "solid-js"
 import "./textarea.css"
 

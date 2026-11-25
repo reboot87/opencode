@@ -1,4 +1,6 @@
 //! Sends generated calls with the client's base URL, credentials and per-call headers.
+//!
+//! API 客户端：客户端。
 
 use std::sync::Arc;
 

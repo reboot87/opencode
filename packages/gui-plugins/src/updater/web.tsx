@@ -1,3 +1,7 @@
+/**
+ * 更新插件 — Web。
+ * 应用更新提示的 GUI 插件中负责 Web 部分，提供该部分所需的实现与类型定义。
+ */
 import { Icon } from "@opencode/ui/icon"
 import { showToast, toaster } from "@opencode/ui/toast"
 import { createSignal, lazy, onCleanup, Suspense } from "solid-js"

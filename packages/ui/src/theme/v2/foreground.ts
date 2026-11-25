@@ -1,3 +1,7 @@
+/**
+ * UI 主题（v2） — Foreground。
+ * 第二版设计令牌定义中负责 Foreground 部分，提供该部分所需的实现与类型定义。
+ */
 import { blend, contrastRatio, hexToOklch, shift } from "../color"
 import { mapV2Semantics } from "./mapping"
 import type { ColorValue, HexColor, V2ColorValue } from "../types"

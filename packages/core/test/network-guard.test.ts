@@ -1,3 +1,10 @@
+/**
+ * network·守卫的测试。
+ *
+ * 被测模块：@opencode/core/network-guard
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { Effect, Layer } from "effect"
 import { FetchHttpClient, HttpClient, HttpClientResponse } from "effect/http"

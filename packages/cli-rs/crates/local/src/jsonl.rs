@@ -1,5 +1,7 @@
 //! Prompt history, stash and frecency files have other writers that do not take our locks. Append on save, trim only
 //! on load and base rewrites on the current file, never a cached copy. Keep unknown prompt fields.
+//!
+//! 本地配置与路径：`jsonl`。
 
 use std::fs;
 use std::io::{self, Read, Seek, SeekFrom, Write};

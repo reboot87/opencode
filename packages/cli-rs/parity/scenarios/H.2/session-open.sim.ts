@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：会话·打开·模拟。
+ *
+ * 规格编号：H.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // P-TUI version of `H.2/session-open.app.ts`: `-s <id>` opens a session whose first turn ran on the server, then
 // a second prompt streams its reply through the real event stream: the first part while the step runs, the rest
 // after it.

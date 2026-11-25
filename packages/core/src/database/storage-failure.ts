@@ -1,3 +1,7 @@
+/**
+ * 存储故障分类。
+ * 把 SQLite 的致命结果码（BUSY/LOCKED/READONLY/磁盘满等）归类为「存储不可用」，并给出不暴露具体引擎的提示。
+ */
 export * as StorageFailure from "./storage-failure.js"
 
 import { resultCode } from "#sqlite"

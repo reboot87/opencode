@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — PluginToastTest。
+ * 终端界面的测试中负责 PluginToastTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import type { Route } from "@opencode/plugin/tui/context"
 import { createPluginContext, type Registry, type usePluginHost } from "../src/plugin/api"

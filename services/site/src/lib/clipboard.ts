@@ -1,6 +1,8 @@
 /**
  * Copies text with a hidden text field and the old copy command, keeping the focus where it was:
  * the fallback for embedded browsers that block the Clipboard API.
+ *
+ * 站点共享逻辑：剪贴板。
  */
 export function copySelection(text: string) {
   const active = document.activeElement instanceof HTMLElement ? document.activeElement : undefined

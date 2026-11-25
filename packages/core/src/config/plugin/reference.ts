@@ -1,3 +1,7 @@
+/**
+ * 引用配置插件。
+ * 处理配置中的引用（reference）并应用到 Location。
+ */
 export * as ConfigReferencePlugin from "./reference.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

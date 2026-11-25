@@ -1,3 +1,7 @@
+/**
+ * 输入编辑器 — Dom。
+ * 输入区文本编辑器的实现中负责 Dom 部分，提供该部分所需的实现与类型定义。
+ */
 import { isAttachment } from "../prompt-parts"
 import type { ComposerPrompt } from "../types"
 

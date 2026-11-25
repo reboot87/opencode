@@ -1,3 +1,7 @@
+/**
+ * Code Mode 包出口。
+ * 集中导出 Code Mode 的公共 API。
+ */
 export * as CodeMode from "./codemode/codemode.js"
 export * as Extension from "./codemode/extension.js"
 export * as Namespace from "./codemode/namespace.js"

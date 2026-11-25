@@ -1,4 +1,6 @@
 //! Piped stdin supplies the initial prompt; subsequent keystrokes come from the terminal.
+//!
+//! 精简版实现：标准输入。
 
 use std::io::{IsTerminal, Read};
 

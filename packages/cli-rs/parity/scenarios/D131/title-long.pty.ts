@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：标题·long·伪终端。
+ *
+ * 规格编号：D131。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // D131: a generated title longer than 40 characters reaches the terminal title cut to 37 and an ellipsis.
 import { definePty } from "../../pty/run"
 import { config, masks, server } from "./session"

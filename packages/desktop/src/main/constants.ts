@@ -1,3 +1,7 @@
+/**
+ * 桌面端主进程 — Constants。
+ * Electron 主进程的核心逻辑中负责 Constants 部分，提供该部分所需的实现与类型定义。
+ */
 import { app } from "electron"
 import { resolveIdentity, type Channel } from "./identity"
 

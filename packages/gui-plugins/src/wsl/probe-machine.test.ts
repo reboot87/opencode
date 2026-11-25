@@ -1,3 +1,7 @@
+/**
+ * WSL 插件 — ProbeMachineTest。
+ * Windows Subsystem for Linux 相关的 GUI 插件中负责 ProbeMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { Schema } from "effect"
 import { WslServersState } from "./contract"

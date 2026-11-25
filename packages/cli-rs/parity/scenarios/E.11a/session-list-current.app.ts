@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：会话·列表·current·app。
+ *
+ * 规格编号：E.11a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The session list opened from a session that is not the newest (DLG16): the selection starts on the first row, not
 // on the current session (`focusCurrent={false}`).
 import { assistant, defineApp, HOME_PLACEHOLDER, session, user } from "../../lib/app"

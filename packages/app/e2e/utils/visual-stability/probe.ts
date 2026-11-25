@@ -1,3 +1,7 @@
+/**
+ * 视觉稳定性工具 — Probe。
+ * 比较界面渲染稳定性差异的辅助函数中负责 Probe 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Page } from "@playwright/test"
 import { startVisualCapture, stopVisualCapture, type VisualCapture } from "./capture"
 import type { VisualMarker, VisualObservation, VisualProbeResult } from "./model"

@@ -1,3 +1,7 @@
+/**
+ * 项目头像 — ProjectAvatarStories。
+ * 项目标识头像组件中负责 ProjectAvatarStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { For } from "solid-js"
 import image from "../../assets/favicon/apple-touch-icon.png"
 import { ProjectAvatar, PROJECT_AVATAR_VARIANTS, type ProjectAvatarProps } from "./project-avatar"

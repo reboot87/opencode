@@ -1,3 +1,7 @@
+/**
+ * Claude 同步补齐。
+ * 计算上次同步后缺失的提示词片段。
+ */
 export * as CatchUp from "./catch-up.js"
 
 import type { LanguageModelV3Prompt } from "@ai-sdk/provider"

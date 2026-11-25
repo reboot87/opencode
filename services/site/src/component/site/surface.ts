@@ -7,6 +7,8 @@
  * mostly opaque. Nothing
  * decisive (the page itself) leaves the attribute off, so the page theme decides. It checks again
  * when something could have changed behind a mark, and never while nothing does.
+ *
+ * 站点界面组件：表面。
  */
 export function watchSurfaces(marks: () => HTMLElement[]) {
   const check = () =>

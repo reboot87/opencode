@@ -1,5 +1,7 @@
 // Runs only in a pane document's sandboxed isolated preload world. No function or IPC channel is exposed to
 // page JS. The native keys belong to this document (including in an out-of-process child), never to a URL.
+// 浏览器扩展接口脚本：帧·styles。
+// 浏览器扩展接口脚本：帧·styles。
 if (process.type === "renderer" && process.contextIsolated && process.sandboxed && /^(https?:|about:)/.test(location.protocol)) {
   const { ipcRenderer, webFrame } = require("electron")
   const sheets = new Map()

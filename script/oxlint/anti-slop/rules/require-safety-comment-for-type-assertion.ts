@@ -78,7 +78,10 @@ function hasSafetyComment(
   }
 }
 
-/** Require every non-const type assertion to state the invariant TypeScript cannot express. */
+/** Require every non-const type assertion to state the invariant TypeScript cannot express.
+ *
+ * Oxlint 规则：要求安全注释·for·类型·assertion。
+ */
 export const requireSafetyCommentForTypeAssertionRule = defineRule({
   meta: {
     type: "problem",

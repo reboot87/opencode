@@ -1,4 +1,6 @@
 //! Layout and focus for the main route and its adjacent panes.
+//!
+//! 终端界面入口。
 
 pub mod layout;
 pub mod resize;

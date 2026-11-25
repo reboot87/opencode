@@ -1,3 +1,10 @@
+/**
+ * 位置·活动的测试。
+ *
+ * 被测模块：@opencode/core/location-activity
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import type { FileSystem } from "@opencode/core/filesystem"
 import { describe, expect } from "bun:test"
 import { Context, Deferred, Duration, Effect, Fiber, Layer, LayerMap, RcMap, Schema } from "effect"

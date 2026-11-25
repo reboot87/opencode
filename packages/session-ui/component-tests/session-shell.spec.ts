@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — SessionShellSpec。
+ * 会话界面组件的测试中负责 SessionShellSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, story } from "../../stories/playwright/story"
 
 story("requests live output only when the shell is expanded", async ({ mount }) => {

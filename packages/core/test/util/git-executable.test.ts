@@ -1,3 +1,10 @@
+/**
+ * Git·可执行的测试。
+ *
+ * 被测模块：@opencode/core/util/git-executable
+ *
+ * 覆盖通用工具函数的行为与边界。
+ */
 import { describe, expect, test } from "bun:test"
 import path from "path"
 import { darwinDeveloperDirs, resolveGitExecutable } from "@opencode/core/util/git-executable"

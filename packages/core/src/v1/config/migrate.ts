@@ -1,3 +1,7 @@
+/**
+ * v1 配置迁移。
+ * 把 v1 格式的配置迁移到当前版本，含 agent/command/mcp 等的解码与转换。
+ */
 export * as ConfigMigrateV1 from "./migrate.js"
 
 import { ConfigAgent } from "@opencode/schema/config/agent"

@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — ArtifactPreview。
+ * 内置浏览器功能的 GUI 插件中负责 ArtifactPreview 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ServerEndpoint } from "@opencode/plugin/gui/main"
 import { artifactAddress, artifactResource, artifactViewPath } from "./artifact-link"
 import type { createPreviews } from "./profile/previews"

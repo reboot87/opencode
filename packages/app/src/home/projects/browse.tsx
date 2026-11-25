@@ -1,3 +1,7 @@
+/**
+ * 主页项目 — Browse。
+ * 主页中项目列表的展示中负责 Browse 部分，提供该部分所需的实现与类型定义。
+ */
 import { useDialog } from "@opencode/ui/context/dialog"
 import { lazy, Suspense } from "solid-js"
 import type { ServerConnection } from "@/runtime/server/registry"

@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — WorkerRpc。
+ * Microsoft Office 文档预览插件中负责 WorkerRpc 部分，提供该部分所需的实现与类型定义。
+ */
 // The engines run in a worker per open file, so no layout, recalculation or painting holds the window. These are the
 // two ends of that worker's protocol: typed calls by method name, a key that lets a newer call replace a queued one
 // (as the markdown worker's queue does), transferable payloads, and a worker that fails every pending call when it dies.

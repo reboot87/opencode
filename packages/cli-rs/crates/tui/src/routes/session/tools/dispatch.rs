@@ -1,4 +1,6 @@
 //! Dispatch tool calls by canonical name to their inline or block views.
+//!
+//! 终端界面路由：分发。
 
 use opencode_api::generated::{
     SessionMessageAssistant, SessionMessageAssistantTool, SessionMessageAssistantToolState, ToolContent,

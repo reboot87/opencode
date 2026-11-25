@@ -1,3 +1,7 @@
+/**
+ * fs 接口处理器。
+ * 文件系统接口处理器：文件读取、写入、列举与监听。
+ */
 import { FileSystem } from "@opencode/core/filesystem"
 import { FileWatch } from "@opencode/core/filesystem/file-watch"
 import { Location } from "@opencode/core/location"

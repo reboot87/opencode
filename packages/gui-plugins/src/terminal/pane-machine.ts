@@ -1,3 +1,7 @@
+/**
+ * 终端插件 — PaneMachine。
+ * 内嵌终端的 GUI 插件中负责 PaneMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { TerminalFailure, TerminalSize } from "./connection"
 import { createDispatch } from "./dispatch"
 

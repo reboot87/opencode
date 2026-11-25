@@ -1,3 +1,7 @@
+/**
+ * 数据站图像 — Card。
+ * 生成社交分享图像中负责 Card 部分，提供该部分所需的实现与类型定义。
+ */
 // The Open Graph card for model and lab pages, as a Satori element tree. Satori takes React-shaped elements; el()
 // builds them as plain objects so Solid's JSX transform never sees them.
 //

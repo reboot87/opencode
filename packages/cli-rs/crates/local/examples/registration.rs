@@ -1,5 +1,7 @@
 //! Prints the paths, channel, and service registration this environment resolves to, read-only,
 //! with the password redacted: `cargo run -p opencode-local --example registration`.
+//!
+//! 本地配置与路径：`registration`。
 
 use opencode_local::channel::{self, Channels};
 use opencode_local::paths::Paths;

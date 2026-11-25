@@ -1,3 +1,7 @@
+/**
+ * 浏览器配置 — History。
+ * 浏览器插件的用户配置与身份中负责 History 部分，提供该部分所需的实现与类型定义。
+ */
 import type { DatabaseSync } from "node:sqlite"
 import { MAX_PAGES, MAX_URL_LENGTH, webPage, type PageVisit } from "../history"
 import { snapshotDatabase, type SnapshotScratch } from "./database"

@@ -1,3 +1,7 @@
+/**
+ * 浏览器配置 — MadeUpFirefoxFixture。
+ * 浏览器插件的用户配置与身份中负责 MadeUpFirefoxFixture 部分，提供该部分所需的实现与类型定义。
+ */
 import { mkdir, mkdtemp, writeFile } from "node:fs/promises"
 import { tmpdir } from "node:os"
 import path from "node:path"

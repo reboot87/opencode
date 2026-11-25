@@ -1,3 +1,7 @@
+/**
+ * 媒体类型嗅探：通过检查字节魔数（magic bytes）识别图片/音视频格式。
+ * 当 provider 没有声明 mediaType 时，用它从内容推断（见 media.ts 的 Asset.mediaType 派生）。
+ */
 const ascii = (bytes: Uint8Array, start: number, end: number) => String.fromCharCode(...bytes.subarray(start, end))
 
 const startsWith = (bytes: Uint8Array, prefix: ReadonlyArray<number>) =>

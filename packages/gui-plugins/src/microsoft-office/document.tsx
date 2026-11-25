@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — Document。
+ * Microsoft Office 文档预览插件中负责 Document 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createSignal, For, onCleanup, Show, untrack } from "solid-js"
 import { Button } from "@opencode/ui/button"
 import { Loader } from "@opencode/ui/loader"

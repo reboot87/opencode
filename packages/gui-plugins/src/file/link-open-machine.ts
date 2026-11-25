@@ -1,3 +1,7 @@
+/**
+ * 文件插件 — LinkOpenMachine。
+ * 文件预览与操作的 GUI 插件中负责 LinkOpenMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { LineRange } from "@opencode/plugin/gui"
 
 /** How long one link click may resolve and load before it gives up with an error. */

@@ -1,3 +1,12 @@
+/**
+ * 工具调用历史的规范化（normalizeToolHistory）。
+ *
+ * 不同 provider 对工具调用/结果的消息表达不完全一致：
+ * 有的把工具结果放在独立消息里，有的合并，有的缺失。
+ * 本模块把消息历史规范化成一致的形态：确保每个 tool call 都有对应的结果，
+ * 缺失或空结果用占位文本（"(no tool output)" / "Tool result missing"）补齐，
+ * 避免模型看到悬空的调用。
+ */
 import { type Message, ToolMessage, ToolResultPart, type ToolCallPart } from "./schema/messages.js"
 
 const EMPTY_TOOL_OUTPUT = "(no tool output)"

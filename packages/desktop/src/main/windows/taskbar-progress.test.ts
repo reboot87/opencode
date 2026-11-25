@@ -1,3 +1,7 @@
+/**
+ * 窗口管理 — TaskbarProgressTest。
+ * 浏览器窗口的创建与布局管理中负责 TaskbarProgressTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, describe, expect, test } from "bun:test"
 import { selectTaskbarProgressMode, type TaskbarProgressMode } from "../../shared/ipc-contract"
 import { setTaskbarProgress } from "./taskbar-progress"

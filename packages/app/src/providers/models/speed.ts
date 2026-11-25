@@ -1,3 +1,7 @@
+/**
+ * Provider 模型 — Speed。
+ * provider 下模型的展示与配置中负责 Speed 部分，提供该部分所需的实现与类型定义。
+ */
 type Speed = { readonly id: string; readonly faster: boolean }
 
 /** A model's speeds in order: the slower ones, its standard speed (no name), then the faster ones. */

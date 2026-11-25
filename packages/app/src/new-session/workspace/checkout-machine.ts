@@ -1,4 +1,8 @@
-/** A branch that has not loaded by then shows a placeholder; faster loads paint the name directly. */
+/**
+ * A branch that has not loaded by then shows a placeholder; faster loads paint the name directly.
+ *
+ * 工作区选择中负责 CheckoutMachine 部分：新建会话时的工作区选择中与 CheckoutMachine 相关的状态、交互与渲染逻辑。
+ */
 export const CHECKOUT_PLACEHOLDER_DELAY_MS = 250
 
 /**

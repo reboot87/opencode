@@ -1,7 +1,10 @@
 // The search shortcut, with no Solid, so the hydrated pages (search.tsx, search-palette.tsx), the static
 // pages (src/client/entry.ts) and the docs (src/docs/client.ts) open search on the same keys.
 
-/** ⌘K or Ctrl+K anywhere, or "/" outside text fields. */
+/** ⌘K or Ctrl+K anywhere, or "/" outside text fields.
+ *
+ * 站点界面组件：搜索密钥。
+ */
 export function isSearchShortcut(event: KeyboardEvent) {
   if (event.defaultPrevented || event.altKey || event.repeat) return false
   const target = event.target as HTMLElement

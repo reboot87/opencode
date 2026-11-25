@@ -1,3 +1,8 @@
+/**
+ * 语法定义脚本。
+ *
+ * Rust CLI 的代码生成器：由 TypeScript 单一来源生成 Rust 代码。
+ */
 // Writes assets/queries/<filetype>/highlights.scm: the highlight queries the TypeScript TUI uses, so the linked
 // grammars capture the same names. The TUI's 34 grammars take theirs from packages/tui/src/parsers-config.ts,
 // downloaded and joined as Core's DownloadUtils.fetchHighlightQueries does. Core's own grammars (JavaScript,

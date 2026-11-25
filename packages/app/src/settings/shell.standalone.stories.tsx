@@ -1,3 +1,7 @@
+/**
+ * 设置界面 — ShellStandaloneStories。
+ * 应用设置页面的框架中负责 ShellStandaloneStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemoryHistory, MemoryRouter, Route } from "@solidjs/router"
 import { DialogStoryRuntime, STORY_LOCKED_SERVER, STORY_SERVER } from "@/components-lab/dialog-story-runtime"
 import { ServerConnection } from "@/runtime/server/registry"

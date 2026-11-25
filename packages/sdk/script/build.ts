@@ -1,5 +1,11 @@
 #!/usr/bin/env bun
 
+/**
+ * 构建脚本。
+ *
+ * SDK 包的开发脚本：文档生成与示例同步。
+ */
+
 import { $ } from "bun"
 import { rm } from "node:fs/promises"
 import path from "node:path"

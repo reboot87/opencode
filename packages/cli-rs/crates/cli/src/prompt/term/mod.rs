@@ -1,6 +1,8 @@
 //! The terminal side of a prompt: raw mode as Node's `setRawMode` sets it, terminal sizes, and key
 //! decoding as Node's `readline.emitKeypressEvents` does it. The terminal itself is Unix and Windows only; elsewhere
 //! [`interactive`] is `false`, so prompts fail as they do without a terminal.
+//!
+//! CLI 交互提示入口。
 
 use std::collections::VecDeque;
 use std::io::Write;

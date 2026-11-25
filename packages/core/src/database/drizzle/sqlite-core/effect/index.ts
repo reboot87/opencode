@@ -1,3 +1,7 @@
+/**
+ * drizzle SQLite Effect 核心出口。
+ * 集中导出 drizzle SQLite 的 Effect 版查询构件。
+ */
 /* oxlint-disable */
 export * from "./count.js"
 export * from "./db.js"

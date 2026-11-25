@@ -1,3 +1,7 @@
+/**
+ * Z.ai Coding Plan（智谱编码套餐）provider 门面。
+ * 面向编码订阅计划的入口，封装 chat / messages / responses 能力，提供模型工厂。
+ */
 import type { ProviderPackage } from "../provider-package.js"
 import { AnthropicMessages } from "../protocols/anthropic-messages.js"
 import { OpenAIChat } from "../protocols/openai-chat.js"

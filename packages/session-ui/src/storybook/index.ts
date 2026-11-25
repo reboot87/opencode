@@ -1,3 +1,7 @@
+/**
+ * Storybook 配置 — Index 出口。
+ * 集中导出 Storybook 配置 中 Index 相关的实现、组件与类型。
+ */
 export {
   CURRENT_SESSION_ID,
   STORY_MODEL,

@@ -1,3 +1,7 @@
+/**
+ * Neon 插件。
+ * 注册 Neon 提供的模型 provider。
+ */
 import { Effect } from "effect"
 import { define } from "@opencode/plugin/effect/plugin"
 

@@ -1,3 +1,7 @@
+/**
+ * SSH 插件 — AddMachine。
+ * 远程主机管理的 GUI 插件中负责 AddMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // The "Add SSH server" dialog, whose chunk loads on the first click. Each load takes the next attempt number, so a load
 // the plugin's cleanup overtook never opens its dialog.
 

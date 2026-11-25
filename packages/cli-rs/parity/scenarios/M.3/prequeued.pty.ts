@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：prequeued·伪终端。
+ *
+ * 规格编号：M.3。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A prompt waits in the inbox when mini attaches. Once the server delivers it, the transcript prints it above the
 // answer, as a prompt this client sent.
 import type { Logged } from "../../lib/fake-server"

@@ -1,3 +1,7 @@
+/**
+ * 搜索列表 — SearchListStories。
+ * 带搜索过滤的列表组件中负责 SearchListStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo } from "solid-js"
 import { createStore } from "solid-js/store"
 import { Keybind } from "@opencode/ui/keybind"

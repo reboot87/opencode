@@ -1,3 +1,7 @@
+/**
+ * 连接服务端 — Screen。
+ * 添加与连接远程服务端中负责 Screen 部分，提供该部分所需的实现与类型定义。
+ */
 import { lazy, Show, Suspense, type Component, type ComponentProps } from "solid-js"
 import { Button } from "@opencode/ui/button"
 import { TextInput } from "@opencode/ui/text-input"

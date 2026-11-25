@@ -1,3 +1,7 @@
+/**
+ * SSH Askpass 测试。
+ * 验证 askpass 助手服务能按协议返回凭据口令，并拒绝无效请求。
+ */
 import { expect, test } from "bun:test"
 import { createServer } from "node:net"
 import path from "node:path"

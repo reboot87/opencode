@@ -1,4 +1,6 @@
 //! A private server holds a stdin lease: EOF ends the server even if its client is killed.
+//!
+//! 服务层：`standalone`。
 
 use std::ffi::OsString;
 use std::path::Path;

@@ -1,3 +1,8 @@
+/**
+ * 对等性校验入口：运行。
+ *
+ * Rust 与 TypeScript 双实现的对等性校验：驱动全部 oracle / component / 场景脚本并刷新基线。
+ */
 // P-TUI runner (docs/testing.md):
 //
 //   bun run --cwd packages/cli-rs parity:sim [--sides ts,rs] [parity/scenarios/<step>/<name>.sim.ts ...]

@@ -1,3 +1,7 @@
+/**
+ * 诊断信息 — Options。
+ * 桌面端诊断与日志收集中负责 Options 部分，提供该部分所需的实现与类型定义。
+ */
 import { debugBuild } from "@opencode/gui-plugins/debug/options"
 
 export function debuggingSwitches(build: { packaged: boolean; channel: string }, env: string | undefined, port: string | undefined, pipe: boolean) {

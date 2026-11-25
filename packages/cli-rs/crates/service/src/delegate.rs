@@ -1,5 +1,7 @@
 //! Commands delegated to `opencode` inherit the arguments, stdio and exit status. Remote access uses the TypeScript
 //! command because it owns the OpenTunnel SDK.
+//!
+//! 服务层：委派。
 
 use std::ffi::OsString;
 use std::io;

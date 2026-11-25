@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — Presentation。
+ * Microsoft Office 文档预览插件中负责 Presentation 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, onCleanup, Show, untrack } from "solid-js"
 import { Loader } from "@opencode/ui/loader"
 import { usePlugin } from "@opencode/plugin/gui"

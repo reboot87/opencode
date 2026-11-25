@@ -1,5 +1,7 @@
 //! What a plugin of the one API returns, turned into widgets, on both paths: fences ([`Fenced`]) with the keys the
 //! host mints for them, slot claims ([`Mount`] of a [`abi::Node`]), and rows ([`Line`]).
+//!
+//! 插件系统：节点。
 
 use std::cell::{Cell, RefCell};
 use std::collections::HashMap;

@@ -1,3 +1,10 @@
+/**
+ * 模块的测试。
+ *
+ * 被测模块：@opencode/core/plugin/module
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { expect } from "bun:test"
 import { cp, mkdir } from "node:fs/promises"
 import path from "node:path"

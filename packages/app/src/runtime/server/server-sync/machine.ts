@@ -1,3 +1,7 @@
+/**
+ * 服务端同步 — Machine。
+ * 与服务端保持数据一致的同步机制中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ServerConnectionStatus } from "../client"
 
 /**

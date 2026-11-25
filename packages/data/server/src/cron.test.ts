@@ -1,3 +1,7 @@
+/**
+ * 数据服务 — CronTest。
+ * 提供数据查询的服务端中负责 CronTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import cron from "./cron"
 

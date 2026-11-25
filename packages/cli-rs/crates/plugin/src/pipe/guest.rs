@@ -1,5 +1,7 @@
 //! One TypeScript plugin's activation on the pipe carrier: its registrations, as its setup on the JS host listed them,
 //! its calls, the effects they answered with, the reads it watches, and its surfaces' mounts.
+//!
+//! 插件系统：访客。
 
 use std::cell::{Cell, RefCell};
 use std::collections::{BTreeMap, HashMap};

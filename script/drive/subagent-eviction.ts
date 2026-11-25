@@ -1,3 +1,6 @@
+/**
+ * 本地驱动脚本：子智能体淘汰。
+ */
 import { Deferred, Effect, Stream } from "effect"
 import { Llm, OpenCodeDriver } from "opencode-drive"
 import { AbsolutePath } from "../../packages/schema/src/schema"

@@ -1,3 +1,7 @@
+/**
+ * 外壳状态 — IntentMachine。
+ * 应用外壳的全局状态中负责 IntentMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { LayoutRoute } from "./layout"
 import type { SessionPane, SessionPaneTarget } from "./session-tabs"
 

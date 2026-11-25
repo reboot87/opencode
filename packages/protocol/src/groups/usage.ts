@@ -1,3 +1,7 @@
+/**
+ * 用量 API 分组。
+ * 定义用量统计查询端点。
+ */
 import { Location } from "@opencode/schema/location"
 import { UsageLimits } from "@opencode/schema/usage-limits"
 import { Schema } from "effect"

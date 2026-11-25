@@ -1,4 +1,8 @@
+//! 命令行入口：环境变量。
+
 /// The loopback hosts every client request to the local service must reach without a proxy.
+
+
 const LOOPBACK: &str = "127.0.0.1,localhost,::1";
 
 /// Sets `NO_PROXY` and `no_proxy` to the same merged list: both inherited lists plus the loopback

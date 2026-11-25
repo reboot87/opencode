@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — Messages。
+ * 实时语音会话的界面中负责 Messages 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageInfo } from "@opencode/client/promise"
 
 // Responses keeps tool outputs in subsequent rounds. Only conversational text

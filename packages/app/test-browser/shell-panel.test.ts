@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — ShellPanelTest。
+ * 浏览器环境下的测试中负责 ShellPanelTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, describe, expect, setSystemTime, test } from "bun:test"
 import { createRoot, createSignal } from "solid-js"
 import type { SessionActivityItem } from "@/session/composer/activity-chips"

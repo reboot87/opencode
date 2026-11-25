@@ -1,4 +1,6 @@
 //! OSC 7501 publishes a root summary and records for pending sessions. Clear the root before releasing the terminal.
+//!
+//! 终端界面功能模块：program·status。
 
 use std::sync::LazyLock;
 

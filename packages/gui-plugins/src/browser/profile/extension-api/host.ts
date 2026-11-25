@@ -1,3 +1,7 @@
+/**
+ * 浏览器扩展 API — Host。
+ * 浏览器插件暴露给扩展的接口中负责 Host 部分，提供该部分所需的实现与类型定义。
+ */
 import { writeFile } from "node:fs/promises"
 import path from "node:path"
 import { app, webContents, webFrameMain, type Extension, type ServiceWorkerMain, type Session, type WebContents } from "electron"

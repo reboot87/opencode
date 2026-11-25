@@ -1,3 +1,7 @@
+/**
+ * 端到端测试工具 — App。
+ * 端到端测试的公共辅助中负责 App 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, type Page, type Request } from "@playwright/test"
 import type { SessionMessageInfo } from "@opencode/client/promise"
 import { base64Encode, checksum } from "@opencode/util/encode"

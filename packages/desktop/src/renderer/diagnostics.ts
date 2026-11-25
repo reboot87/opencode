@@ -1,3 +1,7 @@
+/**
+ * 渲染进程 — Diagnostics。
+ * Electron 渲染进程的界面逻辑中负责 Diagnostics 部分，提供该部分所需的实现与类型定义。
+ */
 const resizeLoopWarning = "ResizeObserver loop completed with undelivered notifications."
 
 if (import.meta.env.DEV) {

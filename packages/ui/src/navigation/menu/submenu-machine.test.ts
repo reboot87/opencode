@@ -1,3 +1,7 @@
+/**
+ * 菜单 — SubmenuMachineTest。
+ * 下拉/侧边菜单组件中负责 SubmenuMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   selectSubmenuOpen,

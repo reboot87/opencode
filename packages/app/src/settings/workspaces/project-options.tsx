@@ -1,3 +1,7 @@
+/**
+ * 工作区设置 — ProjectOptions。
+ * 工作区相关设置中负责 ProjectOptions 部分，提供该部分所需的实现与类型定义。
+ */
 import { Show, type Component } from "solid-js"
 import { Icon } from "@opencode/ui/icon"
 import { IconButton } from "@opencode/ui/icon-button"

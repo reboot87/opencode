@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：extmark·鼠标·伪终端。
+ *
+ * 规格编号：OT。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The mouse ends inside an `[Image 1]` label. Both clients move the cursor to the label's nearer edge (a click, a
 // drag) or to its end (a double-click, then Right), TS since #63989 (Core with #2064). On the press itself, Core moves
 // the cursor already and Rust only at the release (parity/deviations/OT2064-extmark-mouse.md).

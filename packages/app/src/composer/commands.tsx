@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — Commands。
+ * 会话输入区的组合逻辑与附件处理中负责 Commands 部分，提供该部分所需的实现与类型定义。
+ */
 import { useCommand, type CommandOption } from "@/shell/commands/command"
 import { useLanguage } from "@/runtime/i18n/language"
 import { DialogSelectModel } from "@/providers/models/select-dialog"

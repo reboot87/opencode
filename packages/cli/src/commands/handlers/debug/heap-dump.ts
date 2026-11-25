@@ -1,3 +1,7 @@
+/**
+ * debug heap-dump 命令。
+ * 请求服务端写出堆快照。
+ */
 import { ClientError, OpenCode } from "@opencode/client"
 import { Service } from "@opencode/client/effect/service"
 import { Effect, Option, Predicate } from "effect"

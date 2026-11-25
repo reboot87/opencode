@@ -1,3 +1,7 @@
+/**
+ * 终端 UI — DialogExportOptions。
+ * 终端界面的通用 UI 组件中负责 DialogExportOptions 部分，提供该部分所需的实现与类型定义。
+ */
 import { Keymap } from "../context/keymap"
 import { useNewDesigns } from "../config"
 import { useTheme } from "../context/theme"

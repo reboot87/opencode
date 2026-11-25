@@ -1,3 +1,7 @@
+/**
+ * 工具输出配置类型。
+ * 定义 tool-output 配置项的 Schema。
+ */
 export * as ConfigToolOutput from "./tool-output.js"
 
 import { Schema } from "effect"

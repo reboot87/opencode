@@ -1,6 +1,8 @@
 //! Random identifiers.
 
 /// A random version 4 UUID in its hyphenated lowercase form, as `crypto.randomUUID()` writes it.
+//!
+//! 本地配置与路径：标识。
 pub fn v4() -> String {
     let mut bytes = rand::random::<[u8; 16]>();
     bytes[6] = (bytes[6] & 0x0f) | 0x40;

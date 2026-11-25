@@ -1,3 +1,6 @@
+/**
+ * 文件服务实现：索引。
+ */
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url)

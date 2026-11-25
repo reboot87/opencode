@@ -1,3 +1,8 @@
+/**
+ * 目标·环境测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { Environment } from "@opencode/core/environment/index"
 import { FileAccess } from "@opencode/core/file-access"
 import { Location } from "@opencode/core/location"

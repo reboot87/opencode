@@ -1,3 +1,7 @@
+/**
+ * 桌面插件 — MachineTest。
+ * 桌面端插件的加载与宿主能力中负责 MachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, beforeEach, describe, expect, jest, test } from "bun:test"
 import { PluginError } from "./error"
 import { createDriver, initialState, LOAD_TIMEOUT_MS, loadedHost, transition, type Event, type State } from "./machine"

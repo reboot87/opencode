@@ -1,3 +1,7 @@
+/**
+ * 声明 — Fonts。
+ * 第三方声明与开源许可中负责 Fonts 部分，提供该部分所需的实现与类型定义。
+ */
 import license from "./fonts/OFL-1.1.txt?raw"
 
 /**

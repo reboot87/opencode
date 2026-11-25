@@ -1,3 +1,8 @@
+/**
+ * 对等性应用场景：hello·Luau·伪终端。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A Luau plugin under a real terminal: the quick start in Luau on the Rust side
 // (`crates/plugin/examples/luau/hello`; Luau plugins are on by default) against its TypeScript twin
 // (`parity/plugins/luau-hello/tui.tsx`), in one `plugins` directory: its line closes the home footer, and `/hello` shows

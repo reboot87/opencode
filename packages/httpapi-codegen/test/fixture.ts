@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — Fixture。
+ * 终端界面的测试中负责 Fixture 部分，提供该部分所需的实现与类型定义。
+ */
 import { Schema } from "effect"
 import { HttpApi, HttpApiEndpoint, HttpApiGroup, HttpApiSchema } from "effect/http-api"
 

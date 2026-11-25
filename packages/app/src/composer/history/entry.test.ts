@@ -1,3 +1,7 @@
+/**
+ * 输入历史 — EntryTest。
+ * 输入历史的上限、读写与切换中负责 EntryTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { Prompt } from "@/composer/state"
 import { prependHistoryEntry, removeHistoryEntry, type PromptHistoryComment, type PromptHistoryEntry } from "./entry"

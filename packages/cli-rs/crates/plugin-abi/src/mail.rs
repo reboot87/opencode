@@ -4,6 +4,8 @@
 //!
 //! Messages must round-trip through JSON even in process; the encoded length counts against the mailbox budget.
 //! Threads stop cooperatively through [`Stop`]. An uncaught worker panic fails the plugin.
+//!
+//! 插件 ABI 边界：`mail`。
 
 use std::any::Any;
 use std::marker::PhantomData;

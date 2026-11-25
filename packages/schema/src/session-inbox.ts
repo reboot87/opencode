@@ -1,3 +1,7 @@
+/**
+ * 会话收件箱类型。
+ * 定义收件箱条目（输入/steer/控制项）的结构。
+ */
 export * as SessionInbox from "./session-inbox.js"
 
 import { Schema } from "effect"

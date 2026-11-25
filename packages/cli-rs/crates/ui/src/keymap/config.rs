@@ -1,4 +1,6 @@
 //! Applies keybind overrides to the generated defaults.
+//!
+//! 基础 UI 组件库：配置。
 
 use super::generated::DEFINITIONS;
 use opentui::keymap::extras::{BindingItem, BindingLookup, BindingValue};

@@ -1,3 +1,7 @@
+/**
+ * 微光文本 — TextShimmer。
+ * 加载时微光流动的文本效果中负责 TextShimmer 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, on, onCleanup, untrack, type ValidComponent } from "solid-js"
 import { Dynamic } from "solid-js/web"
 import { prefersReducedMotion } from "../../motion/reduced"

@@ -1,3 +1,10 @@
+/**
+ * Cloudflare·工作单元·AI·图片的测试。
+ *
+ * 被测模块：@opencode/ai/provider/cloudflare-workers-ai-images
+ *
+ * 覆盖各家供应商的接入实现：请求构造、响应解析与错误映射。
+ */
 import { describe, expect, test } from "bun:test"
 import { Effect, Layer } from "effect"
 import { HttpClientRequest } from "effect/http"

@@ -1,3 +1,7 @@
+/**
+ * 更新插件 — Action。
+ * 应用更新提示的 GUI 插件中负责 Action 部分，提供该部分所需的实现与类型定义。
+ */
 import type { UpdaterState } from "@opencode/plugin/gui/updater"
 import type { WindowUpdaterState } from "./window-machine"
 

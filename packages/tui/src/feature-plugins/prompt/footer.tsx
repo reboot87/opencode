@@ -1,3 +1,7 @@
+/**
+ * 提示功能插件 — Footer。
+ * 以插件形式提供的提示输入功能中负责 Footer 部分，提供该部分所需的实现与类型定义。
+ */
 import { Plugin } from "@opencode/plugin/tui"
 import { createMemo, createSignal, Match, Show, Switch } from "solid-js"
 import { contextUsage, formatContextUsage } from "../../util/session"

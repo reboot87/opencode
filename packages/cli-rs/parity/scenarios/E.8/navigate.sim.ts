@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：导航·模拟。
+ *
+ * 规格编号：E.8。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Scrolling and navigation over eight turns the server ran (V06). Page up
 // shows "Jump to latest", session.first goes to the first message, session.last back to the bottom, and
 // session.messages_last_user aligns the last question with the top. Each reply groups its two reads under

@@ -1,3 +1,7 @@
+/**
+ * 调试插件 — MemoryRecord。
+ * 面向开发者的调试 GUI 插件中负责 MemoryRecord 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ProcessMetric } from "electron"
 import { Schema } from "effect"
 

@@ -1,3 +1,6 @@
+/**
+ * 文档站共享逻辑：llms.txt。
+ */
 import { latestDocs, type DocsSet } from "../config"
 import { docsSections, type DocsSection } from "./navigation"
 

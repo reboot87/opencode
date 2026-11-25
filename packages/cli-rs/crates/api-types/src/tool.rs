@@ -1,4 +1,6 @@
 //! A tool call's kind, by its name, and borrowed views of its input, which each front end reads its own way.
+//!
+//! API 类型定义：工具。
 
 use indexmap::IndexMap;
 use serde_json::{Map, Value};

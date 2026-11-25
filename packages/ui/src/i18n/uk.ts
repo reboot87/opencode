@@ -1,3 +1,7 @@
+/**
+ * 国际化 — Uk。
+ * 多语言文案资源中负责 Uk 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "ui.messagePart.tools.used.few": "Використано {{count}} рази: {{tools}}",
   "ui.messagePart.tools.used.many": "Використано {{count}} разів: {{tools}}",

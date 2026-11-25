@@ -1,3 +1,10 @@
+/**
+ * 会话·搜索·索引的测试。
+ *
+ * 被测模块：@opencode/core/session-search-index
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import { SqliteClient } from "@effect/sql-sqlite-bun"
 import { DateTime, Effect, Exit, Layer, Schema, SchemaAST } from "effect"

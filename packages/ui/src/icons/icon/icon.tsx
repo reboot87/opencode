@@ -1,3 +1,7 @@
+/**
+ * 图标组件 — Icon。
+ * 矢量图标渲染组件中负责 Icon 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, onCleanup, type ComponentProps, splitProps } from "solid-js"
 import { artworkNames, isIconName, getIcon, resolveIconName, type IconName } from "../catalog"
 import {

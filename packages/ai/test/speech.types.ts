@@ -1,3 +1,10 @@
+/**
+ * 语音合成的类型定义（类型断言用）。
+ *
+ * 被测模块：@opencode/ai/speech
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import type { Stream } from "effect"
 import { Speech, SpeechModel, type SpeechEvent, type SpeechOptions } from "../src/experimental.js"
 import { ElevenLabs, OpenAI, XAI } from "../src/providers.js"

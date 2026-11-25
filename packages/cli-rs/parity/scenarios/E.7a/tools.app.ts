@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：工具·app。
+ *
+ * 规格编号：E.7a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Core tool rows (V05a): a finished shell with its output, an edit with a unified diff and an LSP error, and a
 // read of a line range, each call in its own row (`session.grouping: none`).
 import { defineApp, session } from "../../lib/app"

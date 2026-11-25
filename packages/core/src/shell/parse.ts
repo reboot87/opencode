@@ -1,3 +1,7 @@
+/**
+ * Shell 命令解析。
+ * 解析 shell 命令行：识别 cd/chdir 等目录切换命令与 PowerShell 字面量开关，用于权限判定与目录跟踪。
+ */
 export * as ShellParse from "./parse.js"
 
 import { Effect, Result, Schema } from "effect"

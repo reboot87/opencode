@@ -1,3 +1,7 @@
+/**
+ * PTY 协议编解码。
+ * 定义 PTY 消息帧的编码与解码（严格 UTF-8）。
+ */
 export * as PtyProtocol from "./protocol.js"
 
 // Wire protocol for PTY websocket transports. The PTY domain service is transport-free; server

@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — ComponentsLabSpec。
+ * 应用界面组件的测试中负责 ComponentsLabSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, story } from "../../stories/playwright/story"
 
 story("opens a component from the standalone catalog and previews its states", async ({ page }) => {

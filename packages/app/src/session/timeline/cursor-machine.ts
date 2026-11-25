@@ -1,3 +1,7 @@
+/**
+ * 会话时间线 — CursorMachine。
+ * 会话消息时间线的渲染中负责 CursorMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import { messageIdFromHash } from "../message-id-from-hash"
 import type { HistorySeekStatus } from "./history-machine"
 

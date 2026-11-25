@@ -1,3 +1,7 @@
+/**
+ * 外壳路由 — Routes。
+ * 应用外壳的路由定义中负责 Routes 部分，提供该部分所需的实现与类型定义。
+ */
 import { Route, useParams } from "@solidjs/router"
 import { createMemo, lazy, Show, Suspense, type ParentProps } from "solid-js"
 import { Home } from "@/home/route"

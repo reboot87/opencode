@@ -1,3 +1,7 @@
+/**
+ * 二维码生成。
+ * 把字符串编码为 QR 码（含纠错码与分块表实现）。
+ */
 // QR Code encoder (ISO/IEC 18004) for byte-mode text at error correction level L, following the structure of
 // Project Nayuki's QR Code generator (MIT): https://www.nayuki.io/page/qr-code-generator-library
 

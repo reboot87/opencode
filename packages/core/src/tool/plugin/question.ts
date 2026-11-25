@@ -1,3 +1,7 @@
+/**
+ * question 工具。
+ * 向用户提出结构化问题并等待回答的工具。
+ */
 export * as QuestionTool from "./question.js"
 
 import type { Context } from "@opencode/plugin/effect/plugin"

@@ -1,3 +1,7 @@
+/**
+ * Google Gemini（Generative AI API）provider 门面。
+ * 封装 Gemini generateContent 协议，提供 chat / interactions / images / videos / embeddings / decision 模型工厂与 API Key 鉴权。
+ */
 import { Auth } from "../route/auth.js"
 import { AuthOptions, type ProviderAuthOption } from "../route/auth-options.js"
 import { MediaRoute } from "../route/media.js"

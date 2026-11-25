@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：测试脚手架。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // Runs key sequences through the TypeScript TUI's real Keymap.Provider and records the commands they run.
 // U.2-keymap.ts runs this with OpenTUI's Solid preload from packages/tui. OpenTUI and Solid resolve as packages/tui
 // resolves them, so that this file and the TUI sources share one Solid instance. Writes

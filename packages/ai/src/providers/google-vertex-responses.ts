@@ -1,3 +1,7 @@
+/**
+ * Google Vertex Responses（独立）provider 门面。
+ * 以独立入口提供 Vertex Responses 风格能力。
+ */
 import type { ProviderPackage } from "../provider-package.js"
 import { OpenResponses } from "../protocols/open-responses.js"
 import { Route } from "../route/client.js"

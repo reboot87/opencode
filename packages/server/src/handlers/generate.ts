@@ -1,3 +1,7 @@
+/**
+ * generate 接口处理器。
+ * 生成接口处理器：文本/图片/视频等生成请求。
+ */
 import { Generate } from "@opencode/core/generate"
 import { VideoGeneration } from "@opencode/core/video-generation"
 import { Location } from "@opencode/core/location"

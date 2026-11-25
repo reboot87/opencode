@@ -1,4 +1,6 @@
 //! Compares output with color recordings and their plain-text equivalents.
+//!
+//! 命令行入口测试：输出。
 
 use std::path::Path;
 

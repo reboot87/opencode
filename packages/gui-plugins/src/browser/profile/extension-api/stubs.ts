@@ -1,3 +1,7 @@
+/**
+ * 浏览器扩展 API — Stubs。
+ * 浏览器插件暴露给扩展的接口中负责 Stubs 部分，提供该部分所需的实现与类型定义。
+ */
 import { Schema } from "effect"
 import { constant, method, none, type ApiModule, type ApiNamespace, type Wire } from "./api"
 import type { Manifests } from "./manifest"

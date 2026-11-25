@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：Cloudflare·令牌。
 # Mints a short-lived Cloudflare token for the current job from the token issuer
 # (anomalyco/secrets). Run after aws-actions/configure-aws-credentials has assumed
 # arn:aws:iam::604439173067:role/github/opencode-<stage> (release, dev or production): the Lambda

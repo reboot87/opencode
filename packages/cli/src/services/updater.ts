@@ -1,3 +1,7 @@
+/**
+ * 更新器。
+ * 检查新版本并按所选方式（curl/npm/pnpm/bun 等）执行升级。
+ */
 import { Global } from "@opencode/util/global"
 import { AppProcess } from "@opencode/util/process"
 import { EffectFlock } from "@opencode/util/effect-flock"

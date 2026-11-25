@@ -1,3 +1,5 @@
+//! ACP 协议实现：错误。
+
 use opencode_util::json_object;
 use serde_json::{Value, json};
 

@@ -1,3 +1,7 @@
+/**
+ * 媒体 URI 能力声明。
+ * 通过 x-opencode-capabilities 头声明媒体 URI 实验能力。
+ */
 import type { HttpServerRequest } from "effect/http"
 
 const CAPABILITIES_HEADER = "x-opencode-capabilities"

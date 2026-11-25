@@ -1,4 +1,6 @@
 //! Discovers, migrates and resolves themes for the TUI and mini.
+//!
+//! 主题解析与应用：目录清单。
 
 use std::borrow::Cow;
 use std::sync::{LazyLock, OnceLock};

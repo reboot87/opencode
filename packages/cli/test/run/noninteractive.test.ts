@@ -1,3 +1,10 @@
+/**
+ * noninteractive的测试。
+ *
+ * 被测模块：@opencode/cli/run/noninteractive
+ *
+ * 覆盖 CLI 运行命令的端到端行为。
+ */
 import { afterEach, describe, expect, mock, spyOn, test } from "bun:test"
 import {
   ClientError,

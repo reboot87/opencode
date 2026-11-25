@@ -1,3 +1,10 @@
+/**
+ * Cloudflare Workers AI 上的结构化抽取协议与模型（实验性）。
+ *
+ * 把通用 Extraction 请求适配为 Cloudflare `/ai/run/{model}` 的入参（state 承载文本、fields 描述字段），
+ * 并把返回信封（result.answers / usage / truncated 等）解码回统一的 ExtractionResponse。
+ * 与 extraction.ts 配合，构成 experimental 抽取能力在 Cloudflare 上的具体实现。
+ */
 import { Effect, Schema } from "effect"
 import { ExtractionAnswers, ExtractionModel, ExtractionResponse, type ExtractionRequest } from "./extraction.js"
 import { JsonObject, ProviderShared } from "../protocols/shared.js"
@@ -33,6 +40,7 @@ const decodeEnvelope = route.decodeJson(
 )
 
 /** Posts Clairic's `{ model, state, fields }` body to Cloudflare's `/ai/run/{model}`. */
+// 内联协议：定义请求体转换与响应解码，把 Cloudflare 抽取端点包装成通用内联执行器。
 export const protocol = MediaProtocol.inline<ExtractionRequest, ExtractionResponse>(route, {
   body: {
     from: (request) =>
@@ -95,6 +103,7 @@ export const protocol = MediaProtocol.inline<ExtractionRequest, ExtractionRespon
 })
 
 /** `baseURL` is the Run API base, `.../client/v4/accounts/{account}/ai/run`. */
+// 构造绑定到该协议与端点的抽取模型实例。
 export const model = (input: MediaRoute.ModelInput) =>
   new ExtractionModel({
     id: input.id,

@@ -1,4 +1,8 @@
-/** How long a resize has to settle before visible pages paint again at the new scale. */
+/**
+ * How long a resize has to settle before visible pages paint again at the new scale.
+ *
+ * Office 插件中负责 PagesMachine 部分：Office 文档预览中与 PagesMachine 相关的状态、交互与渲染逻辑。
+ */
 export const PAGES_SETTLE_DELAY_MS = 150
 
 /** The rows mounted with the column: enough to fill a tall screen with the first pages. */

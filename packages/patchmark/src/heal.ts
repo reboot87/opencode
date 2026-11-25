@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — Heal。
+ * GUI 插件的实现中负责 Heal 部分，提供该部分所需的实现与类型定义。
+ */
 // Streaming tail healing: close inline markers that are still open at the end of the block being written,
 // and hide markers that have nothing after them yet, so a half-written `**` never renders as `****` (a rule).
 

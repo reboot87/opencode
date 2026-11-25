@@ -1,7 +1,10 @@
 import { createAsync } from "@solidjs/router"
 import { getRequestEvent } from "solid-js/web"
 
-/** What the static renderer (src/static/render.tsx) keeps on the request while it renders a page. */
+/** What the static renderer (src/static/render.tsx) keeps on the request while it renders a page.
+ *
+ * 站点共享逻辑：页面·data。
+ */
 export type StaticPass = { collect: boolean; pending: Promise<unknown>[]; values: unknown[]; next: number }
 
 /**

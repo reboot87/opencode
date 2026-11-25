@@ -1,3 +1,7 @@
+/**
+ * CLI 配置迁移。
+ * 把旧版 CLI 配置迁移到当前格式。
+ */
 export * as ConfigMigration from "./migrate"
 
 import { TuiConfigV1 } from "@opencode/tui/config/v1"

@@ -1,3 +1,6 @@
+/**
+ * Oxlint 规则共享工具：dictionary·类型定义。
+ */
 import type { ESTree } from "@oxlint/plugins";
 
 import {

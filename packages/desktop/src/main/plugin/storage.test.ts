@@ -1,3 +1,7 @@
+/**
+ * 桌面插件 — StorageTest。
+ * 桌面端插件的加载与宿主能力中负责 StorageTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, describe, expect, test } from "bun:test"
 import { mkdtemp, rm } from "node:fs/promises"
 import { tmpdir } from "node:os"

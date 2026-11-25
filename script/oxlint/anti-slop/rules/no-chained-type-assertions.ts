@@ -50,7 +50,10 @@ function isForbiddenAssertionChain(node: TypeAssertionExpression): boolean {
   return assertionCount > 1 && hasNonConstAssertion;
 }
 
-/** Disallow nested TypeScript type assertions, while permitting chains made only of const assertions. */
+/** Disallow nested TypeScript type assertions, while permitting chains made only of const assertions.
+ *
+ * Oxlint 规则：无·chained·类型·assertions。
+ */
 export const noChainedTypeAssertionsRule = defineRule({
   meta: {
     type: "problem",

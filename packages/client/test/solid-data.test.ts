@@ -1,3 +1,10 @@
+/**
+ * SolidJS·data的测试。
+ *
+ * 被测模块：@opencode/client/solid-data
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { getEventListeners } from "node:events"
 import { createRoot, createSignal } from "solid-js"

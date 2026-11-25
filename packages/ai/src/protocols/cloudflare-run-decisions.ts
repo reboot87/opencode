@@ -1,3 +1,7 @@
+/**
+ * Cloudflare Workers AI 决策协议。
+ * 结构化决策请求的 provider 实现。
+ */
 import { Effect, Schema } from "effect"
 import { DecisionRoute } from "../route/decision.js"
 import { Endpoint } from "../route/endpoint.js"

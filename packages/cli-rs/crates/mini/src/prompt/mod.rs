@@ -1,5 +1,7 @@
 //! The composer grows to six rows. Completed mentions remain atomic edits. History navigation starts only at a text
 //! boundary.
+//!
+//! 精简版实现入口。
 
 pub mod api;
 pub mod complete;

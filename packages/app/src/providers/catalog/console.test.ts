@@ -1,3 +1,7 @@
+/**
+ * Provider 目录 — ConsoleTest。
+ * 可用模型目录的浏览界面中负责 ConsoleTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { consoleProviderGroup, consoleProviderName } from "./console"
 

@@ -1,3 +1,7 @@
+/**
+ * 审查插件 — Panel。
+ * 变更审查界面的 GUI 插件中负责 Panel 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createSignal, Match, onCleanup, Show, Switch, untrack, type JSX } from "solid-js"
 import { Loader } from "@opencode/ui/loader"
 import { Dynamic } from "solid-js/web"

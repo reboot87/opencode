@@ -1,3 +1,7 @@
+/**
+ * 会话命令 — ExportTest。
+ * 会话界面提供的命令中负责 ExportTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { SessionInfo, SessionMessageInfo } from "@opencode/client/promise"
 import type { ServerApi, ServerRequestOptions } from "@/runtime/server/api"

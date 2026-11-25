@@ -1,3 +1,7 @@
+/**
+ * agent 接口处理器。
+ * Agent 接口处理器：列举与获取 agent 信息。
+ */
 import { Agent } from "@opencode/core/agent"
 import { Effect } from "effect"
 import { HttpApiBuilder } from "effect/http-api"

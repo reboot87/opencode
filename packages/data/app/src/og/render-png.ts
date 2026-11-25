@@ -1,3 +1,7 @@
+/**
+ * 数据站图像 — RenderPng。
+ * 生成社交分享图像中负责 RenderPng 部分，提供该部分所需的实现与类型定义。
+ */
 import { initWasm, Resvg } from "@resvg/resvg-wasm"
 import satori, { init } from "satori/standalone"
 import { height, ogCardElement, width, type OgCard } from "./card"

@@ -8,6 +8,8 @@ import { layerValues } from "./layers-tuning"
  * The token's poses and the coin → screen timings, in one place (Settings › 404 arcade › Coin):
  * how it turns when picked up, how it lines up with the slot, and the fade to black and back.
  * Values persist in localStorage; "Copy values" exports them as JSON to bake in here as defaults.
+ *
+ * 街机小游戏组件：投币调校。
  */
 
 type Range = { label: string; min: number; max: number; step: number; value: number; unit: string }

@@ -1,3 +1,7 @@
+/**
+ * 性能夹具 — Scripts。
+ * 性能测试使用的数据夹具中负责 Scripts 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageAssistant } from "@opencode/client/promise"
 
 // How many calls each of 46 Code Mode scripts made in one turn of a real audit session: most made a few, six walked a

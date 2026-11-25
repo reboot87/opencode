@@ -1,3 +1,7 @@
+/**
+ * 单选框 — Radio。
+ * 单选按钮组组件中负责 Radio 部分，提供该部分所需的实现与类型定义。
+ */
 import {
   Description,
   ErrorMessage,

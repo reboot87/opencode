@@ -1,4 +1,8 @@
-/** What started a rename: a double-click on the title, or the tab's context menu. */
+/**
+ * What started a rename: a double-click on the title, or the tab's context menu.
+ *
+ * 终端插件中负责 RenameMachine 部分：内嵌终端中与 RenameMachine 相关的状态、交互与渲染逻辑。
+ */
 export type RenameSource = "pointer" | "menu"
 
 /**

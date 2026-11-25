@@ -1,3 +1,5 @@
+//! ACP 协议实现：`elicitation`。
+
 use std::collections::HashSet;
 use std::sync::{Arc, LazyLock};
 

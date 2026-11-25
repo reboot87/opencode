@@ -1,3 +1,7 @@
+/**
+ * 插件类型。
+ * 定义插件的标识、状态与加载结果。
+ */
 export * as Plugin from "./plugin.js"
 
 import { Schema } from "effect"

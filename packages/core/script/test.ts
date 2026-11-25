@@ -1,3 +1,8 @@
+/**
+ * 测试脚本。
+ *
+ * 核心包的开发脚本：本地服务桩、数据准备与问题排查。
+ */
 import fs from "fs/promises"
 import path from "path"
 import { tmpdir } from "../test/fixture/tmpdir"

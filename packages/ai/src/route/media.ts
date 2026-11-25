@@ -1,3 +1,10 @@
+/**
+ * 媒体请求路由（MediaRoute）。
+ *
+ * 图片/语音/视频等媒体生成的请求执行层，类似 LLM 的 client.ts：
+ * 通过 MediaProtocol 把请求发给 provider，处理提交、轮询、结果获取，
+ * 并复用 generation.ts 的 Generation 抽象返回异步任务句柄。
+ */
 import { Duration, Effect, Schedule, Schema, Stream } from "effect"
 import { Headers, HttpClientRequest, type HttpClientResponse } from "effect/http"
 import { Auth, type AuthInput } from "./auth.js"

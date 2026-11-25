@@ -1,3 +1,7 @@
+/**
+ * WSL 插件 — AddMachineTest。
+ * Windows Subsystem for Linux 相关的 GUI 插件中负责 AddMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { initialWslAdd, transitionWslAdd, type WslAddEffect, type WslAddEvent, type WslAddState } from "./add-machine"
 

@@ -1,3 +1,7 @@
+/**
+ * 外壳通知 — NotificationTest。
+ * 应用级通知的展示中负责 NotificationTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import type { ServerConnection } from "@/runtime/server/registry"
 import type { Tab } from "@/shell/tabs/tabs"

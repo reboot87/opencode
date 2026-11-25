@@ -1,3 +1,7 @@
+/**
+ * 终端 UI — DialogPrompt。
+ * 终端界面的通用 UI 组件中负责 DialogPrompt 部分，提供该部分所需的实现与类型定义。
+ */
 import { TextareaRenderable } from "@opentui/core"
 import { Keymap } from "../context/keymap"
 import { useTheme } from "../context/theme"

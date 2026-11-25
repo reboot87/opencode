@@ -1,3 +1,7 @@
+/**
+ * 应用节点平台装配。
+ * 装配平台相关的 HTTP 客户端与超时策略（如 Bun 无超时限制）。
+ */
 import { LLMClient, RequestExecutor } from "@opencode/ai/route"
 import { Effect, Layer, Option } from "effect"
 import { FetchHttpClient, HttpClient, HttpClientError } from "effect/http"

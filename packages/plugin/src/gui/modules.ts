@@ -1,3 +1,7 @@
+/**
+ * GUI 模块分组。
+ * 划分插件共享模块与窗口专属模块的清单。
+ */
 // The module lists only: `gui()` reads them at build time, so this file imports nothing.
 
 /**

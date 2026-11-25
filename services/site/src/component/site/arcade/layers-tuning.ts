@@ -8,6 +8,8 @@ import { z } from "zod"
  * values as JSON so they can be baked in here as new defaults (David's tuning, Nov 5 2026). Values
  * persist in localStorage. public/arcade404/layers/poster-*.{avif,webp} bake in these defaults' first frame:
  * re-bake it when they change.
+ *
+ * 街机小游戏组件：层调校。
  */
 
 type Range = { label: string; min: number; max: number; step: number; value: number; unit?: string }

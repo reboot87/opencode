@@ -1,3 +1,7 @@
+/**
+ * 会话时间线 — Cache。
+ * 会话消息时间线的渲染中负责 Cache 部分，提供该部分所需的实现与类型定义。
+ */
 import {
   createComponent,
   createComputed,

@@ -1,4 +1,6 @@
 //! Track the terminal's editor selection and turn IDE mentions into prompt attachments.
+//!
+//! 终端输入提示：编辑器上下文。
 
 use std::path::{Path, PathBuf};
 use std::sync::Arc;

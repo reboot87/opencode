@@ -1,3 +1,7 @@
+/**
+ * 声明 — Dialog。
+ * 第三方声明与开源许可中负责 Dialog 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, Show } from "solid-js"
 import { Dialog, DialogBody, DialogHeader, DialogTitleGroup } from "@opencode/ui/dialog"
 import { useLanguage } from "@/runtime/i18n/language"

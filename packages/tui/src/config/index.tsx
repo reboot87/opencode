@@ -1,3 +1,7 @@
+/**
+ * 终端配置 — Index 出口。
+ * 集中导出 终端配置 中 Index 相关的实现、组件与类型。
+ */
 export * as Config from "."
 
 import { createBindingLookup } from "@opentui/keymap/extras"

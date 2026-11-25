@@ -1,3 +1,7 @@
+/**
+ * 模块 — VisibleModel。
+ * 该目录下的功能模块中负责 VisibleModel 部分，提供该部分所需的实现与类型定义。
+ */
 import type { StateDiagram, StateDiagramState, StateDiagramTransition } from "./types.js"
 
 export type StateVisibleTransition = StateDiagramTransition

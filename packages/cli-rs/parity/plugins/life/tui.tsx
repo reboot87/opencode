@@ -1,3 +1,8 @@
+/**
+ * 插件对等性场景：TUI。
+ *
+ * 插件能力的对等性场景：验证 Rust 与 TypeScript 插件行为一致。
+ */
 // The plugin of the life machine (parity/machines/plugins.json), TypeScript side: a line in home.footer that shows A
 // or B, then the pending keys while a sequence is pending, and seven palette commands. Life flip flips the line, Life throw throws, Life stall takes 150 ms, Life arm makes the next setup throw,
 // Life dialog opens a prompt, Life confirm asks whether to flip the line, and Life alert flips it once it closes. With

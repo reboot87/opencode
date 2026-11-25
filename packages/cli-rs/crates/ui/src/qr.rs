@@ -1,6 +1,8 @@
 //! Encodes pairing URLs in QR byte mode at error correction level L.
 
 // Error correction codewords per block and block count at level L, for versions 1 to 40.
+//!
+//! 基础 UI 组件库：`qr`。
 const ECC_PER_BLOCK: [usize; 40] = [
     7, 10, 15, 20, 26, 18, 20, 24, 30, 18, 20, 24, 26, 30, 22, 24, 28, 30, 28, 28, 28, 28, 30, 30, 26, 28, 30, 30, 30,
     30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30,

@@ -1,3 +1,7 @@
+/**
+ * 详情文案 — Sk。
+ * 详情插件的多语言文案中负责 Sk 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   title: "Podrobnosti o relácii",
   tooltip: "Súhrn",

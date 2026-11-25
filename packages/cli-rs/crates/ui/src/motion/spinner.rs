@@ -1,3 +1,5 @@
+//! 基础 UI 组件库：加载指示器。
+
 use super::text::{paint_shaded, shimmer_strength_at};
 use super::{Motion, OneCellMotion, channels, millis, one_cell_frame, rgba, running};
 use opentui::App;

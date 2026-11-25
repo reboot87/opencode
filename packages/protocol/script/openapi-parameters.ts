@@ -1,3 +1,8 @@
+/**
+ * OpenAPI·参数脚本。
+ *
+ * 协议包的开发脚本：API 定义生成与契约校验。
+ */
 type Schema = { description?: string; allOf?: Array<Record<string, unknown>>; [key: string]: unknown }
 type Parameter = { description?: string; schema?: Schema; [key: string]: unknown }
 type Document = { paths?: Record<string, Record<string, { parameters?: Array<Parameter> }>> }

@@ -1,3 +1,7 @@
+/**
+ * 新建会话 — View。
+ * 创建新会话的向导与表单中负责 View 部分，提供该部分所需的实现与类型定义。
+ */
 import { Tooltip } from "@opencode/ui/tooltip"
 import { Icon } from "@opencode/ui/icon"
 import { Keybind } from "@opencode/ui/keybind"

@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — Embeds。
+ * 浏览器端的插件加载与扩展点中负责 Embeds 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, on, onCleanup, Show, untrack } from "solid-js"
 import { createEventListener } from "@solid-primitives/event-listener"
 import { embedBounds, overlaps } from "./embed-geometry"

@@ -1,3 +1,5 @@
+//! Rust 构建脚本。
+
 fn main() {
     // A deeply nested plugin tree can exceed the Windows main thread's default 1 MiB stack in a debug build.
     let stack = 8 << 20;

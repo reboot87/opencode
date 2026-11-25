@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：密码·伪终端。
+ *
+ * 规格编号：C.p。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Masked input with the cursor moved left, a required error, then submit.
 import { definePty } from "../../pty/run"
 import { demo, press } from "./demo"

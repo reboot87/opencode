@@ -1,3 +1,7 @@
+/**
+ * 会话输入区 — FocusMachine。
+ * 会话界面输入区的实现中负责 FocusMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // How long a mounted session composer may wait to become focusable (draft loaded, no request dock or dialog)
 // before it stops trying to take focus.
 export const FOCUS_HANDOFF_TIMEOUT_MS = 10_000

@@ -1,3 +1,7 @@
+/**
+ * 外壳布局 — SessionTabAvatar。
+ * 应用外壳的布局结构中负责 SessionTabAvatar 部分，提供该部分所需的实现与类型定义。
+ */
 import type { LocalProject } from "@/shell/state/layout"
 import {
   displayName,

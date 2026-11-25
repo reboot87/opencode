@@ -1,3 +1,7 @@
+/**
+ * 国际化 — Lo。
+ * 多语言文案资源中负责 Lo 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "ui.sessionReview.title": "ການປ່ຽນແປງເຊດຊັນ",
   "ui.sessionReview.title.git": "ການປ່ຽນແປງ Git",

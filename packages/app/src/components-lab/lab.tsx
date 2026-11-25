@@ -1,3 +1,7 @@
+/**
+ * 组件实验室 — Lab。
+ * 用于试用与调试 UI 组件的页面中负责 Lab 部分，提供该部分所需的实现与类型定义。
+ */
 import { useSearchParams } from "@solidjs/router"
 import { createMemo, Show, type ParentProps } from "solid-js"
 import { CommentsProvider } from "@/composer/comments"

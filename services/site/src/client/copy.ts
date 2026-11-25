@@ -5,6 +5,8 @@ import { t } from "./dom"
 /**
  * Copies with feedback in place (copy-feedback.ts), saying "Copied" in `live` if there is one, with
  * the button's copy icon drawn as a check meanwhile.
+ *
+ * 浏览器端脚本：拷贝。
  */
 export function copied(button: HTMLElement, write: () => Promise<unknown>, live?: Element | null) {
   const icon = button.querySelector<SVGPathElement>(`path[d="${copyPath}"], path[d="${checkPath}"]`)

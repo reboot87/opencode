@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — FileMediaMachineTest。
+ * 跨场景复用的通用 UI 组件中负责 FileMediaMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   DISPOSED_FILE_MEDIA_EVENT,

@@ -1,3 +1,7 @@
+/**
+ * 终端路由 — Home。
+ * 终端界面的路由定义中负责 Home 部分，提供该部分所需的实现与类型定义。
+ */
 import { Prompt, type PromptRef } from "../component/prompt"
 import { createEffect, createMemo, createSignal, onMount, Show, untrack } from "solid-js"
 import { Logo } from "../component/logo"

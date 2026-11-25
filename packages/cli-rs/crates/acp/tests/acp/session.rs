@@ -1,3 +1,5 @@
+//! ACP 协议测试：会话。
+
 use serde_json::{Value, json};
 
 use crate::wire::{RpcError, Wire, WireOptions, assert_matches, current_value, lock, make_session, start_wire};

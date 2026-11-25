@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：预览·伪终端。
+ *
+ * 规格编号：M.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // With `prompt.image_preview`, a pasted image shows a preview above the composer, which grows by its rows.
 import { definePty } from "../../pty/run"
 import { leave, opened, server, statusMask } from "./fixture"

@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — AddressMachine。
+ * 内置浏览器功能的 GUI 插件中负责 AddressMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // The browser's address field. At rest it shows the page's URL; editing shows the user's text and suggestions; a
 // submitted address stays in the field until the page reports where it went. The page's reports are counted by
 // `nextAddressEpoch`, and a submit keeps the counts it saw, so the next URL change, finished load or rejection ends

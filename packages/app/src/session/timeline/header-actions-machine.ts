@@ -1,4 +1,8 @@
-/** A rename that has not settled by then counts as failed, so the title input cannot stay disabled. */
+/**
+ * A rename that has not settled by then counts as failed, so the title input cannot stay disabled.
+ *
+ * 会话时间线中负责 HeaderActionsMachine 部分：会话消息时间线中与 HeaderActionsMachine 相关的状态、交互与渲染逻辑。
+ */
 export const SESSION_RENAME_TIMEOUT_MS = 15_000
 
 /**

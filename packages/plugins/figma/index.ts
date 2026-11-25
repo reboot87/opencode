@@ -1,3 +1,7 @@
+/**
+ * 模块 — Index 出口。
+ * 集中导出 模块 中 Index 相关的实现、组件与类型。
+ */
 import { Plugin, Skill } from "@opencode/plugin"
 import { readFile } from "node:fs/promises"
 import { fileURLToPath } from "node:url"

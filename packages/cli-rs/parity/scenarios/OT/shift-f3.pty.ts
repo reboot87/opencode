@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：shift·f3·伪终端。
+ *
+ * 规格编号：OT。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // anomalyco/opentui#2056 tells a text-sizing probe reply (row 2) from a modified F3 key (`CSI 1;m R`). The settings
 // dialog is bound to Shift+F3. After startup the terminal sends the legacy form `CSI 1;2R`, which TS opens the dialog
 // on since Core 0.9.4 and Rust reads as a reply under the Kitty protocol (parity/deviations/OT094-legacy-shift-f3.md),

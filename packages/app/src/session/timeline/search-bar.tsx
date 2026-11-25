@@ -1,3 +1,7 @@
+/**
+ * 会话时间线 — SearchBar。
+ * 会话消息时间线的渲染中负责 SearchBar 部分，提供该部分所需的实现与类型定义。
+ */
 import { Icon } from "@opencode/ui/icon"
 import "@opencode/ui/text-input.css"
 import { For, Show } from "solid-js"

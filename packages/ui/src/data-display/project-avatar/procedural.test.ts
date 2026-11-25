@@ -1,3 +1,7 @@
+/**
+ * 项目头像 — ProceduralTest。
+ * 项目标识头像组件中负责 ProceduralTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { PROJECT_ICON_STYLES } from "./procedural"
 

@@ -1,3 +1,7 @@
+/**
+ * 性能测试 — ReviewBench。
+ * 界面渲染性能基准中负责 ReviewBench 部分，提供该部分所需的实现与类型定义。
+ */
 // The review pane on a large change: 1 to 10,000 changed files of 100 changed lines each (4 KB to 40 MB of patches),
 // 100 files to a folder, at 1366×768.
 import { bench, web } from "@hona/strobe"

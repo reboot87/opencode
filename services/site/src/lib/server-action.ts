@@ -1,3 +1,6 @@
+/**
+ * 站点共享逻辑：服务端动作。
+ */
 export function sanitizeServerActionRequest(request: Request) {
   const requestUrl = new URL(request.url)
   if (requestUrl.pathname !== "/_server") return request

@@ -1,3 +1,5 @@
+//! 终端界面测试：Shell。
+
 use crate::support;
 
 use std::sync::Arc;

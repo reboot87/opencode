@@ -37,6 +37,8 @@ export const monoFontPreloads: Partial<Record<string, string>> = import.meta.env
  * Regular", not "Menlo"). The stand-ins have no unicode-range, so characters OpenTUI Mono lacks
  * (Cyrillic, Greek) set in the scaled system font, at the same advance. Pages get them from
  * src/style/fonts.css, which writes them out (test/fonts.test.ts keeps the two the same).
+ *
+ * 站点界面组件：等宽字体。
  */
 export const monoFontFaces = [
   ...[

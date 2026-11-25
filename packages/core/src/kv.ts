@@ -1,3 +1,7 @@
+/**
+ * 键值存储（KV）。
+ * 简单的键值存储接口：读写、删除与前缀扫描。
+ */
 export * as KV from "./kv.js"
 
 import { and, asc, eq, gt, gte, lt } from "drizzle-orm"

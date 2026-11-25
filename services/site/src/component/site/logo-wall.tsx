@@ -25,6 +25,8 @@ export const replayLogos = () => setReplays((count) => count + 1)
  * logo of average width. What it does once the page's code runs (measuring, the entrance and the
  * swaps) is logo-wall-motion.ts, here and on the static pages; this renders the row for four cards,
  * with its logos unseen until then (reveal.css, logo-wall.css).
+ *
+ * 站点界面组件：标识·wall。
  */
 export function LogoWall(props: {
   kind: "companies" | "providers"

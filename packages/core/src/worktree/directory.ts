@@ -1,3 +1,7 @@
+/**
+ * Worktree 目录规范化。
+ * 规范化 worktree 目录路径并处理不可用错误。
+ */
 export * as WorktreeDirectory from "./directory.js"
 
 import { Effect, Schema } from "effect"

@@ -1,4 +1,6 @@
 //! Code-mode execution details and nested tool calls.
+//!
+//! 终端弹窗组件：`execute`。
 
 use std::sync::Arc;
 

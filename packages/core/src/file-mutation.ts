@@ -1,3 +1,7 @@
+/**
+ * 文件变更服务（FileMutation）。
+ * 定义写入/删除等文件变更操作的目标与结果类型。
+ */
 export * as FileMutation from "./file-mutation.js"
 
 import { isUtf8 } from "node:buffer"

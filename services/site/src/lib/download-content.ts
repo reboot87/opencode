@@ -12,7 +12,10 @@ import { homeFaq } from "~/lib/faq-content"
 import { sdkInstalls } from "~/lib/install-commands"
 import { blocks, codeFence, link, richToMarkdown, type MarkdownContext } from "~/lib/markdown"
 
-/** The download lists' copy (product pages and /product), for the pages and their Markdown. `route` localizes a site path. */
+/** The download lists' copy (product pages and /product), for the pages and their Markdown. `route` localizes a site path.
+ *
+ * 站点共享逻辑：下载内容。
+ */
 export function downloadContent(t: Translate, route: (path: string) => string) {
   return {
     title: t("download.title"),

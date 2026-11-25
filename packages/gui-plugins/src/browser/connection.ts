@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — Connection。
+ * 内置浏览器功能的 GUI 插件中负责 Connection 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Browser } from "@opencode/plugin-browser/rpc"
 import type { IpcClient } from "@opencode/plugin/gui"
 import type { ExperimentalBrowserTab } from "@opencode/plugin/gui/browser"

@@ -1,3 +1,7 @@
+/**
+ * SSH 文案 — Sr。
+ * SSH 插件的多语言文案中负责 Sr 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   label: "SSH",
   placeholder: "ссх усер@еxампле.цом",

@@ -1,4 +1,6 @@
-/** Writes waiting for the app interface beyond this drop the oldest, so a long detach cannot grow without bound. */
+/**
+ * Writes waiting for the app interface beyond this drop the oldest, so a long detach cannot grow without bound. 写入waiting for the app interface beyond this drop the oldest, so a long detach cannot grow without bound.。
+ */
 export const HOST_API_MAX_QUEUE = 1024
 
 export type QueuedHostWrite<A> = {

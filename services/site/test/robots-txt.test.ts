@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：robots.txt·txt。
+ */
 import { describe, expect, test } from "bun:test"
 import { robotsTxt } from "../src/lib/robots-txt"
 

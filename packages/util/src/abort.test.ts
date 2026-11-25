@@ -1,3 +1,7 @@
+/**
+ * 中止工具测试。
+ * 验证中止信号以 DOMException 形式产生可识别的原因。
+ */
 import { expect, test } from "bun:test"
 import { abort } from "./abort.js"
 

@@ -1,3 +1,7 @@
+/**
+ * 实例服务接口。
+ * 定义实例级别服务的接口与类型再导出。
+ */
 export * as Instance from "./service.js"
 export type { Services } from "../instance.js"
 

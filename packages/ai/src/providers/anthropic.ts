@@ -1,3 +1,7 @@
+/**
+ * Anthropic provider 门面。
+ * 封装 Anthropic Messages API 协议，支持 thinking 块、工具调用、提示词缓存，提供 chat / responses 模型工厂与 API Key 鉴权。
+ */
 import { Auth } from "../route/auth.js"
 import { AuthOptions, type ProviderAuthOption } from "../route/auth-options.js"
 import type { ProviderPackage } from "../provider-package.js"

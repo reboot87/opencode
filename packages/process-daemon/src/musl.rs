@@ -1,3 +1,5 @@
+//! 进程守护服务实现：`musl`。
+
 use std::ffi::{c_char, c_int, c_uint, c_void};
 
 /// Zig 0.16 assumes musl provides `statx` (added in musl 1.2.5), so libghostty

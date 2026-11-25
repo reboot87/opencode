@@ -1,3 +1,10 @@
+/**
+ * 生命周期·子进程的测试。
+ *
+ * 被测模块：@opencode/cli/acp/lifecycle.subprocess
+ *
+ * 覆盖 ACP（Agent Client Protocol）会话的握手、消息流转与错误处理。
+ */
 import { describe, expect, test } from "bun:test"
 import { createAcpFixture, initialize } from "./subprocess"
 

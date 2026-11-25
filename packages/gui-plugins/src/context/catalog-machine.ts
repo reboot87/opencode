@@ -1,4 +1,8 @@
-/** How long one load of the provider and model catalogs may take before it counts as failed. */
+/**
+ * How long one load of the provider and model catalogs may take before it counts as failed.
+ *
+ * CatalogMachine：该文件实现 CatalogMachine 相关的状态与逻辑。
+ */
 export const CATALOG_LOAD_TIMEOUT_MS = 15_000
 
 // A cold Location lists its catalogs once its plugins activate, which can take longer than the server's 5 s wait. The

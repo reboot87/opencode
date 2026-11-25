@@ -1,3 +1,5 @@
+//! 终端插件视图入口。
+
 pub mod approve;
 pub mod btw;
 pub mod diffs;

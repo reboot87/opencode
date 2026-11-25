@@ -1,3 +1,7 @@
+/**
+ * WSL 文案 — Ne。
+ * WSL 插件的多语言文案中负责 Ne 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "server.add": "WSL सर्भर थप्नुहोस्",
   "server.label": "WSL",

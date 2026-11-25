@@ -1,3 +1,7 @@
+/**
+ * UI 上下文 — Attention。
+ * UI 包的上下文提供者中负责 Attention 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Attention } from "@opencode/plugin/tui/context"
 import { useRenderer } from "@opentui/solid"
 import { createContext, onCleanup, useContext, type ParentProps } from "solid-js"

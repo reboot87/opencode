@@ -1,3 +1,7 @@
+/**
+ * 快捷键设置 — Migration。
+ * 快捷键绑定与冲突处理中负责 Migration 部分，提供该部分所需的实现与类型定义。
+ */
 import { batch, createEffect, untrack } from "solid-js"
 import { Predicate } from "effect"
 import type { useSettings } from "@/settings/model"

@@ -1,3 +1,8 @@
+/**
+ * 命令脚本。
+ *
+ * Rust CLI 的代码生成器：由 TypeScript 单一来源生成 Rust 代码。
+ */
 // Records the CLI command tree, including metadata not visible in help output.
 import { Effect, Exit, Option } from "effect"
 import { GlobalFlag } from "effect/cli"

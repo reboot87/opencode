@@ -1,3 +1,8 @@
+/**
+ * perf脚本。
+ *
+ * Rust CLI 的开发脚本：代码生成、依赖漂移检查与性能采样。
+ */
 // Runs the performance scenarios (`crates/tui/tests/all/perf.rs`) and compares two runs.
 //
 //   bun run perf [--runs N] [--out FILE] [scenario...]   build the optimized test binaries, run every scenario (or the

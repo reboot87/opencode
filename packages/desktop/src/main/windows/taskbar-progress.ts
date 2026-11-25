@@ -1,3 +1,7 @@
+/**
+ * 窗口管理 — TaskbarProgress。
+ * 浏览器窗口的创建与布局管理中负责 TaskbarProgress 部分，提供该部分所需的实现与类型定义。
+ */
 import type { BrowserWindow } from "electron"
 import type { TaskbarProgressMode } from "../../shared/ipc-contract"
 

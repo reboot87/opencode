@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — SidebarSessionsTest。
+ * 自定义窗口标题栏中负责 SidebarSessionsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import type { OpenCodeEvent, SessionInfo } from "@opencode/client/promise"
 import { isSidebarSessionActivity, mergeSidebarSessions } from "./sidebar-sessions"

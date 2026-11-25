@@ -1,3 +1,7 @@
+/**
+ * AWS Bedrock Mantle（OpenAI 兼容端点）provider 门面。
+ * 通过 Bedrock Mantle 的兼容接口提供 chat / messages / responses 能力，复用通用兼容协议并注入 Bedrock 鉴权。
+ */
 import { Route } from "../route/client.js"
 import { Endpoint } from "../route/endpoint.js"
 import type { ProviderPackage } from "../provider-package.js"

@@ -1,3 +1,7 @@
+/**
+ * 回归测试 — SessionWebsearchDockSpec。
+ * 防止既有行为退化的端到端用例中负责 SessionWebsearchDockSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test, type Page } from "@playwright/test"
 import { sessionHref } from "../utils/app"
 import { expectSessionTitle } from "../utils/waits"

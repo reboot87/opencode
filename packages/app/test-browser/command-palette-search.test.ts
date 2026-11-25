@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — CommandPaletteSearchTest。
+ * 浏览器环境下的测试中负责 CommandPaletteSearchTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { createComputed, createRoot, createSignal } from "solid-js"
 import type { CommandPaletteEntry } from "@/shell/commands/palette"

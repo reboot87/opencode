@@ -1,3 +1,7 @@
+/**
+ * Shell 类型。
+ * 定义 shell 命令、结果与退出信息结构。
+ */
 export * as Shell from "./shell.js"
 
 import { Schema } from "effect"

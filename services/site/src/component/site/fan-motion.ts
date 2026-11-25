@@ -1,3 +1,6 @@
+/**
+ * 站点界面组件：fan·动效。
+ */
 // The logo fan's motion (logo-fan.tsx), shared with the section menus' fan style (docs-lockup.tsx)
 // and the press gallery, in its own module so they don't load the fan.
 

@@ -1,3 +1,8 @@
+/**
+ * 录制·成本·报告脚本。
+ *
+ * AI 包的开发脚本：生成代码、校验供应商适配与跑基准。
+ */
 import * as fs from "node:fs/promises"
 import * as path from "node:path"
 

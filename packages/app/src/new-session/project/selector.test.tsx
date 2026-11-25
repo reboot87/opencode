@@ -1,3 +1,7 @@
+/**
+ * 新会话项目 — SelectorTest。
+ * 新建会话时的项目选择中负责 SelectorTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, mock, test } from "bun:test"
 import { createRoot } from "solid-js"
 import type { PromptProjectControls } from "./selector"

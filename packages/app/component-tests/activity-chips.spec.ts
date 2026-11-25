@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — ActivityChipsSpec。
+ * 应用界面组件的测试中负责 ActivityChipsSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, story } from "../../stories/playwright/story"
 
 story("shows how long each background item has been running, ticking while open", async ({ mount, page }) => {

@@ -1,3 +1,7 @@
+/**
+ * 数据库 schema 生成文件。
+ * 由迁移汇总生成的当前 schema 定义（建表 SQL），供 schema 校验与 introspection 使用。
+ */
 import { Effect } from "effect"
 import type { DatabaseMigration } from "./migration.js"
 

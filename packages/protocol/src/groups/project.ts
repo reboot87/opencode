@@ -1,3 +1,7 @@
+/**
+ * 项目 API 分组。
+ * 定义项目的列举、更新与目录管理端点。
+ */
 import { Project } from "@opencode/schema/project"
 import { Schema, SchemaGetter, Struct } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, OpenApi } from "effect/http-api"

@@ -1,6 +1,8 @@
 //! A route of the one API, on either path: what its render returns, centered in a scroll box on the page background
 //! (TS `StatsPage`'s container), the plugin's commands of [`abi::Scope::Route`] while it shows, and its mount handlers
 //! as it mounts and unmounts.
+//!
+//! 插件系统：路由。
 
 use std::cell::RefCell;
 use std::rc::{Rc, Weak};

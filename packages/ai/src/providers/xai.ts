@@ -1,3 +1,7 @@
+/**
+ * xAI provider 门面。
+ * 封装 chat / images / videos 能力，提供模型工厂与鉴权配置。
+ */
 import { AuthOptions, type ProviderAuthOption } from "../route/auth-options.js"
 import { Route } from "../route/client.js"
 import { Endpoint } from "../route/endpoint.js"

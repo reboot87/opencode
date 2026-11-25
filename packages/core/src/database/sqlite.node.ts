@@ -1,3 +1,7 @@
+/**
+ * SQLite 运行时（Node）。
+ * 在 Node 运行时提供 SqlClient 实现与能力声明。
+ */
 import { SqliteClient } from "@effect/sql-sqlite-node"
 import { Layer, Option, Schema } from "effect"
 import type { SqlClient } from "effect/sql"

@@ -1,3 +1,10 @@
+/**
+ * OpenAPI·stabilize的测试。
+ *
+ * 被测模块：@opencode/protocol/openapi-stabilize
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { stabilizeOpenApi } from "../script/openapi-stabilize.js"
 

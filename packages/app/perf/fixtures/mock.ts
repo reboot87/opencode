@@ -1,3 +1,7 @@
+/**
+ * 性能夹具 — Mock。
+ * 性能测试使用的数据夹具中负责 Mock 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Page, Route } from "@playwright/test"
 import type { MockRequest, MockResponse, PrepareContext } from "@hona/strobe"
 

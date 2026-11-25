@@ -1,3 +1,6 @@
+/**
+ * 站点上下文：语言。
+ */
 import { createEffect, createSignal, on } from "solid-js"
 import { getRequestEvent } from "solid-js/web"
 import { useLocation } from "@solidjs/router"

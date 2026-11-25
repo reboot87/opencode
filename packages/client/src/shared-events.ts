@@ -1,3 +1,7 @@
+/**
+ * 共享事件类型。
+ * 定义事件订阅的类型选择与订阅选项。
+ */
 export * as SharedEvents from "./shared-events.js"
 
 /** The members of event union `A` whose type matches one of `Type`, including `rpc.*` events. */

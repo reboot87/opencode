@@ -1,3 +1,7 @@
+/**
+ * ripgrep 二进制管理。
+ * 定位并管理 ripgrep 15.1.0 二进制及其平台变体。
+ */
 import { createHash } from "node:crypto"
 import path from "path"
 import { Context, Effect, Layer, Stream } from "effect"

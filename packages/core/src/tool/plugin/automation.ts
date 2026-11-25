@@ -1,3 +1,7 @@
+/**
+ * automation 工具。
+ * 查看与管理自动化任务（automation）的工具。
+ */
 export * as AutomationTools from "./automation.js"
 
 import { ToolFailure } from "@opencode/ai/effect"

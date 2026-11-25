@@ -1,3 +1,7 @@
+/**
+ * 服务端 API 分组。
+ * 定义服务端信息查询与配对码端点。
+ */
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, OpenApi } from "effect/http-api"
 import { UnauthorizedError } from "../errors.js"

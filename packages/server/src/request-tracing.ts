@@ -1,3 +1,7 @@
+/**
+ * 请求追踪辅助。
+ * 在无父 span 时开启新的追踪 span。
+ */
 import { Context, Effect, Tracer } from "effect"
 
 // ParentSpan is optional, so removing it never takes away a requirement of the effect.

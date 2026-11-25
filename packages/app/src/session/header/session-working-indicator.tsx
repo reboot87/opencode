@@ -1,3 +1,7 @@
+/**
+ * 会话头部 — SessionWorkingIndicator。
+ * 会话界面顶部的标题与操作区中负责 SessionWorkingIndicator 部分，提供该部分所需的实现与类型定义。
+ */
 import { SessionProgressIndicatorV2 } from "@opencode/session-ui/v2/session-progress-indicator-v2"
 import { Show } from "solid-js"
 import { createStore } from "solid-js/store"

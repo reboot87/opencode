@@ -1,3 +1,10 @@
+/**
+ * 模式定义·错误的测试。
+ *
+ * 被测模块：@opencode/server/schema-error
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import { Generate } from "@opencode/core/generate"
 import { makeLocationNode } from "@opencode/util/effect/app-node"

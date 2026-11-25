@@ -5,6 +5,8 @@
 //! the host to draw. Handlers receive a [`Host`]; their effects run after the outermost callback returns.
 
 // A builder for a variant field leaves nodes of other kinds unchanged.
+//!
+//! 插件 ABI 边界入口。
 macro_rules! node_setters {
     ($($name:ident($($arg:ident: $ty:ty),*) on $($variant:ident)|+: $field:ident = $value:expr;)*) => {$(
         #[doc = concat!("Sets `", stringify!($field), "` on `", stringify!($($variant)|+), "` nodes.")]

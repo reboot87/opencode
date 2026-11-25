@@ -1,3 +1,7 @@
+/**
+ * 时间线（新版） — EventRow。
+ * 重构中的会话消息时间线中负责 EventRow 部分，提供该部分所需的实现与类型定义。
+ */
 import { Badge } from "@opencode/ui/badge"
 import { useI18n } from "@opencode/ui/context/i18n"
 import { For, Show, createMemo } from "solid-js"

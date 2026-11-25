@@ -9,7 +9,10 @@ function isGlobalReflect(sourceCode: SourceCode, expression: ESTree.Expression):
   return variable === null || variable.defs.length === 0;
 }
 
-/** Reports whether a call target names one method on the global Reflect object. */
+/** Reports whether a call target names one method on the global Reflect object.
+ *
+ * Oxlint 规则共享工具：reflect·方法。
+ */
 export function isGlobalReflectMethodCall(
   sourceCode: SourceCode,
   callee: ESTree.Expression,

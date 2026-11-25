@@ -1,3 +1,10 @@
+/**
+ * 录制的·测试的测试辅助模块。
+ *
+ * 被测模块：@opencode/ai/recorded-test
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { HttpRecorder } from "@opencode/http-recorder"
 import { NodeWS } from "@effect/platform-node"
 import { Effect, Layer } from "effect"

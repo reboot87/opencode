@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — TabStripStandaloneStories。
+ * 自定义窗口标题栏中负责 TabStripStandaloneStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { NavigationStory } from "./navigation-story"
 
 type Args = { width: number }

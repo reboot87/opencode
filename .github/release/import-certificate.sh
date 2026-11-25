@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：导入证书。
 set -euo pipefail
 umask 077
 cert="$RUNNER_TEMP/cert.p12"

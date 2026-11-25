@@ -1,3 +1,5 @@
+//! Mermaid 渲染核心：`drawing`。
+
 use super::geometry::{Bounds, Direction, Point, direction_between, walk_orthogonal_segment};
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]

@@ -1,3 +1,10 @@
+/**
+ * 可观测性的测试。
+ *
+ * 被测模块：@opencode/core/effect/observability
+ *
+ * 覆盖 Effect 运行时的分层节点、作用域与资源释放行为。
+ */
 import { afterEach, describe, expect, test } from "bun:test"
 import { NodeFileSystem } from "@effect/platform-node"
 import { Effect, Layer, Logger } from "effect"

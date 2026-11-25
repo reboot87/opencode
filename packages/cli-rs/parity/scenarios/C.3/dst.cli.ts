@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：dst·CLI。
+ *
+ * 规格编号：C.3。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `stats --year 2024` in America/New_York: local midnights on both ends, the zone name in the query, and a
 // calendar whose days do not drift across the DST changes.
 import { defineCli } from "../../cli/run"

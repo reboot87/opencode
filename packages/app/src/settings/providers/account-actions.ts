@@ -1,3 +1,7 @@
+/**
+ * Provider 设置 — AccountActions。
+ * provider 的账号与密钥设置中负责 AccountActions 部分，提供该部分所需的实现与类型定义。
+ */
 import { showToast } from "@/shell/notifications/toast"
 import { consoleCatalogLoaded } from "@/providers/catalog/console"
 import { createConsoleCatalogSettler } from "@/providers/catalog/console-settle"

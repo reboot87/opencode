@@ -1,4 +1,8 @@
 #!/usr/bin/env bun
+
+/**
+ * 仓库脚本：检查灰阶。
+ */
 // Keeps the web surfaces' greys on one shared scale. Fails when a stylesheet uses a grey, black or
 // white that isn't on the scale, or types a scale grey straight into a rule instead of using a
 // token. Files with a fixed look of their own (the arcade, the video tools, print) are listed in

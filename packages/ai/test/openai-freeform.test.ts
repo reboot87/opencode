@@ -1,3 +1,10 @@
+/**
+ * OpenAI·自由格式的测试。
+ *
+ * 被测模块：@opencode/ai/openai-freeform
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { LLMEvent, ToolDefinition } from "../src/effect.js"
 import { OpenAIFreeform } from "../src/protocols/openai-freeform.js"

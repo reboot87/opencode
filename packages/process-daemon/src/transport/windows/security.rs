@@ -1,3 +1,5 @@
+//! 进程间传输通道：`security`。
+
 use std::io;
 use std::os::windows::io::AsRawHandle;
 use std::ptr::null_mut;

@@ -4,6 +4,8 @@
 // A build without the JS host has no plugin that sends requests: only the replies and the cancels of the linked plugins'
 // fetches are used.
 #![cfg_attr(not(feature = "ts"), allow(dead_code))]
+//!
+//! 插件系统：请求。
 
 use std::cell::RefCell;
 use std::rc::{Rc, Weak};

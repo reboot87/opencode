@@ -1,3 +1,7 @@
+/**
+ * pty-socket 接口处理器。
+ * PTY Socket 接口处理器：把 PTY 会话桥接为 WebSocket。
+ */
 import { LocationLifecycle } from "@opencode/core/location-lifecycle"
 import { Effect, Queue } from "effect"
 import { Socket } from "effect/socket"

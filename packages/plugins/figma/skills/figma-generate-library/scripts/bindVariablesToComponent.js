@@ -24,6 +24,10 @@
  *   (e.g. "VariableID:123:456"). Omit a key to skip binding that property.
  * @returns {Promise<{ mutatedNodeIds: string[] }>}
  *   List of node IDs that were mutated (for audit/validation purposes).
+ *
+ * Figma 组件库生成脚本：绑定变量·To·Component。
+ *
+ * Figma 组件库生成脚本：绑定变量·To·Component。
  */
 async function bindVariablesToComponent(component, bindings) {
   const mutatedNodeIds = []

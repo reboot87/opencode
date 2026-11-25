@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — SiteMachine。
+ * 内置浏览器功能的 GUI 插件中负责 SiteMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // The site information popover's cookie count and clear. Each read and clear takes the next attempt number, so an
 // answer whose attempt the state no longer holds is stale.
 

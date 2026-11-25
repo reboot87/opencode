@@ -1,3 +1,7 @@
+/**
+ * 国际化 — Hy。
+ * 多语言文案资源中负责 Hy 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "ui.sessionReview.title": "Նիստի փոփոխություններ",
   "ui.sessionReview.title.git": "Git փոփոխություններ",

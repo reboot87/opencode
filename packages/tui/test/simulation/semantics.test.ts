@@ -1,3 +1,7 @@
+/**
+ * 仿真测试 — SemanticsTest。
+ * 会话仿真的测试中负责 SemanticsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { BoxRenderable } from "@opentui/core"
 import { Effect } from "effect"

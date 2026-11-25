@@ -1,3 +1,7 @@
+/**
+ * 文件处理 — Apps。
+ * 桌面端的文件打开与拖放处理中负责 Apps 部分，提供该部分所需的实现与类型定义。
+ */
 import { execFile } from "node:child_process"
 import { homedir } from "node:os"
 import util from "node:util"

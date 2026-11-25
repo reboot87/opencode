@@ -1,3 +1,7 @@
+/**
+ * MCP 登录浮层 — MachineTest。
+ * MCP 服务器登录的浮层界面中负责 MachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   MCP_SIGN_IN_POLL_MS,

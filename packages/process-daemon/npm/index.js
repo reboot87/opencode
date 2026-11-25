@@ -1,3 +1,9 @@
+/*
+ * 守护进程 npm 包装：索引。
+ */
+/*
+ * 守护进程 npm 包装：索引。
+ */
 import { createRequire } from "node:module"
 import path from "node:path"
 

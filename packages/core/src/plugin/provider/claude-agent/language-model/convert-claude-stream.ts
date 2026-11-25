@@ -1,3 +1,7 @@
+/**
+ * Claude 流转换。
+ * 把 Claude SDK 的流式事件转换为统一的 LLMEvent 序列。
+ */
 export * as ConvertClaudeStream from "./convert-claude-stream.js"
 
 import type { LanguageModelV3FunctionTool, LanguageModelV3StreamPart } from "@ai-sdk/provider"

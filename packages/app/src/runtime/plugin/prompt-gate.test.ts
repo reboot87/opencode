@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — PromptGateTest。
+ * 浏览器端的插件加载与扩展点中负责 PromptGateTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, beforeEach, expect, jest, test } from "bun:test"
 import { Registry, type SessionRef } from "@opencode/plugin/gui"
 import { BuiltinPromptGate } from "@opencode/plugin/gui/builtin"

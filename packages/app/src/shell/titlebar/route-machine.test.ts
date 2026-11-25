@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — RouteMachineTest。
+ * 自定义窗口标题栏中负责 RouteMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { ServerKey } from "@/runtime/server/persistence"
 import { tabKey, type SessionTab } from "@/shell/tabs/tabs"

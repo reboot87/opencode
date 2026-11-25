@@ -1,3 +1,10 @@
+/**
+ * defect·响应的测试。
+ *
+ * 被测模块：@opencode/server/defect-response
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import path from "node:path"
 import { expect } from "bun:test"
 import { OpenCode } from "@opencode/client"

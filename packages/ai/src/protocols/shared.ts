@@ -1,3 +1,7 @@
+/**
+ * 协议实现的共享工具集。
+ * 提供宽松 Schema（lenient）、JSON 对象处理、工具扁平化（flattenTools/flattenRequest）、工具选择匹配（matchToolChoice）、内容能力校验与 jsonPost 请求辅助函数等，被众多协议复用。
+ */
 import { Tool } from "@opencode/schema/tool"
 import { Effect, Option, Predicate, Schema, SchemaGetter, SchemaTransformation } from "effect"
 import { Headers, HttpClientRequest } from "effect/http"

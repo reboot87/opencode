@@ -1,3 +1,10 @@
+/**
+ * 工具·HTML·Markdown·配额预算的测试。
+ *
+ * 被测模块：@opencode/core/tool-html-markdown-budget
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { fileURLToPath } from "node:url"
 import { MAX_MARKDOWN_BYTES } from "../src/tool/html-markdown"

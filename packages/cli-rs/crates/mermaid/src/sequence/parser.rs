@@ -1,3 +1,5 @@
+//! Mermaid 图表渲染：解析器。
+
 use std::sync::LazyLock;
 
 use regex::Regex;

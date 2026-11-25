@@ -1,3 +1,8 @@
+/**
+ * 插件对等性场景：TUI。
+ *
+ * 插件能力的对等性场景：验证 Rust 与 TypeScript 插件行为一致。
+ */
 // The Luau quick start's TypeScript twin: `/hello` shows a toast, and a muted line closes the home
 // footer. parity/scenarios/P.luau/hello.pty.ts installs this file beside the Luau plugin
 // (`crates/plugin/examples/luau/hello`) in one `plugins` directory: TS loads `tui.tsx`, Rust with

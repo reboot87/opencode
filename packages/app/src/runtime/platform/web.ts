@@ -1,3 +1,7 @@
+/**
+ * 运行时平台 — Web。
+ * 识别浏览器平台能力并做适配中负责 Web 部分，提供该部分所需的实现与类型定义。
+ */
 import { createBrowserDraftStore } from "@/runtime/persistence/drafts"
 import { basePath } from "./base-path"
 import type { Platform } from "./platform"

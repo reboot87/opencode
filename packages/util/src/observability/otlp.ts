@@ -1,3 +1,7 @@
+/**
+ * OTLP 追踪。
+ * 把追踪数据导出到 OpenTelemetry 协议端点。
+ */
 import { Effect, Layer, Scope } from "effect"
 import { OtlpLogger } from "effect/observability"
 import { runID } from "./shared.js"

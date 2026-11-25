@@ -1,3 +1,7 @@
+/**
+ * 模块 — Matching。
+ * 该目录下的功能模块中负责 Matching 部分，提供该部分所需的实现与类型定义。
+ */
 import { HashSet, Option } from "effect"
 import type { RequestMatcher, RequestSnapshot } from "../api.js"
 import { canonicalizeJson, decodeJson, isJsonRecord, jsonBody, safeText } from "../replay/comparison.js"

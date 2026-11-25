@@ -1,3 +1,7 @@
+/**
+ * 用量展示 — Dialog。
+ * 用量统计的界面中负责 Dialog 部分，提供该部分所需的实现与类型定义。
+ */
 import type { LocationRef, UsageLimitsInfo } from "@opencode/client/promise"
 import { Button } from "@opencode/ui/button"
 import { useDialog } from "@opencode/ui/context/dialog"

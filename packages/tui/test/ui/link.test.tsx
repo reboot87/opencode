@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid LinkTest：该文件实现 LinkTest 相关的状态与逻辑。
+ */
 import { expect, test } from "bun:test"
 import { SyntaxStyle } from "@opentui/core"
 import { ManualClock } from "@opentui/core/testing"

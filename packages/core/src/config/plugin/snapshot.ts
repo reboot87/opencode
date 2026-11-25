@@ -1,3 +1,7 @@
+/**
+ * 快照配置插件。
+ * 把配置应用到 Snapshot 服务。
+ */
 export * as ConfigSnapshotPlugin from "./snapshot.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

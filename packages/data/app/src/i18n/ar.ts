@@ -1,3 +1,7 @@
+/**
+ * 数据站文案 — Ar。
+ * 数据站点的多语言文案中负责 Ar 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "app.title": "ترتيب استخدام نماذج الذكاء الاصطناعي | OpenCode Data",
   "app.description":

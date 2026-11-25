@@ -1,3 +1,7 @@
+/**
+ * models.dev 类型。
+ * 定义 models.dev 目录的数据结构。
+ */
 export * as ModelsDev from "./models-dev.js"
 
 import { ephemeral, inventory } from "./event.js"

@@ -1,3 +1,7 @@
+/**
+ * MCP API 分组。
+ * 定义 MCP 客户端的接入与票据端点。
+ */
 import { Mcp } from "@opencode/schema/mcp"
 import { Location } from "@opencode/schema/location"
 import { PtyTicket } from "@opencode/schema/pty-ticket"

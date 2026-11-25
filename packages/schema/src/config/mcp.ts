@@ -1,3 +1,7 @@
+/**
+ * MCP 配置类型。
+ * 定义 mcp 配置项的 Schema（本地与远程服务器）。
+ */
 export * as ConfigMCP from "./mcp.js"
 
 import { Schema } from "effect"

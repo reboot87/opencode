@@ -1,3 +1,7 @@
+/**
+ * VCS 类型。
+ * 定义版本控制状态与 diff 结构。
+ */
 export * as Vcs from "./vcs.js"
 
 import { Schema } from "effect"

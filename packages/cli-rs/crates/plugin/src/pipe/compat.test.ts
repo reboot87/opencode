@@ -1,3 +1,8 @@
+/**
+ * 管道实现：兼容。
+ *
+ * Rust 插件管道（pipe）实现的对照与兼容层。
+ */
 import { expect, test } from "bun:test"
 import { context, modules } from "./compat.js"
 

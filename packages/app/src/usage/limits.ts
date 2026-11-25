@@ -1,3 +1,7 @@
+/**
+ * 用量展示 — Limits。
+ * 用量统计的界面中负责 Limits 部分，提供该部分所需的实现与类型定义。
+ */
 import type { UsageLimitsBudget, UsageLimitsInfo } from "@opencode/client/promise"
 
 /** The model the member is using, so a per-model budget shows this model's own counter. */

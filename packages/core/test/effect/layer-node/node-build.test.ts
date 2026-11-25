@@ -1,3 +1,10 @@
+/**
+ * 节点·构建的测试。
+ *
+ * 被测模块：@opencode/core/effect/layer-node/node-build
+ *
+ * 覆盖 Effect 运行时的分层节点、作用域与资源释放行为。
+ */
 import { describe, expect, test } from "bun:test"
 import { Context, Effect, Layer, Option } from "effect"
 import { Node } from "@opencode/util/effect/app-node"

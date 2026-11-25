@@ -1,3 +1,7 @@
+/**
+ * 文件处理 — AttachmentPickerTest。
+ * 桌面端的文件打开与拖放处理中负责 AttachmentPickerTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { NodeFileSystem } from "@effect/platform-node"
 import { mkdtemp, rm, truncate, writeFile } from "node:fs/promises"

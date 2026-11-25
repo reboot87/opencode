@@ -1,6 +1,8 @@
 //! Mini's performance scenario, run with the TUI's by `bun run perf` in `packages/cli-rs`: the long session replayed
 //! into mini's scrollback. It shares the counting allocator and the measured region with the TUI's scenarios
 //! (`crates/tui/tests/all/perf.rs`).
+//!
+//! 精简版实现：性能。
 
 #[allow(dead_code, reason = "the TUI's tests use the rest")]
 #[path = "../../tui/tests/all/support/heap.rs"]

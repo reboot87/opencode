@@ -1,3 +1,7 @@
+/**
+ * 运行时国际化 — Sk。
+ * 运行时加载多语言文案的机制中负责 Sk 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "session.queue.attachments.few": "Plus {{count}} prílohy",
   "session.queue.attachments.many": "Plus {{count}} prílohy",

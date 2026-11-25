@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid DiffViewerImageTest：该文件实现 DiffViewerImageTest 相关的状态与逻辑。
+ */
 import { expect, test } from "bun:test"
 import { ImageRenderable, type Renderable } from "@opentui/core"
 import { testRender } from "@opentui/solid"

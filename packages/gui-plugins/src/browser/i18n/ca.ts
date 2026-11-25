@@ -1,3 +1,7 @@
+/**
+ * 浏览器文案 — Ca。
+ * 浏览器插件的多语言文案中负责 Ca 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.open": "Obre el navegador",
   "command.reload": "Torna a carregar la pàgina del navegador",

@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — Providers。
+ * GUI 插件的实现中负责 Providers 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, onCleanup, onMount, type ParentProps } from "solid-js"
 import { MetaProvider } from "@solidjs/meta"
 import { DialogProvider } from "@opencode/ui/context/dialog"

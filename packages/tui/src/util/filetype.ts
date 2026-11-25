@@ -1,3 +1,7 @@
+/**
+ * 终端工具 — Filetype。
+ * 终端界面的通用工具函数中负责 Filetype 部分，提供该部分所需的实现与类型定义。
+ */
 import path from "node:path"
 
 export const LANGUAGE_EXTENSIONS: Record<string, string> = {

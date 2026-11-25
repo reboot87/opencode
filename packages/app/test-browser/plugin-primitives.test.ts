@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — PluginPrimitivesTest。
+ * 浏览器环境下的测试中负责 PluginPrimitivesTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, jest, test } from "bun:test"
 import { batch, createComponent, createRoot, createSignal, onCleanup, type Accessor } from "solid-js"
 import { Schema } from "effect"

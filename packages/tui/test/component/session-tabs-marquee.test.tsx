@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid SessionTabsMarqueeTest：该文件实现 SessionTabsMarqueeTest 相关的状态与逻辑。
+ */
 import { describe, expect, test } from "bun:test"
 import { ManualClock } from "@opentui/core/testing"
 import { testRender } from "@opentui/solid"

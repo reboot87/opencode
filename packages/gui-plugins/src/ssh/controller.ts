@@ -1,3 +1,7 @@
+/**
+ * SSH 插件 — Controller。
+ * 远程主机管理的 GUI 插件中负责 Controller 部分，提供该部分所需的实现与类型定义。
+ */
 import { NodeSocketServer } from "@effect/platform-node"
 import {
   Cause,
@@ -29,9 +33,9 @@ import {
   type SshMainEffect,
   type SshMainEvent,
 } from "./main-machine"
+export const createSshController = Effect.fn("Ssh.controller")(function* (input: {
 
 /** Runs the SSH machine's effects and reports their outcomes back to it; the machine alone decides what is current. */
-export const createSshController = Effect.fn("Ssh.controller")(function* (input: {
   version: string
   development?: boolean
   binary: string

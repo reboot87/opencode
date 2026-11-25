@@ -12,6 +12,8 @@ const heroCharset = " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ012345
  * The hero title shuffled in with rolling-number: it starts as blank slots of the same length and
  * rolls (or flaps) into the title once the page is on screen. Words are separate hosts so the
  * title still wraps between them.
+ *
+ * 站点界面组件：`rolling`。
  */
 export function HeroTitle(props: { text: string; mode: "roll" | "flap" }) {
   const [shown, setShown] = createSignal(false)

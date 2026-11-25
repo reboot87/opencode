@@ -1,3 +1,7 @@
+/**
+ * Shell API 分组。
+ * 定义 shell 命令的执行端点。
+ */
 import { Shell } from "@opencode/schema/shell"
 import { Location } from "@opencode/schema/location"
 import { Schema } from "effect"

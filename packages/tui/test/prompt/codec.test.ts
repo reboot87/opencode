@@ -1,3 +1,7 @@
+/**
+ * 提示输入测试 — CodecTest。
+ * 提示输入处理的测试中负责 CodecTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { Prompt } from "@opencode/schema"
 import { projectedPromptInput, restoredPromptInput } from "../../src/prompt/codec"

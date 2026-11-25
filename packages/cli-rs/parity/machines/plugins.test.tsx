@@ -1,3 +1,8 @@
+/**
+ * 状态机对等性测试：插件。
+ *
+ * 状态机的对等性测试：逐状态比对两套实现的状态转移。
+ */
 // The shared fixture of the plugin work, TypeScript reader: the TS TUI is driven through
 // the life, project, manager and viewer machines of plugins.json, with parity/plugins/life loaded as a local plugin or found in a
 // project, each path on a fresh app,

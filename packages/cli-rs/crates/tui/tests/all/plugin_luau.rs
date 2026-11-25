@@ -1,6 +1,8 @@
 //! Luau plugins in the real TUI: an example draws and sends what its Rust twin does, a dialog's
 //! answer comes back, and a plugin that spins is failed on CPU time while the TUI keeps drawing. The ownership table's
 //! Luau column is `plugin_ownership`.
+//!
+//! 终端界面测试：插件·Luau。
 
 use std::path::Path;
 use std::sync::Arc;

@@ -1,3 +1,7 @@
+/**
+ * MCP 事件类型。
+ * 定义 MCP 事件更新结构。
+ */
 export * as McpEvent from "./mcp-event.js"
 
 import { Schema } from "effect"

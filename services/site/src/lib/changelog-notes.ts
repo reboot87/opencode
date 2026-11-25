@@ -7,6 +7,8 @@ import type { ChangelogRelease } from "~/lib/changelog"
  * A highlight or breaking change: a short title and the text below it. `areas` are the note
  * sections it touches; `prs` the pull requests it links and `credits` the GitHub users it thanks,
  * both kept out of the text and shown after it.
+ *
+ * 站点共享逻辑：更新日志备注。
  */
 export type ChangelogFeature = { title: string; body: string; areas: string[]; prs: string[]; credits: string[] }
 /** One improvement or fix, as Markdown, with the note sections (Core, TUI, Desktop…) it was listed under. */

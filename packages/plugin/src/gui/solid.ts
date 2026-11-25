@@ -1,3 +1,7 @@
+/**
+ * GUI Solid 绑定。
+ * 把 GUI 插件上下文接入 Solid 的 Provider/useContext。
+ */
 import { createComponent, useContext, type Accessor, type Component } from "solid-js"
 import type { Context, SetupContext } from "./context.js"
 import type { Declarations } from "./declarations.js"

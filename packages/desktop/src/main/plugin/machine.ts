@@ -1,3 +1,7 @@
+/**
+ * 桌面插件 — Machine。
+ * 桌面端插件的加载与宿主能力中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 import { PluginError } from "./error"
 import type { ErrorLog } from "./lifecycle"
 

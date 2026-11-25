@@ -1,3 +1,7 @@
+/**
+ * SSH 插件 — BootstrapTest。
+ * 远程主机管理的 GUI 插件中负责 BootstrapTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { binaryPath, parseRegistration } from "./bootstrap"
 import { RemoteCli } from "./remote-cli"

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：JSON·CLI。
+ *
+ * 规格编号：C.10。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `run --format json --thinking`: text, reasoning, a read tool and the step, as JSON lines on stdout.
 import { defineCli } from "../../cli/run"
 import { event, server, textStep } from "./fixture"

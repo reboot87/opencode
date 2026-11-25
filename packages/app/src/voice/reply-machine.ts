@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — ReplyMachine。
+ * 实时语音会话的界面中负责 ReplyMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { VoiceReply } from "./replies"
 
 /** Bounds one session's history read; a hung read would otherwise stop every later announcement. */

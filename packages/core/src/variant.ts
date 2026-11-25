@@ -1,3 +1,7 @@
+/**
+ * 模型变体解析。
+ * 推理 effort 等模型变体的支持性判断与解析。
+ */
 export * as Variant from "./variant.js"
 
 import { ConfigProvider } from "@opencode/schema/config/provider"

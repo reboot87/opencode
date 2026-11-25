@@ -1,3 +1,7 @@
+/**
+ * 集成（integration）配置。
+ * 解析与执行配置中的 integration 动作与效果策略。
+ */
 export * as ConfigIntegration from "./integration.js"
 
 import { Option, Schema, SchemaGetter } from "effect"

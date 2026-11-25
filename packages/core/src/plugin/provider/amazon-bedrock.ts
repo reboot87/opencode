@@ -1,3 +1,7 @@
+/**
+ * Amazon Bedrock provider 插件。
+ * 注册 Bedrock provider，支持凭证链（env/文件/角色）与模型可用性判定。
+ */
 import { Effect } from "effect"
 import path from "node:path"
 import { define } from "@opencode/plugin/effect/plugin"

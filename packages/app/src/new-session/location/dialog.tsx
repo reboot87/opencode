@@ -1,3 +1,7 @@
+/**
+ * 新会话位置 — Dialog。
+ * 新建会话时的位置选择中负责 Dialog 部分，提供该部分所需的实现与类型定义。
+ */
 import { Badge } from "@opencode/ui/badge"
 import { Dialog, DialogBody } from "@opencode/ui/dialog"
 import { useDialog } from "@opencode/ui/context/dialog"

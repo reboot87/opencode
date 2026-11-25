@@ -1,3 +1,7 @@
+/**
+ * 系统插件故事 — Footer。
+ * 系统功能插件的 Storybook 展示中负责 Footer 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Plugin } from "@opencode/plugin/tui"
 import { For, Show } from "solid-js"
 

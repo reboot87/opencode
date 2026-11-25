@@ -1,3 +1,7 @@
+/**
+ * Claude Agent 网络搜索。
+ * 为 Claude Agent provider 接入网络搜索能力。
+ */
 export * as ClaudeWebSearchProvider from "./websearch.js"
 
 import type { Context } from "@opencode/plugin/effect/plugin"

@@ -1,3 +1,7 @@
+/**
+ * 国际化 — Km。
+ * 多语言文案资源中负责 Km 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "ui.sessionReview.title": "ការផ្លាស់ប្តូរសម័យ",
   "ui.sessionReview.title.git": "ការផ្លាស់ប្តូរ Git",

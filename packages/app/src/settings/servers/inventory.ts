@@ -1,3 +1,7 @@
+/**
+ * 服务端设置 — Inventory。
+ * 已连接服务端的管理设置中负责 Inventory 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo } from "solid-js"
 import { ServerConnection, useServers } from "@/runtime/server/registry"
 import { usePluginServers, type PluginServer } from "@/runtime/plugin/servers"

@@ -1,3 +1,10 @@
+/**
+ * 伪终端·套接字·性质的测试。
+ *
+ * 被测模块：@opencode/server/pty-socket.property
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { Cause, Effect, Fiber, Queue } from "effect"
 import { Socket } from "effect/socket"

@@ -1,3 +1,7 @@
+/**
+ * Blob API 分组。
+ * 定义 blob 二进制资源的下载端点。
+ */
 import { BlobStore } from "@opencode/schema/blob-store"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiSchema, OpenApi } from "effect/http-api"

@@ -1,3 +1,7 @@
+/**
+ * 分段控件 — SegmentedControl。
+ * 互斥选项的分段切换组件中负责 SegmentedControl 部分，提供该部分所需的实现与类型定义。
+ */
 import { animate, motion, useMotionValue, type Transition } from "@kitlangton/solid-motion"
 import {
   createContext,

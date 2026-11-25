@@ -1,3 +1,7 @@
+/**
+ * 主页 — MachineTest。
+ * 应用主页的视图与数据中负责 MachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { ServerConnection } from "@/runtime/server/registry"
 import {

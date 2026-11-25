@@ -1,3 +1,7 @@
+/**
+ * 会话输入区 — Queue。
+ * 会话界面输入区的实现中负责 Queue 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, onCleanup, untrack, type Accessor } from "solid-js"
 import type { PromptAttachment } from "@opencode/client/promise"
 import { SessionMessage } from "@opencode/schema/session-message"

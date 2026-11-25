@@ -1,3 +1,7 @@
+/**
+ * 数据站测试 — AgentFormatsTest。
+ * 数据站点的测试中负责 AgentFormatsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { formatPeriodDate } from "../src/lib/format"
 import { jsonUrl, markdownUrl, prefersMarkdown } from "../src/lib/language"

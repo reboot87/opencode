@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — ProfilingMachine。
+ * 内置浏览器功能的 GUI 插件中负责 ProfilingMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // A page's performance recordings: the trace, which records across every tab of the app so one page at a time owns it
 // through `SharedTrace`, and the page's own CPU profile and heap snapshot. Each start claims its phase in the same
 // event, before any CDP call, and takes the next attempt number, so a second start, a stop or a disposal that arrives

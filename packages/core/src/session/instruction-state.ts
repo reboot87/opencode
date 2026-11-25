@@ -1,3 +1,7 @@
+/**
+ * 指令状态（InstructionState）。
+ * 观察会话中指令的准入与当前值，检测变化并持久化，供每轮系统提示词注入。
+ */
 export * as InstructionState from "./instruction-state.js"
 
 import { and, eq, gte, inArray, sql } from "drizzle-orm"

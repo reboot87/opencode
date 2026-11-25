@@ -1,3 +1,7 @@
+/**
+ * 决策模型（Decision）协议的通用执行逻辑。
+ * 把 DecisionRequest 发给 provider，并把返回解析成结构化的 DecisionAnswer。
+ */
 import { Effect } from "effect"
 import type { HttpClientResponse } from "effect/http"
 import {

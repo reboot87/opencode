@@ -1,3 +1,7 @@
+/**
+ * 项目 Schema 再导出。
+ * 再导出 Project 的 ID 类型。
+ */
 export * as ProjectSchema from "./schema.js"
 
 import { Schema } from "effect"

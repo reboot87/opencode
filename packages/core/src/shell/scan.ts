@@ -1,3 +1,7 @@
+/**
+ * Shell 命令扫描器。
+ * 静态扫描 shell 命令，识别危险模式与需要额外授权的操作，产出 OpaqueReason 与结构化扫描结果。
+ */
 export * as ShellScan from "./scan.js"
 
 export type OpaqueReason =

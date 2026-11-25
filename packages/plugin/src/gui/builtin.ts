@@ -1,3 +1,7 @@
+/**
+ * 内置 GUI 插件能力。
+ * 提供内置的应用链接、图标与空闲钩子等 GUI 插件能力注册表。
+ */
 // The parts of the SDK only the app's built-in plugins use, for workspace imports only: `tsconfig.build.json` leaves it
 // out of `dist`, and `script/pack.ts` exports it as `null`. Public SDK modules never import it.
 

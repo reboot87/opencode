@@ -1,3 +1,7 @@
+/**
+ * 回归测试 — SessionLocationSyncSpec。
+ * 防止既有行为退化的端到端用例中负责 SessionLocationSyncSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test, type Page } from "@playwright/test"
 import { base64Encode } from "@opencode/util/encode"
 import { fixture } from "../utils/session-fixture"

@@ -1,5 +1,7 @@
 //! A ticket socket authenticates with a query parameter obtained over HTTP with `x-opencode-ticket: 1`. Other sockets
 //! use `authorization` in the handshake.
+//!
+//! API 客户端：`ws`。
 
 use std::future::Future;
 use std::pin::Pin;

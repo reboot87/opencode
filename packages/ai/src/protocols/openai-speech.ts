@@ -1,3 +1,7 @@
+/**
+ * OpenAI 语音合成（TTS）协议。
+ * 把文本转成音频资产。
+ */
 import { Effect, Schema, SchemaGetter } from "effect"
 import { Framing } from "../route/framing.js"
 import { MediaProtocol } from "../route/media-protocol.js"

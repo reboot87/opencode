@@ -1,3 +1,7 @@
+/**
+ * 新建会话 — MachineTest。
+ * 创建新会话的向导与表单中负责 MachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { Session } from "@opencode/schema/session"
 import {

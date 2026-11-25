@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：目标·模拟。
+ *
+ * 规格编号：E.14。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The goal under the prompt (F02, DLG45) from the server's goal plugin. `/goal`
 // arms the goal and starts its first round, which waits; `◎ goal` shows under the prompt; a click opens the goal
 // dialog with the objective, and `p` pauses it through `/goal pause`. The plugin's `changed` event shows the paused

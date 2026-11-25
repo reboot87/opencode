@@ -1,3 +1,7 @@
+/**
+ * 图片配置插件。
+ * 把配置中的图片生成设置应用到 Image 服务。
+ */
 export * as ConfigImagePlugin from "./image.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

@@ -1,4 +1,6 @@
 //! LSP error rows for file writes and edits.
+//!
+//! 终端界面路由：`diagnostics`。
 
 use opencode_ui::theme::Paints;
 use opentui::prelude::*;

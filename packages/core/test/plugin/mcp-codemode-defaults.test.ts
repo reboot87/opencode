@@ -1,3 +1,10 @@
+/**
+ * MCP·codemode·默认值的测试。
+ *
+ * 被测模块：@opencode/core/plugin/mcp-codemode-defaults
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { expect } from "bun:test"
 import { McpCodeModeDefaultsPlugin } from "@opencode/core/plugin/mcp-codemode-defaults"
 import type { Mcp } from "@opencode/schema/mcp"

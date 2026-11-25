@@ -1,3 +1,7 @@
+/**
+ * Code Mode 工具执行。
+ * 定义执行文件/调用的输入输出 Schema，实现沙箱代码的解析与执行。
+ */
 export * as CodeModeTool from "./tool.js"
 
 import { ToolFailure } from "@opencode/ai/effect"

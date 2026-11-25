@@ -1,3 +1,7 @@
+/**
+ * 终端工具 — Presentation。
+ * 终端界面的通用工具函数中负责 Presentation 部分，提供该部分所需的实现与类型定义。
+ */
 import { logo } from "../logo"
 
 const reset = "\x1b[0m"

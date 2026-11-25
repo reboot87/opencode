@@ -1,3 +1,7 @@
+/**
+ * Pierre 组件 — FileRuntime。
+ * 会话界面的基础组件库中负责 FileRuntime 部分，提供该部分所需的实现与类型定义。
+ */
 export function getViewerHost(container: HTMLElement | undefined) {
   if (!container) return
   const host = container.querySelector("diffs-container")

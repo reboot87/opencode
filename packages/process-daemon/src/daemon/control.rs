@@ -1,3 +1,5 @@
+//! 守护进程主体：`control`。
+
 #[cfg(all(test, unix))]
 use std::sync::atomic::AtomicU64;
 use std::sync::atomic::{AtomicBool, Ordering};

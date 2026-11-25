@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：标题·伪终端。
+ *
+ * 规格编号：H.3。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The TUI on home against an empty server sets the title to "OpenCode" (`packages/tui/src/app.tsx:644`)
 // and resets it when it exits. The server answers the TUI's startup reads with the TUI test defaults.
 // Both sides run (E.1 sets the title in Rust). Only the OSC log is compared: the home's cells are P-APP's

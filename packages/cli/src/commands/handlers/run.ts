@@ -1,3 +1,7 @@
+/**
+ * run 命令。
+ * 以非交互方式执行一次性提示并输出结果。
+ */
 import { Effect, Option } from "effect"
 import { Commands } from "../commands"
 import { Runtime } from "../../framework/runtime"

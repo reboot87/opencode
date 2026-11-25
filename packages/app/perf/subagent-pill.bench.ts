@@ -1,3 +1,7 @@
+/**
+ * 性能测试 — SubagentPillBench。
+ * 界面渲染性能基准中负责 SubagentPillBench 部分，提供该部分所需的实现与类型定义。
+ */
 // Scrolling the background activity menu with 20 long-running subagents open, both quiet and while the parent
 // session streams tool progress and child sessions update in the background.
 import { bench, web } from "@hona/strobe"

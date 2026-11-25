@@ -1,4 +1,8 @@
-/** How long a found path stays styled as a link before it is checked again. */
+/**
+ * How long a found path stays styled as a link before it is checked again.
+ *
+ * 文件插件中负责 LinkExistsMachine 部分：文件预览与操作中与 LinkExistsMachine 相关的状态、交互与渲染逻辑。
+ */
 export const LINK_EXISTS_POSITIVE_TTL_MS = 60_000
 
 /** How long a missing path stays plain code before it is checked again. */

@@ -1,3 +1,7 @@
+/**
+ * 命令配置类型。
+ * 定义 command 配置项的 Schema。
+ */
 export * as ConfigCommand from "./command.js"
 
 import { Schema } from "effect"

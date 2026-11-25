@@ -1,5 +1,7 @@
 //! `OPENCODE_DRIVE` serves a headless app over WebSocket. Each action runs on the UI thread and paints one frame
 //! before the next request.
+//!
+//! 本地驱动入口。
 
 pub mod capture;
 pub mod keys;

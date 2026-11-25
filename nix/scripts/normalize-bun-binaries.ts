@@ -1,3 +1,6 @@
+/**
+ * Nix 构建脚本：归一化·Bun·二进制文件。
+ */
 import { lstat, mkdir, readdir, rm, symlink } from "fs/promises"
 import { join, relative } from "path"
 

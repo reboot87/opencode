@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — RollingNumber。
+ * 跨场景复用的通用 UI 组件中负责 RollingNumber 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, createEffect, createMemo, on, onCleanup } from "solid-js"
 import { frameLoop, prefersReducedMotion, Spring, type DurationOptions } from "../motion"
 

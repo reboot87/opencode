@@ -1,3 +1,7 @@
+/**
+ * UI 上下文 — I18n。
+ * UI 包的上下文提供者中负责 I18n 部分，提供该部分所需的实现与类型定义。
+ */
 import { createContext, useContext, type Accessor, type ParentProps } from "solid-js"
 import { I18nProvider } from "@kobalte/core/i18n"
 import { dict as en } from "../i18n/en"

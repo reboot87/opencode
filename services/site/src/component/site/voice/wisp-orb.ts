@@ -57,7 +57,10 @@ const cross3 = (a: number[], b: number[]) => [
 const SPIRAL_E2 = cross3(SPIRAL_AXIS, SPIRAL_E1)
 const SPIRAL_E2_B = cross3(SPIRAL_AXIS_B, SPIRAL_E1_B)
 
-/** Critically damped spring, integrated analytically (`WispSpring`). */
+/** Critically damped spring, integrated analytically (`WispSpring`).
+ *
+ * 语音交互组件：wisp·球体。
+ */
 function settle(s: { x: number; v: number }, target: number, duration: number, h: number) {
   const w = TAU / Math.max(duration, 1e-3)
   const y = s.x - target

@@ -1,3 +1,7 @@
+/**
+ * 会话提及解析。
+ * 解析文本中的 @session:xxx 提及，提取会话 ID。
+ */
 export type SessionMention = { id: `ses_${string}` }
 
 // Match complete generated IDs only, including while an assistant is streaming one.

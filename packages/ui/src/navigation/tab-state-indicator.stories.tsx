@@ -1,3 +1,7 @@
+/**
+ * 导航 — TabStateIndicatorStories。
+ * 界面导航组件中负责 TabStateIndicatorStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { TabStateIndicator } from "./tab-state-indicator"
 
 export default {

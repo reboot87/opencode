@@ -1,3 +1,7 @@
+/**
+ * 模块 — Drawing。
+ * 该目录下的功能模块中负责 Drawing 部分，提供该部分所需的实现与类型定义。
+ */
 import { BorderChars, type BorderCharacters } from "@opentui/core"
 import {
   directionBetween,

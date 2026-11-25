@@ -1,4 +1,6 @@
 //! Prompt editing, focus, draft lifecycle, and key bindings.
+//!
+//! 终端输入提示：编辑器。
 
 use futures_util::FutureExt;
 use futures_util::future::BoxFuture;

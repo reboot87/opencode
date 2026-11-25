@@ -1,3 +1,7 @@
+/**
+ * 会话输入区 — QueueMachine。
+ * 会话界面输入区的实现中负责 QueueMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import { Option, Schema } from "effect"
 import type { PromptAttachment, SessionInboxInfo } from "@opencode/client/promise"
 import type { ComposerDelivery } from "@/composer/adapter"

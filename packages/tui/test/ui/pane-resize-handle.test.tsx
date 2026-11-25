@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid PaneResizeHandleTest：该文件实现 PaneResizeHandleTest 相关的状态与逻辑。
+ */
 import { BoxRenderable } from "@opentui/core"
 import { testRender } from "@opentui/solid"
 import { expect, test } from "bun:test"

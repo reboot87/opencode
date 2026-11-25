@@ -1,3 +1,10 @@
+/**
+ * 索引的测试。
+ *
+ * 被测模块：@opencode/core/instructions/index
+ *
+ * 覆盖指令文件的解析、拼接与注入顺序。
+ */
 import { describe, expect, test } from "bun:test"
 import { Cause, Effect, Exit, Option, Schema } from "effect"
 import { Instructions } from "@opencode/core/instructions/index"

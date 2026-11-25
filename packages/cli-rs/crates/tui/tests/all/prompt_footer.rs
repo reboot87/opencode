@@ -1,4 +1,6 @@
 //! Goal footer updates across pending reads and mount changes.
+//!
+//! 终端界面测试：提示词页脚。
 
 use crate::support::{self, DIRECTORY, Harness};
 

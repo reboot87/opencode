@@ -4,6 +4,8 @@
  * Focus moves into it (to the current row, else the first) and back to the trigger on close. No Solid
  * here, so the pages that never hydrate (src/client) drive the same sheet, and only touch devices,
  * which get sheets, load it.
+ *
+ * 站点界面组件：浮层面板动效。
  */
 export type SheetControl = {
   open: (trigger: HTMLElement) => void

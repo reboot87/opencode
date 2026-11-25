@@ -1,3 +1,7 @@
+/**
+ * 数据源 — Experiment。
+ * 会话界面所用的数据来源定义中负责 Experiment 部分，提供该部分所需的实现与类型定义。
+ */
 import { motionTuning } from "@opencode/ui/motion-tuning"
 import { createStore } from "solid-js/store"
 

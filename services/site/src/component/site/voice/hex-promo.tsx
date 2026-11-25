@@ -10,6 +10,8 @@ import type HexPanel from "./hex-panel"
  * (hex-orb.ts), and a click or tap shows only voice mode's Hex section (hex-panel.tsx). The orb
  * renders with the page; the pop-up's code and styles load the first time it is hovered, focused or
  * pressed. No microphone, speech or voice API is involved, and none of voice mode's code loads.
+ *
+ * 语音交互组件：十六进制推广。
  */
 export default function HexPromo() {
   const i18n = useI18n()

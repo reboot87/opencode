@@ -1,3 +1,7 @@
+/**
+ * 请求站点判定。
+ * 识别请求是否命中允许/拒绝的站点规则（如 artifact 视图）。
+ */
 export * as RequestSite from "./request-site"
 
 import { Effect } from "effect"

@@ -1,3 +1,10 @@
+/**
+ * 事件·feed的测试。
+ *
+ * 被测模块：@opencode/server/event-feed
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { Agent } from "@opencode/core/agent"
 import { Bus } from "@opencode/core/bus"

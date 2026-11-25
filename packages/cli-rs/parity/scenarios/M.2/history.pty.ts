@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：history·伪终端。
+ *
+ * 规格编号：M.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Up at the start steps back through the session's prompts, Down at the end steps forward and restores the draft.
 import { definePty } from "../../pty/run"
 import { config, leave, opened, server, statusMask } from "./fixture"

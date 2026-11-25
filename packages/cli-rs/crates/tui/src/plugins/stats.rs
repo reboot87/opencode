@@ -1,4 +1,6 @@
 //! Session statistics poster.
+//!
+//! 终端插件视图：`stats`。
 
 use opencode_api::client::Client;
 use opencode_api::generated::{ExperimentalSessionStatsInput, ExperimentalSessionStatsInputTools, SessionStatsInfo};

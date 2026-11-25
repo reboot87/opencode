@@ -1,3 +1,7 @@
+/**
+ * 全局同步 — Utils。
+ * 跨会话的全局状态同步中负责 Utils 部分，提供该部分所需的实现与类型定义。
+ */
 import type { AgentListOutput, ModelListOutput, ProviderListOutput } from "@opencode/client/promise"
 import type { Agent, Project, Provider, ProviderListResponse } from "@/runtime/server/types"
 import type { Project as CurrentProject } from "@opencode/client/promise"

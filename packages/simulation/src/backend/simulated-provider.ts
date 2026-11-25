@@ -1,3 +1,7 @@
+/**
+ * 模块 — SimulatedProvider。
+ * 该目录下的功能模块中负责 SimulatedProvider 部分，提供该部分所需的实现与类型定义。
+ */
 import { SdkPlugins } from "@opencode/core/plugin/sdk"
 import { Tool } from "@opencode/core/tool"
 import { Plugin } from "@opencode/plugin/effect"

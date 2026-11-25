@@ -1,3 +1,7 @@
+/**
+ * 性能测试 — ComposerBench。
+ * 界面渲染性能基准中负责 ComposerBench 部分，提供该部分所需的实现与类型定义。
+ */
 // The composer with a lot in it: a 44,000-character saved draft, and a long prompt history with screenshots. At
 // 1440×900.
 import { bench, web } from "@hona/strobe"

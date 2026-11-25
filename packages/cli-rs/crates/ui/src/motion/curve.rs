@@ -1,4 +1,6 @@
 //! Use `f64` for the easing calculation and narrow only the final mask value.
+//!
+//! 基础 UI 组件库：曲线。
 
 pub fn clamp(value: f64) -> f64 {
     value.clamp(0.0, 1.0)

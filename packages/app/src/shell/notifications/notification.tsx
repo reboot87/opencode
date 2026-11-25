@@ -1,3 +1,7 @@
+/**
+ * 外壳通知 — Notification。
+ * 应用级通知的展示中负责 Notification 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, onCleanup, untrack } from "solid-js"
 import { Schema } from "effect"
 import { isSessionNotFoundError, type SessionInfo } from "@opencode/client/promise"

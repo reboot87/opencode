@@ -1,3 +1,7 @@
+/**
+ * Code Mode Bun 运行时桥接。
+ * 把 Effect 服务映射到沙箱 Bun 环境的全局 API，用 WeakMap 管理函数句柄与服务引用。
+ */
 export * as CodeModeBun from "./bun.js"
 
 import { Extension } from "@opencode/codemode"

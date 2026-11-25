@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：P.2·LaTeX。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-ORACLE for crates/latex: the TypeScript renderLatex (packages/latex/src/render.ts) in strict mode, as the
 // plugin calls it, over every source in packages/latex/src/*.test.ts, common textbook formulas, and the rows the Rust
 // tests once asserted by hand; a few rows run with `strict: false`. Writes parity/fixtures/P.2/layouts.json;

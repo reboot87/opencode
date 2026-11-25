@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — SlidePaintMachine。
+ * Microsoft Office 文档预览插件中负责 SlidePaintMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { VectorRequest } from "./slide-protocol"
 
 /** How long one slide paint may take, its wait behind other slides included, before the slide shows its notice. */

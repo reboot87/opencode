@@ -1,4 +1,8 @@
-/** A completed render waits this long for inline path checks before it reports ready anyway. */
+/**
+ * A completed render waits this long for inline path checks before it reports ready anyway.
+ *
+ * Markdown 渲染阶段的状态机：管理解析、渲染与代码高亮等阶段。
+ */
 export const INLINE_PATH_CHECK_TIMEOUT_MS = 2_000
 
 /**

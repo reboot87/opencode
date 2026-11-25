@@ -1,3 +1,7 @@
+/**
+ * 工作区界面 — Location。
+ * 工作区的管理界面中负责 Location 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSimpleContext } from "@opencode/ui/context"
 import { isLocationNotFoundError, type LocationGetOutput, type LocationRef } from "@opencode/client/promise"
 import { type Accessor, createEffect, createMemo, createSignal, onCleanup, untrack } from "solid-js"

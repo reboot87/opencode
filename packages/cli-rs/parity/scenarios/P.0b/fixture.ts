@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：夹具。
+ *
+ * 规格编号：P.0b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The P-PTY fixture of P0b's plugin verbs that need a real terminal: one directory under the sandbox's global
 // `plugins` directory holds the TS plugin (`parity/plugins/title/tui.ts`) and its opencode-native twin, a Luau plugin
 // (`plugin.toml` and `init.luau`). TS loads the first, Rust the second; each client ignores the other's files.

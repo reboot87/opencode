@@ -1,3 +1,7 @@
+/**
+ * 子代理完成处理（SubagentCompletion）。
+ * 处理子代理完成后的合成消息与后台项结算，无文本时给出默认提示。
+ */
 export * as SubagentCompletion from "./subagent-completion.js"
 
 import { Effect } from "effect"

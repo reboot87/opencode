@@ -1,3 +1,7 @@
+/**
+ * worktree 配置插件。
+ * 把配置中的 worktree 设置应用到 Location 服务。
+ */
 export * as ConfigWorktreePlugin from "./worktree.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

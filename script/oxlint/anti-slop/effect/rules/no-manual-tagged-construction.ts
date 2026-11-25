@@ -1,3 +1,6 @@
+/**
+ * Effect 架构 Oxlint 规则：无·manual·tagged·construction。
+ */
 import { defineRule } from "@oxlint/plugins";
 
 import {

@@ -1,4 +1,6 @@
 //! Maps V1 colors onto the `opencode` theme's hue steps for the TUI.
+//!
+//! 主题解析与应用：v1·new。
 
 use opentui::style::Color;
 use opentui::theme::ThemeMode;

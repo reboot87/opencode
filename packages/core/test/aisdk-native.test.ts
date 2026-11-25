@@ -1,3 +1,10 @@
+/**
+ * AI SDK·原生的测试。
+ *
+ * 被测模块：@opencode/core/aisdk-native
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { AISDKNative } from "@opencode/core/aisdk-native"
 import { Provider } from "@opencode/core/provider"

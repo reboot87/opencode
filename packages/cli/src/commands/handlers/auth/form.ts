@@ -1,3 +1,7 @@
+/**
+ * auth 表单流程。
+ * 以表单方式完成集成登录的自定义输入流程。
+ */
 import { confirm, log, multiselect, password, select, text, type Option } from "@clack/prompts"
 import { Effect, Schema } from "effect"
 import { Form } from "@opencode/schema/form"

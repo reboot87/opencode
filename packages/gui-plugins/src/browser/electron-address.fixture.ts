@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — ElectronAddressFixture。
+ * 内置浏览器功能的 GUI 插件中负责 ElectronAddressFixture 部分，提供该部分所需的实现与类型定义。
+ */
 import { createServer } from "node:http"
 import path from "node:path"
 import { pathToFileURL } from "node:url"

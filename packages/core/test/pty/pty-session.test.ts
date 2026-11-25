@@ -1,3 +1,10 @@
+/**
+ * 伪终端·会话的测试。
+ *
+ * 被测模块：@opencode/core/pty/pty-session
+ *
+ * 覆盖伪终端的创建、读写与尺寸变更行为。
+ */
 import { describe, expect } from "bun:test"
 import { Cause, Deferred, Effect, Exit, Layer, Queue } from "effect"
 import { AppNodeBuilder } from "@opencode/core/effect/app-node-builder"

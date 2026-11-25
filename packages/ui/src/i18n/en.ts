@@ -1,3 +1,7 @@
+/**
+ * 国际化 — En。
+ * 多语言文案资源中负责 En 部分，提供该部分所需的实现与类型定义。
+ */
 const source = {
   "ui.preview.controls": "Preview controls",
   "ui.preview.zoomIn": "Zoom in",

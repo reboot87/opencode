@@ -41,6 +41,8 @@ const SKIP = new Set([
  * A page's rendered content as Markdown, for the Markdown view on pages without a hand-written
  * version. Hidden and decorative parts (aria-hidden, screen-reader-only text, buttons, media, tab
  * lists) are left out.
+ *
+ * 站点共享逻辑：dom·Markdown。
  */
 export function domMarkdown(root: Element) {
   return blocks(...block(root)).replace(/\n{3,}/g, "\n\n")

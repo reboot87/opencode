@@ -1,6 +1,8 @@
 /**
  * Every dropdown menu runs this machine, so each reachable state and event is a frozen module singleton, and an event
  * that changes nothing returns the state it was given.
+ *
+ * 菜单的状态机：管理展开、悬停与键盘导航。
  */
 export type MenuInputGesture = "pointer" | "keyboard" | "none"
 

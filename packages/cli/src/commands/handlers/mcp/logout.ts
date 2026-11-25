@@ -1,3 +1,7 @@
+/**
+ * mcp logout 命令。
+ * 清除 MCP 服务器的授权凭据。
+ */
 import { EOL } from "node:os"
 import { Effect } from "effect"
 import { OpenCode } from "@opencode/client"

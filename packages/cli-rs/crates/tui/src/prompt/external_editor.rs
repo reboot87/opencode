@@ -1,4 +1,6 @@
 //! Edit the prompt in `$VISUAL` or `$EDITOR`, then restore its mentions.
+//!
+//! 终端输入提示：external·编辑器。
 
 use std::path::PathBuf;
 

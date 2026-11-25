@@ -1,3 +1,7 @@
+/**
+ * machine 工具。
+ * 列出可用机器（machine）信息的工具。
+ */
 export * as MachineTools from "./machine.js"
 
 import type { Context } from "@opencode/plugin/effect/plugin"

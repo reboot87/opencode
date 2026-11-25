@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — DialogStash。
+ * 终端界面（Solid）组件中负责 DialogStash 部分，提供该部分所需的实现与类型定义。
+ */
 import { useDialog } from "../ui/dialog"
 import { DialogSelect } from "../ui/dialog-select"
 import { createMemo, createSignal } from "solid-js"

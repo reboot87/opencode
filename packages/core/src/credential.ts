@@ -1,3 +1,7 @@
+/**
+ * 凭据服务（Credential）。
+ * 管理各类凭据（API Key、OAuth）的存取与查询，屏蔽明文。
+ */
 export * as Credential from "./credential.js"
 
 import { asc, desc, eq, type SQL } from "drizzle-orm"

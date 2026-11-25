@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — ModelLabel。
+ * 会话输入区的组合逻辑与附件处理中负责 ModelLabel 部分，提供该部分所需的实现与类型定义。
+ */
 import { consoleProviderGroup, consoleProviderName } from "@/providers/catalog/console"
 
 export type ComposerModelLabel = { provider?: string; model: string }

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：窄·完整·伪终端。
+ *
+ * 规格编号：C.3。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `stats --year 2020 --full --limit 2` on a 60-column terminal: the compact detail layouts and the
 // "+N more" lines.
 import { definePty } from "../../pty/run"

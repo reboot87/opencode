@@ -1,5 +1,7 @@
 //! JSONC parsing and path edits preserve comments and formatting. Byte offsets always fall on token boundaries;
 //! indentation counts only ASCII spaces, tabs and line breaks.
+//!
+//! 本地配置与路径：`jsonc`。
 
 use serde_json::{Map, Number, Value};
 

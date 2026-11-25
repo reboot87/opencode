@@ -1,4 +1,6 @@
 //! Per-channel TUI storage. Reread values under the file lock before atomic replacement so unrelated fields survive.
+//!
+//! 本地配置与路径：`storage`。
 
 use std::fs;
 use std::io;

@@ -1,3 +1,7 @@
+/**
+ * Bedrock 媒体工具。
+ * 把图片/文档 Media 转成 Bedrock 的内容块。
+ */
 import { Effect, Schema } from "effect"
 import { Base64 } from "effect/encoding"
 import type { MediaPart } from "../../schema/index.js"

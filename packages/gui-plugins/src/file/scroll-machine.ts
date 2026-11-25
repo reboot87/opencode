@@ -1,3 +1,7 @@
+/**
+ * 文件插件 — ScrollMachine。
+ * 文件预览与操作的 GUI 插件中负责 ScrollMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export type FileScrollPos = {
   readonly x: number
   readonly y: number

@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — SessionHistoryInteractionsTest。
+ * 终端界面的测试中负责 SessionHistoryInteractionsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { ScrollBoxRenderable, type Renderable } from "@opentui/core"
 import { TestRecorder } from "@opentui/core/testing"

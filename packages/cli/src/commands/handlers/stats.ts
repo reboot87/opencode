@@ -1,3 +1,7 @@
+/**
+ * stats 命令。
+ * 统计并展示用量与活动数据。
+ */
 import { ClientError, OpenCode, type SessionStatsInfo } from "@opencode/client"
 import { Service } from "@opencode/client/effect/service"
 import { TokenUsage } from "@opencode/schema/token-usage"

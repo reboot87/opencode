@@ -1,3 +1,10 @@
+/**
+ * Effect·文件锁的测试。
+ *
+ * 被测模块：@opencode/core/util/effect-flock
+ *
+ * 覆盖通用工具函数的行为与边界。
+ */
 import { describe, expect } from "bun:test"
 import fs from "fs/promises"
 import path from "path"

@@ -1,3 +1,7 @@
+/**
+ * 通用 Schema 工具类型。
+ * 提供 DeepMutable 等递归类型辅助工具。
+ */
 import {
   AbsolutePath,
   DateTimeUtcFromMillis,

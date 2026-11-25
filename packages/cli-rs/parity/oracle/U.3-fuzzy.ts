@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：U.3·模糊匹配。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-ORACLE for crates/ui/src/select.rs `fuzzy`: runs fuzzysort.go exactly as DialogSelect calls it
 // (packages/tui/src/ui/dialog-select.tsx:214-229) over a corpus built from the 244 keybind definitions, for a list of
 // queries and both thresholds the TUI uses. Writes parity/fixtures/U.3/fuzzy.json; crates/ui/tests/all/dialogs.rs

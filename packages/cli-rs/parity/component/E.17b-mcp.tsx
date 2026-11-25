@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid E17bMcp：该文件实现 E17bMcp 相关的状态与逻辑。
+ */
 // P-COMP fixtures for the MCP servers dialog (packages/tui/src/component/dialog-mcp.tsx) and the skills
 // dialog (component/dialog-skill.tsx). crates/tui/tests/all/mcp.rs mounts the Rust TUI over the same responses
 // (`SERVERS` and `SKILLS` below; keep both in step), hides the screen behind the dialog, sends the same keys,

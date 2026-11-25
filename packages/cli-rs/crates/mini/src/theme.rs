@@ -1,5 +1,7 @@
 //! Scrollback is immutable, so its colors use palette slots that still track terminal palette changes. Mono mode uses
 //! only terminal defaults.
+//!
+//! 精简版实现：主题。
 
 use std::sync::Arc;
 

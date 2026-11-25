@@ -1,3 +1,7 @@
+/**
+ * 持久 PTY API 分组。
+ * 定义持久终端的连接与票据端点（实验性）。
+ */
 import { PersistentPty } from "@opencode/schema/persistent-pty"
 import { Pty } from "@opencode/schema/pty"
 import { PtyTicket } from "@opencode/schema/pty-ticket"

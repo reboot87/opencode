@@ -1,3 +1,7 @@
+/**
+ * UI 性能测试 — MotionBench。
+ * UI 渲染性能基准中负责 MotionBench 部分，提供该部分所需的实现与类型定义。
+ */
 import { bench, script } from "@hona/strobe"
 
 export default bench({

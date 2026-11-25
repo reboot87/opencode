@@ -1,3 +1,10 @@
+/**
+ * 命令·子智能体的测试。
+ *
+ * 被测模块：@opencode/core/config/command-subagent
+ *
+ * 覆盖配置加载、合并、校验与分层覆盖（global / project / local）的行为。
+ */
 import { describe, expect } from "bun:test"
 import path from "path"
 import { Effect, Layer } from "effect"

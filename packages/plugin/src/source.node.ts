@@ -1,3 +1,7 @@
+/**
+ * 插件来源（Node）。
+ * 在 Node 运行时加载本地插件文件，按代数（generation）缓存失效。
+ */
 import { registerHooks } from "node:module"
 import path from "node:path"
 import { fileURLToPath } from "node:url"

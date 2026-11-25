@@ -1,3 +1,7 @@
+/**
+ * 补丁解析与应用。
+ * 解析统一 diff 补丁并应用到文件，含边界错误（BoundaryError）与非法 hunk 错误。
+ */
 export * as Patch from "./patch.js"
 
 import { Result, Schema } from "effect"

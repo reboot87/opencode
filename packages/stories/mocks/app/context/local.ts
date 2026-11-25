@@ -1,3 +1,7 @@
+/**
+ * 模块 — Local。
+ * 该目录下的功能模块中负责 Local 部分，提供该部分所需的实现与类型定义。
+ */
 import { createComponent, createContext, createSignal, useContext, type ParentProps } from "solid-js"
 import { createStore } from "solid-js/store"
 import { useModels } from "@/providers/models/models"

@@ -1,4 +1,6 @@
 //! Image previews for user messages and tool results. Inline data decodes locally; media references fetch by hash.
+//!
+//! 终端界面路由：图片。
 
 use opencode_api::generated::{
     ExperimentalMediaGetInput, MediaHash, PromptFileAttachment, PromptFileSource, SessionMessageAssistantTool,

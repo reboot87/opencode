@@ -1,3 +1,7 @@
+/**
+ * 深度链接 — MachineTest。
+ * 处理外部链接唤起应用中负责 MachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { INITIAL_DEEP_LINK_STATE, parseDeepLink, transitionDeepLinks, type DeepLinkEvent } from "./machine"
 

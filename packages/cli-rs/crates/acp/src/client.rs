@@ -1,3 +1,5 @@
+//! ACP 协议实现：客户端。
+
 use futures_util::stream::BoxStream;
 use opencode_api::client::Client;
 use opencode_api::error::Error;

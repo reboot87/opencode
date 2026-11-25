@@ -1,3 +1,7 @@
+/**
+ * 工作区设置 — Queries。
+ * 工作区相关设置中负责 Queries 部分，提供该部分所需的实现与类型定义。
+ */
 import { queryOptions, useQueryClient, type QueryClient } from "@tanstack/solid-query"
 import type { Accessor } from "solid-js"
 import type { ServerSDK } from "@/runtime/server/client"

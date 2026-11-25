@@ -1,3 +1,7 @@
+/**
+ * 生命周期 — Environment。
+ * 桌面端窗口与应用的启动退出流程中负责 Environment 部分，提供该部分所需的实现与类型定义。
+ */
 import { access, unlink } from "node:fs/promises"
 import http from "node:http"
 import { getCACertificates, setDefaultCACertificates } from "node:tls"

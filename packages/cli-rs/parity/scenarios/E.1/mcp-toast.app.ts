@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：MCP·轻提示·app。
+ *
+ * 规格编号：E.1。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // An MCP server of the default location that failed shows a toast once (T12).
 import { defineApp, HOME_PLACEHOLDER, location } from "../../lib/app"
 

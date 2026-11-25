@@ -1,3 +1,7 @@
+/**
+ * ACP 服务。
+ * ACP 服务的入口：鉴权方法、会话管理与请求处理。
+ */
 import type { OpenCodeClient } from "@opencode/client/effect"
 import { AbsolutePath } from "@opencode/schema/schema"
 import { Session } from "@opencode/schema/session"

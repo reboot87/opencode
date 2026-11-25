@@ -1,3 +1,7 @@
+/**
+ * 进度圆环 — ProgressCircle。
+ * 环形进度指示组件中负责 ProgressCircle 部分，提供该部分所需的实现与类型定义。
+ */
 import { type ComponentProps, createMemo, Show, splitProps } from "solid-js"
 import "./progress-circle.css"
 

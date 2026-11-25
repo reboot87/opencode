@@ -1,3 +1,7 @@
+/**
+ * 主页会话 — Records。
+ * 主页中会话列表的展示中负责 Records 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionInfo } from "@opencode/client/promise"
 import type { LocalProject } from "@/shell/state/layout"
 import { displayName } from "@opencode/ui/project-avatar"

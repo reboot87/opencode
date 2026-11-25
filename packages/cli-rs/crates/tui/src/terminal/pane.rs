@@ -1,4 +1,6 @@
 //! Restore the server-sized terminal from its checkpoint before applying live output.
+//!
+//! 终端界面：`pane`。
 
 use std::collections::VecDeque;
 

@@ -1,3 +1,7 @@
+/**
+ * 项目头像 — Generated。
+ * 项目标识头像组件中负责 Generated 部分，提供该部分所需的实现与类型定义。
+ */
 // Default project avatars: a soft "mesh gradient" (layered noise color waves on a gently folded, lit plane) with a
 // coarse film grain. The values that define one icon, including its palette, are resolved once (see
 // generateProjectIcon) and stored with the project, so a stored icon keeps drawing the same even if the defaults or

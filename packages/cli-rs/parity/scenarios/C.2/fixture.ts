@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：夹具。
+ *
+ * 规格编号：C.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Sessions and routes the C.2 (`session`) scenarios share. Times are fixed epoch milliseconds; both
 // clients format them in the machine's time zone.
 import path from "node:path"

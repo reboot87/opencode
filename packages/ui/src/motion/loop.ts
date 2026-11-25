@@ -1,3 +1,7 @@
+/**
+ * 动效 — Loop。
+ * 界面过渡与动画效果中负责 Loop 部分，提供该部分所需的实现与类型定义。
+ */
 export type FrameJob = (dt: number) => boolean
 
 export interface FrameScheduler {

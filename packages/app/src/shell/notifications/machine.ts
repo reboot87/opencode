@@ -1,3 +1,7 @@
+/**
+ * 外壳通知 — Machine。
+ * 应用级通知的展示中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionInfo } from "@opencode/client/promise"
 
 export const VIEW_RETRY_DELAY = 250

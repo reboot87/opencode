@@ -24,6 +24,8 @@ import { inlineKey } from "~/lib/direction"
  * A light product page: what it does, how to get it and its source. Browse is a product, served at
  * /product/browse; an extension page would sit at /extensions/<slug>. The arrow keys step through
  * the extensions only, when there is more than one.
+ *
+ * 站点界面组件：扩展页面。
  */
 export function ExtensionPage(props: { slug: ExtensionSlug; path?: string }) {
   const language = useLanguage()

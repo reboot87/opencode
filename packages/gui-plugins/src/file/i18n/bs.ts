@@ -1,3 +1,7 @@
+/**
+ * 文件文案 — Bs。
+ * 文件插件的多语言文案中负责 Bs 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "tree.all": "Sve datoteke",
   "tab.notFound": "Datoteka nije pronađena: {{name}}",

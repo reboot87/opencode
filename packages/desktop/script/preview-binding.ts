@@ -1,3 +1,7 @@
+/**
+ * UI 构建脚本 — PreviewBinding。
+ * 前端 UI 包的构建与生成脚本中负责 PreviewBinding 部分，提供该部分所需的实现与类型定义。
+ */
 import { readFile, realpath } from "node:fs/promises"
 import { createRequire } from "node:module"
 import path from "node:path"

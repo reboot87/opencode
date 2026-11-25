@@ -1,5 +1,7 @@
 //! Linked counterpart to `kept/tui.ts`. Its route reports mount events and keeps its last tree across unrelated
 //! updates.
+//!
+//! 插件系统：保留内容。
 
 use std::cell::{Cell, RefCell};
 use std::rc::Rc;

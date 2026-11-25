@@ -1,3 +1,7 @@
+/**
+ * 外壳路由 — SessionUiNavigateMachineTest。
+ * 应用外壳的路由定义中负责 SessionUiNavigateMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import type { SessionInfo } from "@opencode/client/promise"
 import { ServerConnection } from "@/runtime/server/registry"

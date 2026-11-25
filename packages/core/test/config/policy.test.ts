@@ -1,3 +1,10 @@
+/**
+ * 策略的测试。
+ *
+ * 被测模块：@opencode/core/config/policy
+ *
+ * 覆盖配置加载、合并、校验与分层覆盖（global / project / local）的行为。
+ */
 import { describe, expect } from "bun:test"
 import { Document, Event, Info, type Entry } from "@opencode/schema/config"
 import { ConfigPolicy } from "@opencode/schema/config/policy"

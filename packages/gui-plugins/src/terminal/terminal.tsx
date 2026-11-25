@@ -1,3 +1,7 @@
+/**
+ * 终端插件 — Terminal。
+ * 内嵌终端的 GUI 插件中负责 Terminal 部分，提供该部分所需的实现与类型定义。
+ */
 import { withAlpha } from "@opencode/ui/theme/color"
 import { useTheme } from "@opencode/ui/theme/context"
 import { resolveThemeVariant } from "@opencode/ui/theme/resolve"

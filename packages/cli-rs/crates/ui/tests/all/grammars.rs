@@ -1,3 +1,5 @@
+//! 基础 UI 组件库：语法定义。
+
 use opencode_parity::{Fixture, compare, fixtures_dir};
 use opencode_ui::code;
 use opencode_ui::theme::{Catalog, ThemeMode};

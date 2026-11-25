@@ -1,3 +1,7 @@
+/**
+ * 产物（Artifact）服务。
+ * 管理会话产物的创建、读取与本地 provider 存储，是 artifact 工具的后端。
+ */
 export * as Artifact from "./artifact.js"
 
 import { randomUUID } from "node:crypto"

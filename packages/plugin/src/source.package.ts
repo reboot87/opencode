@@ -1,3 +1,7 @@
+/**
+ * 插件包目标解析。
+ * 解析 npm 包形式的插件标识，检测缺失目标。
+ */
 import { existsSync } from "node:fs"
 import path from "node:path"
 

@@ -4,7 +4,10 @@ import { config } from "~/config"
 
 const organizationId = "https://anoma.ly/#organization"
 
-/** One JSON-LD script. `<` is escaped so page copy can never close the script early. */
+/** One JSON-LD script. `<` is escaped so page copy can never close the script early.
+ *
+ * 通用界面组件：structured·data。
+ */
 export function JsonLd(props: { data: Record<string, unknown> }) {
   return (
     <script

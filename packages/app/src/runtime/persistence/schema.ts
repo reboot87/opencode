@@ -1,3 +1,7 @@
+/**
+ * 运行时持久化 — Schema。
+ * 浏览器端配置的本地持久化中负责 Schema 部分，提供该部分所需的实现与类型定义。
+ */
 export * as Persistence from "./schema"
 
 import { Effect, Option, Predicate, Result, Schema, SchemaAST, SchemaGetter, SchemaParser, Struct } from "effect"

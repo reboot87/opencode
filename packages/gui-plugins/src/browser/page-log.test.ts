@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — PageLogTest。
+ * 内置浏览器功能的 GUI 插件中负责 PageLogTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, beforeEach, expect, jest, setSystemTime, test } from "bun:test"
 import { createPageLog, exitCodeHex, logOrigin, PROCESS_ACCOUNT_MS, processMemory, setupFailure } from "./page-log"
 

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：提及·伪终端。
+ *
+ * 规格编号：M.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `@` lists subagents, then the file search's results; Tab picks one as a mention part, and Enter sends it in the
 // prompt's `agents` and `files`.
 import { definePty } from "../../pty/run"

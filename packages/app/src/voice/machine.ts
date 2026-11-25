@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — Machine。
+ * 实时语音会话的界面中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ToolCall, VoiceEvent } from "./protocol"
 
 export const MAX_ROUNDS = 50

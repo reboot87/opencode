@@ -1,3 +1,9 @@
+/*
+ * 前端预加载脚本：oc·主题预加载。
+ */
+/*
+ * 前端预加载脚本：oc·主题预加载。
+ */
 ;(function () {
   var key = "opencode-theme-id"
   var themeId = localStorage.getItem(key) || "oc-2"

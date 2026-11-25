@@ -1,4 +1,6 @@
 //! Manage integration accounts and connect using a key, browser, external link, or command.
+//!
+//! 终端弹窗组件入口。
 
 mod form;
 

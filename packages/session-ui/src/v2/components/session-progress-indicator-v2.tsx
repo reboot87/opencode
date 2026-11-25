@@ -1,3 +1,7 @@
+/**
+ * V2 组件 — SessionProgressIndicatorV2。
+ * 第二版会话界面组件中负责 SessionProgressIndicatorV2 部分，提供该部分所需的实现与类型定义。
+ */
 import { type ComponentProps } from "solid-js"
 import { Spinner } from "@opencode/ui/spinner"
 import "./session-progress-indicator-v2.css"

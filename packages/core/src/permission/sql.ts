@@ -1,3 +1,7 @@
+/**
+ * 权限数据库表定义。
+ * 用 drizzle-orm 定义权限规则存储的 SQLite 表。
+ */
 import { sqliteTable, text, uniqueIndex } from "drizzle-orm/sqlite-core"
 import type { Project } from "@opencode/schema/project"
 import { Timestamps } from "../database/schema.sql.js"

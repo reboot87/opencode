@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — CardStories。
+ * 跨场景复用的通用 UI 组件中负责 CardStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Card, CardActions, CardDescription, CardTitle, type CardProps } from "./card"
 import { Button } from "@opencode/ui/button"
 

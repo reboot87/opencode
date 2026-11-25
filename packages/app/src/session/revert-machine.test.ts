@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — RevertMachineTest。
+ * 会话主界面的视图与状态中负责 RevertMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { SessionMessageUser } from "@opencode/client/promise"
 import {

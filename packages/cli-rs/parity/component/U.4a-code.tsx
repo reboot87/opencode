@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid U4aCode：该文件实现 U4aCode 相关的状态与逻辑。
+ */
 // P-COMP fixtures of highlighted code and a patch as the transcript's Write and Edit tools show them
 // (routes/session/index.tsx): <code> inside <line_number>, and PatchDiff in the unified view with word wrap.
 // crates/ui/tests/all/content.rs compares opencode_ui::code and opencode_ui::diff with them.

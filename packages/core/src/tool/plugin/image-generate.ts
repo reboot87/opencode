@@ -1,3 +1,7 @@
+/**
+ * image-generate 工具。
+ * 根据提示词生成图片的工具：限制输入体积与下载超时，调用图片模型并落地资产。
+ */
 export * as ImageGenerateTool from "./image-generate.js"
 
 import path from "path"

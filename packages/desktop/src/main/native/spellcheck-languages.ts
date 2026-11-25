@@ -1,3 +1,7 @@
+/**
+ * 原生能力 — SpellcheckLanguages。
+ * 调用系统原生能力的封装中负责 SpellcheckLanguages 部分，提供该部分所需的实现与类型定义。
+ */
 const base = (tag: string) => tag.split("-")[0].toLowerCase()
 
 // One dictionary per system language, matched exactly or by base language (de-AT -> de). Chromium

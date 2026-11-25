@@ -69,7 +69,10 @@ function checkStatement(source: ts.SourceFile, statement: ts.Statement) {
     )
 }
 
-/** An exported const: the type arguments of its initializer, or each member of an object literal such as `Store`. */
+/** An exported const: the type arguments of its initializer, or each member of an object literal such as `Store`.
+ *
+ * 仓库脚本：SDK·文档。
+ */
 function checkInitializer(source: ts.SourceFile, initializer: ts.Expression, owner: string) {
   if (!ts.isObjectLiteralExpression(initializer)) return checkTypes(source, initializer, owner)
 

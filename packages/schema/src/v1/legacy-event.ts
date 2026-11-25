@@ -1,3 +1,7 @@
+/**
+ * v1 旧版事件类型。
+ * 兼容 v1 的事件结构（仅用于迁移）。
+ */
 export * as LegacyEventV1 from "./legacy-event.js"
 
 import { Schema } from "effect"

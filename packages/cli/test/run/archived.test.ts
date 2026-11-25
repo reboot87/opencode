@@ -1,3 +1,10 @@
+/**
+ * 已归档的测试。
+ *
+ * 被测模块：@opencode/cli/run/archived
+ *
+ * 覆盖 CLI 运行命令的端到端行为。
+ */
 import { expect, test } from "bun:test"
 import path from "node:path"
 import { isolatedEnv } from "../fixture/environment"

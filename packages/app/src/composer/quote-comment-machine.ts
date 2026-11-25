@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — QuoteCommentMachine。
+ * 会话输入区的组合逻辑与附件处理中负责 QuoteCommentMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, getOwner, onCleanup, untrack } from "solid-js"
 import type { ComposerQuoteAnchor } from "@opencode/plugin/gui"
 import type { QuoteSource } from "./quote-source"

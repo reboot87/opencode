@@ -1,3 +1,7 @@
+/**
+ * MCP 子系统主模块。
+ * 定义服务器名品牌类型、PromptsChanged 等 ephemeral 事件，集中导出 MCP 服务、状态与操作。
+ */
 export * as Mcp from "./index.js"
 
 import { Mcp } from "@opencode/schema/mcp"

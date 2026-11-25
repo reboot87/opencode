@@ -1,3 +1,7 @@
+/**
+ * 头像 — AvatarStories。
+ * 用户或项目头像组件中负责 AvatarStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { For } from "solid-js"
 import image from "../../assets/favicon/apple-touch-icon.png"
 import { Avatar, type AvatarProps } from "./avatar"

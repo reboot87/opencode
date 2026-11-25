@@ -1,3 +1,7 @@
+/**
+ * 标签页 — Memory。
+ * 多标签页的打开与切换中负责 Memory 部分，提供该部分所需的实现与类型定义。
+ */
 import { createRoot, type Owner } from "solid-js"
 
 type Entry = {

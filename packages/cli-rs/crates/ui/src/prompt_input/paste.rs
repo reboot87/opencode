@@ -1,3 +1,5 @@
+//! 基础 UI 组件库：`paste`。
+
 use base64::Engine;
 use opentui::input::decode_paste_bytes;
 use opentui::native::ClipboardOutcome;

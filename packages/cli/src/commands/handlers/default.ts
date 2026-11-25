@@ -1,3 +1,7 @@
+/**
+ * 默认命令。
+ * 无子命令时的默认行为：连接或启动服务并进入交互模式。
+ */
 import { LayerNode } from "@opencode/util/effect/layer-node"
 import { Global } from "@opencode/util/global"
 import { run } from "@opencode/tui"

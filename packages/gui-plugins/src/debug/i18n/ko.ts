@@ -1,3 +1,7 @@
+/**
+ * 调试文案 — Ko。
+ * 调试插件的多语言文案中负责 Ko 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.toggle": "디버그 표시줄 전환",
   providerAriaLabel: "공급자 성능 진단",

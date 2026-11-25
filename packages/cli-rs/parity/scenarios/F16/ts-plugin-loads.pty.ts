@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：TypeScript·插件·loads·伪终端。
+ *
+ * 规格编号：F16。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The JS host is on by default. A TypeScript TUI plugin in the global `plugins` directory, with no variable set,
 // loads in both clients: TS runs it in its own process, opencode-native on the JS host (Bun on the path), and
 // `/plugins` lists `parity.energy` active, with no notice (`F16-typescript-plugins-skipped`).

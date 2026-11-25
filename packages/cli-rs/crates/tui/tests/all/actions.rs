@@ -1,4 +1,6 @@
 //! Session commands through a request-recording server.
+//!
+//! 终端界面测试：`actions`。
 
 use crate::support::{self, Fake, Harness, Log, WAIT, deref_harness, user};
 

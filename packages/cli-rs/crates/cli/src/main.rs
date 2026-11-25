@@ -1,3 +1,5 @@
+//! 命令行入口入口。
+
 mod args;
 mod askpass;
 mod commands;

@@ -1,3 +1,8 @@
+/**
+ * 对等性应用场景：权限·edit·模拟。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A real `patch` call asks for the edit permission
 // (V11, E.9a), and the dock shows the server's diff, whose added line wraps: the diff's scroll box is as tall as the
 // wrapped rows inline, and fills the prompt in full screen.

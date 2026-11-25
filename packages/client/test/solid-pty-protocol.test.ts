@@ -1,3 +1,10 @@
+/**
+ * SolidJS·伪终端·协议的测试。
+ *
+ * 被测模块：@opencode/client/solid-pty-protocol
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { Option } from "effect"
 import { decodePersistentPtyMessage, persistentPtyFrame } from "../src/solid"

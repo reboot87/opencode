@@ -1,6 +1,9 @@
 import type { Point, Rect } from "./geometry"
 
-/** A camera over world space: the world point at the viewport's centre, and screen px per world unit. */
+/** A camera over world space: the world point at the viewport's centre, and screen px per world unit.
+ *
+ * 街机小游戏组件：相机。
+ */
 export type View = { x: number; y: number; scale: number }
 export type Viewport = { width: number; height: number }
 

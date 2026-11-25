@@ -1,3 +1,7 @@
+/**
+ * 主题测试（v2） — ComponentTest。
+ * 第二版终端主题的测试中负责 ComponentTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { createSignal } from "solid-js"
 import { RGBA } from "@opentui/core"

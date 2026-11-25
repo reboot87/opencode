@@ -1,3 +1,7 @@
+/**
+ * 插件来源管理。
+ * 创建并管理插件来源（文件/npm）的加载与监听。
+ */
 import { readFileSync, readdirSync } from "node:fs"
 import { fileURLToPath, pathToFileURL } from "node:url"
 import path from "node:path"

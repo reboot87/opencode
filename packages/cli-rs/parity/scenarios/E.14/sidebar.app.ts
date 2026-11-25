@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：侧边栏·app。
+ *
+ * 规格编号：E.14。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The session sidebar (V19, F04, F06 to F08) at 140 columns, docked on the right: the title, the context use
 // and cost (Context), the MCP servers folded above two with their statuses, the todo list, the getting started
 // card (no provider connected), and the location. `<leader>b` hides it and writes `session.sidebar: "hide"`,

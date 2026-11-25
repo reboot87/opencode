@@ -3,6 +3,8 @@
 //! The encodings are the TypeScript client's: the query's brackets
 //! (`appendQuery`, `packages/client/src/promise/generated/client.ts:2795-2810`) and `encodeURIComponent` for a path's
 //! parameters.
+//!
+//! API 类型定义：调用。
 
 use std::marker::PhantomData;
 

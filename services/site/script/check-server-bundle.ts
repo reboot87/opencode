@@ -51,7 +51,10 @@ if (cycle) {
 }
 console.log(`check-server-bundle: ${files.length} server files, no import cycles, no three.js/WebGL code`)
 
-/** A path of static imports from `trail`'s last file back to its first, if there is one. */
+/** A path of static imports from `trail`'s last file back to its first, if there is one.
+ *
+ * 站点构建脚本：检查服务端打包产物。
+ */
 function cycleFrom(start: string, trail: string[], seen = new Set<string>()): string[] | undefined {
   for (const next of imports.get(trail.at(-1)!) ?? []) {
     if (next === start) return [...trail, next]

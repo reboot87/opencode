@@ -1,4 +1,6 @@
 //! The bounds and composite maps index the same boxes so moves remain visible through either.
+//!
+//! Mermaid 图表渲染：布局。
 
 use std::collections::{HashMap, HashSet, VecDeque};
 

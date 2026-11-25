@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — SessionHistoryRevealTest。
+ * 终端界面的测试中负责 SessionHistoryRevealTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { createTestRenderer, TestRecorder } from "@opentui/core/testing"
 import { Effect, FileSystem } from "effect"

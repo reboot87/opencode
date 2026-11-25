@@ -1,3 +1,7 @@
+/**
+ * 文件文案 — Ms。
+ * 文件插件的多语言文案中负责 Ms 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "tree.all": "Semua fail",
   "tab.notFound": "Fail tidak dijumpai: {{name}}",

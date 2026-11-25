@@ -11,6 +11,8 @@ const pad = (value: number, length = 2) => String(value).padStart(length, "0")
 /**
  * One plate of the specimen: a hairline header in mono (number, title, edition), a lead in Inter,
  * then the plate's own composition. Plates are numbered in the order of `fontContent.plates`.
+ *
+ * 字体展示组件：`plate`。
  */
 export function Plate(props: {
   id: string

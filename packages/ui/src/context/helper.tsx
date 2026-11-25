@@ -1,3 +1,7 @@
+/**
+ * UI 上下文 — Helper。
+ * UI 包的上下文提供者中负责 Helper 部分，提供该部分所需的实现与类型定义。
+ */
 import { createContext, createMemo, Show, useContext, type ParentProps, type Accessor } from "solid-js"
 
 export function createSimpleContext<T, Props extends Record<string, any>>(

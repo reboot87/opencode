@@ -1,3 +1,6 @@
+/**
+ * 文档站共享逻辑：站点地图。
+ */
 import { latestDocs } from "../config"
 import { docsHref, docsSections } from "./navigation"
 

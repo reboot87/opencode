@@ -1,3 +1,7 @@
+/**
+ * 外壳命令 — SafeTriangle。
+ * 应用外壳提供的命令中负责 SafeTriangle 部分，提供该部分所需的实现与类型定义。
+ */
 import { onCleanup } from "solid-js"
 
 type Point = { x: number; y: number }

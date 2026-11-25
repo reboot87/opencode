@@ -1,3 +1,10 @@
+/**
+ * 版本控制·init的测试。
+ *
+ * 被测模块：@opencode/core/plugin/vcs-init
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { expect } from "bun:test"
 import { Plugin } from "@opencode/plugin"
 import type { VcsDefinition } from "@opencode/plugin/effect/vcs"

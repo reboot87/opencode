@@ -1,3 +1,7 @@
+/**
+ * run 命令实现。
+ * 执行一次性提示：连接服务、发送消息、附加文件并输出结果。
+ */
 import { Service, type Endpoint } from "@opencode/client/effect/service"
 import { OpenCode, type SessionMessageAssistantTool } from "@opencode/client/promise"
 import { FSUtil } from "@opencode/util/fs-util"

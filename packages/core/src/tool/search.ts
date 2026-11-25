@@ -1,3 +1,7 @@
+/**
+ * 文件搜索工具辅助。
+ * 判断搜索能力可用性、区分路径类型，并为 glob/grep 搜索提供有界（bounded）并发与结果限制。
+ */
 export * as ToolSearch from "./search.js"
 
 import { ToolFailure } from "@opencode/ai/effect"

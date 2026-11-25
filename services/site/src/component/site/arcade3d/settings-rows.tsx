@@ -16,6 +16,8 @@ import {
  * The three.js version's rows in the Settings panel's "404 arcade" section: lights (each with a full
  * hue slider, saturation and intensity), the moonlight's direction and reach, dust, CRT, backdrop
  * grade, camera and quality. Loaded with the panel. Double-click a slider to reset it.
+ *
+ * 3D 街机场景组件：设置行。
  */
 export default function Arcade3DSettings() {
   return (

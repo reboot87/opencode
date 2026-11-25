@@ -1,5 +1,7 @@
 //! Resolves sticky nodes, scroll commands and anchors after layout. Calls the plugin's layout callback with settled
 //! geometry; a paint-only change must not start another layout pass.
+//!
+//! 插件系统：`behave`。
 
 use std::cell::{Cell, RefCell};
 use std::collections::{HashMap, HashSet};

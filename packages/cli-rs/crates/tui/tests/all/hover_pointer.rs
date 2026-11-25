@@ -1,4 +1,6 @@
 //! Inspect the pointer shape for clickable and non-clickable cells.
+//!
+//! 终端界面测试：悬停·pointer。
 
 use crate::support::{self, WAIT};
 

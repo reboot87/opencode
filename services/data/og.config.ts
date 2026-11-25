@@ -1,3 +1,6 @@
+/**
+ * 数据服务：og·配置。
+ */
 import { defineConfig } from "cf/config"
 import { stage, stageAccount } from "./stage"
 

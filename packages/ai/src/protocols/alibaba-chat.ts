@@ -1,3 +1,7 @@
+/**
+ * 阿里云通义千问 Chat 协议实现。
+ * 基于兼容端点的请求转换与能力声明。
+ */
 import { Effect, Schema } from "effect"
 import { Protocol } from "../route/protocol.js"
 import type { LanguageModelCompatibility, Capabilities } from "../schema/index.js"

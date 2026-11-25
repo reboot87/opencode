@@ -1,4 +1,10 @@
 /* @refresh skip */
+
+/**
+ * 错误·浮层（开发期支持）。
+ *
+ * CLI 开发服务器的热更新支持：按需刷新与错误浮层。
+ */
 import { BoxRenderable, TextAttributes } from "@opentui/core"
 import { Portal, useRenderer, useTerminalDimensions } from "@opentui/solid"
 import { onCleanup, onMount } from "solid-js"

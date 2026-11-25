@@ -1,3 +1,7 @@
+/**
+ * OAuth 回调页面。
+ * 生成 OAuth 授权完成/失败的回调 HTML 页面。
+ */
 // Branded HTML pages for local OAuth callback servers.
 //
 // These are served by the loopback HTTP servers that finish an OAuth exchange

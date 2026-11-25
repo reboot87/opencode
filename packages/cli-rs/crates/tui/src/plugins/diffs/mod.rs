@@ -1,4 +1,6 @@
 //! The built-in diff viewer, shown as a route or a docked panel.
+//!
+//! 终端插件视图入口。
 
 use opencode_api::generated::{SessionExecutionInterruptedDataReason, V2Event};
 use opencode_plugin::abi::interact::{Button, Event, Handled, OpenPanel, PointerKind};

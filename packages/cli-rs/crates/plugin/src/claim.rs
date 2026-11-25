@@ -1,5 +1,7 @@
 //! Each claimed transcript part owns a mount, its widgets and its content handles. If the plugin declines the part
 //! or fails, the transcript shows the host renderer.
+//!
+//! 插件系统：`claim`。
 
 use std::cell::{Cell, RefCell};
 use std::collections::{HashMap, HashSet};

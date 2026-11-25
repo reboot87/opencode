@@ -1,3 +1,5 @@
+//! Mermaid 渲染核心入口。
+
 pub mod canvas;
 pub mod color;
 pub mod drawing;

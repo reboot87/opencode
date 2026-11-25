@@ -1,3 +1,7 @@
+/**
+ * 模块 — State。
+ * 该目录下的功能模块中负责 State 部分，提供该部分所需的实现与类型定义。
+ */
 import { Effect, Exit, HashSet, Ref, Scope, SynchronizedRef } from "effect"
 import type { Interaction } from "../cassette/model.js"
 import type { CassetteNotFoundError, Interface, InvalidCassetteError } from "../cassette/store.js"

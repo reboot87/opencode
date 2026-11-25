@@ -1,5 +1,7 @@
 //! Owns the widgets, memo entries and content of a mounted plugin surface. Reopening the same key creates a new
 //! generation; work from the old one cannot update it.
+//!
+//! 插件系统：表面。
 
 use std::cell::{Cell, RefCell};
 use std::collections::{HashMap, HashSet};

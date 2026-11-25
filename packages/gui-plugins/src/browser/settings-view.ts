@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — SettingsView。
+ * 内置浏览器功能的 GUI 插件中负责 SettingsView 部分，提供该部分所需的实现与类型定义。
+ */
 // What Settings › Browser shows, decided apart from its markup.
 import type { ExtensionCompatibility, InstallResult } from "./profile/ipc"
 

@@ -1,3 +1,7 @@
+/**
+ * 使用提示 — Model。
+ * 面向新用户的使用提示中负责 Model 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMediaQuery } from "@solid-primitives/media"
 import { showToast, toaster } from "@opencode/ui/toast"
 import { Schema } from "effect"

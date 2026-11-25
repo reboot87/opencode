@@ -1,3 +1,7 @@
+/**
+ * 运行时服务端连接 — Types。
+ * 浏览器端与服务端的连接与同步中负责 Types 部分，提供该部分所需的实现与类型定义。
+ */
 /* oxlint-disable anti-slop/no-unsafe-dictionary-type -- option and settings bags are passed along as the server sends them */
 import type { ProjectListOutput, WorktreeDirectory } from "@opencode/client/promise"
 

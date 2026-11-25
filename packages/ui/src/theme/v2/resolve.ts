@@ -1,3 +1,7 @@
+/**
+ * UI 主题（v2） — Resolve。
+ * 第二版设计令牌定义中负责 Resolve 部分，提供该部分所需的实现与类型定义。
+ */
 // @refresh reload
 
 import { generateNeutralScale, hexToOklch, oklchToHex, shift } from "../color"

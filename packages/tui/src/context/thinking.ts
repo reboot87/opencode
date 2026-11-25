@@ -1,3 +1,7 @@
+/**
+ * UI 上下文 — Thinking。
+ * UI 包的上下文提供者中负责 Thinking 部分，提供该部分所需的实现与类型定义。
+ */
 export type ThinkingMode = "show" | "hide"
 
 const MODES: readonly ThinkingMode[] = ["show", "hide"] as const

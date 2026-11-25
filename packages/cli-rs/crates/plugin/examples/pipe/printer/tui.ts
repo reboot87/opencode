@@ -1,3 +1,8 @@
+/**
+ * 管道示例：TUI。
+ *
+ * 管道示例：演示插件管道各阶段的串联方式。
+ */
 // Writes from import, setup and a command to check stdout attribution, including dependency output.
 
 import { appendFileSync } from "node:fs"

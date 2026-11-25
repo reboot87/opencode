@@ -1,3 +1,7 @@
+/**
+ * upgrade 命令。
+ * 按指定方式（curl/npm/pnpm 等）升级到最新版本。
+ */
 import { intro, log, outro, spinner } from "@clack/prompts"
 import { Effect, Option } from "effect"
 import { Commands } from "../commands"

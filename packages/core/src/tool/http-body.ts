@@ -1,3 +1,7 @@
+/**
+ * HTTP 响应体收集工具。
+ * 按 Content-Length 与上限有界地收集 HTTP 响应体，避免超大响应撑爆内存。
+ */
 import { Effect, Stream } from "effect"
 import { HttpClientResponse } from "effect/http"
 

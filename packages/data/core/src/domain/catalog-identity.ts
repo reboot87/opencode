@@ -1,3 +1,7 @@
+/**
+ * 数据领域 — CatalogIdentity。
+ * 数据采集的领域模型中负责 CatalogIdentity 部分，提供该部分所需的实现与类型定义。
+ */
 import { statModel } from "./model-normalization"
 
 const CATALOG_URL = "https://models.opencode.ai/catalog.json"

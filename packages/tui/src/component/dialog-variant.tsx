@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — DialogVariant。
+ * 终端界面（Solid）组件中负责 DialogVariant 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo } from "solid-js"
 import { useLocal } from "../context/local"
 import { DialogSelect } from "../ui/dialog-select"

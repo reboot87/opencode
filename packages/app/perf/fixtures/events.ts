@@ -1,3 +1,7 @@
+/**
+ * 性能夹具 — Events。
+ * 性能测试使用的数据夹具中负责 Events 部分，提供该部分所需的实现与类型定义。
+ */
 import type { OpenCodeEvent } from "@opencode/client/promise"
 import type { Page } from "@playwright/test"
 

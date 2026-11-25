@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：权限·CLI。
+ *
+ * 规格编号：C.10。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A permission request for this session is rejected with feedback, and the run goes on.
 import { defineCli } from "../../cli/run"
 import { event, server, textStep } from "./fixture"

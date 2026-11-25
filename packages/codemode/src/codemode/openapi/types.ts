@@ -1,3 +1,7 @@
+/**
+ * OpenAPI 类型。
+ * 定义 OpenAPI 文档与操作的类型结构。
+ */
 import { Effect } from "effect"
 import { HttpClient } from "effect/http"
 import type { Tool, JsonSchema } from "../tool.js"

@@ -3,6 +3,8 @@
 
 // `config_interop`'s `json!` literals nest deeper than the default limit.
 #![recursion_limit = "512"]
+//!
+//! 本地配置与路径入口。
 
 mod support;
 

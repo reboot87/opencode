@@ -1,5 +1,7 @@
 //! Migrates legacy keybinds and copy settings in place, preserving comments. If `cli.json` is absent, combine
 //! `tui.json` and `kv.json` into a new file.
+//!
+//! 本地配置与路径：`migrate`。
 
 use std::io;
 use std::path::Path;

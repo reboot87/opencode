@@ -1,3 +1,7 @@
+/**
+ * form 接口处理器。
+ * 表单接口处理器：提交用户表单。
+ */
 import { Form } from "@opencode/core/form"
 import { Effect } from "effect"
 import { HttpApiBuilder } from "effect/http-api"

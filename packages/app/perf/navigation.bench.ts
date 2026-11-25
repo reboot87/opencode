@@ -1,3 +1,7 @@
+/**
+ * 性能测试 — NavigationBench。
+ * 界面渲染性能基准中负责 NavigationBench 部分，提供该部分所需的实现与类型定义。
+ */
 // Moving around the app at 1440×900: Home, new sessions, child sessions, restored tabs and the command palette, on the
 // stress fixture (a 12-turn and a 72-turn session with every tool and diffs up to 300 lines, and a subagent's child
 // session), paginated as the server does. Every case starts from a fresh document, so each run pays what the first

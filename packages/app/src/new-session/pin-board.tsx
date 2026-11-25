@@ -1,3 +1,7 @@
+/**
+ * 新建会话 — PinBoard。
+ * 创建新会话的向导与表单中负责 PinBoard 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, onCleanup, onMount } from "solid-js"
 import { createQuads, type Quads, type Rgba } from "./pin-quads"
 import { PinSound } from "./pin-sound"

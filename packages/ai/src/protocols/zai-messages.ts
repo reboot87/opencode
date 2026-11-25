@@ -1,3 +1,7 @@
+/**
+ * Z.ai Messages 协议实现。
+ * Messages API 的 provider 变体。
+ */
 import { Effect, Schema } from "effect"
 import { Protocol } from "../route/protocol.js"
 import type { LLMRequest } from "../schema/index.js"

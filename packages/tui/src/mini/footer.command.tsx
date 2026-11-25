@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid FooterCommand：该文件实现 FooterCommand 相关的状态与逻辑。
+ */
 import { TextAttributes, type InputRenderable, type KeyEvent } from "@opentui/core"
 import { useKeyboard, useRenderer, useTerminalDimensions, type JSX } from "@opentui/solid"
 import fuzzysort from "fuzzysort"

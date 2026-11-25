@@ -1,3 +1,17 @@
+/**
+ * LLM 客户端服务（LLMClient）——AI SDK 的核心请求执行层。
+ *
+ * 职责：把上层的 LLMRequest 通过选定的 Protocol 和 Transport 发送给模型，
+ * 并把 provider 的流式响应解析成统一的 LLMEvent 流。
+ *
+ * 关键组件：
+ *   - Service：Context.Service，提供 generate（一次性）/ stream（流式）/ compact（压缩）等操作；
+ *   - Protocol：模型服务器家族的语义契约（如 OpenAI Chat / Anthropic Messages）；
+ *   - Transport / Framing：底层 HTTP/WebSocket 传输与帧解码（SSE 等）；
+ *   - Endpoint / Auth：请求 URL 构建与认证。
+ *
+ * 本文件把这些 Layer 组装起来，是 llm.ts 的 stepStream 直接依赖的底层。
+ */
 import { Cause, Context, Effect, Layer, Option, Schema, Stream } from "effect"
 import { Auth } from "./auth.js"
 import { Endpoint, type EndpointPatch } from "./endpoint.js"

@@ -1,4 +1,6 @@
 //! OpenCode Go subscription offer and device sign-in.
+//!
+//! 终端弹窗组件：go·upsell。
 
 use opencode_api::generated::{
     ConnectionInfo, IntegrationAttempt, IntegrationAttemptID, IntegrationID, IntegrationMethod, IntegrationMethodID,

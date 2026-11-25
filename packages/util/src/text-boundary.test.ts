@@ -1,3 +1,7 @@
+/**
+ * 文本边界测试。
+ * 验证截断不会切断代理对与多字节字符。
+ */
 import { describe, expect, test } from "bun:test"
 import { TextBoundary } from "./text-boundary.js"
 

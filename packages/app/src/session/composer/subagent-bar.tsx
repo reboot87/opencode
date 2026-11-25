@@ -1,3 +1,7 @@
+/**
+ * 会话输入区 — SubagentBar。
+ * 会话界面输入区的实现中负责 SubagentBar 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { Icon } from "@opencode/ui/icon"
 import { Keybind } from "@opencode/ui/keybind"

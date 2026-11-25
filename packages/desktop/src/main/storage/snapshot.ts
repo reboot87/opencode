@@ -1,3 +1,7 @@
+/**
+ * 本地存储 — Snapshot。
+ * 桌面端配置的本地持久化中负责 Snapshot 部分，提供该部分所需的实现与类型定义。
+ */
 import { app, ipcMain, type WebContents } from "electron"
 import { WindowSnapshotChannel, type WindowSnapshot } from "../../shared/ipc-transport"
 import { isRendererUrl } from "../windows/scheme"

@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — ErrorComponent。
+ * 终端界面（Solid）组件中负责 ErrorComponent 部分，提供该部分所需的实现与类型定义。
+ */
 import { TextAttributes, type ScrollBoxRenderable } from "@opentui/core"
 import { useKeyboard, useTerminalDimensions } from "@opentui/solid"
 import { createSignal, For, Show } from "solid-js"

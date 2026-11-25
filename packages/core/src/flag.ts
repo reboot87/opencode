@@ -1,3 +1,7 @@
+/**
+ * 功能开关（Flag）。
+ * 定义实验性功能开关的键与状态解析接口。
+ */
 export * as Flag from "./flag.js"
 
 import { Context, Effect, Layer } from "effect"

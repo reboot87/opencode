@@ -1,3 +1,7 @@
+/**
+ * 浏览器文案 — Et。
+ * 浏览器插件的多语言文案中负责 Et 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.open": "Ava brauser",
   "command.reload": "Laadi brauseri leht uuesti",

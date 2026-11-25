@@ -1,3 +1,7 @@
+/**
+ * GUI 插件类型检查样例。
+ * 以 Contract 校验 GUI 插件声明的类型一致性。
+ */
 // Type-level contract of `Plugin.define`, checked by `bun typecheck`. Nothing imports this file. Each `@ts-expect-error`
 // fails the typecheck if its line stops being an error.
 

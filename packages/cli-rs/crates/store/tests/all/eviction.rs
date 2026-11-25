@@ -1,3 +1,5 @@
+//! 存储层测试：淘汰。
+
 use crate::common;
 
 use std::sync::Arc;

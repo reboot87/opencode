@@ -1,3 +1,7 @@
+/**
+ * 输入附件 — Uploads。
+ * 输入区附件的上传与管理中负责 Uploads 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createRoot, createSignal, For, on, onCleanup, untrack } from "solid-js"
 import { createStore, reconcile } from "solid-js/store"
 import { Icon } from "@opencode/ui/icon"

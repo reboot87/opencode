@@ -1,3 +1,7 @@
+/**
+ * 集成选择器。
+ * 以自动补全方式让用户选择集成。
+ */
 import { AutocompletePrompt } from "@clack/core"
 import { S_BAR, S_BAR_END, S_RADIO_ACTIVE, S_RADIO_INACTIVE, symbol } from "@clack/prompts"
 import color from "picocolors"

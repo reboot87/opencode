@@ -1,4 +1,8 @@
-/** How long one MCP, plugins or skills list load may run before it gives up. */
+/**
+ * How long one MCP, plugins or skills list load may run before it gives up.
+ *
+ * 详情插件中负责 ServiceLoadMachine 部分：对象详情展示中与 ServiceLoadMachine 相关的状态、交互与渲染逻辑。
+ */
 export const SERVICE_LOAD_TIMEOUT_MS = 15_000
 
 /** The server's data store a list loads from, compared by identity: a restarted server brings a new one. */

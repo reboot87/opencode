@@ -1,3 +1,6 @@
+/**
+ * 站点共享逻辑：来源标识。
+ */
 import { installs, sdkInstalls } from "./install-commands"
 import { forHumansRows } from "./source-logo-nav"
 

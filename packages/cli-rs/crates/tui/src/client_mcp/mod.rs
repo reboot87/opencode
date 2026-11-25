@@ -1,5 +1,7 @@
 //! The client MCP socket exposes terminal tools for the current session family. Reconnect when the experiment,
 //! location, or server changes.
+//!
+//! 终端界面入口。
 
 use std::sync::{Arc, Mutex};
 

@@ -112,7 +112,10 @@ console.log(
     .join("\n"),
 )
 
-/** The newest of the document's source files that existed at a commit. */
+/** The newest of the document's source files that existed at a commit.
+ *
+ * 站点构建脚本：法律·history。
+ */
 async function source(sha: string, files: string[]) {
   const contents = await Promise.all(
     files.map(async (file) => {

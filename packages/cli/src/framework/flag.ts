@@ -1,3 +1,7 @@
+/**
+ * 命令行开关解析。
+ * 从元数据中解析可选的开关值。
+ */
 import { Flag } from "effect/cli"
 
 // `--name` and `--name=` parse as `true`, `--name=value` as the value. Like git's `--color[=when]`, the value must be

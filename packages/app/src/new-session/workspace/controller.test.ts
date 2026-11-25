@@ -1,3 +1,7 @@
+/**
+ * 新会话工作区 — ControllerTest。
+ * 新建会话时的工作区选择中负责 ControllerTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   cycleNewSessionWorktree,

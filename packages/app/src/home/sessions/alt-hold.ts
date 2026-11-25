@@ -1,3 +1,7 @@
+/**
+ * 主页会话 — AltHold。
+ * 主页中会话列表的展示中负责 AltHold 部分，提供该部分所需的实现与类型定义。
+ */
 import { makeEventListener } from "@solid-primitives/event-listener"
 import { createStore } from "solid-js/store"
 

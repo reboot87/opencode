@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — Protocol。
+ * 实时语音会话的界面中负责 Protocol 部分，提供该部分所需的实现与类型定义。
+ */
 import { Option, Schema } from "effect"
 
 const Item = Schema.Struct({

@@ -1,3 +1,7 @@
+/**
+ * WebSocket 构造器。
+ * 构造 WebSocket 实例，处理环境代理绕过与 no_proxy 等环境变量。
+ */
 // The platform barrel also exposes Redis and its optional native hash loader, which workerd cannot resolve.
 import { WebSocket as NodeWebSocket } from "@effect/platform-node/NodeWS"
 import { HttpProxyAgent } from "http-proxy-agent"

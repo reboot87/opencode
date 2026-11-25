@@ -2,6 +2,8 @@
  * The debug bar's FOCUS toggle. `changing` waits for main to apply `target`; main held `!target` before that call.
  * `desired` is the user's latest click, so a click while the call is in flight flips it, and the follow-up call starts
  * once this one settles. `attempt` fences call results; `idle` keeps the last one issued.
+ *
+ * 调试插件中负责 FocusMachine 部分：调试面板中与 FocusMachine 相关的状态、交互与渲染逻辑。
  */
 export type FocusToggleState =
   | { readonly status: "idle"; readonly attempt: number; readonly enabled: boolean }

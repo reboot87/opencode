@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：Kitty·预览·伪终端。
+ *
+ * 规格编号：OT。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The image preview over the prompt's Kitty thumbnail, on a terminal that shows Kitty graphics with 20x40-pixel cells.
 // In the preview a 1600x1200 noise image is no smaller than its source, so its upload is larger than one frame's
 // output. TS sends it with Kitty across frames; Rust, since anomalyco/opentui#2135, sends one copy that fits a frame.

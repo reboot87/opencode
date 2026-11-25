@@ -1,3 +1,7 @@
+/**
+ * WSL 文案 — Zht。
+ * WSL 插件的多语言文案中负责 Zht 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "server.add": "新增 WSL 伺服器",
   "server.label": "WSL",

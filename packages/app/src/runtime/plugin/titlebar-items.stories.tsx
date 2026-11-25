@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — TitlebarItemsStories。
+ * 浏览器端的插件加载与扩展点中负责 TitlebarItemsStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal, For, Show } from "solid-js"
 import type { TitlebarItem } from "@opencode/plugin/gui"
 import { TitlebarItems } from "./titlebar-items"

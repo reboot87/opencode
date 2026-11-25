@@ -11,6 +11,8 @@ import { swap } from "../solid"
  * copy, whose screen the first-paint script already pinned in place, so the token can be dragged
  * into the slot. Its frame reads the language and adds head tags, so it gets the app's providers, as
  * search does (overlays/search.tsx); the router has no routes.
+ *
+ * 客户端交互岛：街机。
  */
 export default function arcade(root: HTMLElement) {
   void swap(

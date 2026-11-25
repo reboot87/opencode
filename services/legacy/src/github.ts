@@ -1,3 +1,6 @@
+/**
+ * 遗留服务实现：GitHub。
+ */
 import type { JWTPayload } from "jose"
 
 export function parseRepositoryClaim(payload: JWTPayload) {

@@ -1,3 +1,6 @@
+/**
+ * 多语言内容文案：`ko`。
+ */
 import type { ContentOverlay } from "./source"
 
 export const content = {

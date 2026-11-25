@@ -1,3 +1,7 @@
+/**
+ * 消息渲染 — CommentCard。
+ * 会话消息的渲染组件中负责 CommentCard 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, Match, onCleanup, onMount, Show, Switch } from "solid-js"
 import { FileIcon } from "@opencode/ui/file-icon"
 import { Icon } from "@opencode/ui/icon"

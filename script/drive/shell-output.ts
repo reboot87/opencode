@@ -1,3 +1,6 @@
+/**
+ * 本地驱动脚本：Shell·输出。
+ */
 import { Effect, Stream } from "effect"
 import { Llm, OpenCodeDriver } from "opencode-drive"
 

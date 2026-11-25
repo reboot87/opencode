@@ -1,4 +1,6 @@
 //! Full-size image preview with navigation between attachments.
+//!
+//! 终端弹窗组件：图片预览。
 
 use opencode_api::generated::{ExperimentalMediaGetInput, MediaHash};
 use opencode_ui::dialog::{DialogCx, FooterAction, FooterProps, layout};

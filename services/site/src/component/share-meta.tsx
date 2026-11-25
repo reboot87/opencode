@@ -5,7 +5,10 @@ import { useLanguage } from "~/context/language"
 import type { Locale } from "~/lib/language"
 import type { OgImage } from "~/lib/og"
 
-/** One Open Graph (`property`) or X (`name`) tag. */
+/** One Open Graph (`property`) or X (`name`) tag.
+ *
+ * 通用界面组件：share·meta。
+ */
 export type ShareTag = { property: string; content: string } | { name: string; content: string }
 
 /**

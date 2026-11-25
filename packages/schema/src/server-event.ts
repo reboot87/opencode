@@ -1,3 +1,7 @@
+/**
+ * 服务端事件类型。
+ * 定义服务端向客户端推送的事件结构。
+ */
 export * as ServerEvent from "./server-event.js"
 
 import { Event } from "./event.js"

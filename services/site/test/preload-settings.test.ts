@@ -100,7 +100,10 @@ function run(script: string, saved: unknown, theme?: string, stored: Record<stri
   }
 }
 
-/** A saved value different from the default for every enum setting, from the schema itself. */
+/** A saved value different from the default for every enum setting, from the schema itself.
+ *
+ * 站点测试的测试用例：预加载设置。
+ */
 function changedSettings() {
   const shape = siteSettingsSchema().shape as Record<string, z.ZodType>
   const defaults = siteSettingsDefaults as Record<string, unknown>

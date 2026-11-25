@@ -1,3 +1,7 @@
+/**
+ * 不可用环境驱动。
+ * 在不支持子进程的运行时提供占位驱动。
+ */
 import { Effect, Layer, PlatformError } from "effect"
 import { ChildProcessSpawner, make } from "effect/process/ChildProcessSpawner"
 

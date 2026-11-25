@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — ModelChipMachine。
+ * 会话输入区的组合逻辑与附件处理中负责 ModelChipMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // A catalog load that never settles must not open the dialog long after the click.
 export const MODEL_CHIP_DEFER_TIMEOUT_MS = 10_000
 

@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — ViewportToolbarMachine。
+ * 内置浏览器功能的 GUI 插件中负责 ViewportToolbarMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { App } from "@opencode/plugin/gui"
 import type { Browser } from "@opencode/plugin-browser/rpc"
 import type { PageEvent } from "./connection"

@@ -1,3 +1,7 @@
+/**
+ * 工具展示 — ToolGroupStories。
+ * 工具调用与结果的展示组件中负责 ToolGroupStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, Show } from "solid-js"
 import { createStore } from "solid-js/store"
 import { createTwoFilesPatch } from "diff"

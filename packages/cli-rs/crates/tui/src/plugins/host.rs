@@ -1,3 +1,5 @@
+//! 终端插件视图：主机。
+
 use std::cell::OnceCell;
 use std::ops::Deref;
 use std::path::{Path, PathBuf};

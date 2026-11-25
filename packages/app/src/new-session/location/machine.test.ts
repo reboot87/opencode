@@ -1,3 +1,7 @@
+/**
+ * 新会话位置 — MachineTest。
+ * 新建会话时的位置选择中负责 MachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { PromptProject } from "@/new-session/project/selector"
 import {

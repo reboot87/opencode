@@ -10,7 +10,10 @@ import { blocks, link, richToMarkdown, type MarkdownContext } from "~/lib/markdo
 import { rich } from "~/i18n/rich"
 import { mediaUrl } from "~/lib/media"
 
-/** The press kit copy, shared by the page and its Markdown version. `route` localizes a site path. */
+/** The press kit copy, shared by the page and its Markdown version. `route` localizes a site path.
+ *
+ * 站点共享逻辑：媒体中心内容。
+ */
 export function pressContent(t: Translate, route: (path: string) => string) {
   return {
     title: "OpenCode | Press kit with company facts and brand assets",

@@ -1,3 +1,7 @@
+/**
+ * 文件监听服务。
+ * 基于原生 watcher 的文件变更订阅，含 10 秒订阅超时。
+ */
 export * as Watcher from "./watcher.js"
 
 // @ts-ignore

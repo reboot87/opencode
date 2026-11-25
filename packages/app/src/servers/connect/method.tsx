@@ -1,3 +1,7 @@
+/**
+ * 连接服务端 — Method。
+ * 添加与连接远程服务端中负责 Method 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { useLanguage } from "@/runtime/i18n/language"
 

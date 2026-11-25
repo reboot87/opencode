@@ -1,5 +1,7 @@
 //! Reads and edits `cli.json`. An invalid known value invalidates the entire document; unknown keys are ignored.
 //! Preserve schema field order so file edits agree across clients.
+//!
+//! 本地配置与路径：CLI·配置。
 
 use std::fs;
 use std::io;

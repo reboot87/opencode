@@ -6,6 +6,8 @@
 //!
 //! The measured thread is the test's: the TUI's UI thread, or the thread that decodes or runs the store. The fake
 //! server answers with bodies serialized before the measure, so it adds little to the counts of every thread.
+//!
+//! 终端界面测试：性能。
 
 use crate::support::{self, WAIT};
 

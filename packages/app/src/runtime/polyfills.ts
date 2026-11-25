@@ -1,3 +1,7 @@
+/**
+ * 应用运行时 — Polyfills。
+ * 浏览器端应用的运行时环境与服务装配中负责 Polyfills 部分，提供该部分所需的实现与类型定义。
+ */
 // Safari before 17.4 lacks Map.groupBy and Promise.withResolvers, and Promise.try arrived in Safari 18.2. Electron's
 // Chromium has all three, so these only matter for the web app.
 if (!Map.groupBy) {

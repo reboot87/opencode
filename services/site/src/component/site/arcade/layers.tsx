@@ -17,6 +17,8 @@ const sources = (name: string, type: string) =>
  * the WebGL layer (layers-gl.ts) has drawn that first frame, the poster fades out and the dust
  * starts drifting from where it was. Phones and browsers without WebGL2 keep the poster; reduced
  * motion stays on the first frame.
+ *
+ * 街机小游戏组件：层。
  */
 export function ArcadeLayers(props: { ref: (element: HTMLDivElement) => void; reduced: boolean }) {
   const i18n = useI18n()

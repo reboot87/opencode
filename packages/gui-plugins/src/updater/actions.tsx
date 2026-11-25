@@ -1,3 +1,7 @@
+/**
+ * 更新插件 — Actions。
+ * 应用更新提示的 GUI 插件中负责 Actions 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { Dialog, DialogFooter, DialogHeader, DialogTitleGroup } from "@opencode/ui/dialog"
 import { Icon } from "@opencode/ui/icon"

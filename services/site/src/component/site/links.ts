@@ -3,7 +3,10 @@ import { deviceOrder, productPages } from "./product-data"
 import { docsUrl } from "~/lib/docs"
 import type { Translate } from "~/i18n"
 
-/** The sidebar and footer links, shared by the layout and the Markdown versions of the pages. */
+/** The sidebar and footer links, shared by the layout and the Markdown versions of the pages.
+ *
+ * 站点界面组件：链接。
+ */
 export function siteLinks(t: Translate, route: (path: string) => string) {
   return {
     // Every item the primary nav can show, in the default order (settings.ts navDefaults says which

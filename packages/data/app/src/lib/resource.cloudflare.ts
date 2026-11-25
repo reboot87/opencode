@@ -1,3 +1,7 @@
+/**
+ * 数据站工具 — ResourceCloudflare。
+ * 数据站点的通用工具中负责 ResourceCloudflare 部分，提供该部分所需的实现与类型定义。
+ */
 // The data Worker's bindings for the OG image route (src/og/response.ts). package.json `imports` picks this file for
 // builds; resource.node.ts stands in under `vite dev` and tests.
 import { env } from "cloudflare:workers"

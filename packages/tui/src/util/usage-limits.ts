@@ -1,3 +1,7 @@
+/**
+ * 终端工具 — UsageLimits。
+ * 终端界面的通用工具函数中负责 UsageLimits 部分，提供该部分所需的实现与类型定义。
+ */
 import type { UsageLimitsBudget, UsageLimitsInfo } from "@opencode/client"
 
 /** A model as the usage limits read it: its OpenCode IDs, its price and context window, and its provider. */

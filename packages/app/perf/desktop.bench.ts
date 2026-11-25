@@ -1,3 +1,7 @@
+/**
+ * 性能测试 — DesktopBench。
+ * 界面渲染性能基准中负责 DesktopBench 部分，提供该部分所需的实现与类型定义。
+ */
 // The packaged desktop app, launched by strobe in a private home from the `opencode` profiles in strobe.json.
 // Compare two installed channels: `strobe bench packages/app/perf/desktop.bench.ts --base app:opencode --head app:opencode-beta`.
 import { app, bench } from "@hona/strobe"

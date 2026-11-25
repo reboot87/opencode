@@ -1,4 +1,6 @@
 //! Builds the system theme from the terminal palette.
+//!
+//! 主题解析与应用：系统。
 
 use opentui::style::Color;
 use opentui::theme::ThemeMode;

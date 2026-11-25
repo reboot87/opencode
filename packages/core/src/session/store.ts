@@ -1,3 +1,7 @@
+/**
+ * 会话存储（SessionStore）。
+ * 会话与消息的持久化读写：列表查询（按目录/项目）、增删与检索。
+ */
 export * as SessionStore from "./store.js"
 
 import { and, asc, desc, eq, gt, isNotNull, isNull, lt, notInArray, or, sql, type SQL } from "drizzle-orm"

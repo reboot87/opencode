@@ -1,3 +1,7 @@
+/**
+ * Cloudflare AI Gateway provider 门面。
+ * 通过 Cloudflare AI Gateway 转发请求，提供 chat / decision 等模型工厂与网关鉴权。
+ */
 import type { Config, Redacted } from "effect"
 import type { ProviderPackage } from "../provider-package.js"
 import { CloudflareRunDecisions } from "../protocols/cloudflare-run-decisions.js"

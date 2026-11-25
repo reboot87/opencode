@@ -1,3 +1,7 @@
+/**
+ * Effect 客户端出口。
+ * 集中导出 Effect 风格客户端的公共 API。
+ */
 // TODO: Keep additional network capabilities inside Schema and Protocol as the client grows; /effect must never import
 // Core or Server. Preserve these datatype exports so internal model reorganizations do not require caller migrations.
 import type { Effect } from "effect"

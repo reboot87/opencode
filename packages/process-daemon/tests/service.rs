@@ -1,5 +1,8 @@
 #![cfg(unix)]
 
+//! 进程守护服务测试：服务。
+
+
 #[path = "support/resize_fixture.rs"]
 mod resize_fixture;
 

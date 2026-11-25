@@ -1,5 +1,11 @@
 #!/usr/bin/env bun
 
+/**
+ * 构建脚本。
+ *
+ * 客户端包的开发脚本：类型生成与 API 对齐检查。
+ */
+
 import { $ } from "bun"
 import path from "node:path"
 import { fileURLToPath } from "node:url"

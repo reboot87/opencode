@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — ConnectionTest。
+ * 终端界面的测试中负责 ConnectionTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { hostname, tmpdir } from "node:os"
 import { mkdir, mkdtemp, realpath, rm, symlink, writeFile } from "node:fs/promises"

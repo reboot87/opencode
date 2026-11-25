@@ -1,3 +1,7 @@
+/**
+ * ACP 提示准备。
+ * 准备 ACP 提示请求并构造待发送的消息。
+ */
 import type { ContentBlock } from "@agentclientprotocol/sdk"
 import type { Command } from "@opencode/schema/command"
 import { SessionMessage } from "@opencode/schema/session-message"

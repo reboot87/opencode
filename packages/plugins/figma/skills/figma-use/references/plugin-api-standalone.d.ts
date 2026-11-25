@@ -1,5 +1,7 @@
 /**
  * @see https://developers.figma.com/docs/plugins/api/figma
+ *
+ * Figma 参考中负责 PluginApiStandaloneD 部分：Figma 使用参考资料中与 PluginApiStandaloneD 相关的状态、交互与渲染逻辑。
  */
 interface PluginAPI {
   /**

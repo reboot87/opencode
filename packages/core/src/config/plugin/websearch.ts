@@ -1,3 +1,7 @@
+/**
+ * 网络搜索配置插件。
+ * 按配置条目注册 websearch provider。
+ */
 export * as ConfigWebSearchPlugin from "./websearch.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

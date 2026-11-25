@@ -1,3 +1,7 @@
+/**
+ * 执行输出测试。
+ * 验证工具输出格式化对 JSON 与纯文本的处理。
+ */
 import { describe, expect, test } from "bun:test"
 import { formatExecuteOutput } from "./execute-output.js"
 

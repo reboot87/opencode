@@ -1,3 +1,7 @@
+/**
+ * CORS 配置。
+ * 计算允许的跨域来源白名单（含 opencode.ai 域名匹配）。
+ */
 import { Context } from "effect"
 
 const opencodeOrigin = /^https:\/\/([a-z0-9-]+\.)*opencode\.ai$/

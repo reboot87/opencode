@@ -1,3 +1,7 @@
+/**
+ * Effect 风格插件 API — Worktree 领域。
+ * 插件对工作树的定义与编辑能力。此文件定义 Effect 风格 下该领域的接口与类型，与其它领域共同构成插件 API 表面。
+ */
 import type { WorktreeApi } from "@opencode/client/effect/api"
 import type { Effect } from "effect"
 import type { WorktreeCreateInput, WorktreeEntry, WorktreeRemoveInput, WorktreeResult } from "../worktree.js"

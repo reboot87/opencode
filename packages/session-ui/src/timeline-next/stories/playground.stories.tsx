@@ -1,3 +1,7 @@
+/**
+ * 时间线故事 — PlaygroundStories。
+ * 新版时间线的 Storybook 展示中负责 PlaygroundStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, Show, createEffect, createMemo, on, onCleanup } from "solid-js"
 import { createStore } from "solid-js/store"
 import { TextShimmer } from "@opencode/ui/text-shimmer"

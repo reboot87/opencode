@@ -1,3 +1,10 @@
+/**
+ * Shell·守护进程的测试。
+ *
+ * 被测模块：@opencode/core/shell-daemon
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import { existsSync, readdirSync, realpathSync } from "node:fs"
 import { appendFile, mkdir, rm, utimes, writeFile } from "node:fs/promises"

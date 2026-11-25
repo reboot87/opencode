@@ -1,3 +1,7 @@
+/**
+ * Mini 精简界面 — Theme。
+ * 精简交互模式（mini）的界面与交互中负责 Theme 部分，提供该部分所需的实现与类型定义。
+ */
 import { RGBA, SyntaxStyle, type CliRenderer, type ColorInput, type TerminalColors } from "@opentui/core"
 import { generateSyntax, resolveThemeDocument, themeModes, type ResolvedTheme } from "@opencode/theme/tui"
 import { allThemes, getOpenCodeTheme, isThemeSource, parseTheme, type ThemeDocumentSource } from "../theme"

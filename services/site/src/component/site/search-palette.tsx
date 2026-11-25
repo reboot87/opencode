@@ -16,6 +16,8 @@ import type { SearchAction, SearchGroup, SearchItem, SearchResult } from "./sear
 /**
  * The ⌘K dialog, loaded by the search shell (search.tsx) on the first ⌘K, Ctrl+K or "/", or once ⌘
  * or Ctrl is pressed. The index loads with a second dynamic import on first open.
+ *
+ * 站点界面组件：搜索调色板。
  */
 
 type SearchModule = typeof import("./search-index")

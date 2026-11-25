@@ -1,4 +1,6 @@
 //! Model key and pointer delivery and check that held input state ends with its owner.
+//!
+//! 终端界面测试：插件·routing。
 
 use std::time::Duration;
 

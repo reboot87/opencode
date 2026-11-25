@@ -1,3 +1,7 @@
+/**
+ * 新建会话 — WordmarkMachine。
+ * 创建新会话的向导与表单中负责 WordmarkMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { PinBoardHandle } from "./pin-board"
 import type { LodgerBall } from "./wordmark"
 

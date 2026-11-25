@@ -1,3 +1,7 @@
+/**
+ * 事件日志类型。
+ * 定义事件日志条目结构。
+ */
 export * as EventLog from "./event-log.js"
 
 import { Schema } from "effect"

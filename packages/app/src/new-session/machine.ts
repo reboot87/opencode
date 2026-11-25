@@ -1,3 +1,7 @@
+/**
+ * 新建会话 — Machine。
+ * 创建新会话的向导与表单中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Session } from "@opencode/schema/session"
 
 type McpStates = Readonly<Record<string, boolean>>

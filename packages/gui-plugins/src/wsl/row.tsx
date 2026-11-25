@@ -1,3 +1,7 @@
+/**
+ * WSL 插件 — Row。
+ * Windows Subsystem for Linux 相关的 GUI 插件中负责 Row 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { Icon } from "@opencode/ui/icon"
 import { IconButton } from "@opencode/ui/icon-button"

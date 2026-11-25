@@ -1,3 +1,7 @@
+/**
+ * 文件差异工具辅助。
+ * 计算文件编辑前后的行级差异与增删统计。
+ */
 import { FileDiff } from "@opencode/schema/file-diff"
 import { createTwoFilesPatch, diffLines } from "diff"
 

@@ -1,3 +1,7 @@
+/**
+ * 会话存储类型（SessionStored）。
+ * 定义存储侧的媒体引用（Ref）及其哈希等类型，与协议层类型互转。
+ */
 export * as SessionStored from "./stored.js"
 
 import { Schema } from "effect"

@@ -5,7 +5,10 @@ import { ThemeIcon, themes } from "./icons"
 // Small pieces of the site's chrome that need no router or settings, so pages that render on the
 // server and never hydrate (the docs) use them too.
 
-/** "[ ]" with a dash that appears on hover or for the current item, as in the footer list. */
+/** "[ ]" with a dash that appears on hover or for the current item, as in the footer list.
+ *
+ * 站点界面组件：站点·controls。
+ */
 export function Bracket() {
   return (
     <span data-slot="box" aria-hidden="true">

@@ -1,3 +1,7 @@
+/**
+ * GUI 上下文 — MachineTest。
+ * GUI 插件的上下文与状态中负责 MachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { SessionExportData } from "./export"
 import {

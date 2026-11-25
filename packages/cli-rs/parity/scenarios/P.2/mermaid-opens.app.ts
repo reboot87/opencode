@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：Mermaid·opens·app。
+ *
+ * 规格编号：P.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A diagram that opens the text: TS keeps its renderer's row of top margin above it, the Rust Markdown puts no row
 // before the first block (`parity/deviations/F12-mermaid-leading-row.md`).
 import { assistant, defineApp, session, user } from "../../lib/app"

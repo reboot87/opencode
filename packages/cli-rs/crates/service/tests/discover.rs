@@ -1,6 +1,8 @@
 //! Two executables stand in for separate service installations. The newest registration belongs to the other
 //! installation.
 #![cfg(target_os = "linux")]
+//!
+//! 服务层测试：发现。
 
 use std::ffi::OsString;
 use std::path::{Path, PathBuf};

@@ -1,3 +1,7 @@
+/**
+ * worktree 接口处理器。
+ * Worktree 接口处理器：工作树列举、创建与删除。
+ */
 import { Git } from "@opencode/core/git"
 import { Worktree } from "@opencode/core/worktree"
 import { Project } from "@opencode/core/project"

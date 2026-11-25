@@ -1,3 +1,7 @@
+/**
+ * v1 Provider 配置。
+ * 定义 v1 版本的 provider 与模型配置 Schema。
+ */
 export * as ConfigProviderV1 from "./provider.js"
 
 import { Schema } from "effect"

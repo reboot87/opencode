@@ -1,3 +1,5 @@
+//! CLI 子命令：默认值。
+
 use std::sync::Arc;
 
 use opencode_api::client::Client;

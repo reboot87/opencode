@@ -1,3 +1,7 @@
+/**
+ * plugin remove 命令。
+ * 从配置中移除插件。
+ */
 import { EOL } from "node:os"
 import { readFile, rename, writeFile } from "node:fs/promises"
 import { Effect } from "effect"

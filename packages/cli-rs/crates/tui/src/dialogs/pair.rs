@@ -1,4 +1,6 @@
 //! Pair a device with the active server.
+//!
+//! 终端弹窗组件：`pair`。
 
 use opencode_api::generated::{PairingCode, ServerInfo};
 use opencode_ui::dialog::{DialogCx, layout};

@@ -1,3 +1,7 @@
+/**
+ * 会话输入区 — ComposerLane。
+ * 会话界面输入区的实现中负责 ComposerLane 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, type ParentProps } from "solid-js"
 import { useLanguage } from "@/runtime/i18n/language"
 import { useSettings } from "@/settings/model"

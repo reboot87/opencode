@@ -1,3 +1,6 @@
+/**
+ * 仓库代码：Cloudflare·配置。
+ */
 import { bindings, defineConfig, triggers } from "cf/config"
 import { docsSets } from "./src/docs/config"
 

@@ -1,3 +1,7 @@
+/**
+ * 凭据数据库表。
+ * 定义 credential 表结构。
+ */
 import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core"
 import { Timestamps } from "../database/schema.sql.js"
 import type { Credential } from "../credential.js"

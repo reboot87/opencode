@@ -1,3 +1,7 @@
+/**
+ * 浏览器文案 — En。
+ * 浏览器插件的多语言文案中负责 En 部分，提供该部分所需的实现与类型定义。
+ */
 import { FileVerificationError } from "../file-verification"
 
 export default {

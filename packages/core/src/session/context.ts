@@ -1,3 +1,7 @@
+/**
+ * 会话上下文加载服务（SessionContext）。
+ * 负责选择 agent、模型、工具并加载历史消息，为每轮请求组装完整的上下文（Loaded/Selection）。
+ */
 export * as SessionContext from "./context.js"
 
 import { Model } from "../model.js"

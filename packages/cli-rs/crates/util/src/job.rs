@@ -13,6 +13,8 @@
 //! - Standard error is the terminal (`/dev/tty`, `CONOUT$`), not a descriptor the caller redirected.
 
 #![allow(unsafe_code)]
+//!
+//! 通用工具：作业。
 
 use std::io;
 use std::process::{Command, ExitStatus};

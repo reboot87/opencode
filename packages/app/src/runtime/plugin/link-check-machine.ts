@@ -1,4 +1,7 @@
-/** A check asked while its timeline was hidden, or one that came back negative while hidden. */
+/**
+ * 
+ * A check asked while its timeline was hidden, or one that came back negative while hidden. 插件运行时中负责 LinkCheckMachine 部分：浏览器端插件运行时中与 LinkCheckMachine 相关的状态、交互与渲染逻辑。
+ */
 export type WaitingLinkCheck = { readonly id: number; readonly href: string }
 
 /** A check whose answer is on its way; `epoch` is the selection it was asked in. */

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：夹具。
+ *
+ * 规格编号：M.4。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // M.2's `ses_mini` server with tool calls: a history whose assistant messages call tools, and the events of a live
 // turn that runs a shell command and edits a file.
 import { assistant, event, server as base, user } from "../M.2/fixture"

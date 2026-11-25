@@ -1,3 +1,10 @@
+/**
+ * 供应商·OpenAI的测试。
+ *
+ * 被测模块：@opencode/core/plugin/provider-openai
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { Money } from "@opencode/schema/money"
 import { Agent } from "@opencode/schema/agent"
 import { Session } from "@opencode/core/session"

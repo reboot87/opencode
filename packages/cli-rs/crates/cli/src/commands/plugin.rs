@@ -1,4 +1,6 @@
 //! Delegates npm installation and plugin entrypoint resolution to `opencode`.
+//!
+//! CLI 子命令：插件。
 
 use opencode_local::cli_config::{self, CliConfig, Plugin};
 use opencode_local::paths::Paths;

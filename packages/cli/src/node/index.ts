@@ -1,3 +1,7 @@
+/**
+ * Node 入口。
+ * Node 运行时的 CLI 入口点。
+ */
 import "./plugin-runtime.promise"
 import "./plugin-runtime.effect"
 

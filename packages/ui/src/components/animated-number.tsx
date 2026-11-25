@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — AnimatedNumber。
+ * 跨场景复用的通用 UI 组件中负责 AnimatedNumber 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, createEffect, createMemo, createSignal, on, onCleanup, untrack } from "solid-js"
 import { prefersReducedMotion } from "../motion/reduced"
 import {

@@ -1,3 +1,7 @@
+/**
+ * Pierre 组件 — FileFindMachine。
+ * 会话界面的基础组件库中负责 FileFindMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export type FindRenderer = "highlights" | "overlay"
 
 export type FindBarPosition = {

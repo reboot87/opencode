@@ -1,3 +1,7 @@
+/**
+ * 文件监听缓存。
+ * 缓存文件监听事件，带 24 小时 TTL 与 5 分钟清扫间隔。
+ */
 export * as FileWatch from "./file-watch.js"
 
 import { makeGlobalNode } from "@opencode/util/effect/app-node"

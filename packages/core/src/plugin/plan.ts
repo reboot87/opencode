@@ -1,3 +1,7 @@
+/**
+ * Plan 模式插件。
+ * 提供 plan agent 的只读提示词与模式选择逻辑。
+ */
 export * as PlanPlugin from "./plan.js"
 
 import { ToolFailure } from "@opencode/ai/effect"

@@ -1,3 +1,7 @@
+/**
+ * Code Mode 工具运行时。
+ * 在沙箱内桥接工具调用与宿主服务（Effect 服务集合）。
+ */
 import { Cause, Effect, Exit, Formatter, Schema } from "effect"
 import type { DiagnosticKind } from "./codemode.js"
 import { ToolError, toolError } from "./tool-error.js"

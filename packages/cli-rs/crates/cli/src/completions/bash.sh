@@ -1,3 +1,5 @@
+# CLI 补全脚本：Bash。
+
 if ! type _init_completion &>/dev/null; then
   _init_completion()
   {

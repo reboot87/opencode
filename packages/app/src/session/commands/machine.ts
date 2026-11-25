@@ -1,3 +1,7 @@
+/**
+ * 会话命令 — Machine。
+ * 会话界面提供的命令中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 // --- Session commands: /compact and opening the /fork, /open and /mcp dialogs ---
 
 // A dialog's chunk that has not loaded by then is reported as a failed request.

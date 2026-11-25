@@ -1,3 +1,10 @@
+/**
+ * OpenRouter·视频的测试。
+ *
+ * 被测模块：@opencode/ai/openrouter-video
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import { Effect, Layer, Stream } from "effect"
 import { Media, VideoClient, ai } from "../src/effect.js"

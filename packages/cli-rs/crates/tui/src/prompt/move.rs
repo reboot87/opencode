@@ -1,4 +1,6 @@
 //! Move the current session to a worktree or stage one for the next session.
+//!
+//! 终端输入提示：移动。
 
 use opencode_api::generated::{LocationGetInput, LocationQueryInput, ProjectID, SessionInfo, WorktreeCreateInput};
 use opencode_store::Location;

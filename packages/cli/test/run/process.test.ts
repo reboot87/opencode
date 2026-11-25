@@ -1,3 +1,10 @@
+/**
+ * 进程的测试。
+ *
+ * 被测模块：@opencode/cli/run/process
+ *
+ * 覆盖 CLI 运行命令的端到端行为。
+ */
 import { expect, test } from "bun:test"
 import { symlink } from "node:fs/promises"
 import path from "node:path"

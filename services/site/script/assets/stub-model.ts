@@ -1,3 +1,6 @@
+/**
+ * 站点构建脚本：桩模型。
+ */
 // A scripted, OpenAI-compatible stand-in for the model, shown in the product as "Claude Opus 5.5".
 // It replaces only the model: OpenCode still runs every tool for real (reads, the edit and its diff,
 // the shell permission prompt, `bun test`). Replies, tool calls, ids, delays and token counts are

@@ -1,3 +1,7 @@
+/**
+ * 指令配置插件。
+ * 从配置与发现结果中加载并注册指令。
+ */
 export * as ConfigInstructionPlugin from "./instruction.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

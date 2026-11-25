@@ -17,6 +17,8 @@ import {
  * Settings › 404 arcade › Coin: the token's held and insert poses and the fade timings
  * (coin-tuning.ts), applied live. Preview holds the token still over the cabinet in its held pose;
  * Replay insert plays the slide into the slot again.
+ *
+ * 街机小游戏组件：投币设置。
  */
 export default function CoinSettings() {
   const [copied, setCopied] = createSignal(false)

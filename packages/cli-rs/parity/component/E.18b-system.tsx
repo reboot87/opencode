@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid E18bSystem：该文件实现 E18bSystem 相关的状态与逻辑。
+ */
 // P-COMP fixtures for the system dialogs (E.18b): crates/tui/tests/all/system.rs opens the Rust dialogs over the whole
 // TUI with the same responses (keep `SERVERS` and the other data below in step with it) and compares the dialog
 // panel.

@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — ModelLabelTest。
+ * 会话输入区的组合逻辑与附件处理中负责 ModelLabelTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { composerModelLabelKey, composerModelLabels, composerProviderName } from "./model-label"
 

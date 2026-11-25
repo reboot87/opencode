@@ -1,3 +1,7 @@
+/**
+ * 调试文案 — Sq。
+ * 调试插件的多语言文案中负责 Sq 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.toggle": "Shfaq ose fshih shiritin e diagnostikimit",
   providerAriaLabel: "Diagnostikimi i performancës së ofruesit",

@@ -42,7 +42,10 @@ import { duckAmbience, play, startAudio, unlockAudio } from "./sound"
 // The coin's pose: where it is (world units), how it is turned (degrees) and which layer it is on.
 type Coin = {
   at: Point
-  /** Extra size while held, as if lifted toward the camera. */
+  /** Extra size while held, as if lifted toward the camera.
+ *
+ * 街机小游戏组件：街机。
+ */
   lift: number
   tiltX: number
   turnY: number

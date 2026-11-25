@@ -1,3 +1,10 @@
+/**
+ * 供应商·DigitalOcean的测试。
+ *
+ * 被测模块：@opencode/core/plugin/provider-digitalocean
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { describe, expect, test } from "bun:test"
 import { Deferred, Effect, Logger, Schedule } from "effect"
 import { HttpClient, HttpClientRequest, HttpClientResponse } from "effect/http"

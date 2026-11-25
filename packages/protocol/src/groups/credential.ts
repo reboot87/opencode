@@ -1,3 +1,7 @@
+/**
+ * 凭据 API 分组。
+ * 定义凭据的列举、创建与删除端点。
+ */
 import { Credential } from "@opencode/schema/credential"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, HttpApiSchema, OpenApi } from "effect/http-api"

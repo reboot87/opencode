@@ -8,6 +8,8 @@ import type { DocsVariantKey } from "./settings"
  * "Files", "Usage") and a copy button that's always visible. It only shows with a component's
  * "Vercel square" option (docs-variants.css); the other options keep their own look, so the frame
  * folds away (display: contents) and its header hides.
+ *
+ * 站点界面组件：代码帧。
  */
 export function CodeFrame(props: {
   variant: DocsVariantKey

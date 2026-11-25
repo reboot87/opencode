@@ -1,3 +1,7 @@
+/**
+ * 模型提供方界面 — OpencodeLogo。
+ * provider 的配置与展示界面中负责 OpencodeLogo 部分，提供该部分所需的实现与类型定义。
+ */
 export function OpenCodeLogo(props: { class?: string }) {
   return (
     <svg

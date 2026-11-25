@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — Route。
+ * 会话主界面的视图与状态中负责 Route 部分，提供该部分所需的实现与类型定义。
+ */
 import { ErrorBoundary, createEffect, createMemo, Match, on, Show, Switch, type ParentProps } from "solid-js"
 import { Title } from "@solidjs/meta"
 import { useParams } from "@solidjs/router"

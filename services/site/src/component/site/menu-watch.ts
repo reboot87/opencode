@@ -11,6 +11,8 @@
  * plus the few disclosure-style menus with no `aria-haspopup`: the phone menu, the docs section
  * toggle and the console dropdowns.
  * Elements inside `ignore` (the orb's own pop-up) don't count.
+ *
+ * 站点界面组件：菜单监听。
  */
 const openMenus = [
   '[aria-haspopup]:not([aria-haspopup="false"])[aria-expanded="true"]',

@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — SheetFrameMachine。
+ * Microsoft Office 文档预览插件中负责 SheetFrameMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SheetFrame, SheetFrameRequest, SheetViewport } from "./sheet-protocol"
 
 /** How long after the last scroll a frame of the screen alone replaces the frames with a margin, in milliseconds. */

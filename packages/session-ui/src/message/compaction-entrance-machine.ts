@@ -1,4 +1,8 @@
-/** How long a new compaction waits before showing Compacting; session-compaction.css delays its fade by the same. */
+/**
+ * How long a new compaction waits before showing Compacting; session-compaction.css delays its fade by the same.
+ *
+ * 压缩入口的状态机：管理上下文压缩提示的呈现与触发。
+ */
 export const COMPACTION_GRACE_MS = 400
 
 /** A compaction that finished at most this long ago when it mounts still fades in. */

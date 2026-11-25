@@ -1,3 +1,7 @@
+/**
+ * opencode 会话管理工具。
+ * 重命名、移动等会话级操作的工具集合。
+ */
 export * as OpenCodeTools from "./opencode.js"
 
 import { SystemPart, ToolFailure } from "@opencode/ai/effect"

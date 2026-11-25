@@ -1,3 +1,7 @@
+/**
+ * 更新插件 — MachineTest。
+ * 应用更新提示的 GUI 插件中负责 MachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, describe, expect, test } from "bun:test"
 import { Effect, Exit, Scope } from "effect"
 import type { UpdaterState } from "@opencode/plugin/gui/updater"

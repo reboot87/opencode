@@ -1,5 +1,8 @@
 #![cfg(unix)]
 
+//! 进程守护服务测试：`playground`。
+
+
 use std::ffi::OsStr;
 use std::io::{BufRead, BufReader, Write};
 use std::path::{Path, PathBuf};

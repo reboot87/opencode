@@ -1,3 +1,7 @@
+/**
+ * UI 上下文 — SessionTabs。
+ * UI 包的上下文提供者中负责 SessionTabs 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, on, onCleanup } from "solid-js"
 import { createStore } from "solid-js/store"
 import { useKeyboard, useRenderer } from "@opentui/solid"

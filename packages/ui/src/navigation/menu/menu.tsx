@@ -1,3 +1,7 @@
+/**
+ * 菜单 — Menu。
+ * 下拉/侧边菜单组件中负责 Menu 部分，提供该部分所需的实现与类型定义。
+ */
 import { DropdownMenu, type DropdownMenuTriggerProps } from "@kobalte/core/dropdown-menu"
 import { ContextMenu } from "@kobalte/core/context-menu"
 import type { PolymorphicProps } from "@kobalte/core/polymorphic"

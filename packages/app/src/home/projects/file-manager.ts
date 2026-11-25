@@ -1,3 +1,7 @@
+/**
+ * 主页项目 — FileManager。
+ * 主页中项目列表的展示中负责 FileManager 部分，提供该部分所需的实现与类型定义。
+ */
 export type FileManagerOS = "macos" | "windows" | "linux" | "unknown"
 
 export function fileManagerApp(os: FileManagerOS): {

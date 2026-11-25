@@ -1,3 +1,7 @@
+/**
+ * cd 工具。
+ * 切换会话工作目录的工具。
+ */
 export * as CdTool from "./cd.js"
 
 import { ToolFailure } from "@opencode/ai/effect"

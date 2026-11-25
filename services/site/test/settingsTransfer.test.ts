@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：设置·Transfer。
+ */
 import { describe, expect, test } from "bun:test"
 import { parseSiteSettings, siteSettingsDefaults } from "../src/component/site/settings"
 import { parseTransfer, transferJson } from "../src/component/site/transfer"

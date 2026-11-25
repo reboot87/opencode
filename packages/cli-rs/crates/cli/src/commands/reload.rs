@@ -1,3 +1,5 @@
+//! CLI 子命令：重载。
+
 use super::Context;
 use super::client::{block_on, connect};
 use opencode_util::error;

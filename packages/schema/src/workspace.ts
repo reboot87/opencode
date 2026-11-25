@@ -1,3 +1,7 @@
+/**
+ * 工作区类型。
+ * 定义工作区的信息与成员结构。
+ */
 export * as Workspace from "./workspace.js"
 
 import { Schema } from "effect"

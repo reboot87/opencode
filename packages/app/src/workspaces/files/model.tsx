@@ -1,3 +1,7 @@
+/**
+ * 工作区文件 — Model。
+ * 工作区内文件浏览界面中负责 Model 部分，提供该部分所需的实现与类型定义。
+ */
 import { batch, createComputed, createEffect, createMemo, on, onCleanup, untrack } from "solid-js"
 import { createStore, produce, reconcile, unwrap } from "solid-js/store"
 import type { FileContent } from "@opencode/plugin/gui"

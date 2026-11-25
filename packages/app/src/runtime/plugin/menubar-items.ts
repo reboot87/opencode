@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — MenubarItems。
+ * 浏览器端的插件加载与扩展点中负责 MenubarItems 部分，提供该部分所需的实现与类型定义。
+ */
 import { createContext, onCleanup, useContext } from "solid-js"
 import { createStore, reconcile } from "solid-js/store"
 import type { Bridge, BridgeMenubarItem } from "@opencode/plugin/gui/host"

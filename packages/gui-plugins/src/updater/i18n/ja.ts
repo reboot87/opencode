@@ -1,3 +1,7 @@
+/**
+ * 更新文案 — Ja。
+ * 更新插件的多语言文案中负责 Ja 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "status.label": "アップデート",
   "action.checkNow": "今すぐ確認",

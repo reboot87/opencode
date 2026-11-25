@@ -1,3 +1,7 @@
+/**
+ * 进程信号测试。
+ * 验证信号处理器的注册与卸载。
+ */
 import { expect, test } from "bun:test"
 
 // Windows does not deliver POSIX user signals.

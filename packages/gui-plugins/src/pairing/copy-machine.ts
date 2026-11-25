@@ -1,4 +1,8 @@
-/** How long "Copied" shows after a copy. */
+/**
+ * How long "Copied" shows after a copy.
+ *
+ * 配对插件中负责 CopyMachine 部分：设备配对流程中与 CopyMachine 相关的状态、交互与渲染逻辑。
+ */
 export const COPY_FEEDBACK_MS = 2_000
 
 /** How long one clipboard write may take before it counts as failed. */

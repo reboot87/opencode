@@ -1,3 +1,7 @@
+/**
+ * Effect 应用节点（平台）。
+ * 为文件系统与路径服务提供平台相关的全局节点定义。
+ */
 // Deep imports: the @effect/platform-node barrel eagerly pulls in undici,
 // ioredis, and node:sqlite, which runtimes such as workerd cannot load.
 import * as NodeFileSystem from "@effect/platform-node/NodeFileSystem"

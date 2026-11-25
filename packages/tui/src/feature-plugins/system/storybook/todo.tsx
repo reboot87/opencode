@@ -1,3 +1,7 @@
+/**
+ * 系统插件故事 — Todo。
+ * 系统功能插件的 Storybook 展示中负责 Todo 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Plugin } from "@opencode/plugin/tui"
 import type { SessionMessageInfo } from "@opencode/client"
 import { useTerminalDimensions } from "@opentui/solid"

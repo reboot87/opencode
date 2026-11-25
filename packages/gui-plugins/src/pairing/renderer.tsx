@@ -1,3 +1,7 @@
+/**
+ * 配对插件 — Renderer。
+ * 设备配对流程的 GUI 插件中负责 Renderer 部分，提供该部分所需的实现与类型定义。
+ */
 import { lazy, onCleanup, Suspense } from "solid-js"
 import { Command, SettingsPage, type Plugin } from "@opencode/plugin/gui"
 import { onIdle } from "@opencode/plugin/gui/builtin"

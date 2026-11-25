@@ -1,3 +1,5 @@
+//! 进程守护服务实现：`ownership`。
+
 use std::time::{Duration, Instant};
 
 use anyhow::{Result, bail};

@@ -1,3 +1,7 @@
+/**
+ * 工具错误。
+ * 定义 Code Mode 工具调用失败时的错误类型。
+ */
 import { Schema } from "effect"
 
 /** Tool failure reported as `ToolFailure`. */

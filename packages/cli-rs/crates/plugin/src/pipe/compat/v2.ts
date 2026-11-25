@@ -1,3 +1,8 @@
+/**
+ * 管道实现：v2。
+ *
+ * 管道实现的 TypeScript 兼容适配层。
+ */
 // The V2 plugin context adapts Solid mounts, watched reads and effects to the asynchronous host pipe.
 import {
   batch,

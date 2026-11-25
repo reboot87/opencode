@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — SessionTabsRail。
+ * 终端界面（Solid）组件中负责 SessionTabsRail 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createSignal } from "solid-js"
 import type { RGBA } from "@opentui/core"
 import { Keymap } from "../context/keymap"

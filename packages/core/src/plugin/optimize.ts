@@ -1,3 +1,7 @@
+/**
+ * 提示词优化插件。
+ * 针对特定模型（如 OpenAI 系列）优化系统提示词措辞。
+ */
 export * as OptimizePlugin from "./optimize.js"
 
 import { define, type Context } from "@opencode/plugin/effect/plugin"

@@ -1,4 +1,6 @@
 //! Platform launcher for URLs and paths.
+//!
+//! 基础 UI 组件库：打开。
 
 use base64::Engine;
 use std::process::Command;

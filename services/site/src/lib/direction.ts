@@ -1,4 +1,7 @@
-/** True when the element lays out right to left (the `dir` it inherits, or a CSS `direction`). */
+/** True when the element lays out right to left (the `dir` it inherits, or a CSS `direction`).
+ *
+ * 站点共享逻辑：方向。
+ */
 export function isRtl(element: Element) {
   return getComputedStyle(element).direction === "rtl"
 }

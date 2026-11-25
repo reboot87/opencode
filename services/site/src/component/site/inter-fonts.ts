@@ -1,7 +1,10 @@
 import interLatin from "../../asset/fonts/inter-latin.woff2"
 import interRest from "../../asset/fonts/inter-rest.woff2"
 
-/** Inter's Latin file, which pages preload (most need nothing else). */
+/** Inter's Latin file, which pages preload (most need nothing else).
+ *
+ * 站点界面组件：inter·字体。
+ */
 export { interLatin }
 
 // Inter as WOFF2, split so most pages only fetch the Latin file (about 95 KB instead of the 870 KB

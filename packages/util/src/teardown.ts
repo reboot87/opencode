@@ -1,3 +1,7 @@
+/**
+ * 拆卸追踪。
+ * 记录并按标签追踪需要清理的资源。
+ */
 export * as Teardown from "./teardown.js"
 
 // Work that shutdown may be waiting on: layers releasing their resources and child processes that have not

@@ -1,5 +1,7 @@
 //! Compare reconciled trees against fresh mounts. The reference expands keeps and compares cells, hit regions, and
 //! click actions after each edit.
+//!
+//! 终端界面测试：插件对账。
 
 use crate::support::model::{self, Failure, Model, Rng};
 

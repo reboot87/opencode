@@ -1,3 +1,8 @@
+/**
+ * HTML·Markdown测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { writeSync } from "node:fs"
 import { convertHTMLToMarkdown } from "../../src/tool/html-markdown"
 

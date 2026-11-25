@@ -1,3 +1,7 @@
+/**
+ * Provider 连接 — Tip。
+ * 连接 provider 的授权界面中负责 Tip 部分，提供该部分所需的实现与类型定义。
+ */
 import { useDialog } from "@opencode/ui/context/dialog"
 import { Icon } from "@opencode/ui/icon"
 import { Tooltip } from "@opencode/ui/tooltip"

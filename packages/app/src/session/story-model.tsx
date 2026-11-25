@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — StoryModel。
+ * 会话主界面的视图与状态中负责 StoryModel 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ModelSelection } from "@/providers/models/selection"
 import { Composer } from "@/composer/composer"
 import type { ComposerModel } from "@/composer/model"

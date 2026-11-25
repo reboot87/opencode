@@ -1,3 +1,6 @@
+/**
+ * 遗留服务实现：`share`。
+ */
 import { Hono } from "hono"
 
 const page = `<!doctype html>

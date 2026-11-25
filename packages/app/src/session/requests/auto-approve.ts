@@ -1,3 +1,7 @@
+/**
+ * 会话请求 — AutoApprove。
+ * 会话界面的请求发起与状态跟踪中负责 AutoApprove 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, onCleanup, untrack } from "solid-js"
 import { createStore, produce } from "solid-js/store"
 import type { PermissionRequest } from "@opencode/client/promise"

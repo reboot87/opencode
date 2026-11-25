@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：失败·伪终端。
+ *
+ * 规格编号：M.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A turn that fails before its first step (`session.execution.failed` with no step error) prints the error once
 // the session settles, above the turn summary; so does an interruption the user did not ask for.
 import { definePty } from "../../pty/run"

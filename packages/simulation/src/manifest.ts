@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — Manifest。
+ * GUI 插件的实现中负责 Manifest 部分，提供该部分所需的实现与类型定义。
+ */
 import { homedir } from "node:os"
 import { isAbsolute, join } from "node:path"
 import { Config, Effect, FileSystem, Schema } from "effect"

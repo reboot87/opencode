@@ -1,3 +1,7 @@
+/**
+ * ACP 子会话。
+ * 定义 ACP 子会话结构与更新方法。
+ */
 import type { SessionUpdate } from "@agentclientprotocol/sdk"
 
 export const UpdateMethod = "opencode/session/child_update"

@@ -8,6 +8,8 @@ import { carouselNav } from "./carousel-nav"
  * The products carousel's previous and next, for a mouse, whose wheel can't scroll the cards
  * sideways: hidden until the page's code finds the cards overflow (carousel-nav.ts), and never shown
  * on touch screens (products-arrows.css), which swipe.
+ *
+ * 站点界面组件：products·arrows。
  */
 export default function ProductsArrows(props: { track: string }) {
   const i18n = useI18n()

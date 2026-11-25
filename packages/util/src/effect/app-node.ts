@@ -1,3 +1,7 @@
+/**
+ * Effect 应用节点标签。
+ * 定义 LayerNode 的标签（tags）与全局图类型别名。
+ */
 import { LayerNode } from "./layer-node.js"
 
 export const tags = LayerNode.tags({

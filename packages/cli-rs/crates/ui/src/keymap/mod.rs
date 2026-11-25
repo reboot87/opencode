@@ -1,4 +1,6 @@
 //! Command registration, key layers, input modes and shortcut formatting.
+//!
+//! 基础 UI 组件库入口。
 
 mod config;
 #[rustfmt::skip]

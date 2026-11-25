@@ -1,3 +1,7 @@
+/**
+ * Provider 连接 — FormMachine。
+ * 连接 provider 的授权界面中负责 FormMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { FormAnswer, FormField, FormValue } from "@opencode/client/promise"
 
 /** How long opening the browser may take before the link is shown to open by hand; desktop IPC can hang. */

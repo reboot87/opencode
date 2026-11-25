@@ -1,3 +1,7 @@
+/**
+ * 伪终端（PTY）服务。
+ * 跨平台 PTY 会话管理：缓冲区上限（2MiB）、退出记录上限与惰性加载原生实现。
+ */
 export * as Pty from "./pty.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

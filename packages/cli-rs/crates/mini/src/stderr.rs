@@ -2,6 +2,8 @@
 //! stderr.
 
 /// One line written to stderr, without its line ending. The app's message handlers receive it.
+//!
+//! 精简版实现：标准错误。
 pub struct Line(pub String);
 
 #[cfg(any(unix, windows))]

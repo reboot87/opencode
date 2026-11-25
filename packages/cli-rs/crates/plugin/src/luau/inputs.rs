@@ -2,6 +2,8 @@
 //! every refill clears stale fields. Nested calls borrow a separate set.
 
 #![allow(unsafe_code)]
+//!
+//! Luau 插件运行时：输入。
 
 use std::cell::{Cell, RefCell};
 use std::os::raw::c_int;

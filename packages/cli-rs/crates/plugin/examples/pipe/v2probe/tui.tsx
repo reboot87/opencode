@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid Tui：该文件实现 Tui 相关的状态与逻辑。
+ */
 // Exercises the public V2 plugin context and JSX intrinsics. The configured log records the plugin side of each
 // call.
 

@@ -1,4 +1,6 @@
 //! Agent, model, variant, speed, and usage labels below the prompt.
+//!
+//! 终端输入提示：元数据。
 
 use std::cell::Cell;
 use std::sync::Arc;

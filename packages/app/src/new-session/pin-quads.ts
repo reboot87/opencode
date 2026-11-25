@@ -1,3 +1,7 @@
+/**
+ * 新建会话 — PinQuads。
+ * 创建新会话的向导与表单中负责 PinQuads 部分，提供该部分所需的实现与类型定义。
+ */
 // Draws a pin board layer as a list of filled parallelograms. With WebGL2 the whole list is at most two
 // instanced draws, so a frame costs about the same however many pins there are. A 2D canvas spends a
 // GPU draw call on most shapes, which kept weak machines busy. Without hardware WebGL2 it falls back to one 2D

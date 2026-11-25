@@ -1,3 +1,7 @@
+/**
+ * drizzle 内部工具。
+ * drizzle-orm 的内部类型工具函数（本文件源自 drizzle-orm 上游）。
+ */
 /* oxlint-disable */
 import { Column, getColumnTable } from "drizzle-orm/column"
 import { is } from "drizzle-orm/entity"

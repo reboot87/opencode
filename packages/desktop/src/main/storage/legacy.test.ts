@@ -1,3 +1,7 @@
+/**
+ * 本地存储 — LegacyTest。
+ * 桌面端配置的本地持久化中负责 LegacyTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, beforeEach, describe, expect, setSystemTime, test } from "bun:test"
 import { mkdtempSync, readdirSync, rmSync, utimesSync, writeFileSync } from "node:fs"
 import { tmpdir } from "node:os"

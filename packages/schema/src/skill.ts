@@ -1,3 +1,7 @@
+/**
+ * 技能类型。
+ * 定义技能的来源、元数据与内容结构。
+ */
 export * as Skill from "./skill.js"
 
 import { Schema } from "effect"

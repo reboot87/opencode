@@ -1,3 +1,7 @@
+/**
+ * 调试插件 — ServerHeapTest。
+ * 面向开发者的调试 GUI 插件中负责 ServerHeapTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { GlobalRegistrator } from "@happy-dom/global-registrator"
 import { afterAll, beforeAll, expect, test } from "bun:test"
 import os from "node:os"

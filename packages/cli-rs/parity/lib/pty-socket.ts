@@ -1,3 +1,8 @@
+/**
+ * 对等性公共库：伪终端·套接字。
+ *
+ * 对等性校验的公共库：伪造服务端、PTY 套接字与录制回放工具。
+ */
 // A fake persistent PTY socket for P-APP (E.13a). The TS TUI opens `new WebSocket(url)` with no way to pass a
 // socket in (src/context/client.tsx builds the PTY client from the URL alone), and the fixture's server cannot
 // upgrade, so scenarios.test.tsx swaps the global WebSocket for persistent PTY URLs while a scenario with `pty` runs.

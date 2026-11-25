@@ -1,3 +1,7 @@
+/**
+ * 外壳状态 — LayoutTest。
+ * 应用外壳的全局状态中负责 LayoutTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { Schema } from "effect"
 import { ServerConnection } from "@/runtime/server/registry"

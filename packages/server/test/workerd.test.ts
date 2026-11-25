@@ -1,3 +1,10 @@
+/**
+ * workerd的测试。
+ *
+ * 被测模块：@opencode/server/workerd
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import { Effect, Layer } from "effect"
 import { TestClock } from "effect/testing"

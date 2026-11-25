@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — TodoItem。
+ * 终端界面（Solid）组件中负责 TodoItem 部分，提供该部分所需的实现与类型定义。
+ */
 import { TextAttributes } from "@opentui/core"
 import type { ResolvedTheme } from "@opencode/theme/tui"
 import { todoMarker, type Todo } from "../util/todo"

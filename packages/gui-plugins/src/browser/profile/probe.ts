@@ -1,3 +1,7 @@
+/**
+ * 浏览器配置 — Probe。
+ * 浏览器插件的用户配置与身份中负责 Probe 部分，提供该部分所需的实现与类型定义。
+ */
 import path from "node:path"
 import type { Session } from "electron"
 import { PROBE_COOKIE } from "./cookie"

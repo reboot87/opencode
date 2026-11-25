@@ -1,3 +1,9 @@
+/**
+ * 语音转写（Speech-to-Text）API。
+ *
+ * 把音频 Media Asset 转成文本。支持同步转写和异步任务（Generation 句柄，可 await/轮询）。
+ * 底层通过 TranscriptionClient + MediaRoute 调用各 provider 的转写协议。
+ */
 import { Effect, Schema, Stream } from "effect"
 import { Generation, ProgressEvent, type AwaitOptions } from "./generation.js"
 import { Media } from "./media.js"

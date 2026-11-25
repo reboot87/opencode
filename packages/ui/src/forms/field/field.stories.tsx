@@ -1,3 +1,7 @@
+/**
+ * 表单字段 — FieldStories。
+ * 带标签与校验的表单字段容器中负责 FieldStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, Show, type ParentProps } from "solid-js"
 import { Field } from "./field"
 import { InlineInput } from "@opencode/ui/inline-input"

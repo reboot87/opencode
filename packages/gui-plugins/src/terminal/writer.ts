@@ -1,3 +1,7 @@
+/**
+ * 终端插件 — Writer。
+ * 内嵌终端的 GUI 插件中负责 Writer 部分，提供该部分所需的实现与类型定义。
+ */
 // Writes output and runs steps such as resizes in the order they were pushed. Consecutive output is written as one
 // chunk, and nothing after it starts until the terminal reports that chunk done. `clear` drops everything not yet
 // written and ignores later pushes and a late `done`.

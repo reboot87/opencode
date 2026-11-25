@@ -1,5 +1,7 @@
 //! JSON Schema for the plugin ABI. The macros exhaustively match Rust fields and variants so additions require
 //! a schema update. [`wire`] defines the request and reply envelopes.
+//!
+//! 插件 ABI 边界：模式定义。
 
 use serde::Serialize;
 use serde_json::{Value, json};

@@ -1,3 +1,7 @@
+/**
+ * 应用外壳 — PanelMotion。
+ * 浏览器应用的窗口框架与路由外壳中负责 PanelMotion 部分，提供该部分所需的实现与类型定义。
+ */
 import { batch, createEffect, createMemo, createSignal, on, onCleanup, untrack, type Accessor } from "solid-js"
 import { ease, frameLoop, prefersReducedMotion, Spring, type DurationOptions } from "@opencode/ui/motion"
 import { motionTimeScale } from "@opencode/ui/motion-tuning"

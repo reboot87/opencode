@@ -1,3 +1,10 @@
+/**
+ * info·模式定义的测试。
+ *
+ * 被测模块：@opencode/core/pty/info-schema
+ *
+ * 覆盖伪终端的创建、读写与尺寸变更行为。
+ */
 import { describe, expect, test } from "bun:test"
 import { Schema } from "effect"
 import { Pty } from "@opencode/core/pty"

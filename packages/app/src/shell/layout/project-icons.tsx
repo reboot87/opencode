@@ -1,3 +1,7 @@
+/**
+ * 外壳布局 — ProjectIcons。
+ * 应用外壳的布局结构中负责 ProjectIcons 部分，提供该部分所需的实现与类型定义。
+ */
 import { ProjectIconStoreProvider, type GeneratedProjectIcon } from "@opencode/ui/project-avatar"
 import { Schema } from "effect"
 import type { ParentProps } from "solid-js"

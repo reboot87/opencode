@@ -1,3 +1,7 @@
+/**
+ * 模块 — ElectronBuilderConfig。
+ * 该目录下的功能模块中负责 ElectronBuilderConfig 部分，提供该部分所需的实现与类型定义。
+ */
 import { copyFile, readdir, stat } from "node:fs/promises"
 import path from "node:path"
 import { fileURLToPath } from "node:url"

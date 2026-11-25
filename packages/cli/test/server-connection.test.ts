@@ -1,3 +1,10 @@
+/**
+ * 服务端·connection的测试。
+ *
+ * 被测模块：@opencode/cli/server-connection
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { NodeFileSystem, NodeServices } from "@effect/platform-node"
 import { Global } from "@opencode/util/global"
 import { OPENCODE_VERSION } from "../src/version"

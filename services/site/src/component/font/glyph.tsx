@@ -3,7 +3,10 @@ import { glyphs, isLetter, modules, type Letter } from "~/lib/font-content"
 
 export type GlyphMode = "solid" | "outline" | "grid" | "shade" | "ink"
 
-/** One glyph's SVG as a string, for the hero's hand-built letters. */
+/** One glyph's SVG as a string, for the hero's hand-built letters.
+ *
+ * 字体展示组件：字形。
+ */
 export function glyphMarkup(letter: Letter) {
   const glyph = glyphs[letter]
   return `<svg viewBox="0 0 24 42" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" shape-rendering="crispEdges"><path d="${glyph.shadow}" fill="var(--glyph-shadow)"/><path d="${glyph.ink}" fill="var(--glyph-ink)"/></svg>`

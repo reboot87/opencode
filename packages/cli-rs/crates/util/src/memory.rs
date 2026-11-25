@@ -4,6 +4,8 @@
 /// freed memory only from the top of its heap, so after many frees below a live allocation the pages stay resident.
 /// Returns whether the allocator gave anything back. Elsewhere (musl, macOS, Windows) it does nothing and returns
 /// false: their allocators return memory themselves, or have no such call.
+//!
+//! 通用工具：内存。
 #[cfg(all(target_os = "linux", target_env = "gnu"))]
 #[allow(unsafe_code)]
 pub fn release() -> bool {

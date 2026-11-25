@@ -1,3 +1,7 @@
+/**
+ * GUI 上下文 — ExportTest。
+ * GUI 插件的上下文与状态中负责 ExportTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { OpenCodeClient } from "@opencode/client/promise"
 import { fetchSessionExport, sessionExportFilename } from "./export"

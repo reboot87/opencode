@@ -1,3 +1,7 @@
+/**
+ * Anthropic 兼容网关 provider 门面。
+ * 面向 Anthropic Messages 风格兼容网关，提供统一的路由构造与模型工厂。
+ */
 import type { ProviderPackage } from "../provider-package.js"
 import { AnthropicMessages } from "../protocols/anthropic-messages.js"
 import { Auth } from "../route/auth.js"

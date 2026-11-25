@@ -1,3 +1,7 @@
+/**
+ * 主题测试（v2） — TypesTypecheck。
+ * 第二版终端主题的测试中负责 TypesTypecheck 部分，提供该部分所需的实现与类型定义。
+ */
 import { selectTheme } from "@opencode/theme/tui"
 import type { BackgroundDefinition, TextDefinition, ThemeDefinition, ThemeDocument } from "@opencode/theme/tui"
 import { getOpenCodeClassicTheme } from "../../../src/theme"

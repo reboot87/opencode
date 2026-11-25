@@ -1,4 +1,6 @@
 //! Settings writes run on a worker because the config lock blocks. File changes refresh the live configuration.
+//!
+//! 终端弹窗组件：设置。
 
 use std::cell::Ref;
 use std::collections::VecDeque;

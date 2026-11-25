@@ -1,3 +1,7 @@
+/**
+ * 标准输入读取。
+ * 检测 stdin 是否为 TTY 并读取其内容。
+ */
 import { once } from "node:events"
 import { fstatSync } from "node:fs"
 import { text } from "node:stream/consumers"

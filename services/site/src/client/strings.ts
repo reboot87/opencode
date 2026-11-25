@@ -3,6 +3,8 @@ import type { Key } from "~/i18n"
 /**
  * The strings the script shows, in the page's language: the server writes them on the site root
  * (`data-strings`, component/site/site.tsx), so the script loads no translations.
+ *
+ * 浏览器端脚本：字符串。
  */
 export const clientStrings = [
   "site.theme.cycle",

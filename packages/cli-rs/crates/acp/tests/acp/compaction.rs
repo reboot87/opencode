@@ -1,3 +1,5 @@
+//! ACP 协议测试：上下文压缩。
+
 use std::sync::Arc;
 
 use serde_json::{Value, json};

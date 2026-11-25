@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：命令·defect·app。
+ *
+ * 规格编号：C.13。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A command the server fails with a handler defect (#64022): `session.command` declares the 500, whose body is the
 // protocol's `UnknownError`, a message and a log ref. The toast shows the message alone, without the tag or the ref.
 import { defineApp, session, user } from "../../lib/app"

@@ -1,3 +1,7 @@
+/**
+ * 时间线工具块 — Explore。
+ * 时间线中工具调用的展示中负责 Explore 部分，提供该部分所需的实现与类型定义。
+ */
 import { useI18n } from "@opencode/ui/context/i18n"
 import { Icon } from "@opencode/ui/icon"
 import { TextShimmer } from "@opencode/ui/text-shimmer"

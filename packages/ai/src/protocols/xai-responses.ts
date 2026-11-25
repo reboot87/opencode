@@ -1,3 +1,7 @@
+/**
+ * xAI Responses 协议实现。
+ * Responses API 的 xAI 变体。
+ */
 import { Effect, Schema } from "effect"
 import { Protocol } from "../route/protocol.js"
 import type { CompactOperation } from "../route/client.js"

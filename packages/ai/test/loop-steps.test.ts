@@ -1,3 +1,10 @@
+/**
+ * 循环·步骤的测试。
+ *
+ * 被测模块：@opencode/ai/loop-steps
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { LanguageModel, LLMEvent, LLMResponse, Message, Usage } from "../src/effect.js"
 import { addUsage, nextRequest, pendingCalls } from "../src/loop.js"

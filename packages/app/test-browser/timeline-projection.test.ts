@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — TimelineProjectionTest。
+ * 浏览器环境下的测试中负责 TimelineProjectionTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { SessionMessageAssistant, SessionMessageInfo, SessionStatus } from "@opencode/client/promise"
 import { createComputed, createRoot } from "solid-js"

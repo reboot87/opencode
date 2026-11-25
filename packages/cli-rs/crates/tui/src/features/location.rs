@@ -1,5 +1,7 @@
 //! Track the location of home or the open session. On reconnect, refresh it and upload the terminal environment only to
 //! a local server.
+//!
+//! 终端界面功能模块：位置。
 
 use opencode_store::location::Catalog;
 use opencode_store::{Error, Location};

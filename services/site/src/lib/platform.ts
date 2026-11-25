@@ -11,6 +11,8 @@ export { platformFromUserAgent, platforms, type Platform } from "./user-agent"
  * so the server renders that platform's copy, and marks each frame with the attribute below, which
  * the page inside reads on the client (also after it changes page, when the URL no longer has the
  * parameter). Like the preview, they work on the development server only.
+ *
+ * 站点共享逻辑：`platform`。
  */
 export const platformParam = "_device"
 export const platformFrameAttribute = "data-device-preview-os"

@@ -1,4 +1,6 @@
 //! Built-in home footer.
+//!
+//! 终端插件视图：主目录页脚。
 
 use opencode_plugin::abi::v2::{Node, Place, Surface};
 use opencode_plugin::abi::{self, Click, Layout, Placement, Span, Width};

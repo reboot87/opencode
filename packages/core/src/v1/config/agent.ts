@@ -1,3 +1,7 @@
+/**
+ * v1 Agent 配置。
+ * 定义 v1 版本的 agent 配置 Schema（含颜色等展示属性）。
+ */
 export * as ConfigAgentV1 from "./agent.js"
 
 import { Schema, SchemaGetter } from "effect"

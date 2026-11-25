@@ -1,3 +1,7 @@
+/**
+ * 图片处理提示。
+ * 生成图片处理进度的文本提示。
+ */
 export * as ImageNotice from "./notice.js"
 
 import { BackgroundResult } from "../session/background-result.js"

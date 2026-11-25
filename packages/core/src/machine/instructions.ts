@@ -1,3 +1,7 @@
+/**
+ * 机器指令渲染。
+ * 把可用机器列表渲染为可注入的指令文本。
+ */
 export * as MachineInstructions from "./instructions.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

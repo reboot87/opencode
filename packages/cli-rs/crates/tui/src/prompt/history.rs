@@ -1,4 +1,6 @@
 //! Shared prompt history and per-editor navigation.
+//!
+//! 终端输入提示：`history`。
 
 use std::path::PathBuf;
 use std::sync::{Arc, Mutex};

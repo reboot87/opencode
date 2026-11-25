@@ -1,3 +1,7 @@
+/**
+ * ACP 历史回放。
+ * 把会话历史转换为 ACP 的历史与更新消息。
+ */
 import type { SessionUpdate } from "@agentclientprotocol/sdk"
 import type { OpenCodeClient } from "@opencode/client/effect"
 import type { SessionMessage } from "@opencode/schema/session-message"

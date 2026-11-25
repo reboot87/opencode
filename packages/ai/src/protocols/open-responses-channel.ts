@@ -1,3 +1,7 @@
+/**
+ * Open Responses 的通道传输实现。
+ * 基于 WebSocket 通道驱动 Responses 流式会话。
+ */
 import { Effect, Schema, Stream } from "effect"
 import { Headers } from "effect/http"
 import { Framing } from "../route/framing.js"

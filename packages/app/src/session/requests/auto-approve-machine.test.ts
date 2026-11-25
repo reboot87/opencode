@@ -1,3 +1,7 @@
+/**
+ * 会话请求 — AutoApproveMachineTest。
+ * 会话界面的请求发起与状态跟踪中负责 AutoApproveMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   AUTO_APPROVE_REPLY_TIMEOUT_MS,

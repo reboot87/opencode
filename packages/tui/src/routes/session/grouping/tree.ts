@@ -1,3 +1,7 @@
+/**
+ * 消息分组 — Tree。
+ * 会话消息的分组与折叠展示中负责 Tree 部分，提供该部分所需的实现与类型定义。
+ */
 export type GroupNode<Entry, Kind extends string> =
   | { readonly type: "entry"; readonly entry: Entry; readonly size: 1 }
   | {

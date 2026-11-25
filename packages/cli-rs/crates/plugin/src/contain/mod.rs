@@ -1,4 +1,6 @@
 //! Measures plugin calls using the host clock. The monitor tracks slow calls, frame budgets and mailbox pressure.
+//!
+//! 插件系统入口。
 
 use std::cell::{Cell, RefCell};
 use std::collections::VecDeque;

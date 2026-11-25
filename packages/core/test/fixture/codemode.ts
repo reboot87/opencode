@@ -1,3 +1,8 @@
+/**
+ * codemode测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { CodeModeTool } from "@opencode/core/codemode/tool"
 import { AppNodeBuilder } from "@opencode/core/effect/app-node-builder"
 import { Environments } from "@opencode/core/environment/environments"

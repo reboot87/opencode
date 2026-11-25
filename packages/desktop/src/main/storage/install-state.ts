@@ -1,3 +1,7 @@
+/**
+ * 本地存储 — InstallState。
+ * 桌面端配置的本地持久化中负责 InstallState 部分，提供该部分所需的实现与类型定义。
+ */
 export function hasExistingAppState(entries: Array<{ name: string; directory: boolean }>) {
   return entries.some((entry) => {
     if (entry.name === "opencode.settings") return true

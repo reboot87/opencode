@@ -8,7 +8,10 @@ const ok = "public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400, s
 // Without the changelog the release pages are missing, so it is cached only briefly.
 const partial = "public, max-age=60, s-maxage=300, stale-while-revalidate=600, stale-if-error=86400"
 
-/** This app's pages sitemap, built per request from the app's page routes and the changelog. See ~/lib/sitemap. */
+/** This app's pages sitemap, built per request from the app's page routes and the changelog. See ~/lib/sitemap.
+ *
+ * 页面路由：站点地图页面·xml。
+ */
 export async function GET(_event: APIEvent) {
   const changelog = await loadChangelog(feedWait).catch((): ChangelogData => ({ ok: false, releases: [] }))
   const routes = fileRoutes.filter((route) => route.page).map((route) => route.path)

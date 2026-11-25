@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — FontsCjk。
+ * Microsoft Office 文档预览插件中负责 FontsCjk 部分，提供该部分所需的实现与类型定义。
+ */
 // `@betteroffice/fonts` imports its optional Chinese, Japanese and Korean add-on on demand. The add-on is about 33 MB,
 // so the app aliases it to this module, which offers no faces: those scripts fall back to the bundled Latin faces.
 export const CJK_FONT_ASSET_URLS = undefined

@@ -1,3 +1,7 @@
+/**
+ * Provider 模型 — SelectionMachine。
+ * provider 下模型的展示与配置中负责 SelectionMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import { durableVariantSelection, INHERIT_VARIANT, type VariantSelection } from "./variant"
 
 /** How long a commit waits for the server to echo its agent and model before the local selection stops waiting. */

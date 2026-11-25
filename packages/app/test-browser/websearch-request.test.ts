@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — WebsearchRequestTest。
+ * 浏览器环境下的测试中负责 WebsearchRequestTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, describe, expect, test } from "bun:test"
 import type { FormCreated, FormReplyInput, OpenCodeEvent } from "@opencode/client/promise"
 import { createEffect, createRoot } from "solid-js"

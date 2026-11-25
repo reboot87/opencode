@@ -1,3 +1,7 @@
+/**
+ * Worktree 策略。
+ * 定义 worktree 的隔离策略接口与可变换配置。
+ */
 export * as WorktreeStrategies from "./strategies.js"
 
 import { Context, Effect, Layer } from "effect"

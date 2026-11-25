@@ -1,3 +1,7 @@
+/**
+ * LM Studio 插件。
+ * 注册本地 LM Studio provider，读取其模型清单。
+ */
 import { Effect, Schema } from "effect"
 import { createLocalProviderPlugin } from "./local.js"
 

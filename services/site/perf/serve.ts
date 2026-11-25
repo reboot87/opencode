@@ -1,3 +1,6 @@
+/**
+ * 站点性能脚本：服务。
+ */
 // Serves the production build that script/build.ts wrote (.cloudflare/output) in workerd through
 // Miniflare, the runtime check-worker-start.ts uses, for strobe benches (strobe.json `serve`). Every
 // outbound fetch gets a 503, as in check-worker-start.ts, so both sides of a bench render the

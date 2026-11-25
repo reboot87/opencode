@@ -125,7 +125,10 @@ async function frame(code: Element): Promise<ElementContent> {
 // Each block highlighted once per build: the V1 docs repeat the same blocks in every language.
 const highlights = new Map<string, Promise<Element>>()
 
-/** The code highlighted as one `pre`, on the frame's surface (Shiki's own background dropped). */
+/** The code highlighted as one `pre`, on the frame's surface (Shiki's own background dropped).
+ *
+ * V2 文档站：rehype·shiki。
+ */
 async function highlight(text: string, requested: string) {
   const key = `${requested}\0${text}`
   if (!highlights.has(key)) highlights.set(key, highlightOnce(text, requested))

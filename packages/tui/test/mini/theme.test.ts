@@ -1,3 +1,7 @@
+/**
+ * Mini 测试 — ThemeTest。
+ * 精简交互模式的测试中负责 ThemeTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterAll, beforeAll, expect, test } from "bun:test"
 import path from "node:path"
 import { RGBA, type CliRenderer, type TerminalColors } from "@opentui/core"

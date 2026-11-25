@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：ide·app。
+ *
+ * 规格编号：E.5。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // IDE editor context (P08) from a fake IDE MCP server: after the MCP handshake, `selection_changed` puts the file and
 // lines in the prompt footer, highlighted until they are sent, and `at_mentioned` inserts a file mention with its
 // lines at the cursor. The recording also keeps what the TUI sent the server.

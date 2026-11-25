@@ -1,4 +1,6 @@
 //! `/btw` asks a side question with session context and shows the answer without interrupting the session.
+//!
+//! 终端插件视图：`btw`。
 
 use opencode_api::client::Client;
 use opencode_api::generated::{SessionGenerateInput, SessionGenerateOutput};

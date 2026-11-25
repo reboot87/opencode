@@ -23,6 +23,8 @@ function skip(path: string) {
  * The canonical URL and the language alternates. `englishOnly` pages serve the same English text at
  * every locale URL, and an address that never takes a locale (lib/language.ts `localized`) has one
  * URL, so for both the English URL is canonical and is the only alternate.
+ *
+ * 通用界面组件：语言包链接。
  */
 export function LocaleLinks(props: { path: string; englishOnly?: boolean }) {
   const language = useLanguage()

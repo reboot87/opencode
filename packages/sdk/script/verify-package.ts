@@ -1,5 +1,11 @@
 #!/usr/bin/env bun
 
+/**
+ * 校验·包脚本。
+ *
+ * SDK 包的开发脚本：文档生成与示例同步。
+ */
+
 import { $ } from "bun"
 import { mkdtemp, rm } from "node:fs/promises"
 import { tmpdir } from "node:os"

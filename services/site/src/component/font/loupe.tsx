@@ -14,6 +14,8 @@ const HOLD_MS = 280
  * Plate: a large white "opencode" on a dark field. Hovering (or pressing and holding on touch)
  * shows a round blue loupe that reveals each module as a grid of 144 white micro-squares,
  * with a faint reticle and a readout in font units. The loupe trails the pointer with a lerp.
+ *
+ * 字体展示组件：`loupe`。
  */
 export function Loupe() {
   let stage!: HTMLDivElement

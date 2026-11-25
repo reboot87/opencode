@@ -1,3 +1,7 @@
+/**
+ * Gemini JSON Schema 规范化。
+ * 把标准 JSON Schema 映射成 Gemini 支持的子集。
+ */
 import type { JsonSchema } from "../../schema/index.js"
 import { isRecord } from "../../utils/record.js"
 

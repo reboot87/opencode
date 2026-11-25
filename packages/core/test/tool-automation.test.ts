@@ -1,3 +1,10 @@
+/**
+ * 工具·automation的测试。
+ *
+ * 被测模块：@opencode/core/tool-automation
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, spyOn } from "bun:test"
 import { DateTime, Effect, Layer, Stream } from "effect"
 import { Agent } from "@opencode/core/agent"

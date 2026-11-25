@@ -1,3 +1,8 @@
+/**
+ * 主题脚本。
+ *
+ * Rust CLI 的代码生成器：由 TypeScript 单一来源生成 Rust 代码。
+ */
 // Writes crates/ui/src/theme/generated/themes.json: every built-in theme as the V2 document the TypeScript TUI
 // resolves under the `new-designs` experiment, so the Rust resolver starts from the same documents. V1 themes are
 // migrated here, once per migration: `mini` is the `migrateV1` document, as mini parses without the experiment.

@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — Fuzz。
+ * 终端界面的测试中负责 Fuzz 部分，提供该部分所需的实现与类型定义。
+ */
 // Seeded Markdown generator and mutator for differential fuzzing against commonmark.js (core) and
 // micromark + micromark-extension-gfm (GFM). Biased toward nesting, lists, emphasis, fences, and tables.
 import * as commonmark from "commonmark"

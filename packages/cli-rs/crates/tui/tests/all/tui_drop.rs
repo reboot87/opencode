@@ -1,3 +1,5 @@
+//! 终端界面测试：TUI·丢弃。
+
 use std::cell::RefCell;
 use std::rc::{Rc, Weak};
 use std::sync::Arc;

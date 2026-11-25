@@ -1,3 +1,7 @@
+/**
+ * 轻提示 — Description。
+ * 短时非阻塞消息提示组件中负责 Description 部分，提供该部分所需的实现与类型定义。
+ */
 // A toast shows a few lines; the rest of a long description would only be retained (in the dedupe
 // key, the active-toast registry and the toaster's store) for as long as the toast lives. Server
 // errors have carried a whole data URL here.

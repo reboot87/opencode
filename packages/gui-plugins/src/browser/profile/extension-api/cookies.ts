@@ -1,3 +1,7 @@
+/**
+ * 浏览器扩展 API — Cookies。
+ * 浏览器插件暴露给扩展的接口中负责 Cookies 部分，提供该部分所需的实现与类型定义。
+ */
 import { Schema } from "effect"
 import type { Cookie, Extension, Session } from "electron"
 import { cookieURL, PROBE_COOKIE } from "../cookie"

@@ -1,3 +1,7 @@
+/**
+ * 悬浮提示 — TooltipStories。
+ * 悬停显示的说明浮层中负责 TooltipStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal } from "solid-js"
 import { Tooltip } from "./tooltip"
 import { Button } from "@opencode/ui/button"

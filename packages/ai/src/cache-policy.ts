@@ -1,15 +1,16 @@
-// Apply an `LLMRequest.cache` policy by injecting `CacheHint`s onto the parts
-// the policy designates. Runs once at compile time, before the per-protocol
-// body builder, so the existing inline-hint lowering path handles the rest.
-//
-// The default `"auto"` shape places breakpoints at the last tool definition,
-// the first and last distinct system parts, and the conversation tail. This
-// exposes reusable tool, base-agent, project, and session prefixes while
-// advancing the tail after each tool result keeps recent conversation prefixes
-// reusable during long agent runs.
-//
-// Manual `cache: CacheHint` placements on individual parts are preserved and
-// count against the four-breakpoint budget; auto only fills remaining slots.
+/**
+ * 提示词缓存策略：通过把 CacheHint（缓存标记）注入到请求中指定的部分，来应用 LLMRequest.cache 策略。
+ *
+ * 执行时机：在编译请求时运行一次，位于各协议的 body 构建器之前，
+ * 这样后续复用已有的“内联标记降级”路径处理即可。
+ *
+ * 默认 "auto" 策略在四处放置缓存断点：最后一个工具定义、第一个和最后一个不同的系统部分、对话末尾。
+ * 这样能暴露可复用的前缀：工具前缀、基础 agent 前缀、项目前缀、会话前缀；
+ * 而每次工具结果之后推进尾部断点，能让长 agent 运行中的最近对话前缀持续复用。
+ *
+ * 手动在各 part 上放置的 cache: CacheHint 会被保留，并计入四个断点的预算；
+ * 自动策略只填充剩余的空闲位置。
+ */
 import { CacheHint, type CachePolicy, type CachePolicyObject, type CacheTTL } from "./schema/options.js"
 import {
   AssistantMessage,
@@ -32,14 +33,15 @@ const AUTO: CachePolicyObject = {
 }
 
 const NONE: CachePolicyObject = {}
+// 断点总数上限：大多数提供方（如 Anthropic）最多支持 4 个缓存断点
 const BREAKPOINT_CAP = 4
 
-// Resolution rules:
-//   - undefined   → "auto" — caching is on by default.
-//   - "auto"      → tools + first/last system + final message boundary.
-//   - "none"      → no auto placement; manual `CacheHint`s still flow.
-//   - `{ ttl }`   → "auto" with that lifetime.
-//   - object form → exactly what the caller asked for.
+// 策略解析规则：
+//   - undefined → "auto"，即默认开启缓存；
+//   - "auto"    → 工具 + 首个/末个系统部分 + 最后一条消息边界；
+//   - "none"    → 不做自动放置，但手动的 CacheHint 仍然生效；
+//   - { ttl }   → 使用指定生存时间的 "auto"；
+//   - 对象形式  → 完全按调用方要求。
 const resolve = (policy: CachePolicy | undefined): CachePolicyObject => {
   if (policy === "none") return NONE
   if (typeof policy === "object" && !isAuto(policy)) return policy
@@ -54,12 +56,11 @@ const isAuto = (policy: CachePolicy | undefined) =>
     policy.system === undefined &&
     policy.messages === undefined)
 
-/** The requested cache lifetime, for routes that send it as a request-level option instead of on markers. */
+/** 取出请求的缓存生存时间（TTL）：给那些在请求级选项而非标记上发送 TTL 的协议使用。 */
 export const requestTTL = (request: LLMRequest) => (typeof request.cache === "object" ? request.cache.ttl : undefined)
 
-// Protocols whose wire format ignores inline cache markers (OpenAI's implicit
-// prefix caching, Gemini's implicit + out-of-band CachedContent). Skip the
-// whole policy pass for these — emitting hints would be harmless but pointless.
+// 这些协议的 wire 格式会忽略内联缓存标记（OpenAI 的隐式前缀缓存、Gemini 的隐式 + 带外 CachedContent）。
+// 对它们跳过整个策略处理——发出标记无害但没有意义。
 const RESPECTS_INLINE_HINTS = new Set([
   "alibaba-chat",
   "alibaba-messages",
@@ -90,13 +91,16 @@ const gatewayPolicy = (modelID: string): CachePolicyObject => {
   return NONE
 }
 
+/** 根据 TTL 构造一个 ephemeral（临时）缓存标记。 */
 const makeHint = (ttl: CacheTTL | undefined): CacheHint =>
   ttl !== undefined ? new CacheHint({ type: "ephemeral", ttl }) : new CacheHint({ type: "ephemeral" })
 
+/** 断点预算：记录还剩几个缓存标记可以放置。 */
 interface Budget {
   remaining: number
 }
 
+/** 在最后一个工具定义上打缓存标记；遇到命名空间会递归到最后一项。已标记或预算耗尽则跳过。 */
 const markLastTool = (tools: ReadonlyArray<ToolEntry>, hint: CacheHint, budget: Budget): ReadonlyArray<ToolEntry> => {
   const target = tools.at(-1)
   if (target === undefined) return tools
@@ -109,12 +113,14 @@ const markLastTool = (tools: ReadonlyArray<ToolEntry>, hint: CacheHint, budget: 
   return [...tools.slice(0, -1), new ToolDefinition({ ...target, cache: hint })]
 }
 
+/** 统计工具树里已存在的缓存标记数量（含命名空间内的递归统计）。 */
 const countToolHints = (tools: ReadonlyArray<ToolEntry>): number =>
   tools.reduce(
     (count, tool) => count + (tool.type === "tool" ? (tool.cache === undefined ? 0 : 1) : countToolHints(tool.tools)),
     0,
   )
 
+/** 在系统部分的首尾两处打缓存标记（暴露基础 agent / 项目前缀），受预算限制。 */
 const markSystemBoundaries = (system: LLMRequest["system"], hint: CacheHint, budget: Budget): LLMRequest["system"] => {
   if (system.length === 0) return system
   let changed = false
@@ -214,27 +220,35 @@ const countHints = (request: LLMRequest) =>
     0,
   )
 
+/**
+ * 应用缓存策略的入口：选中策略后，依次给工具、系统部分、消息打标记。
+ *
+ * 预算 = 断点上限 - 已有标记数，保证总断点不超过提供方限制（4 个）。
+ * 若三部分都没变化，直接返回原请求（避免不必要的对象分配）。
+ */
 export const applyCachePolicy = (request: LLMRequest): LLMRequest => {
   const policy = selectPolicy(request)
   if (!policy.tools && !policy.system && !policy.messages) return request
 
   const hint = makeHint(requestTTL(request))
+  // 剩余预算：扣掉请求里已经存在的手动标记
   const budget = { remaining: Math.max(0, BREAKPOINT_CAP - countHints(request)) }
   const tools = policy.tools ? markLastTool(request.tools, hint, budget) : request.tools
   const system = policy.system ? markSystemBoundaries(request.system, hint, budget) : request.system
   const messages = policy.messages ? markMessages(request.messages, policy.messages, hint, budget) : request.messages
 
+  // 三者都未改变则原样返回
   if (tools === request.tools && system === request.system && messages === request.messages) return request
   return { ...request, tools, system, messages }
 }
 
-/** Whether the cache policy places inline markers, which then carry the requested lifetime. */
+/** 判断策略是否会放置内联标记——这些标记会承载请求的 TTL。 */
 export const placesMarkers = (request: LLMRequest) => {
   const policy = selectPolicy(request)
   return Boolean(policy.tools || policy.system || policy.messages)
 }
 
-// A declared cache format overrides the route allowlist and its model-ID heuristics.
+// 选择实际生效的缓存策略。声明的 cacheFormat 优先级最高，覆盖路由白名单和模型 ID 启发式判断。
 const selectPolicy = (request: LLMRequest): CachePolicyObject => {
   const format = request.model.compatibility?.cacheFormat
   const route = request.model.route.id

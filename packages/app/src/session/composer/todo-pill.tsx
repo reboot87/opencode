@@ -1,3 +1,7 @@
+/**
+ * 会话输入区 — TodoPill。
+ * 会话界面输入区的实现中负责 TodoPill 部分，提供该部分所需的实现与类型定义。
+ */
 import { Popover } from "@kobalte/core/popover"
 import { Badge } from "@opencode/ui/badge"
 import { MenuScroll } from "@opencode/ui/menu-scroll"

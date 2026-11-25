@@ -45,7 +45,10 @@ const stamp = Object.values(
 const build = stamp?.build ?? stamp?.commit ?? "dev"
 const refreshing = new Set<string>()
 
-/** How a response may be cached: a public page, a personal response, or neither (left as it is). */
+/** How a response may be cached: a public page, a personal response, or neither (left as it is).
+ *
+ * 站点共享逻辑：HTML·缓存。
+ */
 export function responseClass(path: string, method: string) {
   if (personal.test(path)) return "personal"
   if (method !== "GET" && method !== "HEAD") return "personal"

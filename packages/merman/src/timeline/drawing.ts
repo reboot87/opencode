@@ -1,3 +1,7 @@
+/**
+ * 时间线 — Drawing。
+ * 按时间顺序展示会话消息的视图中负责 Drawing 部分，提供该部分所需的实现与类型定义。
+ */
 import { DiagramCanvas } from "../core/canvas.js"
 import { splitDiagramLines } from "../core/text-lines.js"
 import { diagramTextWidth } from "../core/text.js"

@@ -1,3 +1,7 @@
+/**
+ * 项目头像 — ProceduralCraft。
+ * 项目标识头像组件中负责 ProceduralCraft 部分，提供该部分所需的实现与类型定义。
+ */
 // Project icon styles from craft: textiles, printmaking and twentieth-century art. See procedural.ts for the contract.
 
 import { mulberry32 } from "./generated"

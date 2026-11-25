@@ -1,3 +1,7 @@
+/**
+ * Mini 测试 — StreamTest。
+ * 精简交互模式的测试中负责 StreamTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { writeSessionOutput } from "../../src/mini/stream"
 import { createFooterApiFixture } from "./fixture/footer-api"

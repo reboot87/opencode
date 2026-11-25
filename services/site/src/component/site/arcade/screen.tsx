@@ -13,7 +13,10 @@ import { play } from "./sound"
 
 export type ScreenState = "404" | "glitch" | "boot" | "start" | "select" | "play" | "mobile"
 
-/** What the screen says on a phone, where the games do not run (Design mode › Arcade phone message). */
+/** What the screen says on a phone, where the games do not run (Design mode › Arcade phone message).
+ *
+ * 街机小游戏组件：屏幕。
+ */
 export const mobileCopy = {
   "not available": { title: "Not available", lines: ["On mobile", "Visit on desktop to play"] },
   "game over": { title: "Game over", lines: ["No games on mobile", "Visit on desktop to play"] },

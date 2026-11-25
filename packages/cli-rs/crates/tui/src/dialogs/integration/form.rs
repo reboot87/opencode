@@ -1,4 +1,6 @@
 //! Collect integration credentials one field at a time.
+//!
+//! 终端弹窗组件：表单。
 
 use opencode_api::generated::{
     FormAnswer, FormBooleanField, FormExternalField, FormField, FormMultiselectField, FormStringField, FormValue,

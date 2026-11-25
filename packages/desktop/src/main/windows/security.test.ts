@@ -1,3 +1,7 @@
+/**
+ * 窗口管理 — SecurityTest。
+ * 浏览器窗口的创建与布局管理中负责 SecurityTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { EventEmitter } from "node:events"
 import type { BrowserWindow, Session, WebContents } from "electron"

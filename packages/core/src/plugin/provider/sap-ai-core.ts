@@ -1,3 +1,7 @@
+/**
+ * SAP AI Core 插件。
+ * 注册 SAP AI Core provider（依赖其 npm 包）。
+ */
 import { Effect } from "effect"
 import { define } from "@opencode/plugin/effect/plugin"
 import { Npm } from "@opencode/util/npm"

@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — MarkdownStories。
+ * 跨场景复用的通用 UI 组件中负责 MarkdownStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { markdown } from "@opencode/ui/storybook/fixtures"
 import { createEffect, createSignal, onCleanup } from "solid-js"
 import { MarkdownProvider } from "../context/markdown"

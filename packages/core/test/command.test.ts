@@ -1,3 +1,10 @@
+/**
+ * 命令的测试。
+ *
+ * 被测模块：@opencode/core/command
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import { Command } from "@opencode/core/command"
 import { AppNodeBuilder } from "@opencode/core/effect/app-node-builder"

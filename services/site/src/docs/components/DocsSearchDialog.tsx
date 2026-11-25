@@ -8,6 +8,8 @@ import type { DocsSet } from "../config"
  * The site's ⌘K palette (search-palette.css) with the default look, searching the docs' full text
  * with Pagefind. Hidden until client.ts opens it and fills in the results. With nothing typed it is
  * just the field: the results list stays empty, so docs.css hides it and the field's divider.
+ *
+ * 文档站组件：文档搜索弹窗。
  */
 export function DocsSearchDialog(props: { set: DocsSet }) {
   const i18n = useI18n()

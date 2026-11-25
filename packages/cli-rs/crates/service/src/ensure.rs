@@ -1,5 +1,7 @@
 //! Reuses a ready service and waits for a starting one. Start contenders only if no live process owns the
 //! registration.
+//!
+//! 服务层：确保。
 
 use std::ffi::OsString;
 use std::path::PathBuf;

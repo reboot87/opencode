@@ -1,5 +1,7 @@
 //! Runs service and pairing commands with an isolated home, channel and fake server binary.
 #![cfg(unix)]
+//!
+//! 命令行入口测试：服务。
 
 use std::path::PathBuf;
 use std::process::{Command, Output};

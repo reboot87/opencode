@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：C.3·stats。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-ORACLE for C.3: `activityCalendar` and the `stats` command's `renderStats` over fixed inputs. Writes
 // parity/fixtures/C.3/stats.json; the tests in crates/cli/src/commands/stats.rs evaluate the Rust ports
 // on the same inputs and compare.

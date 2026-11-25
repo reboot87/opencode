@@ -1,3 +1,7 @@
+/**
+ * Promise SDK 入口。
+ * 以 Promise 风格创建嵌入式 OpenCode 实例。
+ */
 export * as PromiseSdk from "./promise"
 
 import { OpenCode, type OpenCodeClient } from "@opencode/client"

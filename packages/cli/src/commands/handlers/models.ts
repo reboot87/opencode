@@ -1,3 +1,7 @@
+/**
+ * models 命令。
+ * 列出可用模型。
+ */
 import { OpenCode } from "@opencode/client"
 import { Service } from "@opencode/client/effect/service"
 import { Effect } from "effect"

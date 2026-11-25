@@ -1,5 +1,7 @@
 //! Invalid parameters report the first failing field in the ACP SDK's `format()` shape. Malformed MCP servers and
 //! additional directories are skipped.
+//!
+//! ACP 协议实现：智能体。
 
 use std::future::{Future, ready};
 use std::sync::Arc;

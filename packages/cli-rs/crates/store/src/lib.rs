@@ -1,4 +1,6 @@
 //! Shared client data store.
+//!
+//! 会话存储层入口。
 
 pub mod changes;
 pub mod connection;

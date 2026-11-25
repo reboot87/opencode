@@ -1,3 +1,7 @@
+/**
+ * 浏览器文案 — Hu。
+ * 浏览器插件的多语言文案中负责 Hu 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.open": "Nyissa meg a böngészőt",
   "command.reload": "Böngészőoldal újratöltése",

@@ -1,3 +1,7 @@
+/**
+ * 插件启动等待。
+ * 等待服务端插件加载完成后再继续。
+ */
 import type { OpenCodeClient } from "@opencode/client"
 import { Effect, Schedule } from "effect"
 

@@ -1,3 +1,7 @@
+/**
+ * 调试插件 — Bar。
+ * 面向开发者的调试 GUI 插件中负责 Bar 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createSignal, onCleanup, Show, untrack } from "solid-js"
 import { Icon } from "@opencode/ui/icon"
 import { IconButton } from "@opencode/ui/icon-button"

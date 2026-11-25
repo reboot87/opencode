@@ -1,3 +1,7 @@
+/**
+ * session-interrupt 工具。
+ * 中断正在运行的会话的工具。
+ */
 export * as SessionInterruptTool from "./session-interrupt.js"
 
 import { ToolFailure } from "@opencode/ai/effect"

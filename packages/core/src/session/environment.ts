@@ -1,3 +1,7 @@
+/**
+ * 会话环境服务（SessionEnvironment）。
+ * 定义会话环境变量的类型与服务接口。
+ */
 export * as SessionEnvironment from "./environment.js"
 
 import { Context, Effect, Layer } from "effect"

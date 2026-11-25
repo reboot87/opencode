@@ -1,3 +1,7 @@
+/**
+ * 主页启动区 — CommandPalette。
+ * 主页的起始操作区中负责 CommandPalette 部分，提供该部分所需的实现与类型定义。
+ */
 import { useDialog } from "@opencode/ui/context/dialog"
 import { createMemo } from "solid-js"
 import { commandPaletteOptions, useCommand } from "@/shell/commands/command"

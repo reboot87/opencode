@@ -1,4 +1,8 @@
-/** One dialog a plugin opened, from `ctx.dialogs.open` until its `ended` callback runs, once. */
+/**
+ * One dialog a plugin opened, from `ctx.dialogs.open` until its `ended` callback runs, once.
+ *
+ * 插件运行时中负责 DialogMachine 部分：浏览器端插件运行时中与 DialogMachine 相关的状态、交互与渲染逻辑。
+ */
 export type PluginDialogState =
   /** The handle exists; the open has not been requested yet. */
   | { readonly status: "created" }

@@ -1,4 +1,6 @@
 //! Explain unavailable plugin routes and direct the user to the plugin manager after a failure.
+//!
+//! 终端界面功能模块：路由缺失。
 
 use crate::prelude::*;
 

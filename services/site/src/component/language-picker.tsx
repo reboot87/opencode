@@ -18,6 +18,8 @@ import "./language-picker.css"
  * (under-header.ts). Touch phones get the site's bottom sheet (language-sheet.tsx). Every row is a
  * link to the page in that language, so both work without JavaScript and tell search engines about
  * the other languages. The static pages drive the same markup from src/client/menus.ts.
+ *
+ * 通用界面组件：语言选择器。
  */
 export function LanguagePicker(props: { align?: "left" | "right" } = {}) {
   const language = useLanguage()

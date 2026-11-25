@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — ToolStatusTitle。
+ * 跨场景复用的通用 UI 组件中负责 ToolStatusTitle 部分，提供该部分所需的实现与类型定义。
+ */
 import { Show, createEffect, createMemo, createSignal, on, onCleanup, untrack } from "solid-js"
 import { TextShimmer } from "@opencode/ui/text-shimmer"
 import { prefersReducedMotion } from "@opencode/ui/motion"

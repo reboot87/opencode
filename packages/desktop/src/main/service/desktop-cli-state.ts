@@ -1,3 +1,7 @@
+/**
+ * 后台服务 — DesktopCliState。
+ * 桌面端托管的后台服务进程中负责 DesktopCliState 部分，提供该部分所需的实现与类型定义。
+ */
 export * as DesktopCliState from "./desktop-cli-state"
 
 import { Deferred, Effect, Exit } from "effect"

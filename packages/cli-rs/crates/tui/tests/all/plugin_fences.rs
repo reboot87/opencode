@@ -1,4 +1,6 @@
 //! Exercise JavaScript Markdown renderers across the pipe: placeholder, adoption, fallback, quotas, and teardown.
+//!
+//! 终端界面测试：插件代码围栏。
 
 use std::cell::Cell;
 use std::path::Path;

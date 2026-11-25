@@ -1,5 +1,7 @@
 //! Newline-delimited JSON-RPC. The reader registers a prompt before dispatching the next cancellation. One writer
 //! preserves response and notification order.
+//!
+//! ACP 协议实现：`connection`。
 
 use std::collections::HashMap;
 use std::ops::ControlFlow;

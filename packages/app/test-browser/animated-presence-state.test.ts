@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — AnimatedPresenceStateTest。
+ * 浏览器环境下的测试中负责 AnimatedPresenceStateTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, expect, jest, setSystemTime, test } from "bun:test"
 import { createAnimatedPresence } from "../src/runtime/animated-presence"
 import { batch, createRoot, createSignal } from "solid-js"

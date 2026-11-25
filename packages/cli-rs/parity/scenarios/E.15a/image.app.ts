@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：图片·app。
+ *
+ * 规格编号：E.15a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // An image card in the diff viewer (F15, `DiffViewerImage`): the full-screen route reads the working-tree image
 // with `file.read`, shows it with its size and "Click to enlarge", and a click opens it in the image preview dialog
 // (DLG09) under the file's name. Escape closes the dialog.

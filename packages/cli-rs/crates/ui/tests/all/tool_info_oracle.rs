@@ -1,3 +1,5 @@
+//! 基础 UI 组件库：工具提示·oracle。
+
 use opencode_api_types::{SessionMessageAssistantTool, ToolContent};
 use opencode_ui::tool_info::{
     ToolInline, execute_call_summary, execute_calls, primitive_input_summary, read_display_text, tool_inline_info,

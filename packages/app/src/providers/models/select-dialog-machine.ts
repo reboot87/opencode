@@ -1,3 +1,7 @@
+/**
+ * Provider 模型 — SelectDialogMachine。
+ * provider 下模型的展示与配置中负责 SelectDialogMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // ── Desktop model dialog: the variant flyout beside the highlighted row ────────
 
 /** How long the pointer rests on a row before its flyout opens, unless a flyout was just open. */

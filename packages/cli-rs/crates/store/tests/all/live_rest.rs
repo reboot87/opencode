@@ -1,5 +1,7 @@
 //! Read-only live service test (`OPENCODE_LIVE=1`). Resolves an existing session without uploading an environment,
 //! creating a session or requesting usage limits or stats.
+//!
+//! 存储层测试：live·REST。
 
 use std::time::Duration;
 

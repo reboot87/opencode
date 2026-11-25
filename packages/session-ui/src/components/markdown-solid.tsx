@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — MarkdownSolid。
+ * 跨场景复用的通用 UI 组件中负责 MarkdownSolid 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, For, onMount } from "solid-js"
 import { createStore, reconcile } from "solid-js/store"
 import { Dynamic, render } from "solid-js/web"

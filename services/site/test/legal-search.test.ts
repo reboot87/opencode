@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：法律搜索。
+ */
 import { expect, test } from "bun:test"
 import legalSearch from "~/component/site/legal-search.json"
 import { legalSearch as entries } from "~/lib/legal-documents"

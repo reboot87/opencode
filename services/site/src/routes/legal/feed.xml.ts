@@ -5,6 +5,8 @@ import { legalFeedEntries } from "~/lib/legal-documents"
  * Changes to the published legal documents as RSS 2.0 (it was Atom at first; the URL stays, and
  * feed readers read either): one item per text version, linking the document, with the GitHub diff
  * as the comments link.
+ *
+ * 法律页路由：feed·xml。
  */
 export function GET() {
   const entries = legalFeedEntries()

@@ -1,3 +1,8 @@
+/**
+ * 索引测试夹具。
+ *
+ * 提供工作树委派场景的样例数据。
+ */
 import { Plugin } from "@opencode/plugin"
 
 export default Plugin.define({

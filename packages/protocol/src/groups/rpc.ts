@@ -1,3 +1,7 @@
+/**
+ * RPC API 分组。
+ * 定义通用远程过程调用端点。
+ */
 import { optional } from "@opencode/schema/schema"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, OpenApi } from "effect/http-api"

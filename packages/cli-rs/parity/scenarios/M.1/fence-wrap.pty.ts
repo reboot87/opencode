@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：代码围栏·折行·伪终端。
+ *
+ * 规格编号：M.1。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Mini replays an answer with a fence that holds one shell line wider than the terminal, at the top level and in a
 // list item. Both clients wrap the line by word inside the fence (Core's default `wrapMode: "word"`, OpenTUI #2089
 // in Rust).

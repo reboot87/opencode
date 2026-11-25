@@ -1,3 +1,7 @@
+/**
+ * v1 权限配置。
+ * 定义 v1 版本的权限动作与规则配置。
+ */
 export * as ConfigPermissionV1 from "./permission.js"
 
 import { Schema, SchemaGetter } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * 系统功能插件 — Stats。
+ * 以插件形式提供的系统级功能中负责 Stats 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionStatsInfo } from "@opencode/client"
 import { Plugin } from "@opencode/plugin/tui"
 import { activityCalendar } from "@opencode/util/activity-calendar"

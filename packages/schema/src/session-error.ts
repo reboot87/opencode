@@ -1,3 +1,7 @@
+/**
+ * 会话错误类型。
+ * 定义会话相关的错误码与结构。
+ */
 export * as SessionError from "./session-error.js"
 
 import { Schema } from "effect"

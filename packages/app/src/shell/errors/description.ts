@@ -1,3 +1,7 @@
+/**
+ * 错误界面 — Description。
+ * 应用级错误边界的展示中负责 Description 部分，提供该部分所需的实现与类型定义。
+ */
 export function errorDescriptionKey(error: unknown) {
   if (
     typeof error === "object" &&

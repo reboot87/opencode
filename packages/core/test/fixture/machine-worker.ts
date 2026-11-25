@@ -1,3 +1,8 @@
+/**
+ * 状态机·工作单元测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { Environment } from "@opencode/core/environment/index"
 import { Machine } from "@opencode/core/machine/index"
 import { Cause, Deferred, Effect, Fiber, Queue, Stream } from "effect"

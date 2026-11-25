@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — OneCellSpinner。
+ * 终端界面（Solid）组件中负责 OneCellSpinner 部分，提供该部分所需的实现与类型定义。
+ */
 import { parseColor, RGBA, type ColorInput } from "@opentui/core"
 import { onAnimationTick, useRenderer } from "@opentui/solid"
 import { createEffect, createMemo, createSignal, onCleanup, Show } from "solid-js"

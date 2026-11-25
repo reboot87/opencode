@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：后台·CLI。
+ *
+ * 规格编号：C.10。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A background job this prompt started holds the run open: "waiting for 1 background job", then the reply
 // it wakes streams before the run ends with exit 0.
 import { defineCli } from "../../cli/run"

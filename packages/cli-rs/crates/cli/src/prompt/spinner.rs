@@ -1,3 +1,5 @@
+//! CLI 交互提示：加载指示器。
+
 use std::sync::atomic::{AtomicBool, Ordering};
 use std::sync::mpsc::{self, RecvTimeoutError, Sender};
 use std::sync::{Arc, Mutex, MutexGuard};

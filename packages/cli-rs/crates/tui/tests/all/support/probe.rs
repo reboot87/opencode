@@ -1,5 +1,7 @@
 //! Shared by the performance scenarios of the TUI (`tests/all/perf.rs`) and of mini (`src/perf.rs`): the measured
 //! region and its `PERF` line, and the long session both replay.
+//!
+//! 终端界面测试：探针。
 
 use std::collections::HashMap;
 use std::time::{Duration, Instant};

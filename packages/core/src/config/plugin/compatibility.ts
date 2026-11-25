@@ -1,3 +1,7 @@
+/**
+ * 兼容性配置插件。
+ * 处理配置的向后兼容（legacy）转换。
+ */
 export * as ConfigCompatibilityPlugin from "./compatibility.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

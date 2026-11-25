@@ -1,3 +1,7 @@
+/**
+ * 会话事件类型。
+ * 定义会话领域事件的完整集合与负载（会话、消息、收件箱、压缩等）。
+ */
 export * as SessionEvent from "./session-event.js"
 
 import { Schema } from "effect"

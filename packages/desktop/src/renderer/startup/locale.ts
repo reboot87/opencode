@@ -1,3 +1,7 @@
+/**
+ * 模块 — Locale。
+ * 该目录下的功能模块中负责 Locale 部分，提供该部分所需的实现与类型定义。
+ */
 import { loadLocaleDict, normalizeLocale, type Locale, type Platform } from "@opencode/app/desktop"
 import { storedLocaleValue } from "./locale-value"
 

@@ -1,3 +1,7 @@
+/**
+ * 会话导入导出（SessionTransfer）。
+ * 会话数据的导出与导入，处理冲突校验与数据解码。
+ */
 export * as SessionTransfer from "./transfer.js"
 
 import { SessionTransfer } from "@opencode/schema/session-transfer"

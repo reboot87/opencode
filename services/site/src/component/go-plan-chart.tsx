@@ -1,3 +1,6 @@
+/**
+ * 通用界面组件：go·计划图表。
+ */
 import "./go-plan-chart.css"
 import { createMemo, createSignal, createUniqueId, For, Show } from "solid-js"
 import { useI18n } from "~/context/i18n"

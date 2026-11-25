@@ -1,3 +1,7 @@
+/**
+ * 会话请求 — JobListTest。
+ * 会话界面的请求发起与状态跟踪中负责 JobListTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { mergeJobList } from "./background"
 

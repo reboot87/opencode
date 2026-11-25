@@ -1,3 +1,7 @@
+/**
+ * 详情插件 — WorkspaceMoveMachineTest。
+ * 展示对象详细信息的 GUI 插件中负责 WorkspaceMoveMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   WORKSPACE_CREATE_TIMEOUT_MS,

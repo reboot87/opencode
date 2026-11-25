@@ -1,4 +1,6 @@
 //! Prompt footer for session activity, hints, and status.
+//!
+//! 终端插件视图：提示词页脚。
 
 use opencode_plugin::abi::interact::{Event, Handled};
 use opencode_plugin::abi::v2::{Node, Place, Surface};

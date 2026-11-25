@@ -1,3 +1,7 @@
+/**
+ * Pierre 组件 — Index 出口。
+ * 集中导出 Pierre 组件 中 Index 相关的实现、组件与类型。
+ */
 import {
   DiffLineAnnotation,
   FileContents,

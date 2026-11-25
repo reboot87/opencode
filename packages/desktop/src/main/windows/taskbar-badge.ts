@@ -1,3 +1,7 @@
+/**
+ * 窗口管理 — TaskbarBadge。
+ * 浏览器窗口的创建与布局管理中负责 TaskbarBadge 部分，提供该部分所需的实现与类型定义。
+ */
 import { nativeImage, screen, type BrowserWindow, type NativeImage } from "electron"
 import { renderTaskbarBadgeBitmap } from "./taskbar-badge-icon"
 

@@ -1,3 +1,5 @@
+//! 进程间传输通道：`unix`。
+
 use std::io::{self, Read, Write};
 use std::net::Shutdown;
 use std::os::fd::AsFd;

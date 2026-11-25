@@ -1,3 +1,7 @@
+/**
+ * 数据站测试 — ModelCatalogTest。
+ * 数据站点的测试中负责 ModelCatalogTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, mock, test } from "bun:test"
 
 // The catalog module defines a router query at import time, which throws outside a Solid server runtime.

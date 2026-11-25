@@ -1,3 +1,7 @@
+/**
+ * 外壳状态 — SessionPreferences。
+ * 应用外壳的全局状态中负责 SessionPreferences 部分，提供该部分所需的实现与类型定义。
+ */
 import { Schema } from "effect"
 import { createMemo } from "solid-js"
 import { Persistence } from "@/runtime/persistence/schema"

@@ -1,3 +1,7 @@
+/**
+ * 时间线 — Style。
+ * 按时间顺序展示会话消息的视图中负责 Style 部分，提供该部分所需的实现与类型定义。
+ */
 import { RGBA } from "@opentui/core"
 import { blendColor, numberedStyleKeys, rgba, type DiagramRgb } from "../core/color/style.js"
 import type { TimelineBaseCellStyle, TimelineCellStyle } from "./types.js"

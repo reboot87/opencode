@@ -1,3 +1,7 @@
+/**
+ * OpenAPI 运行时。
+ * 按 OpenAPI 规范发起真实 HTTP 请求（含错误体截断上限 1KiB）。
+ */
 import { Effect, Option, Schema, Stream } from "effect"
 import { HttpClient, HttpClientRequest, HttpClientResponse, type HttpMethod } from "effect/http"
 import { ToolError, toolError } from "../tool-error.js"

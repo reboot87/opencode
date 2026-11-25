@@ -7,6 +7,8 @@ import type { RichText } from "~/lib/markdown"
 /**
  * The FAQ in the product pages' download section (lib/download-content.ts). A module of its own, so
  * the download section, on every page, doesn't take the home page copy with it.
+ *
+ * 站点共享逻辑：常见问题内容。
  */
 export function homeFaq(t: Translate, route: (path: string) => string) {
   const docs = (path: string) => `https://opencode.ai${docsUrl(path)}`

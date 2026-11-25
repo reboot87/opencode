@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid PatchDiff：该文件实现 PatchDiff 相关的状态与逻辑。
+ */
 import {
   BoxRenderable,
   CodeRenderable,

@@ -1,3 +1,7 @@
+/**
+ * 浏览器扩展 API — TabsTest。
+ * 浏览器插件暴露给扩展的接口中负责 TabsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { apiManifest } from "./manifest"
 import { answerQuery, matchesQuery, reveals, tabInfo, type TabSnapshot } from "./tabs"

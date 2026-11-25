@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — PreparingComposer。
+ * 会话主界面的视图与状态中负责 PreparingComposer 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal, on, onCleanup } from "solid-js"
 import { makeEventListener } from "@solid-primitives/event-listener"
 import { ComposerEditor } from "@/composer/editor/editor"

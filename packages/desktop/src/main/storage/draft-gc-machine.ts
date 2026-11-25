@@ -1,3 +1,7 @@
+/**
+ * 本地存储 — DraftGcMachine。
+ * 桌面端配置的本地持久化中负责 DraftGcMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // Orphans left by an earlier session are collected once the window is up rather than before it: the scan walks every
 // stored document.
 export const STARTUP_COLLECT_DELAY_MS = 10_000

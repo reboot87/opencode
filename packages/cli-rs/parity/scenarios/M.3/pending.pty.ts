@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：待处理·伪终端。
+ *
+ * 规格编号：M.3。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The pending-prompts panel (`session.queued_prompts`, Ctrl+X Q) while a turn runs: `queued_prompt.delete`
 // (Ctrl+D) cancels the highlighted prompt, `queued_prompt.undo` (Ctrl+U) cancels it and puts it back in the
 // composer, and Enter steers a queued one. Each write answers 204 and the server's inbox event follows.

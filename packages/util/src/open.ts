@@ -1,3 +1,7 @@
+/**
+ * 打开 URL。
+ * 以系统默认方式打开 URL 或本地文件路径。
+ */
 import open from "open"
 
 export function openUrl(input: string) {

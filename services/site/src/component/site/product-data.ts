@@ -4,7 +4,10 @@
 import { docsUrl } from "~/lib/docs"
 import { isMobile, requestPlatform } from "~/lib/platform"
 
-/** Where the SDK's "Read docs" action leads: the @opencode/sdk docs (the in-process host). */
+/** Where the SDK's "Read docs" action leads: the @opencode/sdk docs (the in-process host).
+ *
+ * 站点界面组件：product·data。
+ */
 export const sdkDocs = docsUrl("/build/sdk/")
 
 export { installs } from "~/lib/install-commands"

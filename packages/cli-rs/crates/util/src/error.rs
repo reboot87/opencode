@@ -1,5 +1,7 @@
 //! Errors with context. `{}` prints the outermost message, `{:#}` prints the chain and `downcast_ref` finds the
 //! underlying error.
+//!
+//! 通用工具：错误。
 
 use std::error::Error as StdError;
 use std::fmt::{self, Debug, Display};

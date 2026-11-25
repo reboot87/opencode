@@ -1,3 +1,7 @@
+/**
+ * 生成请求类型。
+ * 定义文本/图片/视频等生成请求与结果结构。
+ */
 export * as Generate from "./generate.js"
 
 import { Schema } from "effect"

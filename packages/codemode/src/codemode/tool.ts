@@ -1,3 +1,7 @@
+/**
+ * Code Mode 工具类型。
+ * 定义沙箱工具的 JSON Schema 与 Schema 类型抽象。
+ */
 import { Effect, Schema } from "effect"
 import type { Namespace } from "./namespace.js"
 import type { Tools } from "./tools.js"

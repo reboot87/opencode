@@ -1,3 +1,8 @@
+/**
+ * 提示词·位置测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import type { FileSystem } from "@opencode/core/filesystem"
 import { Bus } from "@opencode/core/bus"
 import { Image } from "@opencode/core/image"

@@ -1,3 +1,7 @@
+/**
+ * Agent 类型定义。
+ * 定义 Agent 的 ID、名称与信息结构（品牌类型 + Schema）。
+ */
 export * as Agent from "./agent.js"
 
 import { Schema } from "effect"

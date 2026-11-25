@@ -1,3 +1,7 @@
+/**
+ * 产物类型定义。
+ * 定义 artifact（会话产物）的 ID、输入输出与元数据结构。
+ */
 export * as Artifact from "./artifact.js"
 
 import { Schema } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * 会话执行器的核心实现：LLM 多步循环驱动。
+ * 实现 drain 服务：每次 drain 是一轮 turn，先检查收件箱待处理项、结算过期压缩与工具调用，随后 while 循环逐 step 推进——准备上下文、自动压缩检测、发起 LLM 请求、交给 step.ts 执行单步、依据 Outcome 决定完成/重试/继续。管理标题生成、中断、最大步数、输出超限续跑等边界。
+ */
 export * as SessionRunnerLLM from "./llm.js"
 
 import { Message } from "@opencode/ai/effect"
@@ -39,6 +43,7 @@ import { Plugin } from "../../plugin.js"
 import { PluginHooks } from "../../plugin/hooks.js"
 import { MAX_STEPS_PROMPT } from "./max-steps.js"
 
+// 输出 token 触顶后注入的续跑提示：要求模型不要道歉或重复，把剩余工作拆成更小的片段继续。
 const CONTINUE_AFTER_OUTPUT_LIMIT =
   "Your last response hit the output token limit (stop reason: length). Do not apologize, recap, or repeat yourself. Break the remaining work into smaller pieces."
 
@@ -65,6 +70,8 @@ const layer = Layer.effect(
     const titles = yield* FiberMap.make<SessionSchema.ID, void, never>()
 
     // Each drain is one turn and starts its own trace, whatever fiber woke it.
+    // 核心循环入口：每次 drain 代表一轮对话。先检查收件箱是否有待处理输入，再进入 while 循环逐 step 推进，
+    // 依据每一步的 Outcome（完成/重试/压缩/超限/恢复）决定结束、重试或继续下一轮。
     const drain = Effect.fn("SessionRunner.drain", { root: true })(function* (input: DrainInput) {
       const sessionID = input.sessionID
       let force = input.force
@@ -263,6 +270,8 @@ const layer = Layer.effect(
           continue
         }
         yield* compaction.precompute(Effect.succeed(loaded), estimate)
+        // 达到 agent 的最大步数后：注入 MAX_STEPS_PROMPT 并把 toolChoice 设为 none，
+        // 强制模型只用文本总结；保留工具定义不动以维持 provider 的缓存前缀。
         const stepLimitReached = loaded.agent.info.steps !== undefined && step >= loaded.agent.info.steps
         const transcript = SessionModelRequest.baseTranscript({
           agent: loaded.agent.info,
@@ -333,6 +342,9 @@ const layer = Layer.effect(
           })
           .pipe(Effect.provideService(Environment.CurrentWorkingDirectory, activeCwd))
         retryAttempt = undefined
+        // 依据单步 Outcome 决定循环走向：$match 返回 true 表示进入下一轮，false/undefined 表示本轮结束。
+        // Retry/OutputLimit/Compacted/RecoverFull 分支通过调整状态（重试次数、assistantMessageID、恢复标志）
+        // 为下一轮做准备；OutputLimit 连续两次截断则判定失败。
         const completed = yield* SessionStep.Outcome.$match(outcome, {
           Completed: Effect.fnUntraced(function* (outcome) {
             // The Session is about to go idle, which leaves the background summary time to finish.
@@ -369,6 +381,7 @@ const layer = Layer.effect(
               .limit(3)
               .all()
               .pipe(Effect.orDie)
+            // 连续三条助手消息都因 length 结束 = 已尝试两次续跑仍被截断，判定为 output-limit 失败，避免无限循环。
             const exhausted =
               recent.length === 3 && recent.every((row) => row.type === "assistant" && row.finish === "length")
             if (exhausted)

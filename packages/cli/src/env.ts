@@ -1,3 +1,7 @@
+/**
+ * 环境变量。
+ * 集中读取 CLI 使用的环境变量（密码、会话标识等）。
+ */
 import { Config } from "effect"
 
 // Every environment variable the CLI reads, in one place. Consumers yield

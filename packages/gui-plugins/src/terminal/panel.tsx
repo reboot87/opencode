@@ -1,3 +1,7 @@
+/**
+ * 终端插件 — Panel。
+ * 内嵌终端的 GUI 插件中负责 Panel 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, Match, Show, Switch, createMemo, createSignal, onCleanup, untrack } from "solid-js"
 import { Button } from "@opencode/ui/button"
 import { Tabs } from "@opencode/ui/tabs"

@@ -1,3 +1,7 @@
+/**
+ * 服务竞争者。
+ * 在多个候选本机服务之间择优（含 stderr 输出上限）。
+ */
 import { spawn, type ChildProcess } from "node:child_process"
 import type { EnsureTiming } from "./service-timing.js"
 

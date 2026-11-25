@@ -1,3 +1,7 @@
+/**
+ * 生命周期 — Configure。
+ * 桌面端窗口与应用的启动退出流程中负责 Configure 部分，提供该部分所需的实现与类型定义。
+ */
 import { randomUUID } from "node:crypto"
 import { mkdirSync, rmSync } from "node:fs"
 import { enableCompileCache } from "node:module"

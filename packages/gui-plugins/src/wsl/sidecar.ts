@@ -1,3 +1,7 @@
+/**
+ * WSL 插件 — Sidecar。
+ * Windows Subsystem for Linux 相关的 GUI 插件中负责 Sidecar 部分，提供该部分所需的实现与类型定义。
+ */
 import { spawn, type ChildProcess } from "node:child_process"
 import { randomUUID } from "node:crypto"
 import { createServer } from "node:net"

@@ -3,6 +3,8 @@
  * file the pages load or link lives under its `base`. Docs code builds its URLs from it (`docsHref`),
  * and MDX content reads it as `import.meta.env.BASE_URL` (vite.ts), as it did when the docs were their
  * own app. The sets share one stylesheet, script and fonts, under the latest docs' `_build`.
+ *
+ * V2 文档站：配置。
  */
 export type DocsSet = {
   id: "latest" | "v1"

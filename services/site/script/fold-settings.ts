@@ -115,6 +115,8 @@ export function foldSettingsForProduction(): Plugin {
  * drops imports left unused, for script/i18n-slices.ts, which reads the client's import graph to
  * find the strings each page can show; the build keeps them, as an imported module's CSS still
  * loads.
+ *
+ * 站点构建脚本：fold·设置。
  */
 export function foldModule(code: string, file: string, cards: Record<string, unknown> = {}, trimImports = false) {
   if (!file.startsWith(root + path.sep) || !/\.(ts|tsx)$/.test(file)) return

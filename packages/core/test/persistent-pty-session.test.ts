@@ -1,3 +1,10 @@
+/**
+ * 持久化·伪终端·会话的测试。
+ *
+ * 被测模块：@opencode/core/persistent-pty-session
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import path from "node:path"
 import { Effect, Fiber, Layer, Option, Stream } from "effect"

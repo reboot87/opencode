@@ -1,3 +1,7 @@
+/**
+ * 模块 — UseProviders。
+ * 该目录下的功能模块中负责 UseProviders 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Accessor } from "solid-js"
 import { useServer } from "@/runtime/server/current"
 import { useProviders } from "../../../../app/src/providers/catalog/providers"

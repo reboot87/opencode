@@ -1,3 +1,7 @@
+/**
+ * 会话输入区 — Selection。
+ * 会话界面输入区的实现中负责 Selection 部分，提供该部分所需的实现与类型定义。
+ */
 export function resolveSessionComposerSelection(
   info: { agent?: string; model?: { id: string; providerID: string; variant?: string } } | undefined,
   metadata: Record<string, unknown> | undefined,

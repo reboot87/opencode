@@ -34,7 +34,10 @@ export type SearchItem = {
   id: string
   group: SearchGroup
   title: string
-  /** Where the item lives, shown beside it: the page, the document or the release. */
+  /** Where the item lives, shown beside it: the page, the document or the release.
+ *
+ * 站点界面组件：搜索索引。
+ */
   context?: string
   /** More text to search, shown as a snippet when the query only matches here. */
   body?: string

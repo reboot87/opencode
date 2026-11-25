@@ -1,4 +1,7 @@
-/** The display sizes the stills are made for, as `sizes` values (no framework code, for the static pages' script too). */
+/** The display sizes the stills are made for, as `sizes` values (no framework code, for the static pages' script too).
+ *
+ * 站点界面组件：仍·sizes。
+ */
 export const stillSizes = {
   card: "(max-width: 40rem) 90vw, 342px",
   hero: "(min-width: 90rem) 1344px, 100vw",

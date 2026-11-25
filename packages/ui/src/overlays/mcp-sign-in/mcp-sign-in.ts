@@ -1,3 +1,7 @@
+/**
+ * MCP 登录浮层 — McpSignIn。
+ * MCP 服务器登录的浮层界面中负责 McpSignIn 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createSignal, onCleanup, onMount, untrack } from "solid-js"
 import {
   selectMcpSignInView,

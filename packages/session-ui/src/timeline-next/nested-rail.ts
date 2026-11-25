@@ -2,6 +2,8 @@
  * The line beside nested content. Its ends follow what the content shows: the top of its first
  * text, or of a card, down to the bottom of its last. Rows pad their text differently, so a fixed inset would fall short
  * on one side and run long on the other. The strip it sits in closes the row it hangs from.
+ *
+ * 嵌套轨道：处理时间线中嵌套子项（如子代理）的轨道布局。
  */
 const contents =
   '[data-component="collapsible"].tool-collapsible:not([data-rail="false"]) > [data-slot="collapsible-content"]'

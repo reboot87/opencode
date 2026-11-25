@@ -1,3 +1,8 @@
+/**
+ * JavaScript·主机脚本。
+ *
+ * Rust CLI 的代码生成器：由 TypeScript 单一来源生成 Rust 代码。
+ */
 // Bundles the JS plugin compatibility layer and the client-side Solid runtime it serves.
 import path from "node:path"
 

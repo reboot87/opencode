@@ -1,4 +1,6 @@
 //! Session goal status, commands, and progress panel.
+//!
+//! 终端插件视图：目标。
 
 use opencode_api::client::Client;
 use opencode_api::generated::{LocationQueryInput, RpcCallInput, RpcCallOutput, SessionCommandInput, V2Event};

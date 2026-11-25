@@ -8,6 +8,8 @@ import { docsHref, type DocsNavGroup } from "../lib/navigation"
  * The current section's pages, in the site's bracket list (the footer's "[ ]", "[-]" on the current
  * page). It scrolls on its own under the logo and lockup (site.css), fading at an edge while items
  * pass under it (client.ts sets data-fade-top and data-fade-bottom).
+ *
+ * 文档站组件：文档侧边栏。
  */
 export function DocsNav(props: { set: DocsSet; section: string; groups: DocsNavGroup[]; currentSlug: string }) {
   // A group named after its section ("API" in the API docs) needs no title under the lockup.

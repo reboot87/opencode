@@ -24,6 +24,8 @@ import type { V1Locale } from "./lib/v1-navigation"
 /**
  * A docs page to render: a set's content page and its module, or the API reference (no module), with
  * the page in each docs version and, on the V1 docs, its language's section and languages.
+ *
+ * V2 文档站：`document`。
  */
 export type DocsRender = {
   set: DocsSet

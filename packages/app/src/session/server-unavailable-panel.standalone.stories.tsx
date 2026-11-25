@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — ServerUnavailablePanelStandaloneStories。
+ * 会话主界面的视图与状态中负责 ServerUnavailablePanelStandaloneStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { createSignal, Show } from "solid-js"
 import { DialogStoryRuntime, STORY_LOCKED_SERVER, STORY_SERVER } from "@/components-lab/dialog-story-runtime"

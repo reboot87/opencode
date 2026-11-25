@@ -14,7 +14,10 @@ import {
 import { GlyphShape } from "./glyph"
 import { Plate } from "./plate"
 
-/** A machine-readable zone, 44 characters a line, in the passport's spirit. */
+/** A machine-readable zone, 44 characters a line, in the passport's spirit.
+ *
+ * 字体展示组件：`passports`。
+ */
 function mrz(letter: Letter, index: number) {
   const line = (text: string) =>
     text

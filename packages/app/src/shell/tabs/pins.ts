@@ -1,3 +1,7 @@
+/**
+ * 标签页 — Pins。
+ * 多标签页的打开与切换中负责 Pins 部分，提供该部分所需的实现与类型定义。
+ */
 import { Schema } from "effect"
 import { Persistence } from "@/runtime/persistence/schema"
 import { TAB_GROUP_COLORS, type TabGroupColor } from "@/shell/titlebar/tab-groups"

@@ -1,3 +1,7 @@
+/**
+ * 表单字段 — Field。
+ * 带标签与校验的表单字段容器中负责 Field 部分，提供该部分所需的实现与类型定义。
+ */
 import {
   createContext,
   createEffect,

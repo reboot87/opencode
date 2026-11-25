@@ -1,4 +1,6 @@
 //! Plugin reads backed by the local host: locale, UTC offset and terminal text measurements.
+//!
+//! 插件系统：`facts`。
 
 use opencode_plugin_abi as abi;
 use opentui::prelude::*;

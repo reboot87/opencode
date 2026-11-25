@@ -1,3 +1,7 @@
+/**
+ * Claude 模型能力判断。
+ * 根据模型版本判断是否支持 thinking block binding 等特性。
+ */
 import type { LLMRequest } from "../../schema/index.js"
 
 export const THINKING_BINDING_BETA = "thinking-binding-controls-2026-08-01"

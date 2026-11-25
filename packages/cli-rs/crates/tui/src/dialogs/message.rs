@@ -1,4 +1,6 @@
 //! Jump to, revert, copy, or fork from a user message.
+//!
+//! 终端弹窗组件：消息。
 
 use opencode_api::generated::{SessionMessageAssistantContentItem, SessionMessageID, SessionRevertStageInput};
 use opencode_ui::dialog::Dialogs;

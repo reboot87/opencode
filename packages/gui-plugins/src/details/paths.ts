@@ -1,3 +1,7 @@
+/**
+ * 详情插件 — Paths。
+ * 展示对象详细信息的 GUI 插件中负责 Paths 部分，提供该部分所需的实现与类型定义。
+ */
 import { sameDirectory } from "@opencode/util/path"
 
 /** The parts of a project that name its checkouts. */

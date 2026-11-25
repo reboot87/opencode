@@ -1,3 +1,7 @@
+/**
+ * 终端界面 — Audio。
+ * OpenCode 终端界面的整体骨架与入口中负责 Audio 部分，提供该部分所需的实现与类型定义。
+ */
 import { Audio, type AudioErrorContext, type AudioPlayOptions, type AudioSound } from "@opentui/core"
 import { readFile } from "node:fs/promises"
 

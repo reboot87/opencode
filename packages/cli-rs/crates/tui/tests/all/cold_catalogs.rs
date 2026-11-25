@@ -1,5 +1,7 @@
 //! A cold Location (AGENTS.md "Plugin Loading"): the server answers catalog reads before its plugins load, so the
 //! first lists are empty. The TUI fills them in from the `*.updated` events, without a restart.
+//!
+//! 终端界面测试：冷·catalogs。
 
 use crate::support::{self, DIRECTORY};
 

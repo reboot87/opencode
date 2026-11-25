@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — PackTest。
+ * 终端界面的测试中负责 PackTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { $ } from "bun"
 import { afterEach, describe, expect, test } from "bun:test"
 import { mkdtemp, rm } from "node:fs/promises"

@@ -1,3 +1,10 @@
+/**
+ * 图片的测试辅助模块。
+ *
+ * 被测模块：@opencode/ai/lib/image
+ *
+ * 测试用的公共辅助模块：构造请求桩、解析流式事件与断言工具。
+ */
 export const dimensions = (data: Uint8Array) => {
   if (data[0] === 0x89 && data[1] === 0x50 && data[2] === 0x4e && data[3] === 0x47)
     return {

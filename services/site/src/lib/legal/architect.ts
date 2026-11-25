@@ -12,6 +12,8 @@ import { modules } from "~/lib/font-content"
 /**
  * The square grid's module (pitch) and square size, in mm: 0.425mm squares (about 1.2pt, well above
  * the ~0.1mm a printer can hold) every 4mm, so a row or column holds 25% more of them than at 5mm.
+ *
+ * 法律文档生成逻辑：`architect`。
  */
 export const module = 4
 export const square = 0.425

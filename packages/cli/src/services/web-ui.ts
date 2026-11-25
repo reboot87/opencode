@@ -1,3 +1,7 @@
+/**
+ * Web UI 静态服务。
+ * 为浏览器提供前端静态资源与 SPA 回退。
+ */
 import { FSUtil } from "@opencode/util/fs-util"
 import { Effect, FileSystem } from "effect"
 import { HttpServerError, HttpServerRequest, HttpServerResponse } from "effect/http"

@@ -1,3 +1,7 @@
+/**
+ * 模块 — Store。
+ * 该目录下的功能模块中负责 Store 部分，提供该部分所需的实现与类型定义。
+ */
 import { Context, Effect, FileSystem, Layer, Schema, Semaphore } from "effect"
 import { existsSync, rmSync } from "node:fs"
 import path from "node:path"

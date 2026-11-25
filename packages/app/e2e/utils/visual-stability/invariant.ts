@@ -1,3 +1,7 @@
+/**
+ * 视觉稳定性工具 — Invariant。
+ * 比较界面渲染稳定性差异的辅助函数中负责 Invariant 部分，提供该部分所需的实现与类型定义。
+ */
 import type { VisualRegionDefinition } from "./regions"
 
 type RegionSet<RegionName extends string> = readonly RegionName[] | "all"

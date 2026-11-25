@@ -10,6 +10,8 @@
  * reload and error messages (and a lost connection, after which Vite reloads) from the client and
  * counts them. The preview's frames share the tab's sessionStorage, so one switch freezes them all.
  * Applying what was held is a single reload of the page, which reloads the frames with it.
+ *
+ * 站点共享逻辑：冻结。
  */
 
 export const freezeKey = "opencode-site-freeze"

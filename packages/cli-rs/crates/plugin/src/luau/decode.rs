@@ -7,6 +7,8 @@
 //! The strings it describes are borrowed from the VM ([`Decode::decode`] says when that is sound).
 
 #![allow(unsafe_code)]
+//!
+//! Luau 插件运行时：解码。
 
 use std::any::Any;
 use std::borrow::Cow;

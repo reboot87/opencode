@@ -1,3 +1,7 @@
+/**
+ * Claude Agent 指令。
+ * 为 Claude Agent 提供按用途（context/generate/compaction）区分的指令元数据。
+ */
 export * as ClaudeInstructions from "./instructions.js"
 
 import type { SystemPart } from "@opencode/ai/effect"

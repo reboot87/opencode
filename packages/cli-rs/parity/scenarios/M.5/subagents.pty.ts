@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：子智能体·伪终端。
+ *
+ * 规格编号：M.5。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Two child sessions from the history's subagent calls: the status row counts the running one; subagents always
 // run in the background, so it offers no `session.background` key. The command menu lists them; Down on the empty
 // prompt opens the subagent panel with the running child, Tab shows the finished one, and Enter inspects its

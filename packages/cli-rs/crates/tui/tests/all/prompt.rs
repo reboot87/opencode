@@ -1,4 +1,6 @@
 //! Prompt editing and submission over a request-recording transport.
+//!
+//! 终端界面测试：提示词。
 
 use crate::support::{self, Harness, WAIT, deref_harness, list};
 

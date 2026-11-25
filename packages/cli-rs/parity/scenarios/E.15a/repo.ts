@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：仓库。
+ *
+ * 规格编号：E.15a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Repository fixtures for the diff viewer (E.15a): a temporary git repository with a base commit and working-tree
 // changes, read back as the server's `FileDiffInfo` list. The patches are real `git diff` output, one chunk per file,
 // as `/api/vcs/diff` returns them.

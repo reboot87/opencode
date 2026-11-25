@@ -1,3 +1,10 @@
+/**
+ * 工具·运行时的测试辅助模块。
+ *
+ * 被测模块：@opencode/ai/lib/tool-runtime
+ *
+ * 测试用的公共辅助模块：构造请求桩、解析流式事件与断言工具。
+ */
 import { Effect, Stream } from "effect"
 import { LLMClient } from "../../src/route.js"
 import {

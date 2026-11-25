@@ -1,4 +1,6 @@
 //! Inspect, steer, undo, or delete queued prompts.
+//!
+//! 终端弹窗组件：`queued`。
 
 use opencode_ui::select::{FooterHint, Group, Select, SelectAction};
 

@@ -6,7 +6,10 @@ const columns = 64
 
 type Cells = { path: string; cells: (readonly [number, number])[]; width: number; height: number }
 let cached: Promise<Cells> | undefined
-/** The rasterised wordmark once ready, for the canvas screen (screen-canvas.ts). */
+/** The rasterised wordmark once ready, for the canvas screen (screen-canvas.ts).
+ *
+ * 街机小游戏组件：像素标识。
+ */
 export let pixelLogo: Cells | undefined
 
 /** Rasterises the wordmark once; later calls share the result. */

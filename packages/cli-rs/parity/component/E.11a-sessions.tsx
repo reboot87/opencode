@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid E11aSessions：该文件实现 E11aSessions 相关的状态与逻辑。
+ */
 // P-COMP fixtures for the session list (packages/tui/src/component/dialog-session-list.tsx) and the open
 // dialog (component/dialog-open.tsx). crates/tui/tests/all/sessions.rs mounts the Rust TUI over the same
 // responses (`E11A` below; keep both in step), hides the screen behind the dialog, sends the same keys, and

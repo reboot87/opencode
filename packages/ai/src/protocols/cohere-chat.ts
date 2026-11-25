@@ -1,3 +1,7 @@
+/**
+ * Cohere Chat 协议实现。
+ * 把请求转成 Cohere chat 端点格式，处理其响应与工具调用语义。
+ */
 import { Effect, Schema, SchemaGetter } from "effect"
 import { Route } from "../route/client.js"
 import { Endpoint } from "../route/endpoint.js"

@@ -1,4 +1,10 @@
 #!/usr/bin/env bun
+
+/**
+ * workerd·探针脚本。
+ *
+ * 服务端的开发脚本：路由生成与联调环境准备。
+ */
 /**
  * Bundle probe for the workerd profile: verifies the full module graph behind
  * src/workerd.ts resolves under the `workerd` condition without any `bun:`

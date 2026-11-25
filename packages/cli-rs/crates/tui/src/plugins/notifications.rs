@@ -1,4 +1,6 @@
 //! Notify on session completion, pending requests, and failures.
+//!
+//! 终端插件视图：`notifications`。
 
 use std::cell::RefCell;
 use std::collections::HashSet;

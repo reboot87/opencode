@@ -1,3 +1,5 @@
+//! 插件系统：`tests`。
+
 use std::cell::{Cell, RefCell};
 use std::rc::{Rc, Weak};
 use std::time::Duration;

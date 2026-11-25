@@ -1,3 +1,7 @@
+/**
+ * WSL 插件 — Model。
+ * Windows Subsystem for Linux 相关的 GUI 插件中负责 Model 部分，提供该部分所需的实现与类型定义。
+ */
 import fuzzysort from "fuzzysort"
 import type { WslInstalledDistro, WslOnlineDistro, WslOpencodeCheck, WslServersState } from "./contract"
 import {

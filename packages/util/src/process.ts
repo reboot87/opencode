@@ -1,3 +1,7 @@
+/**
+ * 子进程管理。
+ * 启动与管理工作进程，含 AppProcessError 错误与输出收集。
+ */
 import { Context, Duration, Effect, Fiber, Layer, Schema, Stream } from "effect"
 import type { PlatformError } from "effect/PlatformError"
 import { ChildProcess } from "effect/process"

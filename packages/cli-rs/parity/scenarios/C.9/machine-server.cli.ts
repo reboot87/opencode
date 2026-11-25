@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：状态机·服务端·CLI。
+ *
+ * 规格编号：C.9。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `machine` with `--server` after the subcommand, between the group and the subcommand, or before the group: it
 // talks to that server even with the background service disabled. `--standalone` is refused, as a machine needs a
 // server that keeps running.

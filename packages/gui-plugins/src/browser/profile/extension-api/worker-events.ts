@@ -1,3 +1,7 @@
+/**
+ * 浏览器扩展 API — WorkerEvents。
+ * 浏览器插件暴露给扩展的接口中负责 WorkerEvents 部分，提供该部分所需的实现与类型定义。
+ */
 import { once } from "node:events"
 import type { ServiceWorkerMain, Session, WebContents } from "electron"
 import { eventPage } from "./event-page"

@@ -1,4 +1,6 @@
 //! Parses the command table and selects a handler, built-in action or usage error.
+//!
+//! 命令行入口：解析。
 
 use std::collections::HashMap;
 

@@ -1,3 +1,7 @@
+/**
+ * 媒体输入转换工具。
+ * 把 Media Asset 转成 provider 需要的输入形式。
+ */
 import { Effect } from "effect"
 import { Base64 } from "effect/encoding"
 import { Media } from "../../media.js"

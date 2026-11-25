@@ -1,3 +1,7 @@
+/**
+ * 环境定义。
+ * 定义环境的品牌 ID 与 Schema（名称、镜像、变量、挂载等）。
+ */
 import { CrossSpawnSpawner } from "@opencode/util/cross-spawn-spawner"
 import { makeLocationNode } from "@opencode/util/effect/app-node"
 import { Global } from "@opencode/util/global"

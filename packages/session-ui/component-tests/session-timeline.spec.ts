@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — SessionTimelineSpec。
+ * 会话界面组件的测试中负责 SessionTimelineSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, story } from "../../stories/playwright/story"
 
 story("spaces an error between a shell result and expanded updates", async ({ mount }) => {

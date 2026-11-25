@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：事件·app。
+ *
+ * 规格编号：E.1。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Server-driven events (T10, T11): `tui.toast.show` and `tui.command.execute` for the current location, one
 // for another location that is ignored, `tui.session.select` opens a session, and `session.deleted` of the open
 // session goes home with a toast.

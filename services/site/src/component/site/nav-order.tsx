@@ -18,6 +18,8 @@ import {
  * it. Every known item renders (hidden ones only show in Design mode, dimmed), so the nav renders
  * the saved list once the settings load; before that, the pre-paint script writes navConfigRules
  * (flex `order`, visibility, numbers and labels) so a saved list shows on first paint.
+ *
+ * 站点界面组件：导航顺序。
  */
 
 import { navFlags } from "./nav-config"

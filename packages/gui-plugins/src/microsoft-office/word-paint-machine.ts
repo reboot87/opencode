@@ -1,4 +1,7 @@
-/** How long one page paint may take, its wait behind other pages included, before the page shows its notice. */
+/**
+ * 
+ * How long one page paint may take, its wait behind other pages included, before the page shows its notice. Office 插件中负责 WordPaintMachine 部分：Office 文档预览中与 WordPaintMachine 相关的状态、交互与渲染逻辑。
+ */
 export const WORD_PAINT_TIMEOUT_MS = 30_000
 
 /** One page's paint at one scale and pixel ratio. */

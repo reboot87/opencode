@@ -1,4 +1,6 @@
 //! Animate the Go logo with a shimmer and expanding rings.
+//!
+//! 终端弹窗组件：go·upsell·art。
 
 use std::cell::OnceCell;
 use std::f64::consts::PI;

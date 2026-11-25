@@ -1,3 +1,7 @@
+/**
+ * 声明 — Notices。
+ * 第三方声明与开源许可中负责 Notices 部分，提供该部分所需的实现与类型定义。
+ */
 import apache from "./apache-2.0.txt?raw"
 import betterOfficeNotice from "./betteroffice-notice.txt?raw"
 import { crates, crateTexts } from "./crates"

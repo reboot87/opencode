@@ -14,6 +14,8 @@ let marked: ((id: string | undefined) => void) | undefined
  * section being read, the rail keeps it in view and the phone bar draws its lines once pinned. The
  * bar opens as a dropdown that a choice, a tap outside or Escape closes, as ContentsMenu does.
  * `onMark` hears each section marked.
+ *
+ * 站点界面组件：内容探针。
  */
 export function startContents(onMark?: (id: string | undefined) => void) {
   marked = onMark

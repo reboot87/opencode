@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — Spinner。
+ * 跨场景复用的通用 UI 组件中负责 Spinner 部分，提供该部分所需的实现与类型定义。
+ */
 import { splitProps, type ComponentProps, type JSX } from "solid-js"
 
 // Every AI activity spinner (busy session tabs, the activity chip, subagents, tool cards) shows Soft Radar. Non-AI

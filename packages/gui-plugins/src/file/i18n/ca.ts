@@ -1,3 +1,7 @@
+/**
+ * 文件文案 — Ca。
+ * 文件插件的多语言文案中负责 Ca 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "tree.all": "Tots els fitxers",
   "tab.notFound": "No s'ha trobat el fitxer: {{name}}",

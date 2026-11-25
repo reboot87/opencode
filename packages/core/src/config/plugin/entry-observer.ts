@@ -1,3 +1,7 @@
+/**
+ * 配置条目观察器。
+ * 观察配置条目变化并刷新，供依赖配置的插件订阅。
+ */
 export * as ConfigEntryObserver from "./entry-observer.js"
 
 import type { EventDomain } from "@opencode/plugin/effect/event"

@@ -1,3 +1,10 @@
+/**
+ * 模型的测试。
+ *
+ * 被测模块：@opencode/core/modal/models
+ *
+ * 覆盖模态对话框的打开、聚焦与关闭流程。
+ */
 import { expect, test } from "bun:test"
 import { ModalModels } from "@opencode/core/modal/models"
 import { Effect } from "effect"

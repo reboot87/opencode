@@ -2,6 +2,8 @@
  * A hovered generated avatar's animation. It runs once per frame, so it never allocates: every state and transition is
  * a frozen module singleton, events are reused by the driver, and the continuous time lives in an `AvatarClock` that
  * only `transitionAvatarAnimation` writes.
+ *
+ * 项目头像的动画状态机：管理头像的入场与切换动效。
  */
 
 // The animation starts once the pointer rests on the avatar's row, so passing over a list does no drawing.

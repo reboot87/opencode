@@ -1,3 +1,7 @@
+/**
+ * 本地存储 — StoreTest。
+ * 桌面端配置的本地持久化中负责 StoreTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { existsSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs"
 import { tmpdir } from "node:os"

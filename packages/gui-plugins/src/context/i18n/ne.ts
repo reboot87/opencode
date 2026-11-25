@@ -1,3 +1,7 @@
+/**
+ * 上下文文案 — Ne。
+ * GUI 上下文的多语言文案中负责 Ne 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "tab.title": "सन्दर्भ",
   "mobile.title": "प्रयोग",

@@ -1,3 +1,7 @@
+/**
+ * 组件实验室 — CatalogTest。
+ * 用于试用与调试 UI 组件的页面中负责 CatalogTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { choice, knob, text, toggle } from "knobs"
 import { knobArgs, labEntry, labFields, stateArgs } from "./catalog"

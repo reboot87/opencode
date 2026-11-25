@@ -1,3 +1,7 @@
+/**
+ * 策略配置类型。
+ * 定义 policy 配置项的 Schema。
+ */
 export * as ConfigPolicy from "./policy.js"
 
 import { Schema, SchemaGetter } from "effect"

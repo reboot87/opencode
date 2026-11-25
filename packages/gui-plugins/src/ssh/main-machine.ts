@@ -1,3 +1,7 @@
+/**
+ * SSH 插件 — MainMachine。
+ * 远程主机管理的 GUI 插件中负责 MainMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SshConfig, SshError, SshHttp, SshItem, SshPrompt, SshStart } from "./contract"
 
 /** Failures in a row after which main stops reconnecting a saved server by itself. */

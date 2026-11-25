@@ -1,3 +1,7 @@
+/**
+ * 更新插件 — WhatsNew。
+ * 应用更新提示的 GUI 插件中负责 WhatsNew 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, Index, Show } from "solid-js"
 import { Effect, Option, Predicate, Schema } from "effect"
 import { Button } from "@opencode/ui/button"

@@ -1,3 +1,10 @@
+/**
+ * 目标的测试。
+ *
+ * 被测模块：@opencode/core/plugin/goal
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { describe, expect } from "bun:test"
 import { Deferred, Effect, Layer, Option, Schedule, Schema, Stream } from "effect"
 import { AIError, InvalidRequestError, LanguageModel, type LLMRequest } from "@opencode/ai/effect"

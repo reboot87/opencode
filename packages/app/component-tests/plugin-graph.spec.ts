@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — PluginGraphSpec。
+ * 应用界面组件的测试中负责 PluginGraphSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, sourceURL, story } from "../../stories/playwright/story"
 import type { Entry } from "@opencode/plugin/gui/host"
 

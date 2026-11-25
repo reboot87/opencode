@@ -1,3 +1,7 @@
+/**
+ * 终端插件 — TerminalFixture。
+ * 内嵌终端的 GUI 插件中负责 TerminalFixture 部分，提供该部分所需的实现与类型定义。
+ */
 import { OpenCode } from "@opencode/client/promise"
 import { ThemeProvider } from "@opencode/ui/theme/context"
 import { createSignal } from "solid-js"

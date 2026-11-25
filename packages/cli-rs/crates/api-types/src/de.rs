@@ -1,4 +1,6 @@
 //! Serde helpers the generated types use.
+//!
+//! API 类型定义：`de`。
 
 use std::borrow::Cow;
 use std::fmt;

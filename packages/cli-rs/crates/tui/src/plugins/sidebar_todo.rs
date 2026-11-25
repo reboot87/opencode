@@ -1,4 +1,6 @@
 //! Show the most recent completed todo list before the revert boundary.
+//!
+//! 终端插件视图：侧边栏待办。
 
 use opencode_api::generated::{SessionMessageAssistantContentItem, SessionMessageAssistantToolState};
 use opencode_plugin::abi::v2::{Node, Place, Surface};

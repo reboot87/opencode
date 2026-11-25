@@ -1,3 +1,5 @@
+//! 命令行入口测试：解析。
+
 use crate::args::{Command, LogLevel, McpCommand, ServerFlags, SessionCommand, Shell};
 use crate::parse::{self, Invocation, Outcome};
 

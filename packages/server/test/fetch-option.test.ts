@@ -1,3 +1,10 @@
+/**
+ * 抓取·选项的测试。
+ *
+ * 被测模块：@opencode/server/fetch-option
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import { Location } from "@opencode/core/location"
 import { LocationServiceMap } from "@opencode/core/location-service-map"

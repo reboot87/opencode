@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：基准·app。
+ *
+ * 规格编号：E.15b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The base branch dialog (F15, DLG46 and DLG47) on the full-screen route: `d` opens the diff source dialog, whose
 // "Base" row names the reported base; it opens the branch picker over the repository's branches, with the reported
 // base marked. Choosing a branch loads the diff against it, and the source dialog then names the chosen base.

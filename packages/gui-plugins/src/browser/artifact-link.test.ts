@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — ArtifactLinkTest。
+ * 内置浏览器功能的 GUI 插件中负责 ArtifactLinkTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { artifactAddress, artifactLink, artifactResource, artifactWebURL } from "./artifact-link"
 import { createHandlePath } from "./disk"

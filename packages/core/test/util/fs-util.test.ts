@@ -1,3 +1,10 @@
+/**
+ * fs·工具函数的测试。
+ *
+ * 被测模块：@opencode/core/util/fs-util
+ *
+ * 覆盖通用工具函数的行为与边界。
+ */
 import path from "path"
 import { describe, expect } from "bun:test"
 import { Effect, FileSystem, Layer, PlatformError } from "effect"

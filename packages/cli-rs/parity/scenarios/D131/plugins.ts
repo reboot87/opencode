@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：插件。
+ *
+ * 规格编号：D131。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `/plugins` with more server plugins than the list has rows for (`plugins.pty.ts`).
 import type { PtyCase } from "../../pty/run"
 

@@ -1,3 +1,7 @@
+/**
+ * 服务端 API 装配。
+ * 把 protocol 包的各 API 分组组合为完整的服务端 API。
+ */
 import { makeDefaultApi } from "@opencode/protocol/api"
 import { LocationMiddleware } from "./location"
 import { FormLocationMiddleware } from "./middleware/form-location"

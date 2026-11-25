@@ -1,4 +1,6 @@
 //! Concurrent writers use the same state files; a reader checks that intermediate contents remain valid.
+//!
+//! 本地配置与路径：共享文件。
 
 use std::collections::HashSet;
 use std::io::{BufRead, BufReader, Read, Write};

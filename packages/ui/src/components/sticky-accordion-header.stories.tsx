@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — StickyAccordionHeaderStories。
+ * 跨场景复用的通用 UI 组件中负责 StickyAccordionHeaderStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal } from "solid-js"
 import { Accordion } from "@opencode/ui/accordion"
 import { StickyAccordionHeader } from "./sticky-accordion-header"

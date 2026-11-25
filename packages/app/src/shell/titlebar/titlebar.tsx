@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — Titlebar。
+ * 自定义窗口标题栏中负责 Titlebar 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, Match, on, onCleanup, Show, Switch, untrack } from "solid-js"
 import { Portal } from "solid-js/web"
 import { useLocation } from "@solidjs/router"

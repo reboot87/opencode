@@ -1,3 +1,7 @@
+/**
+ * UI 上下文 — Runtime。
+ * UI 包的上下文提供者中负责 Runtime 部分，提供该部分所需的实现与类型定义。
+ */
 import { createComponent, createContext, type JSX, useContext } from "solid-js"
 
 export type TuiHighlight = Readonly<{

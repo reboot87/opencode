@@ -1,3 +1,7 @@
+/**
+ * 工作区文件 — Artifact。
+ * 工作区内文件浏览界面中负责 Artifact 部分，提供该部分所需的实现与类型定义。
+ */
 import { artifactKind, artifactMime, type ArtifactKind } from "@opencode/util/artifact"
 import type { FileContent } from "@opencode/plugin/gui"
 

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：冷·目录清单·伪终端。
+ *
+ * 规格编号：M.4。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A cold Location (AGENTS.md "Plugin Loading"): the catalogs answer empty until the plugins load, here once a
 // prompt was sent. The `*.updated` events that follow fill in the status row's model and provider names and the
 // server's `/` commands, without a restart.

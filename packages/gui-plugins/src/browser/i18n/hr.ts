@@ -1,3 +1,7 @@
+/**
+ * 浏览器文案 — Hr。
+ * 浏览器插件的多语言文案中负责 Hr 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.open": "Otvori preglednik",
   "command.reload": "Ponovno učitaj stranicu preglednika",

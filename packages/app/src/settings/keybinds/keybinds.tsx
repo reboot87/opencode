@@ -1,3 +1,7 @@
+/**
+ * 快捷键设置 — Keybinds。
+ * 快捷键绑定与冲突处理中负责 Keybinds 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, Show, createEffect, createMemo, createSignal, onCleanup, untrack } from "solid-js"
 import { createStore } from "solid-js/store"
 import { makeEventListener } from "@solid-primitives/event-listener"

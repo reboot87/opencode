@@ -1,3 +1,7 @@
+/**
+ * 本地存储 — WriteBehindTest。
+ * 桌面端配置的本地持久化中负责 WriteBehindTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, beforeEach, describe, expect, jest, test } from "bun:test"
 import { createWriteBehind } from "./write-behind"
 

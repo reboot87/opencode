@@ -1,3 +1,7 @@
+/**
+ * UI 构建脚本 — LayoutAudit。
+ * 前端 UI 包的构建与生成脚本中负责 LayoutAudit 部分，提供该部分所需的实现与类型定义。
+ */
 import { mkdir } from "node:fs/promises"
 import { dirname, resolve } from "node:path"
 import {

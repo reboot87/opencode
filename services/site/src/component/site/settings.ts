@@ -196,6 +196,8 @@ export type NavItemId = (typeof navDefaults)[number]["id"]
 /**
  * One item of the nav list: a known item by id, or a custom link (an id starting "custom-", with its
  * own label and href). `removed` keeps a deleted item's place so Design mode can add it back.
+ *
+ * 站点界面组件：设置。
  */
 export type NavEntry = { id: string; visible: boolean; label?: string; href?: string; removed?: boolean }
 

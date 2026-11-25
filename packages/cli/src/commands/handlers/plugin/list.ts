@@ -1,3 +1,7 @@
+/**
+ * plugin list 命令。
+ * 列出已安装插件。
+ */
 import { EOL } from "node:os"
 import path from "node:path"
 import { Effect } from "effect"

@@ -1,4 +1,6 @@
 //! Verify focus requested before a plugin field's first view.
+//!
+//! 终端界面测试：插件待处理聚焦。
 
 use crate::support::{self, Harness};
 

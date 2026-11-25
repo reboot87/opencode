@@ -1,3 +1,6 @@
+/**
+ * 更新日志路由：索引。
+ */
 import { Link, Meta, Title } from "@solidjs/meta"
 import { useSearchParams } from "@solidjs/router"
 import { Show, Suspense } from "solid-js"

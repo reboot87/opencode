@@ -1,3 +1,7 @@
+/**
+ * 桌面端主进程 — IpcTransport。
+ * Electron 主进程的核心逻辑中负责 IpcTransport 部分，提供该部分所需的实现与类型定义。
+ */
 import type { MessagePortMain, WebContents } from "electron"
 import { Context, Effect, Layer, Option, Queue, Schema, Stream } from "effect"
 import { RpcMessage, RpcServer } from "effect/rpc"

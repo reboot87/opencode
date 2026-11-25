@@ -1,4 +1,7 @@
-/** SolidStart's route manifest: one entry per route file, with its path (for example `/changelog/:tag`). */
+/** SolidStart's route manifest: one entry per route file, with its path (for example `/changelog/:tag`).
+ *
+ * 站点入口：SolidJS·启动路由·d。
+ */
 declare module "solid-start:routes" {
   const routes: { path: string; page?: boolean }[]
   export default routes

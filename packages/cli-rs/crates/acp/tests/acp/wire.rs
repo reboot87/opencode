@@ -1,4 +1,6 @@
 //! In-process ACP client and server connected by in-memory pipes.
+//!
+//! ACP 协议测试：`wire`。
 
 use std::collections::HashMap;
 use std::sync::atomic::{AtomicBool, AtomicU64, Ordering};

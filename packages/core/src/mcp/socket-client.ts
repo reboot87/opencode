@@ -1,3 +1,7 @@
+/**
+ * MCP Socket 传输。
+ * 把通用 Socket 适配为 MCP Transport 接口。
+ */
 export * as McpSocketClient from "./socket-client.js"
 
 import { deserializeMessage, type JSONRPCMessage, type Transport } from "@modelcontextprotocol/client"

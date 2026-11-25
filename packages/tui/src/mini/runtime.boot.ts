@@ -1,3 +1,7 @@
+/**
+ * Mini 精简界面 — RuntimeBoot。
+ * 精简交互模式（mini）的界面与交互中负责 RuntimeBoot 部分，提供该部分所需的实现与类型定义。
+ */
 // Boot-time resolution for direct interactive mode.
 //
 // These functions run concurrently at startup to gather everything the runtime

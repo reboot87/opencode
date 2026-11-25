@@ -1,3 +1,7 @@
+/**
+ * Claude 工具命名。
+ * 定义 MCP 工具名前缀与短名提取规则。
+ */
 export * as ToolNames from "./names.js"
 
 import { createHash } from "node:crypto"

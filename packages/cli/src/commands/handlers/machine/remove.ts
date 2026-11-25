@@ -1,3 +1,7 @@
+/**
+ * machine remove 命令。
+ * 从已知列表移除远程机器。
+ */
 import { Effect } from "effect"
 import { EOL } from "node:os"
 import { Commands } from "../../commands"

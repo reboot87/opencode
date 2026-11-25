@@ -1,4 +1,6 @@
 //! Home route, prompt and footer.
+//!
+//! 终端界面路由：主目录。
 
 use opencode_ui::theme::tint;
 

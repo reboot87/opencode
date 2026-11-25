@@ -1,3 +1,7 @@
+/**
+ * 终端 UI — OneCellMotion。
+ * 终端界面的通用 UI 组件中负责 OneCellMotion 部分，提供该部分所需的实现与类型定义。
+ */
 import { octantGlyph } from "./subcell"
 import type { Config } from "../config"
 

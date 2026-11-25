@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：拷贝·伪终端。
+ *
+ * 规格编号：E.20。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Copy-on-select (T13, CB01): a mouse drag over text typed into the home prompt copies it, and the terminal
 // receives the text as OSC 52 (`clipboard.ts:53-61`). The sandbox has no display, so the host clipboard is
 // unavailable on both sides and OSC 52 is the only destination; the real clipboard is never written. The mouse

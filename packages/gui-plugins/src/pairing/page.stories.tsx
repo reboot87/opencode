@@ -1,3 +1,7 @@
+/**
+ * 配对插件 — PageStories。
+ * 设备配对流程的 GUI 插件中负责 PageStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, Show } from "solid-js"
 import { PairingHost, pairingRemote, pairingResponses } from "../../../stories/mocks/gui-plugins/pairing"
 import type { MainStatus } from "./machine"

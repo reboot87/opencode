@@ -1,3 +1,7 @@
+/**
+ * 配置服务（Config）。
+ * 全局配置读取与解析服务：latest() 取最新值、Options Schema 定义配置项形状。
+ */
 export * as Config from "./config.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

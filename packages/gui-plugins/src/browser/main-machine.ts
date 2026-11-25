@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — MainMachine。
+ * 内置浏览器功能的 GUI 插件中负责 MainMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // The main-process pane, loaded when a window first registers one. Each load takes the next attempt number, so a
 // load that failed returns to `unloaded` and the next register tries again, and a load the plugin's cleanup overtook
 // never hands out its pane.

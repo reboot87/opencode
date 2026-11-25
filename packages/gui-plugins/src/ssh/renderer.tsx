@@ -1,3 +1,7 @@
+/**
+ * SSH 插件 — Renderer。
+ * 远程主机管理的 GUI 插件中负责 Renderer 部分，提供该部分所需的实现与类型定义。
+ */
 import { showToast } from "@opencode/ui/toast"
 import { createMemo, createRoot, createSignal, lazy, on, onCleanup, Suspense, untrack, type JSX } from "solid-js"
 import { Command, createKeyed, MenuItem, Server, Style, type ServerEntry, type Plugin } from "@opencode/plugin/gui"

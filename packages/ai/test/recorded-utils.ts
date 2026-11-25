@@ -1,3 +1,10 @@
+/**
+ * 录制的·工具函数的测试辅助模块。
+ *
+ * 被测模块：@opencode/ai/recorded-utils
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 export const kebab = (value: string) =>
   value
     .trim()

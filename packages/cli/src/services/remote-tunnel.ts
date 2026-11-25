@@ -1,3 +1,7 @@
+/**
+ * 远程隧道。
+ * 为远程访问建立隧道并透传致命错误。
+ */
 export * as RemoteTunnel from "./remote-tunnel"
 
 import type { OpenTunnelError } from "@opentunnel/client/effect"

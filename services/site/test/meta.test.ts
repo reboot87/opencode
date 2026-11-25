@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：`meta`。
+ */
 import { describe, expect, test } from "bun:test"
 import { metaResponse } from "../src/lib/meta"
 

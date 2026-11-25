@@ -1,3 +1,10 @@
+/**
+ * AI SDK的测试。
+ *
+ * 被测模块：@opencode/core/aisdk
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { APICallError } from "@ai-sdk/provider"
 import type { LanguageModelV3, LanguageModelV3StreamPart } from "@ai-sdk/provider"
 import { createOpenAICompatible } from "@ai-sdk/openai-compatible"

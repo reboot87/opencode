@@ -1,3 +1,7 @@
+/**
+ * Provider 插件集合。
+ * 汇总并导出所有内置的 provider 插件。
+ */
 import { AmazonBedrockPlugin } from "./provider/amazon-bedrock.js"
 import { AzurePlugin } from "./provider/azure.js"
 import { CerebrasPlugin } from "./provider/cerebras.js"

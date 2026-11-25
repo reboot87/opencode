@@ -1,4 +1,6 @@
 //! Derive the terminal ANSI palette and default colors from the session theme.
+//!
+//! 终端界面：调色板。
 
 use opencode_ui::theme::{Theme, ThemeMode};
 use opentui::style::Color;

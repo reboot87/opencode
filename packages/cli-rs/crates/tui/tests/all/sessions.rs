@@ -1,4 +1,6 @@
 //! Session list and open-dialog navigation.
+//!
+//! 终端界面测试：会话。
 
 use crate::support::{self, Fake, Harness, Log, WAIT, deref_harness};
 

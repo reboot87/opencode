@@ -1,3 +1,7 @@
+/**
+ * MCP 资源工具。
+ * 读取 MCP 服务器暴露资源的工具，带权限校验。
+ */
 export * as McpResourceTools from "./mcp-resource.js"
 
 import { ToolFailure } from "@opencode/ai/effect"

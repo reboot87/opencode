@@ -1,3 +1,7 @@
+/**
+ * 插件宿主接口。
+ * 定义插件宿主向插件暴露的目标（Target）与入口点（Entrypoints）。
+ */
 export * as Host from "./host.js"
 
 import { existsSync, readFileSync } from "node:fs"

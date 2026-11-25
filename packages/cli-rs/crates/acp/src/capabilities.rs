@@ -1,3 +1,5 @@
+//! ACP 协议实现：能力。
+
 use serde_json::Value;
 
 pub const CHILD_SESSION_UPDATES: &str = "opencode/child-session-updates";

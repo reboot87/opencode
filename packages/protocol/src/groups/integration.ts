@@ -1,3 +1,7 @@
+/**
+ * 集成 API 分组。
+ * 定义外部集成的列举、连接与授权端点。
+ */
 import { Integration } from "@opencode/schema/integration"
 import { Location } from "@opencode/schema/location"
 import { Form } from "@opencode/schema/form"

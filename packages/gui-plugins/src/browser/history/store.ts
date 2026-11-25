@@ -1,3 +1,7 @@
+/**
+ * 浏览器历史 — Store。
+ * 浏览器插件的访问历史中负责 Store 部分，提供该部分所需的实现与类型定义。
+ */
 import { mkdirSync } from "node:fs"
 import { rm } from "node:fs/promises"
 import path from "node:path"

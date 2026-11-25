@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — InboxBranchMachine。
+ * 自定义窗口标题栏中负责 InboxBranchMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // Branch lookups each run git on the server, so load them a few at a time.
 export const BRANCH_BATCH = 4
 

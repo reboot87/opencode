@@ -1,3 +1,7 @@
+/**
+ * GUI 模块导出。
+ * 集中导出 GUI 插件的核心类型。
+ */
 export * from "./core.js"
 
 export * from "./registries.js"

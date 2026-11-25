@@ -1,3 +1,6 @@
+/**
+ * 语音转写客户端服务：继承 MediaClient，定义转写所需的 Service 类型。
+ */
 import { Context } from "effect"
 import { MediaClient } from "./media-client.js"
 import type { TranscriptionEvent, TranscriptionRequest, TranscriptionResponse } from "./transcription.js"

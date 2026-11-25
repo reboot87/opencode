@@ -1,3 +1,7 @@
+/**
+ * CLI 终端测试 — MountBudgetTest。
+ * CLI 与终端界面协作的测试中负责 MountBudgetTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { groupID } from "../../../src/routes/session/anchors"
 import type { GroupKind, SessionEntry, SessionRow } from "../../../src/routes/session/grouping/session"

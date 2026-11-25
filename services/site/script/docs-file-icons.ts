@@ -1,3 +1,6 @@
+/**
+ * 站点构建脚本：文档文件·icons。
+ */
 // Writes src/component/site/docs-file-icons.ts: the file-type icons the docs use, cut from the
 // desktop app's sprite (@opencode/ui), so the site bundles a dozen icons instead of 1,089.
 // The names come from the shared mapping (chooseIconName) applied to every code block title and

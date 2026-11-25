@@ -10,6 +10,8 @@ import { providerLogo } from "~/lib/providers"
  * - No Anthropic or Gemini subscription log-in is listed (Google takes an API key).
  * - The model providers: the makers of the models in OpenCode Models and Go, from the live /zen and
  *   /console/go pages. The section shows no Anthropic mark, so Anthropic is left out of this row.
+ *
+ * 站点共享逻辑：自带订阅。
  */
 export const byos = {
   title: "Bring your own subscription",

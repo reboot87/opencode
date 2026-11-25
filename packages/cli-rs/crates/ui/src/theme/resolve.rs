@@ -4,6 +4,8 @@
 //! `base` merged under the selected mode (`mergeTheme`), and `expandTheme` fills its missing derived tokens from the
 //! same definition. A token is the topmost definition's; on a raised surface each action state falls back as
 //! `contextualize` does.
+//!
+//! 主题解析与应用：解析。
 
 use std::collections::HashMap;
 

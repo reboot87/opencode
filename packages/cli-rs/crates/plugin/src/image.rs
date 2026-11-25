@@ -2,6 +2,8 @@
 //! to the mount that requested it.
 
 #![allow(unsafe_code)]
+//!
+//! 插件系统：图片。
 
 use std::cell::RefCell;
 use std::collections::HashMap;

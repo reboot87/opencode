@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：无·回放·伪终端。
+ *
+ * 规格编号：M.1。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `mini -s ses_mini --no-replay`: the terminal is still cleared for the resumed session, but its history is not
 // written again.
 import { definePty } from "../../pty/run"

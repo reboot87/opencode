@@ -2,6 +2,8 @@
 //! routing the next event in the batch, so a mode change affects the next key.
 //!
 //! A mount owns its layers, mode, pointer capture, held keys and overlays. Setup layers live until deactivation.
+//!
+//! 插件 ABI 边界：`interact`。
 
 use std::rc::Rc;
 

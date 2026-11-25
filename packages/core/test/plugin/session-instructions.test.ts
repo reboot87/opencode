@@ -1,3 +1,10 @@
+/**
+ * 会话·指令的测试。
+ *
+ * 被测模块：@opencode/core/plugin/session-instructions
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { expect } from "bun:test"
 import { Bus } from "@opencode/core/bus"
 import { Database } from "@opencode/core/database/database"

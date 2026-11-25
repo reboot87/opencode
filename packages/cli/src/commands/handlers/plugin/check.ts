@@ -1,3 +1,7 @@
+/**
+ * plugin check 命令。
+ * 检查插件安装状态。
+ */
 import { EOL } from "node:os"
 import { Effect, Option } from "effect"
 import { Commands } from "../../commands"

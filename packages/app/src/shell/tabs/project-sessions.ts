@@ -1,3 +1,7 @@
+/**
+ * 标签页 — ProjectSessions。
+ * 多标签页的打开与切换中负责 ProjectSessions 部分，提供该部分所需的实现与类型定义。
+ */
 import { startTransition } from "solid-js"
 import type { SessionInfo } from "@opencode/client/promise"
 import { useGlobal, type ServerCtx } from "@/runtime/server/runtime"

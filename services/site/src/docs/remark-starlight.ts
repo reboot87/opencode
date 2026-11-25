@@ -105,6 +105,8 @@ function tabbed(node: MdxJsxFlowElement, id: string) {
  * English. They go to the page in the reader's language. Their anchors are English too, which
  * render.tsx moves to the heading in the same place on that page.
  * Images under the app's assets are in /v1/docs/assets.
+ *
+ * V2 文档站：备注·starlight。
  */
 export function remarkStarlightLinks(options: { slug: string }) {
   const { locale } = v1Page(options.slug)

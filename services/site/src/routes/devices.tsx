@@ -1,3 +1,6 @@
+/**
+ * 页面路由：`devices`。
+ */
 import { Meta, Title } from "@solidjs/meta"
 import { createSignal, For } from "solid-js"
 

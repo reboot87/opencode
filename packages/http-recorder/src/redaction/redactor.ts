@@ -1,3 +1,7 @@
+/**
+ * 模块 — Redactor。
+ * 该目录下的功能模块中负责 Redactor 部分，提供该部分所需的实现与类型定义。
+ */
 import { Option, Schema } from "effect"
 import type { RequestSnapshot, ResponseSnapshot } from "../http/model.js"
 import type { RedactOptions } from "../options.js"

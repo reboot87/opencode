@@ -1,4 +1,6 @@
 //! Restore or delete stashed prompts.
+//!
+//! 终端弹窗组件：贮藏。
 
 use opencode_ui::select::{Select, SelectAction};
 use opencode_util::time::Zone;

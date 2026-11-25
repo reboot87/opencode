@@ -1,3 +1,7 @@
+/**
+ * UI 主题（v2） — DefaultPrimitives。
+ * 第二版设计令牌定义中负责 DefaultPrimitives 部分，提供该部分所需的实现与类型定义。
+ */
 import type { V2ColorValue } from "../types"
 
 /** Default v2 hue ramps from `v2/styles/colors.css` (OC-2). Alpha ramps live in CSS only. */

@@ -1,4 +1,8 @@
-/** Where an open disclosure's body is: shown at once, waiting for a frame, or mounted after one. */
+/**
+ * Where an open disclosure's body is: shown at once, waiting for a frame, or mounted after one.
+ *
+ * 展开收起的状态机：管理折叠区域的展开状态。
+ */
 export type DisclosureMount =
   | { readonly phase: "immediate" }
   | { readonly phase: "scheduled"; readonly attempt: number }

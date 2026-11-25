@@ -1,3 +1,7 @@
+/**
+ * 已保存权限类型。
+ * 定义持久化权限规则的结构。
+ */
 export * as PermissionSaved from "./permission-saved.js"
 
 import { Schema } from "effect"

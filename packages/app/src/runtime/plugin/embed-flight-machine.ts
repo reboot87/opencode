@@ -1,4 +1,8 @@
-/** How long the shown view's layout must settle before its first still. */
+/**
+ * How long the shown view's layout must settle before its first still.
+ *
+ * 插件运行时中负责 EmbedFlightMachine 部分：浏览器端插件运行时中与 EmbedFlightMachine 相关的状态、交互与渲染逻辑。
+ */
 export const STILL_SETTLE_DELAY_MS = 600
 
 /** The wait before the next still after one that changed, failed or timed out. */

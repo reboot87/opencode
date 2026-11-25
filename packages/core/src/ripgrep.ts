@@ -1,3 +1,7 @@
+/**
+ * ripgrep 集成。
+ * 调用 ripgrep 做内容搜索，处理错误输出截断、子匹配上限与单行长度限制。
+ */
 export * as Ripgrep from "./ripgrep.js"
 
 import { Context, Effect, Fiber, Layer, Schema, Stream } from "effect"

@@ -1,5 +1,7 @@
 //! Drains ready plugins in round-robin order within the frame budget. Multiple wakes for one activation mark it
 //! ready only once.
+//!
+//! 插件系统：调度。
 
 use std::cell::RefCell;
 use std::collections::HashMap;

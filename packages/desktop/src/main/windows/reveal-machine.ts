@@ -1,4 +1,8 @@
-/** How long a hidden window waits for its content and theme before it shows anyway. */
+/**
+ * How long a hidden window waits for its content and theme before it shows anyway.
+ *
+ * 窗口显示的状态机：管理窗口显示、隐藏与聚焦。
+ */
 export const REVEAL_TIMEOUT_MS = 3_000
 
 export type RevealReason = "ready" | "timeout" | "recovery"

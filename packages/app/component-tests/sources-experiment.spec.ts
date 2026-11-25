@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — SourcesExperimentSpec。
+ * 应用界面组件的测试中负责 SourcesExperimentSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageInfo } from "@opencode/client/promise"
 import type { MotionKnob } from "@opencode/ui/motion-tuning"
 import { expect, sourceURL, story } from "../../stories/playwright/story"

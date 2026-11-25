@@ -16,7 +16,10 @@ import { changelogEntry } from "~/lib/changelog"
 import { entryStatus } from "~/lib/changelog-notes"
 import { PageTitle } from "~/component/site/sticky-title"
 
-/** One release's page, `/changelog/<tag>`: the entry in full, with Share, and the newer and older entries. */
+/** One release's page, `/changelog/<tag>`: the entry in full, with Share, and the newer and older entries.
+ *
+ * 更新日志路由：`[tag]`。
+ */
 export default function ChangelogRelease() {
   const i18n = useI18n()
   const language = useLanguage()

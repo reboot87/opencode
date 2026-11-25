@@ -1,3 +1,7 @@
+/**
+ * Claude SDK 加载。
+ * 惰性加载 Claude Agent SDK 模块。
+ */
 export * as ClaudeSDK from "./sdk.js"
 
 import type * as SDK from "@anthropic-ai/claude-agent-sdk"

@@ -1,3 +1,7 @@
+/**
+ * 模块 — ZoomMachine。
+ * 该目录下的功能模块中负责 ZoomMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { DesktopZoomLevel } from "@opencode/app/desktop-menu"
 
 const MAX_ZOOM_LEVEL = 10

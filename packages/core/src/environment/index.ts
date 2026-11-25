@@ -1,3 +1,7 @@
+/**
+ * 环境模块统一导出。
+ * 集中导出环境相关类型与服务。
+ */
 export * as Environment from "./index.js"
 
 export { type Driver, EnvironmentDriver } from "./driver.js"

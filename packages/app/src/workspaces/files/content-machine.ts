@@ -1,3 +1,7 @@
+/**
+ * 工作区文件 — ContentMachine。
+ * 工作区内文件浏览界面中负责 ContentMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { FileContent } from "@opencode/plugin/gui"
 import { getFilename } from "@opencode/util/path"
 import type { FileState } from "./types"

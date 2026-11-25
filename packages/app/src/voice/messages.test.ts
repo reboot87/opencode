@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — MessagesTest。
+ * 实时语音会话的界面中负责 MessagesTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import type { SessionMessageInfo } from "@opencode/client/promise"
 import { messageExcerpts } from "./messages"

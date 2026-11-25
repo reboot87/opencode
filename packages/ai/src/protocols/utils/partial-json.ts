@@ -1,3 +1,7 @@
+/**
+ * 部分 JSON（增量）解析器。
+ * 在流式响应中逐步解析可能被截断的 JSON 工具参数。
+ */
 /*
  * Adapted from partial-json by the Promplate Dev Team:
  * https://github.com/promplate/partial-json-parser-js

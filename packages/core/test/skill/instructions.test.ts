@@ -1,3 +1,10 @@
+/**
+ * 指令的测试。
+ *
+ * 被测模块：@opencode/core/skill/instructions
+ *
+ * 覆盖技能的发现、加载与调用。
+ */
 import path from "path"
 import { describe, expect } from "bun:test"
 import { Effect, Layer } from "effect"

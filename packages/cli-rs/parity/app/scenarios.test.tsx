@@ -1,3 +1,8 @@
+/**
+ * 应用级对等性校验：场景。
+ *
+ * 应用级场景的对等性校验入口。
+ */
 // P-APP, TypeScript side (docs/testing.md): records every parity/scenarios/*/*.app.ts through the whole TS TUI in
 // createAppFixture. Writes parity/fixtures/<step>/<name>.app.json and one cell file per checkpoint.
 // `PARITY_SCENARIO=<step>/<name>` selects one scenario.

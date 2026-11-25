@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — FileCommentSelection。
+ * 跨场景复用的通用 UI 组件中负责 FileCommentSelection 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SelectedLineRange } from "@pierre/diffs"
 import { createMemo, createSignal, onCleanup, Show, untrack } from "solid-js"
 import { Portal } from "solid-js/web"

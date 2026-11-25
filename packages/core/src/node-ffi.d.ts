@@ -1,3 +1,7 @@
+/**
+ * Node FFI 的类型声明。
+ * 声明通过 node-ffi 调用原生库（如 kernel32.dll）的 dlopen 与整数读取接口。
+ */
 declare module "node:ffi" {
   type Signature = {
     readonly arguments?: readonly string[]

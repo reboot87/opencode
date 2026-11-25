@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid DiffViewerFileTree：该文件实现 DiffViewerFileTree 相关的状态与逻辑。
+ */
 import { MouseButton, TextAttributes, type MouseEvent, type ScrollBoxRenderable } from "@opentui/core"
 import { useRenderer } from "@opentui/solid"
 import { truncateFilePath } from "../../ui/file-path"

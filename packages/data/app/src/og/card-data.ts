@@ -1,3 +1,7 @@
+/**
+ * 数据站图像 — CardData。
+ * 生成社交分享图像中负责 CardData 部分，提供该部分所需的实现与类型定义。
+ */
 import { statModel } from "@opencode/data-core/domain/model-normalization"
 import { formatTokens, fromFirstUsage } from "../lib/format"
 import { baseUrl } from "../lib/language"

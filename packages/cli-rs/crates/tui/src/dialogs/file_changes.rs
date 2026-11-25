@@ -1,4 +1,6 @@
 //! Worktree changes and the actions available for them.
+//!
+//! 终端弹窗组件：文件·changes。
 
 use opencode_api::generated::{FileDiffInfoStatus, VcsFileStatus};
 use opencode_ui::dialog::{DIALOG_INSET, FooterAction, FooterProps, layout};

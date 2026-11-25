@@ -1,3 +1,7 @@
+/**
+ * 终端插件支持 — Builtins。
+ * 终端界面的插件加载与扩展点中负责 Builtins 部分，提供该部分所需的实现与类型定义。
+ */
 import HomeFooter from "../feature-plugins/home/footer"
 import PromptBtw from "../feature-plugins/prompt/btw"
 import PromptFooter from "../feature-plugins/prompt/footer"

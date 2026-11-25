@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：失败·app。
+ *
+ * 规格编号：E.15a。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The diff viewer's narrow and failed states (F15): at 80 columns the panel cannot split, so `/diff` shows it full
 // screen in the compact layout with its close footer; `diffs.source` "working" skips the base lookup, and a failed
 // diff says so. `escape` closes it.

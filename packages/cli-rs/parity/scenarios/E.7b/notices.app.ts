@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：提示·app。
+ *
+ * 规格编号：E.7b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The completion notices of background work: a shell, a subagent, and Code Mode scripts (#64741) drawn like
 // background shells, "↳ Script finished · <job id>", with "failed" and "cancelled" in their feedback colors.
 import { defineApp, session } from "../../lib/app"

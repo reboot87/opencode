@@ -1,3 +1,7 @@
+/**
+ * 设置界面 — Rename。
+ * 应用设置页面的框架中负责 Rename 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, onCleanup, untrack } from "solid-js"
 import {
   INITIAL_INLINE_RENAME_STATE,

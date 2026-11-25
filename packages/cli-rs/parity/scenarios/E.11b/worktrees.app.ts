@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：工作树·app。
+ *
+ * 规格编号：E.11b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `/worktrees` on home (P16, P17, DLG26, DLG27): the worktrees dialog lists the project's checkouts, the first
 // delete press marks a worktree and a move clears the mark, `ctrl+a` names a new worktree, and Enter stages it
 // for the first submit, which the footer shows as "(new worktree)".

@@ -1,3 +1,6 @@
+/**
+ * 浏览器端脚本：条目。
+ */
 // The static pages' only script (src/static/render.tsx). The pages are plain HTML rendered from the
 // site's components, with no hydration; this drives them with listeners delegated from the document,
 // keyed on the attributes those components render, and loads the rest on intent: search, the Markdown

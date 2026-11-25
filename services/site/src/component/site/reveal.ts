@@ -10,6 +10,8 @@ import type { logoAnimations, SiteSettings } from "./settings"
  * container the timing and each style's variables; an item can set its own `--logo-delay`. While
  * the container has `data-armed`, items without a state wait unseen. No framework code, so the
  * static pages' script uses it too (src/client/islands/home.ts); use-wash.ts is the app's wash.
+ *
+ * 站点界面组件：`reveal`。
  */
 
 /**

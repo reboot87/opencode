@@ -1,4 +1,6 @@
 //! JavaScript semantics the TypeScript client relies on: `localeCompare` ordering and `Number` conversions.
+//!
+//! API 类型定义：JavaScript。
 
 use std::cmp::Ordering;
 

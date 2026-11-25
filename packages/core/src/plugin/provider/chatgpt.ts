@@ -1,3 +1,7 @@
+/**
+ * ChatGPT provider 插件。
+ * 支持通过 ChatGPT 订阅登录并调用 OpenAI 模型，含动态客户端注册与上下文上限处理。
+ */
 import type { IntegrationOAuthMethodRegistration } from "@opencode/plugin/effect/integration"
 import type { Context } from "@opencode/plugin/effect/plugin"
 import { define } from "@opencode/plugin/effect/plugin"

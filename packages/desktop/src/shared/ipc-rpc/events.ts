@@ -1,3 +1,7 @@
+/**
+ * IPC RPC — Events。
+ * 基于 IPC 的远程调用协议定义中负责 Events 部分，提供该部分所需的实现与类型定义。
+ */
 import { desktopZoomLevels } from "@opencode/app/desktop-menu"
 import { Schema } from "effect"
 import { Rpc, RpcGroup } from "effect/rpc"

@@ -1,4 +1,6 @@
 //! Compares session target resolution, preparation and outgoing requests to recorded results.
+//!
+//! 存储层测试：目标·oracle。
 
 use crate::common;
 

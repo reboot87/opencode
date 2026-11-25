@@ -1,3 +1,7 @@
+/**
+ * 运行时服务端连接 — Current。
+ * 浏览器端与服务端的连接与同步中负责 Current 部分，提供该部分所需的实现与类型定义。
+ */
 import { Show, type JSX, type ParentProps } from "solid-js"
 import { createSimpleContext } from "@opencode/ui/context"
 import { ServerConnection } from "./registry"

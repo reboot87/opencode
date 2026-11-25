@@ -1,4 +1,6 @@
 //! The prompt terminal on Unix: termios raw mode, `TIOCGWINSZ` sizes, and `poll` and `read` on stdin.
+//!
+//! CLI 交互提示：`unix`。
 
 use std::os::fd::{AsFd, BorrowedFd};
 use std::sync::atomic::Ordering;

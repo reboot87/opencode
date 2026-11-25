@@ -1,3 +1,7 @@
+/**
+ * Shell 配置插件。
+ * 把配置中的 shell 选择应用到 ShellSelect 服务。
+ */
 export * as ConfigShellPlugin from "./shell.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

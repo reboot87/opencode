@@ -17,6 +17,8 @@ const error = "public, max-age=1, s-maxage=60, stale-while-revalidate=600, stale
 /**
  * The changelog as RSS 2.0, from the same releases as /changelog.json: the newest 30 entries, each
  * linking to its page, with its notes as HTML. `?area=desktop,terminal` filters it like the page.
+ *
+ * 页面路由：更新日志·xml。
  */
 export async function GET(event: APIEvent) {
   const query = new URL(event.request.url).searchParams

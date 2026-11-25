@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid FooterViewTest：该文件实现 FooterViewTest 相关的状态与逻辑。
+ */
 import { afterAll, expect, test } from "bun:test"
 import {
   BoxRenderable,

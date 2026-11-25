@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — TransportTest。
+ * 实时语音会话的界面中负责 TransportTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, beforeEach, expect, jest, test } from "bun:test"
 import type { OpenCodeClient } from "@opencode/client/promise"
 import { CLOSE_TIMEOUT, DISCONNECT_GRACE, JOIN_TIMEOUT } from "./transport-machine"

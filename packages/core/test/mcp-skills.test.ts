@@ -1,3 +1,10 @@
+/**
+ * MCP·技能的测试。
+ *
+ * 被测模块：@opencode/core/mcp-skills
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import { McpServer, WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/server"
 import { skillEntry, SkillsExtension, type Skill as ServedSkill } from "@modelcontextprotocol/server/ext/skills"

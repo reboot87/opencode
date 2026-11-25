@@ -1,7 +1,10 @@
 // Where the current docs live: the V2 docs (src/docs), which this app serves under /docs.
 export const docsBase = "/docs"
 
-/** The V1 docs, which this app also serves (src/docs), for example `v1DocsUrl("/ide/")`. */
+/** The V1 docs, which this app also serves (src/docs), for example `v1DocsUrl("/ide/")`.
+ *
+ * 站点共享逻辑：文档。
+ */
 export function v1DocsUrl(path = "") {
   return `/v1/docs${path}`
 }

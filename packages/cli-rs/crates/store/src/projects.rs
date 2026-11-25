@@ -1,4 +1,6 @@
 //! Adopts sessions into their project when `worktree.resolved` supplies the repository root.
+//!
+//! 会话存储层：`projects`。
 use std::collections::HashSet;
 
 use opencode_api::generated::*;

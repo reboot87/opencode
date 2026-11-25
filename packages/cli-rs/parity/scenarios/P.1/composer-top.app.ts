@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：输入框·上·app。
+ *
+ * 规格编号：P.1。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The session.composer.top slot (P.1, E.13b): the test plugin's line shows under the queued dock and above the
 // prompt, and stays above the composer when Down opens it and the dock hides. TS loads the plugin from
 // parity/plugins/slot as a local plugin; Rust registers its twin when OPENCODE_PARITY_PLUGIN is `slot`.

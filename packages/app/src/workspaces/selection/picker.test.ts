@@ -1,3 +1,7 @@
+/**
+ * 工作区选择 — PickerTest。
+ * 工作区切换与选择中负责 PickerTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { directoryPickerKind } from "./policy"
 

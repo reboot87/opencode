@@ -2,6 +2,8 @@
 //! did, except the streaming deltas, which nothing keeps: a delta that no listener wants, and whose strings have no
 //! escape, it only checks, through a view that borrows its strings. The store decodes that view again where it applies
 //! it, which allocates nothing.
+//!
+//! 会话存储层：`payload`。
 
 use std::borrow::Cow;
 use std::sync::Arc;

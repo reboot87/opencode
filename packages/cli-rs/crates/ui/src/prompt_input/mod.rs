@@ -1,3 +1,5 @@
+//! 基础 UI 组件库入口。
+
 pub mod attach;
 pub mod editor;
 pub mod parse;

@@ -133,7 +133,10 @@ const THRESHOLD = 6
 // How far past a neighbour's midpoint (in drawing units) the dragged letter goes before it gives way.
 const HYSTERESIS = 3
 
-/** The entrance's timing in ms at `speed`: each letter's, the gap between letters, and the whole. */
+/** The entrance's timing in ms at `speed`: each letter's, the gap between letters, and the whole.
+ *
+ * 站点界面组件：`wordmark`。
+ */
 export function wordmarkTiming(speed: number) {
   const letter = ENTRANCE.letter / speed
   const stagger = ENTRANCE.stagger / speed

@@ -1,3 +1,7 @@
+/**
+ * 仓库解析。
+ * 把远端/文件引用解析为具体的仓库与提交信息。
+ */
 import path from "path"
 import { fileURLToPath } from "url"
 import { Schema } from "effect"

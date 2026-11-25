@@ -11,6 +11,8 @@ let mounted: Promise<unknown> | undefined
  * Opens the press gallery's lightbox (media-gallery.tsx) on a product's media, rendered at the end of
  * the gallery as the hydrated page does, from the media the server wrote for it. Closing gives focus
  * back to the thumbnail that opened it.
+ *
+ * 客户端交互岛：媒体中心·lightbox。
  */
 export function show(gallery: HTMLElement, state: Open) {
   mounted ??= mount(() => {

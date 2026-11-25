@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：窄·伪终端。
+ *
+ * 规格编号：C.3。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `stats --year 2020` on a 50-column terminal with a dark COLORFGBG: the calendar clips to the latest 46
 // weeks. Colors do not show in the screen text; the C.3 oracle compares the escapes.
 import { definePty } from "../../pty/run"

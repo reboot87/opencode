@@ -9,7 +9,10 @@ export type ExtensionSlug = "browse"
 type Extension = {
   slug: ExtensionSlug
   name: string
-  /** One line for the /product list. */
+  /** One line for the /product list.
+ *
+ * 站点界面组件：扩展·data。
+ */
   body: string
   /** The page's `<title>`, 50–60 characters. */
   title: string

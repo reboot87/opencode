@@ -1,3 +1,7 @@
+/**
+ * 项目头像 — ProceduralMachine。
+ * 项目标识头像组件中负责 ProceduralMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // Project icon styles from machines and mathematics: retro computing and plotted or generated curves. See procedural.ts
 // for the contract.
 

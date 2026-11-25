@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — HoverCard。
+ * 跨场景复用的通用 UI 组件中负责 HoverCard 部分，提供该部分所需的实现与类型定义。
+ */
 import { HoverCard as Kobalte } from "@kobalte/core/hover-card"
 import { ComponentProps, JSXElement, ParentProps, splitProps } from "solid-js"
 

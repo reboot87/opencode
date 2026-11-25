@@ -1,3 +1,7 @@
+/**
+ * Cartesia 语音合成协议。
+ * 支持字节流与 SSE 两种 TTS 传输。
+ */
 import { Effect, Schema } from "effect"
 import { classifyProviderFailure } from "../provider-error.js"
 import { Framing } from "../route/framing.js"

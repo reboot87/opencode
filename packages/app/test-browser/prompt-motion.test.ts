@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — PromptMotionTest。
+ * 浏览器环境下的测试中负责 PromptMotionTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { promptMotionIssues } from "../e2e/utils/prompt-motion"
 

@@ -1,4 +1,6 @@
 //! Transcript Markdown with syntax-theme styles for markup spans.
+//!
+//! 基础 UI 组件库：Markdown。
 
 use std::rc::Rc;
 use std::sync::Arc;

@@ -1,3 +1,7 @@
+/**
+ * 开关配置类型。
+ * 定义 feature flag 配置项的 Schema。
+ */
 export * as ConfigFlag from "./flag.js"
 
 /** The `OPENCODE_FLAGS` entry that enables all flags except opt-in-only flags, as in `all,-media_blob`. */

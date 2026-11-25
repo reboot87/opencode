@@ -1,3 +1,7 @@
+/**
+ * service stop 命令。
+ * 停止后台服务。
+ */
 import { Effect } from "effect"
 import { Service } from "@opencode/client/effect/service"
 import { Commands } from "../../commands"

@@ -1,3 +1,7 @@
+/**
+ * 生成服务入口。
+ * 统一的多模态生成入口：文本、图片、视频等输入类型与调用封装。
+ */
 export * as Generate from "./generate.js"
 
 import {

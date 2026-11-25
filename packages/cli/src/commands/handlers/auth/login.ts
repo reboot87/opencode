@@ -1,3 +1,7 @@
+/**
+ * auth login 命令。
+ * 执行集成登录流程，按优先级选择可用的登录方式。
+ */
 import { intro, log, outro, select, spinner, text } from "@clack/prompts"
 import { Effect, Option } from "effect"
 import type { FormAnswer, IntegrationInfo, OpenCodeClient } from "@opencode/client"

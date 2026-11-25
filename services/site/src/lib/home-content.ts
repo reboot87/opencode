@@ -9,7 +9,10 @@ import type { RichText } from "~/lib/markdown"
 // Product order rule: whenever copy lists the products, name them in this order: desktop, terminal,
 // mobile, SDK (the order of `products` in component/site/product-data.ts).
 
-/** Splits copy into text and links wherever one of the phrases appears, in any letter case. */
+/** Splits copy into text and links wherever one of the phrases appears, in any letter case.
+ *
+ * 站点共享逻辑：主目录内容。
+ */
 export function linkPhrases(text: string, links: readonly { text: string; href: string }[]): RichText {
   const lower = text.toLowerCase()
   // The phrase that appears first, so text before it is never skipped.

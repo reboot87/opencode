@@ -1,3 +1,7 @@
+/**
+ * GUI 上下文 — Export。
+ * GUI 插件的上下文与状态中负责 Export 部分，提供该部分所需的实现与类型定义。
+ */
 import type { OpenCodeClient, SessionInfo, SessionMessageInfo } from "@opencode/client/promise"
 
 export type SessionExportData = {

@@ -1,3 +1,7 @@
+/**
+ * Provider 连接 — FormMachineTest。
+ * 连接 provider 的授权界面中负责 FormMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { FormField } from "@opencode/client/promise"
 import {

@@ -1,4 +1,6 @@
 //! Deliver notification sounds through the TUI to the test audio engine.
+//!
+//! 终端界面测试：`attention`。
 
 use std::sync::Arc;
 use std::time::Duration;

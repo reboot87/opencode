@@ -1,3 +1,7 @@
+/**
+ * 运行时持久化 — PersistTest。
+ * 浏览器端配置的本地持久化中负责 PersistTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { PersistenceSyncAPI, PersistenceSyncCallback, SyncStorage } from "@solid-primitives/storage"
 import { createRoot } from "solid-js"

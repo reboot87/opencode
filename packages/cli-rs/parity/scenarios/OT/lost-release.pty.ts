@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：lost·发布·伪终端。
+ *
+ * 规格编号：OT。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A drag over the prompt text whose release never comes, then a new press, drag and release over "text". The press
 // ends the old drag, the new gesture selects and copies "text", and `Z` replaces it (OpenTUI #2065, on both sides
 // since 0.9.4).

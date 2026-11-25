@@ -1,3 +1,7 @@
+/**
+ * OpenAI 兼容 provider 门面。
+ * 用通用 chat 协议快速构造任意兼容端点的 provider，提供模型工厂与鉴权。
+ */
 import {
   mergeTransport,
   mergeProviderOptions,

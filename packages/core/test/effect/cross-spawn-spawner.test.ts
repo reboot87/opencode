@@ -1,3 +1,10 @@
+/**
+ * cross·派生·派生器的测试。
+ *
+ * 被测模块：@opencode/core/effect/cross-spawn-spawner
+ *
+ * 覆盖 Effect 运行时的分层节点、作用域与资源释放行为。
+ */
 import { describe, expect } from "bun:test"
 import fs from "node:fs/promises"
 import os from "node:os"

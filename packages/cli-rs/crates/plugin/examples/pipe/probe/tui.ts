@@ -1,3 +1,8 @@
+/**
+ * 管道示例：TUI。
+ *
+ * 管道示例：演示插件管道各阶段的串联方式。
+ */
 // Writes one JSON line per plugin call to the configured log, independent of the host's observations.
 
 import { appendFileSync, existsSync, readFileSync, writeSync } from "node:fs"

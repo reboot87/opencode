@@ -1,4 +1,6 @@
 //! Resolves built-in, custom and terminal themes to semantic tokens.
+//!
+//! 主题解析与应用入口。
 
 mod catalog;
 mod color;

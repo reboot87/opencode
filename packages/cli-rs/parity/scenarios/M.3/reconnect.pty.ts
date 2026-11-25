@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：reconnect·伪终端。
+ *
+ * 规格编号：M.3。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A permission waits when mini opens the session. The event stream drops while another client answers it, so
 // no `permission.replied` arrives: the reconnect lists the requests again and the composer comes back.
 import { DROP, type Logged } from "../../lib/fake-server"

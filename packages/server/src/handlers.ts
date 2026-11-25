@@ -1,3 +1,7 @@
+/**
+ * 处理器汇总。
+ * 汇总所有 API 分组的处理层。
+ */
 import { Layer } from "effect"
 import { GenerateHandler } from "./handlers/generate"
 import { VoiceHandler } from "./handlers/voice"

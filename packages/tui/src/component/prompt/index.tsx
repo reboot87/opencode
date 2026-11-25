@@ -1,3 +1,7 @@
+/**
+ * 提示区组件 — Index 出口。
+ * 集中导出 提示区组件 中 Index 相关的实现、组件与类型。
+ */
 import {
   BoxRenderable,
   RGBA,

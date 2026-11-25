@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — TextField。
+ * 跨场景复用的通用 UI 组件中负责 TextField 部分，提供该部分所需的实现与类型定义。
+ */
 import { TextField as Kobalte } from "@kobalte/core/text-field"
 import { createSignal, onCleanup, Show, splitProps, untrack } from "solid-js"
 import type { ComponentProps } from "solid-js"

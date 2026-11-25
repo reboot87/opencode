@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — FocusRingSpec。
+ * 应用界面组件的测试中负责 FocusRingSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, story } from "../../stories/playwright/story"
 
 story("returns focus to a menu trigger without a ring after a pointer open", async ({ mount, page }) => {

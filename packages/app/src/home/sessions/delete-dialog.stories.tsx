@@ -1,3 +1,7 @@
+/**
+ * 主页会话 — DeleteDialogStories。
+ * 主页中会话列表的展示中负责 DeleteDialogStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { useDialog } from "@opencode/ui/context/dialog"
 import { Dialog, DialogFooter, DialogHeader, DialogTitleGroup } from "@opencode/ui/dialog"

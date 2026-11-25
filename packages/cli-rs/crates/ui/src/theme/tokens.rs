@@ -1,4 +1,6 @@
 //! Semantic tokens for one resolved theme view.
+//!
+//! 主题解析与应用：令牌。
 
 use opentui::style::Color;
 

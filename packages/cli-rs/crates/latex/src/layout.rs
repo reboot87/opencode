@@ -1,4 +1,6 @@
 //! Terminal-cell layout for parsed TeX formulas.
+//!
+//! LaTeX 公式渲染：布局。
 
 use unicode_segmentation::UnicodeSegmentation;
 

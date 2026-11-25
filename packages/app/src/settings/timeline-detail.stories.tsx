@@ -1,3 +1,7 @@
+/**
+ * 设置界面 — TimelineDetailStories。
+ * 应用设置页面的框架中负责 TimelineDetailStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Show } from "solid-js"
 import { createStore } from "solid-js/store"
 import { Button } from "@opencode/ui/button"

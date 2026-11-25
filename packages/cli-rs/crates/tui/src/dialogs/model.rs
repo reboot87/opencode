@@ -1,4 +1,6 @@
 //! Model selection, favorites, and usage alerts.
+//!
+//! 终端弹窗组件：模型。
 
 use opencode_api::generated::{ModelInfo, ModelInfoStatus, ProviderInfo};
 use opencode_api::js::locale_compare;

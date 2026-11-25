@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — Permission。
+ * 会话主界面的视图与状态中负责 Permission 部分，提供该部分所需的实现与类型定义。
+ */
 import { createStore } from "solid-js/store"
 import { createMemo, For, Match, Show, Switch } from "solid-js"
 import { Portal, useRenderer, useTerminalDimensions, type JSX } from "@opentui/solid"

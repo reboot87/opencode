@@ -1,4 +1,6 @@
 //! Preview themes while browsing; persist the choice only on Enter.
+//!
+//! 终端弹窗组件：主题列表。
 
 use opencode_ui::select::{Select, select};
 

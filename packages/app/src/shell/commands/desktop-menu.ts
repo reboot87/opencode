@@ -1,3 +1,7 @@
+/**
+ * 外壳命令 — DesktopMenu。
+ * 应用外壳提供的命令中负责 DesktopMenu 部分，提供该部分所需的实现与类型定义。
+ */
 import type { DesktopNativeKey } from "@/runtime/i18n/desktop-native"
 
 export type DesktopMenuPlatform = "macos" | "windows"

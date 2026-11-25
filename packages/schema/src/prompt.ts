@@ -1,3 +1,7 @@
+/**
+ * 提示词类型。
+ * 定义提示词请求与渲染结果结构。
+ */
 import { Schema } from "effect"
 import { optional } from "./schema.js"
 import { statics } from "./schema.js"

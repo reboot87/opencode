@@ -1,3 +1,8 @@
+/**
+ * ACP 对等性校验：运行。
+ *
+ * ACP 协议的对等性校验：比对会话握手与消息流转。
+ */
 // P-WIRE: runs each ACP subprocess suite of `packages/cli/test/acp` against the TS agent and
 // against `opencode-native acp`, records every agent's JSON-RPC traffic, and compares the transcripts.
 //

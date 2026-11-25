@@ -1,3 +1,7 @@
+/**
+ * 文件差异类型。
+ * 定义文件行级差异的结构（新增/删除/修改）。
+ */
 export * as FileDiff from "./file-diff.js"
 
 import { Schema } from "effect"

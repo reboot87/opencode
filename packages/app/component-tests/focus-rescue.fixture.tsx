@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — FocusRescueFixture。
+ * 应用界面组件的测试中负责 FocusRescueFixture 部分，提供该部分所需的实现与类型定义。
+ */
 import { installFocusRescue } from "@opencode/ui/context/focus-rescue"
 
 /** Scopes whose buttons remove themselves when pressed, all but the opener. */

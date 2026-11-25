@@ -1,3 +1,7 @@
+/**
+ * SSH 插件 — AddMachineTest。
+ * 远程主机管理的 GUI 插件中负责 AddMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { initialSshAdd, transitionSshAdd, type SshAddEffect, type SshAddEvent, type SshAddState } from "./add-machine"
 

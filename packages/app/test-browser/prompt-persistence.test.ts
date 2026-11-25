@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — PromptPersistenceTest。
+ * 浏览器环境下的测试中负责 PromptPersistenceTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { AsyncStorage } from "@solid-primitives/storage"
 import { createEffect, createRoot } from "solid-js"

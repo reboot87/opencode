@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：漏斗。
+ */
 import { describe, expect, test } from "bun:test"
 import { fileURLToPath } from "node:url"
 import type { Element, Root } from "hast"

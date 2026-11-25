@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：提示词·typing·app。
+ *
+ * 规格编号：E.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The session prompt (P01, P15): its border and metadata row, then a two-line prompt typed through the
 // input.* layer (Shift+Enter inserts the newline).
 import { assistant, defineApp, session, user } from "../../lib/app"

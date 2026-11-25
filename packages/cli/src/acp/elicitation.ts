@@ -1,3 +1,7 @@
+/**
+ * ACP 征询。
+ * 把 ACP 的问题/表单征询转换为 OpenCode 的交互请求。
+ */
 import type {
   CreateElicitationResponse,
   ElicitationPropertySchema,

@@ -1,3 +1,7 @@
+/**
+ * Promise 媒体解析。
+ * 解析服务端返回的媒体 URI 能力声明与内联媒体。
+ */
 import type { make, RequestOptions } from "./client.js"
 import type { MessageListInput, SessionInboxListInput, SessionMessageGetInput } from "./generated/types.js"
 

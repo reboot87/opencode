@@ -1,4 +1,6 @@
 //! Home, session, and plugin route views.
+//!
+//! 终端界面路由入口。
 
 pub mod home;
 pub mod location_missing;

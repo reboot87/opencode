@@ -1,3 +1,7 @@
+/**
+ * 终端 UI — DialogSelect。
+ * 终端界面的通用 UI 组件中负责 DialogSelect 部分，提供该部分所需的实现与类型定义。
+ */
 import { CliRenderEvents, InputRenderable, RGBA, ScrollBoxRenderable, TextAttributes } from "@opentui/core"
 import { Keymap, type KeymapCommand } from "../context/keymap"
 import { useTheme } from "../context/theme"

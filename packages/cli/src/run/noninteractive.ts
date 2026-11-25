@@ -1,3 +1,7 @@
+/**
+ * 非交互运行。
+ * 一次性执行提示并处理权限询问、问题征询等交互（以自动应答方式）。
+ */
 import {
   ClientError,
   type EventSubscribeOutput,

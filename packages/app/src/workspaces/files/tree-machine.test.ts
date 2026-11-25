@@ -1,3 +1,7 @@
+/**
+ * 工作区文件 — TreeMachineTest。
+ * 工作区内文件浏览界面中负责 TreeMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { FileNode } from "@/runtime/server/types"
 import {

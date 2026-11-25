@@ -1,3 +1,7 @@
+/**
+ * 设置界面 — Pages。
+ * 应用设置页面的框架中负责 Pages 部分，提供该部分所需的实现与类型定义。
+ */
 import type { IconProps } from "@opencode/ui/icon"
 import type { useLanguage } from "@/runtime/i18n/language"
 import type { SettingsRootTab } from "./surface"

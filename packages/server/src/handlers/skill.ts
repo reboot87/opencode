@@ -1,3 +1,7 @@
+/**
+ * skill 接口处理器。
+ * 技能接口处理器：技能列举。
+ */
 import { Skill } from "@opencode/core/skill"
 import { FileNotFoundError, SkillLoadError, SkillNotFoundError } from "@opencode/protocol/errors"
 import { Effect } from "effect"

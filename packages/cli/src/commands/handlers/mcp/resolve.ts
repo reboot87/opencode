@@ -1,3 +1,7 @@
+/**
+ * MCP 集成解析。
+ * 把 MCP 服务器解析到对应的集成。
+ */
 import { Effect } from "effect"
 import type { OpenCodeClient } from "@opencode/client"
 

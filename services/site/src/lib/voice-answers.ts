@@ -10,7 +10,10 @@ import { installs } from "~/lib/install-commands"
 export type VoiceLink = { label: string; href: string }
 export type VoiceAnswer = {
   id: string
-  /** Ways people ask it. Matching compares the question's words with these. */
+  /** Ways people ask it. Matching compares the question's words with these.
+ *
+ * 站点共享逻辑：语音回答。
+ */
   asks: string[]
   /** Words that point strongly at this answer. */
   keys: string[]

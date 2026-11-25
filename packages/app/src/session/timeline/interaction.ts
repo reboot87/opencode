@@ -1,3 +1,7 @@
+/**
+ * 会话时间线 — Interaction。
+ * 会话消息时间线的渲染中负责 Interaction 部分，提供该部分所需的实现与类型定义。
+ */
 import { createResizeObserver } from "@solid-primitives/resize-observer"
 import { useLocation } from "@solidjs/router"
 import { createEffect, createMemo, createSignal, on, onCleanup, untrack, type Accessor } from "solid-js"

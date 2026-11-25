@@ -1,3 +1,7 @@
+/**
+ * 终端 UI — SelectController。
+ * 终端界面的通用 UI 组件中负责 SelectController 部分，提供该部分所需的实现与类型定义。
+ */
 export function reconcileSelection(selected: number, count: number) {
   return Math.max(0, Math.min(count - 1, selected))
 }

@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — Effect。
+ * 终端界面的测试中负责 Effect 部分，提供该部分所需的实现与类型定义。
+ */
 import { test } from "bun:test"
 import { Cause, Effect, Exit, Layer } from "effect"
 import type { Scope } from "effect/Scope"

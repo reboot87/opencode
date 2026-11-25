@@ -1,3 +1,6 @@
+/**
+ * V2 文档站：客户端。
+ */
 // The docs pages' only script. Pages are plain HTML rendered from the site's components (no
 // hydration); this drives them with listeners delegated from the document, keyed on the attributes
 // those components render: the theme switch, copy buttons, heading links, tabs, the section lockup's

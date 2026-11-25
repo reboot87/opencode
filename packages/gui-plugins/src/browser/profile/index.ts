@@ -1,3 +1,7 @@
+/**
+ * 浏览器配置 — Index 出口。
+ * 集中导出 浏览器配置 中 Index 相关的实现、组件与类型。
+ */
 import { cp, lstat, readFile, realpath, rename, rm, stat } from "node:fs/promises"
 import { generateKeyPairSync } from "node:crypto"
 import { tmpdir } from "node:os"

@@ -1,4 +1,6 @@
 //! Dispatch store signals to the TUI, then subscribers in registration order.
+//!
+//! 终端界面功能模块：事件。
 
 use std::sync::Arc;
 

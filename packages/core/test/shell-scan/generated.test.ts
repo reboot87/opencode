@@ -1,3 +1,10 @@
+/**
+ * generated的测试。
+ *
+ * 被测模块：@opencode/core/shell-scan/generated
+ *
+ * 覆盖 Shell 命令扫描：危险模式识别与允许列表匹配。
+ */
 import { describe, expect, test } from "bun:test"
 import { ShellScan } from "../../src/shell/scan.js"
 

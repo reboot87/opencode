@@ -1,3 +1,8 @@
+/**
+ * standalone·owner测试夹具。
+ *
+ * 为 CLI 测试提供配置文件与工作区样例。
+ */
 import { Effect } from "effect"
 import { Service } from "@opencode/client/effect/service"
 import path from "node:path"

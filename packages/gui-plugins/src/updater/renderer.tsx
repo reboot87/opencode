@@ -1,3 +1,7 @@
+/**
+ * 更新插件 — Renderer。
+ * 应用更新提示的 GUI 插件中负责 Renderer 部分，提供该部分所需的实现与类型定义。
+ */
 import { showToast } from "@opencode/ui/toast"
 import { createSignal, lazy, onCleanup, Suspense, untrack } from "solid-js"
 import { Command, createKeyed, SettingsPage, TitlebarItem, type SetupContext, type Plugin } from "@opencode/plugin/gui"

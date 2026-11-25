@@ -1,3 +1,7 @@
+/**
+ * 文件插件 — Mobile。
+ * 文件预览与操作的 GUI 插件中负责 Mobile 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, For } from "solid-js"
 import { Button } from "@opencode/ui/button"
 import { Tabs } from "@opencode/ui/tabs"

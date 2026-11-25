@@ -1,3 +1,7 @@
+/**
+ * 桌面端主进程 — IpcMachineTest。
+ * Electron 主进程的核心逻辑中负责 IpcMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   createIpcTransportState,

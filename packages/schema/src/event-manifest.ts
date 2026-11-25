@@ -1,3 +1,7 @@
+/**
+ * 事件清单。
+ * 集中声明所有事件的元数据（类型、负载、持久化属性）。
+ */
 export * as EventManifest from "./event-manifest.js"
 
 import { Schema } from "effect"

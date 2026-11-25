@@ -1,3 +1,7 @@
+/**
+ * Tavily 搜索插件。
+ * 直接调用 Tavily 的 REST 搜索接口。
+ */
 export * as WebSearchTavily from "./tavily.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

@@ -1,3 +1,7 @@
+/**
+ * 后台任务服务（Job）。
+ * 管理可恢复的后台任务：排队、执行、取消与恢复（Recovery），支持阻塞式父子任务。
+ */
 export * as Job from "./job.js"
 
 import { asc, eq, or } from "drizzle-orm"

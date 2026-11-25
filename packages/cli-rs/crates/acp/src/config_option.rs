@@ -1,3 +1,5 @@
+//! ACP 协议实现：配置选项。
+
 use opencode_api::generated::{ModelInfo, ModelRef, ProviderID};
 use opencode_api::js::locale_compare;
 use opencode_util::json_object;

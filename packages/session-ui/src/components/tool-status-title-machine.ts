@@ -1,4 +1,8 @@
-/** How long the width and crossfade transitions keep both titles mounted. */
+/**
+ * How long the width and crossfade transitions keep both titles mounted.
+ *
+ * 工具状态标题的状态机：管理工具调用状态的标题文案切换。
+ */
 export const TOOL_STATUS_ANIMATION_MS = 600
 
 /** `suffix` animates only the differing tail after a shared prefix; `swap` animates the whole title. */

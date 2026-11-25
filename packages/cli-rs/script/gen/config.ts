@@ -1,3 +1,8 @@
+/**
+ * 配置脚本。
+ *
+ * Rust CLI 的代码生成器：由 TypeScript 单一来源生成 Rust 代码。
+ */
 // Writes crates/local/src/generated/config.rs: the keybind names `cli.json` accepts, in definition order (the
 // order Effect Schema decodes them in), and the V1 names and command map the V1 migration reads.
 import { Definitions } from "../../../tui/src/config/keybind"

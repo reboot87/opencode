@@ -1,3 +1,7 @@
+/**
+ * 工具测试 — FiletypeTest。
+ * 终端工具函数的测试中负责 FiletypeTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import parsers from "../../src/parsers-config"
 import { filetype } from "../../src/util/filetype"

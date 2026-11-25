@@ -1,5 +1,7 @@
 //! The event stream: one-shot reads and the reconnecting connection loop. On overflow the connection drops the stream
 //! rather than silently losing deltas; consumers resynchronize on the next `server.connected`.
+//!
+//! API 客户端：事件。
 
 use std::collections::VecDeque;
 use std::fmt;

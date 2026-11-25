@@ -1,3 +1,7 @@
+/**
+ * 配置文件监听。
+ * 监听配置来源及其引用文件的变化，触发重新加载。
+ */
 export * as ConfigWatch from "./watch.js"
 
 import path from "path"

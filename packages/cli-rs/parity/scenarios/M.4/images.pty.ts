@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：图片·伪终端。
+ *
+ * 规格编号：M.4。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A listed prompt with a pasted image prints its caption under the prompt; the same image named twice prints once.
 // `session.image_preview` is off, so no picture draws.
 import { definePty } from "../../pty/run"

@@ -1,3 +1,7 @@
+/**
+ * npm 包管理。
+ * 安装/卸载 npm 包并解析其入口，含 InstallFailedError 错误。
+ */
 export * as Npm from "./npm.js"
 
 import path from "path"

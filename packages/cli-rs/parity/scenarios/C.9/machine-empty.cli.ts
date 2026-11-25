@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：状态机·空值·CLI。
+ *
+ * 规格编号：C.9。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `machine list` with no machines, and `machine remove` of a name the server does not know.
 import { defineCli } from "../../cli/run"
 import { env, info, register, script } from "../C.8/fixture"

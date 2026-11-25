@@ -1,3 +1,7 @@
+/**
+ * Service Worker 测试 — CacheSpec。
+ * Service Worker 行为的端到端用例中负责 CacheSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { chromium, expect, test, type Page } from "@playwright/test"
 import { mkdir, mkdtemp, readFile, readdir, rm, writeFile } from "node:fs/promises"
 import { createServer, type ServerResponse } from "node:http"

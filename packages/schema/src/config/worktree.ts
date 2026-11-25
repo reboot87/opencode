@@ -1,3 +1,7 @@
+/**
+ * Worktree 配置类型。
+ * 定义 worktree 配置项的 Schema。
+ */
 export * as ConfigWorktree from "./worktree.js"
 
 import { Schema } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * 时间线工具块 — Shell。
+ * 时间线中工具调用的展示中负责 Shell 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageShell } from "@opencode/client/promise"
 import { Predicate } from "effect"
 import { type UiI18n, useI18n } from "@opencode/ui/context/i18n"

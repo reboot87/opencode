@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — Machine。
+ * 内置浏览器功能的 GUI 插件中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Browser } from "@opencode/plugin-browser/rpc"
 
 /** How long a registration waits for main's answer, above main's own 15 s attach timeout. */

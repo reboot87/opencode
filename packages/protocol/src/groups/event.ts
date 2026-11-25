@@ -1,3 +1,7 @@
+/**
+ * 事件 API 分组。
+ * 定义事件订阅端点，支持按字段过滤与断线续传。
+ */
 import { Event } from "@opencode/schema/event"
 import { EventManifest } from "@opencode/schema/event-manifest"
 import { Location } from "@opencode/schema/location"

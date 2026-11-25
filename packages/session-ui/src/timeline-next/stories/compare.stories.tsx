@@ -1,3 +1,7 @@
+/**
+ * 时间线故事 — CompareStories。
+ * 新版时间线的 Storybook 展示中负责 CompareStories 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageInfo } from "@opencode/client/promise"
 import { For, Show, createEffect, createMemo, on, onCleanup, onMount, type JSX } from "solid-js"
 import { createStore } from "solid-js/store"

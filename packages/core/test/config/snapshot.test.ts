@@ -1,3 +1,10 @@
+/**
+ * 快照的测试。
+ *
+ * 被测模块：@opencode/core/config/snapshot
+ *
+ * 覆盖配置加载、合并、校验与分层覆盖（global / project / local）的行为。
+ */
 import { $ } from "bun"
 import { describe, expect } from "bun:test"
 import fs from "fs/promises"

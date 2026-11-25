@@ -1,3 +1,7 @@
+/**
+ * 工作区选择 — Domain。
+ * 工作区切换与选择中负责 Domain 部分，提供该部分所需的实现与类型定义。
+ */
 export function treeEntries(parent: string, nodes: ReadonlyArray<{ name: string; type: "file" | "directory" }>) {
   const prefix = parent.replace(/^\/+|\/+$/g, "")
 

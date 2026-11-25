@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid DiffViewerTest：该文件实现 DiffViewerTest 相关的状态与逻辑。
+ */
 import { afterAll, expect, test } from "bun:test"
 import { once } from "node:events"
 import { readdir } from "node:fs/promises"

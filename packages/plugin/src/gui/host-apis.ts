@@ -1,3 +1,7 @@
+/**
+ * GUI 宿主 API。
+ * 定义 GUI 插件可调用的宿主能力（服务端、会话、文件系统等）的完整接口集合。
+ */
 import type { Data } from "@opencode/client/solid"
 import type { LocationRef, OpenCodeClient, ProjectListOutput, WorktreeDirectory } from "@opencode/client/promise"
 import type { Schema } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * 配置发现。
+ * 按文件名（opencode.json/jsonc）发现配置文件，处理系统目录与多来源合并。
+ */
 export * as ConfigDiscovery from "./discovery.js"
 
 import os from "os"

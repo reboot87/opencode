@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — TextFieldMachine。
+ * 跨场景复用的通用 UI 组件中负责 TextFieldMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export const TEXT_FIELD_COPIED_MS = 2_000
 
 /** A clipboard write that never settles gives up, so the button can copy again. */

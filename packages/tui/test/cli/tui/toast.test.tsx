@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid ToastTest：该文件实现 ToastTest 相关的状态与逻辑。
+ */
 import { expect, test } from "bun:test"
 import { EmbeddedTerminalRenderable } from "@opentui/core"
 import { extend, testRender } from "@opentui/solid"

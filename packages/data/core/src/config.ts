@@ -1,3 +1,7 @@
+/**
+ * 数据核心源码 — Config。
+ * 数据采集与处理的实现中负责 Config 部分，提供该部分所需的实现与类型定义。
+ */
 import { Config, ConfigProvider, Effect, Layer, Schema } from "effect"
 import * as Context from "effect/Context"
 import { Resource } from "./resource"

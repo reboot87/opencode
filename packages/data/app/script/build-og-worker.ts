@@ -1,3 +1,7 @@
+/**
+ * 数据站脚本 — BuildOgWorker。
+ * 数据站点的构建脚本中负责 BuildOgWorker 部分，提供该部分所需的实现与类型定义。
+ */
 // Builds the OG Worker (src/og/worker.ts) into .og-worker: the bundle, the Wasm engines, and the site's OpenTUI
 // Mono fonts as TrueType (Satori can't read WOFF2). services/data/script/build.ts runs this and deploys every file there. It is
 // outside .output because the site's own build replaces that directory. test/og.test.ts builds it too, so PR CI

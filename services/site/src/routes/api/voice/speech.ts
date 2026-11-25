@@ -1,3 +1,6 @@
+/**
+ * 接口路由：语音合成。
+ */
 import type { APIEvent } from "@solidjs/start/server"
 import { z } from "zod"
 import { voiceMode } from "~/component/site/voice/flag"

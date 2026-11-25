@@ -1,3 +1,7 @@
+/**
+ * 预热插件。
+ * 在会话开始前预热模型缓存（warming），减少首字延迟。
+ */
 export * as WarmingPlugin from "./warming.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

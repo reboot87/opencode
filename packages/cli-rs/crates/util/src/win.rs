@@ -1,6 +1,8 @@
 //! Windows process, console, library and time-zone operations.
 
 #![allow(unsafe_code)]
+//!
+//! 通用工具：`win`。
 
 use std::ffi::{CStr, OsStr, OsString, c_void};
 use std::io;

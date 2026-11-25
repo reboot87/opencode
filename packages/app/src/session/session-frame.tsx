@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — SessionFrame。
+ * 会话主界面的视图与状态中负责 SessionFrame 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ParentProps } from "solid-js"
 
 export function SessionRouteFrame(props: ParentProps<{ padded?: boolean }>) {

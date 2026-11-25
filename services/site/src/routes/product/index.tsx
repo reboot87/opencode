@@ -1,3 +1,6 @@
+/**
+ * 产品页路由：索引。
+ */
 import "./index.css"
 import "~/component/site/hero-title.css"
 import { titleCells } from "~/component/site/hero-title"

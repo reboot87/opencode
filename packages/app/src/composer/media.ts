@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — Media。
+ * 会话输入区的组合逻辑与附件处理中负责 Media 部分，提供该部分所需的实现与类型定义。
+ */
 import { blobDataUrl, pinMediaBlob } from "@/runtime/persistence/drafts"
 import { mediaHashFromUri } from "@/runtime/server/media"
 import type { Prompt } from "./state"

@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：文档国际化。
+ */
 import { describe, expect, test } from "bun:test"
 import { readdirSync, readFileSync } from "node:fs"
 import path from "node:path"

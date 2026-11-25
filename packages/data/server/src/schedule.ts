@@ -1,3 +1,7 @@
+/**
+ * 数据服务 — Schedule。
+ * 提供数据查询的服务端中负责 Schedule 部分，提供该部分所需的实现与类型定义。
+ */
 // Keep in sync with the schedules in services/data/sync.config.ts.
 export const HOURLY_SCHEDULE = "5 * * * *"
 export const HISTORY_SCHEDULE = "20 3 * * *"

@@ -1,3 +1,7 @@
+/**
+ * 会话服务入口（Session）。
+ * 会话的对外服务门面：列举、创建、消息读写与列表分页。
+ */
 export * as Session from "./session.js"
 export * from "./session/schema.js"
 

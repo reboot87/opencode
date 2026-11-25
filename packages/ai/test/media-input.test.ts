@@ -1,3 +1,10 @@
+/**
+ * 媒体·输入的测试。
+ *
+ * 被测模块：@opencode/ai/media-input
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { Base64 } from "effect/encoding"
 import { ai, AIError, Media, Message } from "../src/effect.js"

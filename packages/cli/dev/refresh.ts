@@ -1,3 +1,8 @@
+/**
+ * 刷新（开发期支持）。
+ *
+ * CLI 开发服务器的热更新支持：按需刷新与错误浮层。
+ */
 /// <reference types="vite/client" />
 import { createComponent, createSignal, ErrorBoundary, onCleanup, Show, type JSX } from "solid-js"
 import { $$component, $$refresh, type Registry } from "solid-refresh/dist/solid-refresh.mjs"

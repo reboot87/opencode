@@ -1,3 +1,7 @@
+/**
+ * 引用类型。
+ * 定义本地与 Git 引用结构。
+ */
 export * as Reference from "./reference.js"
 
 import { Schema } from "effect"

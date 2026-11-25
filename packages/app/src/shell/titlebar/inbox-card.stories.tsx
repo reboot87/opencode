@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — InboxCardStories。
+ * 自定义窗口标题栏中负责 InboxCardStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Button } from "@opencode/ui/button"
 import { Menu } from "@opencode/ui/menu"
 import { createEffect, For, on, Show } from "solid-js"

@@ -1,3 +1,7 @@
+/**
+ * 配置变量替换。
+ * 把配置中的 ${变量} 占位符替换为环境变量值（支持转义）。
+ */
 export * as ConfigVariable from "./variable.js"
 
 import os from "os"

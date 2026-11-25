@@ -1,4 +1,6 @@
 //! Display a completed write with its highlighted, numbered contents.
+//!
+//! 终端界面路由：`write`。
 
 use super::diagnostics;
 use super::dispatch::{

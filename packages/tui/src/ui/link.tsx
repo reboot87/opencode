@@ -1,3 +1,7 @@
+/**
+ * 终端 UI — Link。
+ * 终端界面的通用 UI 组件中负责 Link 部分，提供该部分所需的实现与类型定义。
+ */
 import type { JSX } from "solid-js"
 import type { CliRenderer, MouseEvent, RGBA } from "@opentui/core"
 import { openUrl } from "@opencode/util/open"

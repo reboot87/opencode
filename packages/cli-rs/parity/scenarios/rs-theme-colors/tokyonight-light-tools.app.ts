@@ -1,3 +1,8 @@
+/**
+ * 对等性应用场景：Tokyo Night·浅色·工具·app。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 import base from "../E.7a/tools.app"
 import { themed } from "./themed"
 

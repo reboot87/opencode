@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：系统·主题·无·默认值·伪终端。
+ *
+ * 规格编号：M.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The `system` theme under a terminal that reports its palette (Tokyo Night's slots) but not its default colors (no
 // OSC 10 or 11 reply): the theme comes from slots 0 and 7. The text colors show the accents mini derives from the
 // slots, such as the composer's rail in the agent's color (slot 5). Rust once drew that rail in a muted purple: mini

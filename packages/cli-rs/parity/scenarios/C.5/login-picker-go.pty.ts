@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：登录·选择器·go·伪终端。
+ *
+ * 规格编号：C.5。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // The integration picker once a Go key is saved: OpenCode Go joins the popular integrations (without one, as in
 // `login-picker`, it stays hidden because OpenCode Go connects through OpenCode), then Escape.
 import { definePty } from "../../pty/run"

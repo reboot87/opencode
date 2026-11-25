@@ -1,3 +1,5 @@
+//! 通用工具入口。
+
 use std::sync::{Mutex, MutexGuard, PoisonError};
 
 pub mod bundle;

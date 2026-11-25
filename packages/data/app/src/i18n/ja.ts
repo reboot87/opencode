@@ -1,3 +1,7 @@
+/**
+ * 数据站文案 — Ja。
+ * 数据站点的多语言文案中负责 Ja 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Key } from "../i18n"
 
 export const dict = {

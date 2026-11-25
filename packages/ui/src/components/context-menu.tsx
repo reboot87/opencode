@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — ContextMenu。
+ * 跨场景复用的通用 UI 组件中负责 ContextMenu 部分，提供该部分所需的实现与类型定义。
+ */
 import { ContextMenu as Kobalte } from "@kobalte/core/context-menu"
 import { splitProps } from "solid-js"
 import type { ComponentProps, ParentProps } from "solid-js"

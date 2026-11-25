@@ -8,6 +8,8 @@ import { siteSettings } from "./settings"
  * comes from Design mode (brand.agentButton). Once copied, Settings › Agent button copied either keeps
  * the label and turns the copy icon into a check, or shows `copied`. Both labels share one grid cell,
  * so the width never changes; screen readers hear "Copied". Static pages: src/client/islands/agent-rules.ts.
+ *
+ * 站点界面组件：智能体规则集按钮。
  */
 export function AgentRulesButton(props: { label: string; copied: string; source: () => string }) {
   const [done, setDone] = createSignal(false)

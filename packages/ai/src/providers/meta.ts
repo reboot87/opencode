@@ -1,3 +1,7 @@
+/**
+ * Meta Llama provider 门面。
+ * 封装 Messages / Responses / Chat / 图片协议，提供 Llama 系列模型工厂。
+ */
 import type { ProviderPackage } from "../provider-package.js"
 import { OpenAIChat } from "../protocols/openai-chat.js"
 import { AnthropicMessages } from "../protocols/anthropic-messages.js"

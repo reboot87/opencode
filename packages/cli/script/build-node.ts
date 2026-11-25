@@ -1,5 +1,11 @@
 #!/usr/bin/env bun
 
+/**
+ * 构建·节点脚本。
+ *
+ * CLI 包的开发脚本：构建校验、配置生成与发布准备。
+ */
+
 import { spawnSync } from "node:child_process"
 import { createHash } from "node:crypto"
 import { chmod, copyFile, mkdir, mkdtemp, readFile, realpath, rename, rm, stat, writeFile } from "node:fs/promises"

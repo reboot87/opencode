@@ -1,3 +1,7 @@
+/**
+ * 缓存断点管理工具。
+ * 生成/选取断点并转成 provider 的缓存控制标记。
+ */
 // Shared counter and lifetime mapping for provider cache lowering.
 import { Effect } from "effect"
 import type { CacheHint, CacheTTL } from "../../schema/index.js"

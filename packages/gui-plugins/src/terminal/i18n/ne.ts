@@ -1,3 +1,7 @@
+/**
+ * 终端文案 — Ne。
+ * 终端插件的多语言文案中负责 Ne 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.category": "टर्मिनल",
   "command.toggle": "टर्मिनल टगल गर्नुहोस्",

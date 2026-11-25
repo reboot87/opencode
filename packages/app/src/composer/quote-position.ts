@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — QuotePosition。
+ * 会话输入区的组合逻辑与附件处理中负责 QuotePosition 部分，提供该部分所需的实现与类型定义。
+ */
 type Rect = { top: number; bottom: number; left: number; right: number }
 
 /** Shared by the selection toolbar and the comment editor that replaces it. DOMRects use physical coordinates. */

@@ -6,6 +6,8 @@ import { $, $$ } from "../dom"
 /**
  * A card's video (CardVideo in products.tsx): the carousel's and /product's cards, and a product
  * page's feature clips. card-video.ts plays it; this shows its state in the server's markup.
+ *
+ * 客户端交互岛：卡片视频。
  */
 export default function cardVideoIsland(media: HTMLElement) {
   const video = $<HTMLVideoElement>("video:not([data-slot])", media)

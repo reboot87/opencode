@@ -1,5 +1,7 @@
 //! Compares config edits and shared file contents with the TypeScript client in temporary directories. Set
 //! `OPENCODE_RS_REQUIRE_TS` to fail rather than skip when dependencies are missing.
+//!
+//! 本地配置与路径：配置·interop。
 
 use std::fs;
 use std::io::Write;

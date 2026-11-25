@@ -1,3 +1,7 @@
+/**
+ * 工作区文件 — TreeMachine。
+ * 工作区内文件浏览界面中负责 TreeMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { FileNode } from "@/runtime/server/types"
 
 /** Bounded fallback so a wedged server or network mount cannot leave a directory loading forever. */

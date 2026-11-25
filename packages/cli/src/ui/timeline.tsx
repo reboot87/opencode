@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid Timeline：该文件实现 Timeline 相关的状态与逻辑。
+ */
 import { createCliRenderer, RGBA, type CliRenderer, type ColorInput, type ScrollbackWriter } from "@opentui/core"
 import { createScrollbackWriter, render, useKeyboard } from "@opentui/solid"
 import "@opencode/tui/component/spinner-renderable"

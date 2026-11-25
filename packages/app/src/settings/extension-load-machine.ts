@@ -1,4 +1,7 @@
-/** How long one list read may run before the section offers Retry. */
+/**
+ * 
+ * How long one list read may run before the section offers Retry. 设置界面中负责 ExtensionLoadMachine 部分：应用设置中与 ExtensionLoadMachine 相关的状态、交互与渲染逻辑。
+ */
 export const EXTENSION_LOAD_TIMEOUT_MS = 15_000
 
 /**

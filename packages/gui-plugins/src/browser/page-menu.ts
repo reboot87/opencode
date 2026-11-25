@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — PageMenu。
+ * 内置浏览器功能的 GUI 插件中负责 PageMenu 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ContextMenuParams, MenuItemConstructorOptions } from "electron"
 import { externalAction } from "./address"
 import { destinationOrigin, type Policy } from "./policy"

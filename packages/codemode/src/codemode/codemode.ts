@@ -1,3 +1,7 @@
+/**
+ * Code Mode 核心运行时。
+ * 在沙箱中执行 TypeScript 代码并提供宿主 API（Suspend 语义用于挂起/恢复）。
+ */
 import { Effect, Schema } from "effect"
 import { type Extension, isAsync, isConstructible } from "./extension.js"
 import { scanProgram, scanTools } from "./scan.js"

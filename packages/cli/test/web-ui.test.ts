@@ -1,3 +1,10 @@
+/**
+ * web·ui的测试。
+ *
+ * 被测模块：@opencode/cli/web-ui
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { NodeFileSystem, NodeHttpServer } from "@effect/platform-node"
 import { ServerProcess } from "@opencode/server/process"
 import { afterAll, describe, expect, test } from "bun:test"

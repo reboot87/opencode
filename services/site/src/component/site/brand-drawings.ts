@@ -6,6 +6,8 @@
  * would light up one after another (a flicker), so the content ignores the pointer until scrolling
  * has stopped for 150ms; the logos snap to whole pixels as the window resizes; the drawings fit their
  * labels once the fonts have loaded. Returns what stops it.
+ *
+ * 站点界面组件：品牌·drawings。
  */
 export function startDrawings() {
   const state: { idle?: ReturnType<typeof setTimeout> } = {}

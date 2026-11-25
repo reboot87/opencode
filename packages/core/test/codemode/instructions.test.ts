@@ -1,3 +1,10 @@
+/**
+ * 指令的测试。
+ *
+ * 被测模块：@opencode/core/codemode/instructions
+ *
+ * 覆盖 Code Mode 的脚本执行、差异计算与指令下发。
+ */
 import { describe, expect } from "bun:test"
 import { CodeModeCatalog } from "@opencode/core/codemode/catalog"
 import { CodeModeInstructions } from "@opencode/core/codemode/instructions"

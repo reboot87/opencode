@@ -1,3 +1,7 @@
+/**
+ * 数据库服务（Database）。
+ * 数据库核心：打开/创建 SQLite 文件、设置权限、应用 PRAGMA、运行迁移，并提供全局数据库节点。
+ */
 export * as Database from "./database.js"
 
 import { EffectDrizzleSqlite } from "./drizzle.js"

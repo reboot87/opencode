@@ -1,3 +1,12 @@
+/**
+ * 实时语音会话（Realtime）实验性 API。
+ *
+ * 为各家实时语音端点（OpenAI Live / Realtime、xAI Realtime、Gemini Live）提供统一的会话建立入口 `connect`：
+ * 根据所选 engine 校验传输方式（WebRTC / WebSocket），向对应提供方换取会话描述（SDP）或短期令牌，并返回可供
+ * 客户端直接建立连接的传输信息。API Key 使用 Redacted 包裹避免泄露，错误以 AIError 建模。
+ *
+ * 属于 experimental：接口仍在演进。
+ */
 import { Clock, Effect, Redacted, Schema } from "effect"
 import { HttpClientRequest } from "effect/http"
 import { RequestExecutor } from "../route/executor.js"
@@ -34,6 +43,7 @@ export interface RealtimeConnectInput {
 }
 
 // The voice APIs this package speaks, by provider and models.dev API. Which models they start comes from models.dev.
+// 支持的实时语音引擎清单：每个引擎标明所属 provider、API 类型与可用传输方式；默认模型由 models.dev 决定。
 export const engines = [
   { id: "openai-live", provider: "openai", api: "live", transports: ["webrtc"] },
   { id: "openai-realtime", provider: "openai", api: "realtime", transports: ["webrtc", "websocket"] },
@@ -43,6 +53,8 @@ export const engines = [
 
 export type RealtimeEngine = (typeof engines)[number]
 
+// 建立实时会话：先校验引擎是否支持请求的传输方式，再按引擎分派到相应的握手流程
+// （WebRTC 换取 SDP；WebSocket 换取带过期时间的短期令牌）。
 export const connect = Effect.fn("Realtime.connect")(function* (input: RealtimeConnectInput) {
   const resolved = input.engine
   if (!resolved.transports.some((type) => type === input.transport.type))

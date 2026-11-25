@@ -1,3 +1,5 @@
+//! 终端界面测试：插件·npm。
+
 use std::path::Path;
 use std::sync::Arc;
 

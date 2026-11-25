@@ -1,3 +1,7 @@
+/**
+ * 设置界面 — Model。
+ * 应用设置页面的框架中负责 Model 部分，提供该部分所需的实现与类型定义。
+ */
 import { produce, reconcile, unwrap } from "solid-js/store"
 import { createEffect, createMemo } from "solid-js"
 import { createMediaQuery } from "@solid-primitives/media"

@@ -1,3 +1,7 @@
+/**
+ * UI 主题 — V1。
+ * 配色、间距与字号等设计令牌中负责 V1 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ThemeV1Json } from "@opencode/theme/tui/v1"
 import aura from "./assets/aura.json" with { type: "json" }
 import ayu from "./assets/ayu.json" with { type: "json" }

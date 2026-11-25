@@ -1,3 +1,7 @@
+/**
+ * 调试插件 — Motion。
+ * 面向开发者的调试 GUI 插件中负责 Motion 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createSignal, Index, onCleanup, onMount, Show } from "solid-js"
 import { Portal } from "solid-js/web"
 import { Option, Schema } from "effect"

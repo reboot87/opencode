@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：认证·拒绝·伪终端。
+ *
+ * 规格编号：C.6。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `mcp auth <connected server>` on a terminal asks before re-authenticating; No ends with "Cancelled".
 import { definePty } from "../../pty/run"
 import { integrationRoutes, sink } from "../C.5/fixture"

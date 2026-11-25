@@ -1,4 +1,6 @@
 //! Renders tool patches as split or unified diffs.
+//!
+//! 基础 UI 组件库：差异。
 
 use std::cell::RefCell;
 use std::sync::Arc;

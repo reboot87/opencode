@@ -31,7 +31,10 @@ function collectInferTypeParameterNames(
 	}
 }
 
-/** Collect type binders that are in scope at a node and can shadow module aliases. */
+/** Collect type binders that are in scope at a node and can shadow module aliases.
+ *
+ * Oxlint 规则共享工具：词法类型参数。
+ */
 export function lexicalTypeParameterNames(
 	node: ESTree.Node,
 	visitorKeys: VisitorKeys,

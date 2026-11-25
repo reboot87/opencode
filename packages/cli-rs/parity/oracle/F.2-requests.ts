@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：F.2·请求。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-ORACLE for F.2: records the requests the TypeScript Promise client builds, for
 // crates/api/tests/all/oracle.rs to compare with the generated Rust client. Writes parity/fixtures/F.2/requests.json.
 // The raw generated client: the exported `OpenCode.make` wraps it (one shared event subscription without

@@ -1,3 +1,7 @@
+/**
+ * 徽标 — BadgeStories。
+ * 紧凑状态标记组件中负责 BadgeStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { Badge, type BadgeProps } from "./badge"
 
 type Args = Pick<BadgeProps, "appearance" | "variant"> & { children: string; highContrast: boolean }

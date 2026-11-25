@@ -1,3 +1,7 @@
+/**
+ * 模块 — Mermaid。
+ * 该目录下的功能模块中负责 Mermaid 部分，提供该部分所需的实现与类型定义。
+ */
 export interface NumberedMermaidLine {
   readonly lineNumber: number
   readonly text: string

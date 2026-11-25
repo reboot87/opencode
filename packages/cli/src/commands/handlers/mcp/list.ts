@@ -1,3 +1,7 @@
+/**
+ * mcp list 命令。
+ * 列出已配置的 MCP 服务器及其状态。
+ */
 import { EOL } from "node:os"
 import { Effect } from "effect"
 import { OpenCode, type McpServer } from "@opencode/client"

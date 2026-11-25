@@ -7,6 +7,8 @@ import { useI18n } from "~/context/i18n"
  * (site.tsx) and the 404 arcade (arcade/chrome.tsx). The caller owns the open state, Escape and
  * returning focus to the button; the sheet closes itself on its backdrop and on a chosen link. The
  * static pages drive the same markup from src/client/menus.ts.
+ *
+ * 站点界面组件：手机菜单。
  */
 export function MenuToggle(props: { open: boolean; onToggle: () => void; ref?: (element: HTMLButtonElement) => void }) {
   const i18n = useI18n()

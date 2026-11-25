@@ -1,3 +1,8 @@
+/**
+ * 管道示例：TUI。
+ *
+ * 管道示例：演示插件管道各阶段的串联方式。
+ */
 // Modal composer input probe. Its log lets the harness compare plugin and host key order.
 
 import { appendFileSync } from "node:fs"

@@ -1,3 +1,7 @@
+/**
+ * machine 接口处理器。
+ * 远程机器接口处理器：机器列举与链路连接。
+ */
 import { NodeHttpServerRequest } from "@effect/platform-node"
 import { type WebSocket, WebSocketServer } from "@effect/platform-node-shared/NodeWS"
 import { Environment } from "@opencode/core/environment/index"

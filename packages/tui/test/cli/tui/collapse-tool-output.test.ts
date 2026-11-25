@@ -1,3 +1,7 @@
+/**
+ * CLI 终端测试 — CollapseToolOutputTest。
+ * CLI 与终端界面协作的测试中负责 CollapseToolOutputTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { collapseToolOutput } from "../../../src/util/collapse-tool-output"
 

@@ -1,3 +1,7 @@
+/**
+ * 策略配置插件。
+ * 把配置中的权限/授权策略应用到 Credential 等服务。
+ */
 export * as ConfigPolicyPlugin from "./policy.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

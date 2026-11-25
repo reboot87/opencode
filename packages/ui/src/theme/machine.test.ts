@@ -1,3 +1,7 @@
+/**
+ * UI 主题 — MachineTest。
+ * 配色、间距与字号等设计令牌中负责 MachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import {
   createThemeState,

@@ -1,4 +1,6 @@
 //! TeX command names, glyphs and spacing roles.
+//!
+//! LaTeX 公式渲染：`symbols`。
 
 use crate::parse::Role;
 

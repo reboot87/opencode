@@ -178,6 +178,8 @@ const statusSamples: Record<Exclude<(typeof statusPreviews)[number], "live">, Se
  * Shared layout for the new marketing pages: fixed sidebar with the logo and primary nav, the
  * content column, the footer whose secondary nav scrolls up under the sidebar, and the
  * development settings panel. Pages render their sections as children.
+ *
+ * 站点界面组件：站点。
  */
 // Set after the first page mounts in the browser. Pages reached by in-place navigation then fade
 // their content in; the first load paints immediately.

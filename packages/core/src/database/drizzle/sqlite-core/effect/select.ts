@@ -1,3 +1,7 @@
+/**
+ * drizzle SQLite Effect 查询构造。
+ * drizzle-orm select 构件在 Effect 下的实现（本文件源自 drizzle-orm 上游）。
+ */
 /* oxlint-disable */
 import type * as Effect from "effect/Effect"
 import type { CacheConfig } from "drizzle-orm/cache/core/types"

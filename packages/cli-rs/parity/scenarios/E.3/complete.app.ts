@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：完整·app。
+ *
+ * 规格编号：E.3。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Prompt autocomplete (P05): `/rev` lists the server's command and Enter completes it; `@gen` lists the
 // subagent and a file from /api/fs/find, and Enter turns the agent into a highlighted mention.
 import { defineApp, session, user } from "../../lib/app"

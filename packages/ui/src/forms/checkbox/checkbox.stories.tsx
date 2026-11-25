@@ -1,3 +1,7 @@
+/**
+ * 复选框 — CheckboxStories。
+ * 多选勾选组件中负责 CheckboxStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createSignal } from "solid-js"
 import { Icon } from "@opencode/ui/icon"
 import { Checkbox, type CheckboxProps } from "./checkbox"

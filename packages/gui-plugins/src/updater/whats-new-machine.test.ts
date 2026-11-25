@@ -1,3 +1,7 @@
+/**
+ * 更新插件 — WhatsNewMachineTest。
+ * 应用更新提示的 GUI 插件中负责 WhatsNewMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   initWhatsNew,

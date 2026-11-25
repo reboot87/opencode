@@ -1,3 +1,7 @@
+/**
+ * 执行输出格式化。
+ * 格式化工具执行输出，尝试把 JSON 文本渲染为可读结构。
+ */
 import { Option, Schema } from "effect"
 
 const decodeJson = Schema.decodeUnknownOption(Schema.fromJsonString(Schema.Unknown))

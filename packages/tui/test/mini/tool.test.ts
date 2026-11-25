@@ -1,3 +1,7 @@
+/**
+ * Mini 测试 — ToolTest。
+ * 精简交互模式的测试中负责 ToolTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { normalizeTool, toolInlineInfo, toolOutputText, toolPath, toolScroll } from "../../src/mini/tool"
 import { canonicalToolPart } from "./fixture/tool-part"

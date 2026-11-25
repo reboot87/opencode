@@ -1,3 +1,7 @@
+/**
+ * 服务端连接。
+ * 解析并连接本机 OpenCode 服务，返回可用端点。
+ */
 import { Service, type Endpoint, type EnsureOptions } from "@opencode/client/effect/service"
 import { ClientError, isUnauthorizedError, OpenCode } from "@opencode/client/promise"
 import { OPENCODE_VERSION } from "../version"

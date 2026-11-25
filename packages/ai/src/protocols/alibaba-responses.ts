@@ -1,3 +1,7 @@
+/**
+ * 阿里云 Responses 风格协议实现。
+ * Responses API 的 provider 变体。
+ */
 import { Effect, Schema } from "effect"
 import { Protocol } from "../route/protocol.js"
 import { OpenResponses } from "./open-responses.js"

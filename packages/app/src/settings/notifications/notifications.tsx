@@ -1,3 +1,7 @@
+/**
+ * 通知设置 — Notifications。
+ * 通知开关与偏好中负责 Notifications 部分，提供该部分所需的实现与类型定义。
+ */
 import { Component } from "solid-js"
 import { Select } from "@opencode/ui/select"
 import { Switch } from "@opencode/ui/switch"

@@ -1,3 +1,7 @@
+/**
+ * 数据站工具 — AgentFormats。
+ * 数据站点的通用工具中负责 AgentFormats 部分，提供该部分所需的实现与类型定义。
+ */
 import type { MarketDay, ModelUsagePoint, UsagePoint } from "@opencode/data-core/domain/home"
 import { translate } from "../i18n"
 import {

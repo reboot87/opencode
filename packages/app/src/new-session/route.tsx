@@ -1,3 +1,7 @@
+/**
+ * 新建会话 — Route。
+ * 创建新会话的向导与表单中负责 Route 部分，提供该部分所需的实现与类型定义。
+ */
 import { Navigate, useSearchParams } from "@solidjs/router"
 import { createMemo, ErrorBoundary, Show, type ParentProps } from "solid-js"
 import { CommentsProvider } from "@/composer/comments"

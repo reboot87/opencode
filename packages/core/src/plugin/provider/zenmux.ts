@@ -1,3 +1,7 @@
+/**
+ * ZenMux 插件。
+ * 注册 ZenMux provider。
+ */
 import { Effect } from "effect"
 import { define } from "@opencode/plugin/effect/plugin"
 

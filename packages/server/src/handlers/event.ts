@@ -1,3 +1,7 @@
+/**
+ * event 接口处理器。
+ * 事件接口处理器：订阅会话事件流。
+ */
 import { Event } from "@opencode/schema/event"
 import { Effect, Stream } from "effect"
 import { HttpServerResponse } from "effect/http"

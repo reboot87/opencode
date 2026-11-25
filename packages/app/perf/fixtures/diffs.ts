@@ -1,3 +1,7 @@
+/**
+ * 性能夹具 — Diffs。
+ * 性能测试使用的数据夹具中负责 Diffs 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageAssistantTool } from "@opencode/client/promise"
 import { createPatch, createTwoFilesPatch, diffLines } from "diff"
 

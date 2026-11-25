@@ -1,4 +1,6 @@
 //! Preserve the in-progress prompt for each session and for home across navigation.
+//!
+//! 终端输入提示：草稿。
 
 use crate::prelude::*;
 

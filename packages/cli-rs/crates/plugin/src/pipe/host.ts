@@ -1,3 +1,8 @@
+/**
+ * 管道实现：主机。
+ *
+ * Rust 插件管道（pipe）实现的对照与兼容层。
+ */
 // The JS host runs all TypeScript plugins in one Bun process. Standard input is a duplex protocol channel; stdout
 // and stderr belong to plugin logs. Acknowledge sequenced calls on receipt and commit their effects on return.
 // Each mount may have only one tree awaiting adoption.

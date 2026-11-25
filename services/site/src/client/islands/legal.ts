@@ -10,6 +10,8 @@ import { $, $$, on, target } from "../dom"
  * #history in the address and the Contents rail listing History's parts while it shows; Copy as
  * Markdown; Save as PDF, whose cover and colophon render on the way to printing (legal-print.tsx);
  * and the Privacy Policy's analytics control.
+ *
+ * 客户端交互岛：法律。
  */
 export default function legal(body: HTMLElement) {
   tabs(body)

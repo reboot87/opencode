@@ -1,3 +1,7 @@
+/**
+ * api 命令测试。
+ * 验证 api 命令对 HTTP 方法与路径的处理。
+ */
 import { describe, expect, test } from "bun:test"
 import { rawRequest, resolveOperation } from "./api"
 

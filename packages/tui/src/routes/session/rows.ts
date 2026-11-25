@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — Rows。
+ * 会话主界面的视图与状态中负责 Rows 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionInboxEnqueued, SessionMessageAssistant, SessionMessageInfo } from "@opencode/client"
 import { createEffect, on, onCleanup, type Accessor } from "solid-js"
 import { createStore, produce, reconcile } from "solid-js/store"

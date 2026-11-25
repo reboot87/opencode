@@ -1,3 +1,7 @@
+/**
+ * MiniMax 视频生成协议。
+ * 提交视频任务并轮询状态，含 Hailuo 系列端点。
+ */
 import { Duration, Effect, Schema } from "effect"
 import type { HttpClientResponse } from "effect/http"
 import { Media } from "../media.js"

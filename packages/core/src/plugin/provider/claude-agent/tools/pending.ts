@@ -1,3 +1,7 @@
+/**
+ * Claude 待处理工具。
+ * 跟踪尚未返回结果的工具调用。
+ */
 export * as PendingTools from "./pending.js"
 
 import type { CallToolResult } from "@modelcontextprotocol/server"

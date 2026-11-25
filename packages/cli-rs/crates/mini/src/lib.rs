@@ -1,4 +1,6 @@
 //! Mini owns a footer on the terminal's main screen. The session transcript goes to scrollback above it.
+//!
+//! 精简版实现入口。
 
 use std::path::PathBuf;
 use std::time::Instant;

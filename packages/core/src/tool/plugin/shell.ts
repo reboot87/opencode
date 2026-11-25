@@ -1,3 +1,7 @@
+/**
+ * shell 工具。
+ * 执行 shell 命令的工具：默认超时、Code Mode 更长超时，处理后台执行与权限校验。
+ */
 export * as ShellTool from "./shell.js"
 
 import { ToolFailure } from "@opencode/ai/effect"

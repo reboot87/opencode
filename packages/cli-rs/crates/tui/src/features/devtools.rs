@@ -1,4 +1,6 @@
 //! Developer tools bar and runtime samples.
+//!
+//! 终端界面功能模块：`devtools`。
 
 use opencode_api::events::{State, Status};
 use opencode_api::generated::ExperimentalSessionLogInput;

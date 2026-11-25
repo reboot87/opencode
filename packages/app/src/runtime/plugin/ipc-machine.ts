@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — IpcMachine。
+ * 浏览器端的插件加载与扩展点中负责 IpcMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export type IpcChannel =
   /** Only main's availability broadcasts arrived; no window code asked for a client yet. */
   | { readonly status: "unsubscribed"; readonly available: boolean; readonly generation: number }

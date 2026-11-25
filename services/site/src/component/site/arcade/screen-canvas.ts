@@ -9,6 +9,8 @@ import { drawPixelText, pixelWidth } from "./pixel-font"
  * font, boot log and covers. It is stateless: call it every frame with the time spent in the state.
  * The DOM screen stays the accessible one; a canvas version must still offer real buttons for the
  * menu (see screen.tsx) and the game frame (game-frame.tsx).
+ *
+ * 街机小游戏组件：屏幕画布。
  */
 
 export type CanvasScreenState = "404" | "glitch" | "boot" | "start" | "select"

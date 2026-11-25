@@ -1,3 +1,10 @@
+/**
+ * 导入·边界的测试。
+ *
+ * 被测模块：@opencode/client/import-boundaries
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { realpathSync } from "node:fs"
 import { mkdtemp, rm } from "node:fs/promises"

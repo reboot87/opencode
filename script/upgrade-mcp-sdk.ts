@@ -1,5 +1,9 @@
 #!/usr/bin/env bun
 
+/**
+ * 仓库脚本：升级·MCP·SDK。
+ */
+
 // Upgrades @modelcontextprotocol/{client,core,server} and rebuilds our @modelcontextprotocol/client patch.
 //
 //   bun run script/upgrade-mcp-sdk.ts <version>

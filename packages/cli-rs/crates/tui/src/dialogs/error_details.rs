@@ -1,4 +1,6 @@
 //! Error details with copy and investigation actions.
+//!
+//! 终端弹窗组件：错误明细。
 
 use opencode_ui::dialog::{DialogCx, FooterAction, FooterProps, footer};
 

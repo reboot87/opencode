@@ -1,3 +1,7 @@
+/**
+ * 时间线工具块 — ToolDisplay。
+ * 时间线中工具调用的展示中负责 ToolDisplay 部分，提供该部分所需的实现与类型定义。
+ */
 import { useI18n } from "@opencode/ui/context/i18n"
 import { createMemo, Match, Show, Switch, type Component } from "solid-js"
 import { Dynamic } from "solid-js/web"

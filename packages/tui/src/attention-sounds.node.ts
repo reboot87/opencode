@@ -1,3 +1,7 @@
+/**
+ * 终端界面 — AttentionSoundsNode。
+ * OpenCode 终端界面的整体骨架与入口中负责 AttentionSoundsNode 部分，提供该部分所需的实现与类型定义。
+ */
 import { createRequire } from "node:module"
 import path from "node:path"
 

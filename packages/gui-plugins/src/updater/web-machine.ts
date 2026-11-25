@@ -2,6 +2,8 @@
  * The web app's update lifecycle. The server's service worker precaches the app, so a new build installs in the
  * background and then waits until every window closes, which an installed app (PWA) rarely does. This machine finds
  * that build, offers it, and moves every window to it on request.
+ *
+ * 与网页相关的实现。与窗口相关的实现。This 的状态机。
  */
 
 /** Where a registration's newest worker is. */

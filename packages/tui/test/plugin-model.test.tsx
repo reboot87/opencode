@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — PluginModelTest。
+ * 终端界面的测试中负责 PluginModelTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { createPluginContext, type Registry, type usePluginHost } from "../src/plugin/api"
 import { model, renderLocal } from "./fixture/local"

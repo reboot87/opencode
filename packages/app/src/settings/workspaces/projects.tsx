@@ -1,3 +1,7 @@
+/**
+ * 工作区设置 — Projects。
+ * 工作区相关设置中负责 Projects 部分，提供该部分所需的实现与类型定义。
+ */
 import { Show, createEffect, createMemo, type Component, type JSX } from "solid-js"
 import { Key } from "@solid-primitives/keyed"
 import { createStore } from "solid-js/store"

@@ -1,3 +1,7 @@
+/**
+ * 终端组件 — DialogSessionRename。
+ * 终端界面（Solid）组件中负责 DialogSessionRename 部分，提供该部分所需的实现与类型定义。
+ */
 import { DialogPrompt } from "../ui/dialog-prompt"
 import { type DialogContext, useDialog } from "../ui/dialog"
 import { useClient } from "../context/client"

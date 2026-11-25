@@ -1,3 +1,7 @@
+/**
+ * 详情插件 — ConfigFileTest。
+ * 展示对象详细信息的 GUI 插件中负责 ConfigFileTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { globalConfigDirectory, serviceConfigFile } from "./config-file"
 

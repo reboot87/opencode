@@ -17,6 +17,8 @@ let anchors = 0
  *
  * A menu placed before goes back to its box first: still fixed to the window it has no box to measure
  * against, and closing it (closeMenus) may have taken it out of the top layer already.
+ *
+ * 站点界面组件：位置菜单。
  */
 export function placeMenu(menu: HTMLElement) {
   if (menu.popover) {

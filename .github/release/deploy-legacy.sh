@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：部署遗留。
 # deploy-legacy.sh <dev|production> <dir> [production-secrets.json]: deploys the legacy
 # Worker from a verified Build Output artifact (services/legacy/.cloudflare/output)
 # with the cf CLI pinned in cf/package-lock.json.

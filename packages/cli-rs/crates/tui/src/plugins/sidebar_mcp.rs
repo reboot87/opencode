@@ -1,4 +1,6 @@
 //! Foldable MCP status list for the session's location.
+//!
+//! 终端插件视图：侧边栏·MCP。
 
 use opencode_api::generated::{McpServer, McpServerStatus};
 use opencode_plugin::abi::v2::{Node, Place, Surface};

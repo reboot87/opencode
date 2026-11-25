@@ -1,4 +1,6 @@
 //! Syntax highlighting and numbered code views.
+//!
+//! 基础 UI 组件库：代码。
 
 use std::cell::RefCell;
 use std::sync::Arc;

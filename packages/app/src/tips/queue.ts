@@ -1,3 +1,7 @@
+/**
+ * 使用提示 — Queue。
+ * 面向新用户的使用提示中负责 Queue 部分，提供该部分所需的实现与类型定义。
+ */
 import type { useLanguage } from "@/runtime/i18n/language"
 
 export const TIP_INTERVAL_MS = 24 * 60 * 60 * 1000

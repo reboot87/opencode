@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：paste·app。
+ *
+ * 规格编号：E.4。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Pastes (P06): a three-line paste collapses into a `[Pasted ~3 lines]` part in the `extmark.paste` style, the
 // same text pasted again right after it expands in place, and a short paste goes in as it is, ANSI stripped.
 import { defineApp, session, user } from "../../lib/app"

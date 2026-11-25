@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — ReviewFocusMachine。
+ * 跨场景复用的通用 UI 组件中负责 ReviewFocusMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export const REVIEW_FOCUS_TIMEOUT_MS = 2000
 
 /** A parent's request to reveal one saved comment. `attempt` grows with each new target, so a late result or acknowledgement of an older target is ignored. */

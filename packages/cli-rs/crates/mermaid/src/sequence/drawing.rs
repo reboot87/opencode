@@ -1,3 +1,5 @@
+//! Mermaid 图表渲染：`drawing`。
+
 use super::placement::{GroupPlacement, HBounds, StepPlacement, plan};
 use super::{Diagram, FragmentKind, Head};
 use crate::core::canvas::{Canvas, SizeError};

@@ -1,3 +1,7 @@
+/**
+ * 渲染进程 — MigrationStatusMachine。
+ * Electron 渲染进程的界面逻辑中负责 MigrationStatusMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ExperimentalMigrationV1StatusOutput } from "@opencode/client/promise"
 
 export const MIGRATION_POLL_MS = 1_000

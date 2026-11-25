@@ -1,5 +1,9 @@
 #!/usr/bin/env bun
 
+/**
+ * 模块 — SyncSkills。
+ * 该目录下的功能模块中负责 SyncSkills 部分，提供该部分所需的实现与类型定义。
+ */
 import { $ } from "bun"
 import { cp, mkdtemp, readdir, rm } from "node:fs/promises"
 import { tmpdir } from "node:os"

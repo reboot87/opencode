@@ -1,3 +1,6 @@
+/**
+ * 文档站组件：卡片分组。
+ */
 import type { JSX } from "solid-js"
 
 // Without `cols` the cards fill the row as they fit (docs-variants.css).

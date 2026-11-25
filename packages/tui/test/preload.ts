@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — Preload。
+ * 终端界面的测试中负责 Preload 部分，提供该部分所需的实现与类型定义。
+ */
 import { NativeError, NativeStatus, OptimizedBuffer } from "@opentui/core"
 
 // Workaround: OpenTUI's test renderer can read a frame while the native writer is still flushing

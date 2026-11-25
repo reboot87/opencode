@@ -1,3 +1,7 @@
+/**
+ * 本地存储 — Schema。
+ * 桌面端配置的本地持久化中负责 Schema 部分，提供该部分所需的实现与类型定义。
+ */
 import { blob, integer, primaryKey, sqliteTable, text } from "drizzle-orm/sqlite-core"
 
 // Prompt drafts and history. `key` is `${storage}:${key}` as the renderer draft store writes it.

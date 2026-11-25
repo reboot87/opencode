@@ -1,4 +1,6 @@
 //! UI kit on opentui: themes, keymap, dialogs, and content widgets.
+//!
+//! 基础 UI 组件库入口。
 
 pub mod activity_calendar;
 pub mod alert;

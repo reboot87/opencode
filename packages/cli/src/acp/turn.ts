@@ -1,3 +1,7 @@
+/**
+ * ACP 轮次控制。
+ * 处理 ACP 的轮次开始/结束与 steering（转向）请求。
+ */
 import type { CancelNotification, PromptRequest, PromptResponse, RequestError } from "@agentclientprotocol/sdk"
 import type { OpenCodeClient, OpenCodeEvent } from "@opencode/client/effect"
 import { TokenUsage } from "@opencode/schema/token-usage"

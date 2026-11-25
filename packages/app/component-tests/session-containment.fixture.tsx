@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — SessionContainmentFixture。
+ * 应用界面组件的测试中负责 SessionContainmentFixture 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, Show } from "solid-js"
 import { render } from "solid-js/web"
 import type { SessionMessageAssistantText, SessionMessageAssistantTool } from "@opencode/client/promise"

@@ -1,3 +1,7 @@
+/**
+ * session 接口处理器。
+ * 会话接口处理器：会话的创建、列举、消息、压缩、权限与统计等全部端点。
+ */
 import { Instance } from "@opencode/core/instance/service"
 import { Session } from "@opencode/core/session"
 import { SessionStats } from "@opencode/core/session/stats"

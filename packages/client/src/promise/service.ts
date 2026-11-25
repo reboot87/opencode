@@ -1,3 +1,7 @@
+/**
+ * Promise 服务发现。
+ * 发现本机 OpenCode 服务并建立 Promise 风格连接。
+ */
 import { readFile, rm } from "node:fs/promises"
 import type { DiscoverOptions, Endpoint, Info, EnsureOptions, StopOptions } from "../service.js"
 import { contenderPool, spawnServiceContender } from "../service-contender.js"

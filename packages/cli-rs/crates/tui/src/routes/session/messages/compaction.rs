@@ -1,4 +1,6 @@
 //! Transcript rows for running, queued, and completed compactions.
+//!
+//! 终端界面路由：上下文压缩。
 
 use opencode_api::generated::{SessionMessageCompaction, TokenUsageInfo};
 use opencode_ui::motion::Spinner;

@@ -1,4 +1,6 @@
 //! Focus follows handled clicks, not every mouse press.
+//!
+//! 终端界面测试：点击聚焦。
 
 use crate::support;
 

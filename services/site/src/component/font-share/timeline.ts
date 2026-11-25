@@ -2,6 +2,8 @@
  * A tiny deterministic timeline for the share canvases: one-shot actions at fixed times and a
  * virtual pointer that follows keyframes, dispatching real pointer and mouse events to whatever
  * is under it. `step(t)` may be called with any monotonic t; going backwards restarts the loop.
+ *
+ * 字体分享组件：时间线。
  */
 
 export type Cursor = { x: number; y: number; down: boolean } | undefined

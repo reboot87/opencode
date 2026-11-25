@@ -1,3 +1,7 @@
+/**
+ * 家目录记忆插件。
+ * 从用户主目录读取记忆文件并按天注入会话，含消息长度上限。
+ */
 export * as HomeMemoryPlugin from "./home-memory.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：CSS·变体。
+ */
 import { expect, test } from "bun:test"
 import path from "node:path"
 import { preprocessCSS, resolveConfig } from "vite"

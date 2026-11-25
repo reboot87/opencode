@@ -1,3 +1,10 @@
+/**
+ * updater·安装的测试。
+ *
+ * 被测模块：@opencode/cli/updater-install
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { NodeServices } from "@effect/platform-node"
 import { EffectFlock } from "@opencode/util/effect-flock"
 import { LayerNode } from "@opencode/util/effect/layer-node"

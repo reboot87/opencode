@@ -1,3 +1,7 @@
+/**
+ * 可观测性选项。
+ * 定义日志与追踪的可观测性配置选项。
+ */
 export * as Observability from "./observability.js"
 
 import * as NodeFileSystem from "@effect/platform-node/NodeFileSystem"

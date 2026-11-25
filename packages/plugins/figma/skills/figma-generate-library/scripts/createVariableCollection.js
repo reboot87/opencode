@@ -12,6 +12,10 @@
  *   modeIds: Record<string, string>
  * }>}
  *   `modeIds` maps each mode name to its modeId string.
+ *
+ * Figma 组件库生成脚本：创建变量·Collection。
+ *
+ * Figma 组件库生成脚本：创建变量·Collection。
  */
 async function createVariableCollection(name, modeNames) {
   if (!modeNames || modeNames.length === 0) {

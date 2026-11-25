@@ -1,3 +1,7 @@
+/**
+ * Claude 会话分叉。
+ * 基于源会话消息派生新的 Claude 会话。
+ */
 export * as ClaudeFork from "./fork.js"
 
 import { ClaudeSDK } from "./sdk.js"

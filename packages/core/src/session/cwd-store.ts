@@ -1,3 +1,7 @@
+/**
+ * 工作目录存储（SessionCwdStore）。
+ * 把每个会话的工作目录持久化到 session metadata 中（实验性，免数据库迁移），提供读写。
+ */
 export * as SessionCwdStore from "./cwd-store.js"
 
 import { eq } from "drizzle-orm"

@@ -1,3 +1,7 @@
+/**
+ * SQLite 运行时（Bun）。
+ * 在 Bun 运行时使用 bun:sqlite 提供 SqlClient，并声明外键开关与调优 PRAGMA 支持。
+ */
 import { SQLiteError } from "bun:sqlite"
 import { SqliteClient } from "@effect/sql-sqlite-bun"
 import { Layer } from "effect"

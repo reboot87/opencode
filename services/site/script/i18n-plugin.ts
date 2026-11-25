@@ -102,7 +102,10 @@ export function i18nSlices(): Plugin {
   }
 }
 
-/** Strings as one JSON.parse call: compact whether or not the build minifies, and quick to parse. */
+/** Strings as one JSON.parse call: compact whether or not the build minifies, and quick to parse.
+ *
+ * 站点构建脚本：国际化插件。
+ */
 function json(value: unknown) {
   return `JSON.parse('${JSON.stringify(value).replace(/\\/g, "\\\\").replace(/'/g, "\\'")}')`
 }

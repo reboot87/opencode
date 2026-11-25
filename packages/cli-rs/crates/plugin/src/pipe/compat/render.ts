@@ -1,3 +1,8 @@
+/**
+ * 管道实现：render。
+ *
+ * 管道实现的 TypeScript 兼容适配层。
+ */
 // Solid's universal renderer builds a local VNode tree. Serialize the mounted root for each host view; tree
 // mutations invalidate the mount.
 import { createRenderer } from "solid-js/universal"

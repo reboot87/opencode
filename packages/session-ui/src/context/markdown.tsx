@@ -1,3 +1,7 @@
+/**
+ * UI 上下文 — Markdown。
+ * UI 包的上下文提供者中负责 Markdown 部分，提供该部分所需的实现与类型定义。
+ */
 import type { IconProps } from "@opencode/ui/icon"
 import { createContext, useContext, type ParentProps } from "solid-js"
 import type { SessionReferenceMenu } from "../components/markdown-session-links"

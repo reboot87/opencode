@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — Inline。
+ * GUI 插件的实现中负责 Inline 部分，提供该部分所需的实现与类型定义。
+ */
 // CommonMark 0.31.2 inline parser (a port of commonmark.js's delimiter-stack and bracket-stack algorithm),
 // extended with GFM strikethrough and extended autolinks, and OpenCode's `$…$`, `$$…$$`, and `\(…\)` math.
 import { decodeEntity, ENTITY_PATTERN, ESCAPABLE, normalizeURI, unescapeString } from "./entities"

@@ -14,5 +14,8 @@ export const announcements = [
   { text: "A refreshed desktop app.", link: "See what's new in 2.2", href: "/changelog/v2.2.0" },
 ] as const
 
-/** A message as one line of Design mode copy: the announcement, then its link text. */
+/** A message as one line of Design mode copy: the announcement, then its link text.
+ *
+ * 站点界面组件：公告。
+ */
 export const announcementCopy = (item: (typeof announcements)[number]) => `${item.text} ${item.link}`

@@ -1,3 +1,7 @@
+/**
+ * 终端文案 — Am。
+ * 终端插件的多语言文案中负责 Am 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.category": "ተርሚናል",
   "command.toggle": "ተርሚናል ቀይር",

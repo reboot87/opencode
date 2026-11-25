@@ -1,3 +1,7 @@
+/**
+ * 机器 Worker 客户端。
+ * 与机器 Worker 通信的客户端，含 10 秒握手截止与 4 字节头解析。
+ */
 export * as WorkerClient from "./worker-client.js"
 
 import { Cause, Deferred, Effect, Queue, Result, Sink, Stream } from "effect"

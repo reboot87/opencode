@@ -24,6 +24,10 @@
  *   - `codeSyntax`: Platform code syntax strings. Omit to skip.
  * @returns {Promise<{variables: Record<string, Variable>}>}
  *   `variables` maps each token name to its created Variable object.
+ *
+ * Figma 组件库生成脚本：创建语义令牌。
+ *
+ * Figma 组件库生成脚本：创建语义令牌。
  */
 async function createSemanticTokens(collection, modeIds, tokenMap) {
   const variables = {}

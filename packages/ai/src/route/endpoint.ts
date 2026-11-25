@@ -1,3 +1,7 @@
+/**
+ * 端点（Endpoint）构建：把请求 + 配置渲染成最终的 URL 路径/查询参数。
+ * EndpointPart 支持静态字符串或从请求派生的函数，便于不同 provider 的 URL 规则复用。
+ */
 import type { LLMRequest } from "../schema/index.js"
 
 export interface EndpointInput<Body, Request = LLMRequest> {

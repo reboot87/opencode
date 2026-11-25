@@ -5,6 +5,8 @@ import type { CopyId } from "./design-mode"
  * What pages read from Design mode (design-mode.tsx). Design mode is a development tool that Site
  * loads only on the development server, so in production it is never on and every copy is the
  * page's own.
+ *
+ * 站点界面组件：设计拷贝。
  */
 
 export const [designMode, setDesignModeState] = createSignal(false)

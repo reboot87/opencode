@@ -1,3 +1,17 @@
+/**
+ * 媒体资产（Media Asset）抽象。
+ *
+ * 图片、音频、视频、文档等媒体在各 provider 间有不同的表示形式，
+ * 本文件把它们统一成 Asset：一个带 source（来源）和 mediaType 的对象。
+ *
+ * 核心概念：
+ *   - Source：可序列化/可持久化的来源形式——bytes（原始字节）、base64、url（带过期时间）、ref（provider 引用）；
+ *   - Asset 类：围绕 Source 提供一致的访问接口，如取字节、取 URL、转 data URL、写文件；
+ *   - Schema：AssetEncoded / AssetSchema 让 Asset 能跨进程传递（AI SDK 常在多进程/流式场景运行）；
+ *   - 便捷构造器：image / bytes / base64 / url / ref / file / parseDataUrl 等。
+ *
+ * 设计要点：媒体内容可能很大，Asset 尽量延迟加载（url/ref 不立即下载），并在需要时通过 Effect 获取。
+ */
 export * as Media from "./media.js"
 
 import { Effect, FileSystem, Result, Schema, SchemaGetter, Stream } from "effect"
@@ -39,11 +53,11 @@ const UrlSource = Schema.Struct({
   type: Schema.Literal("url"),
   url: Schema.String,
   mediaType: Schema.optional(Schema.String),
-  /** Epoch milliseconds after which the provider no longer serves the URL. */
+  /** URL 失效的 epoch 毫秒时间戳：过了这个时间 provider 不再提供该 URL。 */
   expiresAt: Schema.optional(Schema.Number),
 })
 
-/** A provider-side handle: OpenAI `file_id`, Gemini file URI, `gs://`, or a prior generation id. */
+/** provider 侧的引用句柄：如 OpenAI 的 file_id、Gemini 文件 URI、gs:// 地址或上一次生成的 id。 */
 const RefSource = Schema.Struct({
   type: Schema.Literal("ref"),
   provider: ProviderID,
@@ -78,7 +92,10 @@ export const kindOf = (mediaType: string): Kind => {
   return "other"
 }
 
-/** Container-independent facts about the payload; raw PCM audio relies on these because it has no header. */
+/**
+ * 与容器无关的有效载荷元数据（宽高、时长、采样率等）。
+ * 原始 PCM 音频没有文件头，必须依赖这些字段才能知道如何解析。
+ */
 export const Info = Schema.Struct({
   width: Schema.optional(Schema.Number),
   height: Schema.optional(Schema.Number),
@@ -104,23 +121,24 @@ export interface Inline {
   readonly dataUrl: string
 }
 
+/** 一个媒体资产对象：持有 Source 并派生出类型、种类等元信息，提供统一的读取接口。 */
 export class Asset {
   readonly source: Source
-  /** Derived from the source: declared type, sniffed magic bytes, then `application/octet-stream`. */
+  /** 媒体类型按优先级派生：source 声明的类型 → 嗅探魔数 → application/octet-stream。 */
   readonly mediaType: string
   readonly kind: Kind
   readonly info?: Info
-  /** Epoch milliseconds after which a `url` source stops resolving. */
+  /** url 来源失效的 epoch 毫秒时间戳。 */
   readonly expiresAt?: number
   readonly providerMetadata?: ProviderMetadata
-  /** Transient download credentials for `url` sources; see `Asset.Input.headers`. */
+  /** url 来源的临时下载凭据（如签名 header）。 */
   readonly headers?: Record<string, string>
-  /** Middleware for downloading a `url` source; see `Asset.Input.middleware`. */
+  /** 下载 url 来源时使用的 HTTP 中间件。 */
   readonly middleware?: HttpMiddleware
 
-  // Derived payload forms are cached on the instance because every protocol lowering re-reads the same payload. The
-  // cache is check-then-set (concurrent first reads of a `url` source may both download) and is never observable
-  // through `source`, so round-tripping through `Media.from(asset.source)` stays lossless.
+  // 派生出的载荷形式缓存在实例上，因为每个协议的降级处理都会重复读取同一份载荷。
+  // 缓存是“先检查后设置”（url 首次并发读取时可能都去下载），且不会通过 source 暴露，
+  // 所以用 Media.from(asset.source) 往返转换仍然无损。
   #bytes: Uint8Array | undefined
   #base64: string | undefined
 
@@ -138,7 +156,7 @@ export class Asset {
     this.middleware = input.source.type === "url" ? input.middleware : undefined
   }
 
-  /** Inline payload without effects, for protocols that embed base64 or data URLs directly. */
+  /** 同步取得内联载荷（base64 / data URL），供直接嵌入 base64 的协议使用；url/ref 来源返回 undefined。 */
   inline(): Inline | undefined {
     const source = this.source
     if (source.type !== "bytes" && source.type !== "base64") return undefined
@@ -147,7 +165,7 @@ export class Asset {
     return { mime, base64, dataUrl: `data:${mime};base64,${base64}` }
   }
 
-  /** Decoded payload; downloads `url` sources through the request executor and caches the result. */
+  /** 解码后的字节载荷；url 来源会通过请求执行器下载并缓存结果，ref 来源无法本地化会报错。 */
   bytes(): Effect.Effect<Uint8Array, AIError, Service> {
     return Effect.suspend(() => {
       const source = this.source
@@ -319,26 +337,26 @@ export const ref = (provider: string | ProviderID, id: string, mediaType?: strin
 
 const DATA_URL = /^data:([^;,]+)(?:;[^,]*)*;base64,(.*)$/is
 
-/** Parse a `data:<mime>;base64,<data>` URL, or `undefined` when the value is not a base64 data URL. */
+/** 解析 data URL（data:<mime>;base64,<data>）；不是 base64 data URL 时返回 undefined。 */
 export const parseDataUrl = (value: string, options?: AssetOptions) => {
   const match = DATA_URL.exec(value)
   return match === null ? undefined : base64(match[2], match[1], options)
 }
 
-/** Parse a `data:<mime>;base64,<data>` URL. Malformed input throws a typed `AIError` because constructors are sync. */
+/** 解析 data URL；格式非法时抛出类型化的 AIError（因为构造函数是同步的）。 */
 export const fromDataUrl = (dataUrl: string, options?: AssetOptions) => {
   const asset = parseDataUrl(dataUrl, options)
   if (asset === undefined) throw invalid("Media data URLs must contain a MIME type and base64 data")
   return asset
 }
 
-/** Plain file data: bytes, a URL, or a string holding a data URL, an http(s) URL or base64. */
+/** 普通文件数据：字节、URL，或表示 data URL / http(s) URL / base64 的字符串。 */
 export type Data = Uint8Array | ArrayBuffer | URL | string
 
-/** What file inputs accept: an `Asset` or plain `Data`. */
+/** 文件输入接受的类型：Asset 或普通 Data。 */
 export type Input = Asset | Data
 
-/** Normalize input into an `ImageAsset`; throws when it's known not to be an image. */
+/** 把输入规范化成 ImageAsset；确定不是图片时抛错。 */
 export const image = (input: Input, mediaType?: string): ImageAsset => {
   const asset = make(input, mediaType)
   if (!Schema.is(ImageAssetSchema)(asset)) throw invalid(`expected an image, got ${asset.mediaType}`)

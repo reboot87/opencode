@@ -3,7 +3,10 @@
 // under one dated folder, at the same path it has under public/ (media-manifest.txt lists every
 // file). Pages link the site path through mediaUrl(), so nothing redirects at request time.
 
-/** The one base path of the site's media in the files bucket. */
+/** The one base path of the site's media in the files bucket.
+ *
+ * 站点共享逻辑：媒体。
+ */
 export const mediaBase = "/files/site/2026-11"
 
 /** File types that live in the files bucket rather than in the Worker's static assets. */

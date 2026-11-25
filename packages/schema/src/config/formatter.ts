@@ -1,3 +1,7 @@
+/**
+ * 格式化配置类型。
+ * 定义 formatter 配置项的 Schema。
+ */
 export * as ConfigFormatter from "./formatter.js"
 
 import { Schema } from "effect"

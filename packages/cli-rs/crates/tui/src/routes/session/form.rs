@@ -1,4 +1,6 @@
 //! Session and global forms own the input while visible. A pending form keeps its draft across remounts.
+//!
+//! 终端界面路由：表单。
 
 use std::collections::HashSet;
 

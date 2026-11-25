@@ -1,3 +1,5 @@
+//! 终端界面路由：插件。
+
 use opencode_plugin::RouteMount;
 
 use super::RouteView;

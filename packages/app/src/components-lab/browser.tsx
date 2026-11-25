@@ -1,3 +1,7 @@
+/**
+ * 组件实验室 — Browser。
+ * 用于试用与调试 UI 组件的页面中负责 Browser 部分，提供该部分所需的实现与类型定义。
+ */
 import { makeEventListener } from "@solid-primitives/event-listener"
 import {
   batch,

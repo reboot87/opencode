@@ -1,3 +1,7 @@
+/**
+ * 事件数据库表。
+ * 定义 event 与 event_sequence 表结构。
+ */
 import { sqliteTable, text, integer, index, uniqueIndex } from "drizzle-orm/sqlite-core"
 import { Event } from "@opencode/schema/event"
 

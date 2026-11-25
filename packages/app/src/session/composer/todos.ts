@@ -1,3 +1,7 @@
+/**
+ * 会话输入区 — Todos。
+ * 会话界面输入区的实现中负责 Todos 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageInfo } from "@opencode/client/promise"
 
 export type TodoStatus = "pending" | "in_progress" | "completed" | "cancelled"

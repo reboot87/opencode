@@ -1,3 +1,7 @@
+/**
+ * GUI 更新状态。
+ * 定义应用更新器的状态结构。
+ */
 import { Schema } from "effect"
 import { Ipc } from "./core.js"
 

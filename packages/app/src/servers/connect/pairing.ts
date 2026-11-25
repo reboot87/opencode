@@ -1,3 +1,7 @@
+/**
+ * 连接服务端 — Pairing。
+ * 添加与连接远程服务端中负责 Pairing 部分，提供该部分所需的实现与类型定义。
+ */
 import { isUnauthorizedError, OpenCode } from "@opencode/client/promise"
 import { Option, Schema } from "effect"
 import { checkServerHealth } from "@/runtime/server/health"

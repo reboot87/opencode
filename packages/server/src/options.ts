@@ -1,3 +1,7 @@
+/**
+ * 服务端选项。
+ * 定义服务端监听、鉴权与功能开关等配置项。
+ */
 import { Database } from "@opencode/core/database/database"
 import { ModelsDev } from "@opencode/core/models-dev"
 import { PersistentPty } from "@opencode/core/persistent-pty"

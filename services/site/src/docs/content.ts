@@ -4,7 +4,10 @@ import type { Frontmatter } from "./frontmatter"
 import { docsSlug } from "./lib/navigation"
 import type { DocsHeading } from "./rehype-headings"
 
-/** A compiled content page (vite.ts): its content component, frontmatter, headings and Markdown twin. */
+/** A compiled content page (vite.ts): its content component, frontmatter, headings and Markdown twin.
+ *
+ * V2 文档站：内容。
+ */
 export type DocsModule = {
   default: Component<{ components?: Record<string, Component<any>> }>
   frontmatter: Frontmatter

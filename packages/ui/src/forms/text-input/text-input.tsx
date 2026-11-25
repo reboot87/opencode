@@ -1,3 +1,7 @@
+/**
+ * 文本输入 — TextInput。
+ * 单行文本输入组件中负责 TextInput 部分，提供该部分所需的实现与类型定义。
+ */
 import { type ComponentProps, type JSX, Show, splitProps } from "solid-js"
 import { Icon } from "@opencode/ui/icon"
 import { useI18n } from "../../context/i18n"

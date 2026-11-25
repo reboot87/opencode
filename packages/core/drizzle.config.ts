@@ -1,3 +1,6 @@
+/**
+ * Drizzle·配置。
+ */
 import { defineConfig } from "drizzle-kit"
 
 export default defineConfig({

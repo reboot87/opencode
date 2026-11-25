@@ -1,4 +1,7 @@
-/** The path a build is served under, such as `/opencode`, without a trailing slash; empty at the root. */
+/**
+ * 
+ * The path a build is served under, such as `/opencode`, without a trailing slash; empty at the root. 平台适配中负责 BasePath 部分：浏览器平台能力适配中与 BasePath 相关的状态、交互与渲染逻辑。
+ */
 export const basePath = normalizeBasePath(import.meta.env.BASE_URL)
 
 export function normalizeBasePath(base: string | undefined) {

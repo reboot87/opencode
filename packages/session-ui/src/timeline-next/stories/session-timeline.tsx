@@ -1,3 +1,7 @@
+/**
+ * 时间线故事 — SessionTimeline。
+ * 新版时间线的 Storybook 展示中负责 SessionTimeline 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, createMemo } from "solid-js"
 import { createStore } from "solid-js/store"
 import type { SessionDocument } from "../../document"

@@ -1,3 +1,8 @@
+/**
+ * 对等性公共库：假实现·服务端。
+ *
+ * 对等性校验的公共库：伪造服务端、PTY 套接字与录制回放工具。
+ */
 // A fake OpenCode server for P-CLI and P-PTY: it serves a scenario's route table and logs every
 // request, so both clients can run with `--server <url>` and never touch the user's service.
 

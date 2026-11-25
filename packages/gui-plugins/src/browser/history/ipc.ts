@@ -1,3 +1,7 @@
+/**
+ * 浏览器历史 — Ipc。
+ * 浏览器插件的访问历史中负责 Ipc 部分，提供该部分所需的实现与类型定义。
+ */
 import { Schema } from "effect"
 import { Ipc } from "@opencode/plugin/gui"
 

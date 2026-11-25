@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — MobileEmulation。
+ * 内置浏览器功能的 GUI 插件中负责 MobileEmulation 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Protocol } from "devtools-protocol"
 import type { Cdp } from "./cdp"
 import type { Viewport } from "./ipc"

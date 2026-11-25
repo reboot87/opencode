@@ -1,3 +1,7 @@
+/**
+ * UI 上下文 — MarkedBaseTest。
+ * UI 包的上下文提供者中负责 MarkedBaseTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { createMarkdownBase, parseSmallMarkdown } from "./marked-base"
 

@@ -1,3 +1,7 @@
+/**
+ * 文件系统工具。
+ * 封装常用文件操作与 FileSystemError 错误类型。
+ */
 import path, { dirname, isAbsolute, join, relative, sep } from "path"
 import { realpathSync } from "fs"
 import { lookup } from "mime-types"

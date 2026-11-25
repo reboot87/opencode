@@ -1,3 +1,7 @@
+/**
+ * 工具服务（Tool）。
+ * 工具注册表与执行契约：工具注册、命名空间、选项与元数据定义。
+ */
 export * as Tool from "./tool.js"
 export { CallID, Content, Error, FileContent, TextContent } from "@opencode/schema/tool"
 export type { Context, Info, Metadata, Namespace, Options, Result } from "@opencode/schema/tool"

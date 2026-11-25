@@ -1,3 +1,7 @@
+/**
+ * 轻提示 — Machine。
+ * 短时非阻塞消息提示组件中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 export type ToastRegistryEntry<O> = {
   readonly id: number
   /** Same title, description, variant, timing and action labels coalesce into one toast. */

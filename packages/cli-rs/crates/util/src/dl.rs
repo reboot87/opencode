@@ -7,6 +7,8 @@
 //! context's SQLite is not found, as on a machine without it.
 
 #![allow(unsafe_code)]
+//!
+//! 通用工具：`dl`。
 
 use std::ffi::{CString, OsStr, c_void};
 use std::ptr::NonNull;

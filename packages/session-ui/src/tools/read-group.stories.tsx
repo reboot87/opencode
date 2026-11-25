@@ -1,3 +1,7 @@
+/**
+ * 工具展示 — ReadGroupStories。
+ * 工具调用与结果的展示组件中负责 ReadGroupStories 部分，提供该部分所需的实现与类型定义。
+ */
 import type { JsonValue, SessionMessageAssistant } from "@opencode/client/promise"
 import { createEffect, createSignal } from "solid-js"
 import { CurrentSessionProviders } from "../storybook/current-session-story"

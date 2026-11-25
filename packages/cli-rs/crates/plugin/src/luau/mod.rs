@@ -1,5 +1,7 @@
 //! Runs each Luau activation in its own sandboxed VM on the UI thread. Modules come from the staged plugin
 //! directory; frozen globals, heap limits and CPU interrupts apply within the VM.
+//!
+//! Luau 插件运行时入口。
 
 mod bind;
 pub mod client;

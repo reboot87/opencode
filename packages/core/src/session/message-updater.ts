@@ -1,3 +1,7 @@
+/**
+ * 会话消息更新器。
+ * 把持久化的消息草稿按 SessionEvent 事件流投影更新（增量文本、工具状态等），产出最终消息。
+ */
 import { castDraft, produce, type WritableDraft } from "immer"
 import { DateTime, Effect, Match, pipe, Schema } from "effect"
 import { SessionEvent } from "./event.js"

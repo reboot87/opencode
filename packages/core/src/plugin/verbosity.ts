@@ -1,3 +1,7 @@
+/**
+ * 输出详细度插件。
+ * 根据模型与网关特性调整输出冗长度。
+ */
 export * as VerbosityPlugin from "./verbosity.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

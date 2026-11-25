@@ -1,3 +1,7 @@
+/**
+ * 系统通知 — Index 出口。
+ * 集中导出 系统通知 中 Index 相关的实现、组件与类型。
+ */
 export * as Toasts from "./index"
 
 import { app, BrowserWindow, Notification, type WebContents } from "electron"

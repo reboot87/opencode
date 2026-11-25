@@ -1,5 +1,7 @@
 //! The P-COMP cell fixture format, shared with `parity/lib/cells.ts`, which documents it. Parsing accepts what
 //! the TypeScript writer emits, and [`Fixture::to_json`] writes the same bytes for the same cells.
+//!
+//! 双实现对等性校验：夹具。
 
 use opentui::native::{Capture, Cell};
 use opentui::style::{Attributes, Color, Intent};

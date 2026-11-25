@@ -1,3 +1,7 @@
+/**
+ * 本地存储 — Legacy。
+ * 桌面端配置的本地持久化中负责 Legacy 部分，提供该部分所需的实现与类型定义。
+ */
 import { Effect, FileSystem, Option, Path, Schema } from "effect"
 import type { Database } from "./database"
 import { state } from "./schema"

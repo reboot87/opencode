@@ -1,4 +1,6 @@
 //! Paged transcripts and streaming message updates.
+//!
+//! 会话存储层：消息。
 
 use opencode_api::generated::*;
 use serde_json::Value;

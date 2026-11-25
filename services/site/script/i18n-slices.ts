@@ -1,3 +1,6 @@
+/**
+ * 站点构建脚本：国际化·slices。
+ */
 // Splits the translations by where the browser needs them, for the static pages' script
 // (script/static-client.ts, i18nSlices). The source files stay as they are (src/i18n/<locale>.ts,
 // src/i18n/content/<locale>.ts); this reads them and the script's import graph and works out, for each

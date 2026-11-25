@@ -1,3 +1,7 @@
+/**
+ * 配置类型定义。
+ * 定义配置条目的统一结构（键、值、来源）。
+ */
 export * as Config from "./config.js"
 
 import { Schema } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * 模型请求准备（SessionModelRequest）。
+ * 为每轮 LLM 请求准备系统提示词、消息转录与工具，处理大图片的压缩/移除，构造 baseTranscript。
+ */
 export * as SessionModelRequest from "./model-request.js"
 
 import {
@@ -47,6 +51,8 @@ import { SessionSystemPrompt } from "./system-prompt.js"
 import { toLLMMessages } from "./runner/to-llm-message.js"
 import type { SessionMessage } from "./message.js"
 
+// 图片负载控制：请求中图片总量超过 25MiB 时开始裁剪，逐张移除直到降到 15MiB 以下，
+// 被移除的图片以 IMAGE_REMOVED 占位文本替代，避免模型误以为还能看到其内容。
 const IMAGE_BYTES_TRIGGER = 25 * 1024 * 1024 // 25 MiB
 const IMAGE_BYTES_TARGET = 15 * 1024 * 1024 // 15 MiB
 const IMAGE_REMOVED =
@@ -103,6 +109,8 @@ export const outputLimit = (limit: Model.Info["limit"], inputTokens?: Input["inp
   return Math.min(requested, Math.max(OUTPUT_TOKEN_MIN, room))
 }
 
+// 构造本轮请求的基础转录（transcript）：把 agent 初始指令、历史会话消息与工具集合
+// 转换为协议层 system 提示词 + 消息序列，并处理图片负载裁剪，供 llm.ts 每轮复用。
 export const baseTranscript = (input: {
   readonly agent: Agent.Info
   readonly model: SessionRunnerModel.Resolved

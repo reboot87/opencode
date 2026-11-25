@@ -1,3 +1,7 @@
+/**
+ * 项目头像 — ProceduralKit。
+ * 项目标识头像组件中负责 ProceduralKit 部分，提供该部分所需的实现与类型定义。
+ */
 // Shared pieces of the experimental project icon styles in procedural.ts: the style definition, the pixel grid that
 // most styles paint, and color, random and dithering helpers. Only the components lab imports these modules.
 

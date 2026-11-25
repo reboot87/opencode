@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：TypeScript·插件·skipped·伪终端。
+ *
+ * 规格编号：F16。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // FT-10: a server plugin with a TUI part. TS loads that part from the server's list (`serverTuiPlugins`, here the
 // directory `energy` beside `cli.json`, whose command shows in `/plugins` as an active TUI plugin). The JS host is on by
 // default; here `OPENCODE_PLUGIN_JS=0` turns it off, so opencode-native does not load TypeScript TUI plugins,

@@ -1,3 +1,7 @@
+/**
+ * 事件总线（Bus）。
+ * 全局事件总线：发布/订阅领域事件、维护最新序号、支持等待特定事件，是整个系统的事件主干。
+ */
 export * as Bus from "./bus.js"
 
 import { Cause, Clock, Context, Effect, Layer, Option, PubSub, Schema, Stream } from "effect"

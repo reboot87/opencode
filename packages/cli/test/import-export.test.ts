@@ -1,3 +1,10 @@
+/**
+ * 导入·导出的测试。
+ *
+ * 被测模块：@opencode/cli/import-export
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import fs from "node:fs/promises"
 import os from "node:os"

@@ -1,3 +1,7 @@
+/**
+ * 凭据类型。
+ * 定义凭据的 ID、值与元数据（OAuth 等变体）。
+ */
 export * as Credential from "./credential.js"
 
 import { Schema } from "effect"

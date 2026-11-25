@@ -1,3 +1,7 @@
+/**
+ * 引用指令渲染。
+ * 把可用引用汇总渲染为可注入的指令文本。
+ */
 export * as ReferenceInstructions from "./instructions.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

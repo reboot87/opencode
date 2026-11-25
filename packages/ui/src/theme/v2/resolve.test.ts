@@ -1,3 +1,7 @@
+/**
+ * UI 主题（v2） — ResolveTest。
+ * 第二版设计令牌定义中负责 ResolveTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { contrastRatio } from "../color"
 import type { DesktopTheme, HexColor, ResolvedV2Theme } from "../types"

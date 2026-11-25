@@ -1,4 +1,6 @@
 //! Sidebar context usage and cost for the session family.
+//!
+//! 终端插件视图：侧边栏上下文。
 
 use std::cell::RefCell;
 

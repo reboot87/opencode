@@ -1,3 +1,7 @@
+/**
+ * 回归测试 — MenuScrollbarsSpec。
+ * 防止既有行为退化的端到端用例中负责 MenuScrollbarsSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test, type Locator, type Page } from "@playwright/test"
 import { openPaletteWorkspace, paletteSession } from "../utils/command-palette"
 import { openSettings } from "../utils/workspace"

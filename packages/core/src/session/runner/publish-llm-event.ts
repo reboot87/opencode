@@ -1,3 +1,7 @@
+/**
+ * LLM 事件发布器。
+ * 把底层 LLMEvent 流翻译并广播为会话事件（SessionEvent）：文本增量、推理内容、工具调用/结果、用量与错误等；记录 StepRecord，并对工具输入输出做截断摘要（inputExcerpt）以控制持久化体积。
+ */
 import { type LLMEvent, type ProviderMetadata, type ToolResultValue } from "@opencode/ai/effect"
 import { isRecord } from "@opencode/util/record"
 import type { Agent } from "@opencode/schema/agent"
@@ -39,6 +43,7 @@ const beginsOutput = (event: LLMEvent) =>
   event.type === "tool-input-error" ||
   event.type === "tool-call"
 
+// 工具输入摘要的长度上限：超限时截断后再持久化，避免大 payload 撑爆消息记录。
 const INPUT_EXCERPT_LIMIT = 2048
 
 type InputExcerpt = {
@@ -48,6 +53,8 @@ type InputExcerpt = {
 
 type InputFailureReason = "malformed" | "length" | "incomplete"
 
+// 三类工具输入失败对应的、可回灌给模型的错误事件：
+// malformed（非法 JSON）/ length（输出触顶导致参数不完整）/ incomplete（参数未完成）。
 const INPUT_FAILURES = {
   malformed: {
     type: "tool.input-json",

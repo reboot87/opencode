@@ -1,3 +1,7 @@
+/**
+ * 终端 UI — PaneResizeHandle。
+ * 终端界面的通用 UI 组件中负责 PaneResizeHandle 部分，提供该部分所需的实现与类型定义。
+ */
 import { useTheme } from "../context/theme"
 import type { createPaneResize } from "./pane-resize"
 

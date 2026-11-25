@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — ArtifactLink。
+ * 内置浏览器功能的 GUI 插件中负责 ArtifactLink 部分，提供该部分所需的实现与类型定义。
+ */
 import { remotePath } from "./remote-address"
 
 const route = "/api/experimental/artifacts/"

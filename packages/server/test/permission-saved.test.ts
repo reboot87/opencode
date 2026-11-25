@@ -1,3 +1,10 @@
+/**
+ * 权限·saved的测试。
+ *
+ * 被测模块：@opencode/server/permission-saved
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import { PermissionSaved } from "@opencode/schema/permission-saved"
 import { Session } from "@opencode/schema/session"

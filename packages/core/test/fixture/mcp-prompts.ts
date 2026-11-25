@@ -1,3 +1,8 @@
+/**
+ * MCP·提示词测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { Server } from "@modelcontextprotocol/server"
 import { StdioServerTransport } from "@modelcontextprotocol/server/stdio"
 

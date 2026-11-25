@@ -1,4 +1,6 @@
 //! Drive plugin worker threads and mailbox delivery through the TUI.
+//!
+//! 终端界面测试：插件·mail。
 
 use crate::support::model::{self, Failure, Model, Rng};
 use crate::support::{self, Harness};

@@ -1,4 +1,6 @@
 //! Settings, experiment, debug, and developer-tool interactions.
+//!
+//! 终端界面测试：设置。
 
 use crate::support::{self, WAIT, wait_for};
 

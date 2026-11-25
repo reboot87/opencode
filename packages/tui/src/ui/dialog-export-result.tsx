@@ -1,3 +1,7 @@
+/**
+ * 终端 UI — DialogExportResult。
+ * 终端界面的通用 UI 组件中负责 DialogExportResult 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal, Show } from "solid-js"
 import { useNewDesigns } from "../config"
 import { useClipboard } from "../context/clipboard"

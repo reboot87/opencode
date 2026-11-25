@@ -1,3 +1,7 @@
+/**
+ * 数据站路由 — BreadcrumbSelect。
+ * 数据站点的路由页面中负责 BreadcrumbSelect 部分，提供该部分所需的实现与类型定义。
+ */
 import { Select } from "@kobalte/core/select"
 import { createMemo } from "solid-js"
 

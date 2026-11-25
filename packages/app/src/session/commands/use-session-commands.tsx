@@ -1,3 +1,7 @@
+/**
+ * 会话命令 — UseSessionCommands。
+ * 会话界面提供的命令中负责 UseSessionCommands 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, createUniqueId, on, onCleanup, type JSX } from "solid-js"
 import { createEventListener } from "@solid-primitives/event-listener"
 import { useCommand, type CommandOption } from "@/shell/commands/command"

@@ -1,3 +1,7 @@
+/**
+ * 终端文案 — Zht。
+ * 终端插件的多语言文案中负责 Zht 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.category": "終端機",
   "command.toggle": "切換終端機",

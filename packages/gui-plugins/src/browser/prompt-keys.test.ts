@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — PromptKeysTest。
+ * 内置浏览器功能的 GUI 插件中负责 PromptKeysTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { promptKeyOwner, type PromptKey } from "./prompt-keys"
 

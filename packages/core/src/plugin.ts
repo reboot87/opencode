@@ -1,3 +1,7 @@
+/**
+ * 插件服务（Plugin）。
+ * 插件加载与生命周期管理：注册工具、命令、agent 与钩子，并等待插件激活完成。
+ */
 export * as Plugin from "./plugin.js"
 export { Event, GuiBundle, ID, Info, Source, State } from "@opencode/schema/plugin"
 

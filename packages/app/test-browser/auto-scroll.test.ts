@@ -1,3 +1,7 @@
+/**
+ * 浏览器测试 — AutoScrollTest。
+ * 浏览器环境下的测试中负责 AutoScrollTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, expect, test } from "bun:test"
 import { createAutoScroll } from "@opencode/ui/hooks"
 import { createRoot } from "solid-js"

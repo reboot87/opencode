@@ -1,3 +1,7 @@
+/**
+ * 时间线 — CodeBlocksStories。
+ * 按时间顺序展示会话消息的视图中负责 CodeBlocksStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { createSignal } from "solid-js"
 import type { SessionDocument } from "../document"
 import { MarkdownProvider } from "../context/markdown"

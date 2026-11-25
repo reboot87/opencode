@@ -1,3 +1,7 @@
+/**
+ * 连接服务端 — DialogStories。
+ * 添加与连接远程服务端中负责 DialogStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { address, field, link, password, serverStory, submit } from "./connect.fixture"
 import type { ServerConnectTarget } from "./machine"
 

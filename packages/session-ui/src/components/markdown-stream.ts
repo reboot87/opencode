@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — MarkdownStream。
+ * 跨场景复用的通用 UI 组件中负责 MarkdownStream 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMarkdownStream, type MarkdownBlock, type PatchmarkStream } from "@opencode/patchmark"
 import { isMathFence } from "@opencode/ui/context/marked-parser"
 import { completedProjection } from "./markdown-projection"

@@ -1,3 +1,7 @@
+/**
+ * 关于 — AnimatedWordmark。
+ * 版本与致谢等信息中负责 AnimatedWordmark 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, For, on, onCleanup } from "solid-js"
 import { createStore } from "solid-js/store"
 import { prefersReducedMotion } from "@opencode/ui/motion"

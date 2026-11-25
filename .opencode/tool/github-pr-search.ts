@@ -1,3 +1,6 @@
+/**
+ * 仓库内置工具：GitHub·pr·搜索。
+ */
 /// <reference path="../env.d.ts" />
 import { tool } from "@opencode/plugin"
 async function githubFetch(endpoint: string, options: RequestInit = {}) {

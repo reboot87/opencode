@@ -1,3 +1,7 @@
+/**
+ * 性能夹具 — Tabs。
+ * 性能测试使用的数据夹具中负责 Tabs 部分，提供该部分所需的实现与类型定义。
+ */
 import { base64Encode } from "@opencode/util/encode"
 import type { Page } from "@playwright/test"
 

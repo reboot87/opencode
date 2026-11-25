@@ -1,3 +1,7 @@
+/**
+ * ACP 命令目录。
+ * 内置 ACP 命令清单与可用性目录。
+ */
 import type { OpenCodeClient, OpenCodeEvent } from "@opencode/client/effect"
 import type { Agent } from "@opencode/schema/agent"
 import type { Command } from "@opencode/schema/command"

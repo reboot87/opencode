@@ -1,3 +1,7 @@
+/**
+ * CLI 命令测试 — ModelOptionsTest。
+ * CLI 启动终端界面的测试中负责 ModelOptionsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { go } from "fuzzysort"
 import { prioritizeFavorites, sortModelOptions } from "../../../../src/component/model-options"

@@ -1,3 +1,7 @@
+/**
+ * 日志实现。
+ * 带体积上限（50MiB）与保留阈值（25MiB）的日志写出与轮转。
+ */
 import { Effect, FileSystem, Formatter, Logger, Option, Schedule, Stream, type LogLevel } from "effect"
 import path from "path"
 import { Global } from "../global.js"

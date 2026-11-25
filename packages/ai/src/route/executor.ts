@@ -1,3 +1,13 @@
+/**
+ * HTTP 请求执行器（RequestExecutor）。
+ *
+ * 基于 Effect 的 FetchHttpClient 实现底层 HTTP 调用：
+ *   - 提供 fetchLayer（默认 Layer）和 execute（执行单个请求）；
+ *   - 处理认证、超时、重试、响应体读取、流式响应等公共逻辑；
+ *   - 支持中间件（HttpMiddleware）以注入自定义行为。
+ *
+ * 它是所有 modality client（LLM / Image / Speech 等）共享的传输基础。
+ */
 import { Cause, Clock, Duration, Effect, Layer, Stream } from "effect"
 import {
   FetchHttpClient,

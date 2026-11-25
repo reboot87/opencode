@@ -1,3 +1,7 @@
+/**
+ * 数据核心 — DrizzleConfig。
+ * 数据采集与处理的核心逻辑中负责 DrizzleConfig 部分，提供该部分所需的实现与类型定义。
+ */
 import { Resource } from "./src/resource"
 import { defineConfig } from "drizzle-kit"
 

@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid CommandPaletteTest：该文件实现 CommandPaletteTest 相关的状态与逻辑。
+ */
 import { InputRenderable } from "@opentui/core"
 import { testRender } from "@opentui/solid"
 import { expect, test } from "bun:test"

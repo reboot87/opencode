@@ -1,3 +1,7 @@
+/**
+ * 数据站图像 — Worker。
+ * 生成社交分享图像中负责 Worker 部分，提供该部分所需的实现与类型定义。
+ */
 // The private OG Worker (services/data/og.config.ts). The data Worker posts a card to it over a Service Binding and gets a
 // PNG back. It is its own Worker so the data Worker doesn't load its Wasm engines and fonts.
 // script/build-og-worker.ts bundles it and writes the modules imported here next to it.

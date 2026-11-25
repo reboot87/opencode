@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — Form。
+ * 会话主界面的视图与状态中负责 Form 部分，提供该部分所需的实现与类型定义。
+ */
 import { createStore, unwrap } from "solid-js/store"
 import { createEffect, createMemo, createSignal, For, onCleanup, onMount, Show } from "solid-js"
 import { usePaste, useRenderer, useTerminalDimensions } from "@opentui/solid"

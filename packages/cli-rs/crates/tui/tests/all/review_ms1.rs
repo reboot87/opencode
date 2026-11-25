@@ -1,4 +1,6 @@
 //! Session key ownership and permission refresh across route and connection changes.
+//!
+//! 终端界面测试：评审毫秒级。
 
 use crate::support::{self, WAIT};
 

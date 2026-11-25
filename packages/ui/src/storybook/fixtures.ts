@@ -1,3 +1,7 @@
+/**
+ * Storybook 配置 — Fixtures。
+ * Storybook 的构建与主题配置中负责 Fixtures 部分，提供该部分所需的实现与类型定义。
+ */
 export const diff = {
   before: {
     name: "src/greet.ts",

@@ -1,3 +1,7 @@
+/**
+ * 回归测试 — MobilePluginsSpec。
+ * 防止既有行为退化的端到端用例中负责 MobilePluginsSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test, type Page, type Request } from "@playwright/test"
 import { sessionHref } from "../utils/app"
 import { fixture, mockStressTimeline } from "../utils/session-fixture"

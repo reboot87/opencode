@@ -1,3 +1,10 @@
+/**
+ * 状态机的测试。
+ *
+ * 被测模块：@opencode/cli/machine
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { NodeServices } from "@effect/platform-node"
 import type { MachineInfo, MachineInvite } from "@opencode/client/promise"
 import { describe, expect, test } from "bun:test"

@@ -1,3 +1,7 @@
+/**
+ * 输入编辑器 — Editor。
+ * 输入区文本编辑器的实现中负责 Editor 部分，提供该部分所需的实现与类型定义。
+ */
 import {
   createEffect,
   createMemo,

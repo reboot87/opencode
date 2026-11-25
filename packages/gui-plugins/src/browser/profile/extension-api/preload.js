@@ -1,6 +1,8 @@
 // The browser profile's preload, for every frame and service worker of its partition. In the pages and background
 // worker of an installed extension it adds the chrome.* namespaces main implements; anywhere else, such as a web
 // page or a site's own service worker, it does nothing. Main writes the namespace list in place of the marker.
+// 浏览器扩展接口脚本：预加载。
+// 浏览器扩展接口脚本：预加载。
 const { contextBridge, ipcRenderer } = require("electron")
 
 const namespaces = JSON.parse("__NAMESPACES__")

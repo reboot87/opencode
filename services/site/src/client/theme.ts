@@ -6,7 +6,10 @@ import { site, t } from "./dom"
 
 const dark = matchMedia("(prefers-color-scheme: dark)")
 
-/** The browser bar colour in a scheme: the "Like letters?" bar's blue while it fills the bottom. */
+/** The browser bar colour in a scheme: the "Like letters?" bar's blue while it fills the bottom.
+ *
+ * 浏览器端脚本：主题。
+ */
 let barColor: string | undefined
 let show: ReturnType<typeof startThemeSwitch> | undefined
 

@@ -1,4 +1,6 @@
 //! Prompt line editing. Each prompt owns its buffer, so history ends at submission.
+//!
+//! CLI 交互提示：行。
 
 use std::time::{Duration, Instant};
 

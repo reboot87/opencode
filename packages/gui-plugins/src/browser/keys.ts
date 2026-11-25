@@ -1,4 +1,7 @@
-/** A key press in the page, with Electron's `Input` field names. */
+/**
+ * 
+ * A key press in the page, with Electron's `Input` field names. 浏览器插件中负责 Keys 部分：内置浏览器功能中与 Keys 相关的状态、交互与渲染逻辑。
+ */
 export type PageKey = Pick<Electron.Input, "key" | "code" | "control" | "meta" | "shift" | "alt">
 
 /** Blink's input handler marks CDP events kFromDebugger. Electron 44 exposes the raw flags as _modifiers.

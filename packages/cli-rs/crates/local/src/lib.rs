@@ -1,4 +1,6 @@
 //! Client-local files shared with the TypeScript client: paths, locks, config, and state.
+//!
+//! 本地配置与路径入口。
 
 pub mod channel;
 pub mod cli_config;

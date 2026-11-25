@@ -1,5 +1,7 @@
 //! Reconciles keyed plugin trees with mounted widgets. Matching keys and kinds retain widget state. A keep reuses
 //! the last accepted subtree; an invalid tree is refused as a whole.
+//!
+//! 插件系统：对账。
 
 use std::cell::{Cell, RefCell};
 use std::collections::{HashMap, HashSet};

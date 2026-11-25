@@ -1,3 +1,7 @@
+/**
+ * Mini 测试 — SplashTest。
+ * 精简交互模式的测试中负责 SplashTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { RGBA, TextAttributes, type ScrollbackWriter } from "@opentui/core"
 import { createTestRenderer } from "@opentui/core/testing"

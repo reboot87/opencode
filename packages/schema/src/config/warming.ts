@@ -1,3 +1,7 @@
+/**
+ * 预热配置类型。
+ * 定义 warming 配置项的 Schema。
+ */
 export * as ConfigWarming from "./warming.js"
 
 import { Schema } from "effect"

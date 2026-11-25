@@ -1,3 +1,7 @@
+/**
+ * 通用设置 — Machine。
+ * 语言、启动行为等通用设置中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 export const SETTING_WRITE_TIMEOUT_MS = 15_000
 
 /** `message` is empty when the error carried none. */

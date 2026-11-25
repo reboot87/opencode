@@ -1,3 +1,7 @@
+/**
+ * 旁注插件 — Model。
+ * 在侧边提供补充说明的 GUI 插件中负责 Model 部分，提供该部分所需的实现与类型定义。
+ */
 import { batch, createSignal, onCleanup, untrack } from "solid-js"
 import { createStore } from "solid-js/store"
 import { showToast } from "@opencode/ui/toast"

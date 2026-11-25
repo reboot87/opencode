@@ -1,3 +1,10 @@
+/**
+ * 处理器·策略的测试。
+ *
+ * 被测模块：@opencode/server/handler-policy
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { Session } from "@opencode/core/session"
 import { SessionMessage } from "@opencode/core/session/message"
 import { SessionNotFoundError, UnknownError } from "@opencode/protocol/errors"

@@ -1,3 +1,7 @@
+/**
+ * MCP 搜索插件基座。
+ * MCP 型搜索 provider 的公共实现：解析响应结构并限制响应体积（256KiB）。
+ */
 export * as WebSearchMcp from "./mcp.js"
 
 import { Duration, Effect, Schema } from "effect"

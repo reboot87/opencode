@@ -1,3 +1,7 @@
+/**
+ * 项目类型。
+ * 定义项目（代码根）的结构与 VCS 信息。
+ */
 export * as Project from "./project.js"
 
 import { Schema } from "effect"

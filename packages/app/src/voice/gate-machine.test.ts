@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — GateMachineTest。
+ * 实时语音会话的界面中负责 GateMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { speech } from "./fixtures/history"
 import { INITIAL_VOICE_GATE_STATE, transitionVoiceGate, voiceGateDelay, type VoiceGateEvent } from "./gate-machine"

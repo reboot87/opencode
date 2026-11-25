@@ -8,7 +8,10 @@ import { Plate, prefersReducedMotion, useClock } from "./plate"
 
 const pad = (value: number, length: number) => String(value).padStart(length, "0")
 
-/** Plate 01: the specimen's cover, like the first page of a printed type specimen. */
+/** Plate 01: the specimen's cover, like the first page of a printed type specimen.
+ *
+ * 字体展示组件：`display`。
+ */
 export function Cover() {
   const facts = [
     ["Typeface", "OpenCode"],

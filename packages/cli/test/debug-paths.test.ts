@@ -1,3 +1,10 @@
+/**
+ * debug·路径的测试。
+ *
+ * 被测模块：@opencode/cli/debug-paths
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import fs from "node:fs/promises"
 import os from "node:os"

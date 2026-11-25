@@ -1,6 +1,8 @@
 /**
  * A flight that has not landed by then lands at once, e.g. in a hidden window whose frames stopped. The slowest
  * flight's spring rests in about 0.6s; the driver stretches this by the global speed and slow motion.
+ *
+ * 应用外壳中负责 PanelMotionMachine 部分：浏览器应用外壳中与 PanelMotionMachine 相关的状态、交互与渲染逻辑。
  */
 export const PANEL_FLIGHT_TIMEOUT_MS = 1_500
 

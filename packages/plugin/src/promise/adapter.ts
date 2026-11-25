@@ -1,3 +1,7 @@
+/**
+ * Promise 风格插件适配器。
+ * 把 Promise 风格的插件 API 适配到 Effect 宿主：编译端点、编解码输入输出并桥接事件。
+ */
 import { Tool } from "@opencode/schema/tool"
 import type { Rpc } from "@opencode/schema/rpc"
 import type { OpenCodeEvent } from "@opencode/client"

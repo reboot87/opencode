@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — Spec。
+ * 实时语音会话的界面中负责 Spec 部分，提供该部分所需的实现与类型定义。
+ */
 // Desktop voice contract v1. Adapted from the OpenCode iOS app's VoiceDelegator.swift, VoiceInstructions
 // (VoiceTranscript.swift) and docs/voice-gpt-live.md; no runtime Swift dependency.
 export const version = 1

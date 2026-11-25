@@ -1,3 +1,7 @@
+/**
+ * 表单类型。
+ * 定义表单、字段与提交状态结构。
+ */
 export * as Form from "./form.js"
 
 import { Schema } from "effect"

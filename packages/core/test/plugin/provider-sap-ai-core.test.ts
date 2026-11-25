@@ -1,3 +1,10 @@
+/**
+ * 供应商·SAP·AI·核心的测试。
+ *
+ * 被测模块：@opencode/core/plugin/provider-sap-ai-core
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { AISDK } from "@opencode/core/aisdk"
 import { describe, expect } from "bun:test"
 import { Effect } from "effect"

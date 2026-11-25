@@ -1,3 +1,10 @@
+/**
+ * 会话·消息的测试辅助模块。
+ *
+ * 被测模块：@opencode/core/lib/session-message
+ *
+ * 核心测试的公共辅助模块：内存数据库、会话夹具与事件收集工具。
+ */
 export * as Expected from "./session-message.js"
 
 // Partial expected values, not input fixtures. Keep each assertion's matcher and fields explicit.

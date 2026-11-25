@@ -73,7 +73,10 @@ import { markCard, onScreen, showHeroPoster, travel, type CardTiming } from "./c
 export { installs, products, sdkSnippet, type ProductSlug } from "./product-data"
 
 type Scroll = { y: number; x: number }
-/** The pages a product page's hero can shrink back into a card on: the home carousel and the /product grid. */
+/** The pages a product page's hero can shrink back into a card on: the home carousel and the /product grid.
+ *
+ * 站点界面组件：`products`。
+ */
 type CardPage = "/" | "/product"
 
 // Where each card page (and the home carousel) was scrolled, by the router's history depth, and

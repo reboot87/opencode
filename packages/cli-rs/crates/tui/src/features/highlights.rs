@@ -1,5 +1,7 @@
 //! Stable builds embed release highlights. The first idle home screen to claim the version in shared storage shows
 //! them.
+//!
+//! 终端界面功能模块：`highlights`。
 
 use crate::dialogs::highlights::{self, Highlight};
 use crate::prelude::*;

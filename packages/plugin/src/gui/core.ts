@@ -1,3 +1,7 @@
+/**
+ * GUI 插件核心原语。
+ * 定义 GUI 插件的核心能力：上下文、菜单、文件树、列表、按钮、窗口控制等。
+ */
 import type { OpenCodeClient } from "@opencode/client/promise"
 import type { Schema } from "effect"
 

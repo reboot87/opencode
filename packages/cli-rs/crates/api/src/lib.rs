@@ -1,4 +1,6 @@
 //! HTTP API client: generated types and methods, transports, events, and sockets.
+//!
+//! API 客户端入口。
 
 pub mod client;
 pub mod client_mcp;

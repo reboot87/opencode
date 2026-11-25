@@ -1,3 +1,7 @@
+/**
+ * 动效 — Spring。
+ * 界面过渡与动画效果中负责 Spring 部分，提供该部分所需的实现与类型定义。
+ */
 export interface SpringOptions {
   omega?: number
   zeta?: number

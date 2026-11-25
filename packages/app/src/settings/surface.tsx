@@ -1,3 +1,7 @@
+/**
+ * 设置界面 — Surface。
+ * 应用设置页面的框架中负责 Surface 部分，提供该部分所需的实现与类型定义。
+ */
 import { useLocation, useNavigate } from "@solidjs/router"
 import { batch, createEffect, createMemo, createSignal, on, onCleanup, untrack } from "solid-js"
 import { createSimpleContext } from "@opencode/ui/context"

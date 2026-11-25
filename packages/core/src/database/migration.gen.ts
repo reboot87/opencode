@@ -1,3 +1,7 @@
+/**
+ * 迁移清单生成文件。
+ * 汇总所有按时间排序的迁移脚本，供迁移执行器按序应用；由脚本生成，不应手工编辑。
+ */
 import type { DatabaseMigration } from "./migration.js"
 import m00 from "./migration/20260127222353_familiar_lady_ursula.js"
 import m01 from "./migration/20260211171708_add_project_commands.js"

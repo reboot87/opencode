@@ -1,3 +1,7 @@
+/**
+ * 服务端注册表 — Controller。
+ * 已知服务端的登记与状态中负责 Controller 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo } from "solid-js"
 import { useGlobal } from "@/runtime/server/runtime"
 import { useLanguage } from "@/runtime/i18n/language"

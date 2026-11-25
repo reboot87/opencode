@@ -1,3 +1,7 @@
+/**
+ * 模块 — ViteConfig。
+ * 该目录下的功能模块中负责 ViteConfig 部分，提供该部分所需的实现与类型定义。
+ */
 import { sentryVitePlugin } from "@sentry/vite-plugin"
 import { fileURLToPath } from "node:url"
 import { defineConfig, type Plugin, type UserConfig } from "vite"

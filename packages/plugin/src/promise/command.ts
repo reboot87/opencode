@@ -1,3 +1,7 @@
+/**
+ * Promise 风格插件 API — 命令领域。
+ * 插件对自定义命令的定义与调用能力。此文件定义 Promise 风格 下该领域的接口与类型，与其它领域共同构成插件 API 表面。
+ */
 import type { CommandApi } from "@opencode/client/promise/api"
 import type { PromptInput } from "@opencode/schema/prompt-input"
 import type { Session } from "@opencode/schema/session"

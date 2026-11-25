@@ -1,3 +1,7 @@
+/**
+ * CLI 配置服务。
+ * 读取与保存 CLI 自身的配置（与服务端配置区分）。
+ */
 export * as Config from "./config"
 
 import { Global } from "@opencode/util/global"

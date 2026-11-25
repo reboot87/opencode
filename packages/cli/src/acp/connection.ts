@@ -1,3 +1,7 @@
+/**
+ * ACP 连接接口。
+ * 定义与 ACP 客户端的连接契约与响应标记。
+ */
 import {
   methods,
   type AgentApp,

@@ -1,3 +1,7 @@
+/**
+ * 实验性 API 的集中导出（可能变动，不保证兼容性）。
+ * 目前主要是语音合成与转写相关的类型与客户端。
+ */
 export { SpeechClient } from "./speech-client.js"
 export { SpeechEvent, SpeechModel, SpeechModelSchema, SpeechResponse, SpeechTimestamp, SpeechVoice } from "./speech.js"
 export type {

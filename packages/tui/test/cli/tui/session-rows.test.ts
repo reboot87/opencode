@@ -1,3 +1,7 @@
+/**
+ * CLI 终端测试 — SessionRowsTest。
+ * CLI 与终端界面协作的测试中负责 SessionRowsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import type { SessionMessageAssistant, SessionMessageInfo } from "@opencode/client"
 import { createMemo, createRoot } from "solid-js"

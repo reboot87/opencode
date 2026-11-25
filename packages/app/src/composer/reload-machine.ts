@@ -1,6 +1,8 @@
 /**
  * `/reload`: one server-wide configuration reload at a time. The request queue already ends a reload whose server
  * stops answering, and the reply carries no body, so `reloading` always settles.
+ *
+ * 输入组合器中负责 ReloadMachine 部分：会话输入区中与 ReloadMachine 相关的状态、交互与渲染逻辑。
  */
 export type ConfigReloadState =
   | { readonly status: "idle"; readonly issued: number }

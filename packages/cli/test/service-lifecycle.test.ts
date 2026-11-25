@@ -1,3 +1,10 @@
+/**
+ * 服务·生命周期的测试。
+ *
+ * 被测模块：@opencode/cli/service-lifecycle
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { NodeFileSystem } from "@effect/platform-node"
 import { Service } from "@opencode/client/effect/service"
 import { expect, test } from "bun:test"

@@ -1,5 +1,10 @@
-// Changing the top-level reasoning effort invalidates the provider prompt cache. Protocols with a native
-// per-message update keep it frozen and lower `Message.effort(...)` markers instead; other routes strip them.
+/**
+ * 推理强度（reasoning effort）更新的处理。
+ *
+ * 改变顶层的 reasoning effort 会让 provider 的提示词缓存失效。
+ * 支持原生“逐消息更新”的协议会保持顶层 effort 不变，改用 Message.effort(...) 标记来降级表达；
+ * 其它路由则直接去掉这些标记。
+ */
 import { type LLMRequest, type EffortPart, type Message } from "./schema/messages.js"
 
 export const effortUpdate = (message: Message): EffortPart | undefined => {

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：提示词·new·app。
+ *
+ * 规格编号：C.13。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `--prompt hello --session ses_new` where the server has no `ses_new` (C01): the home prompt shows the text,
 // submits it once the catalogs load, and the session it creates takes the ID `ses_new`.
 import { defineApp, session } from "../../lib/app"

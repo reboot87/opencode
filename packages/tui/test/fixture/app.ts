@@ -1,3 +1,7 @@
+/**
+ * 测试夹具 — App。
+ * 终端测试使用的夹具数据中负责 App 部分，提供该部分所需的实现与类型定义。
+ */
 import { createTestRenderer, type TestRendererSetup } from "@opentui/core/testing"
 import { Effect, FileSystem } from "effect"
 import path from "node:path"

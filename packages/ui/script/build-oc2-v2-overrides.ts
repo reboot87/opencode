@@ -1,4 +1,8 @@
 #!/usr/bin/env bun
+/**
+ * UI 构建脚本 — BuildOc2V2Overrides。
+ * 前端 UI 包的构建与生成脚本中负责 BuildOc2V2Overrides 部分，提供该部分所需的实现与类型定义。
+ */
 
 import { V2_PRIMITIVES_DEFAULT } from "../src/theme/v2/default-primitives"
 import type { DesktopTheme } from "../src/theme/types"

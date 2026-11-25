@@ -1,3 +1,8 @@
+/**
+ * 对等性基准脚本：F.7·folds。
+ *
+ * 对等性基准脚本：产出某一步骤的期望输出，供 Rust 实现逐字比对。
+ */
 // P-ORACLE for the event fold of crates/store: runs every V2Event variant
 // through TypeScript's createData, once on an empty store and once on a loaded one, and records what the store holds
 // afterwards and which reads the event started. Writes parity/fixtures/F.7/folds.json; crates/store/tests/

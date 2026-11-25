@@ -1,3 +1,7 @@
+/**
+ * 版本信息。
+ * 读取编译期注入的版本号与发布渠道。
+ */
 import { Option, Schema } from "effect"
 
 declare const OPENCODE_VERSION: string

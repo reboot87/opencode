@@ -1,3 +1,7 @@
+/**
+ * 协议实现的统一出口。
+ * 集中导出所有 provider 协议与其构造的路由。
+ */
 export * as AnthropicMessages from "./anthropic-messages.js"
 export * as BedrockConverse from "./bedrock-converse.js"
 export * as CloudflareRunDecisions from "./cloudflare-run-decisions.js"

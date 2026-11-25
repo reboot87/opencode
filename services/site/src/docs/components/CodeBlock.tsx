@@ -1,3 +1,6 @@
+/**
+ * 文档站组件：代码块。
+ */
 import { CodeFrame } from "~/component/site/code-frame"
 
 // Code passed as a prop rather than fenced, in the same frame as fenced code. Copy works through client.ts.

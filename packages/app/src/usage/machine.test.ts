@@ -1,3 +1,7 @@
+/**
+ * 用量展示 — MachineTest。
+ * 用量统计的界面中负责 MachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import type { UsageLimitsInfo } from "@opencode/client/promise"
 import {

@@ -1,3 +1,7 @@
+/**
+ * 所有内置 provider 的统一导出出口。
+ * 以命名空间形式集中导出每个 provider，供注册表与配置层按名称解析。
+ */
 export * as Alibaba from "./alibaba.js"
 export * as Anthropic from "./anthropic.js"
 export * as AnthropicCompatible from "./anthropic-compatible.js"

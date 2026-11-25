@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — ElectronMain。
+ * 内置浏览器功能的 GUI 插件中负责 ElectronMain 部分，提供该部分所需的实现与类型定义。
+ */
 import electron from "electron"
 import type { Caller, Ipc, IpcImpl, IpcSpec, MainContext } from "@opencode/plugin/gui/main"
 

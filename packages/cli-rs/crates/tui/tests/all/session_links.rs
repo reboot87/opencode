@@ -1,4 +1,6 @@
 //! Session links through rendered Markdown and mouse input.
+//!
+//! 终端界面测试：会话链接。
 
 use crate::support::{self, DIRECTORY, Harness, Seen};
 

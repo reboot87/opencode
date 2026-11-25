@@ -1,3 +1,7 @@
+/**
+ * Code Mode path 模块。
+ * 为沙箱代码提供与平台路径风格一致的 path 模块及工作目录上下文。
+ */
 export * as CodeModePath from "./path.js"
 
 import { Extension } from "@opencode/codemode"

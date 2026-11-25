@@ -1,4 +1,7 @@
-/** How long one read of the remote access setting may take. */
+/**
+ * 
+ * How long one read of the remote access setting may take. 配对插件中负责 Machine 部分：设备配对流程中与 Machine 相关的状态、交互与渲染逻辑。
+ */
 export const REMOTE_READ_TIMEOUT_MS = 15_000
 
 /** How many times a failed read of either setting is tried again, as a query's default retries did. */

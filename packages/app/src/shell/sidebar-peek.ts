@@ -1,3 +1,7 @@
+/**
+ * 应用外壳 — SidebarPeek。
+ * 浏览器应用的窗口框架与路由外壳中负责 SidebarPeek 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, on, onCleanup, untrack, type Accessor } from "solid-js"
 import { makeEventListener } from "@solid-primitives/event-listener"
 import { frameLoop, prefersReducedMotion, Spring, type DurationOptions } from "@opencode/ui/motion"

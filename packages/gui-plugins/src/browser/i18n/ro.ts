@@ -1,3 +1,7 @@
+/**
+ * 浏览器文案 — Ro。
+ * 浏览器插件的多语言文案中负责 Ro 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.open": "Deschide browserul",
   "command.reload": "Reîncărcați pagina browser",

@@ -1,3 +1,7 @@
+/**
+ * Mini 精简界面 — ScrollbackShared。
+ * 精简交互模式（mini）的界面与交互中负责 ScrollbackShared 部分，提供该部分所需的实现与类型定义。
+ */
 import { SyntaxStyle, TextAttributes, type ColorInput, type NativeResourceOwner } from "@opentui/core"
 import { type RunEntryTheme, type RunTheme } from "./theme"
 import type { StreamCommit } from "./types"

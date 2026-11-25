@@ -1,3 +1,7 @@
+/**
+ * 功能插件测试 — HomeFooterTest。
+ * 终端功能插件的测试中负责 HomeFooterTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { homeFooterVisibility } from "../../src/feature-plugins/home/footer"
 

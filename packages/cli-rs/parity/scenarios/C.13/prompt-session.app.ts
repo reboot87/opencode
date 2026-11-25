@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：提示词·会话·app。
+ *
+ * 规格编号：C.13。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `--session ses_b --prompt hello` (C01): the session opens with the text in its prompt and sends it.
 import { defineApp, session, user } from "../../lib/app"
 import { catalog, inbox } from "./catalog"

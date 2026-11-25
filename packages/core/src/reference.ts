@@ -1,3 +1,7 @@
+/**
+ * 引用类型。
+ * 定义本地与 Git 来源的引用结构，用于仓库/引用解析。
+ */
 export * as Reference from "./reference.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

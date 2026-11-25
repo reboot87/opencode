@@ -1,3 +1,7 @@
+/**
+ * 插件身份。
+ * 根据模型名派生插件身份标识。
+ */
 export * as IdentityPlugin from "./identity.js"
 
 import { SystemPart } from "@opencode/ai/effect"

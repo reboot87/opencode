@@ -1,3 +1,7 @@
+/**
+ * 运行时模块清单。
+ * 声明插件运行时可用的内置包（effect、@opencode/plugin 等）。
+ */
 import { existsSync, realpathSync } from "node:fs"
 import path from "node:path"
 import { pathToFileURL } from "node:url"

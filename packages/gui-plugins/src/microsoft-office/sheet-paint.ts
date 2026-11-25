@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — SheetPaint。
+ * Microsoft Office 文档预览插件中负责 SheetPaint 部分，提供该部分所需的实现与类型定义。
+ */
 import { rangeRect, type CellRange, type GridMeta } from "@betteroffice/xlsx/headless"
 import { columnName } from "./sheet-cells"
 import type { SheetFrame, SheetFrameRequest } from "./sheet-protocol"

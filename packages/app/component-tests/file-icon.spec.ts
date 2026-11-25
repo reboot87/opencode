@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — FileIconSpec。
+ * 应用界面组件的测试中负责 FileIconSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, story } from "../../stories/playwright/story"
 
 story("shows the fallback glyph when an icon chunk fails to load", async ({ mount, page }) => {

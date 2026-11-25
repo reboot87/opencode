@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — SlideProtocol。
+ * Microsoft Office 文档预览插件中负责 SlideProtocol 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Method } from "./worker-rpc"
 
 /** The longest side a decoded picture keeps: enough for a full-width slide on a high-density screen. */

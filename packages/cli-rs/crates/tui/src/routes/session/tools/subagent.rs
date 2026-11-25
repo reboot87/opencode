@@ -1,4 +1,6 @@
 //! Subagent tool status and navigation.
+//!
+//! 终端界面路由：子智能体。
 
 use opencode_api::generated::ModelInfo;
 use opencode_store::SessionStatus;

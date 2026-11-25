@@ -1,3 +1,8 @@
+/**
+ * 服务·时序测试夹具。
+ *
+ * 为客户端测试提供响应体与错误码样例。
+ */
 import { withEnsureTiming } from "../../src/service-timing"
 
 const timing = {

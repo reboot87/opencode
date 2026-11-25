@@ -1,3 +1,7 @@
+/**
+ * 关闭期限。
+ * 定义进程关闭的总期限（10 秒）与日志刷新时间（1.5 秒）。
+ */
 import { Teardown } from "@opencode/util/teardown"
 import { Duration, Effect } from "effect"
 

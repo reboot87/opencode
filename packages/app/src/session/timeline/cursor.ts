@@ -1,3 +1,7 @@
+/**
+ * 会话时间线 — Cursor。
+ * 会话消息时间线的渲染中负责 Cursor 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageUser } from "@opencode/client/promise"
 import { useLocation, useNavigate } from "@solidjs/router"
 import { createEffect, createSignal, on, onCleanup, onMount, untrack, type Accessor } from "solid-js"

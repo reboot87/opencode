@@ -1,3 +1,8 @@
+/**
+ * 对等性校验入口：比较。
+ *
+ * Rust 与 TypeScript 双实现的对等性校验：驱动全部 oracle / component / 场景脚本并刷新基线。
+ */
 // P-TUI comparison (docs/testing.md): captures become H.1 cell fixtures, masked with H.2's `applyMasks`, and compared
 // cell by cell as `opencode_parity::compare` does. Requests follow H.2's P-REQ rule.
 import type { Frontend } from "@opencode/protocol/simulation"

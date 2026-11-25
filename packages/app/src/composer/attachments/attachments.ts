@@ -1,3 +1,7 @@
+/**
+ * 输入附件 — Attachments。
+ * 输入区附件的上传与管理中负责 Attachments 部分，提供该部分所需的实现与类型定义。
+ */
 import { onCleanup, onMount } from "solid-js"
 import { makeEventListener } from "@solid-primitives/event-listener"
 import { createBlobReference } from "@/runtime/persistence/drafts"

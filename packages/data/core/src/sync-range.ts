@@ -1,3 +1,7 @@
+/**
+ * 数据核心源码 — SyncRange。
+ * 数据采集与处理的实现中负责 SyncRange 部分，提供该部分所需的实现与类型定义。
+ */
 import { startOfIsoWeek, startOfUtcDay } from "./domain/stat"
 
 const DATALAKE_INGESTION_LAG_MS = 5 * 60_000

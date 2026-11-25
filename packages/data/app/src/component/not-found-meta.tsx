@@ -1,3 +1,7 @@
+/**
+ * 数据站组件 — NotFoundMeta。
+ * 数据站点的界面组件中负责 NotFoundMeta 部分，提供该部分所需的实现与类型定义。
+ */
 import { Meta } from "@solidjs/meta"
 import { HttpStatusCode } from "@solidjs/start"
 

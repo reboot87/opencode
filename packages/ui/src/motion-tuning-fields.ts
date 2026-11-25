@@ -1,3 +1,7 @@
+/**
+ * 终端界面 — MotionTuningFields。
+ * OpenCode 终端界面的整体骨架与入口中负责 MotionTuningFields 部分，提供该部分所需的实现与类型定义。
+ */
 import { choice, easing, knob, spring, toggle } from "knobs"
 import type { DurationOptions } from "./motion"
 import { motionTuning, type Bezier, type MotionKnob } from "./motion-tuning"

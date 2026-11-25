@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — Adapter。
+ * 会话输入区的组合逻辑与附件处理中负责 Adapter 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Data } from "@opencode/client/solid"
 import type { SessionMessageUser } from "@opencode/client/promise"
 import type { Accessor } from "solid-js"

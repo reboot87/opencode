@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — WordProtocol。
+ * Microsoft Office 文档预览插件中负责 WordProtocol 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Method } from "./worker-rpc"
 
 // What the Word preview's window and its document worker say to each other. The window keeps only the page column, the

@@ -1,3 +1,7 @@
+/**
+ * 文件处理 — PickerStartTest。
+ * 桌面端的文件打开与拖放处理中负责 PickerStartTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import path from "node:path"
 import { pickerStarts } from "./picker-start"

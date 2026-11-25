@@ -1,3 +1,6 @@
+/**
+ * 多语言文案：无。
+ */
 import type { Dict } from "./en"
 import { dict as en } from "./en"
 

@@ -1,3 +1,7 @@
+/**
+ * 会话时间线 — TurnDiffs。
+ * 会话消息时间线的渲染中负责 TurnDiffs 部分，提供该部分所需的实现与类型定义。
+ */
 import type { FileDiffInfo } from "@opencode/client/promise"
 import type { TurnDiffInput } from "@opencode/session-ui/context"
 import { createSignal, onCleanup, untrack } from "solid-js"

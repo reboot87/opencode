@@ -1,3 +1,7 @@
+/**
+ * 持久化 PTY 二进制（Bun）。
+ * 在 Bun 运行时定位并使用 opencode-pty 二进制。
+ */
 import { createHash } from "node:crypto"
 import { chmod, lstat, mkdir, open, readFile, rename, rm } from "node:fs/promises"
 import path from "node:path"

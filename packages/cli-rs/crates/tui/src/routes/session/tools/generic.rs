@@ -1,4 +1,6 @@
 //! Fallback view for unrecognized tools.
+//!
+//! 终端界面路由：泛型。
 
 use opencode_ui::tool_info::call_summary;
 

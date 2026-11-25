@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：语言。
+ */
 import { describe, expect, test } from "bun:test"
 import { LOCALE_HEADER, localized, pageLocale, route } from "../src/lib/language"
 

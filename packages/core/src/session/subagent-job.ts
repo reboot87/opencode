@@ -1,3 +1,7 @@
+/**
+ * 子代理任务服务（SubagentJob）。
+ * 启动并管理子代理任务的执行。
+ */
 export * as SubagentJob from "./subagent-job.js"
 
 import { Context, Effect, Layer } from "effect"

@@ -1,3 +1,10 @@
+/**
+ * 选项的测试。
+ *
+ * 被测模块：@opencode/server/options
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { ServerOptions } from "@opencode/server/options"
 import { Option, Schema } from "effect"

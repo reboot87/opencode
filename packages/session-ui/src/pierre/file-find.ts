@@ -1,3 +1,7 @@
+/**
+ * Pierre 组件 — FileFind。
+ * 会话界面的基础组件库中负责 FileFind 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, onCleanup, onMount } from "solid-js"
 import { makeEventListener } from "@solid-primitives/event-listener"
 import { createResizeObserver } from "@solid-primitives/resize-observer"

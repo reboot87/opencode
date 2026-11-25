@@ -1,3 +1,7 @@
+/**
+ * 会话指令服务（SessionInstructions）。
+ * 管理注入到会话中的指令（agents/CLAUDE.md 等），跟踪注入元数据。
+ */
 export * as SessionInstructions from "./instructions.js"
 
 import { relative } from "path"

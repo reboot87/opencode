@@ -1,3 +1,7 @@
+/**
+ * 审查插件 — RenderMachine。
+ * 变更审查界面的 GUI 插件中负责 RenderMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export type ReviewRenderState =
   /** The model's first visit: the review waits one paint, so the session paints first. */
   | { readonly status: "initial-deferring"; readonly visitID: number; readonly attempt: number }

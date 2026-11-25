@@ -1,4 +1,6 @@
 //! Clipboard and terminal pastes, including collapsed text and file attachments.
+//!
+//! 终端输入提示：`paste`。
 
 use std::collections::VecDeque;
 

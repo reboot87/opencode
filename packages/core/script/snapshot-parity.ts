@@ -1,11 +1,16 @@
 /**
+ * 快照·双实现对等性脚本。
+ *
+ * 核心包的开发脚本：本地服务桩、数据准备与问题排查。
+ */
+import { $ } from "bun"
+/**
  * Differential corpus for the snapshot engine. Run the same file from two worktrees
  * and compare the JSON: tree IDs, changed-file lists, diffs, and post-restore
  * worktree digests must be byte-identical.
  *
  *   bun run script/snapshot-parity.ts <result.json> [scenario...]
  */
-import { $ } from "bun"
 import crypto from "crypto"
 import fs from "fs/promises"
 import os from "os"

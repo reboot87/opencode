@@ -5,7 +5,10 @@ import "./dropdown.css"
 
 interface DropdownProps {
   trigger: JSX.Element | string
-  /** What the trigger chooses, read by screen readers before a string trigger, for example "Language". */
+  /** What the trigger chooses, read by screen readers before a string trigger, for example "Language".
+ *
+ * 通用界面组件：下拉菜单。
+ */
   label?: string
   children: JSX.Element
   open?: boolean

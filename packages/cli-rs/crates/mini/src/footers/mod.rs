@@ -1,5 +1,7 @@
 //! Pending permissions take precedence over forms; either replaces the composer. Child-session requests can also
 //! appear here.
+//!
+//! 精简版实现入口。
 
 pub mod form;
 pub mod menu;

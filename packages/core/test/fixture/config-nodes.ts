@@ -1,3 +1,8 @@
+/**
+ * 配置·节点测试夹具。
+ *
+ * 为核心测试提供稳定可复用的夹具数据与依赖桩。
+ */
 import { Effect, Layer } from "effect"
 import { makeGlobalNode } from "@opencode/util/effect/app-node"
 import { Credential } from "@opencode/core/credential"

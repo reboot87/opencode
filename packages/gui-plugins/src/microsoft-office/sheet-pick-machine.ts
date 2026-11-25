@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — SheetPickMachine。
+ * Microsoft Office 文档预览插件中负责 SheetPickMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { CellAddr } from "@betteroffice/xlsx/headless"
 import type { SheetLayout } from "./sheet-protocol"
 

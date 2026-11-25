@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：标题·renamed·伪终端。
+ *
+ * 规格编号：D131。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // D131: a session the home prompt creates takes the title the server generates. The tab, the sidebar and the
 // terminal title follow `session.renamed`, and the exit summary names the session by it.
 import { definePty } from "../../pty/run"

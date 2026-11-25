@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：速度·提示词·app。
+ *
+ * 规格编号：E.16。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A model's service tiers as speeds (#65749): the model has a slower and a faster speed, each a model of its own.
 // `/speed` lists them slowest first with their prices, around the standard speed; picking Fast switches the model
 // and the prompt shows the speed after the model's own name.

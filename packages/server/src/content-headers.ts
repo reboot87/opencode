@@ -1,3 +1,7 @@
+/**
+ * 内容安全头。
+ * 设置 CSP 等安全响应头。
+ */
 export * as ContentHeaders from "./content-headers"
 
 import path from "path"

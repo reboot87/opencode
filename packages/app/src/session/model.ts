@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — Model。
+ * 会话主界面的视图与状态中负责 Model 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionInfo, SessionMessageInfo, SessionMessageUser } from "@opencode/client/promise"
 import { createMediaQuery } from "@solid-primitives/media"
 import { createMemo } from "solid-js"

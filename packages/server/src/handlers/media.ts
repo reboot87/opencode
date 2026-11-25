@@ -1,3 +1,7 @@
+/**
+ * media 接口处理器。
+ * 媒体接口处理器：媒体资产下载与缓存头。
+ */
 import { Database } from "@opencode/core/database/database"
 import { SessionBlob } from "@opencode/core/session/blob"
 import { FileNotFoundError } from "@opencode/protocol/errors"

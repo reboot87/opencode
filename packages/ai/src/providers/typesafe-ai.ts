@@ -1,3 +1,7 @@
+/**
+ * TypeSafe AI provider 门面。
+ * 封装 chat 与 decision 能力，提供类型安全的模型工厂。
+ */
 import {
   mergeTransport,
   ProviderID,

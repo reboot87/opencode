@@ -1,4 +1,6 @@
 //! Run V2 JSX plugins on the real JS host. Drive input and inspect both plugin callbacks and the TUI they produce.
+//!
+//! 终端界面测试：插件兼容。
 
 use std::path::{Path, PathBuf};
 use std::sync::Arc;

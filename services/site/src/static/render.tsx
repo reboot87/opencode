@@ -34,7 +34,10 @@ const pages = fileRoutes as {
 }[]
 
 /** Whether an API route or a server function (SolidStart's /_server) answers a request, not a page. A HEAD
- * request is answered by the route's GET handler. */
+ * request is answered by the route's GET handler.
+ *
+ * 静态页面渲染：`render`。
+ */
 const answered = (path: string, method: string) =>
   path.startsWith("/_server") ||
   pages.some(

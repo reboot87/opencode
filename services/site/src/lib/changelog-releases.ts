@@ -35,6 +35,8 @@ const releases = staleValue<ChangelogRelease[]>({
  * fails, nothing loaded before and there is no build-time snapshot. Pages use the default wait;
  * feeds and JSON pass `feedWait`, a little longer, and answer from the snapshot (marked stale, so
  * they are cached briefly) while a background refresh fetches the rest.
+ *
+ * 站点共享逻辑：更新日志发布版本。
  */
 /** How long feeds, JSON and the sitemap wait for GitHub before answering from the stale value or snapshot. */
 export const feedWait = 500

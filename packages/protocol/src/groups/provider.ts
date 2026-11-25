@@ -1,3 +1,7 @@
+/**
+ * Provider API 分组。
+ * 定义模型提供方的列举与配置端点。
+ */
 import { Provider } from "@opencode/schema/provider"
 import { Location } from "@opencode/schema/location"
 import { Schema } from "effect"

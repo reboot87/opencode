@@ -1,4 +1,6 @@
 //! Native Unix PTY / Windows ConPTY coverage, without daemon or client transport.
+//!
+//! 进程守护服务测试：运行时。
 
 #[path = "support/terminal_fixture.rs"]
 mod terminal_fixture;

@@ -1,3 +1,7 @@
+/**
+ * Ollama 插件。
+ * 注册本地 Ollama provider，读取其远端模型清单。
+ */
 import { Effect, Schema } from "effect"
 import { createLocalProviderPlugin } from "./local.js"
 

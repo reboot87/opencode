@@ -1,3 +1,7 @@
+/**
+ * 后台服务 — ShellEnv。
+ * 桌面端托管的后台服务进程中负责 ShellEnv 部分，提供该部分所需的实现与类型定义。
+ */
 import { spawn } from "node:child_process"
 import { userInfo } from "node:os"
 import { Effect, Path } from "effect"

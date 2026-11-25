@@ -1,3 +1,7 @@
+/**
+ * 数据站工具 — Noindex。
+ * 数据站点的通用工具中负责 Noindex 部分，提供该部分所需的实现与类型定义。
+ */
 import type { createMiddleware } from "@solidjs/start/middleware"
 import { Resource } from "@opencode/data-core/resource"
 

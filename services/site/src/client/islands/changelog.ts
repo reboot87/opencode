@@ -6,6 +6,8 @@ import { $, $$, reducedMotion, t, target } from "../dom"
  * The changelog, a release's page and a product page's latest releases on a static page
  * (changelog-entry.tsx, from the section that holds the timeline): the filter row scrolled to the last chosen area and the timeline's rail
  * (changelog-motion.ts), each entry's media, and the heading and Copy link buttons.
+ *
+ * 客户端交互岛：更新日志。
  */
 export default function changelog(root: HTMLElement) {
   const filter = $('[data-component="changelog-toolbar"] > [data-slot="filter"]', root)

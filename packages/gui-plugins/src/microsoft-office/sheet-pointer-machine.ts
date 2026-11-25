@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — SheetPointerMachine。
+ * Microsoft Office 文档预览插件中负责 SheetPointerMachine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { CellAddr } from "@betteroffice/xlsx/headless"
 
 /** What a drag moves the selection's far corner along. */

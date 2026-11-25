@@ -1,4 +1,6 @@
 //! Resolves client directories from the XDG environment.
+//!
+//! 本地配置与路径：路径。
 
 use std::ffi::OsString;
 use std::io;

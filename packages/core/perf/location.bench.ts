@@ -1,3 +1,8 @@
+/**
+ * 位置·基准基准脚本。
+ *
+ * 核心路径的性能基准脚本，用于观测关键操作的耗时分布。
+ */
 import { bench, script } from "@hona/strobe"
 
 export default bench({

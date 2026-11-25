@@ -1,3 +1,7 @@
+/**
+ * 浏览器历史 — Suggest。
+ * 浏览器插件的访问历史中负责 Suggest 部分，提供该部分所需的实现与类型定义。
+ */
 import type { HistoryPage } from "./ipc"
 import { matchQuality, MISS, parseQuery, searchText } from "./match"
 import { completion, pageKey } from "./page"

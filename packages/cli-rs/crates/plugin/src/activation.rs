@@ -1,6 +1,8 @@
 //! One activation of a plugin of the one API, on either path: the claims and routes it has mounted, which the host
 //! renders again with [`abi::Changed::woken`] when the plugin's thread wakes it, and after each of its commands and
 //! event handlers, whose state a render may show.
+//!
+//! 插件系统：激活。
 
 use std::cell::{Cell, RefCell};
 use std::panic::{AssertUnwindSafe, catch_unwind};

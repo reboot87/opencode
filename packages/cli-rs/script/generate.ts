@@ -1,3 +1,8 @@
+/**
+ * 生成脚本。
+ *
+ * Rust CLI 的开发脚本：代码生成、依赖漂移检查与性能采样。
+ */
 // Runs every generator in script/gen in name order. Each writes its own output under crates/.
 const root = new URL("..", import.meta.url).pathname
 const scripts = Array.from(new Bun.Glob("script/gen/*.ts").scanSync({ cwd: root })).sort()

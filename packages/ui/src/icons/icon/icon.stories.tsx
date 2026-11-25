@@ -1,3 +1,7 @@
+/**
+ * 图标组件 — IconStories。
+ * 矢量图标渲染组件中负责 IconStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { For, onCleanup } from "solid-js"
 import { artworkNames } from "../catalog"
 import { registerIcons } from "../registry"

@@ -1,3 +1,7 @@
+/**
+ * 工具测试 — ModelTest。
+ * 终端工具函数的测试中负责 ModelTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { formatRef, parse, switchLabel } from "../../src/util/model"
 

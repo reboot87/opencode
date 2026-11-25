@@ -1,3 +1,7 @@
+/**
+ * 命令插件。
+ * 把配置中定义的自定义命令注册为可执行的斜杠命令。
+ */
 export * as CommandPlugin from "./command.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

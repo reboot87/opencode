@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：文本·校验·伪终端。
+ *
+ * 规格编号：C.p。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // An initial value, a validation error that clears on the next key, the default value for an empty
 // answer, and a required field, cancelled with a lone Escape.
 import { definePty } from "../../pty/run"

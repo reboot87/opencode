@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — CommentsTest。
+ * 会话输入区的组合逻辑与附件处理中负责 CommentsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, jest, test } from "bun:test"
 import { createRoot } from "solid-js"
 import { COMMENT_FOCUS_TIMEOUT_MS } from "./comment-focus-machine"

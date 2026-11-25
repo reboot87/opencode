@@ -1,3 +1,10 @@
+/**
+ * 假实现·io的测试辅助模块。
+ *
+ * 被测模块：@opencode/core/plugin/provider/claude-agent/lib/fake-io
+ *
+ * 覆盖 Claude Agent 供应商插件的请求转换、工具桥接与流式事件映射。
+ */
 export * as FakeIO from "./fake-io"
 
 import type { ClaudeIO } from "@opencode/core/plugin/provider/claude-agent/claude/io"

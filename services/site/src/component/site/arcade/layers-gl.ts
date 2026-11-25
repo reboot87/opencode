@@ -6,6 +6,8 @@ import type { LayerValues } from "./layers-tuning"
  * (the beam is rotated and widened about the window sill), then the dust specks are drawn as soft
  * additive point sprites. The canvas is opaque black and composited with `plus-lighter`, so what it
  * draws adds to the room exactly as the painting's light did.
+ *
+ * 街机小游戏组件：层·WebGL。
  */
 
 export type LayerData = {

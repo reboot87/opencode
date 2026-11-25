@@ -1,3 +1,7 @@
+/**
+ * Cohere provider 门面。
+ * 封装 Cohere chat 与 embeddings 协议，提供 chat / embedding 模型工厂。
+ */
 import { CohereChat } from "../protocols/cohere-chat.js"
 import { OpenAIChat } from "../protocols/openai-chat.js"
 import { OpenAIEmbeddings } from "../protocols/openai-embeddings.js"

@@ -1,3 +1,8 @@
+/**
+ * 子代理报告（SubagentReport）。
+ * 汇总子代理执行的产出与状态（成功/失败/被中断），把结果与期间序号写回会话，
+ * 供主代理作为一次工具结果消费。
+ */
 export * as SubagentReport from "./subagent-report.js"
 
 import { Automation } from "@opencode/schema/automation"

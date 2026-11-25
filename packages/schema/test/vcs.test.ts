@@ -1,3 +1,10 @@
+/**
+ * 版本控制的测试。
+ *
+ * 被测模块：@opencode/schema/vcs
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect, test } from "bun:test"
 import { Schema } from "effect"
 import { Vcs } from "../src/vcs.js"

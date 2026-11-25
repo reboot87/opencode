@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — Replies。
+ * 实时语音会话的界面中负责 Replies 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageInfo } from "@opencode/client/promise"
 
 export type SentPrompt = { sessionID: string; promptID: string; title: string; instruction: string }

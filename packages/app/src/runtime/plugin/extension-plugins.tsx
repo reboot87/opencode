@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — ExtensionPlugins。
+ * 浏览器端的插件加载与扩展点中负责 ExtensionPlugins 部分，提供该部分所需的实现与类型定义。
+ */
 import type { PluginInfo } from "@opencode/client"
 import { Predicate } from "effect"
 import { createMemo, createSignal, createUniqueId, For, Show } from "solid-js"

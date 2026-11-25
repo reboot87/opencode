@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：请求·伪终端。
+ *
+ * 规格编号：M.5。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A running child waits on a permission and a form of no session waits at the session's location when mini opens.
 // The child's permission takes over; Allow once answers it under the child's session. The global form follows;
 // its answer goes to `session/global` with the location in a header, and the server's events take both away.

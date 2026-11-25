@@ -1,3 +1,7 @@
+/**
+ * 位置监听策略。
+ * 定义位置文件监听的行为策略与可变换状态。
+ */
 export * as LocationWatcherPolicy from "./location-watcher-policy.js"
 
 import { makeLocationNode } from "@opencode/util/effect/app-node"

@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — Links。
+ * Microsoft Office 文档预览插件中负责 Links 部分，提供该部分所需的实现与类型定义。
+ */
 import type { WordLink } from "./word-protocol"
 
 /** The schemes the host opens outside the app; it refuses any other, such as `javascript:`, `file:` or `tel:`. */

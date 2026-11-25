@@ -1,3 +1,8 @@
+/**
+ * CLI 对等性校验：客户端。
+ *
+ * CLI 交互的对等性校验：比对命令输出与退出码。
+ */
 // How P-CLI and P-PTY start the two clients: the TS CLI from source and the Rust `opencode-native`, each
 // in a fresh home with its own XDG roots, so neither reads or writes the user's config, state, or service.
 

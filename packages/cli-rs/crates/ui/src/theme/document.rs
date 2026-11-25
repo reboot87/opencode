@@ -1,4 +1,6 @@
 //! Validates, expands and selects a mode from V2 theme documents.
+//!
+//! 主题解析与应用：`document`。
 
 use opencode_util::json_object;
 use serde_json::{Map, Value};

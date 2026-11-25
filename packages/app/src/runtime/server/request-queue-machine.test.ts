@@ -1,3 +1,7 @@
+/**
+ * 运行时服务端连接 — RequestQueueMachineTest。
+ * 浏览器端与服务端的连接与同步中负责 RequestQueueMachineTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import {
   classifyRequest,

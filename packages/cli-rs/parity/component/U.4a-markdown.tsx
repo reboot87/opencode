@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid U4aMarkdown：该文件实现 U4aMarkdown 相关的状态与逻辑。
+ */
 // P-COMP fixtures of assistant text as the transcript shows it (`TextPart`, routes/session/message-parts.tsx): the
 // TUI's <markdown> props, rendered and completed, over a small corpus. crates/ui/tests/all/content.rs compares
 // opencode_ui::markdown with them. The documents are shared with Rust through parity/fixtures/U.4a/corpus.json.

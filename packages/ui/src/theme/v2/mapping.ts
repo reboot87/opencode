@@ -1,3 +1,7 @@
+/**
+ * UI 主题（v2） — Mapping。
+ * 第二版设计令牌定义中负责 Mapping 部分，提供该部分所需的实现与类型定义。
+ */
 import type { V2ColorValue } from "../types"
 import { V2_AVATAR_DARK, V2_AVATAR_LIGHT } from "./avatar"
 

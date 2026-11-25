@@ -1,3 +1,7 @@
+/**
+ * 会话请求 — QuestionSwitchMachine。
+ * 会话界面的请求发起与状态跟踪中负责 QuestionSwitchMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // The experimental question dock's frame loop. `measuring` is a layout read queued for the next frame; `running` is the
 // frame job stepping the dock's springs, with the copies of a question switch under way (`into` arriving, `ghost`
 // leaving) and whether a measure waits for the springs to come to rest. Frames return the same state while nothing

@@ -1,3 +1,7 @@
+/**
+ * mcp auth 命令。
+ * 对 MCP 服务器执行 OAuth 授权。
+ */
 import { confirm, intro, log, outro } from "@clack/prompts"
 import { Effect, Option } from "effect"
 import { OpenCode, type IntegrationInfo, type IntegrationOAuthMethod, type McpServer } from "@opencode/client"

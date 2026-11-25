@@ -64,7 +64,10 @@ function isGlobalCopyOwner(sourceCode: SourceCode, node: ESTree.Node, name: stri
   return variable === null || variable.defs.length === 0;
 }
 
-/** Reject non-spread copies of reducer accumulators; pair with oxc/no-accumulating-spread. */
+/** Reject non-spread copies of reducer accumulators; pair with oxc/no-accumulating-spread.
+ *
+ * Oxlint 规则：无·reduce·累加器拷贝。
+ */
 export const noReduceAccumulatorCopyRule = defineRule({
   meta: {
     type: "problem",

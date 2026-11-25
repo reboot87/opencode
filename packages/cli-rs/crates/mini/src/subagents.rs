@@ -1,5 +1,7 @@
 //! Tracks children discovered through tools, session lists, activity or live events. The selected transcript starts
 //! from history and follows subsequent events.
+//!
+//! 精简版实现：子智能体。
 
 use std::collections::VecDeque;
 

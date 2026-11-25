@@ -1,3 +1,7 @@
+/**
+ * 来源插件 — Panel。
+ * 来源（source）管理的 GUI 插件中负责 Panel 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo } from "solid-js"
 import { turnMessages, turnSources } from "@opencode/session-ui/sources"
 import { sourcesExperiment } from "@opencode/session-ui/sources/experiment"

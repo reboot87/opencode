@@ -45,6 +45,8 @@ export { arcadeMenu }
  * numbered nav in the place they sit on every other page (the sidebar on wide screens, the top
  * bar's logo on small ones), light on the dark scene; a visually hidden h1; the ⌘K search; the
  * tooltips; and the sound switch at the bottom left.
+ *
+ * 街机小游戏组件：浏览器外壳。
  */
 export function ArcadeChrome(props: { settingsRows?: () => JSX.Element }) {
   const i18n = useI18n()

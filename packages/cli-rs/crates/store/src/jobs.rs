@@ -1,4 +1,6 @@
 //! Running background jobs of the session trees a view synced (TS `data.job`). Settled jobs leave the store.
+//!
+//! 会话存储层：作业。
 
 use std::collections::HashSet;
 

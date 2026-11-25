@@ -1,3 +1,7 @@
+/**
+ * 输入组合器 — CommentNote。
+ * 会话输入区的组合逻辑与附件处理中负责 CommentNote 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageUser } from "@opencode/client/promise"
 import { Option, Schema } from "effect"
 import { Persistence } from "@/runtime/persistence/schema"

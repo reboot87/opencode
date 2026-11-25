@@ -1,3 +1,7 @@
+/**
+ * 终端工具 — Selection。
+ * 终端界面的通用工具函数中负责 Selection 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SelectionBehavior } from "@opentui/core"
 import type { ClipboardService } from "../context/clipboard"
 

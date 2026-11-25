@@ -1,3 +1,7 @@
+/**
+ * 模型工具策略（ModelTools）。
+ * 根据是否为 Code Mode 决定向模型暴露哪些工具：全量模式下隐藏部分底层工具，Code Mode 下重新规划可见工具集。
+ */
 import type { Model } from "@opencode/schema/model"
 
 const fullCodeModeHidden = ["glob", "grep", "webfetch"] as const

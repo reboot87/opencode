@@ -1,4 +1,8 @@
-/** Fonts that never settle must not keep the reveal from animating. */
+/**
+ * Fonts that never settle must not keep the reveal from animating.
+ *
+ * 文本逐字显示的状态机：管理揭示节奏与中断。
+ */
 export const TEXT_REVEAL_READY_TIMEOUT_MS = 1_000
 
 /**

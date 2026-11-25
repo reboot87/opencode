@@ -1,4 +1,6 @@
 //! Writing to stdout, and how errors end the process.
+//!
+//! 命令行入口：输出。
 
 use opencode_util::error;
 use std::io::{ErrorKind, Write};

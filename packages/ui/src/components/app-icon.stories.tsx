@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — AppIconStories。
+ * 跨场景复用的通用 UI 组件中负责 AppIconStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { For } from "solid-js"
 import { iconNames, type IconName } from "./app-icons/types"
 import { AppIcon } from "./app-icon"

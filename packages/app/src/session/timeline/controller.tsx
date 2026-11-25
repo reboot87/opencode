@@ -1,3 +1,7 @@
+/**
+ * 会话时间线 — Controller。
+ * 会话消息时间线的渲染中负责 Controller 部分，提供该部分所需的实现与类型定义。
+ */
 import type { SessionMessageInfo } from "@opencode/client/promise"
 import { DialogFooter, DialogHeader, DialogTitleGroup, Dialog } from "@opencode/ui/dialog"
 import { Button } from "@opencode/ui/button"

@@ -1,3 +1,7 @@
+/**
+ * SSH 文案 — Dz。
+ * SSH 插件的多语言文案中负责 Dz 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   label: "SSH",
   placeholder: "ssh ལག་ལེན་པ@དཔེ།com",

@@ -1,3 +1,7 @@
+/**
+ * OAuth 重定向处理。
+ * 处理 OAuth 回调中的自动提交与手工粘贴授权码两种方式。
+ */
 import { Deferred, Effect } from "effect"
 
 /**

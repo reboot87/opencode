@@ -1,3 +1,7 @@
+/**
+ * PTY 实现（Node）。
+ * 在 Node 运行时通过 node-pty 实现 PTY。
+ */
 import { createRequire } from "node:module"
 import { isSea } from "node:sea"
 import type { spawn } from "@lydell/node-pty"

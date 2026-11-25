@@ -1,3 +1,7 @@
+/**
+ * UI 上下文 — FocusRescue。
+ * UI 包的上下文提供者中负责 FocusRescue 部分，提供该部分所需的实现与类型定义。
+ */
 // Chromium leaves focus on <body> when the focused element is removed, disabled or stops being editable, and fires no
 // event. Inside a focus scope ([data-focus-scope]: a list, a tab strip, a chip row), move it to the next item, or to the
 // previous one when the last item went, and widen to the enclosing scope when the inner one has nothing left.

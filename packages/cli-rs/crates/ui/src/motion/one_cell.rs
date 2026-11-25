@@ -1,4 +1,6 @@
 //! One-cell motion indicators for narrow surfaces.
+//!
+//! 基础 UI 组件库：一单元格。
 
 use super::int_pow;
 use std::f64::consts::PI;

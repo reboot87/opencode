@@ -1,4 +1,6 @@
 //! Service commands operate on the registration for the selected channel.
+//!
+//! CLI 子命令：服务。
 
 use std::path::PathBuf;
 use std::sync::Arc;

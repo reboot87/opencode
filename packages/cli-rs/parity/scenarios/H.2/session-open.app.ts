@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：会话·打开·app。
+ *
+ * 规格编号：H.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // `-s ses_b` opens the session, and a streamed text delta extends the assistant reply (T01, V01, V03).
 import { assistant, defineApp, session, user } from "../../lib/app"
 

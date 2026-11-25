@@ -1,3 +1,7 @@
+/**
+ * CLI 终端测试 — InlineToolWrapSnapshotTest。
+ * CLI 与终端界面协作的测试中负责 InlineToolWrapSnapshotTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, describe, expect, test } from "bun:test"
 import { For } from "solid-js"
 import { testRender, type JSX } from "@opentui/solid"

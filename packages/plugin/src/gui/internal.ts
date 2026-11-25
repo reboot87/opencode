@@ -1,3 +1,7 @@
+/**
+ * GUI 内部上下文。
+ * 定义插件与生命周期等内部上下文（React Context）。
+ */
 // The window host's internals that the public SDK's helpers read. `gui/host` re-exports them for the hosts; the
 // public `@opencode/plugin/gui` does not.
 

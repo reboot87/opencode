@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — SessionReviewMachine。
+ * 跨场景复用的通用 UI 组件中负责 SessionReviewMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export const MAX_DIFF_CHANGED_LINES = 500
 
 /** Diffs mount once they come within this many pixels of the scroll viewport. */

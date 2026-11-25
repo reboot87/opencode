@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 补丁脚本：安装韩文输入法修复。
 set -euo pipefail
 
 # opencode Korean IME Fix Installer

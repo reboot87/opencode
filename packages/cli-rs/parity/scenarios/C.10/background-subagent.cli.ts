@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：后台·子智能体·CLI。
+ *
+ * 规格编号：C.10。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A subagent always runs in the background (#63382): its job holds the run open, and its report wakes the
 // parent. The turn the report triggers streams, and its failure decides the exit code, even though the first
 // turn succeeded (`noninteractive.test.ts`, "waits for a subagent's report and the parent turn it triggers").

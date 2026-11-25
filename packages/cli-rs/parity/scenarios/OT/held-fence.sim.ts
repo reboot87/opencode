@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：held·代码围栏·模拟。
+ *
+ * 规格编号：OT。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A reply streams a LaTeX fence whose first line renders, then math that does not and the closing fence without its
 // line ending, and pauses there. Both clients hold the closer's line, so the fence still streams and keeps the formula
 // (TS since #63989, on Core's engine; `parity/deviations/OT2049-markdown-engine.md` has the history). Once more text

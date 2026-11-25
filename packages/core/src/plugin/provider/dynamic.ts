@@ -1,3 +1,7 @@
+/**
+ * 动态 Provider 插件。
+ * 按需从 npm 安装并加载 provider 包。
+ */
 import { Effect } from "effect"
 import { define } from "@opencode/plugin/effect/plugin"
 import { Npm } from "@opencode/util/npm"

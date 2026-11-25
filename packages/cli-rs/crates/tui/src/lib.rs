@@ -1,4 +1,6 @@
 //! The native terminal UI.
+//!
+//! 终端界面入口。
 
 pub mod app;
 pub mod client_mcp;

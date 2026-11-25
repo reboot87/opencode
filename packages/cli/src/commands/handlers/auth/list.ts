@@ -1,3 +1,7 @@
+/**
+ * auth list 命令。
+ * 列出已登录的集成与账号。
+ */
 import { EOL } from "node:os"
 import { Effect } from "effect"
 import { Commands } from "../../commands"

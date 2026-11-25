@@ -1,7 +1,10 @@
 import type { PageSlug } from "~/component/site/product-data"
 import { productDetails } from "~/component/site/product-details"
 
-/** The product pages' English copy, by product. */
+/** The product pages' English copy, by product.
+ *
+ * 多语言分区文案：product·明细。
+ */
 export const productDetailsSource = Object.fromEntries(
   Object.entries(productDetails).map(([slug, detail]) => [
     slug,

@@ -1,3 +1,10 @@
+/**
+ * 集成·刷新的测试。
+ *
+ * 被测模块：@opencode/core/integration-refresh
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { expect } from "bun:test"
 import { Context, Deferred, Effect, Fiber, Layer } from "effect"
 import { TestClock } from "effect/testing"

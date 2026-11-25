@@ -1,3 +1,7 @@
+/**
+ * Google Vertex AI provider 主门面。
+ * 封装 Vertex 上 Gemini 的 chat / messages / responses / interactions / embeddings / images 能力，提供统一模型工厂。
+ */
 import { Effect } from "effect"
 import type { ProviderPackage } from "../provider-package.js"
 import { Gemini } from "../protocols/gemini.js"

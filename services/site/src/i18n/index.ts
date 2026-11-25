@@ -7,7 +7,10 @@ import { tables } from "~/i18n/tables"
 export type Key = keyof typeof en
 export type Dict = Record<Key, string>
 
-/** Some of a language's strings: dictionary keys, areas of page copy, and the keys still in English. */
+/** Some of a language's strings: dictionary keys, areas of page copy, and the keys still in English.
+ *
+ * 多语言文案：索引。
+ */
 export type Payload = { dict: Partial<Dict>; content: Record<string, unknown>; same: string[] }
 type Load = () => Promise<{ default: Payload }>
 /**

@@ -1,6 +1,8 @@
 //! Keyed surface trees for the plugin ABI. Each [`MountId`] identifies one generation of a mounted surface.
 //! [`Node::Keep`] reuses a subtree from the last accepted view. A [`Node::Canvas`] replays the display list
 //! returned by [`Surface::draw`].
+//!
+//! 插件 ABI 边界：`v2`。
 
 use std::any::Any;
 use std::collections::{BTreeMap, HashMap, HashSet};

@@ -23,7 +23,10 @@ import { explodeFactor } from "./motion"
 import { cue, fps, shots, shotAt, type CueID } from "./timeline"
 
 export type FilmFormat = "wide" | "tall"
-/** How the compromise shot marks a letter the font does not draw. */
+/** How the compromise shot marks a letter the font does not draw.
+ *
+ * 字体动画胶片组件：`film`。
+ */
 export type BoxStyle = "registration" | "brackets" | "modules"
 
 type Shot = (typeof shots)[number]

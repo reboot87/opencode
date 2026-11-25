@@ -1,3 +1,7 @@
+/**
+ * 分叉提示插件。
+ * 在会话被分叉（fork）后向新会话注入提示，说明来源与上下文继承关系。
+ */
 export * as ForkNoticePlugin from "./fork-notice.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

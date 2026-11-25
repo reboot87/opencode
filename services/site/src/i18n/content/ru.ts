@@ -1,3 +1,6 @@
+/**
+ * 多语言内容文案：`ru`。
+ */
 import type { ContentOverlay } from "./source"
 
 export const content = {

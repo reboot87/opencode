@@ -1,3 +1,7 @@
+/**
+ * 新建会话 — PinSound。
+ * 创建新会话的向导与表单中负责 PinSound 部分，提供该部分所需的实现与类型定义。
+ */
 // Synthesised stone sounds for the new session pin board. Nothing is loaded from disk; every sound is a
 // short burst of filtered noise, optionally with a low thud, so the whole palette reads as pebbles on stone.
 

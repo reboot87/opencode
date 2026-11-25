@@ -1,4 +1,7 @@
-/** How long a reveal waits for its provider to appear, e.g. while the catalog loads; a missing one gives up. */
+/**
+ * 
+ * How long a reveal waits for its provider to appear, e.g. while the catalog loads; a missing one gives up. 模型设置中负责 Machine 部分：模型偏好设置中与 Machine 相关的状态、交互与渲染逻辑。
+ */
 export const MODELS_REVEAL_TIMEOUT_MS = 5_000
 
 /**

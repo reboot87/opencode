@@ -40,6 +40,8 @@ const schemas = Object.entries(openapi.components.schemas) as [string, OpenApiSc
  * The HTTP API reference, from packages/protocol/openapi.json, in the docs layout: a section per
  * resource with its endpoint cards (docs-variants.css api-7), then the schemas. Each card opens on
  * its own, and on its address (`#operation-id`, client.ts), so the page stays scannable.
+ *
+ * 文档站组件：打开·API·参考。
  */
 export function OpenApiReference(props: { assets: DocsAssets }) {
   return (

@@ -1,3 +1,8 @@
+/**
+ * 示例脚本。
+ *
+ * 面向 Rust 侧的辅助脚本：格式化、测试与工作区校验。
+ */
 // A sample value of a schema representation, for the operations' table-driven test (`typed-client`): every field set
 // where the depth allows, so a request built from it exercises the path, the query's brackets and the body, and the
 // first member of a union. Not a fuzzer: one value per type, the same on every run.

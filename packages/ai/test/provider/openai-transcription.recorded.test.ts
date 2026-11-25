@@ -1,3 +1,10 @@
+/**
+ * OpenAI·语音转写·录制的的测试。
+ *
+ * 被测模块：@opencode/ai/provider/openai-transcription.recorded
+ *
+ * 覆盖各家供应商的接入实现：请求构造、响应解析与错误映射。
+ */
 import { describe, expect } from "bun:test"
 import { Effect, Stream } from "effect"
 import { Transcription, TranscriptionEvent } from "../../src/experimental.js"

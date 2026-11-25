@@ -1,3 +1,7 @@
+/**
+ * GUI 上下文 — Tab。
+ * GUI 插件的上下文与状态中负责 Tab 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createSignal, on, onCleanup, For, Show } from "solid-js"
 import type { JSX } from "solid-js"
 import { makeEventListener } from "@solid-primitives/event-listener"

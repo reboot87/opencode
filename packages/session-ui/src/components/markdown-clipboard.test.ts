@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — MarkdownClipboardTest。
+ * 跨场景复用的通用 UI 组件中负责 MarkdownClipboardTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { GlobalRegistrator } from "@happy-dom/global-registrator"
 import { afterAll, beforeAll, expect, test } from "bun:test"
 import { markdownClipboardHtml } from "./markdown-clipboard"

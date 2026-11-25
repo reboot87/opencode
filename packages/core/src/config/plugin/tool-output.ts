@@ -1,3 +1,7 @@
+/**
+ * 工具输出配置插件。
+ * 把配置中的工具输出设置应用到 ToolOutput 服务。
+ */
 export * as ConfigToolOutputPlugin from "./tool-output.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

@@ -1,3 +1,7 @@
+/**
+ * 调试 API 分组。
+ * 定义内部调试端点（如查看运行时状态）。
+ */
 import { Location } from "@opencode/schema/location"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, HttpApiSchema, OpenApi } from "effect/http-api"

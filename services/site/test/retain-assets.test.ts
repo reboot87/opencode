@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：retain·静态资源。
+ */
 import { afterEach, expect, test } from "bun:test"
 import { mkdtemp, rm } from "node:fs/promises"
 import { tmpdir } from "node:os"

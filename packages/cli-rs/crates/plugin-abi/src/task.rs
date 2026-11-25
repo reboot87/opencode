@@ -55,6 +55,8 @@
 
 // A task borrows the host of the call that polls it through a pointer: each `unsafe` below says why it is sound.
 #![allow(unsafe_code)]
+//!
+//! 插件 ABI 边界：任务。
 
 use std::cell::{Cell, RefCell};
 use std::collections::{BTreeMap, HashMap, VecDeque};

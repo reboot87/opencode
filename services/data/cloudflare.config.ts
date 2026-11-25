@@ -1,3 +1,6 @@
+/**
+ * 数据服务：Cloudflare·配置。
+ */
 import { bindings, defineConfig, triggers } from "cf/config"
 import { LOCALES } from "../../packages/data/app/src/lib/language"
 import { ogWorkerName } from "./og.config"

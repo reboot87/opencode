@@ -1,3 +1,7 @@
+/**
+ * drizzle SQLite Effect 查询。
+ * drizzle-orm 查询构件在 Effect 下的类型定义（本文件源自 drizzle-orm 上游）。
+ */
 /* oxlint-disable */
 import type * as Effect from "effect/Effect"
 import { applyEffectWrapper, type QueryEffectHKTBase } from "drizzle-orm/effect-core/query-effect"

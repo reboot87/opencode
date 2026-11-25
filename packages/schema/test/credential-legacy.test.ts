@@ -1,3 +1,10 @@
+/**
+ * 凭据·遗留的测试。
+ *
+ * 被测模块：@opencode/schema/credential-legacy
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { Schema } from "effect"
 import { Credential } from "../src/credential.js"

@@ -1,4 +1,6 @@
 //! Shell commands with their collapsible output and exit status.
+//!
+//! 终端界面路由：Shell。
 
 use opencode_api::client::Client;
 use opencode_api::generated::{

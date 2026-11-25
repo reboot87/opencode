@@ -1,6 +1,8 @@
 //! What the store changed since its one consumer last took it ([`crate::Data::take_changes`]): keys of the sessions
 //! and messages touched, recorded without allocating once the buffers are warm. The consumer swaps its own [`Dirty`]
 //! in, so the buffers go back and forth.
+//!
+//! 会话存储层：`changes`。
 
 use std::ops::BitOr;
 

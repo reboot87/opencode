@@ -1,3 +1,7 @@
+/**
+ * GUI 文件组件。
+ * 提供文件树与文件列表组件的 props 定义。
+ */
 import type { Component, JSX } from "solid-js"
 import type { ArtifactKind } from "@opencode/util/artifact"
 import type { ChangeKind } from "./review.js"

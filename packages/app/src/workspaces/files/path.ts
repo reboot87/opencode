@@ -1,3 +1,7 @@
+/**
+ * 工作区文件 — Path。
+ * 工作区内文件浏览界面中负责 Path 部分，提供该部分所需的实现与类型定义。
+ */
 export function stripFileProtocol(input: string) {
   if (!input.startsWith("file://")) return input
 

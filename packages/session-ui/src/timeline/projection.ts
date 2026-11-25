@@ -1,3 +1,7 @@
+/**
+ * 时间线 — Projection。
+ * 按时间顺序展示会话消息的视图中负责 Projection 部分，提供该部分所需的实现与类型定义。
+ */
 import type {
   ModelRef,
   SessionMessageAssistant,

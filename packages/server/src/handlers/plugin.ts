@@ -1,3 +1,7 @@
+/**
+ * plugin 接口处理器。
+ * 插件接口处理器：插件列举与安装。
+ */
 import { Plugin } from "@opencode/core/plugin"
 import { PluginUpdate } from "@opencode/core/plugin/update"
 import { InvalidRequestError, PluginNotFoundError, ServiceUnavailableError } from "@opencode/protocol/errors"

@@ -1,3 +1,7 @@
+/**
+ * 终端文案 — Ko。
+ * 终端插件的多语言文案中负责 Ko 部分，提供该部分所需的实现与类型定义。
+ */
 export default {
   "command.category": "터미널",
   "command.toggle": "터미널 표시/숨기기",

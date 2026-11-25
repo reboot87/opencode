@@ -1,3 +1,10 @@
+/**
+ * 网页搜索的测试辅助模块。
+ *
+ * 被测模块：@opencode/core/lib/websearch
+ *
+ * 核心测试的公共辅助模块：内存数据库、会话夹具与事件收集工具。
+ */
 export * as TestWebSearch from "./websearch"
 
 import { Context, Deferred, Effect, Layer } from "effect"

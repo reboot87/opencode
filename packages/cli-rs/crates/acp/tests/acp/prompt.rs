@@ -1,3 +1,5 @@
+//! ACP 协议测试：提示词。
+
 use std::sync::Arc;
 use std::time::Duration;
 

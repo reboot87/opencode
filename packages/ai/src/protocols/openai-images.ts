@@ -1,3 +1,7 @@
+/**
+ * OpenAI 图片生成协议。
+ * 支持生成与编辑端点，返回图片资产。
+ */
 import { Effect, Schema, SchemaGetter, Stream } from "effect"
 import {
   ImageFinishEvent,

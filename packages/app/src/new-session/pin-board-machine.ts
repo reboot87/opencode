@@ -1,3 +1,7 @@
+/**
+ * 新建会话 — PinBoardMachine。
+ * 创建新会话的向导与表单中负责 PinBoardMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // Where a pin is: in its socket, flying, piled on the composer or floor, flying home, or knocked off the panel by the
 // brick breaker ball (its socket stays empty until the game ends).
 export type PinPhase = "home" | "air" | "rest" | "return" | "out"

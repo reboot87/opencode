@@ -1,3 +1,6 @@
+/**
+ * 接口路由：回答。
+ */
 import type { APIEvent } from "@solidjs/start/server"
 import { z } from "zod"
 import { matchAnswer, voiceAnswers, type VoiceLink } from "~/lib/voice-answers"

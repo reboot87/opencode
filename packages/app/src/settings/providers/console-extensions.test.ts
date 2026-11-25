@@ -1,3 +1,7 @@
+/**
+ * Provider 设置 — ConsoleExtensionsTest。
+ * provider 的账号与密钥设置中负责 ConsoleExtensionsTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import type { ConfigEntry } from "@opencode/client/promise"
 import { consoleMcpLinks, consoleMcps, consoleSkillLink, consoleWorkspace } from "./console-extensions"

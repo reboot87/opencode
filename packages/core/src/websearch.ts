@@ -1,3 +1,7 @@
+/**
+ * 网络搜索服务（WebSearch）。
+ * 管理 websearch provider 的注册与调用。
+ */
 export * as WebSearch from "./websearch.js"
 
 import { WebSearch } from "@opencode/schema/websearch"

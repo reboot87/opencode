@@ -1,3 +1,6 @@
+/**
+ * 站点测试的测试用例：humans·txt。
+ */
 import { describe, expect, test } from "bun:test"
 
 // Served at /humans.txt by src/middleware.ts, as text/plain; charset=utf-8.

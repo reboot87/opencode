@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：early·typing·伪终端。
+ *
+ * 规格编号：D131。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // D131: keys typed at once on start, while the model list is still loading (the server answers it after 4 s), reach
 // the prompt without waiting for it. The Windows run saw typing stall for 20 s and 28 s before the model showed.
 import { definePty } from "../../pty/run"

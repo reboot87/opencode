@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — NavigationStory。
+ * 自定义窗口标题栏中负责 NavigationStory 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ProjectListOutput, SessionInfo } from "@opencode/client/promise"
 import { createMemoryHistory, MemoryRouter, Route } from "@solidjs/router"
 import { createEffect, on, Show } from "solid-js"

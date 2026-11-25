@@ -1,3 +1,7 @@
+/**
+ * UI 主题 — Discovery。
+ * 配色、间距与字号等设计令牌中负责 Discovery 部分，提供该部分所需的实现与类型定义。
+ */
 import { readdir, readFile } from "node:fs/promises"
 import path from "node:path"
 

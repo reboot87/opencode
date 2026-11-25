@@ -1,4 +1,6 @@
 //! Compares generated requests with those of the TypeScript Promise client.
+//!
+//! API 客户端：`oracle`。
 
 use std::collections::BTreeMap;
 use std::sync::{Arc, Mutex};

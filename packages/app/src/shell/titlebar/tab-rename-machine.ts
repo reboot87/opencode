@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — TabRenameMachine。
+ * 自定义窗口标题栏中负责 TabRenameMachine 部分，提供该部分所需的实现与类型定义。
+ */
 export const TAB_RENAME_SAVE_TIMEOUT_MS = 15_000
 
 /** What started a rename: a double-click on the title, or the tab's context menu. */

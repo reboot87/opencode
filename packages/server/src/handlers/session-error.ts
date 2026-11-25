@@ -1,3 +1,7 @@
+/**
+ * session-error 接口处理器。
+ * 会话错误处理器：把内部会话错误映射为协议错误响应。
+ */
 import { Session } from "@opencode/core/session"
 import type { Snapshot } from "@opencode/core/snapshot"
 import { Skill } from "@opencode/core/skill"

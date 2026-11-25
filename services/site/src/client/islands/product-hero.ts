@@ -6,6 +6,8 @@ import { $, $$, site } from "../dom"
  * with reduced motion its button plays and pauses it. A hero with files per theme had its inline
  * script pick the theme's before first paint; this keeps every source on the page's theme as the
  * theme switch or the system setting changes it.
+ *
+ * 客户端交互岛：product·主视觉。
  */
 export default function productHero(hero: HTMLElement) {
   const video = $<HTMLVideoElement>("video", hero)

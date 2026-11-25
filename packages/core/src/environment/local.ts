@@ -1,3 +1,7 @@
+/**
+ * 本地环境驱动。
+ * 以本地子进程实现环境驱动，并提供默认文件访问覆盖。
+ */
 import fs from "node:fs/promises"
 import path from "node:path"
 import { Effect } from "effect"

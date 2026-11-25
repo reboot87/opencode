@@ -7,7 +7,10 @@ import { homeContent, linkPhrases } from "~/lib/home-content"
 import { blocks, inlineHtmlToMarkdown, link, richToMarkdown, type MarkdownContext } from "~/lib/markdown"
 import { productActionMarkdown } from "~/lib/product-markdown"
 
-/** The home page as Markdown, for `/index.md` and the in-page Markdown view. */
+/** The home page as Markdown, for `/index.md` and the in-page Markdown view.
+ *
+ * 站点共享逻辑：主目录·Markdown。
+ */
 export function homeMarkdown(context: MarkdownContext) {
   const content = homeContent(context.t, context.route)
   const links = siteLinks(context.t, context.route)

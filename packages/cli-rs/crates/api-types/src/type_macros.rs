@@ -1,4 +1,7 @@
 // The generated types supply the schema names and wire values; every expansion keeps its own public Rust type.
+
+//! API 类型定义：类型·macros。
+
 macro_rules! string_type {
     ($name:ident, $doc:literal) => {
         #[doc = $doc]

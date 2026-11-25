@@ -1,3 +1,10 @@
+/**
+ * 上下文压缩的测试。
+ *
+ * 被测模块：@opencode/core/config/compaction
+ *
+ * 覆盖配置加载、合并、校验与分层覆盖（global / project / local）的行为。
+ */
 import { describe, expect } from "bun:test"
 import { LanguageModel, LLMClient, LLMEvent } from "@opencode/ai/effect"
 import { OpenAIChat } from "@opencode/ai/protocols"

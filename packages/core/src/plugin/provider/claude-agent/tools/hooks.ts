@@ -1,3 +1,7 @@
+/**
+ * Claude 工具钩子。
+ * 把待处理工具调用接入 Claude SDK 的 before 钩子。
+ */
 export * as ToolHooks from "./hooks.js"
 
 import type { HookCallback, Options } from "@anthropic-ai/claude-agent-sdk"

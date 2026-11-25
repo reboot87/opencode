@@ -1,3 +1,7 @@
+/**
+ * CLI 配置结构。
+ * 定义 CLI 配置的 Schema 与官方 JSON Schema 地址。
+ */
 import { Config } from "@opencode/tui/config"
 import { Schema } from "effect"
 

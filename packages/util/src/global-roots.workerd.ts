@@ -1,3 +1,7 @@
+/**
+ * 全局数据目录（Workerd）。
+ * 在 workerd 运行时使用临时目录作为数据根。
+ */
 import os from "os"
 import path from "path"
 

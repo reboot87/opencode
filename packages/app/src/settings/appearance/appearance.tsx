@@ -1,3 +1,7 @@
+/**
+ * 外观设置 — Appearance。
+ * 主题与外观相关设置中负责 Appearance 部分，提供该部分所需的实现与类型定义。
+ */
 import { Component, Show } from "solid-js"
 import { Select } from "@opencode/ui/select"
 import { TextInput } from "@opencode/ui/text-input"

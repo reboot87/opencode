@@ -1,3 +1,7 @@
+/**
+ * 外壳命令 — Palette。
+ * 应用外壳提供的命令中负责 Palette 部分，提供该部分所需的实现与类型定义。
+ */
 import { getFilename } from "@opencode/util/path"
 import type { Project } from "@/runtime/server/types"
 import type { SessionInfo } from "@opencode/client/promise"

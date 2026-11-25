@@ -1,3 +1,10 @@
+/**
+ * 错误·部分的测试。
+ *
+ * 被测模块：@opencode/ai/error-partial
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect, test } from "bun:test"
 import { Effect, Layer, Schema, Stream } from "effect"
 import { ai, LanguageModel, LLMEvent, ProviderInternalError, tool } from "../src/effect.js"

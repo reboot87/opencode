@@ -1,3 +1,7 @@
+/**
+ * 组件测试 — MermaidPreviewSpec。
+ * 会话界面组件的测试中负责 MermaidPreviewSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, story } from "../../stories/playwright/story"
 
 story("maximizes a Mermaid diagram to zoom into and move around", async ({ mount, page }) => {

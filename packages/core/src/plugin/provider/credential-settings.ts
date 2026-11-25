@@ -1,3 +1,7 @@
+/**
+ * 凭据设置。
+ * 从集成连接中解析当前生效的 provider 凭据。
+ */
 import { Effect } from "effect"
 import type { Context } from "@opencode/plugin/effect/plugin"
 import { Credential } from "../../credential.js"

@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：标签页·锚点·app。
+ *
+ * 规格编号：E.8。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A tab keeps its scroll anchor (V15, `sessionTabs.setScrollAnchor`): a page up in the first session, a second
 // session opened as a tab, and `<leader>1` back to the first, which shows the rows the reader left.
 import { assistant, defineApp, session, user } from "../../lib/app"

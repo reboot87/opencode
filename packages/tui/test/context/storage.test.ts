@@ -1,3 +1,7 @@
+/**
+ * 上下文测试 — StorageTest。
+ * 终端上下文的测试中负责 StorageTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, expect, spyOn, test } from "bun:test"
 import * as fs from "fs"
 import { mkdtempSync, rmSync } from "fs"

@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid DialogOpenTest：该文件实现 DialogOpenTest 相关的状态与逻辑。
+ */
 import { expect, test } from "bun:test"
 import { once } from "node:events"
 import { CliRenderEvents, TextAttributes } from "@opentui/core"

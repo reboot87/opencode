@@ -1,5 +1,7 @@
 //! Check plugin resource admission and release of linked plugins. Compare the frame at the limit with the
 //! over-limit placeholder.
+//!
+//! 终端界面测试：插件限额。
 
 use crate::support::{self, Harness};
 

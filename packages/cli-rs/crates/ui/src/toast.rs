@@ -1,4 +1,6 @@
 //! Shows one toast at a time. Hover pauses its timer.
+//!
+//! 基础 UI 组件库：轻提示。
 
 use crate::bind;
 use crate::theme::{Theme, ThemeError};

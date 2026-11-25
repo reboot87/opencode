@@ -1,3 +1,7 @@
+/**
+ * 终端工具 — Marquee。
+ * 终端界面的通用工具函数中负责 Marquee 部分，提供该部分所需的实现与类型定义。
+ */
 import { Locale } from "./locale"
 import { stringWidth } from "./string-width"
 

@@ -1,4 +1,6 @@
 //! In-memory HTTP transport. The first matching route answers; `/api/event` streams events from [`Memory::emit`].
+//!
+//! API 客户端：内存。
 
 use std::collections::{BTreeMap, HashSet};
 use std::sync::atomic::{AtomicUsize, Ordering};

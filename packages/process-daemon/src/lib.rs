@@ -1,3 +1,5 @@
+//! 进程守护服务实现入口。
+
 pub mod client;
 pub mod daemon;
 mod ghostty;

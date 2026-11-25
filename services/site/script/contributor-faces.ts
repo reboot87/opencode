@@ -1,3 +1,6 @@
+/**
+ * 站点构建脚本：贡献者头像。
+ */
 // Builds a contact sheet of the top contributors' avatars, for reviewing which ones are photos of a
 // human face (src/lib/contributor-faces.ts).
 //

@@ -1,3 +1,6 @@
+/**
+ * 站点入口：条目服务端。
+ */
 // @refresh reload
 import { createHandler, StartServer } from "@solidjs/start/server"
 import { getRequestEvent, ssr } from "solid-js/web"

@@ -1,3 +1,7 @@
+/**
+ * 文件图标集 — ChooseIconName。
+ * 按文件类型区分的图标集合中负责 ChooseIconName 部分，提供该部分所需的实现与类型定义。
+ */
 // Which file-type icon a path gets (FileIcon in file-icon.tsx, and the docs code blocks on the
 // website). Kept apart from FileIcon so a caller can map names without bundling the sprite.
 import type { IconName } from "./types"

@@ -1,3 +1,7 @@
+/**
+ * Code Mode 扩展。
+ * 定义可注入沙箱的扩展（Extension）与其快照结构。
+ */
 export * as Extension from "./extension.js"
 
 import type { Effect } from "effect"

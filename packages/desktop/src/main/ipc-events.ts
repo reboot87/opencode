@@ -1,3 +1,7 @@
+/**
+ * 桌面端主进程 — IpcEvents。
+ * Electron 主进程的核心逻辑中负责 IpcEvents 部分，提供该部分所需的实现与类型定义。
+ */
 import type { WebContents } from "electron"
 import type { DesktopEvent } from "../shared/ipc-rpc/events"
 

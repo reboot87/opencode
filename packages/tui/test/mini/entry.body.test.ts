@@ -1,3 +1,7 @@
+/**
+ * Mini 测试 — EntryBodyTest。
+ * 精简交互模式的测试中负责 EntryBodyTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import os from "os"
 import path from "path"

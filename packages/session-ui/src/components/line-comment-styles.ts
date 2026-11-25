@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — LineCommentStyles。
+ * 跨场景复用的通用 UI 组件中负责 LineCommentStyles 部分，提供该部分所需的实现与类型定义。
+ */
 export const lineCommentStyles = `
 [data-annotation-slot] {
   padding: 12px;

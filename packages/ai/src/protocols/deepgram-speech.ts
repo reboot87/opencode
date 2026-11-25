@@ -1,3 +1,7 @@
+/**
+ * Deepgram 语音合成协议。
+ * TTS provider 实现。
+ */
 import { Effect } from "effect"
 import { MediaProtocol } from "../route/media-protocol.js"
 import { MediaRoute } from "../route/media.js"

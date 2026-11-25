@@ -1,3 +1,10 @@
+/**
+ * 会话·模型·请求·钩子的测试。
+ *
+ * 被测模块：@opencode/core/session-model-request-hooks
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import { describe, expect } from "bun:test"
 import { ToolDefinition } from "@opencode/ai/effect"
 import { OpenAIChat } from "@opencode/ai/protocols"

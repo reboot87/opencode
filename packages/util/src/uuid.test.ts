@@ -1,3 +1,7 @@
+/**
+ * UUID 测试。
+ * 验证 UUID 生成在加密源可用与不可用时均有效。
+ */
 import { afterEach, describe, expect, test } from "bun:test"
 import { uuid } from "./uuid.js"
 

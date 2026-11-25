@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：运行中·回复·模拟。
+ *
+ * 规格编号：E.2。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // P-TUI version of `E.2/running-reply.app.ts`: a reply while it runs. The step has started and nothing streamed
 // yet, then reasoning streams in, then the reasoning ends and a shell call runs; the session is running
 // throughout. The shell runs past the background hint's delay (3 s) until the step after its checkpoint writes `go`,

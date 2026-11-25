@@ -1,3 +1,7 @@
+/**
+ * UI 性能测试 — Motion。
+ * UI 渲染性能基准中负责 Motion 部分，提供该部分所需的实现与类型定义。
+ */
 // 1,000 springs, retargeted every frame so they never settle into their resting fast path. strobe's
 // script host loads this module once per block and calls `frames` (perf/motion.bench.ts).
 import { Spring } from "../src/motion/spring"

@@ -1,3 +1,7 @@
+/**
+ * 浏览器扩展 API — Tabs。
+ * 浏览器插件暴露给扩展的接口中负责 Tabs 部分，提供该部分所需的实现与类型定义。
+ */
 import { Schema } from "effect"
 import type { BrowserWindow, Extension, WebContents } from "electron"
 import { method, none, optional, type ApiModule, type Emit, type ExtensionContext, type Wire } from "./api"

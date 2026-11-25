@@ -2,6 +2,8 @@
 //! followers, the TUI's plugins, and mini. If the protocol renames an event, such code still
 //! compiles and its handler goes quiet. This test reads those sources and requires every name it finds in an
 //! event position (a match arm, a comparison, or an `on_event` list) to be a member of the generated union.
+//!
+//! API 类型定义测试：事件·names。
 
 use std::path::{Path, PathBuf};
 

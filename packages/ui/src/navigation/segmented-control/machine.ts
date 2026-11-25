@@ -1,3 +1,7 @@
+/**
+ * 分段控件 — Machine。
+ * 互斥选项的分段切换组件中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 export type IndicatorBox = {
   readonly x: number
   readonly width: number

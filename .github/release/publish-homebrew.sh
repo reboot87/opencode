@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# 发布流程脚本：发布·Homebrew。
 # publish-homebrew.sh <sign-macos dir> <build-archives dir>: updates opencode-v2 in anomalyco/homebrew-tap over SSH
 # with its write deploy key (HOMEBREW_TAP_DEPLOY_KEY) and registers the homebrew update artifact.
 . "$(dirname "$0")/lib.sh"

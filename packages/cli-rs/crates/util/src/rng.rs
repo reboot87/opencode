@@ -1,4 +1,6 @@
 //! SplitMix64: small, seedable, and good enough for model tests to pick commands.
+//!
+//! 通用工具：`rng`。
 
 pub struct SplitMix64(pub u64);
 

@@ -1,4 +1,6 @@
 //! `cfg(luau)`: the `luau` feature. Code that runs Luau plugins is behind it.
+//!
+//! Rust 构建脚本。
 
 fn main() {
     println!("cargo::rustc-check-cfg=cfg(luau)");

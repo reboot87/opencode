@@ -1,3 +1,10 @@
+/**
+ * 工单的测试。
+ *
+ * 被测模块：@opencode/core/pty/ticket
+ *
+ * 覆盖伪终端的创建、读写与尺寸变更行为。
+ */
 import { describe, expect } from "bun:test"
 import { Effect, Layer } from "effect"
 import { LayerNode } from "@opencode/util/effect/layer-node"

@@ -1,3 +1,7 @@
+/**
+ * 提示区组件 — LocalAttachment。
+ * 提示输入区的终端组件中负责 LocalAttachment 部分，提供该部分所需的实现与类型定义。
+ */
 import path from "node:path"
 import { pathToFileURL } from "node:url"
 

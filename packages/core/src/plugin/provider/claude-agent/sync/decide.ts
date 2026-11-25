@@ -1,3 +1,7 @@
+/**
+ * Claude 同步决策。
+ * 判断当前请求应复用历史会话还是新建。
+ */
 export * as SyncDecision from "./decide.js"
 
 import type { LanguageModelV3Prompt } from "@ai-sdk/provider"

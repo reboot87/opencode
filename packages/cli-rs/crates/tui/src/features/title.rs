@@ -1,4 +1,6 @@
 //! Terminal titles for home and session routes.
+//!
+//! 终端界面功能模块：标题。
 
 use crate::prelude::*;
 

@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid E17aIntegrations：该文件实现 E17aIntegrations 相关的状态与逻辑。
+ */
 // P-COMP fixtures for "Connect an integration" (packages/tui/src/component/dialog-integration.tsx).
 // crates/tui/tests/all/integrations.rs mounts the Rust TUI over the same responses (`INTEGRATIONS` and `ATTEMPT`
 // below; keep both in step), hides the screen behind the dialog, sends the same keys, and compares the cells.

@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — Anchors。
+ * 会话主界面的视图与状态中负责 Anchors 部分，提供该部分所需的实现与类型定义。
+ */
 import type { Renderable } from "@opentui/core"
 import type { PartRef, SessionEntry, SessionNode } from "./grouping/session"
 

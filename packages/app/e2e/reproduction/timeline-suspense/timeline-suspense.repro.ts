@@ -1,3 +1,7 @@
+/**
+ * 时间线悬疑复现 — TimelineSuspenseRepro。
+ * 复现特定时间线渲染问题的端到端用例中负责 TimelineSuspenseRepro 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test, type Page } from "@playwright/test"
 
 test.beforeEach(async ({ page }) => {

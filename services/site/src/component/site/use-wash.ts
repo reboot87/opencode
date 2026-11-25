@@ -6,6 +6,8 @@ import { onEntrance, washColumns } from "./reveal"
  * moment (performance.now()), and each item arrives `washStep` staggers later. Armed on the client
  * only, never with reduced motion, and only while `enabled`. `columns` follows the grid's tracks (or --wash-columns).
  * Give the container `data-entrance` and `data-mounted={mounted()}` so it waits from first paint.
+ *
+ * 站点界面组件：use·wash。
  */
 export function createWash(
   element: () => HTMLElement | undefined,

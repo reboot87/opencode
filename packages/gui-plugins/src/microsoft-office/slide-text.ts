@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — SlideText。
+ * Microsoft Office 文档预览插件中负责 SlideText 部分，提供该部分所需的实现与类型定义。
+ */
 import { Option, Schema } from "effect"
 import { inspectPresentation, type DeckSnapshot } from "@betteroffice/pptx"
 

@@ -1,3 +1,8 @@
+/**
+ * 对等性公共库：供应商。
+ *
+ * 对等性校验的公共库：伪造服务端、PTY 套接字与录制回放工具。
+ */
 // What the P-FILE helpers for the prompt's state files share (oracle/E.2-history.ts, E.3-frecency.ts,
 // E.4-stash.ts): they mount one real provider on a state directory and watch its unawaited writes. Run from
 // <ts-root>/packages/tui with OpenTUI's Solid preload; Solid and OpenTUI resolve as packages/tui resolves them, so

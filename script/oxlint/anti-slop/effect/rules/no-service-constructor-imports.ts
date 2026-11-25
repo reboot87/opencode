@@ -14,7 +14,10 @@ function getImportedName(specifier: ESTree.ImportSpecifier): string {
 	return specifier.imported.value;
 }
 
-/** Keep dependency-bearing Effect service constructors local to their owning capability modules. */
+/** Keep dependency-bearing Effect service constructors local to their owning capability modules.
+ *
+ * Effect 架构 Oxlint 规则：无服务·function Object() { [native code] }·imports。
+ */
 export const noServiceConstructorImportsRule = defineRule({
 	meta: {
 		type: "problem",

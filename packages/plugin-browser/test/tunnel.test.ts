@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — TunnelTest。
+ * 终端界面的测试中负责 TunnelTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { createServer, type Socket } from "node:net"
 import { request } from "node:http"

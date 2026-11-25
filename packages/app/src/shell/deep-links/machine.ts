@@ -1,3 +1,7 @@
+/**
+ * 深度链接 — Machine。
+ * 处理外部链接唤起应用中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 // `opencode://` links opened with the desktop app. Both open on the app's own server, the one on this computer:
 // - `open-project?directory=<folder>` opens the folder as a project, in a new session.
 // - `new-session?directory=<folder>&prompt=<text>` does the same with the prompt typed in, not sent.

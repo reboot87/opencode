@@ -1,3 +1,7 @@
+/**
+ * 配对插件 — DispatchTest。
+ * 设备配对流程的 GUI 插件中负责 DispatchTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { copyEffectFailed, createCopyState, transitionCopy } from "./copy-machine"
 import { createDispatch } from "./dispatch"

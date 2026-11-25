@@ -1,3 +1,6 @@
+/**
+ * 语音合成客户端服务：继承 MediaClient，定义语音生成所需的 Service 类型。
+ */
 import { Context } from "effect"
 import { MediaClient } from "./media-client.js"
 import type { SpeechEvent, SpeechRequest, SpeechResponse } from "./speech.js"

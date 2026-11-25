@@ -1,3 +1,7 @@
+/**
+ * 回归测试 — HomeSpec。
+ * 防止既有行为退化的端到端用例中负责 HomeSpec 部分，提供该部分所需的实现与类型定义。
+ */
 import type { OpenCodeEvent } from "@opencode/client/promise"
 import { expect, test, type Page } from "@playwright/test"
 import {

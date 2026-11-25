@@ -1,3 +1,10 @@
+/**
+ * 工作树的测试。
+ *
+ * 被测模块：@opencode/server/worktree
+ *
+ * 覆盖该模块的核心行为与边界条件。
+ */
 import fs from "node:fs/promises"
 import path from "node:path"
 import { $ } from "bun"

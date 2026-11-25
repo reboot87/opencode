@@ -1,3 +1,7 @@
+/**
+ * 数据领域 — Retention。
+ * 数据采集的领域模型中负责 Retention 部分，提供该部分所需的实现与类型定义。
+ */
 import { and, eq, inArray } from "drizzle-orm"
 import { Context, Effect, Layer } from "effect"
 import { DatabaseError, DrizzleClient } from "../database"

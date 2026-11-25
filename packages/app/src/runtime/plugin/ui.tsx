@@ -1,3 +1,7 @@
+/**
+ * 运行时插件 — Ui。
+ * 浏览器端的插件加载与扩展点中负责 Ui 部分，提供该部分所需的实现与类型定义。
+ */
 import { children, For, Show } from "solid-js"
 import type { Ui, UiMenuItem } from "@opencode/plugin/gui"
 import { Markdown } from "@opencode/session-ui/markdown"

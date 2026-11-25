@@ -1,3 +1,7 @@
+/**
+ * 终端测试 — ExternalD。
+ * 终端界面的测试中负责 ExternalD 部分，提供该部分所需的实现与类型定义。
+ */
 declare module "commonmark" {
   export class Parser {
     parse(input: string): unknown

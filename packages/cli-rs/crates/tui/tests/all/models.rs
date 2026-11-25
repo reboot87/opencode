@@ -1,4 +1,6 @@
 //! Model selection and usage dialogs against recorded cells and server responses.
+//!
+//! 终端界面测试：模型。
 
 use std::path::{Path, PathBuf};
 use std::process::Command;

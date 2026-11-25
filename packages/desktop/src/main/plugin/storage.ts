@@ -1,3 +1,7 @@
+/**
+ * 桌面插件 — Storage。
+ * 桌面端插件的加载与宿主能力中负责 Storage 部分，提供该部分所需的实现与类型定义。
+ */
 import type { BuiltinMainStorage, MainStoreFrom } from "@opencode/plugin/gui/builtin"
 import type { Mutable } from "@opencode/plugin/gui/main"
 import { Option, Schema } from "effect"

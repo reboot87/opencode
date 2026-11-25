@@ -1,5 +1,7 @@
 //! Slash completion combines built-ins and server commands. Mentions list agents, files and references; files keep
 //! the server's ranking.
+//!
+//! 精简版实现：完整。
 
 use opencode_api::js::locale_compare;
 use opencode_ui::fuzzy;

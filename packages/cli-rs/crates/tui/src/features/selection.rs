@@ -1,5 +1,7 @@
 //! Selection and clipboard handling. The focused editor keeps its own selection; Ctrl+C copies or clears a selection
 //! before the exit binding runs.
+//!
+//! 终端界面功能模块：`selection`。
 
 use opencode_local::cli_config::TerminalCopy;
 

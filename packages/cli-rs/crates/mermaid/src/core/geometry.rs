@@ -1,3 +1,5 @@
+//! Mermaid 渲染核心：几何。
+
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Hash, PartialOrd, Ord)]
 pub struct Point {
     pub x: i32,

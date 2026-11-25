@@ -1,3 +1,7 @@
+/**
+ * 会话输入区 — SessionComposerRegion。
+ * 会话界面输入区的实现中负责 SessionComposerRegion 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, Show, type JSX } from "solid-js"
 import { SessionElicitationDock } from "@/session/requests/session-elicitation-dock"
 import { SessionPermissionDock } from "@/session/requests/session-permission-dock"

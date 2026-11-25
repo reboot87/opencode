@@ -1,3 +1,5 @@
+//! Rust 构建脚本。
+
 use std::env;
 use std::path::PathBuf;
 use std::process::Command;

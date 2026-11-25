@@ -1,3 +1,7 @@
+/**
+ * 运行时国际化 — Pl。
+ * 运行时加载多语言文案的机制中负责 Pl 部分，提供该部分所需的实现与类型定义。
+ */
 export const dict = {
   "desktop.menu.app": "OpenCode",
   "desktop.menu.file": "Plik",

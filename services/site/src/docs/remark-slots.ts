@@ -1,3 +1,6 @@
+/**
+ * V2 文档站：备注·slots。
+ */
 import type { Root } from "mdast"
 import type { MdxJsxFlowElement, MdxJsxTextElement } from "mdast-util-mdx-jsx"
 import { visit } from "unist-util-visit"

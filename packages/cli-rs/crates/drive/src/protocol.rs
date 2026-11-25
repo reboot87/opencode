@@ -1,4 +1,6 @@
 //! Simulation handshake and JSON-RPC requests over WebSocket.
+//!
+//! 本地驱动：协议。
 
 use crate::keys::{Direction, KeyModifiers, Mouse};
 use serde::Deserialize;

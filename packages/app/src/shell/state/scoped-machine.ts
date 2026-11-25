@@ -1,6 +1,8 @@
 /**
  * Startup order of session-scoped stores: names tracked before the stored layout loads merge into the stored list
  * before the first prune, so pruning a session also drops the stores of plugins that mounted early.
+ *
+ * 外壳状态中负责 ScopedMachine 部分：应用外壳全局状态中与 ScopedMachine 相关的状态、交互与渲染逻辑。
  */
 export type ScopedSessionState =
   | { readonly status: "hydrating"; readonly active: string | undefined; readonly tracked: readonly string[] }

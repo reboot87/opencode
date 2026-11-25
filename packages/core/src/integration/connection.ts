@@ -1,3 +1,7 @@
+/**
+ * 集成连接类型。
+ * 定义集成连接的凭据信息类型。
+ */
 export * as IntegrationConnection from "./connection.js"
 
 import { Connection } from "@opencode/schema/connection"

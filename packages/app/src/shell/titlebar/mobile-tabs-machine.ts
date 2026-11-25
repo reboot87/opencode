@@ -1,3 +1,7 @@
+/**
+ * 标题栏 — MobileTabsMachine。
+ * 自定义窗口标题栏中负责 MobileTabsMachine 部分，提供该部分所需的实现与类型定义。
+ */
 // The drawer's exit transition takes 200ms; Settings opens anyway if it never reports the end.
 export const MOBILE_TABS_CLOSE_TIMEOUT_MS = 500
 

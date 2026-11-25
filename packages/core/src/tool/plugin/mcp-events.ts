@@ -1,3 +1,7 @@
+/**
+ * MCP 事件工具。
+ * 向 MCP 服务器发送事件的工具。
+ */
 export * as McpEventTools from "./mcp-events.js"
 
 import { ToolFailure } from "@opencode/ai/effect"

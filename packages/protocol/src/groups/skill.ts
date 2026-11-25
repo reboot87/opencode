@@ -1,3 +1,7 @@
+/**
+ * 技能 API 分组。
+ * 定义技能的列举端点。
+ */
 import { Skill } from "@opencode/schema/skill"
 import { Location } from "@opencode/schema/location"
 import { Schema } from "effect"

@@ -1,3 +1,7 @@
+/**
+ * 认证选项：描述 API key 是可选还是必填，以及如何从 Config 读取凭据。
+ * 供构造 Auth 策略时使用。
+ */
 import type { Config, Redacted } from "effect"
 import { Auth } from "./auth.js"
 

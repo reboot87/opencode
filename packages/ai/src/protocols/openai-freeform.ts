@@ -1,3 +1,7 @@
+/**
+ * OpenAI 自由格式（freeform）工具支持。
+ * 让单字符串参数工具以原始文本形式发送，含语法生成与解析。
+ */
 import { Option, Schema } from "effect"
 import {
   JsonSchema,

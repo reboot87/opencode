@@ -2,6 +2,8 @@
  * Where a key moves the active row of the site list, which has `count` rows and shows `page` of them at once:
  * Up and Down by one, PageUp and PageDown by a page, Home and End to the ends. Moves stop at the ends, as a listbox's
  * do. Undefined for another key, or an empty list.
+ *
+ * 浏览器插件中负责 SiteKeys 部分：内置浏览器功能中与 SiteKeys 相关的状态、交互与渲染逻辑。
  */
 export function siteListMove(key: string, index: number, count: number, page: number) {
   if (count === 0) return undefined

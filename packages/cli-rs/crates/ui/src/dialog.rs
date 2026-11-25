@@ -1,4 +1,6 @@
 //! A single dialog host owns backdrop, focus and input for the stack.
+//!
+//! 基础 UI 组件库：弹窗。
 
 use crate::bind;
 use crate::keymap::{KeymapLayer, TuiKeymap};

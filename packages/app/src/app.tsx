@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — App。
+ * GUI 插件的实现中负责 App 部分，提供该部分所需的实现与类型定义。
+ */
 import "@/index.css"
 import { VoiceProvider } from "@/voice/context"
 import { VoiceOverlay } from "@/voice/composer"

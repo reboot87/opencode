@@ -1,3 +1,8 @@
+/**
+ * 配置·并发测试夹具。
+ *
+ * 为 CLI 测试提供配置文件与工作区样例。
+ */
 import { NodeFileSystem } from "@effect/platform-node"
 import { Global } from "@opencode/util/global"
 import { Effect, FileSystem } from "effect"

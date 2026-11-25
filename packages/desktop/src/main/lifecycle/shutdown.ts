@@ -1,3 +1,7 @@
+/**
+ * 生命周期 — Shutdown。
+ * 桌面端窗口与应用的启动退出流程中负责 Shutdown 部分，提供该部分所需的实现与类型定义。
+ */
 export * as Shutdown from "./shutdown"
 
 import { Context, Effect, Layer } from "effect"

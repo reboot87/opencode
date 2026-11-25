@@ -1,3 +1,7 @@
+/**
+ * 会话轮次测试。
+ * 验证一轮对话（用户输入到助手最终回复）的边界计算。
+ */
 import { expect, test } from "bun:test"
 import { SessionTurn } from "./session-turn.js"
 

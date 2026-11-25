@@ -1,3 +1,7 @@
+/**
+ * WSL 插件 — Dialog。
+ * Windows Subsystem for Linux 相关的 GUI 插件中负责 Dialog 部分，提供该部分所需的实现与类型定义。
+ */
 import { useDialog } from "@opencode/ui/context/dialog"
 import { Button } from "@opencode/ui/button"
 import { Dialog, DialogBody, DialogFooter, DialogHeader, DialogTitle } from "@opencode/ui/dialog"

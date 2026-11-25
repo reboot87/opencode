@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid KeymapTest：该文件实现 KeymapTest 相关的状态与逻辑。
+ */
 import type { KeymapCommand } from "@opencode/plugin/tui/context"
 import { useKeymap } from "@opentui/keymap/solid"
 import { testRender } from "@opentui/solid"

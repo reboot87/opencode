@@ -1,3 +1,7 @@
+/**
+ * 主页 — Machine。
+ * 应用主页的视图与数据中负责 Machine 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ServerConnection } from "@/runtime/server/registry"
 import { toggleHomeProjectSelection } from "@/shell/layout/helpers"
 import type { HomeProjectSelection } from "@/shell/state/layout"

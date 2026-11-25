@@ -1,3 +1,8 @@
+/**
+ * 方法脚本。
+ *
+ * 面向 Rust 侧的辅助脚本：格式化、测试与工作区校验。
+ */
 // Emits, per endpoint: the request builder in `opencode-api-types` (`client::<name>`, typed by
 // its output, with no transport), the `Client` method that sends it, the endpoint's row of the operations table the
 // Luau prelude's `plugin.client` builds requests from, and a probe that builds the request from JSON, for the table

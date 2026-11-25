@@ -1,3 +1,7 @@
+/**
+ * GUI 插件定义。
+ * 定义 GUI 插件的 setup 函数与声明结构。
+ */
 import type { SetupContext } from "./context.js"
 import type { Cleanup } from "./core.js"
 import type { Declarations, Icons, Stores } from "./declarations.js"

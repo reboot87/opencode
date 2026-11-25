@@ -1,3 +1,7 @@
+/**
+ * 语音界面 — CoordinationTest。
+ * 实时语音会话的界面中负责 CoordinationTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, expect, setSystemTime, test } from "bun:test"
 import { ReplyWatch } from "./replies"
 import { TranscriptTail } from "./tail"

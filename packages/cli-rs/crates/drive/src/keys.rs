@@ -1,4 +1,6 @@
 //! Encodes simulated keyboard and mouse input as terminal bytes so actions exercise the real input parser.
+//!
+//! 本地驱动：密钥。
 
 use serde::Deserialize;
 

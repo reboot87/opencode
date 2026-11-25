@@ -1,3 +1,7 @@
+/**
+ * 桌面插件 — ManagerTest。
+ * 桌面端插件的加载与宿主能力中负责 ManagerTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { pluginEnabled } from "@opencode/plugin/gui/host"
 import { openDatabase } from "../storage/database"

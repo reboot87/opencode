@@ -1,3 +1,7 @@
+/**
+ * GUI 插件 — LayoutAuditTest。
+ * GUI 插件的实现中负责 LayoutAuditTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { expect, test } from "bun:test"
 import { auditAllFixtures, auditFixture, summarizeAudits, worstAudits } from "./test/layout-audit/harness.js"
 import { layoutFixtures } from "./test/layout-audit/fixtures.js"

@@ -1,3 +1,7 @@
+/**
+ * ACP 客户端工具。
+ * 对客户端错误分类并解码会话 ID。
+ */
 import { ClientError } from "@opencode/client/effect"
 import { InvalidCursorError, InvalidRequestError, SessionNotFoundError } from "@opencode/protocol/errors"
 import { Session } from "@opencode/schema/session"

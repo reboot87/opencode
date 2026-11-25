@@ -1,4 +1,6 @@
 //! Diff cards form a virtual list: build only cards near the viewport and retain their state across revisions.
+//!
+//! 终端插件视图：视图。
 
 use std::rc::Rc;
 

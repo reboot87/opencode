@@ -1,3 +1,7 @@
+/**
+ * Promise 风格插件 API — 插件核心。
+ * 插件定义本身：上下文、注册方式与生命周期。此文件定义 Promise 风格 下该领域的接口与类型，与其它领域共同构成插件 API 表面。
+ */
 import type { OpenCodeClient } from "@opencode/client"
 import type { CredentialApi, ExperimentalGenerateApi, PluginApi } from "@opencode/client/promise/api"
 import type { Location } from "@opencode/schema/location"

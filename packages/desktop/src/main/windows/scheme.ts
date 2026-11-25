@@ -1,3 +1,7 @@
+/**
+ * 窗口管理 — Scheme。
+ * 浏览器窗口的创建与布局管理中负责 Scheme 部分，提供该部分所需的实现与类型定义。
+ */
 import electron, { type BrowserWindow } from "electron"
 import { schemes } from "@opencode/gui-plugins/schemes"
 

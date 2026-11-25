@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — ViewportPresets。
+ * 内置浏览器功能的 GUI 插件中负责 ViewportPresets 部分，提供该部分所需的实现与类型定义。
+ */
 export const quickPresets = [
   { id: "galaxy-s26", width: 360, height: 780, profile: "phone" },
   { id: "iphone-18-pro", width: 402, height: 874, profile: "phone" },

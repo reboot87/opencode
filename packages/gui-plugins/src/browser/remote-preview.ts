@@ -1,3 +1,7 @@
+/**
+ * 浏览器插件 — RemotePreview。
+ * 内置浏览器功能的 GUI 插件中负责 RemotePreview 部分，提供该部分所需的实现与类型定义。
+ */
 import type { ServerEndpoint } from "@opencode/plugin/gui/main"
 import type { WorkspaceSource } from "./workspace-file"
 import { workspacePrefix } from "./remote-address"

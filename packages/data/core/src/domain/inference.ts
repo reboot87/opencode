@@ -1,3 +1,7 @@
+/**
+ * 数据领域 — Inference。
+ * 数据采集的领域模型中负责 Inference 部分，提供该部分所需的实现与类型定义。
+ */
 import { Resource } from "../resource"
 import type { R2SqlData } from "../r2-sql"
 import type { CatalogIdentity } from "./catalog-identity"

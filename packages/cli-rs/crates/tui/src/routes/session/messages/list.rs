@@ -7,6 +7,8 @@
 //!
 //! What the transcript remembers is one [`Model`]. A render plans over the model and the store, applies the plan to
 //! the widgets with the model not borrowed, so a widget callback that re-enters finds no borrow, then commits it.
+//!
+//! 终端界面路由：列表。
 
 use std::collections::HashSet;
 use std::hash::{DefaultHasher, Hash, Hasher};

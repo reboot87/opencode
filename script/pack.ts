@@ -1,5 +1,9 @@
 #!/usr/bin/env bun
 
+/**
+ * 仓库脚本：打包。
+ */
+
 import { Script } from "@opencode/script"
 import { $ } from "bun"
 import { rm } from "node:fs/promises"

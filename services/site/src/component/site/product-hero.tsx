@@ -15,7 +15,10 @@ import { staticRender } from "~/lib/static-render"
 
 type HeroFile = { src?: string; poster: string }
 
-/** A hero's files: a video and its poster, one of each per theme, or only the posters for a still. */
+/** A hero's files: a video and its poster, one of each per theme, or only the posters for a still.
+ *
+ * 站点界面组件：product·主视觉。
+ */
 export type HeroMedia = HeroFile & { themes?: { light: HeroFile; dark: HeroFile } }
 
 /**

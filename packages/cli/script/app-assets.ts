@@ -1,3 +1,8 @@
+/**
+ * app·静态资源脚本。
+ *
+ * CLI 包的开发脚本：构建校验、配置生成与发布准备。
+ */
 import { $ } from "bun"
 import path from "node:path"
 import { promisify } from "node:util"

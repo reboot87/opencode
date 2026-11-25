@@ -1,3 +1,7 @@
+/**
+ * WebSocket 通道（channel）的接口类型：描述一条 WS 连接的读写能力，
+ * 供 websocket.ts 的实现和上层协议使用。
+ */
 import type { Effect, Scope, Stream } from "effect"
 import type { Headers } from "effect/http"
 import type { AIError, HttpContext } from "../../schema/index.js"

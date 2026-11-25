@@ -1,3 +1,7 @@
+/**
+ * 连接服务端 — Controller。
+ * 添加与连接远程服务端中负责 Controller 部分，提供该部分所需的实现与类型定义。
+ */
 import { type Accessor, createEffect, createMemo, createSignal, on, onCleanup, untrack } from "solid-js"
 import { useLanguage } from "@/runtime/i18n/language"
 import { usePlatform } from "@/runtime/platform/platform"

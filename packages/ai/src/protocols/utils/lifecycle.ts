@@ -1,3 +1,7 @@
+/**
+ * Responses 生命周期状态机。
+ * 跟踪 Response 会话的初始、进行中与完成状态。
+ */
 import { LLMEvent, type FinishReasonDetails, type ProviderMetadata, type Usage } from "../../schema/index.js"
 
 export interface State {

@@ -1,6 +1,8 @@
 //! The request bodies' scroll box and its scrollbar (`verticalScrollbarOptions`): a thumb in the line color on the
 //! surface. The permission body shows it always, which is a full-height thumb when nothing scrolls; the form body
 //! only while its content overflows.
+//!
+//! 精简版实现：滚动。
 
 use crate::prelude::*;
 

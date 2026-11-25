@@ -1,3 +1,10 @@
+/**
+ * filesystem的测试。
+ *
+ * 被测模块：@opencode/core/filesystem/filesystem
+ *
+ * 覆盖文件系统抽象层：路径解析、原子写入与权限处理。
+ */
 import { describe, test, expect } from "bun:test"
 import { Effect, FileSystem, Layer } from "effect"
 import { LayerNodePlatform } from "@opencode/util/effect/app-node-platform"

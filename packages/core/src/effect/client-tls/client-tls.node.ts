@@ -1,3 +1,7 @@
+/**
+ * 客户端 TLS（Node）。
+ * 在 Node 运行时用 Agent 缓存构造携带客户端证书的 fetch。
+ */
 // The deep path keeps Vite, which runs under Bun where "undici" is a built-in, from leaving the import external.
 import { Agent, fetch } from "undici/index.js"
 import type { Sender, Tls } from "./client-tls.js"

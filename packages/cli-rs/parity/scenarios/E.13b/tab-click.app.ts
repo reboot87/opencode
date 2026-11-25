@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：标签页·click·app。
+ *
+ * 规格编号：E.13b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Clicks in the composer (#60168): with a running shell and no running subagent, a click on the footer's
 // "1 shell" opens the composer on the Shell tab, and a click on a tab label switches to it.
 import { assistant, defineApp, location, session, user } from "../../lib/app"

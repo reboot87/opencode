@@ -1,4 +1,7 @@
-/** @jsxImportSource @opentui/solid */
+/**
+ * 
+ * @jsxImportSource @opentui/solid DiffViewer：该文件实现 DiffViewer 相关的状态与逻辑。
+ */
 import type { FileDiffInfo, LocationRef } from "@opencode/client"
 import type { Vcs } from "@opencode/schema/vcs"
 import { Plugin } from "@opencode/plugin/tui"

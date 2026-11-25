@@ -1,3 +1,7 @@
+/**
+ * 数据站测试 — CompareRadarTest。
+ * 数据站点的测试中负责 CompareRadarTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { describe, expect, test } from "bun:test"
 import { buildRadarAxes, resolveRadarScore } from "../src/routes/compare-radar"
 import type { ModelCatalogEntry } from "../src/routes/model-catalog"

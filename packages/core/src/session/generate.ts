@@ -1,3 +1,7 @@
+/**
+ * 会话文本生成（SessionGenerate）。
+ * 一次性生成文本（非交互式），返回记录用量与文本结果。
+ */
 export * as SessionGenerate from "./generate.js"
 
 import type { FileSystem } from "../filesystem.js"

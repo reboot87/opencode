@@ -1,3 +1,7 @@
+/**
+ * 浏览器配置 — FilterStartupTest。
+ * 浏览器插件的用户配置与身份中负责 FilterStartupTest 部分，提供该部分所需的实现与类型定义。
+ */
 import { afterEach, expect, jest, test } from "bun:test"
 import { createFilterGate } from "./filter-startup"
 

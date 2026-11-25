@@ -1,3 +1,7 @@
+/**
+ * 项目图标发现。
+ * 在项目目录中查找并读取可用的图标文件。
+ */
 export * as ProjectIcon from "./icon.js"
 
 import path from "path"

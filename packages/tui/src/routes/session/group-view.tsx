@@ -1,3 +1,7 @@
+/**
+ * 会话界面 — GroupView。
+ * 会话主界面的视图与状态中负责 GroupView 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createSignal, For, Match, Show, Switch } from "solid-js"
 import { RGBA, type Renderable } from "@opentui/core"
 import { useRenderer, type JSX } from "@opentui/solid"

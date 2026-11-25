@@ -1,3 +1,7 @@
+/**
+ * Office 插件 — Spreadsheet。
+ * Microsoft Office 文档预览插件中负责 Spreadsheet 部分，提供该部分所需的实现与类型定义。
+ */
 import { createMemo, createSignal, createUniqueId, For, onCleanup, Show, untrack } from "solid-js"
 import { createStore } from "solid-js/store"
 import { createResizeObserver } from "@solid-primitives/resize-observer"

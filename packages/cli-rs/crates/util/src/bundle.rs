@@ -1,4 +1,6 @@
 //! Finds the bundled server beside the real client executable, following symlinks on `PATH`.
+//!
+//! 通用工具：打包产物。
 
 use std::path::{Path, PathBuf};
 

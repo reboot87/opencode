@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：权限·伪终端。
+ *
+ * 规格编号：M.3。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // Two permissions wait when mini opens the session. The shell call's footer moves to "Always allow" and back,
 // then allows once; the next request, which saves nothing, is rejected with a message. Each reply answers 204
 // and the server's `permission.replied` takes the request away.

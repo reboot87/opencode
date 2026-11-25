@@ -1,3 +1,7 @@
+/**
+ * 自动化事件转换。
+ * 把 MCP 事件更新转换为自动化可消费的输入结构。
+ */
 export * as AutomationEvent from "./event.js"
 
 import type { Automation } from "@opencode/schema/automation"

@@ -1,3 +1,7 @@
+/**
+ * 数据站组件 — ProductLockup。
+ * 数据站点的界面组件中负责 ProductLockup 部分，提供该部分所需的实现与类型定义。
+ */
 import "./product-lockup.css"
 import "@opencode/nav-menus/nav-menus.css"
 import { installNavMenus } from "@opencode/nav-menus"

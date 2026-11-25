@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：标签页·结束·伪终端。
+ *
+ * 规格编号：OT。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // gh-triage-2012: a tab is two cells in the editor. On `ab\tcd`, Left then Down moves the cursor to the end of the
 // text, so `X` goes after `d`. A client that measures the end with its own width count stops before `d`.
 import { definePty } from "../../pty/run"

@@ -1,3 +1,7 @@
+/**
+ * 模块 — Workspace。
+ * 该目录下的功能模块中负责 Workspace 部分，提供该部分所需的实现与类型定义。
+ */
 import { OpenCode } from "@opencode/client/promise"
 import { createData } from "@opencode/client/solid"
 import { reviewDiffs } from "@opencode/session-ui/storybook"

@@ -1,3 +1,7 @@
+/**
+ * 工具展示 — ShellOutput。
+ * 工具调用与结果的展示组件中负责 ShellOutput 部分，提供该部分所需的实现与类型定义。
+ */
 import { isShellNotFoundError, type ShellOutputInput, type ShellOutputOutput } from "@opencode/client/promise"
 import {
   createShellFollowerState,

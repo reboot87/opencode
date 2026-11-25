@@ -1,3 +1,10 @@
+/**
+ * 对等性应用场景：消息·app。
+ *
+ * 规格编号：E.6b。
+ *
+ * 对等性应用场景：录制整段交互流程的期望输出，供 Rust 实现比对。
+ */
 // A compaction, a failed step, a step waiting to retry, and the revert banner after an undo (V08, V10, V11).
 import { defineApp, session, user } from "../../lib/app"
 

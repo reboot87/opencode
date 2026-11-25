@@ -1,4 +1,7 @@
-/** Longest one answer may take before it fails with Retry; a stalled connection never settles on its own. */
+/**
+ * 
+ * Longest one answer may take before it fails with Retry; a stalled connection never settles on its own. 旁注插件中负责 Machine 部分：旁注说明功能中与 Machine 相关的状态、交互与渲染逻辑。
+ */
 export const BTW_GENERATE_TIMEOUT_MS = 300_000
 
 export type BtwChatModel = {

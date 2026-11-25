@@ -1,3 +1,7 @@
+/**
+ * Parallel 搜索插件。
+ * 通过 Parallel.ai 的 MCP 端点提供网络搜索。
+ */
 export * as WebSearchParallel from "./parallel.js"
 
 import { define } from "@opencode/plugin/effect/plugin"

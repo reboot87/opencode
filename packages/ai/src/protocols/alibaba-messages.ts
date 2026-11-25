@@ -1,3 +1,7 @@
+/**
+ * 阿里云 Messages 风格协议实现。
+ * Messages API 的 provider 变体。
+ */
 import { Effect, Schema } from "effect"
 import { Protocol } from "../route/protocol.js"
 import { AnthropicMessages } from "./anthropic-messages.js"

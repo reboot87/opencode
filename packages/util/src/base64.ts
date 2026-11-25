@@ -1,3 +1,7 @@
+/**
+ * Base64 编解码。
+ * 优先使用原生 Base64 API，缺失时回退到纯 JS 实现。
+ */
 // The native codecs (Chromium 140, Firefox 133, Safari 18.2) run about 100 times faster than a string round trip. The
 // type libraries declare them, but older web browsers lack them, so each is read as possibly missing first.
 const nativeEncode: (() => string) | undefined = Uint8Array.prototype.toBase64

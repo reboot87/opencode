@@ -1,4 +1,6 @@
 //! Status of services at the default location.
+//!
+//! 终端弹窗组件：`status`。
 
 use opencode_api::generated::{McpServer, McpServerStatus};
 use opencode_store::Catalog;

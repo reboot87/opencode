@@ -1,3 +1,7 @@
+/**
+ * 插件实例接口。
+ * 定义插件实例的列举与激活接口。
+ */
 export * as InstancePlugins from "./instance.js"
 
 import type { Plugin } from "@opencode/plugin/effect/plugin"

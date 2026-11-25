@@ -1,3 +1,7 @@
+/**
+ * 会话输入区 — GoLimitTray。
+ * 会话界面输入区的实现中负责 GoLimitTray 部分，提供该部分所需的实现与类型定义。
+ */
 import { createEffect, createMemo, createSignal, on, onCleanup, Show } from "solid-js"
 import { Option, Schema } from "effect"
 import type { SessionStepFailed } from "@opencode/client/promise"

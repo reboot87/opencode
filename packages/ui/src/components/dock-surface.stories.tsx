@@ -1,3 +1,7 @@
+/**
+ * 通用组件 — DockSurfaceStories。
+ * 跨场景复用的通用 UI 组件中负责 DockSurfaceStories 部分，提供该部分所需的实现与类型定义。
+ */
 import { DockShell, DockTray, type DockTrayProps } from "./dock-surface"
 
 type Args = { attach: NonNullable<DockTrayProps["attach"]>; message: string }

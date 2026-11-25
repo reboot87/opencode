@@ -1,3 +1,10 @@
+/**
+ * 供应商·Cloudflare·工作单元·AI的测试。
+ *
+ * 被测模块：@opencode/core/plugin/provider-cloudflare-workers-ai
+ *
+ * 覆盖插件加载、生命周期钩子与能力注册的行为。
+ */
 import { describe, expect } from "bun:test"
 import { Effect } from "effect"
 import { Credential } from "@opencode/core/credential"
