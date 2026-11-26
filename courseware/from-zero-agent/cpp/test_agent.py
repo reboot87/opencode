@@ -54,11 +54,14 @@ base = f"http://127.0.0.1:{server.server_port}/v1"
 env = {**os.environ, "OPENAI_BASE_URL": base, "OPENAI_API_KEY": "test", "MODEL": "mock"}
 
 
-def run(task, stdin="", path=None):
+def run(task, stdin="", path=None, extra=None):
+    merged = {**env, **(extra or {})}
+    if path:
+        merged["PATH"] = path
     return subprocess.run(
         ["./agent.exe", task],
         input=stdin, capture_output=True, text=True, encoding="utf-8", errors="replace",
-        env={**env, "PATH": path} if path else env,
+        env=merged,
     )
 
 
@@ -114,6 +117,25 @@ passed &= check("lua 进程内：不依赖 lua.exe", "OK:" in out and "int main"
 CALL.update(name="run_shell", args={"command": "echo hi"})
 out = run("跑一条命令", stdin="y\n").stdout
 passed &= check("ask: 同意后由 Lua 执行命令", "OK:hi" in out, out[-200:])
+
+# 脚本跑飞：超时打断，回一条错误，agent 继续
+with open("tools/_test_loop.lua", "w", encoding="utf-8") as f:
+    f.write("function run(args)\n  while true do end\nend\n")
+with open("tools/_test_loop.json", "w", encoding="utf-8") as f:
+    f.write(json.dumps({
+        "name": "loop",
+        "description": "死循环，用来测超时。",
+        "parameters": {"type": "object", "properties": {}},
+        "script": "tools/_test_loop.lua",
+        "effect": "allow",
+    }, ensure_ascii=False))
+try:
+    CALL.update(name="loop", args={})
+    out = run("跑飞一下", extra={"TOOL_TIMEOUT_MS": "200"}).stdout
+    passed &= check("Lua 死循环：超时打断，不卡死进程", "执行超时" in out, out[-200:])
+finally:
+    for name in ("tools/_test_loop.lua", "tools/_test_loop.json"):
+        os.remove(name)
 
 server.shutdown()
 print("ALL PASS" if passed else "FAILED")

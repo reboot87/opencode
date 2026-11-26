@@ -18,6 +18,7 @@
 //   agent.exe "读取 package.json，告诉我项目名字"
 
 #include <algorithm>
+#include <chrono>
 #include <cstdio>
 #include <cstdlib>
 #include <filesystem>
@@ -234,13 +235,32 @@ static bool loadLuaTool(const string& name, const string& script) {
     return true;
 }
 
+// 工具跑飞了不该拖死整个 agent：每 1000 条指令查一次墙钟，超时就 luaL_error。
+// 只能在 Lua 指令边界打断——host.exec 里卡住的子进程管不到。
+static int toolTimeoutMs = 10000;
+static long long deadlineMs = 0;
+
+static long long nowMs() {
+    using namespace std::chrono;
+    return duration_cast<milliseconds>(steady_clock::now().time_since_epoch()).count();
+}
+
+static void deadlineHook(lua_State* L, lua_Debug*) {
+    if (nowMs() >= deadlineMs) luaL_error(L, "执行超时，已中止（TOOL_TIMEOUT_MS）");
+}
+
 static string callLuaTool(const string& name, const json& args) {
     lua_getfield(LUA, LUA_REGISTRYINDEX, "agent_tools");
     lua_getfield(LUA, -1, name.c_str());
     lua_remove(LUA, -2);  // 栈上只剩 run
     pushJson(LUA, args);
 
-    if (lua_pcall(LUA, 1, 1, 0) != LUA_OK) {
+    deadlineMs = nowMs() + toolTimeoutMs;
+    lua_sethook(LUA, deadlineHook, LUA_MASKCOUNT, 1000);
+    const int status = lua_pcall(LUA, 1, 1, 0);
+    lua_sethook(LUA, nullptr, 0, 0);
+
+    if (status != LUA_OK) {
         const string message = lua_tostring(LUA, -1) ? lua_tostring(LUA, -1) : "未知错误";
         lua_pop(LUA, 1);
         return "工具报错：" + message;
@@ -387,6 +407,7 @@ int main(int argc, char** argv) {
     const string baseUrl = env("OPENAI_BASE_URL", "https://api.openai.com/v1");
     const string apiKey = env("OPENAI_API_KEY", "");
     const string model = env("MODEL", "gpt-4.1-mini");
+    toolTimeoutMs = std::atoi(env("TOOL_TIMEOUT_MS", "10000").c_str());
 
 #ifdef _WIN32
     const vector<string> argvList = args();
