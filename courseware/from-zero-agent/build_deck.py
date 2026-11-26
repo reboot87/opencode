@@ -308,7 +308,7 @@ s = slide_body("课程地图：三章，一个能跑的程序", "目录")
 mods = [
     ("01", "认识 Agent", "为什么它不是一个模型，而是一个循环", "4 页"),
     ("02", "手写 Agent", "7 步：工具、请求、循环、回灌、停止、权限、跑起来", "12 页"),
-    ("03", "进阶与实战", "上下文、错误、分层、五个坑、课后作业", "7 页"),
+    ("03", "进阶与实战", "上下文、错误、界面、分层、五个坑、作业", "8 页"),
 ]
 for i, (num, title, desc, count) in enumerate(mods):
     y = 1.85 + i * 1.52
@@ -883,6 +883,48 @@ add_p(tf, "Agent 的稳定性，不取决于它多聪明，而取决于失败路
 add_p(tf, "先让每一条失败都有去处，再谈能力。", size=11, color=MUTED, after=0)
 note(s, "这一页直接决定学员做出来的东西能不能用。"
         "重点：工具错误不要 throw 到最外层，要变成 tool 消息。")
+
+# ---------------------------------------------------------------- 23 异步 + UI
+
+s = slide_body("跑在后台：异步 + 一个能点的界面", "03 · 交互")
+
+code_panel(s, 0.55, 1.78, 6.95, 2.2, "agent-ui.ts · 和 agent.ts 的三处差别", '''// ① 等待期间线程是空闲的
+const data = await fetch(url, { signal })
+// ② 权限从 stdin 变成页面按钮
+const allow = await ask(name, target)
+// ③ 停止：一个 signal 管住两条链
+abort.abort()   // fetch 立刻中断
+proc.kill()     // 子进程也收到''', size=10, line=1.35)
+
+code_panel(s, 0.55, 4.12, 6.95, 1.85, "权限 = 一个还没 resolve 的 Promise", '''const ask = (name, target) =>
+  new Promise<boolean>((resolve) => {
+    pendingAsk = resolve          // 页面点按钮时调用
+    send({ type: "ask", name, target })
+  })''', size=10, line=1.35)
+
+tf = textbox(s, 7.85, 1.82, 5.0, 1.35)
+add_p(tf, "为什么单线程够用", size=12, bold=True, color=ACCENT, after=6)
+add_p(tf, "await 把等待交还给运行时，页面请求照常处理。线程池解决的是「同时算」，这里只是在等。",
+      size=11, color=BODY, after=0, line=1.4)
+
+tf = textbox(s, 7.85, 3.3, 5.0, 1.35)
+add_p(tf, "事件怎么到页面", size=12, bold=True, color=ACCENT, after=6)
+add_p(tf, "SSE 逐条推 step / tool / result；空闲连接会被掐断，5 秒发一行注释保活。",
+      size=11, color=BODY, after=0, line=1.4)
+
+tf = textbox(s, 7.85, 4.78, 5.0, 1.35)
+add_p(tf, "停止为什么难", size=12, bold=True, color=ACCENT, after=6)
+add_p(tf, "signal 要传到 fetch、子进程、确认弹窗三处。漏一处，就卡在那个等待点停不下来。",
+      size=11, color=BODY, after=0, line=1.4)
+
+rect(s, 0.55, 6.35, 12.3, 0.55, CARD_2, radius=0.3, shape=MSO_SHAPE.ROUNDED_RECTANGLE)
+tf = textbox(s, 0.85, 6.47, 11.7, 0.32)
+add_p(tf, "bun run agent-ui.ts → localhost:3000　·　没有 API key 也能点：bun run demo-local.ts",
+      size=11.5, color=ACCENT, align=PP_ALIGN.CENTER, after=0)
+note(s, "循环一行没变：变的只是三个副作用——打印变推事件，readline 变 Promise，Ctrl+C 变 abort。"
+        "重点讲第二块代码：权限不是阻塞在 stdin，而是一个挂在 pendingAsk 上的 Promise，页面点按钮才 resolve。"
+        "停止讲漏点：哪个 await 没接 signal，那个点就停不住；这是异步最常见的 bug。"
+        "进阶：把 SSE 换成 WebSocket，就能反过来在页面上点「继续」「换个方案」。")
 
 # ---------------------------------------------------------------- 23 分层
 
