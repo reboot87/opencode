@@ -6,7 +6,7 @@
     "properties": { "command": { "type": "string" } },
     "required": ["command"]
   },
-  "command": "python tools/run_shell.py",
+  "script": "tools/run_shell.lua",
   "effect": "ask",
   "rules": [
     { "pattern": "git status*", "effect": "allow" },

@@ -9,6 +9,6 @@
     },
     "required": ["path", "content"]
   },
-  "command": "python tools/write_file.py",
+  "script": "tools/write_file.lua",
   "effect": "ask"
 }

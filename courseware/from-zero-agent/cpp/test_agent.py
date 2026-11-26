@@ -9,7 +9,6 @@
 
 import json
 import os
-import shutil
 import subprocess
 import sys
 import threading
@@ -55,10 +54,11 @@ base = f"http://127.0.0.1:{server.server_port}/v1"
 env = {**os.environ, "OPENAI_BASE_URL": base, "OPENAI_API_KEY": "test", "MODEL": "mock"}
 
 
-def run(task, stdin=""):
+def run(task, stdin="", path=None):
     return subprocess.run(
         ["./agent.exe", task],
-        input=stdin, capture_output=True, text=True, encoding="utf-8", errors="replace", env=env,
+        input=stdin, capture_output=True, text=True, encoding="utf-8", errors="replace",
+        env={**env, "PATH": path} if path else env,
     )
 
 
@@ -104,12 +104,16 @@ finally:
     for name in ("tools/_test_echo.py", "tools/_test_echo.json"):
         os.remove(name)
 
-if shutil.which("lua"):
-    CALL.update(name="grep", args={"pattern": "int main", "path": "agent.cpp"})
-    out = run("找一下 main").stdout
-    passed &= check("lua: 同一个协议换个语言也能跑", "OK:" in out and "int main" in out, out[-200:])
-else:
-    print("SKIP lua 未安装，跳过 grep.lua 用例")
+# 进程内 Lua：PATH 里只留 System32（有 curl，没有 lua.exe，也没有 python）
+CALL.update(name="grep", args={"pattern": "int main", "path": "agent.cpp"})
+bare = r"C:\Windows\System32;C:\Windows" if sys.platform == "win32" else "/usr/bin:/bin"
+out = run("找一下 main", path=bare).stdout
+passed &= check("lua 进程内：不依赖 lua.exe", "OK:" in out and "int main" in out, out[-200:])
+
+# host.exec：Lua 调命令，走临时脚本 + PowerShell / sh
+CALL.update(name="run_shell", args={"command": "echo hi"})
+out = run("跑一条命令", stdin="y\n").stdout
+passed &= check("ask: 同意后由 Lua 执行命令", "OK:hi" in out, out[-200:])
 
 server.shutdown()
 print("ALL PASS" if passed else "FAILED")

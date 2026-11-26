@@ -9,6 +9,6 @@
     },
     "required": ["pattern", "path"]
   },
-  "command": "lua tools/grep.lua",
+  "script": "tools/grep.lua",
   "effect": "allow"
 }

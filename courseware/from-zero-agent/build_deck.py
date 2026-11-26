@@ -717,13 +717,13 @@ note(s, "让学员先整体看一眼文件结构，不要逐行抄。告诉他�
 
 # ---------------------------------------------------------------- 19 C++ 版
 
-s = slide_body("换语言：C++ 管循环，脚本管工具", "02 · 移植")
+s = slide_body("换语言：C++ 只做框架，Lua 做工具", "02 · 移植")
 
 pipeline = [
-    ("C++", "agent.exe", "请求模型、跑循环、查权限。一个 exe，没有运行时。", ACCENT),
-    ("约定", "参数 → stdin", "把 name + arguments 写成 JSON，喂给工具进程。", RGBColor(0xE8, 0xC4, 0x7A)),
-    ("脚本", "tools/*.py · *.json", "脚本 + 一份 json 描述，加文件即加工具。", OK),
-    ("回灌", "stdout → 文本", "脚本打印什么，就原样塞回 messages。", ACCENT_2),
+    ("C++", "agent.exe", "请求模型、跑循环、查权限。Lua 静态链接在里面。", ACCENT),
+    ("调用", "run(args)", "JSON 参数直接变成 Lua 表，进程内调用，不起子进程。", RGBColor(0xE8, 0xC4, 0x7A)),
+    ("脚本", "tools/*.lua", "具体怎么做由脚本决定：读、写、跑命令、搜索。", OK),
+    ("回灌", "return 字符串", "run 返回什么，就原样塞回 messages。", ACCENT_2),
 ]
 for i, (tag, title, desc, color) in enumerate(pipeline):
     y = 1.82 + i * 1.13
@@ -745,61 +745,59 @@ table(s, 7.15, 1.82, 5.65,
       [
           ["请求", "fetch", "curl 子进程"],
           ["JSON", "JSON.parse", "nlohmann/json"],
-          ["工具", "内联函数", "独立脚本进程"],
-          ["权限", "rules 数组", "同一份规则"],
-          ["构建", "bun 直接跑", "编译一次"],
+          ["工具", "内联函数", "Lua 的 run(args)"],
+          ["权限", "rules 数组", "同一份 JSON"],
+          ["构建", "bun 直接跑", "编一次，含 Lua"],
       ],
       widths=[1.15, 2.05, 2.45], row_h=0.62, head_h=0.44, size=11.5, head_size=11)
 
 tf = textbox(s, 7.15, 5.35, 5.65, 1.35)
-add_p(tf, "为什么值得多写几十行 C++", size=12, bold=True, color=ACCENT, after=6)
-add_p(tf, "分发一个 exe 就完事；工具留给脚本，改工具不用懂 C++。", size=11, color=BODY, after=0, line=1.4)
+add_p(tf, "为什么值得自己嵌 Lua", size=12, bold=True, color=ACCENT, after=6)
+add_p(tf, "分发一个 exe 就完事，用户不用装 Lua；工具改动不重新编译。", size=11, color=BODY, after=0, line=1.4)
 
 tf = textbox(s, 0.55, 6.35, 12.3, 0.35)
-add_p(tf, "代码：courseware/from-zero-agent/cpp/　编译：build.bat（Linux 用 c++ -std=c++17）",
+add_p(tf, "代码：courseware/from-zero-agent/cpp/　编译：build.bat（Linux 用 build.sh）",
       size=11, color=MUTED, after=0)
-note(s, "这一页回答「能不能换语言」：能，换的只是宿主语言，工具协议不变。"
-        "现场可以直接把 three 个工具里的一个换成 shell 脚本，C++ 一行不改。"
-        "C++ 版完整代码在 cpp/agent.cpp，约 300 行，编译后跑同一套测试。")
+note(s, "这一页回答「能不能换语言」：能，而且能把脚本语言嵌进来。"
+        "C++ 只保留四件事：请求、循环、权限、回灌；其余都交给 Lua。"
+        "对比上一版：工具从「独立进程」变成「进程内函数」，代价是隔离性，收益是速度和一个 exe。")
 
 # ---------------------------------------------------------------- 20 工具协议
 
-s = slide_body("工具就是一个进程：协议只有三条", "02 · 扩展")
+s = slide_body("工具是一个 Lua 函数：C++ 只给三只手", "02 · 扩展")
 
-code_panel(s, 0.55, 1.78, 6.85, 4.45, "cpp/tools/read_file.py", '''import json, sys
+code_panel(s, 0.55, 1.78, 6.85, 3.05, "cpp/tools/read_file.lua", '''function run(args)
+  local text = host.read(args.path)   -- ① 参数已经是 Lua 表
+  if not text then
+    return "读取失败：" .. tostring(args.path)   -- ② 返回字符串
+  end
+  return text                          -- ③ 原样回灌
+end''', size=10.2, line=1.32)
 
-sys.stdin.reconfigure(encoding="utf-8")
-sys.stdout.reconfigure(encoding="utf-8")
+code_panel(s, 0.55, 5.0, 6.85, 1.15, "cpp/tools/read_file.json · 只描述，不实现",
+           '"script": "tools/read_file.lua",\n"effect": "allow"', size=10.2, line=1.3)
 
-args = json.load(sys.stdin)          # ① 参数
-try:
-    with open(args["path"], encoding="utf-8") as f:
-        sys.stdout.write(f.read())   # ② 结果
-except OSError as error:
-    print(f"读取失败：{error}")        # ③ 失败''', size=9.6, line=1.28)
+tf = textbox(s, 7.75, 1.82, 5.0, 2.1)
+add_p(tf, "宿主只暴露三个函数", size=12, bold=True, color=ACCENT, after=7)
+add_p(tf, "host.read(path)　读文件，失败返回 nil", size=11, color=BODY, after=4, line=1.35)
+add_p(tf, "host.write(path, text)　写文件", size=11, color=BODY, after=4, line=1.35)
+add_p(tf, "host.exec(command)　跑命令，返回输出", size=11, color=BODY, after=0, line=1.35)
 
-tf = textbox(s, 7.75, 1.82, 5.0, 2.35)
-add_p(tf, "三条约定", size=12, bold=True, color=ACCENT, after=7)
-add_p(tf, "① 参数：stdin 上一个 JSON 对象", size=11, color=BODY, after=4, line=1.35)
-add_p(tf, "② 结果：stdout 的纯文本，直接回灌", size=11, color=BODY, after=4, line=1.35)
-add_p(tf, "③ 失败：也打印出来，别静默退出", size=11, color=BODY, after=0, line=1.35)
-
-tf = textbox(s, 7.75, 4.3, 5.0, 1.3)
-add_p(tf, "加一个工具，两步，不碰 C++", size=12, bold=True, color=ACCENT, after=7)
-add_p(tf, "① 写脚本：tools/foo.lua", size=11, color=BODY, after=4, line=1.35)
-add_p(tf, "② 写描述：tools/foo.json", size=11, color=BODY, after=0, line=1.35)
+tf = textbox(s, 7.75, 4.15, 5.0, 1.2)
+add_p(tf, "沙箱：不开 io / os / package", size=12, bold=True, color=ACCENT, after=7)
+add_p(tf, "脚本碰不到文件系统，只能走 host，权限才管得住。", size=11, color=BODY, after=0, line=1.35)
 
 tf = textbox(s, 7.75, 5.55, 5.0, 0.7)
-add_p(tf, "启动时扫 tools/*.json：加文件就是加工具。装不装 lua 都能跑，工具起不来只回一条错误文本。",
+add_p(tf, "加工具还是两步：写 tools/foo.lua，写 tools/foo.json。",
       size=10.5, color=MUTED, after=0, line=1.35)
 
 rect(s, 0.55, 6.35, 12.3, 0.55, CARD_2, radius=0.3, shape=MSO_SHAPE.ROUNDED_RECTANGLE)
 tf = textbox(s, 0.85, 6.47, 11.7, 0.32)
-add_p(tf, "Python、Node、Go、Lua、PowerShell 都行：C++ 只认 stdin / stdout 这两个口子。",
+add_p(tf, "还想用 Python / Go？描述里写 command 而不是 script，就退回进程模式。",
       size=11.5, color=ACCENT, align=PP_ALIGN.CENTER, after=0)
-note(s, "这是整套设计里最值钱的一页：工具不是函数，是进程。"
-        "好处是权限、超时、崩溃隔离都在同一个地方——进程边界；坏处是每次调用多几十毫秒。"
-        "MCP 也是这个思路，只是把 stdin/stdout 换成了 HTTP 或 stdio 的 JSON-RPC。")
+note(s, "这是整套设计里最值钱的一页：C++ 只提供能力，Lua 决定怎么用。"
+        "沙箱那三行是重点——不 openlibs，脚本就没有 io/os，只能走 host，权限检查才绕不过去。"
+        "两种形态都留着：进程内快、易调试；进程外隔离好、任意语言。")
 
 # ---------------------------------------------------------------- 21 章节三
 

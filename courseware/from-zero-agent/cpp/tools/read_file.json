@@ -6,6 +6,6 @@
     "properties": { "path": { "type": "string" } },
     "required": ["path"]
   },
-  "command": "python tools/read_file.py",
+  "script": "tools/read_file.lua",
   "effect": "allow"
 }

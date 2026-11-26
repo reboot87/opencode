@@ -1,16 +1,17 @@
 // 从零手写 Agent · C++ 版
 //
 // 分工：
-//   C++   管循环、请求、权限、回灌
-//   脚本  管工具本身（read_file / write_file / run_shell）
+//   C++   框架：请求模型、跑循环、查权限、回灌结果，外加一个嵌入的 Lua 解释器
+//   Lua   工具：每个 tools/*.lua 实现一个工具，函数 run(args) 决定具体怎么做
 //
-// 工具是一个独立进程：参数从 stdin 读 JSON，结果写 stdout。
-// 所以工具可以用任何语言写，C++ 一行都不用改。
+// 两种工具形态，同一个协议：
+//   进程内   script: "read_file.lua"   静态链接的 Lua 直接调用，不启子进程
+//   进程外   command: "python x.py"    参数走 stdin、结果走 stdout，任意语言
 //
 // 编译 (Windows / MSVC):
 //   build.bat
 // 编译 (Linux / macOS):
-//   c++ -std=c++17 -O2 agent.cpp -o agent
+//   sh build.sh
 //
 // 运行:
 //   set OPENAI_API_KEY=sk-...
@@ -35,6 +36,13 @@
 #ifdef _MSC_VER
 #pragma comment(lib, "shell32.lib")  // CommandLineToArgvW
 #endif
+
+// Lua 是 C 库：头文件包在 extern "C" 里，链接时才不会按 C++ 规则改名
+extern "C" {
+#include "third_party/lua/lauxlib.h"
+#include "third_party/lua/lua.h"
+#include "third_party/lua/lualib.h"
+}
 
 #include "third_party/json.hpp"
 
@@ -99,6 +107,151 @@ static string truncate(const string& text) {
     return text.substr(0, cut) + "\n…（已截断 " + std::to_string(text.size() - cut) + " 字节）";
 }
 
+// ---------------------------------------------------------------- 嵌入的 Lua
+
+// C++ 只提供"手"：读、写、跑命令。用不用、怎么用、先做什么，由 Lua 脚本决定。
+// 沙箱：不开 io / os / package，脚本拿不到文件系统，只能走下面这三个函数。
+
+static lua_State* LUA = nullptr;
+
+static int l_read(lua_State* L) {
+    const char* path = luaL_checkstring(L, 1);
+    FILE* file = std::fopen(path, "rb");
+    if (!file) {
+        lua_pushnil(L);
+        return 1;
+    }
+    string out;
+    char buffer[8192];
+    size_t n;
+    while ((n = std::fread(buffer, 1, sizeof buffer, file)) > 0) out.append(buffer, n);
+    std::fclose(file);
+    lua_pushlstring(L, out.data(), out.size());
+    return 1;
+}
+
+static int l_write(lua_State* L) {
+    const char* path = luaL_checkstring(L, 1);
+    size_t length = 0;
+    const char* content = luaL_checklstring(L, 2, &length);
+    FILE* file = std::fopen(path, "wb");
+    if (!file) {
+        lua_pushboolean(L, 0);
+        return 1;
+    }
+    std::fwrite(content, 1, length, file);
+    std::fclose(file);
+    lua_pushboolean(L, 1);
+    return 1;
+}
+
+// 跨平台启动一条命令：写临时脚本再交给解释器，省掉嵌套引号的所有麻烦
+static string shellCommand(const string& command) {
+    const string scriptPath = tmpPath("agent_cmd.ps1");
+#ifdef _WIN32
+    writeFile(scriptPath, "[Console]::OutputEncoding=[Text.Encoding]::UTF8\n" + command + "\n");
+    return sh("powershell -NoProfile -ExecutionPolicy Bypass -File \"" + scriptPath + "\" 2>&1");
+#else
+    writeFile(scriptPath, command + "\n");
+    return sh("sh \"" + scriptPath + "\" 2>&1");
+#endif
+}
+
+static int l_exec(lua_State* L) {
+    const string out = shellCommand(luaL_checkstring(L, 1));
+    lua_pushlstring(L, out.data(), out.size());
+    return 1;
+}
+
+// JSON 参数转成 Lua 表：脚本里就是 args.path、args.pattern
+static void pushJson(lua_State* L, const json& value) {
+    if (value.is_object()) {
+        lua_createtable(L, 0, static_cast<int>(value.size()));
+        for (auto it = value.begin(); it != value.end(); ++it) {
+            pushJson(L, it.value());
+            lua_setfield(L, -2, it.key().c_str());
+        }
+    } else if (value.is_array()) {
+        lua_createtable(L, static_cast<int>(value.size()), 0);
+        int index = 1;
+        for (const auto& item : value) {
+            pushJson(L, item);
+            lua_rawseti(L, -2, index++);
+        }
+    } else if (value.is_string()) {
+        const string text = value.get<string>();
+        lua_pushlstring(L, text.data(), text.size());
+    } else if (value.is_number()) {
+        lua_pushnumber(L, value.get<double>());
+    } else if (value.is_boolean()) {
+        lua_pushboolean(L, value.get<bool>());
+    } else {
+        lua_pushnil(L);
+    }
+}
+
+static void initLua() {
+    LUA = luaL_newstate();
+    if (!LUA) throw std::runtime_error("Lua 初始化失败");
+
+    luaL_requiref(LUA, "_G", luaopen_base, 1);
+    luaL_requiref(LUA, LUA_TABLIBNAME, luaopen_table, 1);
+    luaL_requiref(LUA, LUA_STRLIBNAME, luaopen_string, 1);
+    luaL_requiref(LUA, LUA_MATHLIBNAME, luaopen_math, 1);
+    luaL_requiref(LUA, LUA_UTF8LIBNAME, luaopen_utf8, 1);
+    lua_pop(LUA, 5);
+
+    lua_createtable(LUA, 0, 3);
+    lua_pushcfunction(LUA, l_read);
+    lua_setfield(LUA, -2, "read");
+    lua_pushcfunction(LUA, l_write);
+    lua_setfield(LUA, -2, "write");
+    lua_pushcfunction(LUA, l_exec);
+    lua_setfield(LUA, -2, "exec");
+    lua_setglobal(LUA, "host");
+
+    lua_newtable(LUA);  // 工具表，存每个脚本的 run 函数
+    lua_setfield(LUA, LUA_REGISTRYINDEX, "agent_tools");
+}
+
+// 加载一个脚本：执行完它必须定义 run(args)
+static bool loadLuaTool(const string& name, const string& script) {
+    if (luaL_loadfile(LUA, script.c_str()) != LUA_OK || lua_pcall(LUA, 0, 0, 0) != LUA_OK) {
+        std::cerr << "跳过工具 " << name << "：" << lua_tostring(LUA, -1) << "\n";
+        lua_pop(LUA, 1);
+        return false;
+    }
+    lua_getglobal(LUA, "run");
+    if (!lua_isfunction(LUA, -1)) {
+        std::cerr << "跳过工具 " << name << "：" << script << " 没有定义 run(args)\n";
+        lua_pop(LUA, 1);
+        return false;
+    }
+    lua_getfield(LUA, LUA_REGISTRYINDEX, "agent_tools");
+    lua_pushvalue(LUA, -2);
+    lua_setfield(LUA, -2, name.c_str());
+    lua_pop(LUA, 2);
+    return true;
+}
+
+static string callLuaTool(const string& name, const json& args) {
+    lua_getfield(LUA, LUA_REGISTRYINDEX, "agent_tools");
+    lua_getfield(LUA, -1, name.c_str());
+    lua_remove(LUA, -2);  // 栈上只剩 run
+    pushJson(LUA, args);
+
+    if (lua_pcall(LUA, 1, 1, 0) != LUA_OK) {
+        const string message = lua_tostring(LUA, -1) ? lua_tostring(LUA, -1) : "未知错误";
+        lua_pop(LUA, 1);
+        return "工具报错：" + message;
+    }
+    size_t length = 0;
+    const char* result = lua_tolstring(LUA, -1, &length);
+    string text = result ? string(result, length) : "(脚本没有返回值)";
+    lua_pop(LUA, 1);
+    return truncate(text);
+}
+
 // ---------------------------------------------------------------- 模型请求
 
 static json post(const string& url, const string& body, const string& apiKey) {
@@ -137,7 +290,8 @@ struct Tool {
     string name;
     string description;
     string parameters;  // JSON Schema，原样发给模型
-    string command;     // 从 stdin 读参数 JSON 的命令
+    string script;      // 进程内：tools/*.lua，实现 run(args)
+    string command;     // 进程外：从 stdin 读参数 JSON 的命令
     string effect = "ask";
     vector<Rule> rules;  // 宽泛在前，例外在后；最后一条命中的生效
 };
@@ -152,7 +306,8 @@ static vector<Tool> loadTools(const string& dir) {
         tool.name = data.at("name");
         tool.description = data.at("description");
         tool.parameters = data.at("parameters").dump();
-        tool.command = data.at("command");
+        tool.script = data.value("script", "");
+        tool.command = data.value("command", "");
         tool.effect = data.value("effect", "ask");
         for (const auto& rule : data.value("rules", json::array()))
             tool.rules.push_back({rule.at("pattern"), rule.value("effect", "ask")});
@@ -260,6 +415,11 @@ int main(int argc, char** argv) {
             std::cerr << "tools/ 里没有工具描述，检查 TOOLS_DIR\n";
             return 1;
         }
+
+        initLua();
+        for (const auto& tool : toolList)
+            if (!tool.script.empty()) loadLuaTool(tool.name, tool.script);
+
         for (int step = 1; step <= MAX_STEPS; ++step) {
             json body;
             body["model"] = model;
@@ -323,6 +483,8 @@ int main(int argc, char** argv) {
                                          (effect == "ask" && confirm("允许 " + name + " " + target + " ?"));
                     if (!allowed) {
                         content = effect == "deny" ? "该操作被权限规则禁止" : "用户拒绝执行该操作";
+                    } else if (!tool->script.empty()) {
+                        content = callLuaTool(tool->name, args);  // 进程内，直接进 Lua
                     } else {
                         const string argsPath = tmpPath("agent_args.json");
                         writeFile(argsPath, args.dump());
