@@ -245,7 +245,7 @@ add_p(tf, "90 分钟，写一个能读文件、改代码、跑命令，\n并且�
 
 rect(s, 0.92, 4.45, 3.3, 0.05, ACCENT)
 
-pills = [("26 页 · 约 90 分钟", 2.95), ("TypeScript + Bun", 2.35), ("代码全部可运行", 2.45)]
+pills = [("28 页 · 约 90 分钟", 2.95), ("TypeScript + C++", 2.45), ("代码全部可运行", 2.45)]
 x = 0.9
 for text, pw in pills:
     rect(s, x, 4.82, pw, 0.48, CARD, line_color=LINE, radius=0.5,
@@ -307,8 +307,8 @@ note(s, "只建立直觉，不展开。重点区分「模型」和「agent」：
 s = slide_body("课程地图：三章，一个能跑的程序", "目录")
 mods = [
     ("01", "认识 Agent", "为什么它不是一个模型，而是一个循环", "4 页"),
-    ("02", "手写 Agent", "7 步：工具、请求、循环、回灌、停止、权限、跑起来", "11 页"),
-    ("03", "进阶与实战", "上下文、错误、分层、五个坑、课后作业", "9 页"),
+    ("02", "手写 Agent", "7 步：工具、请求、循环、回灌、停止、权限、跑起来", "12 页"),
+    ("03", "进阶与实战", "上下文、错误、分层、五个坑、课后作业", "7 页"),
 ]
 for i, (num, title, desc, count) in enumerate(mods):
     y = 1.85 + i * 1.52
@@ -715,7 +715,90 @@ tf = textbox(s, 0.55, 6.15, 7.4, 0.6)
 add_p(tf, "行号是近似值，按你的注释和空行会有一点出入。", size=11, color=MUTED, after=0)
 note(s, "让学员先整体看一眼文件结构，不要逐行抄。告诉他们：看不懂的细节，后面会回来补。")
 
-# ---------------------------------------------------------------- 19 章节三
+# ---------------------------------------------------------------- 19 C++ 版
+
+s = slide_body("换语言：C++ 管循环，脚本管工具", "02 · 移植")
+
+pipeline = [
+    ("C++", "agent.exe", "请求模型、跑循环、查权限。一个 exe，没有运行时。", ACCENT),
+    ("约定", "参数 → stdin", "把 name + arguments 写成 JSON，喂给工具进程。", RGBColor(0xE8, 0xC4, 0x7A)),
+    ("脚本", "tools/*.py", "读文件、写文件、跑命令。想换语言就换文件。", OK),
+    ("回灌", "stdout → 文本", "脚本打印什么，就原样塞回 messages。", ACCENT_2),
+]
+for i, (tag, title, desc, color) in enumerate(pipeline):
+    y = 1.82 + i * 1.13
+    rect(s, 0.55, y, 6.35, 0.95, CARD, line_color=LINE, radius=0.05,
+         shape=MSO_SHAPE.ROUNDED_RECTANGLE)
+    rect(s, 0.55, y, 0.05, 0.95, color)
+    tf = textbox(s, 0.82, y + 0.14, 1.0, 0.28)
+    add_p(tf, tag, size=9.5, bold=True, color=color, after=0)
+    tf = textbox(s, 1.85, y + 0.12, 4.8, 0.34)
+    add_p(tf, title, size=14, bold=True, color=INK, after=0)
+    tf = textbox(s, 1.85, y + 0.5, 4.85, 0.32)
+    add_p(tf, desc, size=10.5, color=MUTED, after=0)
+    if i < 3:
+        tf = textbox(s, 0.7, y + 0.9, 0.4, 0.25)
+        add_p(tf, "↓", size=12, color=LINE, after=0)
+
+table(s, 7.15, 1.82, 5.65,
+      ["环节", "TypeScript 版", "C++ 版"],
+      [
+          ["请求", "fetch", "curl 子进程"],
+          ["JSON", "JSON.parse", "nlohmann/json"],
+          ["工具", "内联函数", "独立脚本进程"],
+          ["权限", "rules 数组", "同一份规则"],
+          ["构建", "bun 直接跑", "编译一次"],
+      ],
+      widths=[1.15, 2.05, 2.45], row_h=0.62, head_h=0.44, size=11.5, head_size=11)
+
+tf = textbox(s, 7.15, 5.35, 5.65, 1.35)
+add_p(tf, "为什么值得多写几十行 C++", size=12, bold=True, color=ACCENT, after=6)
+add_p(tf, "分发一个 exe 就完事；工具留给脚本，改工具不用懂 C++。", size=11, color=BODY, after=0, line=1.4)
+
+tf = textbox(s, 0.55, 6.35, 12.3, 0.35)
+add_p(tf, "代码：courseware/from-zero-agent/cpp/　编译：build.bat（Linux 用 c++ -std=c++17）",
+      size=11, color=MUTED, after=0)
+note(s, "这一页回答「能不能换语言」：能，换的只是宿主语言，工具协议不变。"
+        "现场可以直接把 three 个工具里的一个换成 shell 脚本，C++ 一行不改。"
+        "C++ 版完整代码在 cpp/agent.cpp，约 300 行，编译后跑同一套测试。")
+
+# ---------------------------------------------------------------- 20 工具协议
+
+s = slide_body("工具就是一个进程：协议只有三条", "02 · 扩展")
+
+code_panel(s, 0.55, 1.78, 6.85, 4.45, "cpp/tools/read_file.py", '''import json, sys
+
+sys.stdin.reconfigure(encoding="utf-8")
+sys.stdout.reconfigure(encoding="utf-8")
+
+args = json.load(sys.stdin)          # ① 参数
+try:
+    with open(args["path"], encoding="utf-8") as f:
+        sys.stdout.write(f.read())   # ② 结果
+except OSError as error:
+    print(f"读取失败：{error}")        # ③ 失败''', size=9.6, line=1.28)
+
+tf = textbox(s, 7.75, 1.82, 5.0, 2.35)
+add_p(tf, "三条约定", size=12, bold=True, color=ACCENT, after=7)
+add_p(tf, "① 参数：stdin 上一个 JSON 对象", size=11, color=BODY, after=4, line=1.35)
+add_p(tf, "② 结果：stdout 的纯文本，直接回灌", size=11, color=BODY, after=4, line=1.35)
+add_p(tf, "③ 失败：也打印出来，别静默退出", size=11, color=BODY, after=0, line=1.35)
+
+tf = textbox(s, 7.75, 4.3, 5.0, 2.2)
+add_p(tf, "加一个工具，三步", size=12, bold=True, color=ACCENT, after=7)
+add_p(tf, "① 写 tools/grep.py", size=11, color=BODY, after=4, line=1.35)
+add_p(tf, "② 在 tools() 里加一条 registry", size=11, color=BODY, after=4, line=1.35)
+add_p(tf, "③ 重新编译（这是唯一一次碰到 C++）", size=11, color=BODY, after=0, line=1.35)
+
+rect(s, 0.55, 6.35, 12.3, 0.55, CARD_2, radius=0.3, shape=MSO_SHAPE.ROUNDED_RECTANGLE)
+tf = textbox(s, 0.85, 6.47, 11.7, 0.32)
+add_p(tf, "Python、Node、Go、PowerShell 都行：C++ 只认 stdin / stdout 这两个口子。",
+      size=11.5, color=ACCENT, align=PP_ALIGN.CENTER, after=0)
+note(s, "这是整套设计里最值钱的一页：工具不是函数，是进程。"
+        "好处是权限、超时、崩溃隔离都在同一个地方——进程边界；坏处是每次调用多几十毫秒。"
+        "MCP 也是这个思路，只是把 stdin/stdout 换成了 HTTP 或 stdio 的 JSON-RPC。")
+
+# ---------------------------------------------------------------- 21 章节三
 
 section("03", "进阶与实战", "让循环跑得久、跑得稳、长得大",
         "最后一部分讲工程问题：上下文、错误、分层和踩坑。这部分决定它能不能用在真实项目。")
@@ -896,8 +979,9 @@ add_p(tf, "它是一个能正确收尾的循环。", size=36, bold=True, color=R
 
 rect(s, 0.92, 4.62, 3.3, 0.05, ACCENT)
 
-tf = textbox(s, 0.9, 4.95, 8.0, 1.0)
+tf = textbox(s, 0.9, 4.95, 9.0, 1.2)
 add_p(tf, "代码  courseware/from-zero-agent/agent.ts", size=12, color=ACCENT, mono=True, after=6)
+add_p(tf, "移植  courseware/from-zero-agent/cpp/  （C++ 宿主 + 脚本工具）", size=12, color=ACCENT, mono=True, after=6)
 add_p(tf, "下一步  加一个你自己的工具，然后读 opencode 的分层。", size=12, color=MUTED, after=0)
 
 tf = textbox(s, 9.6, 6.55, 2.9, 0.35)
