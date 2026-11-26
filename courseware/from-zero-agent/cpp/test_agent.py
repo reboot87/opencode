@@ -78,6 +78,32 @@ out = run("写一个文件", stdin="n\n").stdout
 passed &= check("ask: 拒绝后不落盘", "用户拒绝执行该操作" in out, out[-200:])
 passed &= check("ask: 文件没有被创建", not os.path.exists("should_not_exist.txt"))
 
+# 关键用例：运行期往 tools/ 里丢两个文件，不重新编译也能用
+ECHO = '''import json, sys
+sys.stdin.reconfigure(encoding="utf-8")
+sys.stdout.reconfigure(encoding="utf-8")
+print(json.load(sys.stdin)["text"])
+'''
+DESC = json.dumps({
+    "name": "echo",
+    "description": "原样返回传入的文本。",
+    "parameters": {"type": "object", "properties": {"text": {"type": "string"}}, "required": ["text"]},
+    "command": "python tools/_test_echo.py",
+    "effect": "allow",
+}, ensure_ascii=False)
+
+with open("tools/_test_echo.py", "w", encoding="utf-8") as f:
+    f.write(ECHO)
+with open("tools/_test_echo.json", "w", encoding="utf-8") as f:
+    f.write(DESC)
+try:
+    CALL.update(name="echo", args={"text": "hi"})
+    out = run("回显一下").stdout
+    passed &= check("新增工具：只加文件，不重新编译", "OK:hi" in out, out[-200:])
+finally:
+    for name in ("tools/_test_echo.py", "tools/_test_echo.json"):
+        os.remove(name)
+
 if shutil.which("lua"):
     CALL.update(name="grep", args={"pattern": "int main", "path": "agent.cpp"})
     out = run("找一下 main").stdout

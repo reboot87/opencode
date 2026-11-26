@@ -16,8 +16,10 @@
 //   set OPENAI_API_KEY=sk-...
 //   agent.exe "读取 package.json，告诉我项目名字"
 
+#include <algorithm>
 #include <cstdio>
 #include <cstdlib>
+#include <filesystem>
 #include <iostream>
 #include <stdexcept>
 #include <string>
@@ -123,33 +125,43 @@ static json post(const string& url, const string& body, const string& apiKey) {
 
 // ---------------------------------------------------------------- 工具
 
+// 每个工具 = tools/ 下的一个 .json（描述 + 命令）+ 它自己调用的脚本。
+// 加工具只加文件：C++ 不用改，也不用重新编译。
+
+struct Rule {
+    string pattern;
+    string effect = "ask";
+};
+
 struct Tool {
     string name;
     string description;
     string parameters;  // JSON Schema，原样发给模型
-    string script;      // 从 stdin 读参数 JSON 的命令
+    string command;     // 从 stdin 读参数 JSON 的命令
+    string effect = "ask";
+    vector<Rule> rules;  // 宽泛在前，例外在后；最后一条命中的生效
 };
 
-static vector<Tool> tools() {
-    return {
-        {"read_file",
-         "读取文件内容。路径相对于当前工作目录。",
-         R"({"type":"object","properties":{"path":{"type":"string"}},"required":["path"]})",
-         "python tools/read_file.py"},
-        {"write_file",
-         "创建或覆盖一个文件。",
-         R"({"type":"object","properties":{"path":{"type":"string"},"content":{"type":"string"}},"required":["path","content"]})",
-         "python tools/write_file.py"},
-        {"run_shell",
-         "执行一条命令并返回输出。用于查看目录、跑测试、git 查询。",
-         R"({"type":"object","properties":{"command":{"type":"string"}},"required":["command"]})",
-         "python tools/run_shell.py"},
-        // 同一个协议，换一种语言：装 lua 就能用，没装也只是返回一条错误文本
-        {"grep",
-         "在文件里搜索文本，返回匹配的行号和内容。",
-         R"({"type":"object","properties":{"pattern":{"type":"string"},"path":{"type":"string"}},"required":["pattern","path"]})",
-         "lua tools/grep.lua"},
-    };
+static vector<Tool> loadTools(const string& dir) {
+    vector<Tool> list;
+    for (const auto& entry : std::filesystem::directory_iterator(dir)) {
+        if (entry.path().extension() != ".json") continue;
+        const json data = json::parse(readFile(entry.path().string()));
+
+        Tool tool;
+        tool.name = data.at("name");
+        tool.description = data.at("description");
+        tool.parameters = data.at("parameters").dump();
+        tool.command = data.at("command");
+        tool.effect = data.value("effect", "ask");
+        for (const auto& rule : data.value("rules", json::array()))
+            tool.rules.push_back({rule.at("pattern"), rule.value("effect", "ask")});
+        list.push_back(tool);
+    }
+    // 按名字排序，保证每轮发给模型的菜单顺序稳定
+    std::sort(list.begin(), list.end(),
+              [](const Tool& a, const Tool& b) { return a.name < b.name; });
+    return list;
 }
 
 static json toolsPayload(const vector<Tool>& list) {
@@ -169,23 +181,6 @@ static json toolsPayload(const vector<Tool>& list) {
 
 // ---------------------------------------------------------------- 权限
 
-struct Rule {
-    string tool;
-    string pattern;
-    string effect;  // allow / ask / deny
-};
-
-// 宽泛在前，例外在后；最后一条命中的规则生效
-static const vector<Rule> RULES = {
-    {"read_file", "*", "allow"},
-    {"grep", "*", "allow"},
-    {"write_file", "*", "ask"},
-    {"run_shell", "*", "ask"},
-    {"run_shell", "git status*", "allow"},
-    {"run_shell", "git diff*", "allow"},
-    {"run_shell", "rm -rf*", "deny"},
-};
-
 static bool matches(const string& pattern, const string& value) {
     if (pattern == "*") return true;
     if (!pattern.empty() && pattern.back() == '*')
@@ -193,10 +188,10 @@ static bool matches(const string& pattern, const string& value) {
     return value == pattern;
 }
 
-static string decide(const string& tool, const string& target) {
-    string effect = "ask";  // 没命中任何规则时，默认询问
-    for (const auto& rule : RULES)
-        if (rule.tool == tool && matches(rule.pattern, target)) effect = rule.effect;
+static string decide(const Tool& tool, const string& target) {
+    string effect = tool.effect;  // 工具自己的默认档，没写就是 ask
+    for (const auto& rule : tool.rules)
+        if (matches(rule.pattern, target)) effect = rule.effect;
     return effect;
 }
 
@@ -254,13 +249,17 @@ int main(int argc, char** argv) {
         return 1;
     }
 
-    const vector<Tool> toolList = tools();
     json messages = json::array();
     messages.push_back({{"role", "system"},
                         {"content", "你是一个编码助手。先读文件再动手；修改前先说计划；用工具验证结果；拿不准就问用户。"}});
     messages.push_back({{"role", "user"}, {"content", task}});
 
     try {
+        const vector<Tool> toolList = loadTools(env("TOOLS_DIR", "tools"));
+        if (toolList.empty()) {
+            std::cerr << "tools/ 里没有工具描述，检查 TOOLS_DIR\n";
+            return 1;
+        }
         for (int step = 1; step <= MAX_STEPS; ++step) {
             json body;
             body["model"] = model;
@@ -319,7 +318,7 @@ int main(int argc, char** argv) {
                 if (!tool) {
                     content = "错误：没有名为 " + name + " 的工具";
                 } else {
-                    const string effect = decide(name, target);
+                    const string effect = decide(*tool, target);
                     const bool allowed = effect == "allow" ||
                                          (effect == "ask" && confirm("允许 " + name + " " + target + " ?"));
                     if (!allowed) {
@@ -327,7 +326,7 @@ int main(int argc, char** argv) {
                     } else {
                         const string argsPath = tmpPath("agent_args.json");
                         writeFile(argsPath, args.dump());
-                        content = truncate(sh(tool->script + " < \"" + argsPath + "\" 2>&1"));
+                        content = truncate(sh(tool->command + " < \"" + argsPath + "\" 2>&1"));
                     }
                 }
 

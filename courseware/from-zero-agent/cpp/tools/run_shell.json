@@ -1,0 +1,16 @@
+{
+  "name": "run_shell",
+  "description": "执行一条命令并返回输出。用于查看目录、跑测试、git 查询。",
+  "parameters": {
+    "type": "object",
+    "properties": { "command": { "type": "string" } },
+    "required": ["command"]
+  },
+  "command": "python tools/run_shell.py",
+  "effect": "ask",
+  "rules": [
+    { "pattern": "git status*", "effect": "allow" },
+    { "pattern": "git diff*", "effect": "allow" },
+    { "pattern": "rm -rf*", "effect": "deny" }
+  ]
+}
