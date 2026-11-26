@@ -722,7 +722,7 @@ s = slide_body("换语言：C++ 管循环，脚本管工具", "02 · 移植")
 pipeline = [
     ("C++", "agent.exe", "请求模型、跑循环、查权限。一个 exe，没有运行时。", ACCENT),
     ("约定", "参数 → stdin", "把 name + arguments 写成 JSON，喂给工具进程。", RGBColor(0xE8, 0xC4, 0x7A)),
-    ("脚本", "tools/*.py", "读文件、写文件、跑命令。想换语言就换文件。", OK),
+    ("脚本", "tools/*.py · *.lua", "读文件、写文件、跑命令。想换语言就换文件。", OK),
     ("回灌", "stdout → 文本", "脚本打印什么，就原样塞回 messages。", ACCENT_2),
 ]
 for i, (tag, title, desc, color) in enumerate(pipeline):
@@ -786,13 +786,17 @@ add_p(tf, "③ 失败：也打印出来，别静默退出", size=11, color=BODY,
 
 tf = textbox(s, 7.75, 4.3, 5.0, 2.2)
 add_p(tf, "加一个工具，三步", size=12, bold=True, color=ACCENT, after=7)
-add_p(tf, "① 写 tools/grep.py", size=11, color=BODY, after=4, line=1.35)
+add_p(tf, "① 写 tools/grep.lua", size=11, color=BODY, after=4, line=1.35)
 add_p(tf, "② 在 tools() 里加一条 registry", size=11, color=BODY, after=4, line=1.35)
 add_p(tf, "③ 重新编译（这是唯一一次碰到 C++）", size=11, color=BODY, after=0, line=1.35)
 
+tf = textbox(s, 7.75, 5.45, 5.0, 0.8)
+add_p(tf, "没装 lua 也能跑：工具起不来，就回一条错误文本，模型继续干活。",
+      size=10.5, color=MUTED, after=0, line=1.35)
+
 rect(s, 0.55, 6.35, 12.3, 0.55, CARD_2, radius=0.3, shape=MSO_SHAPE.ROUNDED_RECTANGLE)
 tf = textbox(s, 0.85, 6.47, 11.7, 0.32)
-add_p(tf, "Python、Node、Go、PowerShell 都行：C++ 只认 stdin / stdout 这两个口子。",
+add_p(tf, "Python、Node、Go、Lua、PowerShell 都行：C++ 只认 stdin / stdout 这两个口子。",
       size=11.5, color=ACCENT, align=PP_ALIGN.CENTER, after=0)
 note(s, "这是整套设计里最值钱的一页：工具不是函数，是进程。"
         "好处是权限、超时、崩溃隔离都在同一个地方——进程边界；坏处是每次调用多几十毫秒。"

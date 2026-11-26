@@ -144,6 +144,11 @@ static vector<Tool> tools() {
          "执行一条命令并返回输出。用于查看目录、跑测试、git 查询。",
          R"({"type":"object","properties":{"command":{"type":"string"}},"required":["command"]})",
          "python tools/run_shell.py"},
+        // 同一个协议，换一种语言：装 lua 就能用，没装也只是返回一条错误文本
+        {"grep",
+         "在文件里搜索文本，返回匹配的行号和内容。",
+         R"({"type":"object","properties":{"pattern":{"type":"string"},"path":{"type":"string"}},"required":["pattern","path"]})",
+         "lua tools/grep.lua"},
     };
 }
 
@@ -173,6 +178,7 @@ struct Rule {
 // 宽泛在前，例外在后；最后一条命中的规则生效
 static const vector<Rule> RULES = {
     {"read_file", "*", "allow"},
+    {"grep", "*", "allow"},
     {"write_file", "*", "ask"},
     {"run_shell", "*", "ask"},
     {"run_shell", "git status*", "allow"},

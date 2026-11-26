@@ -9,6 +9,7 @@
 
 import json
 import os
+import shutil
 import subprocess
 import sys
 import threading
@@ -76,6 +77,13 @@ CALL.update(name="write_file", args={"path": "should_not_exist.txt", "content": 
 out = run("写一个文件", stdin="n\n").stdout
 passed &= check("ask: 拒绝后不落盘", "用户拒绝执行该操作" in out, out[-200:])
 passed &= check("ask: 文件没有被创建", not os.path.exists("should_not_exist.txt"))
+
+if shutil.which("lua"):
+    CALL.update(name="grep", args={"pattern": "int main", "path": "agent.cpp"})
+    out = run("找一下 main").stdout
+    passed &= check("lua: 同一个协议换个语言也能跑", "OK:" in out and "int main" in out, out[-200:])
+else:
+    print("SKIP lua 未安装，跳过 grep.lua 用例")
 
 server.shutdown()
 print("ALL PASS" if passed else "FAILED")
