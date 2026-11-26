@@ -530,7 +530,9 @@ static int runTask(const string& task) {
                     const string effect = decide(*tool, target);
                     const bool allowed = effect == "allow" ||
                                          (effect == "ask" && confirm(name, target));
-                    if (!allowed) {
+                    if (STOP.load()) {
+                        content = "已停止";
+                    } else if (!allowed) {
                         content = effect == "deny" ? "该操作被权限规则禁止" : "用户拒绝执行该操作";
                     } else if (!tool->script.empty()) {
                         content = callLuaTool(tool->name, args);  // 进程内，直接进 Lua
@@ -541,7 +543,7 @@ static int runTask(const string& task) {
                     }
                 }
 
-                uiSend({{"type", "result"}, {"text", content}});
+                if (!STOP.load()) uiSend({{"type", "result"}, {"text", content}});
 
                 json feedback;
                 feedback["role"] = "tool";

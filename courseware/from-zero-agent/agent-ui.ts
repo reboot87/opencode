@@ -243,14 +243,16 @@ async function run(task: string) {
         } else {
           const effect = decide(tool.name, target)
           const allowed = effect === "allow" || (effect === "ask" && (await ask(tool.name, target)))
-          if (!allowed) {
+          if (controller.signal.aborted) {
+            content = "已停止"
+          } else if (!allowed) {
             content = effect === "deny" ? "该操作被权限规则禁止" : "用户拒绝执行该操作"
           } else {
             content = await tool.run(args, controller.signal).catch((error) => `工具报错：${error.message}`)
           }
         }
 
-        send({ type: "result", text: content })
+        if (!controller.signal.aborted) send({ type: "result", text: content })
         // 用 tool 角色回灌，tool_call_id 把结果和调用对上
         messages.push({ role: "tool", tool_call_id: call.id, content })
       }

@@ -1,6 +1,10 @@
 // 本地假模型 + 真 UI，用来在浏览器里点一遍（不连真模型、不花钱）
+//
+//   bun run demo-local.ts        TS 后端（agent-ui.ts）
+//   bun run demo-local.ts cpp    C++ 后端（cpp/agent.exe --ui，同一个 ui.html）
 const MODEL_PORT = 4398
 const UI_PORT = 4322
+const CPP = process.argv[2] === "cpp"
 
 let calls = 0
 
@@ -17,12 +21,12 @@ const model = Bun.serve({
           {
             message: {
               role: "assistant",
-              content: "先看一下 agent.ts 的开头，再决定底线画在哪。",
+              content: "先看一下 read_file 这个工具自己是怎么实现的，再决定底线画在哪。",
               tool_calls: [
                 {
                   id: "c1",
                   type: "function",
-                  function: { name: "read_file", arguments: JSON.stringify({ path: "agent.ts" }) },
+                  function: { name: "read_file", arguments: JSON.stringify({ path: "tools/read_file.lua" }) },
                 },
               ],
             },
@@ -63,7 +67,7 @@ const model = Bun.serve({
           message: {
             role: "assistant",
             content:
-              "看完了。agent.ts 的主循环是「请求模型 → 有工具调用就执行 → 把结果塞回去 → 再问一次」。\n" +
+              "看完了。read_file.lua 只做一件事：把参数交给 host.read，失败就回一句错误。\n" +
               "我已经把备忘写进 demo-note.txt。下一步可以把工具换成你自己的。",
           },
         },
@@ -72,17 +76,27 @@ const model = Bun.serve({
   },
 })
 
-const app = Bun.spawn(["bun", "run", "agent-ui.ts"], {
-  env: {
-    ...process.env,
-    PORT: String(UI_PORT),
-    OPENAI_BASE_URL: `http://127.0.0.1:${MODEL_PORT}/v1`,
-    OPENAI_API_KEY: "test",
-    MODEL: "mock",
-  },
-  stdout: "inherit",
-  stderr: "inherit",
-})
+const baseEnv = {
+  ...process.env,
+  PORT: String(UI_PORT),
+  OPENAI_BASE_URL: `http://127.0.0.1:${MODEL_PORT}/v1`,
+  OPENAI_API_KEY: "test",
+  MODEL: "mock",
+}
+
+const app = CPP
+  ? Bun.spawn(["./agent.exe", "--ui"], {
+      // 工具描述里的 script 是 "tools/xxx.lua"，所以从 cpp/ 起
+      cwd: "cpp",
+      env: { ...baseEnv, UI_HTML: "../ui.html" },
+      stdout: "inherit",
+      stderr: "inherit",
+    })
+  : Bun.spawn(["bun", "run", "agent-ui.ts"], {
+      env: baseEnv,
+      stdout: "inherit",
+      stderr: "inherit",
+    })
 
 const stop = () => {
   app.kill()
