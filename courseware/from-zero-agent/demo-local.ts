@@ -6,16 +6,13 @@ const MODEL_PORT = 4398
 const UI_PORT = 4322
 const CPP = process.argv[2] === "cpp"
 
-let calls = 0
-
 const model = Bun.serve({
   port: MODEL_PORT,
   async fetch(req) {
-    calls++
     const body = (await req.json()) as { messages: Array<{ role: string; content?: string }> }
-    const tool = body.messages.find((m) => m.role === "tool")
+    const done = body.messages.filter((m) => m.role === "tool").length
 
-    if (calls === 1) {
+    if (done === 0) {
       return Response.json({
         choices: [
           {
@@ -35,7 +32,7 @@ const model = Bun.serve({
       })
     }
 
-    if (calls === 2) {
+    if (done === 1) {
       return Response.json({
         choices: [
           {
