@@ -919,11 +919,14 @@ add_p(tf, "signal 要传到 fetch、子进程、确认弹窗三处。漏一处�
 
 rect(s, 0.55, 6.35, 12.3, 0.55, CARD_2, radius=0.3, shape=MSO_SHAPE.ROUNDED_RECTANGLE)
 tf = textbox(s, 0.85, 6.47, 11.7, 0.32)
-add_p(tf, "bun run agent-ui.ts → localhost:3000　·　没有 API key 也能点：bun run demo-local.ts",
+add_p(tf, "TS：bun run agent-ui.ts　·　C++：agent.exe --ui　·　同一份 ui.html，两个后端",
       size=11.5, color=ACCENT, align=PP_ALIGN.CENTER, after=0)
 note(s, "循环一行没变：变的只是三个副作用——打印变推事件，readline 变 Promise，Ctrl+C 变 abort。"
         "重点讲第二块代码：权限不是阻塞在 stdin，而是一个挂在 pendingAsk 上的 Promise，页面点按钮才 resolve。"
         "停止讲漏点：哪个 await 没接 signal，那个点就停不住；这是异步最常见的 bug。"
+        "页面只写一份 ui.html，C++ 版读同一份——但 TS 三行搞定的事，C++ 要自己写 socket、线程、互斥量。"
+        "C++ 的权限也是条件变量 wait：和 Promise 是同一个东西的两种写法。"
+        "没有 API key 也能点：bun run demo-local.ts（假模型）。"
         "进阶：把 SSE 换成 WebSocket，就能反过来在页面上点「继续」「换个方案」。")
 
 # ---------------------------------------------------------------- 23 分层

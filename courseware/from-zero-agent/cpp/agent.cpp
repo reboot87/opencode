@@ -15,19 +15,32 @@
 //
 // 运行:
 //   set OPENAI_API_KEY=sk-...
-//   agent.exe "读取 package.json，告诉我项目名字"
+//   agent.exe "读取 package.json，告诉我项目名字"     命令行模式
+//   agent.exe --ui                                   浏览器模式（localhost:3000）
+//
+// 浏览器模式复用 ../ui.html：和 agent-ui.ts 是同一份页面，两个后端。
+// TS 那边三行搞定的事，这里要自己写 socket、线程、互斥量。
 
 #include <algorithm>
+#include <atomic>
+#include <cctype>
 #include <chrono>
+#include <condition_variable>
 #include <cstdio>
 #include <cstdlib>
 #include <filesystem>
 #include <iostream>
+#include <mutex>
+#include <set>
 #include <stdexcept>
 #include <string>
+#include <thread>
 #include <vector>
 
 #ifdef _WIN32
+#define WIN32_LEAN_AND_MEAN
+#include <winsock2.h>   // 必须在 windows.h 之前
+#include <ws2tcpip.h>
 #include <windows.h>
 #include <shellapi.h>
 #define popen _popen
@@ -36,6 +49,7 @@
 
 #ifdef _MSC_VER
 #pragma comment(lib, "shell32.lib")  // CommandLineToArgvW
+#pragma comment(lib, "ws2_32.lib")   // 浏览器模式的 socket
 #endif
 
 // Lua 是 C 库：头文件包在 extern "C" 里，链接时才不会按 C++ 规则改名
@@ -53,6 +67,18 @@ using std::vector;
 
 const int MAX_STEPS = 20;
 const int MAX_OUTPUT = 8000;
+
+// 两种模式共用的运行状态
+static std::atomic<bool> STOP{false};
+static bool UI_MODE = false;
+
+// 权限：浏览器模式下等页面答复，等价于 TS 里那个还没 resolve 的 Promise
+static std::mutex ASK_LOCK;
+static std::condition_variable ASK_CV;
+static bool ASK_ANSWERED = false;
+static bool ASK_ALLOW = false;
+
+static void uiSend(const json& event);  // 定义在浏览器模式那一节
 
 // ---------------------------------------------------------------- 基础设施
 
@@ -246,6 +272,7 @@ static long long nowMs() {
 }
 
 static void deadlineHook(lua_State* L, lua_Debug*) {
+    if (STOP.load()) luaL_error(L, "已停止");
     if (nowMs() >= deadlineMs) luaL_error(L, "执行超时，已中止（TOOL_TIMEOUT_MS）");
 }
 
@@ -370,11 +397,20 @@ static string decide(const Tool& tool, const string& target) {
     return effect;
 }
 
-static bool confirm(const string& question) {
-    std::cout << question << " [y/N] " << std::flush;
-    string line;
-    if (!std::getline(std::cin, line)) return false;
-    return !line.empty() && (line[0] == 'y' || line[0] == 'Y');
+static bool confirm(const string& name, const string& target) {
+    if (!UI_MODE) {
+        std::cout << "允许 " + name + " " + target + " ? [y/N] " << std::flush;
+        string line;
+        if (!std::getline(std::cin, line)) return false;
+        return !line.empty() && (line[0] == 'y' || line[0] == 'Y');
+    }
+    // 浏览器模式：推一条 ask，然后睡在这个条件变量上，直到页面点按钮或停止
+    std::unique_lock<std::mutex> lock(ASK_LOCK);
+    ASK_ANSWERED = false;
+    ASK_ALLOW = false;
+    uiSend({{"type", "ask"}, {"name", name}, {"target", target}});
+    ASK_CV.wait(lock, [] { return ASK_ANSWERED || STOP.load(); });
+    return ASK_ANSWERED && ASK_ALLOW;
 }
 
 // ---------------------------------------------------------------- 参数
@@ -399,31 +435,13 @@ static vector<string> args(int argc, char** argv) { return vector<string>(argv, 
 
 // ---------------------------------------------------------------- 主循环
 
-int main(int argc, char** argv) {
-#ifdef _WIN32
-    SetConsoleOutputCP(CP_UTF8);
-    SetConsoleCP(CP_UTF8);
-#endif
+static vector<Tool> TOOLS;  // 启动时加载一次，两种模式共用
+
+// 一次任务 = 一轮循环。命令行直接调用，浏览器模式把它放到线程里调用。
+static int runTask(const string& task) {
     const string baseUrl = env("OPENAI_BASE_URL", "https://api.openai.com/v1");
     const string apiKey = env("OPENAI_API_KEY", "");
     const string model = env("MODEL", "gpt-4.1-mini");
-    toolTimeoutMs = std::atoi(env("TOOL_TIMEOUT_MS", "10000").c_str());
-
-#ifdef _WIN32
-    const vector<string> argvList = args();
-#else
-    const vector<string> argvList = args(argc, argv);
-#endif
-
-    string task;
-    for (size_t i = 1; i < argvList.size(); ++i) {
-        if (!task.empty()) task += " ";
-        task += argvList[i];
-    }
-    if (task.empty()) {
-        std::cerr << "用法: agent \"你的任务\"\n";
-        return 1;
-    }
 
     json messages = json::array();
     messages.push_back({{"role", "system"},
@@ -431,48 +449,56 @@ int main(int argc, char** argv) {
     messages.push_back({{"role", "user"}, {"content", task}});
 
     try {
-        const vector<Tool> toolList = loadTools(env("TOOLS_DIR", "tools"));
-        if (toolList.empty()) {
-            std::cerr << "tools/ 里没有工具描述，检查 TOOLS_DIR\n";
-            return 1;
-        }
-
-        initLua();
-        for (const auto& tool : toolList)
-            if (!tool.script.empty()) loadLuaTool(tool.name, tool.script);
-
         for (int step = 1; step <= MAX_STEPS; ++step) {
+            if (STOP.load()) {
+                uiSend({{"type", "error"}, {"text", "已停止"}});
+                return 3;
+            }
+            uiSend({{"type", "step"}, {"step", step}});
+
             json body;
             body["model"] = model;
             body["messages"] = messages;
-            body["tools"] = toolsPayload(toolList);
+            body["tools"] = toolsPayload(TOOLS);
 
             json data = post(baseUrl + "/chat/completions", body.dump(), apiKey);
             if (data.contains("error")) {
-                std::cerr << "模型返回错误：" << data["error"].dump(2) << "\n";
+                const string detail = data["error"].dump(2);
+                if (UI_MODE) {
+                    uiSend({{"type", "error"}, {"text", "模型返回错误：" + detail}});
+                } else {
+                    std::cerr << "模型返回错误：" << detail << "\n";
+                }
                 return 1;
             }
 
             const json message = data["choices"][0]["message"];
+            // 停止只能在这个请求返回后生效：popen 里的 curl 收不到信号
+            if (STOP.load()) {
+                uiSend({{"type", "error"}, {"text", "已停止"}});
+                return 3;
+            }
             const bool hasCalls = message.contains("tool_calls") && message["tool_calls"].is_array() &&
                                   !message["tool_calls"].empty();
+            const string text = message.contains("content") && message["content"].is_string()
+                                    ? message["content"].get<string>()
+                                    : "";
 
             // assistant 消息必须原样放回，工具结果才能和它对应上
             json assistant;
             assistant["role"] = "assistant";
-            if (message.contains("content") && message["content"].is_string())
-                assistant["content"] = message["content"];
+            if (!text.empty())
+                assistant["content"] = text;
             else
                 assistant["content"] = nullptr;
             if (hasCalls) assistant["tool_calls"] = message["tool_calls"];
             messages.push_back(assistant);
+            if (!text.empty()) uiSend({{"type", "text"}, {"text", text}});
 
             // 没有工具调用 = 模型认为任务完成了
             if (!hasCalls) {
-                std::cout << "\n" << (message.contains("content") && message["content"].is_string()
-                                          ? message["content"].get<string>()
-                                          : "")
-                          << "\n";
+                if (!UI_MODE) std::cout << "\n" << text << "\n";
+                uiSend({{"type", "done"}, {"text", "任务结束"}});
                 return 0;
             }
 
@@ -491,9 +517,11 @@ int main(int argc, char** argv) {
                 else if (args.contains("command") && args["command"].is_string())
                     target = args["command"];
 
+                uiSend({{"type", "tool"}, {"name", name}, {"args", args}});
+
                 string content;
                 const Tool* tool = nullptr;
-                for (const auto& candidate : toolList)
+                for (const auto& candidate : TOOLS)
                     if (candidate.name == name) tool = &candidate;
 
                 if (!tool) {
@@ -501,7 +529,7 @@ int main(int argc, char** argv) {
                 } else {
                     const string effect = decide(*tool, target);
                     const bool allowed = effect == "allow" ||
-                                         (effect == "ask" && confirm("允许 " + name + " " + target + " ?"));
+                                         (effect == "ask" && confirm(name, target));
                     if (!allowed) {
                         content = effect == "deny" ? "该操作被权限规则禁止" : "用户拒绝执行该操作";
                     } else if (!tool->script.empty()) {
@@ -512,6 +540,8 @@ int main(int argc, char** argv) {
                         content = truncate(sh(tool->command + " < \"" + argsPath + "\" 2>&1"));
                     }
                 }
+
+                uiSend({{"type", "result"}, {"text", content}});
 
                 json feedback;
                 feedback["role"] = "tool";
@@ -525,10 +555,234 @@ int main(int argc, char** argv) {
             }
         }
     } catch (const std::exception& error) {
-        std::cerr << "出错：" << error.what() << "\n";
+        if (UI_MODE) {
+            uiSend({{"type", "error"}, {"text", error.what()}});
+        } else {
+            std::cerr << "出错：" << error.what() << "\n";
+        }
         return 1;
     }
 
-    std::cout << "达到最大步数 " << MAX_STEPS << "，任务仍未完成。\n";
+    uiSend({{"type", "error"}, {"text", "达到最大步数 " + std::to_string(MAX_STEPS) + "，任务仍未完成"}});
+    if (!UI_MODE) std::cout << "达到最大步数 " << MAX_STEPS << "，任务仍未完成。\n";
     return 2;
+}
+
+// ---------------------------------------------------------------- 浏览器模式
+
+// 页面是 ../ui.html，和 agent-ui.ts 共用。TS 三行写完的事，这里要自己写 socket、线程、互斥量。
+
+#ifdef _WIN32
+
+static SOCKET LISTEN = INVALID_SOCKET;
+static std::mutex UI_LOCK;
+static std::set<SOCKET> CLIENTS;
+static std::string PAGE;
+static std::atomic<bool> RUNNING{false};
+
+static void uiSend(const json& event) {
+    if (!UI_MODE) return;
+    const string frame = "data: " + event.dump() + "\n\n";
+    std::lock_guard<std::mutex> guard(UI_LOCK);
+    for (SOCKET client : CLIENTS)
+        ::send(client, frame.data(), static_cast<int>(frame.size()), 0);
+}
+
+static void uiReply(SOCKET socket, const string& status, const string& type, const string& body) {
+    const string head = "HTTP/1.1 " + status + "\r\nContent-Type: " + type +
+                        "\r\nContent-Length: " + std::to_string(body.size()) +
+                        "\r\nConnection: close\r\n\r\n";
+    const string response = head + body;
+    ::send(socket, response.data(), static_cast<int>(response.size()), 0);
+}
+
+static void uiJson(SOCKET socket, const string& body) {
+    uiReply(socket, "200 OK", "application/json", body);
+}
+
+// SSE 不能带 Content-Length：响应体靠连接关闭结束，所以头和 body 分开写
+// Bun 版要每 5 秒发一行注释保活，是因为它有自己的 idle timeout；这里的 server 不设超时，所以不用
+static void uiStream(SOCKET socket) {
+    const string head = "HTTP/1.1 200 OK\r\nContent-Type: text/event-stream\r\n"
+                        "Cache-Control: no-cache\r\nConnection: close\r\n\r\n";
+    ::send(socket, head.data(), static_cast<int>(head.size()), 0);
+}
+
+// 只认浏览器发来的这一种请求：请求行 + 头部 + 可选 JSON body
+static bool readRequest(SOCKET socket, string& method, string& path, string& body) {
+    string data;
+    char buffer[4096];
+    size_t head = string::npos;
+    while ((head = data.find("\r\n\r\n")) == string::npos) {
+        const int n = ::recv(socket, buffer, sizeof buffer, 0);
+        if (n <= 0) return false;
+        data.append(buffer, n);
+    }
+
+    const string headText = data.substr(0, head);
+    const string line = headText.substr(0, headText.find("\r\n"));
+    const size_t first = line.find(' ');
+    const size_t second = line.find(' ', first + 1);
+    if (first == string::npos) return false;
+    method = line.substr(0, first);
+    path = line.substr(first + 1, second == string::npos ? string::npos : second - first - 1);
+
+    string lower = headText;
+    std::transform(lower.begin(), lower.end(), lower.begin(),
+                   [](unsigned char c) { return static_cast<char>(std::tolower(c)); });
+    const size_t at = lower.find("\r\ncontent-length:");
+    const size_t length = at == string::npos ? 0 : static_cast<size_t>(std::atoi(lower.c_str() + at + 17));
+
+    body = data.substr(head + 4);
+    while (body.size() < length) {
+        const int n = ::recv(socket, buffer, sizeof buffer, 0);
+        if (n <= 0) break;
+        body.append(buffer, n);
+    }
+    return true;
+}
+
+static void handleClient(SOCKET socket) {
+    string method, path, body;
+    if (!readRequest(socket, method, path, body)) {
+        closesocket(socket);
+        return;
+    }
+
+    if (method == "GET" && path == "/") {
+        uiReply(socket, "200 OK", "text/html; charset=utf-8", PAGE);
+    } else if (method == "GET" && path == "/events") {
+        uiStream(socket);
+        {
+            std::lock_guard<std::mutex> guard(UI_LOCK);
+            CLIENTS.insert(socket);
+        }
+        char buffer[1024];
+        while (::recv(socket, buffer, sizeof buffer, 0) > 0) {}  // 只是为了知道页面什么时候关掉
+        {
+            std::lock_guard<std::mutex> guard(UI_LOCK);
+            CLIENTS.erase(socket);
+        }
+    } else if (method == "POST" && path == "/run") {
+        const json request = json::parse(body, nullptr, false);
+        const string task = request.is_object() && request.contains("task") && request["task"].is_string()
+                                ? request["task"].get<string>()
+                                : "";
+        uiJson(socket, task.empty() ? "{\"ok\":false}" : "{\"ok\":true}");
+        if (!task.empty()) {
+            std::thread([task] {
+                if (RUNNING.exchange(true)) {
+                    uiSend({{"type", "error"}, {"text", "上一个任务还在跑，先点停止"}});
+                    return;
+                }
+                STOP = false;
+                runTask(task);
+                RUNNING = false;
+                uiSend({{"type", "idle"}});
+            }).detach();
+        }
+    } else if (method == "POST" && path == "/answer") {
+        const json request = json::parse(body, nullptr, false);
+        {
+            std::lock_guard<std::mutex> guard(ASK_LOCK);
+            ASK_ALLOW = request.is_object() && request.value("allow", false);
+            ASK_ANSWERED = true;
+        }
+        ASK_CV.notify_all();
+        uiJson(socket, "{\"ok\":true}");
+    } else if (method == "POST" && path == "/stop") {
+        STOP = true;  // 正在跑的 curl 收不到，会在它返回后生效
+        ASK_CV.notify_all();
+        uiJson(socket, "{\"ok\":true}");
+    } else {
+        uiReply(socket, "404 Not Found", "text/plain", "");
+    }
+
+    closesocket(socket);
+}
+
+static void runUi() {
+    WSADATA wsa;
+    if (WSAStartup(MAKEWORD(2, 2), &wsa) != 0) throw std::runtime_error("WSAStartup 失败");
+
+    PAGE = readFile(env("UI_HTML", "../ui.html"));
+    if (PAGE.empty()) {
+        std::cerr << "找不到页面，检查 UI_HTML（默认 ../ui.html）\n";
+        return;
+    }
+
+    const int port = std::atoi(env("PORT", "3000").c_str());
+    LISTEN = ::socket(AF_INET, SOCK_STREAM, 0);
+    sockaddr_in address{};
+    address.sin_family = AF_INET;
+    address.sin_addr.s_addr = htonl(INADDR_LOOPBACK);  // 只绑本机：这个端口能执行命令
+    address.sin_port = htons(static_cast<u_short>(port));
+    if (::bind(LISTEN, reinterpret_cast<sockaddr*>(&address), sizeof address) == SOCKET_ERROR ||
+        ::listen(LISTEN, 8) == SOCKET_ERROR) {
+        std::cerr << "端口 " << port << " 起不来，换一个（PORT=3001）\n";
+        return;
+    }
+
+    std::cout << "agent-ui: http://localhost:" << port << "\n" << std::flush;
+    for (;;) {
+        const SOCKET client = ::accept(LISTEN, nullptr, nullptr);
+        if (client == INVALID_SOCKET) continue;
+        std::thread(handleClient, client).detach();  // 一个连接一个线程：SSE 会一直占着
+    }
+}
+
+#else
+
+static void uiSend(const json&) {}
+
+static void runUi() { std::cerr << "--ui 只实现了 Windows（Winsock），命令行模式照常可用\n"; }
+
+#endif
+
+// ---------------------------------------------------------------- 入口
+
+int main(int argc, char** argv) {
+#ifdef _WIN32
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+#endif
+    toolTimeoutMs = std::atoi(env("TOOL_TIMEOUT_MS", "10000").c_str());
+
+#ifdef _WIN32
+    const vector<string> argvList = args();
+#else
+    const vector<string> argvList = args(argc, argv);
+#endif
+
+    try {
+        TOOLS = loadTools(env("TOOLS_DIR", "tools"));
+        if (TOOLS.empty()) {
+            std::cerr << "tools/ 里没有工具描述，检查 TOOLS_DIR\n";
+            return 1;
+        }
+
+        initLua();
+        for (const auto& tool : TOOLS)
+            if (!tool.script.empty()) loadLuaTool(tool.name, tool.script);
+
+        if (argvList.size() > 1 && argvList[1] == "--ui") {
+            UI_MODE = true;
+            runUi();
+            return 0;
+        }
+
+        string task;
+        for (size_t i = 1; i < argvList.size(); ++i) {
+            if (!task.empty()) task += " ";
+            task += argvList[i];
+        }
+        if (task.empty()) {
+            std::cerr << "用法: agent \"你的任务\"　或者　agent --ui\n";
+            return 1;
+        }
+        return runTask(task);
+    } catch (const std::exception& error) {
+        std::cerr << "出错：" << error.what() << "\n";
+        return 1;
+    }
 }
